@@ -69,6 +69,13 @@ docker run --rm ghcr.io/edgarmilvus/artcraft-engines:latest \
 
 All ten engines are Apache-2.0. Redistributing the archives and packaging the
 binaries in a public image is therefore permitted, with the obligations the
-licence carries: each archive ships its `LICENSE` and `NOTICE`, the image is
-labelled with its licence and its source, and nothing here claims to be an
-official vendor build. The book's own code is MIT; see [LICENSE](../LICENSE).
+licence carries, and this repository meets them:
+
+- each vendor archive carries its `LICENSE-APACHE` and `LICENSE-MIT` inside it,
+  exactly as shipped;
+- the ten `NOTICE` files are reproduced in [`docs/notices/`](notices/), because
+  the vendor archives do not include them;
+- the image is labelled with its licence and its source, and nothing here claims
+  to be an official vendor build.
+
+The book's own code is MIT; see [LICENSE](../LICENSE).
