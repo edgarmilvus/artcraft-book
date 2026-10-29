@@ -1,7 +1,8 @@
 # The three things anyone does with this repository.
 #
 #   make check   what CI checks, on this machine: types, READMEs, links
-#   make e2e     every harness against the engines (about ten minutes)
+#   make e2e     every harness against the engines (about ten minutes on an
+#                Apple Silicon Mac, longer on Intel and in CI)
 #   make clean   drop node_modules and the Python environment
 
 .PHONY: check e2e clean
