@@ -44,7 +44,7 @@ should report v22.x.
 - Versions: photocraft 0.8.2, vectorcraft 0.10.0, filmcraft 0.5.0,
   designcraft 0.4.0, effectcraft 0.4.0, lightcraft 0.5.0, wordcraft 0.3.0,
   pdfcraft 0.5.0, gridcraft 0.10.0, deckcraft 0.9.0.
-- The binaries are proprietary and are **never committed**.
+- The binaries are Apache-2.0 and are **never committed**.
   `install_craft_clis.sh` downloads them and checks the SHA-256 against
   `craft-cli/SHA256SUMS`; set `CRAFT_CLI_SOURCE` to install from a mirror.
 - The engines do **not** share a dialect. `craft-cli/FACTS-ch*.md` records what

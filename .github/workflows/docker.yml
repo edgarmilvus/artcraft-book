@@ -1,0 +1,66 @@
+name: docker
+
+# Publishes the engines-and-runtime image to GHCR. This is insurance, not the
+# normal path: readers install the engines from the vendor's releases, and the
+# image exists so that a deleted vendor release cannot strand a Docker user.
+#
+# The image carries the ten Apache-2.0 engine binaries, which is why it can be
+# public. Once pushed, set the package visibility to public:
+#   gh api --method PATCH /user/packages/container/artcraft-engines \
+#     -f visibility=public
+#
+# One build is about 8 GB across two architectures, so it is built on request.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to publish (also published as latest)"
+        required: false
+        default: "2026.10"
+  push:
+    tags: ["engines-*"]
+
+permissions:
+  contents: read
+  packages: write
+
+concurrency:
+  group: docker-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Build and push the engines image
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: docker/setup-qemu-action@v3
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/artcraft-engines:${{ github.event.inputs.tag || 'latest' }}
+            ghcr.io/${{ github.repository_owner }}/artcraft-engines:latest
+          labels: |
+            org.opencontainers.image.title=ArtCraft engines
+            org.opencontainers.image.description=The ten ArtCraft engine CLIs with the Node and Python runtime the book's harnesses need. Repackaged from the vendor's Apache-2.0 releases; see tools/craft-cli/versions.txt for the pinned versions.
+            org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
+            org.opencontainers.image.licenses=Apache-2.0
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

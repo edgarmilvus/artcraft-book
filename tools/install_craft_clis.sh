@@ -6,7 +6,7 @@
 #   tools/install_craft_clis.sh --check    # verify what is installed
 #   tools/install_craft_clis.sh --force    # re-download everything
 #
-# The binaries are proprietary macOS executables and are never committed
+# The binaries are Apache-2.0 macOS executables from their vendor and are never committed
 # to the repository. Each download is verified against the SHA-256
 # recorded in tools/craft-cli/SHA256SUMS.
 #
@@ -37,18 +37,19 @@ for arg in "$@"; do
 done
 
 # app:version  (must match the Dockerfile ARGs)
-APPS=(
-  "photocraft:0.8.2"
-  "vectorcraft:0.10.0"
-  "filmcraft:0.5.0"
-  "designcraft:0.4.0"
-  "effectcraft:0.4.0"
-  "lightcraft:0.5.0"
-  "wordcraft:0.3.0"
-  "pdfcraft:0.5.0"
-  "gridcraft:0.10.0"
-  "deckcraft:0.9.0"
-)
+# The versions come from tools/craft-cli/versions.txt, which the Dockerfile
+# reads too: one list, so the native install and the image cannot drift.
+VERSIONS_FILE="$HERE/craft-cli/versions.txt"
+APPS=()
+if [ -f "$VERSIONS_FILE" ]; then
+  while read -r app ver rest; do
+    case "$app" in ""|\#*) continue ;; esac
+    [ -n "$ver" ] && APPS+=("${app}:${ver}")
+  done < "$VERSIONS_FILE"
+else
+  echo "missing $VERSIONS_FILE" >&2
+  exit 1
+fi
 
 # The SHA-256 the binary must have, if we know it.
 expected_sha() {

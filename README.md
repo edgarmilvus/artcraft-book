@@ -42,7 +42,7 @@ ticks, microseconds and 48 kHz samples, and round-trips 29.97 drop-frame
 timecode — the whole argument of chapter 11 in one file with no engine.
 
 **Everything else needs the engines.** The other 37 projects drive the real
-ArtCraft CLIs, which are proprietary, macOS-only, about 4 GB, and never
+ArtCraft CLIs, which are Apache-2.0, macOS-only, about 4 GB, and never
 committed: `tools/install_craft_clis.sh` fetches and verifies them. If you do
 not want to install them, the Docker path in [Run](#run) carries the same
 binaries inside the image.
@@ -82,7 +82,7 @@ install three gigabytes of engines, you run them inside Docker.
 | Engine binaries | fetched by `tools/install_craft_clis.sh` | inside the image |
 | Speed | fastest | slower |
 
-The engine binaries are proprietary, are never committed, and are the one
+The engine binaries are Apache-2.0, are never committed, and are the one
 thing the Docker image saves you from installing. For the native path they
 are downloaded and verified against `tools/craft-cli/SHA256SUMS`:
 
@@ -101,6 +101,12 @@ directory of archives — set `CRAFT_CLI_SOURCE`:
 ```bash
 CRAFT_CLI_SOURCE=https://github.com/storytold tools/install_craft_clis.sh
 ```
+
+**If a vendor release disappears,** two fallbacks exist: the ten macOS archives
+are mirrored in this repository's `craft-cli-v1` release, and the same engines
+ship in a container image for the Docker path. Both read the versions pinned in
+`tools/craft-cli/versions.txt`, and both are verified against
+`tools/craft-cli/SHA256SUMS`. See [docs/engines.md](docs/engines.md).
 
 ## Install
 
@@ -256,6 +262,7 @@ Two workflows, split by cost:
 The code in this repository is released under the MIT license. The full text
 is in [LICENSE](LICENSE).
 
-The ArtCraft engine binaries are not covered by it. They are proprietary and
-are licensed separately by their vendor; this repository does not redistribute
-them, and `tools/install_craft_clis.sh` downloads them from their own releases.
+The ArtCraft engine binaries are not covered by it. They are Apache-2.0, licensed
+by their vendor; this repository does not modify them, and where it redistributes
+them — the `craft-cli-v1` mirror release and the container image — each engine's
+`LICENSE` and `NOTICE` travel with the binaries.

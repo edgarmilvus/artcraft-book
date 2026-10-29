@@ -19,16 +19,9 @@ FROM debian:bookworm-slim AS engines
 
 ARG TARGETARCH
 
-ARG PHOTOCRAFT_VER=0.8.2
-ARG VECTORCRAFT_VER=0.10.0
-ARG FILMCRAFT_VER=0.5.0
-ARG DESIGNCRAFT_VER=0.4.0
-ARG EFFECTCRAFT_VER=0.4.0
-ARG LIGHTCRAFT_VER=0.5.0
-ARG WORDCRAFT_VER=0.3.0
-ARG PDFCRAFT_VER=0.5.0
-ARG DECKCRAFT_VER=0.9.0
-ARG GRIDCRAFT_VER=0.10.0
+# One list for the native install and for this image.
+COPY tools/craft-cli/versions.txt /staging/versions.txt
+
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends curl ca-certificates tar gzip \
@@ -54,16 +47,10 @@ RUN set -eux; \
       chmod +x "/staging/bin/${app}-cli"; \
       rm -rf "/staging/tmp/${app}.tar.gz" "/staging/tmp/${app}"; \
     }; \
-    fetch photocraft  "${PHOTOCRAFT_VER}"; \
-    fetch vectorcraft "${VECTORCRAFT_VER}"; \
-    fetch filmcraft   "${FILMCRAFT_VER}"; \
-    fetch designcraft "${DESIGNCRAFT_VER}"; \
-    fetch effectcraft "${EFFECTCRAFT_VER}"; \
-    fetch lightcraft  "${LIGHTCRAFT_VER}"; \
-    fetch wordcraft   "${WORDCRAFT_VER}"; \
-    fetch pdfcraft    "${PDFCRAFT_VER}"; \
-    fetch deckcraft   "${DECKCRAFT_VER}"; \
-    fetch gridcraft   "${GRIDCRAFT_VER}"; \
+    while read -r app ver rest; do \
+      case "$app" in ""|\#*) continue ;; esac; \
+      [ -n "$ver" ] && fetch "$app" "$ver"; \
+    done < /staging/versions.txt; \
     ls -l /staging/bin
 
 # ---------------------------------------------------------------------------
