@@ -47,9 +47,13 @@ The image carries the Linux builds of the ten engines plus the Node and Python
 runtime the harnesses need, so a Docker user needs no download at all:
 
 ```bash
-docker run --rm -v "$PWD:/work" -w /work \
+docker run --rm -v "$PWD:/work" -w /work -e MCP_TIMEOUT_MS=300000 \
   ghcr.io/edgarmilvus/artcraft-engines:latest ./chapter14/run_all.sh
 ```
+
+`MCP_TIMEOUT_MS` matters here: the engine calls have a 60-second default, and a
+container without a GPU can exceed it on the first launch. The default is fine
+natively and too short inside the image.
 
 The sources are not baked into the image — you mount your clone — and the
 image is rebuilt from `tools/craft-cli/versions.txt` by

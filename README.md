@@ -169,6 +169,13 @@ With Docker, the same run, with everything already inside the image:
 docker compose run --rm artcraft
 ```
 
+A container is slower than a native run, so a harness that waits on the engine
+can cross the 60-second default. Pass the same setting through the container:
+
+```bash
+docker compose run --rm -e MCP_TIMEOUT_MS=300000 artcraft
+```
+
 The sources are mounted into the container rather than copied, so edits are
 picked up without a rebuild and the artifacts land on your disk. To run one
 chapter there:
