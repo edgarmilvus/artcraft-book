@@ -1,0 +1,47 @@
+{
+  "v": "5.12.2",
+  "fr": 30,
+  "ip": 0,
+  "op": 30,
+  "w": 1080,
+  "h": 1080,
+  "nm": "Main_HeroLoop",
+  "ddd": 0,
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 2,
+      "nm": "Glow",
+      "refId": "image_0",
+      "ks": {},
+      "ao": 0
+    }
+  ],
+  "assets": [
+    {
+      "id": "image_0",
+      "u": "/Users/studio/renders/",
+      "p": "glow.png",
+      "w": 512,
+      "h": 512,
+      "e": 0
+    },
+    {
+      "id": "image_1",
+      "u": "C:\\Users\\studio\\renders\\",
+      "p": "flare.jpg",
+      "w": 512,
+      "h": 512,
+      "e": 0
+    },
+    {
+      "id": "image_2",
+      "u": "images/",
+      "p": "ok.png",
+      "w": 64,
+      "h": 64,
+      "e": 0
+    }
+  ]
+}

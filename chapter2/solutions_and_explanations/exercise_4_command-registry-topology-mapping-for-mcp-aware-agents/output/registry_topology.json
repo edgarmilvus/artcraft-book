@@ -1,0 +1,150 @@
+{
+  "app": "designcraft",
+  "generated_at": "2026-10-26T13:27:18.931205Z",
+  "mutated": false,
+  "snapshots": {
+    "enabled_only_count": 269,
+    "all_count": 444
+  },
+  "buckets": [
+    {
+      "name": "ALWAYS_ENABLED",
+      "count": 269,
+      "example": "file.new",
+      "escape": null,
+      "reason_sample": null
+    },
+    {
+      "name": "NEEDS_DOCUMENT",
+      "count": 1,
+      "example": "file.revert",
+      "escape": "file.new",
+      "reason_sample": "the document has never been saved"
+    },
+    {
+      "name": "NEEDS_SELECTION",
+      "count": 83,
+      "example": "snippet.export",
+      "escape": "edit.selectAll",
+      "reason_sample": "nothing selected"
+    },
+    {
+      "name": "NEEDS_TEXT_CARET",
+      "count": 15,
+      "example": "edit.pasteWithoutFormatting",
+      "escape": "frame.create",
+      "reason_sample": "no text insertion point"
+    },
+    {
+      "name": "NEEDS_FRAME_OR_STORY",
+      "count": 53,
+      "example": "file.exportText",
+      "escape": "frame.create",
+      "reason_sample": "edit text or select a text frame"
+    },
+    {
+      "name": "NEEDS_STATE",
+      "count": 23,
+      "example": "edit.undo",
+      "escape": "library.open",
+      "reason_sample": "nothing to undo"
+    }
+  ],
+  "domains": [
+    {
+      "prefix": "object",
+      "count": 54,
+      "central": [
+        "object.gradient",
+        "object.fit",
+        "object.unlockAll"
+      ]
+    },
+    {
+      "prefix": "table",
+      "count": 34,
+      "central": [
+        "table.insert",
+        "table.select",
+        "table.insertRow"
+      ]
+    },
+    {
+      "prefix": "file",
+      "count": 29,
+      "central": [
+        "file.new",
+        "file.save",
+        "file.print"
+      ]
+    },
+    {
+      "prefix": "type",
+      "count": 24,
+      "central": [
+        "type.align",
+        "type.underline",
+        "type.tateChuYoko"
+      ]
+    },
+    {
+      "prefix": "style",
+      "count": 21,
+      "central": [
+        "style.table.edit",
+        "style.table.create",
+        "style.table.apply"
+      ]
+    },
+    {
+      "prefix": "layout",
+      "count": 19,
+      "central": [
+        "layout.spreadShuffle",
+        "layout.section",
+        "layout.rotateSpreadView"
+      ]
+    },
+    {
+      "prefix": "edit",
+      "count": 14,
+      "central": [
+        "edit.paste",
+        "edit.selectAll",
+        "edit.undo"
+      ]
+    },
+    {
+      "prefix": "transform",
+      "count": 10,
+      "central": [
+        "transform.shear",
+        "transform.set",
+        "transform.scale"
+      ]
+    },
+    {
+      "prefix": "path",
+      "count": 10,
+      "central": [
+        "path.split",
+        "path.smooth",
+        "path.moveAnchors"
+      ]
+    },
+    {
+      "prefix": "book",
+      "count": 10,
+      "central": [
+        "book.syncStyles",
+        "book.styleSource",
+        "book.remove"
+      ]
+    }
+  ],
+  "notes": [
+    "DesignCraft's registry MCP tool is `list_commands`; the sibling suites use `command_list`. Aliasing them is forbidden \u2014 the naming divergence is itself a Level 1 ground-truth detail.",
+    "The report is returned INLINE because the DesignCraft MCP server exposes no arbitrary-file write primitive; the caller persists it.",
+    "This tool never calls execute/batch/doc_new/open, so it is safe to run against a live session."
+  ]
+}

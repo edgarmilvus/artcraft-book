@@ -1,0 +1,51 @@
+{
+  "exercise": 5,
+  "engine": "filmcraft-cli",
+  "sequence": {
+    "id": 8,
+    "name": "Travel Cut",
+    "fps": 23.976023976023978,
+    "width": 1920,
+    "height": 1080,
+    "tracks": [
+      "V1",
+      "A1"
+    ]
+  },
+  "summary": {
+    "cuts": 3,
+    "jumpCuts": 1,
+    "pops": 1,
+    "luminanceJumps": 1,
+    "remediated": 3,
+    "rolledBack": 0,
+    "escalated": 0,
+    "unverifiable": 0
+  },
+  "assertions": 107,
+  "frames": [
+    "cut-1-a-end.png",
+    "cut-1-b-start.png",
+    "cut-1-prior.png",
+    "cut-2-a-end.png",
+    "cut-2-b-start.png",
+    "cut-2-prior.png",
+    "cut-3-a-end.png",
+    "cut-3-b-start.png",
+    "cut-3-prior.png"
+  ],
+  "artefacts": [
+    "audit_report.json",
+    "summary.txt",
+    "frames/cut-1-a-end.png",
+    "frames/cut-1-b-start.png",
+    "frames/cut-1-prior.png",
+    "frames/cut-2-a-end.png",
+    "frames/cut-2-b-start.png",
+    "frames/cut-2-prior.png",
+    "frames/cut-3-a-end.png",
+    "frames/cut-3-b-start.png",
+    "frames/cut-3-prior.png"
+  ],
+  "result": "three edit points audited; jump, luma shift and audio pop remediated; guard rollback verified"
+}

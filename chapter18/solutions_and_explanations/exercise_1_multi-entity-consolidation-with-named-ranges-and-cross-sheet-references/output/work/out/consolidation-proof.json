@@ -1,0 +1,374 @@
+{
+  "audit": {
+    "consolidated_formulas": [
+      "=Helios_US.Amount.Rev_Net+(Helios_EU.Amount.Rev_Net*FX.EUR.USD)+(Helios_APAC.Amount.Rev_Net*FX.SGD.USD)+(Helios_LATAM.Amount.Rev_Net*FX.BRL.USD)",
+      "=Helios_US.Amount.Rev_FederalRDCredit",
+      "=(Helios_EU.Amount.Rev_IPBoxRelief*FX.EUR.USD)",
+      "=(Helios_APAC.Amount.Rev_FTCGrantIncome*FX.SGD.USD)",
+      "=(Helios_LATAM.Amount.Rev_ICMSRecovery*FX.BRL.USD)",
+      "=Helios_US.Amount.Cost_COGS+(Helios_EU.Amount.Cost_COGS*FX.EUR.USD)+(Helios_APAC.Amount.Cost_COGS*FX.SGD.USD)+(Helios_LATAM.Amount.Cost_COGS*FX.BRL.USD)",
+      "=Helios_US.Amount.Cost_OpEx+(Helios_EU.Amount.Cost_OpEx*FX.EUR.USD)+(Helios_APAC.Amount.Cost_OpEx*FX.SGD.USD)+(Helios_LATAM.Amount.Cost_OpEx*FX.BRL.USD)",
+      "=-SUM(Eliminations.TotalUSD)",
+      "=SUM(Consolidated.Lines)+Consolidated.Elimination"
+    ],
+    "elimination_rows": [
+      {
+        "account_code": 4000.0,
+        "amount_usd": 240000.0,
+        "from_entity": "Helios-EU",
+        "to_entity": "Helios-US"
+      },
+      {
+        "account_code": 4000.0,
+        "amount_usd": 86000.0,
+        "from_entity": "Helios-APAC",
+        "to_entity": "Helios-US"
+      },
+      {
+        "account_code": 4000.0,
+        "amount_usd": 41000.0,
+        "from_entity": "Helios-LATAM",
+        "to_entity": "Helios-US"
+      }
+    ],
+    "entity_coverage": [
+      {
+        "currency": "USD",
+        "entity": "Helios-US",
+        "lines": 4,
+        "local_total": 2505000.0,
+        "rate": 1.0,
+        "usd_total": 2505000.0
+      },
+      {
+        "currency": "EUR",
+        "entity": "Helios-EU",
+        "lines": 4,
+        "local_total": 1812000.0,
+        "rate": 1.0842,
+        "usd_total": 1964570.4000000001
+      },
+      {
+        "currency": "SGD",
+        "entity": "Helios-APAC",
+        "lines": 4,
+        "local_total": 1253500.0,
+        "rate": 0.7416,
+        "usd_total": 929595.6000000001
+      },
+      {
+        "currency": "BRL",
+        "entity": "Helios-LATAM",
+        "lines": 4,
+        "local_total": 3990000.0,
+        "rate": 0.1823,
+        "usd_total": 727377.0
+      }
+    ],
+    "error_checking": {
+      "circular": [],
+      "errors": []
+    },
+    "formatting": [
+      {
+        "applied": [
+          "home.bold"
+        ],
+        "range": "'Helios-US'!A1:E1"
+      },
+      {
+        "applied": [
+          "home.numberFormat"
+        ],
+        "range": "'Helios-US'!C2:C5"
+      },
+      {
+        "applied": [
+          "home.bold"
+        ],
+        "range": "'Helios-EU'!A1:E1"
+      },
+      {
+        "applied": [
+          "home.numberFormat"
+        ],
+        "range": "'Helios-EU'!C2:C5"
+      },
+      {
+        "applied": [
+          "home.bold"
+        ],
+        "range": "'Helios-APAC'!A1:E1"
+      },
+      {
+        "applied": [
+          "home.numberFormat"
+        ],
+        "range": "'Helios-APAC'!C2:C5"
+      },
+      {
+        "applied": [
+          "home.bold"
+        ],
+        "range": "'Helios-LATAM'!A1:E1"
+      },
+      {
+        "applied": [
+          "home.numberFormat"
+        ],
+        "range": "'Helios-LATAM'!C2:C5"
+      },
+      {
+        "applied": [
+          "home.bold"
+        ],
+        "range": "FX!A1:D1"
+      },
+      {
+        "applied": [
+          "home.numberFormat"
+        ],
+        "range": "FX!D2:D4"
+      },
+      {
+        "applied": [
+          "home.bold"
+        ],
+        "range": "Eliminations!A1:D1"
+      },
+      {
+        "applied": [
+          "home.numberFormat"
+        ],
+        "range": "Eliminations!D2:D4"
+      },
+      {
+        "applied": [
+          "home.bold"
+        ],
+        "range": "Consolidated!A1:B1"
+      },
+      {
+        "applied": [
+          "home.numberFormat"
+        ],
+        "range": "Consolidated!B2:B10"
+      }
+    ],
+    "fx_rates": {
+      "BRL": 0.1823,
+      "EUR": 1.0842,
+      "SGD": 0.7416
+    },
+    "line_checks": [
+      {
+        "canonical_account": "Rev.Net",
+        "consolidated_usd": 10511844.0,
+        "expected_usd": 10511844.0,
+        "formula": "=Helios_US.Amount.Rev_Net+(Helios_EU.Amount.Rev_Net*FX.EUR.USD)+(Helios_APAC.Amount.Rev_Net*FX.SGD.USD)+(Helios_LATAM.Amount.Rev_Net*FX.BRL.USD)",
+        "matches": true
+      },
+      {
+        "canonical_account": "Rev.FederalRDCredit",
+        "consolidated_usd": 75000.0,
+        "expected_usd": 75000.0,
+        "formula": "=Helios_US.Amount.Rev_FederalRDCredit",
+        "matches": true
+      },
+      {
+        "canonical_account": "Rev.IPBoxRelief",
+        "consolidated_usd": 45536.4,
+        "expected_usd": 45536.4,
+        "formula": "=(Helios_EU.Amount.Rev_IPBoxRelief*FX.EUR.USD)",
+        "matches": true
+      },
+      {
+        "canonical_account": "Rev.FTCGrantIncome",
+        "consolidated_usd": 13719.6,
+        "expected_usd": 13719.6,
+        "formula": "=(Helios_APAC.Amount.Rev_FTCGrantIncome*FX.SGD.USD)",
+        "matches": true
+      },
+      {
+        "canonical_account": "Rev.ICMSRecovery",
+        "consolidated_usd": 47398.0,
+        "expected_usd": 47398.0,
+        "formula": "=(Helios_LATAM.Amount.Rev_ICMSRecovery*FX.BRL.USD)",
+        "matches": true
+      },
+      {
+        "canonical_account": "Cost.COGS",
+        "consolidated_usd": -2920273.0,
+        "expected_usd": -2920273.0,
+        "formula": "=Helios_US.Amount.Cost_COGS+(Helios_EU.Amount.Cost_COGS*FX.EUR.USD)+(Helios_APAC.Amount.Cost_COGS*FX.SGD.USD)+(Helios_LATAM.Amount.Cost_COGS*FX.BRL.USD)",
+        "matches": true
+      },
+      {
+        "canonical_account": "Cost.OpEx",
+        "consolidated_usd": -1646682.0,
+        "expected_usd": -1646682.0,
+        "formula": "=Helios_US.Amount.Cost_OpEx+(Helios_EU.Amount.Cost_OpEx*FX.EUR.USD)+(Helios_APAC.Amount.Cost_OpEx*FX.SGD.USD)+(Helios_LATAM.Amount.Cost_OpEx*FX.BRL.USD)",
+        "matches": true
+      }
+    ],
+    "sheets": [
+      "Consolidated",
+      "Helios-US",
+      "Helios-EU",
+      "Helios-APAC",
+      "Helios-LATAM",
+      "FX",
+      "Eliminations"
+    ],
+    "trace_precedents": {
+      "B10": [],
+      "B2": [],
+      "B3": [],
+      "B4": [],
+      "B5": [],
+      "B6": [],
+      "B7": [],
+      "B8": [],
+      "B9": []
+    }
+  },
+  "cold_read": {
+    "error_checking": {
+      "circular": [],
+      "errors": []
+    },
+    "names": [
+      "Consolidated.Elimination",
+      "Consolidated.Lines",
+      "Consolidated.Total",
+      "Eliminations.Rows",
+      "Eliminations.TotalUSD",
+      "FX.BRL.USD",
+      "FX.EUR.USD",
+      "FX.SGD.USD",
+      "FX.Table",
+      "Helios_APAC.Amount.Cost_COGS",
+      "Helios_APAC.Amount.Cost_OpEx",
+      "Helios_APAC.Amount.Rev_FTCGrantIncome",
+      "Helios_APAC.Amount.Rev_Net",
+      "Helios_EU.Amount.Cost_COGS",
+      "Helios_EU.Amount.Cost_OpEx",
+      "Helios_EU.Amount.Rev_IPBoxRelief",
+      "Helios_EU.Amount.Rev_Net",
+      "Helios_LATAM.Amount.Cost_COGS",
+      "Helios_LATAM.Amount.Cost_OpEx",
+      "Helios_LATAM.Amount.Rev_ICMSRecovery",
+      "Helios_LATAM.Amount.Rev_Net",
+      "Helios_US.Amount.Cost_COGS",
+      "Helios_US.Amount.Cost_OpEx",
+      "Helios_US.Amount.Rev_FederalRDCredit",
+      "Helios_US.Amount.Rev_Net"
+    ],
+    "recalculated": [
+      10511844.0,
+      75000.0,
+      45536.4,
+      13719.6,
+      47398.0,
+      -2920273.0,
+      -1646682.0,
+      -367000.0,
+      5759543.0
+    ],
+    "sheets": [
+      "Consolidated",
+      "Helios-US",
+      "Helios-EU",
+      "Helios-APAC",
+      "Helios-LATAM",
+      "FX",
+      "Eliminations"
+    ],
+    "values": [
+      10511844.0,
+      75000.0,
+      45536.4,
+      13719.6,
+      47398.0,
+      -2920273.0,
+      -1646682.0,
+      -367000.0,
+      5759543.0
+    ]
+  },
+  "consolidated_total": 5759543.0,
+  "duration_ms": 160,
+  "elimination_total": 367000.0,
+  "engine": {
+    "commands_published": 341,
+    "search_terms": {
+      "cell": 35,
+      "formula": 28,
+      "named": 0,
+      "sheet": 23
+    },
+    "tools_published": 21,
+    "verified_commands": [
+      "sheet.rename",
+      "sheet.activate",
+      "formulas.defineName",
+      "formulas.nameManager",
+      "formulas.calculateNow",
+      "formulas.errorChecking",
+      "formulas.tracePrecedents",
+      "data.fromTextCsv",
+      "file.properties"
+    ],
+    "verified_tools": [
+      "new_workbook",
+      "write_range",
+      "read_range",
+      "format_range",
+      "inspect_workbook",
+      "save_workbook",
+      "open_workbook",
+      "execute_command",
+      "list_commands"
+    ]
+  },
+  "entity_totals": {
+    "Helios-APAC": 929595.6000000001,
+    "Helios-EU": 1964570.4000000001,
+    "Helios-LATAM": 727377.0,
+    "Helios-US": 2505000.0
+  },
+  "invariant_holds": true,
+  "named_ranges_registered": [
+    "Consolidated.Elimination",
+    "Consolidated.Lines",
+    "Consolidated.Total",
+    "Eliminations.Rows",
+    "Eliminations.TotalUSD",
+    "FX.BRL.USD",
+    "FX.EUR.USD",
+    "FX.SGD.USD",
+    "FX.Table",
+    "Helios_APAC.Amount.Cost_COGS",
+    "Helios_APAC.Amount.Cost_OpEx",
+    "Helios_APAC.Amount.Rev_FTCGrantIncome",
+    "Helios_APAC.Amount.Rev_Net",
+    "Helios_EU.Amount.Cost_COGS",
+    "Helios_EU.Amount.Cost_OpEx",
+    "Helios_EU.Amount.Rev_IPBoxRelief",
+    "Helios_EU.Amount.Rev_Net",
+    "Helios_LATAM.Amount.Cost_COGS",
+    "Helios_LATAM.Amount.Cost_OpEx",
+    "Helios_LATAM.Amount.Rev_ICMSRecovery",
+    "Helios_LATAM.Amount.Rev_Net",
+    "Helios_US.Amount.Cost_COGS",
+    "Helios_US.Amount.Cost_OpEx",
+    "Helios_US.Amount.Rev_FederalRDCredit",
+    "Helios_US.Amount.Rev_Net"
+  ],
+  "period": "2026-09",
+  "workbook": {
+    "bytes": 14524,
+    "file": "helios-consolidated.xlsx",
+    "sha256": "0e767fec2525cff93cbaca18b13edde91e46024d69844b54ce6d22686935e851"
+  }
+}

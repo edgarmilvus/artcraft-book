@@ -1,0 +1,34 @@
+{
+  "documentId": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/scenarios/halt/q3-catalog.designcraft",
+  "remediated": {
+    "linksRelinked": [
+      "hero-1.png",
+      "hero-2.png",
+      "hero-3.png",
+      "hero-4.png"
+    ],
+    "linksPlaceholdered": [
+      "hero-5.png",
+      "hero-6.png",
+      "hero-7.png"
+    ],
+    "fontsReplaced": [],
+    "oversetResolved": true,
+    "swatchesRestored": [
+      "Northwind Teal (legacy)"
+    ]
+  },
+  "halted": [
+    {
+      "kind": "font",
+      "reason": "the committed table maps the family to null, so there is no acceptable substitute",
+      "family": "Inter-Bold"
+    }
+  ],
+  "certificate": {
+    "pdf": "cert-q3-catalog.pdf",
+    "sha256": "bb365a87754599fa99c97e555e2b3232f5b4726f7d35960de71b1e72b89cc859",
+    "auditLog": "cert-q3-catalog.audit.json"
+  },
+  "remediatedDocument": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/scenarios/halt/q3-catalog.remediated.designcraft"
+}

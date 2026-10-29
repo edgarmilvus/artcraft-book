@@ -1,0 +1,158 @@
+{
+  "exercise": 4,
+  "checks": 11,
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "name": "manifest produces the four artifacts plus the HTML extra",
+      "ok": true
+    },
+    {
+      "name": "every node names a command its engine actually exposes",
+      "ok": true
+    },
+    {
+      "name": "dependencies exist and form an acyclic graph",
+      "ok": true
+    },
+    {
+      "name": "the three branches only meet where the manifest says they do",
+      "ok": true
+    },
+    {
+      "name": "build is deterministic",
+      "ok": true
+    },
+    {
+      "name": "execution waves preserve dependencies and start both roots together",
+      "ok": true
+    },
+    {
+      "name": "compensation runs deepest-first in sequential waves",
+      "ok": true
+    },
+    {
+      "name": "exports are reported as irreversible, not silently compensated",
+      "ok": true
+    },
+    {
+      "name": "reversible edits are compensated, failed node and never-run nodes are not",
+      "ok": true
+    },
+    {
+      "name": "native-atomic nodes are skipped: the app already rolled back",
+      "ok": true
+    },
+    {
+      "name": "graph, waves and compensation plan were written as inspectable artifacts",
+      "ok": true
+    }
+  ],
+  "pipelineId": "pipe-01",
+  "correlationId": "corr-01",
+  "nodes": 15,
+  "executionWaves": [
+    [
+      "dc_open",
+      "wc_open"
+    ],
+    [
+      "dc_frame",
+      "wc_apply_style"
+    ],
+    [
+      "dc_type",
+      "wc_save"
+    ],
+    [
+      "print_pdf",
+      "web_pdf",
+      "web_html"
+    ],
+    [
+      "pc_open"
+    ],
+    [
+      "pc_redact_mark"
+    ],
+    [
+      "pc_redact_apply"
+    ],
+    [
+      "pc_sign_field"
+    ],
+    [
+      "pc_a11y_check"
+    ],
+    [
+      "pc_save"
+    ]
+  ],
+  "compensationWaves": [
+    [
+      {
+        "nodeId": "pc_sign_field",
+        "app": "pdfcraft",
+        "command": "edit_undo",
+        "params": {}
+      }
+    ],
+    [
+      {
+        "nodeId": "pc_redact_apply",
+        "app": "pdfcraft",
+        "command": "edit_undo",
+        "params": {}
+      }
+    ],
+    [
+      {
+        "nodeId": "pc_redact_mark",
+        "app": "pdfcraft",
+        "command": "redact_clear",
+        "params": {}
+      }
+    ],
+    [
+      {
+        "nodeId": "dc_type",
+        "app": "designcraft",
+        "command": "edit.undo",
+        "params": {}
+      }
+    ],
+    [
+      {
+        "nodeId": "dc_frame",
+        "app": "designcraft",
+        "command": "edit.undo",
+        "params": {}
+      },
+      {
+        "nodeId": "wc_apply_style",
+        "app": "wordcraft",
+        "command": "edit.undo",
+        "params": {}
+      }
+    ]
+  ],
+  "irreversible": [
+    "pc_open",
+    "print_pdf",
+    "web_pdf",
+    "web_html",
+    "wc_save",
+    "dc_open",
+    "wc_open"
+  ],
+  "artifacts": [
+    "manifest.json",
+    "pipeline.json",
+    "execution-waves.json",
+    "compensation-plan.json",
+    "registry-proof.json",
+    "pipeline.dot",
+    "report.json"
+  ]
+}

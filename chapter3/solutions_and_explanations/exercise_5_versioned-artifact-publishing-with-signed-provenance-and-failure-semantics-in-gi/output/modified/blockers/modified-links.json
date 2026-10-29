@@ -1,0 +1,19 @@
+[
+  {
+    "asset": 8,
+    "name": "hero.png",
+    "path": "assets/hero.png",
+    "pixels": [
+      400,
+      400
+    ],
+    "status": "modified",
+    "uses": [
+      {
+        "id": 9,
+        "page": "1",
+        "ppi": 96
+      }
+    ]
+  }
+]

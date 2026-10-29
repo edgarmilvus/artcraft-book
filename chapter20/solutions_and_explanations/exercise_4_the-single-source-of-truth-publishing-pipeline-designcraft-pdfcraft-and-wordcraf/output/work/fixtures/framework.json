@@ -1,0 +1,55 @@
+{
+  "release": "2025.11",
+  "codename": "RIVERBED",
+  "title": "Threat Modeling Framework",
+  "edition": "First",
+  "authors": [
+    {
+      "name": "…",
+      "affiliation": "…"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch-intro",
+      "number": 1,
+      "title": "Introduction",
+      "markdownPath": "content/01-intro.md",
+      "columns": 2,
+      "figures": [
+        {
+          "id": "fig-pipeline",
+          "path": "assets/fig-pipeline.png",
+          "caption": "The threat-modeling pipeline in practice."
+        }
+      ],
+      "footnotes": [
+        {
+          "id": "fn-1",
+          "text": "A footnote carried by the canonical manifest."
+        }
+      ]
+    },
+    {
+      "id": "ch-threats",
+      "number": 2,
+      "title": "Worked Example",
+      "markdownPath": "content/02-threats.md",
+      "columns": 2,
+      "figures": [],
+      "footnotes": []
+    }
+  ],
+  "frontMatter": {
+    "executiveSummaryMarkdownPath": "content/00-exec-summary.md",
+    "heroBackgroundPath": "assets/hero-plate.png"
+  },
+  "outputRoot": "../out",
+  "typography": {
+    "fontFamily": "Source Serif 4",
+    "divergenceBudget": {
+      "totalPages": 2,
+      "perChapterPages": 1
+    }
+  }
+}

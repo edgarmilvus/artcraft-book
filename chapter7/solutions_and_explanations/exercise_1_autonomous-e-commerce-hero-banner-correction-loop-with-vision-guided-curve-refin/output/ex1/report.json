@@ -1,0 +1,17 @@
+{
+  "exercise": 1,
+  "engine": "photocraft-cli",
+  "assertions": 71,
+  "scenarios": [
+    "converge",
+    "low-confidence",
+    "dangerous",
+    "batch-failure",
+    "ssd"
+  ],
+  "artefacts": [
+    "hero.png",
+    "report.json"
+  ],
+  "result": "banner loop converged; confirmation gate, footprint guard, batch rollback and SSD rollback verified"
+}

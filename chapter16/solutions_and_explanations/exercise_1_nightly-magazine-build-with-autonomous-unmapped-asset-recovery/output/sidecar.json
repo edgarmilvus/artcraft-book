@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "issue": 1,
+  "publishDate": "2026-10-24T02:00:00Z",
+  "resolutions": [
+    {
+      "contentId": "hero",
+      "tier": "direct"
+    },
+    {
+      "contentId": "fig",
+      "tier": "ledger"
+    }
+  ],
+  "visionVerdict": {
+    "ok": true,
+    "placeholderTilesVisible": 1,
+    "notes": "one amber tile"
+  },
+  "degraded": true,
+  "signature": "1bee04f7d6126dc2b811306ed2b949ac03b0a375939d70c5daaef7c9f1cc6bad"
+}

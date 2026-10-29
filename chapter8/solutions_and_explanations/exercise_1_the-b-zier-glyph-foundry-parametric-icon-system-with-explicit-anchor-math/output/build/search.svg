@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <title>search</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M48 16 C58.667 26.667 69.333 37.333 80 48 C69.333 58.667 58.667 69.333 48 80 C37.333 69.333 26.667 58.667 16 48 C26.667 37.333 37.333 26.667 48 16 Z M72 80 L104 112 L112 104 L80 72 Z" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

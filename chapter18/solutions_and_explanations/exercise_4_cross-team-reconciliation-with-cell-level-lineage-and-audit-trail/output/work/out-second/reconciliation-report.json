@@ -1,0 +1,1814 @@
+{
+  "period": "2026-09",
+  "verdicts": [
+    {
+      "account": "Cash",
+      "source_values": {
+        "acct": 2375000.0,
+        "fpa": 2375000.0,
+        "treas": 2375000.0
+      },
+      "variance": 0.0,
+      "tolerance": "exact",
+      "reconciling_item": null,
+      "status": "pass",
+      "lineage": [
+        {
+          "reconciliation_account": "Cash",
+          "source_workbook": "acct",
+          "source_cell": "Monthly!J7",
+          "named_range": null,
+          "value": 2375000.0,
+          "graph_distance": 1,
+          "salience_score": 6.0,
+          "salience_reasons": [
+            "changed",
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "Cash",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B8",
+          "named_range": "Assumptions.Revolver",
+          "value": 2500000.0,
+          "graph_distance": 2,
+          "salience_score": 5.3333,
+          "salience_reasons": [
+            "named"
+          ]
+        },
+        {
+          "reconciliation_account": "Cash",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B40",
+          "named_range": null,
+          "value": 2375000.0,
+          "graph_distance": 1,
+          "salience_score": 3.0,
+          "salience_reasons": [
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "Cash",
+          "source_workbook": "treas",
+          "source_cell": "CashPosition!B4",
+          "named_range": null,
+          "value": 2375000.0,
+          "graph_distance": 1,
+          "salience_score": 6.0,
+          "salience_reasons": [
+            "changed",
+            "first-hop"
+          ]
+        }
+      ],
+      "final_status": "pass",
+      "likely_reconciling_items": []
+    },
+    {
+      "account": "ARR",
+      "source_values": {
+        "acct": 545760000.0,
+        "fpa": 544473600.0,
+        "treas": 545760000.0
+      },
+      "variance": 1286400.0,
+      "tolerance": "pct:0.5",
+      "reconciling_item": null,
+      "status": "pass",
+      "lineage": [
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "acct",
+          "source_cell": "Monthly!J4",
+          "named_range": null,
+          "value": 45480000.0,
+          "graph_distance": 2,
+          "salience_score": 7.3333,
+          "salience_reasons": [
+            "flagged",
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "acct",
+          "source_cell": "Monthly!J9",
+          "named_range": null,
+          "value": 545760000.0,
+          "graph_distance": 1,
+          "salience_score": 3.0,
+          "salience_reasons": [
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B3",
+          "named_range": "Assumptions.Base.MRR",
+          "value": 4200000.0,
+          "graph_distance": 3,
+          "salience_score": 8.25,
+          "salience_reasons": [
+            "named",
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B4",
+          "named_range": "Assumptions.NRR",
+          "value": 1.08,
+          "graph_distance": 3,
+          "salience_score": 8.25,
+          "salience_reasons": [
+            "named",
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B11:B34",
+          "named_range": null,
+          "value": 45125000.0,
+          "graph_distance": 3,
+          "salience_score": 7.75,
+          "salience_reasons": [
+            "range-block",
+            "flagged",
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B21",
+          "named_range": null,
+          "value": 1860000.0,
+          "graph_distance": 3,
+          "salience_score": 7.25,
+          "salience_reasons": [
+            "flagged",
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B19",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B20",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B22",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B23",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B24",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B25",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B26",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B27",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B28",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B29",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B30",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B31",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B5",
+          "named_range": null,
+          "value": 0.021,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B39",
+          "named_range": null,
+          "value": 544473600.0,
+          "graph_distance": 1,
+          "salience_score": 3.0,
+          "salience_reasons": [
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B36",
+          "named_range": null,
+          "value": 45125000.0,
+          "graph_distance": 2,
+          "salience_score": 0.3333,
+          "salience_reasons": []
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B37",
+          "named_range": null,
+          "value": 88200.0,
+          "graph_distance": 2,
+          "salience_score": 0.3333,
+          "salience_reasons": []
+        },
+        {
+          "reconciliation_account": "ARR",
+          "source_workbook": "treas",
+          "source_cell": "CashPosition!B8",
+          "named_range": null,
+          "value": 45480000.0,
+          "graph_distance": 1,
+          "salience_score": 6.0,
+          "salience_reasons": [
+            "changed",
+            "first-hop"
+          ]
+        }
+      ],
+      "final_status": "pass",
+      "likely_reconciling_items": []
+    },
+    {
+      "account": "DeferredRevenue",
+      "source_values": {
+        "acct": 8122500.0,
+        "fpa": 8122500.0,
+        "treas": 8122500.4
+      },
+      "variance": 0.40000000037252903,
+      "tolerance": "exact",
+      "reconciling_item": "Deferred revenue true-up on the Q3 billing run",
+      "status": "pass-with-reconciling-item",
+      "lineage": [
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "acct",
+          "source_cell": "Monthly!J5",
+          "named_range": null,
+          "value": 8122500.0,
+          "graph_distance": 1,
+          "salience_score": 6.0,
+          "salience_reasons": [
+            "changed",
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B11:B34",
+          "named_range": null,
+          "value": 45125000.0,
+          "graph_distance": 3,
+          "salience_score": 7.75,
+          "salience_reasons": [
+            "range-block",
+            "flagged",
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B21",
+          "named_range": null,
+          "value": 1860000.0,
+          "graph_distance": 3,
+          "salience_score": 7.25,
+          "salience_reasons": [
+            "flagged",
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B19",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B20",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B22",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B23",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B24",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B25",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B26",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B27",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B28",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B29",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B30",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B31",
+          "named_range": null,
+          "value": 1880000.0,
+          "graph_distance": 3,
+          "salience_score": 3.25,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B41",
+          "named_range": null,
+          "value": 8122500.0,
+          "graph_distance": 1,
+          "salience_score": 3.0,
+          "salience_reasons": [
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B36",
+          "named_range": null,
+          "value": 45125000.0,
+          "graph_distance": 2,
+          "salience_score": 0.3333,
+          "salience_reasons": []
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B6",
+          "named_range": null,
+          "value": 0.18,
+          "graph_distance": 2,
+          "salience_score": 0.3333,
+          "salience_reasons": []
+        },
+        {
+          "reconciliation_account": "DeferredRevenue",
+          "source_workbook": "treas",
+          "source_cell": "CashPosition!B6",
+          "named_range": null,
+          "value": 8122500.4,
+          "graph_distance": 1,
+          "salience_score": 10.0,
+          "salience_reasons": [
+            "flagged",
+            "changed",
+            "first-hop"
+          ]
+        }
+      ],
+      "final_status": "pass-with-reconciling-item",
+      "likely_reconciling_items": []
+    },
+    {
+      "account": "TotalDebt",
+      "source_values": {
+        "acct": 100000000.0,
+        "fpa": 100000000.0,
+        "treas": 100000000.2501
+      },
+      "variance": 0.2501000016927719,
+      "tolerance": "exact",
+      "reconciling_item": null,
+      "status": "fail",
+      "lineage": [
+        {
+          "reconciliation_account": "TotalDebt",
+          "source_workbook": "acct",
+          "source_cell": "Monthly!J6",
+          "named_range": null,
+          "value": 100000000.0,
+          "graph_distance": 1,
+          "salience_score": 3.0,
+          "salience_reasons": [
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "TotalDebt",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B7",
+          "named_range": "Assumptions.OpeningDebt",
+          "value": 125000000.0,
+          "graph_distance": 2,
+          "salience_score": 5.3333,
+          "salience_reasons": [
+            "named"
+          ]
+        },
+        {
+          "reconciliation_account": "TotalDebt",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B43",
+          "named_range": null,
+          "value": 100000000.0,
+          "graph_distance": 1,
+          "salience_score": 3.0,
+          "salience_reasons": [
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "TotalDebt",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B42",
+          "named_range": null,
+          "value": 25000000.0,
+          "graph_distance": 2,
+          "salience_score": 0.3333,
+          "salience_reasons": []
+        },
+        {
+          "reconciliation_account": "TotalDebt",
+          "source_workbook": "treas",
+          "source_cell": "CashPosition!B7",
+          "named_range": null,
+          "value": 100000000.2501,
+          "graph_distance": 1,
+          "salience_score": 6.0,
+          "salience_reasons": [
+            "changed",
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "TotalDebt",
+          "source_workbook": "treas",
+          "source_cell": "CashPosition!B20",
+          "named_range": null,
+          "value": 0.2501,
+          "graph_distance": 2,
+          "salience_score": 3.3333,
+          "salience_reasons": [
+            "changed"
+          ]
+        },
+        {
+          "reconciliation_account": "TotalDebt",
+          "source_workbook": "treas",
+          "source_cell": "CashPosition!B21",
+          "named_range": null,
+          "value": 100000000.0,
+          "graph_distance": 2,
+          "salience_score": 0.3333,
+          "salience_reasons": []
+        }
+      ],
+      "final_status": "pass",
+      "likely_reconciling_items": [
+        {
+          "account": "TotalDebt",
+          "description": "Debt principal booked one day late",
+          "occurrences": 5
+        },
+        {
+          "account": "TotalDebt",
+          "description": "FX translation on the euro tranche",
+          "occurrences": 3
+        },
+        {
+          "account": "TotalDebt",
+          "description": "Amortisation schedule restatement",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "account": "AvailableLiquidity",
+      "source_values": {
+        "acct": 4625000.0,
+        "fpa": 4875000.0,
+        "treas": 4875000.0
+      },
+      "variance": 250000.0,
+      "tolerance": "$250",
+      "reconciling_item": null,
+      "status": "fail",
+      "lineage": [
+        {
+          "reconciliation_account": "AvailableLiquidity",
+          "source_workbook": "acct",
+          "source_cell": "Monthly!J7",
+          "named_range": null,
+          "value": 2375000.0,
+          "graph_distance": 1,
+          "salience_score": 6.0,
+          "salience_reasons": [
+            "changed",
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "AvailableLiquidity",
+          "source_workbook": "acct",
+          "source_cell": "Monthly!J8",
+          "named_range": null,
+          "value": 2250000.0,
+          "graph_distance": 1,
+          "salience_score": 6.0,
+          "salience_reasons": [
+            "changed",
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "AvailableLiquidity",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B8",
+          "named_range": "Assumptions.Revolver",
+          "value": 2500000.0,
+          "graph_distance": 2,
+          "salience_score": 5.3333,
+          "salience_reasons": [
+            "named"
+          ]
+        },
+        {
+          "reconciliation_account": "AvailableLiquidity",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B44",
+          "named_range": null,
+          "value": 4875000.0,
+          "graph_distance": 1,
+          "salience_score": 3.0,
+          "salience_reasons": [
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "AvailableLiquidity",
+          "source_workbook": "fpa",
+          "source_cell": "Assumptions!B40",
+          "named_range": null,
+          "value": 2375000.0,
+          "graph_distance": 2,
+          "salience_score": 0.3333,
+          "salience_reasons": []
+        },
+        {
+          "reconciliation_account": "AvailableLiquidity",
+          "source_workbook": "treas",
+          "source_cell": "CashPosition!B4",
+          "named_range": null,
+          "value": 2375000.0,
+          "graph_distance": 1,
+          "salience_score": 6.0,
+          "salience_reasons": [
+            "changed",
+            "first-hop"
+          ]
+        },
+        {
+          "reconciliation_account": "AvailableLiquidity",
+          "source_workbook": "treas",
+          "source_cell": "CashPosition!B5",
+          "named_range": null,
+          "value": 2500000.0,
+          "graph_distance": 1,
+          "salience_score": 3.0,
+          "salience_reasons": [
+            "first-hop"
+          ]
+        }
+      ],
+      "final_status": "pass-with-reconciling-item",
+      "likely_reconciling_items": [
+        {
+          "account": "AvailableLiquidity",
+          "description": "Revolver draw booked by Treasury but not yet by Accounting",
+          "occurrences": 9
+        },
+        {
+          "account": "AvailableLiquidity",
+          "description": "Escrow release timing",
+          "occurrences": 4
+        },
+        {
+          "account": "AvailableLiquidity",
+          "description": "FX revaluation on the euro balance",
+          "occurrences": 2
+        }
+      ]
+    }
+  ],
+  "lineages": {
+    "Cash": [
+      {
+        "reconciliation_account": "Cash",
+        "source_workbook": "acct",
+        "source_cell": "Monthly!J7",
+        "named_range": null,
+        "value": 2375000.0,
+        "graph_distance": 1,
+        "salience_score": 6.0,
+        "salience_reasons": [
+          "changed",
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "Cash",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B8",
+        "named_range": "Assumptions.Revolver",
+        "value": 2500000.0,
+        "graph_distance": 2,
+        "salience_score": 5.3333,
+        "salience_reasons": [
+          "named"
+        ]
+      },
+      {
+        "reconciliation_account": "Cash",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B40",
+        "named_range": null,
+        "value": 2375000.0,
+        "graph_distance": 1,
+        "salience_score": 3.0,
+        "salience_reasons": [
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "Cash",
+        "source_workbook": "treas",
+        "source_cell": "CashPosition!B4",
+        "named_range": null,
+        "value": 2375000.0,
+        "graph_distance": 1,
+        "salience_score": 6.0,
+        "salience_reasons": [
+          "changed",
+          "first-hop"
+        ]
+      }
+    ],
+    "ARR": [
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "acct",
+        "source_cell": "Monthly!J4",
+        "named_range": null,
+        "value": 45480000.0,
+        "graph_distance": 2,
+        "salience_score": 7.3333,
+        "salience_reasons": [
+          "flagged",
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "acct",
+        "source_cell": "Monthly!J9",
+        "named_range": null,
+        "value": 545760000.0,
+        "graph_distance": 1,
+        "salience_score": 3.0,
+        "salience_reasons": [
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B3",
+        "named_range": "Assumptions.Base.MRR",
+        "value": 4200000.0,
+        "graph_distance": 3,
+        "salience_score": 8.25,
+        "salience_reasons": [
+          "named",
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B4",
+        "named_range": "Assumptions.NRR",
+        "value": 1.08,
+        "graph_distance": 3,
+        "salience_score": 8.25,
+        "salience_reasons": [
+          "named",
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B11:B34",
+        "named_range": null,
+        "value": 45125000.0,
+        "graph_distance": 3,
+        "salience_score": 7.75,
+        "salience_reasons": [
+          "range-block",
+          "flagged",
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B21",
+        "named_range": null,
+        "value": 1860000.0,
+        "graph_distance": 3,
+        "salience_score": 7.25,
+        "salience_reasons": [
+          "flagged",
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B19",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B20",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B22",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B23",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B24",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B25",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B26",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B27",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B28",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B29",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B30",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B31",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B5",
+        "named_range": null,
+        "value": 0.021,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B39",
+        "named_range": null,
+        "value": 544473600.0,
+        "graph_distance": 1,
+        "salience_score": 3.0,
+        "salience_reasons": [
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B36",
+        "named_range": null,
+        "value": 45125000.0,
+        "graph_distance": 2,
+        "salience_score": 0.3333,
+        "salience_reasons": []
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B37",
+        "named_range": null,
+        "value": 88200.0,
+        "graph_distance": 2,
+        "salience_score": 0.3333,
+        "salience_reasons": []
+      },
+      {
+        "reconciliation_account": "ARR",
+        "source_workbook": "treas",
+        "source_cell": "CashPosition!B8",
+        "named_range": null,
+        "value": 45480000.0,
+        "graph_distance": 1,
+        "salience_score": 6.0,
+        "salience_reasons": [
+          "changed",
+          "first-hop"
+        ]
+      }
+    ],
+    "DeferredRevenue": [
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "acct",
+        "source_cell": "Monthly!J5",
+        "named_range": null,
+        "value": 8122500.0,
+        "graph_distance": 1,
+        "salience_score": 6.0,
+        "salience_reasons": [
+          "changed",
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B11:B34",
+        "named_range": null,
+        "value": 45125000.0,
+        "graph_distance": 3,
+        "salience_score": 7.75,
+        "salience_reasons": [
+          "range-block",
+          "flagged",
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B21",
+        "named_range": null,
+        "value": 1860000.0,
+        "graph_distance": 3,
+        "salience_score": 7.25,
+        "salience_reasons": [
+          "flagged",
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B19",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B20",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B22",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B23",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B24",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B25",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B26",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B27",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B28",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B29",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B30",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B31",
+        "named_range": null,
+        "value": 1880000.0,
+        "graph_distance": 3,
+        "salience_score": 3.25,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B41",
+        "named_range": null,
+        "value": 8122500.0,
+        "graph_distance": 1,
+        "salience_score": 3.0,
+        "salience_reasons": [
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B36",
+        "named_range": null,
+        "value": 45125000.0,
+        "graph_distance": 2,
+        "salience_score": 0.3333,
+        "salience_reasons": []
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B6",
+        "named_range": null,
+        "value": 0.18,
+        "graph_distance": 2,
+        "salience_score": 0.3333,
+        "salience_reasons": []
+      },
+      {
+        "reconciliation_account": "DeferredRevenue",
+        "source_workbook": "treas",
+        "source_cell": "CashPosition!B6",
+        "named_range": null,
+        "value": 8122500.4,
+        "graph_distance": 1,
+        "salience_score": 10.0,
+        "salience_reasons": [
+          "flagged",
+          "changed",
+          "first-hop"
+        ]
+      }
+    ],
+    "TotalDebt": [
+      {
+        "reconciliation_account": "TotalDebt",
+        "source_workbook": "acct",
+        "source_cell": "Monthly!J6",
+        "named_range": null,
+        "value": 100000000.0,
+        "graph_distance": 1,
+        "salience_score": 3.0,
+        "salience_reasons": [
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "TotalDebt",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B7",
+        "named_range": "Assumptions.OpeningDebt",
+        "value": 125000000.0,
+        "graph_distance": 2,
+        "salience_score": 5.3333,
+        "salience_reasons": [
+          "named"
+        ]
+      },
+      {
+        "reconciliation_account": "TotalDebt",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B43",
+        "named_range": null,
+        "value": 100000000.0,
+        "graph_distance": 1,
+        "salience_score": 3.0,
+        "salience_reasons": [
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "TotalDebt",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B42",
+        "named_range": null,
+        "value": 25000000.0,
+        "graph_distance": 2,
+        "salience_score": 0.3333,
+        "salience_reasons": []
+      },
+      {
+        "reconciliation_account": "TotalDebt",
+        "source_workbook": "treas",
+        "source_cell": "CashPosition!B7",
+        "named_range": null,
+        "value": 100000000.2501,
+        "graph_distance": 1,
+        "salience_score": 6.0,
+        "salience_reasons": [
+          "changed",
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "TotalDebt",
+        "source_workbook": "treas",
+        "source_cell": "CashPosition!B20",
+        "named_range": null,
+        "value": 0.2501,
+        "graph_distance": 2,
+        "salience_score": 3.3333,
+        "salience_reasons": [
+          "changed"
+        ]
+      },
+      {
+        "reconciliation_account": "TotalDebt",
+        "source_workbook": "treas",
+        "source_cell": "CashPosition!B21",
+        "named_range": null,
+        "value": 100000000.0,
+        "graph_distance": 2,
+        "salience_score": 0.3333,
+        "salience_reasons": []
+      }
+    ],
+    "AvailableLiquidity": [
+      {
+        "reconciliation_account": "AvailableLiquidity",
+        "source_workbook": "acct",
+        "source_cell": "Monthly!J7",
+        "named_range": null,
+        "value": 2375000.0,
+        "graph_distance": 1,
+        "salience_score": 6.0,
+        "salience_reasons": [
+          "changed",
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "AvailableLiquidity",
+        "source_workbook": "acct",
+        "source_cell": "Monthly!J8",
+        "named_range": null,
+        "value": 2250000.0,
+        "graph_distance": 1,
+        "salience_score": 6.0,
+        "salience_reasons": [
+          "changed",
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "AvailableLiquidity",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B8",
+        "named_range": "Assumptions.Revolver",
+        "value": 2500000.0,
+        "graph_distance": 2,
+        "salience_score": 5.3333,
+        "salience_reasons": [
+          "named"
+        ]
+      },
+      {
+        "reconciliation_account": "AvailableLiquidity",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B44",
+        "named_range": null,
+        "value": 4875000.0,
+        "graph_distance": 1,
+        "salience_score": 3.0,
+        "salience_reasons": [
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "AvailableLiquidity",
+        "source_workbook": "fpa",
+        "source_cell": "Assumptions!B40",
+        "named_range": null,
+        "value": 2375000.0,
+        "graph_distance": 2,
+        "salience_score": 0.3333,
+        "salience_reasons": []
+      },
+      {
+        "reconciliation_account": "AvailableLiquidity",
+        "source_workbook": "treas",
+        "source_cell": "CashPosition!B4",
+        "named_range": null,
+        "value": 2375000.0,
+        "graph_distance": 1,
+        "salience_score": 6.0,
+        "salience_reasons": [
+          "changed",
+          "first-hop"
+        ]
+      },
+      {
+        "reconciliation_account": "AvailableLiquidity",
+        "source_workbook": "treas",
+        "source_cell": "CashPosition!B5",
+        "named_range": null,
+        "value": 2500000.0,
+        "graph_distance": 1,
+        "salience_score": 3.0,
+        "salience_reasons": [
+          "first-hop"
+        ]
+      }
+    ]
+  },
+  "remediation_trace": [
+    {
+      "account": "TotalDebt",
+      "attempted_action": "adjust-cell",
+      "target": {
+        "workbook": "treas",
+        "cell": "CashPosition!B7"
+      },
+      "pre_verdict": "fail",
+      "post_verdict": "pass",
+      "notes": "The variance is a rounding artefact: treas reports 100,000,000.25 while the other two sources agree on 100,000,000.00.  The highest-salience non-named contributor is CashPosition!B7, whose value moved by 0.25 since the prior period.  Rounding treas to the 0-decimal precision of the consensus closes the 0.25 difference, so the reconciliation passes once the rounded figure is booked.  The proposal is applied in the scratch sheet only; treas is not modified.",
+      "outlier_source": "treas",
+      "reconciliation_cell": "CashPosition!C12",
+      "consensus": 100000000.0,
+      "current_value": 100000000.2501,
+      "proposed_value": 100000000.0,
+      "adjustment": -0.2501,
+      "residual_variance": 0.0,
+      "proposed_item": null
+    },
+    {
+      "account": "AvailableLiquidity",
+      "attempted_action": "reconciling-item",
+      "target": {
+        "workbook": "acct",
+        "cell": "Monthly!J8"
+      },
+      "pre_verdict": "fail",
+      "post_verdict": "pass-with-reconciling-item",
+      "notes": "The difference is structural, not a rounding artefact: rounding acct to the 0-decimal precision of the consensus changes it by 0.00 and leaves 250,000.00 open.  The highest-salience non-named contributor is Monthly!J8, whose value moved by 250,000.00 since the prior period - the movement is the difference itself.  The agent therefore books the reconciling item the prior period used most often for this account - Revolver draw booked by Treasury but not yet by Accounting (proposed by the close agent; the most frequent item of the prior period, 9 occurrence(s)) - for 250,000.00, and re-reconciles the account with it.  The source workbooks stay untouched; the proposal lives in the scratch sheet.",
+      "outlier_source": "acct",
+      "reconciliation_cell": "Monthly!B15",
+      "consensus": 4875000.0,
+      "current_value": 4625000.0,
+      "proposed_value": 4625000.0,
+      "adjustment": 0.0,
+      "residual_variance": 250000.0,
+      "proposed_item": "Revolver draw booked by Treasury but not yet by Accounting (proposed by the close agent; the most frequent item of the prior period, 9 occurrence(s))"
+    }
+  ],
+  "is_final_pass": true,
+  "duration_ms": 187,
+  "sources": {
+    "acct": {
+      "path": "chapter18/solutions_and_explanations/exercise_4_cross-team-reconciliation-with-cell-level-lineage-and-audit-trail/output/work/fixtures/accounting-actuals.xlsx",
+      "window": 0,
+      "title": "accounting-actuals.xlsx",
+      "sheets": [
+        "Monthly",
+        "ReconcilingItems"
+      ],
+      "sha256": "3ae360cbf43bb29d108fa45fdf74268639e80dd6b668ad46bab65cf325635396"
+    },
+    "fpa": {
+      "path": "chapter18/solutions_and_explanations/exercise_4_cross-team-reconciliation-with-cell-level-lineage-and-audit-trail/output/work/fixtures/fpa-forecast.xlsx",
+      "window": 1,
+      "title": "fpa-forecast.xlsx",
+      "sheets": [
+        "Assumptions",
+        "Summary"
+      ],
+      "sha256": "5382dad9590b48c78801e996ff2299f721289bd3c782201bd1b933a95c71f0ec"
+    },
+    "treas": {
+      "path": "chapter18/solutions_and_explanations/exercise_4_cross-team-reconciliation-with-cell-level-lineage-and-audit-trail/output/work/fixtures/treasury-cash.xlsx",
+      "window": 2,
+      "title": "treasury-cash.xlsx",
+      "sheets": [
+        "CashPosition"
+      ],
+      "sha256": "377e98cbd34ffc58750aaf8fa37ae20e317f351395286e31837fc89a156c31fe"
+    }
+  },
+  "pruning": {
+    "Cash": {
+      "limit": 20,
+      "per_source": {
+        "acct": {
+          "candidates_considered": 1,
+          "rows_emitted": 1,
+          "rows_before_limit": 1,
+          "dropped": 0
+        },
+        "fpa": {
+          "candidates_considered": 2,
+          "rows_emitted": 2,
+          "rows_before_limit": 2,
+          "dropped": 0
+        },
+        "treas": {
+          "candidates_considered": 1,
+          "rows_emitted": 1,
+          "rows_before_limit": 1,
+          "dropped": 0
+        }
+      },
+      "rows_emitted": 4
+    },
+    "ARR": {
+      "limit": 20,
+      "per_source": {
+        "acct": {
+          "candidates_considered": 2,
+          "rows_emitted": 2,
+          "rows_before_limit": 2,
+          "dropped": 0
+        },
+        "fpa": {
+          "candidates_considered": 31,
+          "rows_emitted": 20,
+          "rows_before_limit": 21,
+          "dropped": 1
+        },
+        "treas": {
+          "candidates_considered": 1,
+          "rows_emitted": 1,
+          "rows_before_limit": 1,
+          "dropped": 0
+        }
+      },
+      "rows_emitted": 23
+    },
+    "DeferredRevenue": {
+      "limit": 20,
+      "per_source": {
+        "acct": {
+          "candidates_considered": 1,
+          "rows_emitted": 1,
+          "rows_before_limit": 1,
+          "dropped": 0
+        },
+        "fpa": {
+          "candidates_considered": 27,
+          "rows_emitted": 17,
+          "rows_before_limit": 17,
+          "dropped": 0
+        },
+        "treas": {
+          "candidates_considered": 1,
+          "rows_emitted": 1,
+          "rows_before_limit": 1,
+          "dropped": 0
+        }
+      },
+      "rows_emitted": 19
+    },
+    "TotalDebt": {
+      "limit": 20,
+      "per_source": {
+        "acct": {
+          "candidates_considered": 1,
+          "rows_emitted": 1,
+          "rows_before_limit": 1,
+          "dropped": 0
+        },
+        "fpa": {
+          "candidates_considered": 3,
+          "rows_emitted": 3,
+          "rows_before_limit": 3,
+          "dropped": 0
+        },
+        "treas": {
+          "candidates_considered": 3,
+          "rows_emitted": 3,
+          "rows_before_limit": 3,
+          "dropped": 0
+        }
+      },
+      "rows_emitted": 7
+    },
+    "AvailableLiquidity": {
+      "limit": 20,
+      "per_source": {
+        "acct": {
+          "candidates_considered": 2,
+          "rows_emitted": 2,
+          "rows_before_limit": 2,
+          "dropped": 0
+        },
+        "fpa": {
+          "candidates_considered": 3,
+          "rows_emitted": 3,
+          "rows_before_limit": 3,
+          "dropped": 0
+        },
+        "treas": {
+          "candidates_considered": 2,
+          "rows_emitted": 2,
+          "rows_before_limit": 2,
+          "dropped": 0
+        }
+      },
+      "rows_emitted": 7
+    }
+  },
+  "dependency_cross_check": {
+    "checked": 15,
+    "mismatches": []
+  },
+  "salience_weights": {
+    "named": 5.0,
+    "flagged": 4.0,
+    "changed": 3.0,
+    "first-hop": 2.5,
+    "range-block": 0.5,
+    "distance_decay": "1/(1+distance)",
+    "lineage_limit": 20
+  },
+  "reconciling_items": [
+    {
+      "account": "DeferredRevenue",
+      "description": "Deferred revenue true-up on the Q3 billing run",
+      "amount": 0.4
+    }
+  ],
+  "engine_audit": {
+    "acct": {
+      "circular": [],
+      "errors": []
+    },
+    "fpa": {
+      "circular": [],
+      "errors": []
+    },
+    "treas": {
+      "circular": [],
+      "errors": []
+    }
+  },
+  "outputs": {
+    "workbook": "chapter18/solutions_and_explanations/exercise_4_cross-team-reconciliation-with-cell-level-lineage-and-audit-trail/output/work/out-second/close-reconciliation.xlsx",
+    "pdf": "chapter18/solutions_and_explanations/exercise_4_cross-team-reconciliation-with-cell-level-lineage-and-audit-trail/output/work/out-second/close-reconciliation.pdf",
+    "scratch": "chapter18/solutions_and_explanations/exercise_4_cross-team-reconciliation-with-cell-level-lineage-and-audit-trail/output/work/out-second/close-reconciliation-scratch.xlsx"
+  },
+  "audit_digest": "71a791eda6795375fd97db745cf62d4affeb7589c4c206caee288e94f1642d4f"
+}

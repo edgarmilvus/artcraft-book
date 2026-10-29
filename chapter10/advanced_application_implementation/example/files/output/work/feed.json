@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "generatedAt": "2026-03-14T10:00:00.000Z",
+  "products": [
+    {
+      "id": "sku-1",
+      "name": "Trailhead Pack 32L",
+      "brand": "Acme Outdoors",
+      "category": "bags",
+      "price": {
+        "amount": 129,
+        "currency": "USD"
+      },
+      "sellingPoints": [
+        "Ripstop nylon",
+        "32 litres",
+        "Lifetime warranty"
+      ],
+      "tags": [
+        "new"
+      ],
+      "locale": "en-US",
+      "variants": [
+        {
+          "sku": "sku-1-teal",
+          "label": "Teal",
+          "imageUrl": "https://cdn.example/pack-teal.png",
+          "badge": "NEW"
+        },
+        {
+          "sku": "sku-1-sand",
+          "label": "Sand",
+          "imageUrl": "https://cdn.example/pack-sand.png"
+        }
+      ]
+    }
+  ]
+}

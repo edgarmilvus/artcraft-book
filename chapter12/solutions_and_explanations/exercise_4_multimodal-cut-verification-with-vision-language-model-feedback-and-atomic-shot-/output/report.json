@@ -1,0 +1,178 @@
+{
+  "exercise": 4,
+  "engine": "filmcraft-cli",
+  "assertions": 12,
+  "cutdowns": [
+    {
+      "cutdownId": "S01",
+      "brief": {
+        "cutdownId": "S01",
+        "durationSeconds": 15,
+        "openingBrief": "warm light, shallow depth of field, the founder at work",
+        "clauseSeverity": "strict",
+        "threshold": 75
+      },
+      "attempts": [
+        {
+          "attemptIndex": 0,
+          "candidateItemId": 2,
+          "candidateFileName": "2",
+          "renderedFramePath": "cutdown_S01_attempt_0.png",
+          "assessment": {
+            "clauses": [
+              {
+                "text": "warm light",
+                "score": 66,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "shallow depth of field",
+                "score": 58,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "the founder at work",
+                "score": 54,
+                "evidence": "heuristic score (stub)"
+              }
+            ],
+            "overall": 59,
+            "match": false
+          },
+          "accepted": false,
+          "rejectionReason": "clauseBelowThreshold"
+        },
+        {
+          "attemptIndex": 1,
+          "candidateItemId": 3,
+          "candidateFileName": "3",
+          "renderedFramePath": "cutdown_S01_attempt_1.png",
+          "assessment": {
+            "clauses": [
+              {
+                "text": "warm light",
+                "score": 66,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "shallow depth of field",
+                "score": 58,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "the founder at work",
+                "score": 54,
+                "evidence": "heuristic score (stub)"
+              }
+            ],
+            "overall": 59,
+            "match": false
+          },
+          "accepted": false,
+          "rejectionReason": "clauseBelowThreshold"
+        },
+        {
+          "attemptIndex": 2,
+          "candidateItemId": 4,
+          "candidateFileName": "4",
+          "renderedFramePath": "cutdown_S01_attempt_2.png",
+          "assessment": {
+            "clauses": [
+              {
+                "text": "warm light",
+                "score": 66,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "shallow depth of field",
+                "score": 58,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "the founder at work",
+                "score": 54,
+                "evidence": "heuristic score (stub)"
+              }
+            ],
+            "overall": 59,
+            "match": false
+          },
+          "accepted": false,
+          "rejectionReason": "clauseBelowThreshold"
+        },
+        {
+          "attemptIndex": 3,
+          "candidateItemId": 2,
+          "candidateFileName": "2",
+          "renderedFramePath": "cutdown_S01_attempt_3.png",
+          "assessment": {
+            "clauses": [
+              {
+                "text": "warm light",
+                "score": 66,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "shallow depth of field",
+                "score": 58,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "the founder at work",
+                "score": 54,
+                "evidence": "heuristic score (stub)"
+              }
+            ],
+            "overall": 59,
+            "match": false
+          },
+          "accepted": false,
+          "rejectionReason": "clauseBelowThreshold"
+        },
+        {
+          "attemptIndex": 4,
+          "candidateItemId": 3,
+          "candidateFileName": "3",
+          "renderedFramePath": "cutdown_S01_attempt_4.png",
+          "assessment": {
+            "clauses": [
+              {
+                "text": "warm light",
+                "score": 66,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "shallow depth of field",
+                "score": 58,
+                "evidence": "heuristic score (stub)"
+              },
+              {
+                "text": "the founder at work",
+                "score": 54,
+                "evidence": "heuristic score (stub)"
+              }
+            ],
+            "overall": 59,
+            "match": false
+          },
+          "accepted": false,
+          "rejectionReason": "clauseBelowThreshold"
+        }
+      ],
+      "finalItemId": null,
+      "finalFramePath": null,
+      "verifiedMarkerName": "VERIFIED_OPEN",
+      "verifiedAtTick": 0,
+      "midpointPreviewPath": "cutdown_S01_midpoint.png"
+    }
+  ],
+  "acceptedCount": 0,
+  "rejectedCount": 1,
+  "totalVlmCalls": 5,
+  "totalRenderCalls": 6,
+  "artefacts": [
+    "read/",
+    "write/"
+  ],
+  "result": "opening frames rendered, graded clause by clause and replaced atomically when the strict grade failed"
+}

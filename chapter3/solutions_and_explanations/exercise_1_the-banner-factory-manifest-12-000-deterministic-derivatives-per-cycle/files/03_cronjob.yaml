@@ -1,0 +1,31 @@
+# k8s/cronjob.yaml fragment
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: banner-factory
+spec:
+  schedule: "0 */4 * * *"
+  jobTemplate:
+    spec:
+      parallelism: 4
+      completions: 4
+      template:
+        spec:
+          containers:
+            - name: worker
+              image: registry.example.com/storytold/banner-factory:1.0.0
+              env:
+                - { name: MANIFEST_PATH, value: /work/assets/manifest.json }
+              resources:
+                requests: { cpu: "500m", memory: "1Gi" }
+                limits:   { cpu: "2",    memory: "2Gi" }
+              volumeMounts:
+                - { name: assets, mountPath: /work/assets, readOnly: true }
+                - { name: output, mountPath: /work/output }
+              livenessProbe:
+                exec:
+                  command: ["node", "/opt/orchestrator/orchestrator.js", "--probe"]
+                periodSeconds: 15
+          volumes:
+            - { name: assets, persistentVolumeClaim: { claimName: assets-pvc } }
+            - { name: output, persistentVolumeClaim: { claimName: output-pvc } }

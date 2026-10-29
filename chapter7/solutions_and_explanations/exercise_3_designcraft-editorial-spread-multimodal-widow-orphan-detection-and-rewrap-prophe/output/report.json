@@ -1,0 +1,18 @@
+{
+  "exercise": 3,
+  "engine": "designcraft-cli",
+  "jobIds": [
+    "ex3-fix",
+    "ex3-reject"
+  ],
+  "assertions": 85,
+  "artefacts": [
+    "spread-before.png",
+    "spread-after.png",
+    "spread-corrected.designcraft",
+    "measurement.json",
+    "spread_manifest.json",
+    "reject-manifest.json"
+  ],
+  "result": "widow confirmed and rewrapped; rejected candidate left untouched"
+}

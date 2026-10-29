@@ -1,0 +1,17 @@
+{
+  "steps": [
+    { "id": "gradient.fill.create", "params": {
+        "from": [0, 0], "to": [1920, 1080], "style": "linear",
+        "stops": [[0, "#0f766e"], [1, "#f59e0b"]]
+    }},
+    { "id": "type.create", "params": {
+        "text": "Q3 LAUNCH", "font": "Inter-Bold", "size": 140,
+        "color": "#ffffff", "x": 160, "y": 420
+    }},
+    { "id": "type.create", "params": {
+        "text": "Shipping September 15", "font": "Inter-Regular", "size": 56,
+        "color": "#fef3c7", "x": 160, "y": 620
+    }}
+  ],
+  "stop_on_error": true
+}

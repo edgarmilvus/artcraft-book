@@ -1,0 +1,11 @@
+{
+  "fixtureId": "cover-page",
+  "tolerance": { "textDamerauLevenshtein": 0, "renderPixelLevenshtein": 0 },
+  "steps": [
+    { "cli": "designcraft", "command": "file.new", "params": { "preset": "Letter", "pages": 1 } },
+    { "cli": "designcraft", "command": "frame.create", "params": { "rect": [72, 96, 540, 240], "content": "text", "text": "Quarterly" } },
+    { "cli": "designcraft", "command": "style.paragraph.apply", "params": { "name": "[Basic Paragraph]" } },
+    { "cli": "designcraft", "command": "file.exportPdf", "params": { "path": "out.pdf", "standard": "a2b" } },
+    { "cli": "pdfcraft",   "command": "doc_open", "params": { "path": "out.pdf" } }
+  ]
+}

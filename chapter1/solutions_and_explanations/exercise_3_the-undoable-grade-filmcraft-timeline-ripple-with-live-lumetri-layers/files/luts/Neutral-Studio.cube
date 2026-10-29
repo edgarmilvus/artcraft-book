@@ -1,0 +1,11 @@
+TITLE "Neutral-Studio"
+# Identity 3D LUT (2x2x2) — stands in for the exercise's neutral grade.
+LUT_3D_SIZE 2
+0.0 0.0 0.0
+1.0 0.0 0.0
+0.0 1.0 0.0
+1.0 1.0 0.0
+0.0 0.0 1.0
+1.0 0.0 1.0
+0.0 1.0 1.0
+1.0 1.0 1.0

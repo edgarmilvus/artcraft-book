@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "storytold-photocraft": {
+      "type": "stdio",
+      "command": "photocraft-cli",
+      "args": [
+        "mcp",
+        "--automation-read-root",
+        "chapter19/advanced_application_implementation/example/files/output/work/studio/project",
+        "--automation-write-root",
+        "chapter19/advanced_application_implementation/example/files/output/work/studio/render"
+      ]
+    },
+    "storytold-vectorcraft": {
+      "type": "stdio",
+      "command": "vectorcraft-cli",
+      "args": [
+        "mcp",
+        "--automation-read-root",
+        "chapter19/advanced_application_implementation/example/files/output/work/studio/project",
+        "--automation-write-root",
+        "chapter19/advanced_application_implementation/example/files/output/work/studio/render"
+      ]
+    },
+    "storytold-designcraft": {
+      "type": "stdio",
+      "command": "designcraft-cli",
+      "args": [
+        "mcp"
+      ],
+      "cwd": "chapter19/advanced_application_implementation/example/files/output/work/studio/render"
+    }
+  }
+}

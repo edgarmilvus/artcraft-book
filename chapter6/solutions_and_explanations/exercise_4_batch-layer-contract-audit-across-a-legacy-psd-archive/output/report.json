@@ -1,0 +1,122 @@
+{
+  "chapter": 6,
+  "exercise": 4,
+  "checks": {
+    "passed": 13,
+    "failed": 0,
+    "total": 13
+  },
+  "baselineHash": "c4fec7c08592dd0a474cf43fbe4dfb9ecf209f2f97300324a0592d2ccca7a025",
+  "verdicts": {
+    "pass": 1,
+    "warn": 1,
+    "fail": 3
+  },
+  "entries": [
+    {
+      "file": "archive/a-good.psd",
+      "verdict": "pass",
+      "reasons": [],
+      "treeHash": "c4fec7c08592dd0a474cf43fbe4dfb9ecf209f2f97300324a0592d2ccca7a025",
+      "layerCount": 6,
+      "deepestNesting": 2
+    },
+    {
+      "file": "archive/b-renamed.psd",
+      "verdict": "warn",
+      "reasons": [
+        "tree-differs-from-baseline"
+      ],
+      "treeHash": "1ad6b70d6dd2360b983af74e502a8a97d0f386d506903831734d2d7a902ad3d1",
+      "layerCount": 6,
+      "deepestNesting": 2
+    },
+    {
+      "file": "archive/c-flat.psd",
+      "verdict": "fail",
+      "reasons": [
+        "missing-background-group"
+      ],
+      "treeHash": "7ca16624256fdf892c5de9c2ba42b18125bd079e36721a877c388a9746c2045f",
+      "layerCount": 1,
+      "deepestNesting": 0
+    },
+    {
+      "file": "archive/d-topclip.psd",
+      "verdict": "fail",
+      "reasons": [
+        "top-level-clipped: Loose",
+        "missing-background-group"
+      ],
+      "treeHash": "4529672b59228010e45cb8672538c788cf48711d629f40bfd0a4c528176cb97b",
+      "layerCount": 2,
+      "deepestNesting": 0
+    },
+    {
+      "file": "archive/e-broken.psd",
+      "verdict": "fail",
+      "reasons": [
+        "unreadable: codec: unrecognized image format"
+      ],
+      "treeHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "layerCount": 0,
+      "deepestNesting": 0
+    }
+  ],
+  "archive": [
+    {
+      "file": "archive/a-good.psd",
+      "bytes": 20920,
+      "sha256": "780380aaa70663bd580dd8793067bd6b09db4511628229f2161ce8d15e29b9c1",
+      "verdict": "pass",
+      "reasons": [],
+      "treeHash": "c4fec7c08592dd0a474cf43fbe4dfb9ecf209f2f97300324a0592d2ccca7a025"
+    },
+    {
+      "file": "archive/b-renamed.psd",
+      "bytes": 20928,
+      "sha256": "a64001c80ab726f0ad5848099b32c8a586b01873c4d051292e83d87720dc2a05",
+      "verdict": "warn",
+      "reasons": [
+        "tree-differs-from-baseline"
+      ],
+      "treeHash": "1ad6b70d6dd2360b983af74e502a8a97d0f386d506903831734d2d7a902ad3d1"
+    },
+    {
+      "file": "archive/c-flat.psd",
+      "bytes": 5480,
+      "sha256": "a0ed70c6a7380dce2040a0f097de86820cc0457e1160b95f6ce768070b634001",
+      "verdict": "fail",
+      "reasons": [
+        "missing-background-group"
+      ],
+      "treeHash": "7ca16624256fdf892c5de9c2ba42b18125bd079e36721a877c388a9746c2045f"
+    },
+    {
+      "file": "archive/d-topclip.psd",
+      "bytes": 5656,
+      "sha256": "4a13110446521bb8df4b7cf0f42fd64d22ede9e734ada358ed4ce59f5186797e",
+      "verdict": "fail",
+      "reasons": [
+        "top-level-clipped: Loose",
+        "missing-background-group"
+      ],
+      "treeHash": "4529672b59228010e45cb8672538c788cf48711d629f40bfd0a4c528176cb97b"
+    },
+    {
+      "file": "archive/e-broken.psd",
+      "bytes": 28,
+      "sha256": "9b69b617aae0838dc8aa08f30f83961c40d80ee8fad4570f2d2d40092b8727f1",
+      "verdict": "fail",
+      "reasons": [
+        "unreadable: codec: unrecognized image format"
+      ],
+      "treeHash": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "reports": [
+    "audit/report.json",
+    "audit-second/report.json"
+  ],
+  "failures": []
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "fixtureId": "wordcraft-note",
+    "kind": "wordcraft",
+    "total": 4,
+    "matched": 3,
+    "deltas": [
+      {
+        "field": "blocks[0].textDistance",
+        "expected": "Golden noteX for the cross-suite harness.",
+        "actual": "Golden note for the cross-suite harness."
+      }
+    ]
+  }
+]

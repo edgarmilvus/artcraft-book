@@ -1,0 +1,24 @@
+{
+  "user": [
+    {
+      "id": "user.41.brand-standard-v3",
+      "name": "Brand-Standard-v3",
+      "group": "User Presets",
+      "settings": {
+        "light": {
+          "blacks": 0.0,
+          "contrast": 0.0,
+          "exposure": 0.1,
+          "highlights": 0.0,
+          "shadows": 0.0,
+          "whites": 0.0
+        }
+      },
+      "favorite": false,
+      "builtin": false
+    }
+  ],
+  "favorites": [],
+  "profileFavorites": [],
+  "profileRecent": []
+}

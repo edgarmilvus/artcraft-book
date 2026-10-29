@@ -1,0 +1,18 @@
+{
+  "exercise": 5,
+  "engine": "Chromium proof frame + D65 ΔE2000 + ffmpeg VP9",
+  "assertions": 45,
+  "brandHex": "#0F62FE",
+  "observedHex": "#0F62FE",
+  "deltaE2000": 0,
+  "proofFrame": "1080x1080",
+  "artefacts": [
+    "onboarding.json",
+    "proof-frame-30.png",
+    "proof-frame-30-repeat.png",
+    "onboarding.webm",
+    "signalstats-fallback.txt",
+    "audit/vision-gate.json"
+  ],
+  "result": "proof frame renders the brand exactly, three samples agree at ΔE 0 and the encode passes the signalstats floor"
+}

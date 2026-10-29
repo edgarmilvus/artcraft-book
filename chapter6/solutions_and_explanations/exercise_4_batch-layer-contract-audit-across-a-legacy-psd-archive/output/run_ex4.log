@@ -1,0 +1,15 @@
+PASS the audit found all five files
+PASS the report is sorted by path
+PASS the identical copy passes
+PASS the rename is a warn, not a fail
+PASS the flat document fails on the missing group
+PASS the top-level clip fails
+PASS the corrupt file fails as unreadable
+PASS every entry carries a 64-hex tree hash
+PASS the same tree hashes to the same value
+PASS the layer counts describe real trees
+PASS the report repeats the baseline hash
+PASS two passes agree bit for bit
+PASS a write into the read root is refused
+
+13/13 checks passed

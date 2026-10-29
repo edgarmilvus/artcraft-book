@@ -1,0 +1,23 @@
+{
+  "windowDays": 30,
+  "variants": [
+    {
+      "id": "var-b",
+      "ctr": 0.012,
+      "impressions": 48120,
+      "clicks": 577
+    },
+    {
+      "id": "var-c",
+      "ctr": 0.0085,
+      "impressions": 39300,
+      "clicks": 334
+    },
+    {
+      "id": "var-d",
+      "ctr": 0.0031,
+      "impressions": 12000,
+      "clicks": 37
+    }
+  ]
+}

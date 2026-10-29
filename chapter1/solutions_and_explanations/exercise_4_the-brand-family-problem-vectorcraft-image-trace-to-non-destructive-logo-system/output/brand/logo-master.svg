@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="937.559" height="405.559" viewBox="0 0 937.559 405.559">
+  <title>Untitled-2</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M202.464 0 C314.455 -0.174 405.384 90.472 405.558 202.464 C405.733 314.455 315.087 405.384 203.095 405.558 C91.103 405.733 0.175 315.087 0 203.095 C-0.174 91.103 90.472 0.175 202.464 0 Z" fill="#0d9488"/>
+    <path d="M734.464 0 C846.455 -0.174 937.384 90.472 937.558 202.464 C937.733 314.455 847.087 405.384 735.095 405.558 C623.103 405.733 532.175 315.087 532 203.095 C531.826 91.103 622.472 0.175 734.464 0 Z" fill="#f8fafc"/>
+    <text transform="matrix(1 0 0 1 202.35 376.35)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="96" font-weight="600" fill="#0d9488" text-anchor="middle"><tspan x="0" y="0">ACME</tspan></text>
+    <text transform="matrix(1 0 0 1 734.35 376.35)" x="0" y="0" xml:space="preserve" font-family="Inter" font-size="96" font-weight="600" fill="#f8fafc" text-anchor="middle"><tspan x="0" y="0">ACME</tspan></text>
+  </g>
+</svg>

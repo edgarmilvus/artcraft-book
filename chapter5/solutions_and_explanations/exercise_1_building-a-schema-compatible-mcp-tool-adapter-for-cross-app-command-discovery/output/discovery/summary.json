@@ -1,0 +1,55 @@
+{
+  "apps": [
+    {
+      "app": "photocraft",
+      "tools": 914,
+      "registryVersion": "acde758dc737327a643523395cf407fc6363e84da2bc4ff5cad59ece3922d8d1",
+      "metaTools": 25
+    },
+    {
+      "app": "vectorcraft",
+      "tools": 610,
+      "registryVersion": "9dd874c64378c66e4a0d6348fb25fad663f2d5ac26d5eabd6d27cf8e3773e9ad",
+      "metaTools": 32
+    },
+    {
+      "app": "filmcraft",
+      "tools": 689,
+      "registryVersion": "2e0a2f8e4508356d50c2f377f050e58ed4eeecae0913fcff8ead6a80aaaf6e1c",
+      "metaTools": 17
+    },
+    {
+      "app": "effectcraft",
+      "tools": 677,
+      "registryVersion": "1a9a831621a9ca68500b4f22293a0d5bec790fe6dd74b2414f55438514a37f6d",
+      "metaTools": 22
+    },
+    {
+      "app": "designcraft",
+      "tools": 363,
+      "registryVersion": "a1bdbcd47d33726c245bc33590be670eb27c08ccbe848163f4bd6ae58b041286",
+      "metaTools": 25
+    },
+    {
+      "app": "lightcraft",
+      "tools": 583,
+      "registryVersion": "e98756f6aced11cceed26e17585d5af7e884964a4f1480f128098795e80a4dd2",
+      "metaTools": 300
+    },
+    {
+      "app": "pdfcraft",
+      "tools": 298,
+      "registryVersion": "e6fab888faa66dfe9563d8777ba237b667d4d0cb77369d16359c0d9217b7a603",
+      "metaTools": 140
+    },
+    {
+      "app": "wordcraft",
+      "tools": 404,
+      "registryVersion": "7348e4a55080f52a0039bf48315a800a1be52be6b25fb469833970afd2d68ef9",
+      "metaTools": 16
+    }
+  ],
+  "capabilityIndexEntries": 914,
+  "checks": 8,
+  "failures": 0
+}

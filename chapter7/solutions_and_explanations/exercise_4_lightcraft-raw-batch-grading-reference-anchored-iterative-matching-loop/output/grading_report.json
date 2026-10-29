@@ -1,0 +1,116 @@
+{
+  "photoId": 1,
+  "initialDeltaE": {
+    "shadows": 6.325,
+    "midtones": 8.217,
+    "highlights": 6.802
+  },
+  "finalDeltaE": {
+    "shadows": 3.054,
+    "midtones": 2.815,
+    "highlights": 3.71
+  },
+  "iterationsUsed": 5,
+  "converged": true,
+  "escalated": false,
+  "rolledBack": false,
+  "appliedDeltas": [
+    [
+      "light.shadows",
+      6
+    ],
+    [
+      "light.exposure",
+      0.18
+    ],
+    [
+      "light.highlights",
+      6
+    ],
+    [
+      "mixer.orange.sat",
+      6
+    ],
+    [
+      "grading.shadows.hue",
+      2
+    ],
+    [
+      "grading.highlights.hue",
+      2
+    ],
+    [
+      "light.shadows",
+      6
+    ],
+    [
+      "light.exposure",
+      0.08
+    ],
+    [
+      "light.highlights",
+      6
+    ],
+    [
+      "mixer.orange.sat",
+      3
+    ],
+    [
+      "grading.shadows.hue",
+      2
+    ],
+    [
+      "grading.highlights.hue",
+      2
+    ],
+    [
+      "light.shadows",
+      6
+    ],
+    [
+      "light.exposure",
+      0.08
+    ],
+    [
+      "light.highlights",
+      -2
+    ],
+    [
+      "mixer.orange.sat",
+      3
+    ],
+    [
+      "grading.shadows.hue",
+      2
+    ],
+    [
+      "grading.highlights.hue",
+      -1
+    ],
+    [
+      "light.shadows",
+      6
+    ],
+    [
+      "light.exposure",
+      0.08
+    ],
+    [
+      "light.highlights",
+      -2
+    ],
+    [
+      "mixer.orange.sat",
+      3
+    ],
+    [
+      "grading.shadows.hue",
+      2
+    ],
+    [
+      "grading.highlights.hue",
+      -1
+    ]
+  ],
+  "reason": "quadratic vertex at 7.101 for grading.shadows.hue"
+}

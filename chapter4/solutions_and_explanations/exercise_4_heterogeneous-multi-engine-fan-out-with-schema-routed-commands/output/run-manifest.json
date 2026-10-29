@@ -1,0 +1,54 @@
+{
+  "checks": 17,
+  "failures": [],
+  "manifest": {
+    "catalogId": "sku-4417",
+    "startedAt": "2026-10-26T13:28:13.238Z",
+    "engines": [
+      {
+        "engine": "photocraft",
+        "port": 7878,
+        "commandsIssued": 1,
+        "warnings": []
+      },
+      {
+        "engine": "vectorcraft",
+        "port": 7879,
+        "commandsIssued": 1,
+        "warnings": []
+      },
+      {
+        "engine": "designcraft",
+        "port": 7880,
+        "commandsIssued": 1,
+        "warnings": []
+      },
+      {
+        "engine": "pdfcraft",
+        "port": 7881,
+        "commandsIssued": 1,
+        "warnings": []
+      }
+    ],
+    "assetsWritten": [],
+    "failures": [],
+    "compensated": []
+  },
+  "wire": {
+    "photocraft": [
+      "layer.newAdjustmentLayer.curves"
+    ],
+    "vectorcraft": [
+      "shape.rectangle"
+    ],
+    "designcraft": [
+      "file.open"
+    ],
+    "pdfcraft": [
+      "doc_open",
+      "doc_open",
+      "doc_open",
+      "doc_compare"
+    ]
+  }
+}

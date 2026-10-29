@@ -1,0 +1,8 @@
+{
+  "checks": 51,
+  "failures": [],
+  "quirks": [
+    "the inference shim decodes PNG only; the HTTP contract still accepts image/jpeg and refuses it at the decoder"
+  ],
+  "warmPort": 55123
+}

@@ -1,0 +1,750 @@
+{
+  "audio": [
+    {
+      "enabled": true,
+      "id": 4,
+      "items": [
+        {
+          "clip": 33,
+          "duration": 3048001488000,
+          "durationFrames": 287,
+          "effects": [
+            {
+              "effect": "volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "level": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "channel_volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "left": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "right": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "panner",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "balance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3048001488000,
+          "endFrame": 287,
+          "gainDb": 0,
+          "item": 17,
+          "label": "Caribbean",
+          "link": null,
+          "name": "music.wav",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 3048001488000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Audio 1",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    },
+    {
+      "enabled": true,
+      "id": 5,
+      "items": [
+        {
+          "clip": 34,
+          "duration": 1525620096000,
+          "durationFrames": 144,
+          "effects": [
+            {
+              "effect": "volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "level": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "channel_volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "left": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "right": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "panner",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "balance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 1525620096000,
+          "endFrame": 144,
+          "gainDb": 0,
+          "item": 18,
+          "label": "Caribbean",
+          "link": null,
+          "name": "vo.wav",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1525620096000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Audio 2",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    },
+    {
+      "enabled": true,
+      "id": 6,
+      "items": [
+        {
+          "clip": 35,
+          "duration": 3048001488000,
+          "durationFrames": 287,
+          "effects": [
+            {
+              "effect": "volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "level": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "channel_volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "left": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "right": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "panner",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "balance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3048001488000,
+          "endFrame": 287,
+          "gainDb": 0,
+          "item": 19,
+          "label": "Caribbean",
+          "link": null,
+          "name": "roomtone.wav",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 3048001488000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Audio 3",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    }
+  ],
+  "duration": 3048763536000,
+  "durationFrames": 287,
+  "id": 7,
+  "in": null,
+  "markers": [],
+  "name": "Trailer_FirstCut",
+  "out": null,
+  "playhead": null,
+  "selection": [
+    35
+  ],
+  "settings": {
+    "audio_master": "Stereo",
+    "color": {
+      "auto_tone_map": true,
+      "wide_gamut": false,
+      "working": "Rec709"
+    },
+    "drop_frame": false,
+    "frame_rate": {
+      "den": 1001,
+      "num": 24000
+    },
+    "height": 360,
+    "max_bit_depth": false,
+    "max_render_quality": false,
+    "par": [
+      1,
+      1
+    ],
+    "preset": "640x360 23.976",
+    "preview_codec": "ProRes 422",
+    "sample_rate": 48000,
+    "width": 640,
+    "working_space": "Rec. 709"
+  },
+  "split": {
+    "audioIn": null,
+    "audioOut": null,
+    "videoIn": null,
+    "videoOut": null
+  },
+  "video": [
+    {
+      "enabled": true,
+      "id": 1,
+      "items": [
+        {
+          "clip": 20,
+          "duration": 761857488000,
+          "durationFrames": 71,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 320.0, y: 180.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 2,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 761857488000,
+          "endFrame": 71,
+          "gainDb": 0,
+          "item": 13,
+          "label": "Violet",
+          "link": null,
+          "name": "interview-a.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 761857488000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Video 1",
+      "solo": false,
+      "syncLock": true,
+      "transitions": [
+        {
+          "duration": 254270016000,
+          "effect": "cross_dissolve",
+          "from": 20,
+          "id": 31,
+          "params": {},
+          "reverse": false,
+          "start": 497945448000,
+          "to": null
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "id": 2,
+      "items": [
+        {
+          "clip": 21,
+          "duration": 508032000000,
+          "durationFrames": 47,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 320.0, y: 180.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 1269889488000,
+          "endFrame": 119,
+          "gainDb": 0,
+          "item": 15,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-00.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 508032000000,
+          "speed": 1,
+          "start": 761857488000,
+          "startFrame": 71
+        },
+        {
+          "clip": 22,
+          "duration": 372271032000,
+          "durationFrames": 35,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 320.0, y: 180.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 1642160520000,
+          "endFrame": 155,
+          "gainDb": 0,
+          "item": 16,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-01.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 372271032000,
+          "speed": 1,
+          "start": 1269889488000,
+          "startFrame": 119
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Video 2",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    },
+    {
+      "enabled": true,
+      "id": 3,
+      "items": [
+        {
+          "clip": 24,
+          "duration": 508032000000,
+          "durationFrames": 47,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 320.0, y: 180.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 320.0, y: 180.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 1269889488000,
+          "endFrame": 119,
+          "gainDb": 0,
+          "item": 23,
+          "label": "Lavender",
+          "link": null,
+          "name": "Black Video",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 508032000000,
+          "speed": 1,
+          "start": 761857488000,
+          "startFrame": 71
+        },
+        {
+          "clip": 30,
+          "duration": 762810048000,
+          "durationFrames": 72,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 320.0, y: 180.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 320.0, y: 180.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3048763536000,
+          "endFrame": 287,
+          "gainDb": 0,
+          "item": 29,
+          "label": "Lavender",
+          "link": null,
+          "name": "Black Video",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 762810048000,
+          "speed": 1,
+          "start": 2285953488000,
+          "startFrame": 215
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Video 3",
+      "solo": false,
+      "syncLock": true,
+      "transitions": [
+        {
+          "duration": 127135008000,
+          "effect": "cross_dissolve",
+          "from": null,
+          "id": 32,
+          "params": {},
+          "reverse": false,
+          "start": 2277835560000,
+          "to": 30
+        }
+      ]
+    }
+  ]
+}

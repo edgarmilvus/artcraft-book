@@ -1,0 +1,3 @@
+beatIntervalTicks = 254_016_000_000 × 60 / 96 = 158_760_000_000
+barIntervalTicks  = 158_760_000_000 × 4  = 635_040_000_000
+downbeatTicks     = 63_504_000_000      (0.25 s)

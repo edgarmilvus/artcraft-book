@@ -1,0 +1,126 @@
+{
+  "schema": "artcraft.layered-recipe/v1",
+  "id": "LF-42",
+  "title": "Forge CLI job LF-42",
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "mode": "rgb",
+    "depth": 8,
+    "background": "#ffffff",
+    "resolution": 72
+  },
+  "sources": [
+    {
+      "id": "hero",
+      "role": "plate",
+      "path": "hero.png",
+      "sha256": "d8c5727c3cd1795349254dc8cbe5178c1c0e06ccf1f82932207f6c72e38ea078",
+      "bytes": 9731,
+      "pixelWidth": 2048,
+      "pixelHeight": 1152,
+      "origin": {
+        "generator": "camera",
+        "license": "proprietary"
+      }
+    }
+  ],
+  "stack": [
+    {
+      "kind": "shape",
+      "name": "bg",
+      "shape": {
+        "kind": "rect",
+        "rect": [
+          0,
+          0,
+          1920,
+          1080
+        ]
+      },
+      "fill": "#0f172a",
+      "stroke": null
+    },
+    {
+      "kind": "smart-object",
+      "name": "hero",
+      "assetId": "hero",
+      "fit": true,
+      "mask": {
+        "kind": "brush",
+        "stroke": {
+          "points": [
+            [
+              10,
+              10
+            ],
+            [
+              20,
+              40
+            ]
+          ],
+          "size": 120,
+          "hardness": 0.7
+        }
+      }
+    },
+    {
+      "kind": "adjustment",
+      "name": "grade",
+      "adjustment": "curves",
+      "params": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            64,
+            40
+          ],
+          [
+            192,
+            215
+          ],
+          [
+            255,
+            255
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "group",
+      "name": "title-block",
+      "children": [
+        {
+          "kind": "type",
+          "name": "headline",
+          "text": "Hello Layered World",
+          "x": 120,
+          "y": 820,
+          "font": "Inter",
+          "size": 120,
+          "color": "#f8fafc"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "name": "warm",
+      "appearance": true
+    }
+  ],
+  "delivery": [
+    {
+      "id": "out",
+      "kind": "raster",
+      "path": "out.png",
+      "format": "png",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

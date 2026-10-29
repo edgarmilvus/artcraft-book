@@ -1,0 +1,123 @@
+{
+  "chapter": 6,
+  "exercise": 2,
+  "checks": {
+    "passed": 16,
+    "failed": 0,
+    "total": 16
+  },
+  "source": {
+    "file": "workspace/read/photo.png",
+    "bytes": 814,
+    "sha256": "c4fbb52239969e091b68810862d15ba46bbbe8dc29d99f40363e60b0e634a802"
+  },
+  "spec": {
+    "photoId": "essay-014",
+    "lightnessOffset": 0.05,
+    "contrastPivot": 0.45,
+    "contrastAmount": 0.6,
+    "chromaGain": 1.15,
+    "coolHighlights": true,
+    "warmShadows": true,
+    "schemaVersion": 1
+  },
+  "reproducibleSha256": "d6bcc6c8ad02695d087723f16f99a68047e7a768ecfcd982bd47c54807ac0416",
+  "plainSha256": "9cb897f2861aff3cf826ce9d70fe1dd2513099a6c18f3226bb59f72e640c439f",
+  "grade": {
+    "photoId": "essay-014",
+    "levels": {
+      "gamma": 0.8705505632961241,
+      "clamped": false
+    },
+    "curves": {
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          57.375,
+          33.375
+        ],
+        [
+          114.75,
+          114.75
+        ],
+        [
+          184.875,
+          208.875
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "clamped": false
+    },
+    "saturation": {
+      "value": 15,
+      "clamped": false
+    },
+    "colorBalance": {
+      "highlights": [
+        0,
+        0,
+        8
+      ],
+      "shadows": [
+        0,
+        0,
+        -8
+      ]
+    },
+    "unsupported": [
+      "OkLCh chroma is scaled by hueSaturation in linear RGB, not in Oklab. Highly saturated primaries therefore move along their own hue angle, so the delivered chroma can differ from the spec's target on those pixels.",
+      "OkLCh lightness is media-relative while levels.gamma acts on encoded values. Grading an HDR deliverable through this table does not preserve absolute luminance."
+    ],
+    "document": {
+      "width": 320,
+      "height": 240,
+      "layers": 5
+    }
+  },
+  "documentTree": [
+    "Color Balance 1",
+    "Hue/Saturation 1",
+    "Curves 1",
+    "Levels 1",
+    "Background"
+  ],
+  "assets": [
+    {
+      "file": "graded/graded-1.psd",
+      "bytes": 17010,
+      "sha256": "2e246927a61480646893decf1bc4895e80e5e2f31c0505e2fd89633cd6640cdc"
+    },
+    {
+      "file": "graded/graded-2.psd",
+      "bytes": 17010,
+      "sha256": "2e246927a61480646893decf1bc4895e80e5e2f31c0505e2fd89633cd6640cdc"
+    },
+    {
+      "file": "graded/plain.psd",
+      "bytes": 16720,
+      "sha256": "5f727acc9479b3b66925c719dd28085705582f2de80e9bbd198871bb4dab7fe2"
+    },
+    {
+      "file": "previews/pass-1.png",
+      "bytes": 967,
+      "sha256": "d6bcc6c8ad02695d087723f16f99a68047e7a768ecfcd982bd47c54807ac0416"
+    },
+    {
+      "file": "previews/pass-2.png",
+      "bytes": 967,
+      "sha256": "d6bcc6c8ad02695d087723f16f99a68047e7a768ecfcd982bd47c54807ac0416"
+    },
+    {
+      "file": "previews/plain.png",
+      "bytes": 939,
+      "sha256": "9cb897f2861aff3cf826ce9d70fe1dd2513099a6c18f3226bb59f72e640c439f"
+    }
+  ],
+  "failures": []
+}

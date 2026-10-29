@@ -1,0 +1,41 @@
+{
+  "brand": {
+    "name": "Northwind",
+    "chipSvgPath": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/assets/chip.svg",
+    "disclaimer": "Terms apply. See northwind.example/terms for the full conditions.",
+    "background": "#101820",
+    "headlineColor": "#ffffff",
+    "ctaColor": "#ffd166"
+  },
+  "skus": [
+    {
+      "sku": "nw-mug-01",
+      "productCutoutPath": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/assets/nw-mug-01.png",
+      "copy": {
+        "headline": "Made for the windowsill",
+        "subhead": "Ceramic, hand-glazed, 350 ml",
+        "cta": "See the range"
+      }
+    },
+    {
+      "sku": "nw-lamp-02",
+      "productCutoutPath": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/assets/nw-lamp-02.png",
+      "copy": {
+        "headline": "Made for the windowsill",
+        "subhead": "Ceramic, hand-glazed, 350 ml",
+        "cta": "See the range"
+      }
+    },
+    {
+      "sku": "nw-mug-01",
+      "productCutoutPath": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/assets/nw-mug-01.png",
+      "copy": {
+        "headline": "Made for the windowsill",
+        "subhead": "Ceramic, hand-glazed, 350 ml",
+        "cta": "See the range"
+      }
+    }
+  ],
+  "outputRoot": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out",
+  "concurrency": 2
+}

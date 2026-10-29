@@ -1,0 +1,3 @@
+# Client-supplied PII patterns, one regular expression per line.
+Matter 4421\-[A-Z]{2}
+ACME\-CONF\-\d{4}

@@ -1,0 +1,12 @@
+{
+  "name": "cap17-ex4-solution",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "python3 -m py_compile 04_digital-signature-ledger-with-trust-store-reconciliation.py",
+    "harness": "python3 run_4.py"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

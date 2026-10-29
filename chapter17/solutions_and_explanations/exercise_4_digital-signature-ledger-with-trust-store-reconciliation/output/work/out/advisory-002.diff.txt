@@ -1,0 +1,6 @@
+===(revision 4)===
+Advisory note one.
+TAMPERED
+---
+Advisory note one.
+TAMPERED

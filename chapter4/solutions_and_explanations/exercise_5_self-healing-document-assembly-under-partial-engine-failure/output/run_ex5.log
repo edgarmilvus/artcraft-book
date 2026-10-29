@@ -1,0 +1,30 @@
+PASS DOCX template created                         6199 bytes
+PASS input PDF created                             10353 bytes
+PASS input PDF is two pages                        2 pages
+PASS input PDF carries newsletter text             458 chars
+lightcraft-cli mcp: serving MCP on stdio (headless)
+pdfcraft-cli: MCP server on stdio (protocol 2025-06-18); close stdin to stop
+  recoveries: ["retry","retry","retry","placeholder_substituted","retry","retry","retry","placeholder_substituted"]
+  summary: {"runId":"run-1793021294336","startedAt":"2026-10-26T13:28:14.336Z","finishedAt":"2026-10-26T13:28:14.596Z","photosRequested":2,"photosDelivered":0,"headingsShrunk":0,"altTextGenerated":0,"pdfaLevel":"2b","status":"degraded"}
+PASS both photos requested                         
+PASS nothing was delivered                         0
+PASS retries were exhausted                        6 retries
+PASS both placeholders substituted                 
+PASS placeholder styles are metadata-driven        
+PASS run marked degraded                           degraded
+PASS PDF/A stayed at the requested level           2b
+PASS quarantine directory kept                     chapter4/solutions_and_explanations/exercise_5_self-healing-document-assembly-under-partial-engine-failure/output/build-run/quarantine/run-1793021294336
+PASS quarantine is inside the run tree             
+PASS three channel diagnostics                     lightcraft,wordcraft,pdfcraft
+PASS placeholder files survived in quarantine      2 files
+PASS build logged to JSONL                         1 lines
+PASS log line is valid JSON                        
+PASS log line matches the summary                  run-1793021294336 degraded
+PASS recoveries are typed and timestamped          
+PASS output PDF is still two pages                 2 pages
+PASS output PDF is not empty                       636 chars
+PASS output keeps the newsletter heading           
+PASS placeholders are visible in the PDF           
+PASS output was saved after healing                10353 -> 13503 bytes
+
+24/24 checks passed

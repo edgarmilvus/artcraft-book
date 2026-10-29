@@ -1,0 +1,8 @@
+{
+  "fixtureId": "wordcraft-note",
+  "tolerance": { "textDamerauLevenshtein": 1, "renderPixelLevenshtein": 0 },
+  "steps": [
+    { "cli": "wordcraft", "command": "new_document", "params": { "width": 612, "height": 792 } },
+    { "cli": "wordcraft", "command": "text.insert", "params": { "text": "Golden note for the cross-suite harness." } }
+  ]
+}

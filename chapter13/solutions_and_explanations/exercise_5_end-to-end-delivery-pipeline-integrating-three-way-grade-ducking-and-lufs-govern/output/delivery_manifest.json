@@ -1,0 +1,62 @@
+{
+  "pipelineVersion": "1.0.0",
+  "specNormalization": {
+    "raw": {
+      "client": "BroadcastX",
+      "styleGuide": {
+        "palette": "warm",
+        "saturation": "low"
+      },
+      "cameraModel": "Sony HDC-3500",
+      "deliverySpec": {
+        "loudness": "EBU_R128",
+        "truePeakCeilingDbtp": -1
+      },
+      "duration": {
+        "hours": 0,
+        "minutes": 42,
+        "seconds": 0
+      },
+      "outputFormat": "dnxhr"
+    },
+    "normalized": {
+      "client": "BroadcastX",
+      "creativeTone": "warm_cinematic",
+      "acquisitionCamera": "Sony HDC-3500",
+      "loudnessStandard": "EBU_R128",
+      "integratedLufsTarget": -23,
+      "integratedLufsTolerance": 0.5,
+      "truePeakCeilingDbtp": -1,
+      "expectedRuntimeSec": 2520,
+      "targetCodec": "dnxhr",
+      "targetContainer": "mov"
+    }
+  },
+  "gradeEvidence": [
+    {
+      "clipId": 7,
+      "verificationPng": "clip_7.png",
+      "scopeReadout": {
+        "paradeMaxIre": 98,
+        "waveformMaxIre": 100,
+        "midtoneMeanY": 48
+      }
+    }
+  ],
+  "audioEvidence": {
+    "preDuckLufs": -20,
+    "postDuckLufs": -32,
+    "duckingKeyframes": 8,
+    "finalIntegratedLufs": -23,
+    "finalTruePeakDbtp": -1.2
+  },
+  "exportEvidence": {
+    "path": "BroadcastX/master.mxf",
+    "codec": "dnxhr",
+    "durationSec": 2520,
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "idempotencyHash": "6ae9e95934dc134c4771a71b0f019e230c9f5114fea34d0d52894b3561b01c99",
+  "manifestGeneratedAtIso": "2026-01-01T00:00:00.000Z"
+}

@@ -1,0 +1,29 @@
+{
+  "designcraft": {
+    "pages": 1,
+    "spreads": 1,
+    "stories": 1,
+    "styles": [
+      "[Basic Paragraph]",
+      "[No Paragraph Style]",
+      "[None]"
+    ],
+    "swatches": [
+      "C=0 M=0 Y=100 K=0",
+      "C=0 M=100 Y=0 K=0",
+      "C=0 M=100 Y=100 K=0",
+      "C=100 M=0 Y=0 K=0",
+      "C=100 M=0 Y=100 K=0",
+      "C=100 M=100 Y=0 K=0",
+      "C=100 M=90 Y=10 K=0",
+      "C=15 M=100 Y=100 K=0",
+      "C=75 M=5 Y=100 K=0",
+      "[Black]",
+      "[None]",
+      "[Paper]",
+      "[Registration]"
+    ]
+  },
+  "wordcraft": null,
+  "pdfcraft": null
+}

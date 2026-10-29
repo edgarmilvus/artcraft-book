@@ -1,0 +1,29 @@
+{
+  "links": [
+    {
+      "asset": 8,
+      "name": "hero.png",
+      "path": "assets/hero.png",
+      "pixels": [
+        400,
+        400
+      ],
+      "status": "ok",
+      "uses": [
+        {
+          "id": 9,
+          "page": "1",
+          "ppi": 96
+        }
+      ]
+    }
+  ],
+  "fonts": [],
+  "colorMismatches": [
+    {
+      "imagePath": "assets/hero.png",
+      "from": "sRGB",
+      "to": "Coated FOGRA39"
+    }
+  ]
+}

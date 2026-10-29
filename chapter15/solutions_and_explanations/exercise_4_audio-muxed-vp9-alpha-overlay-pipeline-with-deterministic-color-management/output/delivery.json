@@ -1,0 +1,26 @@
+{
+  "webmLottie": {
+    "path": "dist/web/overlay.json",
+    "sha256": "abe7a5217506f101f223b5936c5881c03144c08bf80c2b3fd39e30d638372fd0"
+  },
+  "mkvAlpha": {
+    "path": "dist/native/overlay.mkv",
+    "sha256": "ba63bed0dbcc8dd3fc4cd31846a056eb0bd82d669f19860dfdf22a7e30ebe4a7",
+    "videoStreamSha256": "92f1eb7db4c4f2319061264e3f0b405d902994775be2efe27e01dcd8a5618bd6"
+  },
+  "webmAlpha": {
+    "path": "dist/native/overlay.webm",
+    "sha256": "bfdcbcd4009610276f5ed7670b95ea4f6c8efce2eaef11b708c530ec2918e4e5",
+    "videoStreamSha256": "92f1eb7db4c4f2319061264e3f0b405d902994775be2efe27e01dcd8a5618bd6"
+  },
+  "thumbnail": {
+    "path": "dist/web/thumb.png",
+    "sha256": "6f414713500b5ad8aa9c7457bfd0b1036e3f653e1ea0acdab22942d282871fe0"
+  },
+  "audio": {
+    "path": "audio/whoosh_stem.wav",
+    "codec": "opus",
+    "sampleRate": 48000,
+    "bitrate": 192000
+  }
+}

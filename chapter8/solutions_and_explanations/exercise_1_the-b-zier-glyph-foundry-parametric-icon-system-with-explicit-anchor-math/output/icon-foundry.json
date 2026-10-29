@@ -1,0 +1,1443 @@
+{
+  "steps": [
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 16,
+            "y": 48
+          },
+          {
+            "x": 112,
+            "y": 48
+          },
+          {
+            "x": 112,
+            "y": 88
+          },
+          {
+            "x": 16,
+            "y": 88
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 72,
+            "y": 64
+          },
+          {
+            "x": 96,
+            "y": 64
+          },
+          {
+            "x": 96,
+            "y": 72
+          },
+          {
+            "x": 72,
+            "y": 72
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 64,
+            "y": 8,
+            "in": [
+              48,
+              18.666666666666664
+            ],
+            "out": [
+              80,
+              18.666666666666664
+            ],
+            "smooth": true
+          },
+          {
+            "x": 112,
+            "y": 40,
+            "in": [
+              96,
+              29.333333333333336
+            ],
+            "out": [
+              106.66666666666667,
+              58.666666666666664
+            ],
+            "smooth": true
+          },
+          {
+            "x": 96,
+            "y": 96,
+            "in": [
+              101.33333333333333,
+              77.33333333333334
+            ],
+            "out": [
+              85.33333333333333,
+              104
+            ],
+            "smooth": true
+          },
+          {
+            "x": 64,
+            "y": 120,
+            "in": [
+              74.66666666666667,
+              112
+            ],
+            "out": [
+              53.333333333333336,
+              112
+            ],
+            "smooth": true
+          },
+          {
+            "x": 32,
+            "y": 96,
+            "in": [
+              42.666666666666664,
+              104
+            ],
+            "out": [
+              26.666666666666668,
+              77.33333333333334
+            ],
+            "smooth": true
+          },
+          {
+            "x": 16,
+            "y": 40,
+            "in": [
+              21.333333333333332,
+              58.666666666666664
+            ],
+            "out": [
+              32,
+              29.333333333333336
+            ],
+            "smooth": true
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 48,
+            "y": 64
+          },
+          {
+            "x": 56,
+            "y": 72
+          },
+          {
+            "x": 80,
+            "y": 48
+          },
+          {
+            "x": 88,
+            "y": 56
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.setFillRule",
+      "params": {
+        "rule": "evenOdd",
+        "ids": [
+          "$3.id"
+        ]
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 16,
+            "y": 104
+          },
+          {
+            "x": 16,
+            "y": 96
+          },
+          {
+            "x": 56,
+            "y": 56
+          },
+          {
+            "x": 96,
+            "y": 16
+          },
+          {
+            "x": 104,
+            "y": 16
+          },
+          {
+            "x": 104,
+            "y": 24
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$0.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$0.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$0.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 64,
+            "y": 16,
+            "in": [
+              74.66666666666667,
+              26.666666666666664
+            ],
+            "out": [
+              53.333333333333336,
+              26.666666666666664
+            ],
+            "smooth": true
+          },
+          {
+            "x": 32,
+            "y": 48,
+            "in": [
+              42.666666666666664,
+              37.333333333333336
+            ],
+            "out": [
+              34.666666666666664,
+              61.33333333333333
+            ],
+            "smooth": true
+          },
+          {
+            "x": 40,
+            "y": 88,
+            "in": [
+              37.333333333333336,
+              74.66666666666667
+            ],
+            "out": [
+              56,
+              88
+            ],
+            "smooth": true
+          },
+          {
+            "x": 88,
+            "y": 88,
+            "in": [
+              72,
+              88
+            ],
+            "out": [
+              90.66666666666667,
+              74.66666666666667
+            ],
+            "smooth": true
+          },
+          {
+            "x": 96,
+            "y": 48,
+            "in": [
+              93.33333333333333,
+              61.33333333333333
+            ],
+            "out": [
+              85.33333333333333,
+              37.333333333333336
+            ],
+            "smooth": true
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 56,
+            "y": 104
+          },
+          {
+            "x": 72,
+            "y": 104
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 16,
+            "y": 112
+          },
+          {
+            "x": 112,
+            "y": 112
+          },
+          {
+            "x": 112,
+            "y": 96
+          },
+          {
+            "x": 16,
+            "y": 96
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 32,
+            "y": 64
+          },
+          {
+            "x": 48,
+            "y": 64
+          },
+          {
+            "x": 48,
+            "y": 96
+          },
+          {
+            "x": 32,
+            "y": 96
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 64,
+            "y": 32
+          },
+          {
+            "x": 80,
+            "y": 32
+          },
+          {
+            "x": 80,
+            "y": 96
+          },
+          {
+            "x": 64,
+            "y": 96
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id",
+          "$2.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$4.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$4.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$4.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 64,
+            "y": 16,
+            "in": [
+              72,
+              24
+            ],
+            "out": [
+              56,
+              24
+            ],
+            "smooth": true
+          },
+          {
+            "x": 40,
+            "y": 40,
+            "in": [
+              48,
+              32
+            ],
+            "out": [
+              48,
+              48
+            ],
+            "smooth": true
+          },
+          {
+            "x": 64,
+            "y": 64,
+            "in": [
+              56,
+              56
+            ],
+            "out": [
+              72,
+              56
+            ],
+            "smooth": true
+          },
+          {
+            "x": 88,
+            "y": 40,
+            "in": [
+              80,
+              48
+            ],
+            "out": [
+              80,
+              32
+            ],
+            "smooth": true
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 24,
+            "y": 104,
+            "in": [
+              50.666666666666664,
+              104
+            ],
+            "out": [
+              50.666666666666664,
+              104
+            ],
+            "smooth": true
+          },
+          {
+            "x": 104,
+            "y": 104,
+            "in": [
+              77.33333333333334,
+              104
+            ],
+            "out": [
+              77.33333333333334,
+              104
+            ],
+            "smooth": true
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 48,
+            "y": 16,
+            "in": [
+              37.333333333333336,
+              26.666666666666664
+            ],
+            "out": [
+              58.666666666666664,
+              26.666666666666664
+            ],
+            "smooth": true
+          },
+          {
+            "x": 80,
+            "y": 48,
+            "in": [
+              69.33333333333333,
+              37.333333333333336
+            ],
+            "out": [
+              69.33333333333333,
+              58.666666666666664
+            ],
+            "smooth": true
+          },
+          {
+            "x": 48,
+            "y": 80,
+            "in": [
+              58.666666666666664,
+              69.33333333333333
+            ],
+            "out": [
+              37.333333333333336,
+              69.33333333333333
+            ],
+            "smooth": true
+          },
+          {
+            "x": 16,
+            "y": 48,
+            "in": [
+              26.666666666666664,
+              58.666666666666664
+            ],
+            "out": [
+              26.666666666666664,
+              37.333333333333336
+            ],
+            "smooth": true
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 72,
+            "y": 80
+          },
+          {
+            "x": 104,
+            "y": 112
+          },
+          {
+            "x": 112,
+            "y": 104
+          },
+          {
+            "x": 80,
+            "y": 72
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 64,
+            "y": 8,
+            "in": [
+              45.333333333333336,
+              26.666666666666664
+            ],
+            "out": [
+              82.66666666666666,
+              26.666666666666664
+            ],
+            "smooth": true
+          },
+          {
+            "x": 120,
+            "y": 64,
+            "in": [
+              101.33333333333334,
+              45.333333333333336
+            ],
+            "out": [
+              101.33333333333334,
+              82.66666666666666
+            ],
+            "smooth": true
+          },
+          {
+            "x": 64,
+            "y": 120,
+            "in": [
+              82.66666666666666,
+              101.33333333333334
+            ],
+            "out": [
+              45.333333333333336,
+              101.33333333333334
+            ],
+            "smooth": true
+          },
+          {
+            "x": 8,
+            "y": 64,
+            "in": [
+              26.666666666666664,
+              82.66666666666666
+            ],
+            "out": [
+              26.666666666666664,
+              45.333333333333336
+            ],
+            "smooth": true
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 64,
+            "y": 40,
+            "in": [
+              56,
+              48
+            ],
+            "out": [
+              72,
+              48
+            ],
+            "smooth": true
+          },
+          {
+            "x": 88,
+            "y": 64,
+            "in": [
+              80,
+              56
+            ],
+            "out": [
+              80,
+              72
+            ],
+            "smooth": true
+          },
+          {
+            "x": 64,
+            "y": 88,
+            "in": [
+              72,
+              80
+            ],
+            "out": [
+              56,
+              80
+            ],
+            "smooth": true
+          },
+          {
+            "x": 40,
+            "y": 64,
+            "in": [
+              48,
+              72
+            ],
+            "out": [
+              48,
+              56
+            ],
+            "smooth": true
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 48,
+            "y": 16
+          },
+          {
+            "x": 64,
+            "y": 16
+          },
+          {
+            "x": 64,
+            "y": 72
+          },
+          {
+            "x": 96,
+            "y": 72
+          },
+          {
+            "x": 56,
+            "y": 112
+          },
+          {
+            "x": 24,
+            "y": 72
+          },
+          {
+            "x": 48,
+            "y": 72
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$0.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$0.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$0.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 24,
+            "y": 56
+          },
+          {
+            "x": 88,
+            "y": 56
+          },
+          {
+            "x": 88,
+            "y": 112
+          },
+          {
+            "x": 24,
+            "y": 112
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 40,
+            "y": 48,
+            "in": [
+              40,
+              50.666666666666664
+            ],
+            "out": [
+              50.666666666666664,
+              48
+            ],
+            "smooth": true
+          },
+          {
+            "x": 72,
+            "y": 48,
+            "in": [
+              61.333333333333336,
+              48
+            ],
+            "out": [
+              72,
+              50.666666666666664
+            ],
+            "smooth": true
+          },
+          {
+            "x": 72,
+            "y": 56,
+            "in": [
+              72,
+              53.333333333333336
+            ],
+            "out": [
+              61.333333333333336,
+              56
+            ],
+            "smooth": true
+          },
+          {
+            "x": 40,
+            "y": 56,
+            "in": [
+              50.666666666666664,
+              56
+            ],
+            "out": [
+              40,
+              53.333333333333336
+            ],
+            "smooth": true
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.setFillRule",
+      "params": {
+        "rule": "evenOdd",
+        "ids": [
+          "$3.id"
+        ]
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 16,
+            "y": 24
+          },
+          {
+            "x": 112,
+            "y": 24
+          },
+          {
+            "x": 112,
+            "y": 112
+          },
+          {
+            "x": 16,
+            "y": 112
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 16,
+            "y": 48
+          },
+          {
+            "x": 112,
+            "y": 48
+          },
+          {
+            "x": 112,
+            "y": 56
+          },
+          {
+            "x": 16,
+            "y": 56
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "none": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 64,
+            "y": 16,
+            "in": [
+              74.66666666666667,
+              34.666666666666664
+            ],
+            "out": [
+              48,
+              32
+            ],
+            "smooth": true
+          },
+          {
+            "x": 16,
+            "y": 64,
+            "in": [
+              32,
+              48
+            ],
+            "out": [
+              48,
+              64
+            ],
+            "smooth": true
+          },
+          {
+            "x": 112,
+            "y": 64,
+            "in": [
+              80,
+              64
+            ],
+            "out": [
+              85.33333333333334,
+              66.66666666666667
+            ],
+            "smooth": true
+          },
+          {
+            "x": 32,
+            "y": 72,
+            "in": [
+              58.666666666666664,
+              69.33333333333333
+            ],
+            "out": [
+              32,
+              85.33333333333333
+            ],
+            "smooth": true
+          },
+          {
+            "x": 32,
+            "y": 112,
+            "in": [
+              32,
+              98.66666666666667
+            ],
+            "out": [
+              53.33333333333333,
+              112
+            ],
+            "smooth": true
+          },
+          {
+            "x": 96,
+            "y": 112,
+            "in": [
+              74.66666666666667,
+              112
+            ],
+            "out": [
+              96,
+              98.66666666666667
+            ],
+            "smooth": true
+          },
+          {
+            "x": 96,
+            "y": 72,
+            "in": [
+              96,
+              85.33333333333333
+            ],
+            "out": [
+              85.33333333333333,
+              53.333333333333336
+            ],
+            "smooth": true
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "path.create",
+      "params": {
+        "anchors": [
+          {
+            "x": 56,
+            "y": 80
+          },
+          {
+            "x": 72,
+            "y": 80
+          },
+          {
+            "x": 72,
+            "y": 112
+          },
+          {
+            "x": 56,
+            "y": 112
+          }
+        ],
+        "closed": true
+      }
+    },
+    {
+      "id": "select.set",
+      "params": {
+        "ids": [
+          "$0.id",
+          "$1.id"
+        ]
+      }
+    },
+    {
+      "id": "object.compoundPath.make",
+      "params": {}
+    },
+    {
+      "id": "paint.setStroke",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "color": "#111827"
+      }
+    },
+    {
+      "id": "stroke.set",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "weight": 8,
+        "cap": "round",
+        "join": "round"
+      }
+    },
+    {
+      "id": "paint.setFill",
+      "params": {
+        "ids": [
+          "$3.id"
+        ],
+        "none": true
+      }
+    }
+  ],
+  "atomic": true,
+  "label": "Icon family build — fintech-core"
+}

@@ -1,0 +1,15 @@
+studio-hello/
+├─ package.json
+├─ tsconfig.json
+├─ supabase/
+│  └─ migrations/
+│     └─ 0001_brand_assets.sql
+├─ src/
+│  ├─ env.ts
+│  ├─ dbClient.ts
+│  ├─ brandMemory.ts
+│  ├─ photocraftBridge.ts
+│  ├─ pipeline.ts
+│  └─ main.ts
+└─ test/
+   └─ pipeline.test.ts

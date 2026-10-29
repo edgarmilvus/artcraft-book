@@ -1,0 +1,251 @@
+{
+  "rows": [
+    {
+      "cutId": "cut-1:in",
+      "sourceFrame25": 0,
+      "sourceTick": "0",
+      "targetFrame23Rounded": 0,
+      "targetTick": "0",
+      "residualTicks": "0",
+      "df29Timecode": "00:00:00;00",
+      "nf29Frame": 0
+    },
+    {
+      "cutId": "cut-1:out",
+      "sourceFrame25": 18,
+      "sourceTick": "182891520000",
+      "targetFrame23Rounded": 19,
+      "targetTick": "201297096000",
+      "residualTicks": "-2449997550",
+      "df29Timecode": "00:00:00;21",
+      "nf29Frame": 21
+    },
+    {
+      "cutId": "cut-2:in",
+      "sourceFrame25": 25,
+      "sourceTick": "254016000000",
+      "targetFrame23Rounded": 26,
+      "targetTick": "275459184000",
+      "residualTicks": "717341625",
+      "df29Timecode": "00:00:00;29",
+      "nf29Frame": 29
+    },
+    {
+      "cutId": "cut-2:out",
+      "sourceFrame25": 43,
+      "sourceTick": "436907520000",
+      "targetFrame23Rounded": 45,
+      "targetTick": "476756280000",
+      "residualTicks": "-1732655925",
+      "df29Timecode": "00:00:01;21",
+      "nf29Frame": 51
+    },
+    {
+      "cutId": "cut-3:in",
+      "sourceFrame25": 50,
+      "sourceTick": "508032000000",
+      "targetFrame23Rounded": 52,
+      "targetTick": "550918368000",
+      "residualTicks": "1434683250",
+      "df29Timecode": "00:00:01;29",
+      "nf29Frame": 59
+    },
+    {
+      "cutId": "cut-3:out",
+      "sourceFrame25": 68,
+      "sourceTick": "690923520000",
+      "targetFrame23Rounded": 71,
+      "targetTick": "752215464000",
+      "residualTicks": "-1015314300",
+      "df29Timecode": "00:00:02;21",
+      "nf29Frame": 81
+    },
+    {
+      "cutId": "cut-4:in",
+      "sourceFrame25": 75,
+      "sourceTick": "762048000000",
+      "targetFrame23Rounded": 78,
+      "targetTick": "826377552000",
+      "residualTicks": "2152024875",
+      "df29Timecode": "00:00:02;29",
+      "nf29Frame": 89
+    },
+    {
+      "cutId": "cut-4:out",
+      "sourceFrame25": 93,
+      "sourceTick": "944939520000",
+      "targetFrame23Rounded": 97,
+      "targetTick": "1027674648000",
+      "residualTicks": "-297972675",
+      "df29Timecode": "00:00:03;21",
+      "nf29Frame": 111
+    },
+    {
+      "cutId": "cut-5:in",
+      "sourceFrame25": 100,
+      "sourceTick": "1016064000000",
+      "targetFrame23Rounded": 104,
+      "targetTick": "1101836736000",
+      "residualTicks": "2869366500",
+      "df29Timecode": "00:00:03;29",
+      "nf29Frame": 119
+    },
+    {
+      "cutId": "cut-5:out",
+      "sourceFrame25": 118,
+      "sourceTick": "1198955520000",
+      "targetFrame23Rounded": 123,
+      "targetTick": "1303133832000",
+      "residualTicks": "419368950",
+      "df29Timecode": "00:00:04;21",
+      "nf29Frame": 141
+    },
+    {
+      "cutId": "cut-6:in",
+      "sourceFrame25": 125,
+      "sourceTick": "1270080000000",
+      "targetFrame23Rounded": 130,
+      "targetTick": "1377295920000",
+      "residualTicks": "3586708125",
+      "df29Timecode": "00:00:04;29",
+      "nf29Frame": 149
+    },
+    {
+      "cutId": "cut-6:out",
+      "sourceFrame25": 143,
+      "sourceTick": "1452971520000",
+      "targetFrame23Rounded": 149,
+      "targetTick": "1578593016000",
+      "residualTicks": "1136710575",
+      "df29Timecode": "00:00:05;21",
+      "nf29Frame": 171
+    },
+    {
+      "cutId": "cut-7:in",
+      "sourceFrame25": 150,
+      "sourceTick": "1524096000000",
+      "targetFrame23Rounded": 156,
+      "targetTick": "1652755104000",
+      "residualTicks": "4304049750",
+      "df29Timecode": "00:00:05;29",
+      "nf29Frame": 179
+    },
+    {
+      "cutId": "cut-7:out",
+      "sourceFrame25": 168,
+      "sourceTick": "1706987520000",
+      "targetFrame23Rounded": 175,
+      "targetTick": "1854052200000",
+      "residualTicks": "1854052200",
+      "df29Timecode": "00:00:06;21",
+      "nf29Frame": 201
+    },
+    {
+      "cutId": "cut-8:in",
+      "sourceFrame25": 175,
+      "sourceTick": "1778112000000",
+      "targetFrame23Rounded": 182,
+      "targetTick": "1928214288000",
+      "residualTicks": "5021391375",
+      "df29Timecode": "00:00:06;29",
+      "nf29Frame": 209
+    },
+    {
+      "cutId": "cut-8:out",
+      "sourceFrame25": 193,
+      "sourceTick": "1961003520000",
+      "targetFrame23Rounded": 201,
+      "targetTick": "2129511384000",
+      "residualTicks": "2571393825",
+      "df29Timecode": "00:00:07;21",
+      "nf29Frame": 231
+    },
+    {
+      "cutId": "cut-9:in",
+      "sourceFrame25": 200,
+      "sourceTick": "2032128000000",
+      "targetFrame23Rounded": 209,
+      "targetTick": "2214268056000",
+      "residualTicks": "-4855851000",
+      "df29Timecode": "00:00:07;29",
+      "nf29Frame": 239
+    },
+    {
+      "cutId": "cut-9:out",
+      "sourceFrame25": 218,
+      "sourceTick": "2215019520000",
+      "targetFrame23Rounded": 227,
+      "targetTick": "2404970568000",
+      "residualTicks": "3288735450",
+      "df29Timecode": "00:00:08;21",
+      "nf29Frame": 261
+    },
+    {
+      "cutId": "cut-10:in",
+      "sourceFrame25": 225,
+      "sourceTick": "2286144000000",
+      "targetFrame23Rounded": 235,
+      "targetTick": "2489727240000",
+      "residualTicks": "-4138509375",
+      "df29Timecode": "00:00:08;29",
+      "nf29Frame": 269
+    },
+    {
+      "cutId": "cut-10:out",
+      "sourceFrame25": 243,
+      "sourceTick": "2469035520000",
+      "targetFrame23Rounded": 253,
+      "targetTick": "2680429752000",
+      "residualTicks": "4006077075",
+      "df29Timecode": "00:00:09;21",
+      "nf29Frame": 291
+    },
+    {
+      "cutId": "cut-11:in",
+      "sourceFrame25": 250,
+      "sourceTick": "2540160000000",
+      "targetFrame23Rounded": 261,
+      "targetTick": "2765186424000",
+      "residualTicks": "-3421167750",
+      "df29Timecode": "00:00:09;29",
+      "nf29Frame": 299
+    },
+    {
+      "cutId": "cut-11:out",
+      "sourceFrame25": 268,
+      "sourceTick": "2723051520000",
+      "targetFrame23Rounded": 279,
+      "targetTick": "2955888936000",
+      "residualTicks": "4723418700",
+      "df29Timecode": "00:00:10;21",
+      "nf29Frame": 321
+    },
+    {
+      "cutId": "cut-12:in",
+      "sourceFrame25": 275,
+      "sourceTick": "2794176000000",
+      "targetFrame23Rounded": 287,
+      "targetTick": "3040645608000",
+      "residualTicks": "-2703826125",
+      "df29Timecode": "00:00:10;29",
+      "nf29Frame": 329
+    },
+    {
+      "cutId": "cut-12:out",
+      "sourceFrame25": 293,
+      "sourceTick": "2977067520000",
+      "targetFrame23Rounded": 306,
+      "targetTick": "3241942704000",
+      "residualTicks": "-5153823675",
+      "df29Timecode": "00:00:11;21",
+      "nf29Frame": 351
+    }
+  ],
+  "report": {
+    "maxResidualAbsTicks": "5153823675",
+    "maxResidualMicroseconds": 20289,
+    "maxResidualSamples48k": 973,
+    "cutsProcessed": 12,
+    "dfRoundTripFailures": 0
+  }
+}

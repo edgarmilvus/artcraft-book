@@ -1,0 +1,88 @@
+{
+  "platform": "darwin",
+  "identity_source": "keychain",
+  "identity_count": 0,
+  "repository_merkle": "cb04b710da59b32426c4a1e1905d9254c73eb8b64b6edbe0bca8f8fd462877e5",
+  "observed_fingerprints": [
+    "CB 75 44 82 F3 91 F5 E4 C6 0B 1F 14 F0 C5 27 A9 F8 E3 09 3C 3F FD ED FD 69 F5 D4 7F B4 6E 3D DB"
+  ],
+  "trust_before": [],
+  "trust_after": [
+    "CB 75 44 82 F3 91 F5 E4 C6 0B 1F 14 F0 C5 27 A9 F8 E3 09 3C 3F FD ED FD 69 F5 D4 7F B4 6E 3D DB"
+  ],
+  "trust_events": [
+    {
+      "event": "trust_added",
+      "fingerprint": "CB 75 44 82 F3 91 F5 E4 C6 0B 1F 14 F0 C5 27 A9 F8 E3 09 3C 3F FD ED FD 69 F5 D4 7F B4 6E 3D DB",
+      "reason": "pinned_corporate_root"
+    }
+  ],
+  "inspected_files": [
+    "/private/tmp/companion/chapter17/solutions_and_explanations/exercise_4_digital-signature-ledger-with-trust-store-reconciliation/output/work/repo/advisory-001.pdf",
+    "/private/tmp/companion/chapter17/solutions_and_explanations/exercise_4_digital-signature-ledger-with-trust-store-reconciliation/output/work/repo/advisory-002.pdf"
+  ],
+  "verification": [
+    {
+      "path": "/private/tmp/companion/chapter17/solutions_and_explanations/exercise_4_digital-signature-ledger-with-trust-store-reconciliation/output/work/repo/advisory-001.pdf",
+      "status": "valid",
+      "revision": 2,
+      "modification": "none"
+    },
+    {
+      "path": "/private/tmp/companion/chapter17/solutions_and_explanations/exercise_4_digital-signature-ledger-with-trust-store-reconciliation/output/work/repo/advisory-002.pdf",
+      "status": "invalid",
+      "revision": 2,
+      "modification": "disallowed"
+    },
+    {
+      "path": "/private/tmp/companion/chapter17/solutions_and_explanations/exercise_4_digital-signature-ledger-with-trust-store-reconciliation/output/work/repo/advisory-002.pdf",
+      "status": "invalid",
+      "revision": 3,
+      "modification": "disallowed"
+    }
+  ],
+  "ledger_signature": {
+    "bytes": 28019,
+    "path": "/private/tmp/companion/chapter17/solutions_and_explanations/exercise_4_digital-signature-ledger-with-trust-store-reconciliation/output/work/out/signature-ledger.pdf",
+    "signature": {
+      "algorithm": "RSA 2048-bit with SHA-256",
+      "certificate": {
+        "email": "advisor@harbourtrust.example",
+        "issuer": "C=US, O=Harbour Trust, CN=Advisor Signing Authority, E=advisor@harbourtrust.example",
+        "key": "RSA 2048-bit",
+        "name": "Advisor Signing Authority",
+        "self_signed": true,
+        "serial": "00EE21CF38B3CD5D41",
+        "sha256": "CB 75 44 82 F3 91 F5 E4 C6 0B 1F 14 F0 C5 27 A9 F8 E3 09 3C 3F FD ED FD 69 F5 D4 7F B4 6E 3D DB",
+        "subject": "C=US, O=Harbour Trust, CN=Advisor Signing Authority, E=advisor@harbourtrust.example",
+        "valid_from": "2026.10.26 14:21:02 UTC",
+        "valid_to": "2031.10.26 14:21:02 UTC"
+      },
+      "certify": 2,
+      "chain": [],
+      "changes": [],
+      "contact": null,
+      "date": "D:20261026152102+01'00'",
+      "details": [
+        "This document has not been modified since this signature was applied.",
+        "The signer's identity is valid.",
+        "Signing time is from the clock on the signer's computer."
+      ],
+      "field": "Signature1",
+      "location": null,
+      "modification": "none",
+      "page": 1,
+      "reason": "Quarterly Signature Ledger",
+      "rect": null,
+      "revision": 2,
+      "signed": true,
+      "signer": "Advisor Signing Authority",
+      "status": "valid",
+      "sub_filter": "ETSI.CAdES.detached",
+      "summary": "Signature is valid",
+      "timestamp": false,
+      "timestamp_time": null,
+      "visible": false
+    }
+  }
+}

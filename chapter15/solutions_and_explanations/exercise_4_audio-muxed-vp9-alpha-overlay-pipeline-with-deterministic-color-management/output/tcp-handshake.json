@@ -1,0 +1,7 @@
+{
+  "methods": [
+    "auth",
+    "engine.execute",
+    "auth"
+  ]
+}

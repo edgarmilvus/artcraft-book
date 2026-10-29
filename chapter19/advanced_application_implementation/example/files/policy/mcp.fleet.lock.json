@@ -1,0 +1,95 @@
+// mcp.fleet.lock.json — the audit envelope the generator writes.
+//
+// This is the *resolution*: one concrete set of servers, roots, capabilities
+// and engine dialects, derived from mcp.fleet.json and signed with the
+// fleet's HMAC key. The compliance bot reloads this file, re-hashes the
+// master for every role and proves that a running workstation matches it.
+//
+// Every entry carries the envelope's own signature. A per-entry signature
+// would only prove the entry; a fleet is only governed as a whole.
+{
+  "envelopeVersion": "1",
+  "studio": "Northwind Motion",
+  "generatorVersion": "1.4.0",
+  "generatedAt": "<ISO8601>",
+  "roles": ["colorist-senior", "compliance-auditor", "junior-editor", "motion-senior"],
+  "entries": [
+    {
+      "server": "designcraft-prod",
+      "app": "designcraft",
+      "binary": "designcraft-cli",
+      "role": "junior-editor",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/banners",
+      "readRoots": ["/work/projects"],
+      "writeRoots": ["/work/projects/banners"],
+      "sha256RoleCapabilities": "<sha256-hex>",
+      "sha256ServerCapabilities": "<sha256-hex>",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "<ISO8601>",
+      "sandbox": {
+        "enforcedBy": "worker",
+        "engineFlags": [],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "designcraft",
+        "runTool": "execute",
+        "runArg": "command",
+        "batchTool": "batch",
+        "batchArg": "commands",
+        "batchStopArg": null,
+        "discoveryTool": "list_commands",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabledOnly",
+        "documentTools": {
+          "new": "new_document",
+          "open": "open_document",
+          "save": "save_document",
+          "inspect": "inspect_document"
+        },
+        "enforcesRoots": false
+      },
+      "capabilities": {
+        "allow": [
+          "file.new",
+          "font.list",
+          "frame.create",
+          "layer.new",
+          "links.list",
+          "object.fill",
+          "place.styles",
+          "story.get",
+          "type.char",
+          "type.create"
+        ],
+        "deny": [
+          "bookmark.delete",
+          "edit.clear",
+          "file.exportIdml",
+          "layer.delete",
+          "layout.pages.delete",
+          "links.relink",
+          "note.delete",
+          "object.setLayer"
+        ],
+        "requireApproval": ["file.open", "place.styles"],
+        "effectiveAllow": [
+          "file.new",
+          "file.open",
+          "font.list",
+          "frame.create",
+          "layer.new",
+          "links.list",
+          "object.fill",
+          "place.styles",
+          "story.get",
+          "type.char",
+          "type.create"
+        ]
+      },
+      "signature": "<hmac-sha256-hex>"
+    }
+  ],
+  "signature": "<hmac-sha256-hex>"
+}

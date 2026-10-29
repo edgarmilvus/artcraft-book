@@ -1,0 +1,15 @@
+{
+  "exercise": 3,
+  "engine": "effectcraft value graph (pure score/influence)",
+  "assertions": 29,
+  "iterations": 3,
+  "finalMeanScore": 0.03,
+  "stopReason": "converged",
+  "artefacts": [
+    "loop-report.json",
+    "frames/iter_1.png",
+    "frames/iter_2.png",
+    "frames/iter_3.png"
+  ],
+  "result": "strict -3..+3 schema, bounded influence vectors and a converged three-pass report"
+}

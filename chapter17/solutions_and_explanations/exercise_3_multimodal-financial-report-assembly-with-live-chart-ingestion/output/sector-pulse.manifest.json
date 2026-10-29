@@ -1,0 +1,77 @@
+{
+  "status": "sealed",
+  "vision_iterations": 2,
+  "vision_transcript": [
+    {
+      "iteration": 1,
+      "page": 1,
+      "raw": "{\"cv_safe\":false,\"offending_chart\":\"Revenue\",\"recommended_fix\":\"highlight_cell\"}"
+    },
+    {
+      "iteration": 2,
+      "page": 1,
+      "raw": "{\"cv_safe\":true,\"offending_chart\":null,\"recommended_fix\":null}"
+    }
+  ],
+  "docx_revision_index": 1,
+  "update_toc_calls": 2,
+  "pdfa": {
+    "compliant": true,
+    "declared": {
+      "output_intents": [
+        "sRGB IEC61966-2.1"
+      ],
+      "pdfa": "PDF/A-3b",
+      "pdfua": null
+    },
+    "issues": [],
+    "level": "PDF/A-3b"
+  },
+  "signatures": {
+    "all_valid": false,
+    "count": 1,
+    "signatures": [
+      {
+        "algorithm": "RSA 2048-bit with SHA-256",
+        "certificate": {
+          "email": "seal@sectorpulse.example",
+          "issuer": "C=US, O=Sector Pulse Studio, CN=Studio Corporate Seal, E=seal@sectorpulse.example",
+          "key": "RSA 2048-bit",
+          "name": "Studio Corporate Seal",
+          "self_signed": true,
+          "serial": "47434EC776E11F0F",
+          "sha256": "87 A7 84 0B 4A 18 82 FA 21 B4 58 F4 29 38 2B 41 06 40 BC 74 13 1B C6 DE F3 81 34 AA 0F 11 C9 4A",
+          "subject": "C=US, O=Sector Pulse Studio, CN=Studio Corporate Seal, E=seal@sectorpulse.example",
+          "valid_from": "2026.10.26 13:32:29 UTC",
+          "valid_to": "2031.10.26 13:32:29 UTC"
+        },
+        "certify": 1,
+        "chain": [],
+        "changes": [],
+        "contact": null,
+        "date": "D:20261026143229+01'00'",
+        "details": [
+          "This document has not been modified since this signature was applied.",
+          "The signer's identity is unknown because it has not been included in your list of trusted certificates and none of its parent certificates are trusted certificates.",
+          "Signing time is from the clock on the signer's computer."
+        ],
+        "field": "Signature1",
+        "location": null,
+        "modification": "none",
+        "page": 1,
+        "reason": "Q3 Sector Pulse publication seal",
+        "rect": null,
+        "revision": 2,
+        "signed": true,
+        "signer": "Studio Corporate Seal",
+        "status": "unknown",
+        "sub_filter": "ETSI.CAdES.detached",
+        "summary": "Signature validity is unknown",
+        "timestamp": false,
+        "timestamp_time": null,
+        "visible": false
+      }
+    ],
+    "signed": 1
+  }
+}

@@ -1,0 +1,12 @@
+authenticated control channel
+
+PASS a wrong token fails closed
+PASS connect() adopts the server's active document
+PASS execute() records an issue and an ack
+PASS a lost reply leaves the command unacked
+PASS recover() acks from history instead of replaying
+PASS recover() is pure: the prior snapshot is untouched
+PASS the FSM escalates after three auth rejections
+PASS the JSONL ledger replays with every command acknowledged
+
+8/8 checks passed

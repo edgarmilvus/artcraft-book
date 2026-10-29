@@ -1,0 +1,102 @@
+{
+  "exercise": 1,
+  "engine": "vectorcraft-cli",
+  "assertions": 133,
+  "family": "fintech-core",
+  "icons": [
+    {
+      "name": "wallet",
+      "anchors": 8,
+      "subpaths": 2,
+      "fillRule": "nonZero",
+      "specHash": "e9eb026679e56a5008a075246d3ef9d492a9b7581d6ed7c86480adabd41113ff"
+    },
+    {
+      "name": "shield-check",
+      "anchors": 10,
+      "subpaths": 2,
+      "fillRule": "evenOdd",
+      "specHash": "858d2622c68911929f2fc3938955c1244d499d1eb1c82ce726bb4be6a19b2558"
+    },
+    {
+      "name": "arrow-trend-up",
+      "anchors": 6,
+      "subpaths": 1,
+      "fillRule": "nonZero",
+      "specHash": "828eb1e25492e9be6863b8ff3bc2321c6a2c03c1a3fe18c3ad127f71962a14f4"
+    },
+    {
+      "name": "bell",
+      "anchors": 7,
+      "subpaths": 2,
+      "fillRule": "nonZero",
+      "specHash": "eb3dba8c85af603fa83e01e2c1c2344449011c5c868e9be725dc1604e9174744"
+    },
+    {
+      "name": "chart-bars",
+      "anchors": 12,
+      "subpaths": 3,
+      "fillRule": "nonZero",
+      "specHash": "f2c08feb812f54032b12326a0f9168ba26fee817c54e243bdfcb1479557014af"
+    },
+    {
+      "name": "user",
+      "anchors": 6,
+      "subpaths": 2,
+      "fillRule": "nonZero",
+      "specHash": "4dce5ca01486a54e2c2cd85346bd4b3127da89964dd24a96ab14d34eabbb38ba"
+    },
+    {
+      "name": "search",
+      "anchors": 8,
+      "subpaths": 2,
+      "fillRule": "nonZero",
+      "specHash": "d6757e4893bdb78feaa1c01a865183492cd8c782fdd729fec156f2ce2e906689"
+    },
+    {
+      "name": "settings",
+      "anchors": 8,
+      "subpaths": 2,
+      "fillRule": "nonZero",
+      "specHash": "1aab7efbff94a51f2c649298bc9790e96f39cf8c9d87bc477192604a6166ec39"
+    },
+    {
+      "name": "download",
+      "anchors": 7,
+      "subpaths": 1,
+      "fillRule": "nonZero",
+      "specHash": "27df72f87866c485e8291543625055ec31660673b2a102d91bada9f1e4e0a44a"
+    },
+    {
+      "name": "lock",
+      "anchors": 8,
+      "subpaths": 2,
+      "fillRule": "evenOdd",
+      "specHash": "d7e1e2d719699e4f06b15de85ddf6ef16741497a4cb856034331f243c50377d0"
+    },
+    {
+      "name": "calendar",
+      "anchors": 8,
+      "subpaths": 2,
+      "fillRule": "nonZero",
+      "specHash": "e8ee8e19aa1c704698c9c5b09651544b17c35d5dc21312d241953a7ef631d179"
+    },
+    {
+      "name": "home",
+      "anchors": 11,
+      "subpaths": 2,
+      "fillRule": "nonZero",
+      "specHash": "5a73e44e9b4eeae2e81a4e4d44367f134de2d59872cc1c9a0aaf221bb55814e9"
+    }
+  ],
+  "artefacts": [
+    "icon-foundry.json",
+    "build/manifest.json",
+    "build/wallet.vectorcraft",
+    "build/wallet.svg",
+    "build/shield-check.vectorcraft",
+    "build/shield-check.svg",
+    "build-2/manifest.json"
+  ],
+  "result": "twelve icons built in one atomic family batch; manifests and native archives are byte-stable across two runs"
+}

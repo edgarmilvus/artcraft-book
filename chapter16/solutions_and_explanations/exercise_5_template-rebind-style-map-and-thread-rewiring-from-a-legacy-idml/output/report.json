@@ -1,0 +1,23 @@
+{
+  "exercise": 5,
+  "engine": "DesignCraft IDML rebind (scripted engine, real IDML zip)",
+  "assertions": 52,
+  "stories": 8,
+  "orphansRemoved": 1,
+  "fontSubstitutions": 1,
+  "grid": {
+    "templateStart": 48,
+    "templateIncrement": 13,
+    "newStart": 52,
+    "newIncrement": 14,
+    "ratio": 1.0732323232323233
+  },
+  "artefacts": [
+    "annual-report-2022.idml",
+    "annual-report-2026.designcraft",
+    "rebind-report.json",
+    "font-substitutions.json",
+    "grid-port.json"
+  ],
+  "result": "three legacy styles mapped, eight stories rewired, one orphan removed and the grid ported 792→850 pt"
+}

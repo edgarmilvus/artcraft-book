@@ -1,0 +1,9 @@
+PASS bad canvas rejected by the schema
+PASS document index is the one doc_new returned
+PASS four top-level layers (background, fill, clip, curves)
+PASS the PSD was written
+PASS the file carries the PSD signature
+PASS no save warnings
+PASS a parent-traversal path is refused
+
+7/7 checks passed

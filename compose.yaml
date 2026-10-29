@@ -1,0 +1,22 @@
+services:
+  artcraft:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: artcraft-book:latest
+    working_dir: /work
+    volumes:
+      - .:/work
+      - artcraft-node-modules:/work/node_modules
+      - artcraft-engines:/work/tools/craft-cli/bin
+      - artcraft-venv:/work/.venv
+    environment:
+      - PHOTOCRAFT_DISABLE_GPU=1
+      - WGPU_BACKEND=cpu
+      - RUST_BACKTRACE=1
+      - MCP_TIMEOUT_MS=300000
+
+volumes:
+  artcraft-node-modules:
+  artcraft-engines:
+  artcraft-venv:

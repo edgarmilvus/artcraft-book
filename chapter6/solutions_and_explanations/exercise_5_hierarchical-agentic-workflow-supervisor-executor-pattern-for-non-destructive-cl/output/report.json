@@ -1,0 +1,71 @@
+{
+  "chapter": 6,
+  "exercise": 5,
+  "checks": {
+    "passed": 35,
+    "failed": 0,
+    "total": 35
+  },
+  "brief": "three-tier banner: ribbon behind a product clipped to a gradient, a sale badge in front of the ribbon and behind the price, the price inside a rounded scrim with a drop shadow, graded typography only",
+  "plan": {
+    "steps": 41,
+    "assertions": 12,
+    "validation": []
+  },
+  "runs": {
+    "a": {
+      "status": "ok",
+      "sha256": "992a0423cb633f52f34ac1da94daa9cd988c903898987b447dcd4084392a56b3",
+      "assertions": 12,
+      "requirements": {
+        "ribbonBehindProduct": true,
+        "badgeBetweenRibbonAndPrice": true,
+        "scrimHasDropShadow": true,
+        "gradeClippedToTypeOnly": true
+      },
+      "applied": 29
+    },
+    "b": {
+      "status": "ok",
+      "sha256": "992a0423cb633f52f34ac1da94daa9cd988c903898987b447dcd4084392a56b3",
+      "assertions": 12,
+      "requirements": {
+        "ribbonBehindProduct": true,
+        "badgeBetweenRibbonAndPrice": true,
+        "scrimHasDropShadow": true,
+        "gradeClippedToTypeOnly": true
+      },
+      "applied": 29
+    }
+  },
+  "tree": [
+    "Type::Grade",
+    "Type::Stack",
+    "Type::Price",
+    "Type::Price",
+    "Type::Scrim",
+    "Type::Headline",
+    "Type::Headline",
+    "Sale",
+    "Sale::Badge",
+    "Sale::Label",
+    "Product::Stack",
+    "Product::Cutout",
+    "Gradient::Product",
+    "Ribbon::Band",
+    "Background"
+  ],
+  "assets": [
+    {
+      "file": "composites/run-a/composite.psd",
+      "bytes": 911339,
+      "sha256": "992a0423cb633f52f34ac1da94daa9cd988c903898987b447dcd4084392a56b3"
+    },
+    {
+      "file": "composites/run-b/composite.psd",
+      "bytes": 911339,
+      "sha256": "992a0423cb633f52f34ac1da94daa9cd988c903898987b447dcd4084392a56b3"
+    }
+  ],
+  "failures": []
+}

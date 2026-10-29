@@ -1,0 +1,129 @@
+{
+  "screenshot": "program-monitor.png",
+  "anchors": [
+    {
+      "anchorId": "a",
+      "visualEventTick": 1000000000,
+      "audioTransientTick": 994708000,
+      "driftTicks": 5292000,
+      "rejected": false
+    },
+    {
+      "anchorId": "b",
+      "visualEventTick": 1000000000,
+      "audioTransientTick": 989416000,
+      "driftTicks": 10584000,
+      "rejected": false
+    },
+    {
+      "anchorId": "c",
+      "visualEventTick": 1000000000,
+      "audioTransientTick": 1000000000,
+      "driftTicks": 0,
+      "rejected": false
+    }
+  ],
+  "pass": {
+    "anchors": [
+      {
+        "anchorId": "a",
+        "visualEventTick": 1000000000,
+        "audioTransientTick": 994708000,
+        "driftTicks": 5292000,
+        "rejected": false
+      },
+      {
+        "anchorId": "b",
+        "visualEventTick": 1000000000,
+        "audioTransientTick": 989416000,
+        "driftTicks": 10584000,
+        "rejected": false
+      },
+      {
+        "anchorId": "c",
+        "visualEventTick": 1000000000,
+        "audioTransientTick": 1000000000,
+        "driftTicks": 0,
+        "rejected": false
+      }
+    ],
+    "maxDriftTicks": 10584000,
+    "passThresholdTicks": 10584000,
+    "rejectedAnchors": 0,
+    "systematicOffsetCorrection": {
+      "applied": false,
+      "deltaTicks": 0,
+      "residualBefore": 10584000,
+      "residualAfter": 10584000
+    },
+    "verdict": "pass",
+    "rationale": "Maximum drift 10584000 ticks is below the two-sample threshold 10584000."
+  },
+  "fail": {
+    "anchors": [
+      {
+        "anchorId": "a",
+        "visualEventTick": 1000000000,
+        "audioTransientTick": 984124000,
+        "driftTicks": 15876000,
+        "rejected": false
+      },
+      {
+        "anchorId": "b",
+        "visualEventTick": 1000000000,
+        "audioTransientTick": 994708000,
+        "driftTicks": 5292000,
+        "rejected": false
+      }
+    ],
+    "maxDriftTicks": 15876000,
+    "passThresholdTicks": 10584000,
+    "rejectedAnchors": 0,
+    "systematicOffsetCorrection": {
+      "applied": false,
+      "deltaTicks": 0,
+      "residualBefore": 15876000,
+      "residualAfter": 15876000
+    },
+    "verdict": "fail",
+    "rationale": "Maximum drift 15876000 ticks exceeds the two-sample threshold 10584000."
+  },
+  "inconclusive": {
+    "anchors": [
+      {
+        "anchorId": "a",
+        "visualEventTick": null,
+        "audioTransientTick": null,
+        "driftTicks": null,
+        "rejected": true,
+        "rejectReason": "no_event_found"
+      },
+      {
+        "anchorId": "b",
+        "visualEventTick": null,
+        "audioTransientTick": null,
+        "driftTicks": null,
+        "rejected": true,
+        "rejectReason": "audio_envelope_flat"
+      },
+      {
+        "anchorId": "c",
+        "visualEventTick": 1000000000,
+        "audioTransientTick": 994708000,
+        "driftTicks": 5292000,
+        "rejected": false
+      }
+    ],
+    "maxDriftTicks": 5292000,
+    "passThresholdTicks": 10584000,
+    "rejectedAnchors": 2,
+    "systematicOffsetCorrection": {
+      "applied": false,
+      "deltaTicks": 0,
+      "residualBefore": 5292000,
+      "residualAfter": 5292000
+    },
+    "verdict": "inconclusive",
+    "rationale": "2/3 anchors were rejected, so the residual is not representative."
+  }
+}

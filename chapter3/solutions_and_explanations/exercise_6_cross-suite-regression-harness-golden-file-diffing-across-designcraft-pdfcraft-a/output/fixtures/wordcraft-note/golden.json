@@ -1,0 +1,71 @@
+{
+  "designcraft": null,
+  "wordcraft": {
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "Golden note for the cross-suite harness.",
+        "styleChain": [
+          "Normal"
+        ]
+      }
+    ],
+    "styles": [
+      "Book Title",
+      "Caption",
+      "Default Paragraph Font",
+      "Emphasis",
+      "Endnote Reference",
+      "Endnote Text",
+      "Footer",
+      "Footnote Reference",
+      "Footnote Text",
+      "Grid Table 1 Light",
+      "Grid Table 4 – Blue",
+      "Grid Table 4 – Green",
+      "Grid Table 4 – Orange",
+      "Grid Table 4 – Purple",
+      "Header",
+      "Heading 1",
+      "Heading 2",
+      "Heading 3",
+      "Heading 4",
+      "Heading 5",
+      "Heading 6",
+      "Heading 7",
+      "Heading 8",
+      "Heading 9",
+      "Hyperlink",
+      "Intense Emphasis",
+      "Intense Quote",
+      "Intense Reference",
+      "List Paragraph",
+      "List Table 3 – Blue",
+      "List Table 3 – Green",
+      "List Table 3 – Orange",
+      "List Table 3 – Purple",
+      "No Spacing",
+      "Normal",
+      "Normal Table",
+      "Plain Table 1",
+      "Quote",
+      "Strong",
+      "Subtitle",
+      "Subtle Emphasis",
+      "Subtle Reference",
+      "TOC 1",
+      "TOC 2",
+      "TOC 3",
+      "TOC 4",
+      "TOC 5",
+      "TOC 6",
+      "TOC 7",
+      "TOC 8",
+      "TOC 9",
+      "TOC Heading",
+      "Table Grid",
+      "Title"
+    ]
+  },
+  "pdfcraft": null
+}

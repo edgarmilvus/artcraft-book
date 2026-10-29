@@ -1,0 +1,5 @@
+account_code,account_label,amount_local,currency,period
+4000,Net Revenue,6800000.0,BRL,2026-09
+ICMS-LATAM,ICMS Recovery,260000.0,BRL,2026-09
+5000,Cost of Goods Sold,-1950000.0,BRL,2026-09
+6000,Operating Expenses,-1120000.0,BRL,2026-09

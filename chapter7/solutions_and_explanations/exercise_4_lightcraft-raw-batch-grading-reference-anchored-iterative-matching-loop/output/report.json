@@ -1,0 +1,14 @@
+{
+  "exercise": 4,
+  "engine": "lightcraft-cli",
+  "assertions": 52,
+  "artefacts": [
+    "source.png",
+    "reference.png",
+    "proxy-final.png",
+    "proxy-rollback.png",
+    "grading_report.json",
+    "report-rollback.json"
+  ],
+  "result": "reference-anchored grade converged; low-confidence batch rolled back"
+}

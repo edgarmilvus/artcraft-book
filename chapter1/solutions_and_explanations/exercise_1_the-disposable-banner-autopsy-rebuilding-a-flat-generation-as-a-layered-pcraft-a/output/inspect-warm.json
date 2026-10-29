@@ -1,0 +1,342 @@
+{
+  "activeLayer": 10,
+  "canRedo": false,
+  "canUndo": true,
+  "channels": {
+    "alpha": [],
+    "colors": [
+      {
+        "name": "Red",
+        "visible": true
+      },
+      {
+        "name": "Green",
+        "visible": true
+      },
+      {
+        "name": "Blue",
+        "visible": true
+      }
+    ],
+    "composite": "RGB",
+    "compositeVisible": true,
+    "layerMaskView": null,
+    "quickMask": null,
+    "target": {
+      "kind": "composite"
+    }
+  },
+  "depth": 8,
+  "hasSelection": false,
+  "height": 1080,
+  "history": [
+    "Open",
+    "Place Embedded",
+    "New Curves Layer",
+    "Reorder Layers",
+    "New Hue/Saturation Layer",
+    "New Type Layer",
+    "New Type Layer",
+    "Edit Type",
+    "Modify Adjustment"
+  ],
+  "isolatedLayers": [],
+  "lastAppliedComp": null,
+  "layerComps": [],
+  "layerMaskView": null,
+  "layers": [
+    {
+      "blend": "Normal",
+      "bounds": [
+        169,
+        669,
+        524,
+        172
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 10,
+      "kind": "Type",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "$17.99",
+      "opacity": 1,
+      "selected": true,
+      "text": {
+        "font": "Inter-Bold",
+        "sizePt": 180,
+        "text": "$17.99"
+      },
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": [
+        162,
+        592,
+        516,
+        50
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 9,
+      "kind": "Type",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "48 HOURS ONLY",
+      "opacity": 1,
+      "selected": false,
+      "text": {
+        "font": "Inter-SemiBold",
+        "sizePt": 64,
+        "text": "48 HOURS ONLY"
+      },
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "adjustment": {
+        "HueSaturation": {
+          "colorize": false,
+          "hue": -8,
+          "lightness": 0,
+          "ranges": [
+            {
+              "bounds": [
+                -45,
+                -15,
+                15,
+                45
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                15,
+                45,
+                75,
+                105
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                75,
+                105,
+                135,
+                165
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                135,
+                165,
+                195,
+                225
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                195,
+                225,
+                255,
+                285
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                255,
+                285,
+                315,
+                345
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            }
+          ],
+          "saturation": 15
+        }
+      },
+      "blend": "Normal",
+      "bounds": null,
+      "clipped": false,
+      "fill": 1,
+      "hasMask": true,
+      "hasVectorMask": false,
+      "id": 8,
+      "kind": "Adjustment",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Hue/Saturation 1",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "adjustment": {
+        "Curves": {
+          "black": [],
+          "master": [
+            {
+              "input": 0,
+              "output": 0
+            },
+            {
+              "input": 0.250980406999588,
+              "output": 0.1568627506494522
+            },
+            {
+              "input": 0.7529411911964417,
+              "output": 0.843137264251709
+            },
+            {
+              "input": 1,
+              "output": 1
+            }
+          ],
+          "pencil": false,
+          "per_channel": [
+            [
+              {
+                "input": 0,
+                "output": 0
+              },
+              {
+                "input": 1,
+                "output": 1
+              }
+            ],
+            [
+              {
+                "input": 0,
+                "output": 0
+              },
+              {
+                "input": 1,
+                "output": 1
+              }
+            ],
+            [
+              {
+                "input": 0,
+                "output": 0
+              },
+              {
+                "input": 1,
+                "output": 1
+              }
+            ]
+          ],
+          "space": "Rgb"
+        }
+      },
+      "blend": "Normal",
+      "bounds": null,
+      "clipped": false,
+      "fill": 1,
+      "hasMask": true,
+      "hasVectorMask": false,
+      "id": 7,
+      "kind": "Adjustment",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Curves 1",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 6,
+      "kind": "Smart Object",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "hero-flat-v3",
+      "opacity": 1,
+      "selected": false,
+      "smartFilters": [],
+      "smartFiltersEnabled": true,
+      "smartSource": {
+        "fileName": "hero-flat-v3.png",
+        "kind": "embedded"
+      },
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 2,
+      "kind": "Pixel",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Background",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    }
+  ],
+  "measurement": {
+    "count": 0,
+    "countGroups": 0,
+    "ruler": null,
+    "scale": "1 pixels = 1.0000 pixels"
+  },
+  "mode": "Rgb",
+  "name": "flash-sale-warm.pcraft",
+  "notes": [],
+  "path": "banners/flash-sale-warm.pcraft",
+  "quickMask": false,
+  "resolution": 72,
+  "revision": 9,
+  "selectedLayers": [
+    10
+  ],
+  "selectionBounds": null,
+  "snapshots": [],
+  "symmetry": null,
+  "timeline": null,
+  "variables": null,
+  "width": 1920
+}

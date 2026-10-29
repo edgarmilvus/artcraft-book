@@ -1,0 +1,125 @@
+{
+  "brief": {
+    "tenantId": "acme",
+    "campaignId": "FW26-hero",
+    "locale": "en-GB",
+    "width": 1200,
+    "height": 628,
+    "hero": {
+      "headline": "Built for the long run",
+      "subhead": "Merino, knitted in Porto.",
+      "cta": "Shop the drop"
+    },
+    "colorway": {
+      "primary": "#12263a",
+      "accent": "#e4572e",
+      "background": "#f4f1ea"
+    },
+    "tier": "growth",
+    "fonts": {
+      "headline": "Helvetica",
+      "body": "Helvetica"
+    }
+  },
+  "result": {
+    "previewUrl": "/assets/acme/FW26-hero-preview.png",
+    "exportUrl": "/assets/acme/FW26-hero.png",
+    "reconciliation": {
+      "converged": true,
+      "hashAligned": true
+    },
+    "vectorId": "ee466855df7feb6d3ada81151d546b68"
+  },
+  "checks": [
+    {
+      "name": "export written",
+      "ok": true,
+      "detail": "98369 bytes"
+    },
+    {
+      "name": "preview written",
+      "ok": true,
+      "detail": "138573 bytes"
+    },
+    {
+      "name": "vector record upserted",
+      "ok": true,
+      "detail": "1 record(s), id ee466855df7feb6d3ada81151d546b68"
+    },
+    {
+      "name": "preview == export (pixel level)",
+      "ok": true,
+      "detail": "1200x628 vs 1200x628, rmse=[0.000, 0.000, 0.000]"
+    },
+    {
+      "name": "reconciliation report",
+      "ok": true,
+      "detail": "converged=true hashAligned=true"
+    },
+    {
+      "name": "registry loaded",
+      "ok": true,
+      "detail": "engine photocraft@0.8.2"
+    },
+    {
+      "name": "registry size",
+      "ok": true,
+      "detail": ">400 commands"
+    },
+    {
+      "name": "unknown command rejected",
+      "ok": true,
+      "detail": "registry.get() threw for a hallucinated id"
+    },
+    {
+      "name": "no stray empty layer",
+      "ok": true,
+      "detail": "the plan never adds an empty pixel layer"
+    },
+    {
+      "name": "headline present",
+      "ok": true,
+      "detail": "Built for the long run"
+    },
+    {
+      "name": "footer present",
+      "ok": true,
+      "detail": "campaign id in the footer"
+    },
+    {
+      "name": "tenant mark present",
+      "ok": true,
+      "detail": "ACME"
+    },
+    {
+      "name": "tenant mark is faint",
+      "ok": true,
+      "detail": "opacity 0.18000000715255737"
+    },
+    {
+      "name": "vector id stable",
+      "ok": true,
+      "detail": "73c6fabb18f4709fe86a7672f6e2f2d7"
+    },
+    {
+      "name": "vector id sees nested changes",
+      "ok": true,
+      "detail": "73c6fabb18f4709fe86a7672f6e2f2d7 vs 4f77e22be3cc85e95a13d7b7af67ae20"
+    }
+  ],
+  "rmse": [
+    0,
+    0,
+    0
+  ],
+  "layers": [
+    "ACME",
+    "acme • FW26-hero • en-GB",
+    "Shop the drop",
+    "Merino, knitted in Porto.",
+    "Built for the long run",
+    "Curves 1",
+    "Gradient Fill 1",
+    "Background"
+  ]
+}

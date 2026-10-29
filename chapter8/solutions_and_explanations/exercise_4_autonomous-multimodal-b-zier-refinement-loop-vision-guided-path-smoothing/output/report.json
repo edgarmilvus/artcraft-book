@@ -1,0 +1,61 @@
+{
+  "exercise": 4,
+  "engine": "vectorcraft-cli",
+  "assertions": 29,
+  "sku": "sofa-042",
+  "terminatedBy": "fixed-point",
+  "initialAnchorCount": 120,
+  "finalAnchorCount": 18,
+  "iterations": [
+    {
+      "anchorCountBefore": 18,
+      "contentHash": "01c2b79ef538110028057c568d44576627512b9a19370cbf377006f640cedac4",
+      "editsApplied": [
+        {
+          "id": "path.convertAnchor",
+          "params": {
+            "id": 2,
+            "subpath": 0,
+            "anchor": 0,
+            "to": "smooth"
+          }
+        },
+        {
+          "id": "path.setHandle",
+          "params": {
+            "id": 2,
+            "subpath": 0,
+            "anchor": 0,
+            "which": "out",
+            "x": 444.6685,
+            "y": 262.79693333333336,
+            "independent": false
+          }
+        }
+      ]
+    },
+    {
+      "anchorCountBefore": 18,
+      "contentHash": "790dac87535bc79970654f0a2fd4bb6c38d14a4187a62c0f7bc853e19b054cb4",
+      "editsApplied": []
+    },
+    {
+      "anchorCountBefore": 18,
+      "contentHash": "790dac87535bc79970654f0a2fd4bb6c38d14a4187a62c0f7bc853e19b054cb4",
+      "editsApplied": []
+    },
+    {
+      "anchorCountBefore": 18,
+      "contentHash": "790dac87535bc79970654f0a2fd4bb6c38d14a4187a62c0f7bc853e19b054cb4",
+      "editsApplied": []
+    }
+  ],
+  "artefacts": [
+    "sofa-before.png",
+    "sofa-after.png",
+    "sofa-refined.vectorcraft",
+    "sofa-refined.svg",
+    "refinement-log.jsonl"
+  ],
+  "result": "jittery silhouette reduced to the anchor budget; curvature spikes, vision critique and atomic edits logged"
+}

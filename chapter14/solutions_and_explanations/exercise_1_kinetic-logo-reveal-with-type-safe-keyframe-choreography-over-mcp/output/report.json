@@ -1,0 +1,18 @@
+{
+  "exercise": 1,
+  "engine": "effectcraft rig plan (pure)",
+  "assertions": 18,
+  "slug": "northic",
+  "steps": [
+    "layer.newNull",
+    "layer.rename",
+    "layer.newShape",
+    "layer.newText",
+    "layer.newText"
+  ],
+  "artefacts": [
+    "rig-steps.json",
+    "preview.png"
+  ],
+  "result": "five-step franchise rig, font fallback and write-root guard verified"
+}

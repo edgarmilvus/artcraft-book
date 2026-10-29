@@ -1,0 +1,6 @@
+[server] listening on 127.0.0.1:7979
+[server] client connected from 127.0.0.1:50621
+[server] client authenticated
+doc.inspect     -> { document: { width: 1920, height: 1080, mode: 'rgb' }, layers: [] }
+layer.new.layer -> { id: 7, name: 'Ink' }
+ui_screenshot   -> { path: '/tmp/audit.png' }

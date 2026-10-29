@@ -1,0 +1,64 @@
+{
+  "exercise": 5,
+  "engine": "lightcraft-cli + in-memory HNSW stand-in",
+  "assertions": 46,
+  "batches": [
+    "sub-a",
+    "sub-a-copy",
+    "sub-b"
+  ],
+  "queued": 3,
+  "exported": 2,
+  "rejected": 1,
+  "rejectedRecord": {
+    "sub_id": "sub-a-copy",
+    "matched": "sub-a",
+    "distance": 0.024009067922344474
+  },
+  "health": {
+    "photos_exported": 2,
+    "photos_rejected_dupes": 1,
+    "avg_export_ms": 162,
+    "p95_export_ms": 336,
+    "hnsw_size": 2,
+    "hnsw_ef_search_hit_rate": 0.3333333333333333,
+    "memory_pressure_pct": 0,
+    "gpu_last_fallback": null
+  },
+  "results": [
+    {
+      "file": "chapter9/solutions_and_explanations/exercise_5_headless-batch-export-orchestrator-with-hnsw-accelerated-deduplication-gate/output/sources/submission-a.png",
+      "sub_id": "sub-a",
+      "rejected": null,
+      "error": null
+    },
+    {
+      "file": "chapter9/solutions_and_explanations/exercise_5_headless-batch-export-orchestrator-with-hnsw-accelerated-deduplication-gate/output/sources/submission-a-copy.png",
+      "sub_id": null,
+      "rejected": {
+        "matched": "sub-a",
+        "distance": 0.024009067922344474
+      },
+      "error": null
+    },
+    {
+      "file": "chapter9/solutions_and_explanations/exercise_5_headless-batch-export-orchestrator-with-hnsw-accelerated-deduplication-gate/output/sources/submission-b.png",
+      "sub_id": "sub-b",
+      "rejected": null,
+      "error": null
+    }
+  ],
+  "artefacts": [
+    "sources/submission-a.png",
+    "sources/submission-a-copy.png",
+    "sources/submission-b.png",
+    "exports/sub-a/full.jpg",
+    "exports/sub-a/web.jpg",
+    "exports/sub-a/metadata.json",
+    "exports/sub-a/alpha.png",
+    "exports/sub-b/full.jpg",
+    "exports/sub-b/web.jpg",
+    "exports/sub-b/metadata.json"
+  ],
+  "result": "dedup gate rejected the near-duplicate before export; two survivors exported with metadata and health reported"
+}

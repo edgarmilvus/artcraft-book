@@ -1,0 +1,37 @@
+PASS the planned order passes validation
+PASS the plan asserts every structural invariant
+PASS the work order completes
+PASS every assertion passed
+PASS all four requirements are satisfied
+PASS the run saved exactly one document
+PASS the save landed on composites/run-a/composite.psd
+PASS the PSD exists and hashes
+PASS the successful report carries the applied command log
+PASS the saved tree keeps the contract names
+PASS the re-run also completes
+PASS two runs are byte-identical
+PASS an unresolved reference is impossible
+PASS an impossible plan issues no command
+PASS the document was never touched
+PASS an unknown step kind is impossible
+PASS the dispatch table never ran
+PASS a clip that would attach elsewhere is impossible
+PASS the refusal names the positional rule
+PASS misplaced clip: status is impossible
+PASS misplaced clip: nothing was saved
+PASS misplaced clip: the document is back at its opening depth
+PASS misplaced clip: only the applied steps were undone
+PASS the symbolic map survives the rollback
+PASS a failed assertion stops the order
+PASS the report quotes the mismatch
+PASS failed assertion: status is failed
+PASS failed assertion: nothing was saved
+PASS failed assertion: the document is back at its opening depth
+PASS failed assertion: only the applied steps were undone
+PASS a substituted font is impossible
+PASS missing font: status is impossible
+PASS missing font: nothing was saved
+PASS missing font: the document is back at its opening depth
+PASS missing font: only the applied steps were undone
+
+35/35 checks passed

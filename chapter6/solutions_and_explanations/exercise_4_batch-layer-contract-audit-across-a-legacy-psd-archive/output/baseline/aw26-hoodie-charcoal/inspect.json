@@ -1,0 +1,201 @@
+{
+  "activeLayer": 7,
+  "canRedo": false,
+  "canUndo": true,
+  "channels": {
+    "alpha": [],
+    "colors": [
+      {
+        "name": "Red",
+        "visible": true
+      },
+      {
+        "name": "Green",
+        "visible": true
+      },
+      {
+        "name": "Blue",
+        "visible": true
+      }
+    ],
+    "composite": "RGB",
+    "compositeVisible": true,
+    "layerMaskView": null,
+    "quickMask": null,
+    "target": {
+      "kind": "composite"
+    }
+  },
+  "depth": 8,
+  "hasSelection": false,
+  "height": 100,
+  "history": [
+    "Open",
+    "New Group",
+    "New Color Fill Layer",
+    "Reorder Layers",
+    "New Layer",
+    "Reorder Layers",
+    "Create Clipping Mask",
+    "New Group",
+    "New Type Layer",
+    "Reorder Layers",
+    "Rename Layer"
+  ],
+  "isolatedLayers": [],
+  "lastAppliedComp": null,
+  "layerComps": [],
+  "layerMaskView": null,
+  "layers": [
+    {
+      "blend": "Pass Through",
+      "bounds": null,
+      "children": [
+        {
+          "blend": "Pass Through",
+          "bounds": null,
+          "children": [
+            {
+              "blend": "Normal",
+              "bounds": [
+                9,
+                10,
+                87,
+                25
+              ],
+              "clipped": false,
+              "fill": 1,
+              "hasMask": false,
+              "hasVectorMask": false,
+              "id": 7,
+              "kind": "Type",
+              "labelColor": "none",
+              "linkGroup": null,
+              "name": "Type::Headline",
+              "opacity": 1,
+              "selected": true,
+              "text": {
+                "font": "Helvetica",
+                "sizePt": 32,
+                "text": "AW26"
+              },
+              "vectorMaskEnabled": null,
+              "visible": true
+            }
+          ],
+          "clipped": false,
+          "expanded": true,
+          "fill": 1,
+          "hasMask": false,
+          "hasVectorMask": false,
+          "id": 6,
+          "kind": "Group",
+          "labelColor": "none",
+          "linkGroup": null,
+          "name": "Type::Headline",
+          "opacity": 1,
+          "selected": false,
+          "vectorMaskEnabled": null,
+          "visible": true
+        },
+        {
+          "blend": "Normal",
+          "bounds": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "clipped": true,
+          "fill": 1,
+          "hasMask": false,
+          "hasVectorMask": false,
+          "id": 5,
+          "kind": "Pixel",
+          "labelColor": "none",
+          "linkGroup": null,
+          "name": "Product",
+          "opacity": 1,
+          "selected": false,
+          "vectorMaskEnabled": null,
+          "visible": true
+        },
+        {
+          "blend": "Normal",
+          "bounds": null,
+          "clipped": false,
+          "fill": 1,
+          "hasMask": true,
+          "hasVectorMask": false,
+          "id": 4,
+          "kind": "Fill",
+          "labelColor": "none",
+          "linkGroup": null,
+          "name": "Color Fill 1",
+          "opacity": 1,
+          "selected": false,
+          "vectorMaskEnabled": null,
+          "visible": true
+        }
+      ],
+      "clipped": false,
+      "expanded": true,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 3,
+      "kind": "Group",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Background",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": [
+        0,
+        0,
+        200,
+        100
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 2,
+      "kind": "Pixel",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Background",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    }
+  ],
+  "measurement": {
+    "count": 0,
+    "countGroups": 0,
+    "ruler": null,
+    "scale": "1 pixels = 1.0000 pixels"
+  },
+  "mode": "Rgb",
+  "name": "banner.psd",
+  "notes": [],
+  "path": "chapter6/solutions_and_explanations/exercise_4_batch-layer-contract-audit-across-a-legacy-psd-archive/output/baseline/aw26-hoodie-charcoal/banner.psd",
+  "quickMask": false,
+  "resolution": 72,
+  "revision": 11,
+  "selectedLayers": [
+    7
+  ],
+  "selectionBounds": null,
+  "snapshots": [],
+  "symmetry": null,
+  "timeline": null,
+  "variables": null,
+  "width": 200
+}

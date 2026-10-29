@@ -1,0 +1,21 @@
+PASS four engines opened                         photocraft,vectorcraft,designcraft,pdfcraft
+PASS engine order is deterministic               
+PASS ports are distinct                          
+PASS one command per engine                      [["photocraft",1],["vectorcraft",1],["designcraft",1],["pdfcraft",1]]
+PASS no failures in the saga                     []
+PASS no compensation needed                      []
+PASS no assets written                           
+PASS every channel authenticated                 
+PASS photocraft received the expected commands   layer.newAdjustmentLayer.curves
+PASS vectorcraft received the expected commands  shape.rectangle
+PASS designcraft received the expected commands  file.open
+PASS pdfcraft received the expected commands     doc_open,doc_open,doc_open,doc_compare
+  preflight threw: Missing required param 'points' for photocraft.layer.newAdjustmentLayer.curves
+PASS missing param rejected as PreflightError    PreflightError
+PASS no command sent on missing-param failure    7 -> 7
+  preflight threw: Unknown command 'layer.notInCatalog' for engine 'photocraft'
+PASS unknown command rejected as PreflightError  PreflightError
+PASS no command sent on unknown-command failure  7 -> 7
+PASS runStep dispatches all four engines         
+
+17/17 checks passed

@@ -1,0 +1,11 @@
+PASS both good SKUs pass the contract audit
+PASS the missing cutout is a reported failure
+PASS the PSD exists
+PASS the PSD is layered (8BPS)
+PASS the failed SKU wrote no file
+PASS Background is a group with two children
+PASS a lower-case SKU is refused by the schema
+PASS a mid-batch failure still reports the applied prefix
+PASS the compensation restores the opening history depth
+
+9/9 checks passed

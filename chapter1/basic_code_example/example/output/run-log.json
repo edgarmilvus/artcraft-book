@@ -1,0 +1,26 @@
+{
+  "model": "deepseek/deepseek-v4.1-flash",
+  "flags": [],
+  "log": [
+    {
+      "step": "LLM brief → plan",
+      "ok": true,
+      "detail": "16183 ms, tokens=1662"
+    },
+    {
+      "step": "MCP command_batch",
+      "ok": true,
+      "detail": "5/5 steps"
+    },
+    {
+      "step": "doc_save .pcraft",
+      "ok": true,
+      "detail": "chapter1/basic_code_example/example/output/studio-render.pcraft"
+    },
+    {
+      "step": "layers addressable",
+      "ok": true,
+      "detail": "7:Adjustment 6:Type 5:Type 4:Shape 3:Fill 2:Pixel"
+    }
+  ]
+}

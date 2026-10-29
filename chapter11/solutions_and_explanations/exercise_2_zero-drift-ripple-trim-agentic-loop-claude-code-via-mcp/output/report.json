@@ -1,0 +1,17 @@
+{
+  "exercise": 2,
+  "engine": "filmcraft timebase (pure)",
+  "assertions": 30,
+  "ticksPerMs": "254016000",
+  "frameTicks23976": "10594584000",
+  "targets": 2,
+  "audit": {
+    "totalDriftTicks": 0,
+    "finalDurationTicks": "10573394832000"
+  },
+  "artefacts": [
+    "ripple_audit.json",
+    "ripple_audit_drift.json"
+  ],
+  "result": "banker's rounding, frame snapping and the post-batch zero-drift invariant verified"
+}

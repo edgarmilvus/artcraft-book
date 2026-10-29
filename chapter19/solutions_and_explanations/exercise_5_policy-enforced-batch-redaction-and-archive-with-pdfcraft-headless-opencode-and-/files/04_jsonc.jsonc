@@ -1,0 +1,132 @@
+// The ordered MCP calls the pipeline makes for ONE input document.
+// `metaTool` is the MCP meta-tool that is called, `args` are that tool's
+// arguments, and the registry id is quoted where the same action also exists
+// as a registry command.
+//
+// PdfCraft publishes 183 registry commands and 140 MCP meta-tools, and the
+// two sets do not line up.  `redact.mark`, `redact.apply`, `redact.clear`
+// and `redact.search` are registry commands with NO headless tool -
+// `command_list` reports `tool: null` for them - so
+//     command_run  { "id": "redact.mark", "params": { ... } }
+//     command_batch{ "steps": [ { "id": "redact.mark", ... } ] }
+// both fail with
+//     command "redact.mark" has no headless tool; see command_list
+// The redaction is therefore driven through the meta-tools `redact_mark`,
+// `redact_apply` and `redact_clear`, and `redact.search` is served by
+// `text_find` (registry command `edit.find`).
+//
+// `redact_mark` REFUSES a mark that matched nothing ("nothing matched, so
+// nothing was marked"), so a pattern that finds no PII in the document is a
+// policy outcome, not a failure of the batch.
+[
+  { "step": "preflight",
+    "metaTool": "command_list",
+    "registryId": null,
+    "args": {} },
+
+  { "step": "sandbox_attestation",
+    "metaTool": "doc_open",
+    "registryId": "file.open",
+    "args": { "path": "<a path outside the batch root>" },
+    "note": "the engine must refuse this; if it does not, the batch aborts" },
+
+  { "step": "open",
+    "metaTool": "doc_open",
+    "registryId": "file.open",
+    "args": { "path": "discovery/incoming/0001-disclosure.pdf" } },
+
+  { "step": "sign_probe",
+    "metaTool": "sign_list",
+    "registryId": "sign.validate",
+    "args": { "doc": 1 },
+    "note": "a signed source is routed to the manual queue and never redacted" },
+
+  { "step": "inspect",
+    "metaTool": "doc_info",
+    "registryId": "file.properties",
+    "args": { "doc": 1 } },
+
+  { "step": "extract",
+    "metaTool": "text_extract",
+    "registryId": null,
+    "args": { "doc": 1 } },
+
+  { "step": "mark",
+    "metaTool": "redact_mark",
+    "registryId": "redact.mark",
+    "args": { "doc": 1, "pattern": "phone", "overlay": "REDACTED", "fill": "#000000" } },
+
+  { "step": "mark",
+    "metaTool": "redact_mark",
+    "registryId": "redact.mark",
+    "args": { "doc": 1, "pattern": "email", "overlay": "REDACTED", "fill": "#000000" } },
+
+  { "step": "mark",
+    "metaTool": "redact_mark",
+    "registryId": "redact.mark",
+    "args": { "doc": 1, "pattern": "credit-card", "overlay": "REDACTED", "fill": "#000000" } },
+
+  { "step": "mark",
+    "metaTool": "redact_mark",
+    "registryId": "redact.mark",
+    "args": { "doc": 1, "pattern": "ssn", "overlay": "REDACTED", "fill": "#000000" } },
+
+  // A client-supplied pattern is a regular expression, and PdfCraft's `find`
+  // is a LITERAL search, so the expression is resolved against the page text
+  // and the engine is then asked for the rectangles of the literal it hit.
+  { "step": "search",
+    "metaTool": "text_find",
+    "registryId": "edit.find",
+    "args": { "doc": 1, "query": "Matter 4421-AB" } },
+
+  { "step": "mark",
+    "metaTool": "redact_mark",
+    "registryId": "redact.mark",
+    "args": { "doc": 1, "page": 1, "rect": [175.3, 101.6, 268.7, 113.8],
+              "overlay": "REDACTED", "fill": "#000000" } },
+
+  { "step": "inspect_marks",
+    "metaTool": "doc_inspect",
+    "registryId": null,
+    "args": { "doc": 1 },
+    "note": "the Redact annotations are the engine's own record of the marked pages" },
+
+  { "step": "apply",
+    "metaTool": "redact_apply",
+    "registryId": "redact.apply",
+    "args": { "doc": 1, "pages": [1, 2, 3, 4, 5] },
+    "note": "scoped to the pages that carry a mark; applying to every page would change the hash of pages that were never at risk" },
+
+  { "step": "pdfa_convert",
+    "metaTool": "pdfa_convert",
+    "registryId": "standards.pdfa",
+    "args": { "doc": 1, "level": "2b" } },
+
+  { "step": "pdfa_verify",
+    "metaTool": "pdfa_verify",
+    "registryId": "standards.pdfa",
+    "args": { "doc": 1, "level": "2b" } },
+
+  { "step": "accessibility",
+    "metaTool": "accessibility_report",
+    "registryId": "a11y.report",
+    "args": { "doc": 1, "path": "discovery/0001/work/0001-disclosure.accessibility.html" } },
+
+  { "step": "save",
+    "metaTool": "doc_save",
+    "registryId": "file.save",
+    "args": { "doc": 1, "path": "discovery/0001/work/0001-disclosure.pdf", "full": true },
+    "note": "full: false on a signed document, which keeps the signature valid" },
+
+  { "step": "fallback_docx",
+    "metaTool": "command_run",
+    "registryId": "export.docx",
+    "args": { "id": "export.docx",
+              "params": { "doc": 1, "path": "discovery/0001/work/0001-disclosure.review.docx" } },
+    "note": "only when the PDF/A gate is blocked by a font that is not embedded" },
+
+  { "step": "close",
+    "metaTool": "doc_close",
+    "registryId": "file.close",
+    "args": { "doc": 1 } }
+]

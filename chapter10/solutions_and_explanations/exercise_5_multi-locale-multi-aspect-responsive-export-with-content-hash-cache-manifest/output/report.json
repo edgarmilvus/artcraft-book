@@ -1,0 +1,34 @@
+{
+  "exercise": 5,
+  "engines": [
+    "designcraft-cli",
+    "photocraft-cli"
+  ],
+  "assertions": 36,
+  "variants": [
+    {
+      "sku": "TEE-001",
+      "locale": "en-US",
+      "aspect": "1:1"
+    },
+    {
+      "sku": "TEE-001",
+      "locale": "ar-SA",
+      "aspect": "9:16"
+    }
+  ],
+  "hits": 2,
+  "misses": 28,
+  "errors": [],
+  "artefacts": [
+    "work/template.designcraft",
+    "work/cache-manifest.json",
+    "work/TEE-001-enUS-1x1.png",
+    "work/TEE-001-enUS-1x1.webp",
+    "work/TEE-001-enUS-1x1.jpg",
+    "work/TEE-001-arSA-9x16.png",
+    "work/TEE-001-arSA-9x16.webp",
+    "work/TEE-001-arSA-9x16.jpg"
+  ],
+  "result": "two aspect/locale variants rendered with three formats each; source-hash cache recognised both on a second dry-run"
+}

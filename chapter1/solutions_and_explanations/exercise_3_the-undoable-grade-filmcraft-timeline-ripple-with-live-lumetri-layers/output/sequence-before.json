@@ -1,0 +1,1609 @@
+{
+  "audio": [
+    {
+      "enabled": true,
+      "id": 5,
+      "items": [
+        {
+          "clip": 13,
+          "duration": 1524096000000,
+          "durationFrames": 143,
+          "effects": [
+            {
+              "effect": "volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "level": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "channel_volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "left": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "right": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "panner",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "balance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 1524096000000,
+          "endFrame": 143,
+          "gainDb": 0,
+          "item": 8,
+          "label": "Iris",
+          "link": 11,
+          "name": "Ocean_Sunset.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1524096000000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        },
+        {
+          "clip": 16,
+          "duration": 1525620096000,
+          "durationFrames": 144,
+          "effects": [
+            {
+              "effect": "volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "level": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "channel_volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "left": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "right": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "panner",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "balance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3049716096000,
+          "endFrame": 287,
+          "gainDb": 0,
+          "item": 9,
+          "label": "Iris",
+          "link": 14,
+          "name": "Aurora_Timelapse.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1525620096000,
+          "speed": 1,
+          "start": 1524096000000,
+          "startFrame": 143
+        },
+        {
+          "clip": 22,
+          "duration": 1525620096000,
+          "durationFrames": 144,
+          "effects": [
+            {
+              "effect": "volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "level": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "channel_volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "left": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "right": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "panner",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "balance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 4700820096000,
+          "endFrame": 443,
+          "gainDb": 0,
+          "item": 10,
+          "label": "Iris",
+          "link": 20,
+          "name": "City_Night_Drive.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1525620096000,
+          "speed": 1,
+          "start": 3175200000000,
+          "startFrame": 299
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Audio 1",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    },
+    {
+      "enabled": true,
+      "id": 6,
+      "items": [],
+      "locked": false,
+      "muted": false,
+      "name": "Audio 2",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    }
+  ],
+  "duration": 5085400320000,
+  "durationFrames": 480,
+  "id": 7,
+  "in": null,
+  "markers": [],
+  "name": "Skincare-30s-Hero",
+  "out": null,
+  "playhead": null,
+  "selection": [
+    24
+  ],
+  "settings": {
+    "audio_master": "Stereo",
+    "color": {
+      "auto_tone_map": true,
+      "wide_gamut": false,
+      "working": "Rec709"
+    },
+    "drop_frame": false,
+    "frame_rate": {
+      "den": 1001,
+      "num": 24000
+    },
+    "height": 1080,
+    "max_bit_depth": false,
+    "max_render_quality": false,
+    "par": [
+      1,
+      1
+    ],
+    "preset": "1920x1080 23.976",
+    "preview_codec": "ProRes 422",
+    "sample_rate": 48000,
+    "width": 1920,
+    "working_space": "Rec. 709"
+  },
+  "split": {
+    "audioIn": null,
+    "audioOut": null,
+    "videoIn": null,
+    "videoOut": null
+  },
+  "video": [
+    {
+      "enabled": true,
+      "id": 3,
+      "items": [
+        {
+          "clip": 12,
+          "duration": 1524096000000,
+          "durationFrames": 143,
+          "effects": [
+            {
+              "effect": "lumetri",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "basic_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "blacks": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "contrast": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "creative_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "creative_sat": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "curve_blue": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_green": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_luma": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_red": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curves_hdr_range": {
+                  "keyframes": 0,
+                  "value": "Float(1000.0)"
+                },
+                "curves_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "exposure": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "faded_film": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hdr_specular": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hdr_white": {
+                  "keyframes": 0,
+                  "value": "Float(1000.0)"
+                },
+                "highlight_tint": {
+                  "keyframes": 0,
+                  "value": "Color([0.5, 0.5, 0.5, 1.0])"
+                },
+                "highlights": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_blur": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_denoise": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_hue": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_hue_range": {
+                  "keyframes": 0,
+                  "value": "Float(30.0)"
+                },
+                "hsl_hue_shift": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_luma_max": {
+                  "keyframes": 0,
+                  "value": "Float(95.0)"
+                },
+                "hsl_luma_min": {
+                  "keyframes": 0,
+                  "value": "Float(5.0)"
+                },
+                "hsl_on": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "hsl_sat": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "hsl_sat_min": {
+                  "keyframes": 0,
+                  "value": "Float(10.0)"
+                },
+                "hsl_show_mask": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "hsl_soft": {
+                  "keyframes": 0,
+                  "value": "Float(20.0)"
+                },
+                "hsl_temp": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_tint": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hue_vs_hue": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "hue_vs_luma": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "hue_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "input_lut": {
+                  "keyframes": 0,
+                  "value": "Text(\"lib:lut1\")"
+                },
+                "look": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "look_intensity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "look_lut": {
+                  "keyframes": 0,
+                  "value": "Text(\"\")"
+                },
+                "luma_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "sat_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "saturation": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "shadow_tint": {
+                  "keyframes": 0,
+                  "value": "Color([0.5, 0.5, 0.5, 1.0])"
+                },
+                "shadows": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "sharpen": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "temperature": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "tint": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vibrance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vignette_amount": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vignette_feather": {
+                  "keyframes": 0,
+                  "value": "Float(50.0)"
+                },
+                "vignette_midpoint": {
+                  "keyframes": 0,
+                  "value": "Float(50.0)"
+                },
+                "vignette_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "vignette_roundness": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_highlights": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_highlights_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_midtones": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_midtones_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_shadows": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_shadows_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheels_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "whites": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 1524096000000,
+          "endFrame": 143,
+          "gainDb": 0,
+          "item": 8,
+          "label": "Iris",
+          "link": 11,
+          "name": "Ocean_Sunset.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1524096000000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        },
+        {
+          "clip": 15,
+          "duration": 1525620096000,
+          "durationFrames": 144,
+          "effects": [
+            {
+              "effect": "lumetri",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "basic_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "blacks": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "contrast": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "creative_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "creative_sat": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "curve_blue": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_green": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_luma": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_red": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curves_hdr_range": {
+                  "keyframes": 0,
+                  "value": "Float(1000.0)"
+                },
+                "curves_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "exposure": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "faded_film": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hdr_specular": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hdr_white": {
+                  "keyframes": 0,
+                  "value": "Float(1000.0)"
+                },
+                "highlight_tint": {
+                  "keyframes": 0,
+                  "value": "Color([0.5, 0.5, 0.5, 1.0])"
+                },
+                "highlights": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_blur": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_denoise": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_hue": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_hue_range": {
+                  "keyframes": 0,
+                  "value": "Float(30.0)"
+                },
+                "hsl_hue_shift": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_luma_max": {
+                  "keyframes": 0,
+                  "value": "Float(95.0)"
+                },
+                "hsl_luma_min": {
+                  "keyframes": 0,
+                  "value": "Float(5.0)"
+                },
+                "hsl_on": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "hsl_sat": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "hsl_sat_min": {
+                  "keyframes": 0,
+                  "value": "Float(10.0)"
+                },
+                "hsl_show_mask": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "hsl_soft": {
+                  "keyframes": 0,
+                  "value": "Float(20.0)"
+                },
+                "hsl_temp": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_tint": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hue_vs_hue": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "hue_vs_luma": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "hue_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "input_lut": {
+                  "keyframes": 0,
+                  "value": "Text(\"lib:lut1\")"
+                },
+                "look": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "look_intensity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "look_lut": {
+                  "keyframes": 0,
+                  "value": "Text(\"\")"
+                },
+                "luma_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "sat_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "saturation": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "shadow_tint": {
+                  "keyframes": 0,
+                  "value": "Color([0.5, 0.5, 0.5, 1.0])"
+                },
+                "shadows": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "sharpen": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "temperature": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "tint": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vibrance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vignette_amount": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vignette_feather": {
+                  "keyframes": 0,
+                  "value": "Float(50.0)"
+                },
+                "vignette_midpoint": {
+                  "keyframes": 0,
+                  "value": "Float(50.0)"
+                },
+                "vignette_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "vignette_roundness": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_highlights": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_highlights_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_midtones": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_midtones_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_shadows": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_shadows_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheels_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "whites": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3049716096000,
+          "endFrame": 287,
+          "gainDb": 0,
+          "item": 9,
+          "label": "Iris",
+          "link": 14,
+          "name": "Aurora_Timelapse.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1525620096000,
+          "speed": 1,
+          "start": 1524096000000,
+          "startFrame": 143
+        },
+        {
+          "clip": 21,
+          "duration": 1525620096000,
+          "durationFrames": 144,
+          "effects": [
+            {
+              "effect": "lumetri",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "basic_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "blacks": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "contrast": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "creative_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "creative_sat": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "curve_blue": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_green": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_luma": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_red": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curves_hdr_range": {
+                  "keyframes": 0,
+                  "value": "Float(1000.0)"
+                },
+                "curves_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "exposure": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "faded_film": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hdr_specular": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hdr_white": {
+                  "keyframes": 0,
+                  "value": "Float(1000.0)"
+                },
+                "highlight_tint": {
+                  "keyframes": 0,
+                  "value": "Color([0.5, 0.5, 0.5, 1.0])"
+                },
+                "highlights": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_blur": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_denoise": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_hue": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_hue_range": {
+                  "keyframes": 0,
+                  "value": "Float(30.0)"
+                },
+                "hsl_hue_shift": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_luma_max": {
+                  "keyframes": 0,
+                  "value": "Float(95.0)"
+                },
+                "hsl_luma_min": {
+                  "keyframes": 0,
+                  "value": "Float(5.0)"
+                },
+                "hsl_on": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "hsl_sat": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "hsl_sat_min": {
+                  "keyframes": 0,
+                  "value": "Float(10.0)"
+                },
+                "hsl_show_mask": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "hsl_soft": {
+                  "keyframes": 0,
+                  "value": "Float(20.0)"
+                },
+                "hsl_temp": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_tint": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hue_vs_hue": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "hue_vs_luma": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "hue_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "input_lut": {
+                  "keyframes": 0,
+                  "value": "Text(\"lib:lut1\")"
+                },
+                "look": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "look_intensity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "look_lut": {
+                  "keyframes": 0,
+                  "value": "Text(\"\")"
+                },
+                "luma_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "sat_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "saturation": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "shadow_tint": {
+                  "keyframes": 0,
+                  "value": "Color([0.5, 0.5, 0.5, 1.0])"
+                },
+                "shadows": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "sharpen": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "temperature": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "tint": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vibrance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vignette_amount": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vignette_feather": {
+                  "keyframes": 0,
+                  "value": "Float(50.0)"
+                },
+                "vignette_midpoint": {
+                  "keyframes": 0,
+                  "value": "Float(50.0)"
+                },
+                "vignette_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "vignette_roundness": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_highlights": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_highlights_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_midtones": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_midtones_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_shadows": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_shadows_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheels_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "whites": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 4700820096000,
+          "endFrame": 443,
+          "gainDb": 0,
+          "item": 10,
+          "label": "Iris",
+          "link": 20,
+          "name": "City_Night_Drive.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1525620096000,
+          "speed": 1,
+          "start": 3175200000000,
+          "startFrame": 299
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Video 1",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    },
+    {
+      "enabled": true,
+      "id": 4,
+      "items": [
+        {
+          "clip": 24,
+          "duration": 5085400320000,
+          "durationFrames": 480,
+          "effects": [
+            {
+              "effect": "lumetri",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "basic_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "blacks": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "contrast": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "creative_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "creative_sat": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "curve_blue": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_green": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_luma": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curve_red": {
+                  "keyframes": 0,
+                  "value": "Curve([[0.0, 0.0], [1.0, 1.0]])"
+                },
+                "curves_hdr_range": {
+                  "keyframes": 0,
+                  "value": "Float(1000.0)"
+                },
+                "curves_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "exposure": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "faded_film": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hdr_specular": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hdr_white": {
+                  "keyframes": 0,
+                  "value": "Float(1000.0)"
+                },
+                "highlight_tint": {
+                  "keyframes": 0,
+                  "value": "Color([0.5, 0.5, 0.5, 1.0])"
+                },
+                "highlights": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_blur": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_denoise": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_hue": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_hue_range": {
+                  "keyframes": 0,
+                  "value": "Float(30.0)"
+                },
+                "hsl_hue_shift": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_luma_max": {
+                  "keyframes": 0,
+                  "value": "Float(95.0)"
+                },
+                "hsl_luma_min": {
+                  "keyframes": 0,
+                  "value": "Float(5.0)"
+                },
+                "hsl_on": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "hsl_sat": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "hsl_sat_min": {
+                  "keyframes": 0,
+                  "value": "Float(10.0)"
+                },
+                "hsl_show_mask": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "hsl_soft": {
+                  "keyframes": 0,
+                  "value": "Float(20.0)"
+                },
+                "hsl_temp": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hsl_tint": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "hue_vs_hue": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "hue_vs_luma": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "hue_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "input_lut": {
+                  "keyframes": 0,
+                  "value": "Text(\"lib:lut2\")"
+                },
+                "look": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "look_intensity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "look_lut": {
+                  "keyframes": 0,
+                  "value": "Text(\"\")"
+                },
+                "luma_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "sat_vs_sat": {
+                  "keyframes": 0,
+                  "value": "Curve([])"
+                },
+                "saturation": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "shadow_tint": {
+                  "keyframes": 0,
+                  "value": "Color([0.5, 0.5, 0.5, 1.0])"
+                },
+                "shadows": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "sharpen": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "temperature": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "tint": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vibrance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vignette_amount": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "vignette_feather": {
+                  "keyframes": 0,
+                  "value": "Float(50.0)"
+                },
+                "vignette_midpoint": {
+                  "keyframes": 0,
+                  "value": "Float(50.0)"
+                },
+                "vignette_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "vignette_roundness": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_highlights": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_highlights_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_midtones": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_midtones_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheel_shadows": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 0.0, y: 0.0 })"
+                },
+                "wheel_shadows_l": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "wheels_on": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                },
+                "whites": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 5085400320000,
+          "endFrame": 480,
+          "gainDb": 0,
+          "item": 23,
+          "label": "Lavender",
+          "link": null,
+          "name": "Adjustment Layer",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 5085400320000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Video 2",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    }
+  ]
+}

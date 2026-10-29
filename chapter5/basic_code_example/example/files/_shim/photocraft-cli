@@ -1,0 +1,4 @@
+#!/bin/sh
+# Simulates an engine that cannot start, to exercise the bridge's error path.
+echo "photocraft-cli: simulated engine failure" >&2
+exit 1

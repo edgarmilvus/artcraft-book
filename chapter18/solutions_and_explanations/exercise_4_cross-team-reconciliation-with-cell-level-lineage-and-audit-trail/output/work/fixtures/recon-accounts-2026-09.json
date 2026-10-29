@@ -1,0 +1,49 @@
+{
+  "period": "2026-09",
+  "sources": {
+    "fpa": "fpa-forecast.xlsx",
+    "acct": "accounting-actuals.xlsx",
+    "treas": "treasury-cash.xlsx"
+  },
+  "reconciling_items": {
+    "workbook": "acct",
+    "sheet": "ReconcilingItems"
+  },
+  "accounts": [
+    {
+      "account": "Cash",
+      "fpa_cell": "Summary!B10",
+      "acct_cell": "Monthly!B11",
+      "treas_cell": "CashPosition!C9",
+      "tolerance": "exact"
+    },
+    {
+      "account": "ARR",
+      "fpa_cell": "Summary!B11",
+      "acct_cell": "Monthly!B12",
+      "treas_cell": "CashPosition!C10",
+      "tolerance": "pct:0.5"
+    },
+    {
+      "account": "DeferredRevenue",
+      "fpa_cell": "Summary!B12",
+      "acct_cell": "Monthly!B13",
+      "treas_cell": "CashPosition!C11",
+      "tolerance": "exact"
+    },
+    {
+      "account": "TotalDebt",
+      "fpa_cell": "Summary!B13",
+      "acct_cell": "Monthly!B14",
+      "treas_cell": "CashPosition!C12",
+      "tolerance": "exact"
+    },
+    {
+      "account": "AvailableLiquidity",
+      "fpa_cell": "Summary!B14",
+      "acct_cell": "Monthly!B15",
+      "treas_cell": "CashPosition!C13",
+      "tolerance": "$250"
+    }
+  ]
+}

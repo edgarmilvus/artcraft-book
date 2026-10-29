@@ -1,0 +1,55 @@
+{
+  "exercise": 3,
+  "checks": 8,
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "loop converged with exit code 0",
+      "ok": true
+    },
+    {
+      "name": "trajectory is the bootstrap state plus one state per audit",
+      "ok": true
+    },
+    {
+      "name": "vision model was asked twice, one render each",
+      "ok": true
+    },
+    {
+      "name": "every iteration logged a snapshot and a render hash",
+      "ok": true
+    },
+    {
+      "name": "audited renders are distinct, real PNG files",
+      "ok": true
+    },
+    {
+      "name": "corrected PNG was written and the master left untouched",
+      "ok": true
+    },
+    {
+      "name": "validator rejects malformed curves and accepts the valid one",
+      "ok": true
+    },
+    {
+      "name": "trajectory and event log were written for replay",
+      "ok": true
+    }
+  ],
+  "exitCode": 0,
+  "visionCalls": 2,
+  "renderCalls": 2,
+  "masterSha256": "06feb5cf1693870c1e60584aab941581dee4f5cd76f0a4fe1a9dc2b3ae04b216",
+  "correctedSha256": "4f6ac75c103d409b0adfb3ff7d47cd1fd0d8bf7f36bfdab339c14e21ce541cda",
+  "trajectoryStates": 3,
+  "artifacts": [
+    "master.png",
+    "corrected.png",
+    "audit/iteration-1.png",
+    "audit/iteration-2.png",
+    "trajectory/events.jsonl",
+    "trajectory/trajectory.json",
+    "report.json"
+  ]
+}

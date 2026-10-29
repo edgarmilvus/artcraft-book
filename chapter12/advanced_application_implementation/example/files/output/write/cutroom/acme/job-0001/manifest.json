@@ -1,0 +1,39 @@
+{
+  "tenant": "acme",
+  "jobId": "job-0001",
+  "readRoot": "chapter12/advanced_application_implementation/example/files/output/read",
+  "writeRoot": "chapter12/advanced_application_implementation/example/files/output/write",
+  "dialoguePath": "chapter12/advanced_application_implementation/example/files/output/read/dialogue.png",
+  "musicPath": "chapter12/advanced_application_implementation/example/files/output/read/music.wav",
+  "broll": [
+    {
+      "path": "chapter12/advanced_application_implementation/example/files/output/read/broll-city.png",
+      "tags": [
+        "ship",
+        "launch",
+        "skyline"
+      ],
+      "label": "City"
+    },
+    {
+      "path": "chapter12/advanced_application_implementation/example/files/output/read/broll-desk.png",
+      "tags": [
+        "editor",
+        "desk",
+        "typing"
+      ],
+      "label": "Desk"
+    }
+  ],
+  "brief": "A product launch: we ship the new editor today.",
+  "width": 640,
+  "height": 360,
+  "fps": 24,
+  "targetRuntimeSec": 5,
+  "brollDensity": 0.9,
+  "minShotSec": 1.5,
+  "maxShotSec": 4,
+  "autoGrade": false,
+  "auditPerMinute": 2,
+  "maxRetries": 1
+}

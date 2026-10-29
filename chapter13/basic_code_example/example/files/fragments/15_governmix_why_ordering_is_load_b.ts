@@ -1,0 +1,6 @@
+{ id: "essentialSound.set",
+  params: { clips: dialogueClips,
+            values: { "repair.noise.on": true,
+                      "repair.noise.amount": 40,
+                      "repair.humHz": 50,
+                      "clarity.eqPreset": "Balanced Voice" } } },

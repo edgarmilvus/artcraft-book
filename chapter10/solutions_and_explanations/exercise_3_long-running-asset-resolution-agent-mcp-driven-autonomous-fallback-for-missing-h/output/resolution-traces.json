@@ -1,0 +1,187 @@
+{
+  "catalog": {
+    "sku": "SKU-100",
+    "status": "resolved",
+    "resolved_path": "chapter10/solutions_and_explanations/exercise_3_long-running-asset-resolution-agent-mcp-driven-autonomous-fallback-for-missing-h/output/resolved/SKU-100-resolved.jpg",
+    "resolved_bytes": 100224,
+    "resolved_sha256": "5d4fe4366201d55c25f052101399d20d386c6f540b203afc8ad370686681a978",
+    "strategy": "catalog",
+    "candidate_rationale": "Picked photo 1 (1600 px, captured None); most recent above 1200 px.",
+    "call_trace": [
+      {
+        "method": "command_run",
+        "params": {
+          "id": "library.filter",
+          "params": {
+            "text": "SKU-100",
+            "edited": true
+          }
+        },
+        "elapsedMs": 11,
+        "resultDigest": "6aea6dfe6561984c"
+      },
+      {
+        "method": "command_run",
+        "params": {
+          "id": "catalog.query",
+          "params": {
+            "limit": 5,
+            "filter": {
+              "text": "SKU-100",
+              "edited": true
+            },
+            "sort": {
+              "key": "captureDate",
+              "ascending": false
+            }
+          }
+        },
+        "elapsedMs": 0,
+        "resultDigest": "3fc9d192a5df2f71"
+      },
+      {
+        "method": "command_run",
+        "params": {
+          "id": "library.select",
+          "params": {
+            "ids": [
+              1
+            ],
+            "active": 1
+          }
+        },
+        "elapsedMs": 0,
+        "resultDigest": "5614a1c2b28de800"
+      },
+      {
+        "method": "command_run",
+        "params": {
+          "id": "preset.apply",
+          "params": {
+            "id": "Brand-Standard-v3",
+            "amount": 100
+          }
+        },
+        "elapsedMs": 0,
+        "resultDigest": "17417c6aaa8ed0a2"
+      },
+      {
+        "method": "command_run",
+        "params": {
+          "id": "crop.set",
+          "params": {
+            "rect": [
+              0.1,
+              0.0,
+              0.9,
+              1.0
+            ],
+            "angle": 0
+          }
+        },
+        "elapsedMs": 5,
+        "resultDigest": "c48b5b1a9776c846"
+      },
+      {
+        "method": "command_run",
+        "params": {
+          "id": "app.export",
+          "params": {
+            "path": "chapter10/solutions_and_explanations/exercise_3_long-running-asset-resolution-agent-mcp-driven-autonomous-fallback-for-missing-h/output/resolved/SKU-100-resolved.jpg",
+            "format": "jpeg",
+            "longEdge": 2400,
+            "quality": 92,
+            "metadata": "copyright",
+            "colorSpace": "srgb"
+          }
+        },
+        "elapsedMs": 81,
+        "resultDigest": "fd6acb3edb6b6609"
+      }
+    ]
+  },
+  "placeholder": {
+    "sku": "SKU-200",
+    "status": "placeholder",
+    "resolved_path": "chapter10/solutions_and_explanations/exercise_3_long-running-asset-resolution-agent-mcp-driven-autonomous-fallback-for-missing-h/output/placeholder/SKU-200-placeholder.png",
+    "resolved_bytes": 11160,
+    "resolved_sha256": "c6cd8fb439ce55dedb6d8f5e68e761d9770f8526e7d1fa49f6798976554424bb",
+    "strategy": "placeholder",
+    "candidate_rationale": null,
+    "call_trace": [
+      {
+        "method": "command_run",
+        "params": {
+          "id": "library.filter",
+          "params": {
+            "text": "SKU-200",
+            "edited": true
+          }
+        },
+        "elapsedMs": 9,
+        "resultDigest": "618de7d9f46f3f69"
+      },
+      {
+        "method": "command_run",
+        "params": {
+          "id": "catalog.query",
+          "params": {
+            "limit": 5,
+            "filter": {
+              "text": "SKU-200",
+              "edited": true
+            },
+            "sort": {
+              "key": "captureDate",
+              "ascending": false
+            }
+          }
+        },
+        "elapsedMs": 0,
+        "resultDigest": "374d6fa4b77fba86"
+      }
+    ]
+  },
+  "deferred": {
+    "sku": "SKU-200",
+    "status": "deferred",
+    "resolved_path": null,
+    "resolved_bytes": null,
+    "resolved_sha256": null,
+    "strategy": "none",
+    "candidate_rationale": null,
+    "call_trace": [
+      {
+        "method": "command_run",
+        "params": {
+          "id": "library.filter",
+          "params": {
+            "text": "SKU-200",
+            "edited": true
+          }
+        },
+        "elapsedMs": 9,
+        "resultDigest": "618de7d9f46f3f69"
+      },
+      {
+        "method": "command_run",
+        "params": {
+          "id": "catalog.query",
+          "params": {
+            "limit": 5,
+            "filter": {
+              "text": "SKU-200",
+              "edited": true
+            },
+            "sort": {
+              "key": "captureDate",
+              "ascending": false
+            }
+          }
+        },
+        "elapsedMs": 0,
+        "resultDigest": "374d6fa4b77fba86"
+      }
+    ]
+  }
+}

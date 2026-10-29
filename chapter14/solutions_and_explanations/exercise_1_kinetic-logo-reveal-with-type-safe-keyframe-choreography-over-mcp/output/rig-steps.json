@@ -1,0 +1,58 @@
+{
+  "slug": "northic",
+  "steps": [
+    {
+      "command": "layer.newNull",
+      "params": {
+        "name": "Null – Rig"
+      }
+    },
+    {
+      "command": "layer.rename",
+      "params": {
+        "layer": "#1",
+        "name": "Null – Rig"
+      }
+    },
+    {
+      "command": "layer.newShape",
+      "params": {
+        "kind": "rect",
+        "name": "Accent Bar",
+        "fill": "#1d4ed8",
+        "size": [
+          640,
+          12
+        ]
+      }
+    },
+    {
+      "command": "layer.newText",
+      "params": {
+        "text": "NORTHIC",
+        "name": "Wordmark",
+        "font": "Inter",
+        "size": 120,
+        "fill": "#ffffff",
+        "position": [
+          960,
+          420
+        ]
+      }
+    },
+    {
+      "command": "layer.newText",
+      "params": {
+        "text": "tools for the long run",
+        "name": "Tagline",
+        "font": "Inter",
+        "size": 42,
+        "fill": "#dddddd",
+        "position": [
+          960,
+          620
+        ]
+      }
+    }
+  ]
+}

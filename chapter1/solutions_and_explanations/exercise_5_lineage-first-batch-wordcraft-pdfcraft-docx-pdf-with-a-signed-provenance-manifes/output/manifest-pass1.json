@@ -1,0 +1,34 @@
+{
+  "run_id": "run-2026-10-26",
+  "model_id": "deepseek/deepseek-v4.1-flash",
+  "started_at": "2026-10-26T13:27:04.598Z",
+  "finished_at": "2026-10-26T13:27:04.784Z",
+  "files": [
+    {
+      "input": "input/doc-alpha.docx",
+      "corrected": "corrected/doc-alpha.docx",
+      "pdf": "signed/doc-alpha.pdf",
+      "source_sha256": "9c10e58611d655fdfc6cda2c960c79031d637dfbc9f6d7a3cf821e4b7684d699",
+      "stages": {
+        "restyle": "ok",
+        "export": "ok",
+        "sign": "ok"
+      },
+      "errors": []
+    },
+    {
+      "input": "input/doc-broken.docx",
+      "corrected": "corrected/doc-broken.docx",
+      "pdf": "signed/doc-broken.pdf",
+      "source_sha256": "22c61e6b9ad71a1836ebd689a23cfe255b13a380295e694338017e4328b0198d",
+      "stages": {
+        "restyle": "failed",
+        "export": "skipped",
+        "sign": "skipped"
+      },
+      "errors": [
+        "restyle:not a valid zip package: invalid Zip archive: Could not find EOCD"
+      ]
+    }
+  ]
+}

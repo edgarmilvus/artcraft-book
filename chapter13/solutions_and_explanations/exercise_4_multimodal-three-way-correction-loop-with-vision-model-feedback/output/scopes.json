@@ -1,0 +1,17 @@
+{
+  "good": {
+    "waveformMinIre": 0.0,
+    "waveformMaxIre": 100.0,
+    "midtoneMeanY": 50.0
+  },
+  "crushed": {
+    "waveformMinIre": 0.0,
+    "waveformMaxIre": 20.0,
+    "midtoneMeanY": 9.0
+  },
+  "clipped": {
+    "waveformMinIre": 0.0,
+    "waveformMaxIre": 120.0,
+    "midtoneMeanY": 50.0
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "fixtureId": "cover-page",
+    "kind": "designcraft",
+    "total": 5,
+    "matched": 5,
+    "deltas": []
+  },
+  {
+    "fixtureId": "cover-page",
+    "kind": "pdfcraft",
+    "total": 5,
+    "matched": 4,
+    "deltas": [
+      {
+        "field": "perPage[0].renderPixelDistance",
+        "expected": "1576b6070291cd11eef96fc2846c35e8959a1e5c6e952da912e2f58b2e650965",
+        "actual": 1
+      }
+    ]
+  }
+]

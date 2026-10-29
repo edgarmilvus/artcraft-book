@@ -1,0 +1,22 @@
+{
+  "sequence": {
+    "settings": {
+      "frame_rate": {
+        "num": 24000,
+        "den": 1001
+      }
+    },
+    "video": [
+      {
+        "name": "Video 1",
+        "items": [
+          {
+            "clip": 1,
+            "start": 0,
+            "duration": 100
+          }
+        ]
+      }
+    ]
+  }
+}

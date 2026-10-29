@@ -1,0 +1,26 @@
+{
+  "crm_record_id": "SFDC-0042572",
+  "docx_path": "chapter17/solutions_and_explanations/exercise_1_contract-lifecycle-compiler-nightly-crm-engagement-letter-sealing/output/work/out/SFDC-0042572.docx",
+  "pdf_path": "chapter17/solutions_and_explanations/exercise_1_contract-lifecycle-compiler-nightly-crm-engagement-letter-sealing/output/work/out/SFDC-0042572.pdf",
+  "docx_revision_index": 0,
+  "pdf_revision_count": 1,
+  "pdf_sha256": "301fbf4a1698e674016278f1c586e1b5b8ab3a913e22849edafdc0bb00d74efa",
+  "pipeline_started_utc": "2026-10-26T13:32:27.864Z",
+  "pipeline_finished_utc": "2026-10-26T13:32:27.918Z",
+  "human_override": false,
+  "status": "sealed",
+  "row_hash": "4dcf58dd8d5de882d2051b77655d6c74161ce23142957de71fa87a3ad8a4999a",
+  "source_row": {
+    "crm_record_id": "SFDC-0042572",
+    "client_legal_name": "Harbour Freight SARL",
+    "entity_type": "SARL",
+    "jurisdiction": "FR-75",
+    "scope_reference": "SOW-2026-Q1-8890",
+    "retainer_amount": 48000,
+    "retainer_currency": "EUR",
+    "effective_date": "2026-02-04",
+    "partner_of_record": "A. Rossi",
+    "partner_initials": "AR"
+  },
+  "revision_diff": null
+}

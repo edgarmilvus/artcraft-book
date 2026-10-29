@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.storytold.dev/claude-settings-1.0.json",
+  "permissions": {
+    "allow": [
+      "mcp__storytold-photocraft__doc_inspect",
+      "mcp__storytold-photocraft__list_commands",
+      "mcp__storytold-photocraft__doc_new",
+      "mcp__storytold-photocraft__ui_screenshot",
+      "mcp__storytold-vectorcraft__doc_inspect",
+      "mcp__storytold-vectorcraft__list_commands",
+      "mcp__storytold-vectorcraft__doc_new",
+      "mcp__storytold-vectorcraft__ui_screenshot",
+      "mcp__storytold-designcraft__doc_inspect",
+      "mcp__storytold-designcraft__list_commands",
+      "mcp__storytold-designcraft__doc_new",
+      "mcp__storytold-designcraft__ui_screenshot"
+    ],
+    "deny": [
+      "mcp__storytold-photocraft__file_delete",
+      "mcp__storytold-vectorcraft__file_delete",
+      "mcp__storytold-designcraft__file_delete"
+    ],
+    "ask": [
+      "mcp__storytold-photocraft__ui_pointer",
+      "mcp__storytold-vectorcraft__ui_pointer",
+      "mcp__storytold-designcraft__ui_pointer"
+    ]
+  },
+  "env": {
+    "STORYTOLD_AGENT": "claude-code:brand-producer",
+    "STORYTOLD_ROLE": "producer",
+    "STORYTOLD_POLICY_VERSION": "1.0"
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "mcp__storytold-*__*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "studio-governor audit --from-hook"
+          }
+        ]
+      }
+    ]
+  }
+}

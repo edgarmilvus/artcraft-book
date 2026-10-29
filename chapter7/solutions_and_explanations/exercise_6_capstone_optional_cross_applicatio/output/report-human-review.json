@@ -1,0 +1,71 @@
+{
+  "jobId": "brochure-3",
+  "stages": [
+    {
+      "stage": "photocraft",
+      "ok": true,
+      "output": {
+        "sku": "lamp",
+        "path": "chapter7/solutions_and_explanations/exercise_6_capstone_optional_cross_applicatio/output/work/treated/lamp.png",
+        "sha256": "fdf9386873af4367e058985639de577129743c4e2526e5ad74d32d8f9b98d0b3"
+      },
+      "failure": null,
+      "attempts": 1,
+      "elapsedMs": 151
+    },
+    {
+      "stage": "vision_local",
+      "ok": true,
+      "output": {
+        "exposure_ok": false,
+        "color_ok": true,
+        "retouch_artifacts": [
+          "halo around the healed spot"
+        ],
+        "confidence": 0.4,
+        "note": "the retouch leaves a halo"
+      },
+      "failure": null,
+      "attempts": 1,
+      "elapsedMs": 0
+    },
+    {
+      "stage": "photocraft",
+      "ok": true,
+      "output": {
+        "sku": "chair",
+        "path": "chapter7/solutions_and_explanations/exercise_6_capstone_optional_cross_applicatio/output/work/treated/chair.png",
+        "sha256": "f445896f5ebba4ad14c239ec58e606440f5483a5f729f44267bf33eaa9bf4e95"
+      },
+      "failure": null,
+      "attempts": 1,
+      "elapsedMs": 160
+    },
+    {
+      "stage": "vision_local",
+      "ok": true,
+      "output": {
+        "exposure_ok": false,
+        "color_ok": true,
+        "retouch_artifacts": [
+          "halo around the healed spot"
+        ],
+        "confidence": 0.4,
+        "note": "the retouch leaves a halo"
+      },
+      "failure": null,
+      "attempts": 1,
+      "elapsedMs": 0
+    }
+  ],
+  "localAuditCacheHits": 0,
+  "localAuditCacheMisses": 2,
+  "globalAudit": [],
+  "rollbackStrategy": "restore_from_copy",
+  "finalPdfWritten": false,
+  "humanRequired": true,
+  "humanRequiredReasons": [
+    "Local audit confidence 0.40 for lamp needs a human.",
+    "Local audit confidence 0.40 for chair needs a human."
+  ]
+}

@@ -1,0 +1,18 @@
+pipeline
+
+PASS manifest produces the four artifacts plus the HTML extra
+PASS every node names a command its engine actually exposes
+PASS dependencies exist and form an acyclic graph
+PASS the three branches only meet where the manifest says they do
+PASS build is deterministic
+PASS execution waves preserve dependencies and start both roots together
+
+compensation
+
+PASS compensation runs deepest-first in sequential waves
+PASS exports are reported as irreversible, not silently compensated
+PASS reversible edits are compensated, failed node and never-run nodes are not
+PASS native-atomic nodes are skipped: the app already rolled back
+PASS graph, waves and compensation plan were written as inspectable artifacts
+
+11/11 checks passed

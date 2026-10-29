@@ -1,0 +1,56 @@
+{
+  "source": "unmapped-acme.svg",
+  "repaired": "repaired-logo.svg",
+  "subpaths": [
+    {
+      "closed": true,
+      "anchors": [
+        {
+          "x": 10,
+          "y": 10
+        },
+        {
+          "x": 90,
+          "y": 10
+        },
+        {
+          "x": 90,
+          "y": 90
+        },
+        {
+          "x": 10,
+          "y": 90
+        }
+      ]
+    },
+    {
+      "closed": true,
+      "anchors": [
+        {
+          "x": 110,
+          "y": 10,
+          "out": [
+            150,
+            10
+          ]
+        },
+        {
+          "x": 190,
+          "y": 90,
+          "in": [
+            190,
+            50
+          ]
+        },
+        {
+          "x": 110,
+          "y": 90
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "unsupported-svg-element: <circle> is not converted by the path parser"
+  ],
+  "dhash": "1010101010101010"
+}

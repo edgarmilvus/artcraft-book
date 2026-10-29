@@ -1,0 +1,7 @@
+workflow executed
+
+PASS all three workflow steps succeeded
+PASS saved PNG is 1920x1080
+PASS document carries gradient + two type layers
+
+3/3 checks passed

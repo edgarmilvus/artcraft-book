@@ -1,0 +1,33 @@
+{
+  "checks": 46,
+  "failures": [],
+  "quirks": [
+    "the headless server has no ui.screenshot, so the agent falls back to doc.render"
+  ],
+  "port": 55093,
+  "final": {
+    "event": "final",
+    "converged": true,
+    "passes": 3,
+    "winning_curve": [
+      [
+        0,
+        0
+      ],
+      [
+        64,
+        40
+      ],
+      [
+        192,
+        215
+      ],
+      [
+        255,
+        255
+      ]
+    ],
+    "applied_edits": 1,
+    "ts": 1793021238.762052
+  }
+}

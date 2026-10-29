@@ -1,0 +1,21 @@
+PASS OkLCh 0 → L* 0
+PASS OkLCh 1 → L* 100
+PASS curve points are sorted and inside 0..255
+PASS chroma trim stays inside -100..100
+PASS malformed job refused by Zod
+PASS a transient failure is retried
+PASS a validation failure is not retried
+PASS seven layer ids were tracked
+PASS the document holds eight layers
+PASS seven layers carry the job tag above the canvas layer
+PASS four layers are clipped
+PASS the curve layer holds Lab curve data
+PASS the frame matte carries the selection mask
+PASS the vignette blends multiply at 65%
+PASS no saved-artifact warnings
+PASS vision QA is skipped without a key
+PASS the PSD is a layered 8BPS file
+PASS the preview is a PNG
+PASS the CLI answers with a report
+
+19/19 checks passed

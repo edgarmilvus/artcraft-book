@@ -1,0 +1,22 @@
+{
+  "checks": 75,
+  "failures": [],
+  "quirks": [
+    "DesignCraft takes no root flag and PdfCraft uses --root; both resolve relative paths against the process cwd",
+    "none of the four engines creates output directories; the pipeline and the fixture builders create them up front",
+    "the primary tier requires the \"pick\" flag, so a rating-4 photo without that flag resolves through the fallback tier"
+  ],
+  "report": {
+    "ok": true,
+    "selected_photo": 1,
+    "used_fallback": true,
+    "photocraft_doc": 0,
+    "outputs": {
+      "hero_wide": "hero/hero_1920x1080.png",
+      "hero_square": "hero/hero_1080x1080.png",
+      "spec_sheet": "spec/FW26_VelvetChair_spec.pdf"
+    },
+    "txn_log": "logs/bundle-2607_txn.jsonl"
+  },
+  "txn": 14
+}

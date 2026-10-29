@@ -1,0 +1,55 @@
+{
+  "referenceCamera": "A",
+  "correlations": [
+    {
+      "pair": [
+        "A",
+        "B"
+      ],
+      "sampleRate": 48000,
+      "windowStartSamples": 0,
+      "windowLengthSamples": 1440000,
+      "peakOffsetSamples": 4800,
+      "peakValue": 1.0,
+      "noiseFloorStdDev": 0.2619883602440357,
+      "peakZScore": 3.2766793813406565,
+      "lobeWidthSamples": 18,
+      "rejected": false,
+      "rejectionReason": null
+    },
+    {
+      "pair": [
+        "A",
+        "C"
+      ],
+      "sampleRate": 48000,
+      "windowStartSamples": 0,
+      "windowLengthSamples": 1440000,
+      "peakOffsetSamples": 12000,
+      "peakValue": 1.0,
+      "noiseFloorStdDev": 0.25102418085336686,
+      "peakZScore": 3.441342293691911,
+      "lobeWidthSamples": 18,
+      "rejected": false,
+      "rejectionReason": null
+    }
+  ],
+  "alignment": {
+    "referenceCamera": "A",
+    "cameraOffsetsTicks": {
+      "A": 0,
+      "B": -25401600000,
+      "C": -63504000000
+    },
+    "residualRms_ms": 6.066849360203408e-14,
+    "confidence": 0.9999999999999697
+  },
+  "pauses": [
+    {
+      "timeTicks": 254016000000,
+      "pauseDurationMs": 1000.0
+    }
+  ],
+  "validationPassed": true,
+  "recoveryAttempts": 0
+}

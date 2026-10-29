@@ -1,0 +1,614 @@
+[
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Basic Code Example",
+    "section_slug": "basic_code_example",
+    "type": "example",
+    "subheading": "Basic Code Example",
+    "lang": "typescript",
+    "lines": [
+      96372,
+      96576
+    ],
+    "file": "01_studio-bridge.ts",
+    "chars": 9730,
+    "contract": false,
+    "first_line": "/**"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Basic Code Example",
+    "section_slug": "basic_code_example",
+    "type": "example",
+    "subheading": "Pillar 2 \u2014 Event Loop Pitfalls",
+    "lang": "typescript",
+    "lines": [
+      96723,
+      96734
+    ],
+    "file": "fragments/02_pillar_2_event_loop_pitfalls.ts",
+    "chars": 405,
+    "contract": false,
+    "first_line": "// Sequential: each iteration waits for the previous one. Total time = sum(durations)."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "1. Canonical Policy Schema",
+    "lang": "typescript",
+    "lines": [
+      96801,
+      96925
+    ],
+    "file": "src/policy/schema.ts",
+    "chars": 5147,
+    "contract": false,
+    "first_line": "// src/policy/schema.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "2. Secret Vault",
+    "lang": "typescript",
+    "lines": [
+      96933,
+      97012
+    ],
+    "file": "src/policy/vault.ts",
+    "chars": 2828,
+    "contract": false,
+    "first_line": "// src/policy/vault.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "3. The Audit Logger",
+    "lang": "typescript",
+    "lines": [
+      97020,
+      97140
+    ],
+    "file": "src/audit/logger.ts",
+    "chars": 4798,
+    "contract": false,
+    "first_line": "// src/audit/logger.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "4. The Policy Engine",
+    "lang": "typescript",
+    "lines": [
+      97148,
+      97257
+    ],
+    "file": "src/policy/engine.ts",
+    "chars": 4461,
+    "contract": false,
+    "first_line": "// src/policy/engine.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "5. The MCP Client Factory",
+    "lang": "typescript",
+    "lines": [
+      97265,
+      97511
+    ],
+    "file": "src/mcp/factory.ts",
+    "chars": 7556,
+    "contract": false,
+    "first_line": "// src/mcp/factory.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "6. Agent Adapters",
+    "lang": "typescript",
+    "lines": [
+      97522,
+      97628
+    ],
+    "file": "src/adapters/cursor.ts",
+    "chars": 3791,
+    "contract": false,
+    "first_line": "// src/adapters/cursor.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "6. Agent Adapters",
+    "lang": "typescript",
+    "lines": [
+      97635,
+      97760
+    ],
+    "file": "src/adapters/claude-code.ts",
+    "chars": 4495,
+    "contract": false,
+    "first_line": "// src/adapters/claude-code.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "6. Agent Adapters",
+    "lang": "typescript",
+    "lines": [
+      97767,
+      97859
+    ],
+    "file": "src/adapters/opencode.ts",
+    "chars": 3390,
+    "contract": false,
+    "first_line": "// src/adapters/opencode.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "8. A Governed Multimodal Pipeline",
+    "lang": "typescript",
+    "lines": [
+      97983,
+      98126
+    ],
+    "file": "src/pipelines/brand-hero.ts",
+    "chars": 5394,
+    "contract": false,
+    "first_line": "// src/pipelines/brand-hero.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "7. The StudioGovernor",
+    "lang": "typescript",
+    "lines": [
+      97867,
+      97977
+    ],
+    "file": "src/governor.ts",
+    "chars": 4153,
+    "contract": false,
+    "first_line": "// src/governor.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "9. CLI Entry Point",
+    "lang": "typescript",
+    "lines": [
+      98132,
+      98224
+    ],
+    "file": "src/index.ts",
+    "chars": 3531,
+    "contract": false,
+    "first_line": "// src/index.ts"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "11. Extending the Governor: Adding a New Craft",
+    "lang": "json",
+    "lines": [
+      98258,
+      98269
+    ],
+    "file": "policy/effectcraft.binding.json",
+    "chars": 340,
+    "contract": false,
+    "first_line": "{"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Practical Exercises",
+    "lang": "jsonc",
+    "lines": [
+      98302,
+      98553
+    ],
+    "file": "policy/mcp.fleet.json",
+    "chars": 7707,
+    "contract": false,
+    "first_line": "// mcp.fleet.json \u2014 Northwind Motion's fleet policy."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Practical Exercises",
+    "lang": "jsonc",
+    "lines": [
+      98555,
+      98651
+    ],
+    "file": "policy/mcp.fleet.lock.json",
+    "chars": 2870,
+    "contract": false,
+    "first_line": "// mcp.fleet.lock.json \u2014 the audit envelope the generator writes."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 2: Autonomous Asset Remediation in DesignCraft with Claude Code and `command_batch`",
+    "section_slug": "exercise_2_autonomous_asset_remediation_in_de",
+    "type": "exercise",
+    "subheading": "Exercise 2: Autonomous Asset Remediation in DesignCraft with Claude Code and `command_batch`",
+    "lang": "jsonc",
+    "lines": [
+      98685,
+      98692
+    ],
+    "file": "01_jsonc.jsonc",
+    "chars": 345,
+    "contract": false,
+    "first_line": "// font-aliases.json (human-committed input the agent MUST honour)"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 2: Autonomous Asset Remediation in DesignCraft with Claude Code and `command_batch`",
+    "section_slug": "exercise_2_autonomous_asset_remediation_in_de",
+    "type": "exercise",
+    "subheading": "Exercise 2: Autonomous Asset Remediation in DesignCraft with Claude Code and `command_batch`",
+    "lang": "jsonc",
+    "lines": [
+      98694,
+      98700
+    ],
+    "file": "02_jsonc.jsonc",
+    "chars": 196,
+    "contract": false,
+    "first_line": "// swatch-aliases.json (human-committed input the agent MUST honour)"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 2: Autonomous Asset Remediation in DesignCraft with Claude Code and `command_batch`",
+    "section_slug": "exercise_2_autonomous_asset_remediation_in_de",
+    "type": "exercise",
+    "subheading": "Exercise 2: Autonomous Asset Remediation in DesignCraft with Claude Code and `command_batch`",
+    "lang": "jsonc",
+    "lines": [
+      98702,
+      98721
+    ],
+    "file": "03_jsonc.jsonc",
+    "chars": 715,
+    "contract": false,
+    "first_line": "// Expected success manifest the agent must emit (this is a CONTRACT, not a solution)"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 3: Multimodal Colour-Grading Loop with LightCraft, TCP Auth, and a Vision LLM",
+    "section_slug": "exercise_3_multimodal_colour_grading_loop_wit",
+    "type": "exercise",
+    "subheading": "Exercise 3: Multimodal Colour-Grading Loop with LightCraft, TCP Auth, and a Vision LLM",
+    "lang": "python",
+    "lines": [
+      98769,
+      98799
+    ],
+    "file": "01_python.py",
+    "chars": 1787,
+    "contract": false,
+    "first_line": "# Contract only \u2014 do NOT provide the finished implementation."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 3: Multimodal Colour-Grading Loop with LightCraft, TCP Auth, and a Vision LLM",
+    "section_slug": "exercise_3_multimodal_colour_grading_loop_wit",
+    "type": "exercise",
+    "subheading": "Exercise 3: Multimodal Colour-Grading Loop with LightCraft, TCP Auth, and a Vision LLM",
+    "lang": "jsonc",
+    "lines": [
+      98801,
+      98821
+    ],
+    "file": "02_jsonc.jsonc",
+    "chars": 556,
+    "contract": false,
+    "first_line": "// Voice-of-the-loop schema the LLM MUST honour:"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 3: Multimodal Colour-Grading Loop with LightCraft, TCP Auth, and a Vision LLM",
+    "section_slug": "exercise_3_multimodal_colour_grading_loop_wit",
+    "type": "exercise",
+    "subheading": "Exercise 3: Multimodal Colour-Grading Loop with LightCraft, TCP Auth, and a Vision LLM",
+    "lang": "jsonc",
+    "lines": [
+      98823,
+      98834
+    ],
+    "file": "03_jsonc.jsonc",
+    "chars": 214,
+    "contract": false,
+    "first_line": "// Expected audit line (jsonl, one per iteration):"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 4: Supervisor\u2013Worker Delegation for FilmCraft Timeline Assembly",
+    "section_slug": "exercise_4_supervisor_worker_delegation_for_f",
+    "type": "exercise",
+    "subheading": "Exercise 4: Supervisor\u2013Worker Delegation for FilmCraft Timeline Assembly",
+    "lang": "jsonc",
+    "lines": [
+      98903,
+      98923
+    ],
+    "file": "01_jsonc.jsonc",
+    "chars": 695,
+    "contract": false,
+    "first_line": "// call-sheet.json (input)"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 4: Supervisor\u2013Worker Delegation for FilmCraft Timeline Assembly",
+    "section_slug": "exercise_4_supervisor_worker_delegation_for_f",
+    "type": "exercise",
+    "subheading": "Exercise 4: Supervisor\u2013Worker Delegation for FilmCraft Timeline Assembly",
+    "lang": "typescript",
+    "lines": [
+      98925,
+      98997
+    ],
+    "file": "02_typescript.ts",
+    "chars": 2334,
+    "contract": false,
+    "first_line": "// Contract \u2014 supervisors MUST satisfy these interfaces, not the code we ask you to write."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFcraft, Headless OpenCode, and a Signed Audit Trail",
+    "section_slug": "exercise_5_policy_enforced_batch_redaction_an",
+    "type": "exercise",
+    "subheading": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFcraft, Headless OpenCode, and a Signed Audit Trail",
+    "lang": "jsonc",
+    "lines": [
+      99027,
+      99075
+    ],
+    "file": "01_jsonc.jsonc",
+    "chars": 1644,
+    "contract": false,
+    "first_line": "// manifest.json - the canonical structure the pipeline seals."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFcraft, Headless OpenCode, and a Signed Audit Trail",
+    "section_slug": "exercise_5_policy_enforced_batch_redaction_an",
+    "type": "exercise",
+    "subheading": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFcraft, Headless OpenCode, and a Signed Audit Trail",
+    "lang": "jsonc",
+    "lines": [
+      99081,
+      99119
+    ],
+    "file": "02_jsonc.jsonc",
+    "chars": 1516,
+    "contract": false,
+    "first_line": "// opencode.json - the MCP entry that points the headless agent at PdfCraft."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFcraft, Headless OpenCode, and a Signed Audit Trail",
+    "section_slug": "exercise_5_policy_enforced_batch_redaction_an",
+    "type": "exercise",
+    "subheading": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFcraft, Headless OpenCode, and a Signed Audit Trail",
+    "lang": "jsonc",
+    "lines": [
+      99121,
+      99129
+    ],
+    "file": "03_jsonc.jsonc",
+    "chars": 396,
+    "contract": false,
+    "first_line": "// pii-extra.txt (one regular expression per line \u2014 client-supplied)."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFcraft, Headless OpenCode, and a Signed Audit Trail",
+    "section_slug": "exercise_5_policy_enforced_batch_redaction_an",
+    "type": "exercise",
+    "subheading": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFcraft, Headless OpenCode, and a Signed Audit Trail",
+    "lang": "jsonc",
+    "lines": [
+      99131,
+      99264
+    ],
+    "file": "04_jsonc.jsonc",
+    "chars": 4955,
+    "contract": false,
+    "first_line": "// The ordered MCP calls the pipeline makes for ONE input document."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 6 (Stretch): Cross-Suite Asset Provenance Ledger",
+    "section_slug": "exercise_6_stretch_cross_suite_asset_provenan",
+    "type": "exercise",
+    "subheading": "Exercise 6 (Stretch): Cross-Suite Asset Provenance Ledger",
+    "lang": "sql",
+    "lines": [
+      99298,
+      99384
+    ],
+    "file": "01_sql.sql",
+    "chars": 3373,
+    "contract": false,
+    "first_line": "-- Schema contract \u2014 the cross-suite provenance ledger."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 6 (Stretch): Cross-Suite Asset Provenance Ledger",
+    "section_slug": "exercise_6_stretch_cross_suite_asset_provenan",
+    "type": "exercise",
+    "subheading": "Exercise 6 (Stretch): Cross-Suite Asset Provenance Ledger",
+    "lang": "typescript",
+    "lines": [
+      99386,
+      99438
+    ],
+    "file": "02_typescript.ts",
+    "chars": 1612,
+    "contract": false,
+    "first_line": "// The query contract of the cross-suite provenance ledger."
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Solutions and Explanations",
+    "section_slug": "solutions_and_explanations",
+    "type": "exercise",
+    "subheading": "Solutions and Explanations",
+    "lang": "typescript",
+    "lines": [
+      99456,
+      100756
+    ],
+    "file": "01_generator.ts",
+    "chars": 45732,
+    "contract": false,
+    "first_line": "/**"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 2: Autonomous Asset Remediation in DesignCraft with Claude Code and `command_batch`",
+    "section_slug": "exercise_2_autonomous_asset_remediation_in_de",
+    "type": "exercise",
+    "subheading": "Exercise 2: Autonomous Asset Remediation in DesignCraft with Claude Code and `command_batch`",
+    "lang": "python",
+    "lines": [
+      100770,
+      101678
+    ],
+    "file": "04_remediate.py",
+    "chars": 37151,
+    "contract": false,
+    "first_line": "\"\"\""
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 3: Multimodal Colour-Grading Loop with LightCraft, TCP Auth, and a Vision LLM",
+    "section_slug": "exercise_3_multimodal_colour_grading_loop_wit",
+    "type": "exercise",
+    "subheading": "Exercise 3: Multimodal Colour-Grading Loop with LightCraft, TCP Auth, and a Vision LLM",
+    "lang": "python",
+    "lines": [
+      101692,
+      102693
+    ],
+    "file": "04_loop.py",
+    "chars": 37808,
+    "contract": false,
+    "first_line": "\"\"\""
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 4: Supervisor\u2013Worker Delegation for FilmCraft Timeline Assembly",
+    "section_slug": "exercise_4_supervisor_worker_delegation_for_f",
+    "type": "exercise",
+    "subheading": "Exercise 4: Supervisor\u2013Worker Delegation for FilmCraft Timeline Assembly",
+    "lang": "typescript",
+    "lines": [
+      102707,
+      104592
+    ],
+    "file": "03_supervisor.ts",
+    "chars": 64052,
+    "contract": false,
+    "first_line": "/**"
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFCraft, Headless OpenCode, and a Signed Audit Trail",
+    "section_slug": "exercise_5_policy_enforced_batch_redaction_an",
+    "type": "exercise",
+    "subheading": "Exercise 5: Policy-Enforced Batch Redaction and Archive with PDFCraft, Headless OpenCode, and a Signed Audit Trail",
+    "lang": "python",
+    "lines": [
+      104606,
+      105375
+    ],
+    "file": "05_redact_pipeline.py",
+    "chars": 34097,
+    "contract": false,
+    "first_line": "\"\"\""
+  },
+  {
+    "chapter": 19,
+    "chapter_title": "Chapter 19: Full-Stack Studio Governance - Integrating Cursor (.cursor/mcp.json), Claude Code, and OpenCode",
+    "section": "Exercise 6 (Stretch): Cross-Suite Asset Provenance Ledger",
+    "section_slug": "exercise_6_stretch_cross_suite_asset_provenan",
+    "type": "exercise",
+    "subheading": "Exercise 6 (Stretch): Cross-Suite Asset Provenance Ledger",
+    "lang": "typescript",
+    "lines": [
+      105389,
+      107032
+    ],
+    "file": "03_shim.ts",
+    "chars": 52339,
+    "contract": false,
+    "first_line": "/**"
+  }
+]

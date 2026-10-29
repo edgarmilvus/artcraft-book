@@ -1,0 +1,8 @@
+┌── Pinecone Index: "vectorforge-assets" ─────────────┐
+│                                                     │
+│  namespace: tenant_acme_prod     ~ 2.4M vectors     │
+│  namespace: tenant_globex_prod   ~ 910K vectors     │
+│  namespace: tenant_initech_prod  ~ 140K vectors     │
+│  namespace: tenant_acme_staging  ~ 5K vectors       │
+│                                                     │
+└─────────────────────────────────────────────────────┘

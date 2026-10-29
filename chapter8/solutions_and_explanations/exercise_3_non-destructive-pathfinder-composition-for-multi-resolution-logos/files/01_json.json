@@ -1,0 +1,31 @@
+{
+  "logoName": "caduceus-h",
+  "tiers": ["xl", "md", "sm"],
+  "sources": {
+    "caduceus": { "path_spec": "./specs/caduceus.json" },
+    "shield":   { "path_spec": "./specs/shield.json" },
+    "h":        { "path_spec": "./specs/h.json" }
+  },
+  "tree": {
+    "op": "minusFront",
+    "nonDestructive": true,
+    "children": [
+      {
+        "op": "unite",
+        "nonDestructive": true,
+        "children": [
+          { "leaf": "shield" },
+          { "leaf": "h" }
+        ]
+      },
+      { "leaf": "caduceus" }
+    ]
+  },
+  "simplification": {
+    "sm": {
+      "dropSubtree": ["caduceus"],
+      "replaceLeaf": { "shield": { "with": "shape.ellipse" } },
+      "clipLeaf":    { "h": { "to": "leftStemRect", "rectPt": [-40, -20, 30, 220] } }
+    }
+  }
+}

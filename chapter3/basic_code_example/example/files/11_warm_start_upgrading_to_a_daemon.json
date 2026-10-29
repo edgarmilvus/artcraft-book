@@ -1,0 +1,1 @@
+{"id":"auth","method":"auth","params":{"token":"<64_hex_chars>"}}

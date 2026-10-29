@@ -1,0 +1,36 @@
+# .gitlab-ci.yml — regression harness jobs
+verify-regressions:
+  stage: audit
+  image: registry.example.com/storytold/regression-harness:1.0.0
+  parallel: 8
+  script:
+    - |
+      set -eu
+      # Each parallel job handles 1/8th of the fixtures.
+      SHARD=${CI_NODE_INDEX:-0}
+      TOTAL=${CI_NODE_TOTAL:-1}
+      node /opt/harness/harness.js --fixtures-dir fixtures --out-dir artifacts --shard "$SHARD/$TOTAL"
+  artifacts:
+    when: on_failure
+    paths: [artifacts/diffs/]
+    expire_in: 30 days
+
+# Golden refresh is a separate, manual, unsharded job. It carries the resource
+# group because two refreshes on the same ref must serialize; the verification
+# job above must NOT carry it, or GitLab would queue all eight shards behind
+# one another and turn the matrix back into a single-threaded run.
+# I_AM_SURE=1 comes from a masked, protected project variable — hard-coding it
+# here would make the guard decoration.
+update-goldens:
+  stage: audit
+  image: registry.example.com/storytold/regression-harness:1.0.0
+  resource_group: golden-updates-$CI_COMMIT_REF_SLUG
+  rules:
+    - if: '$UPDATE_GOLDENS == "1"'
+      when: manual
+  script:
+    - node /opt/harness/harness.js --fixtures-dir fixtures --out-dir artifacts
+        --update-golden --shard "0/1"
+  artifacts:
+    paths: [fixtures/]
+    expire_in: 30 days

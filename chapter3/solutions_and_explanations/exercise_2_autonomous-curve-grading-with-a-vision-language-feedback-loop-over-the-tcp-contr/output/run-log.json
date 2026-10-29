@@ -1,0 +1,9 @@
+{
+  "checks": 42,
+  "failures": [],
+  "quirks": [
+    "control channel has no ui.screenshot; the audit render is `doc.render`"
+  ],
+  "port": 55115,
+  "initialLuma": 74.42
+}

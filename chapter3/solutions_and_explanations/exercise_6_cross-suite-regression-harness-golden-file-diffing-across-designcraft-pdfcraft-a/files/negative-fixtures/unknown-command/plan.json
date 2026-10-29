@@ -1,0 +1,8 @@
+{
+  "fixtureId": "unknown-command",
+  "tolerance": { "textDamerauLevenshtein": 0, "renderPixelLevenshtein": 0 },
+  "steps": [
+    { "cli": "designcraft", "command": "file.new", "params": { "preset": "Letter", "pages": 1 } },
+    { "cli": "designcraft", "command": "type.charZZZ", "params": { "text": "x" } }
+  ]
+}

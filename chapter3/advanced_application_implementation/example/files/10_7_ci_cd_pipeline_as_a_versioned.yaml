@@ -1,0 +1,83 @@
+# .github/workflows/render-service.yml
+name: render-service
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: render-service-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  packages: write
+  id-token: write
+  attestations: write
+
+env:
+  IMAGE: ghcr.io/${{ github.repository_owner }}/bannerforge-render
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with: { node-version: "20.11", cache: "npm" }
+      - run: npm ci --frozen-lockfile
+      - run: npm run build             # strict tsc — no emit on any error
+      - run: npx tsc -p tsconfig.build.json --noEmit  # declaration surface check
+
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Build image (load locally for smoke test)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: ${{ env.IMAGE }}:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Smoke test (real MCP round-trip in container)
+        run: |
+          mkdir -p /tmp/bf/in /tmp/bf/out
+          # A 1x1 PNG the Craft CLIs can decode; checks the whole path.
+          printf '\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x06\x00\x00\x00\x1f\x15\xc4\x89\x00\x00\x00\nIDAT\x78\x9c\x63\x00\x01\x00\x00\x05\x00\x01\x0d\x0a\x2d\xb4\x00\x00\x00\x00IEND\xaeB`\x82' > /tmp/bf/in/prod.png
+          docker run --rm \
+            -v /tmp/bf/in:/work/in:ro \
+            -v /tmp/bf/out:/work/out:rw \
+            -e LOG_LEVEL=debug \
+            -p 18080:8080 \
+            --detach --name bf-ci ${{ env.IMAGE }}:ci
+          # Poll health: max 30s for the warm MCP pool to come up.
+          for i in $(seq 1 30); do
+            if curl -fsS -o /dev/null http://127.0.0.1:18080/v1/render -X OPTIONS; then break; fi
+            sleep 1
+          done
+          curl -fsS -X POST http://127.0.0.1:18080/v1/render \
+            -H 'content-type: application/json' \
+            -d '{"tenantId":"ci","headline":"HELLO CI","price":"$0.99","productImagePath":"/work/in/prod.png"}' \
+            | tee /tmp/bf/out/artifact.json
+          docker stop bf-ci
+          grep -q '"format":"PNG"' /tmp/bf/out/artifact.json
+
+      - name: Push to GHCR (main + tags)
+        if: github.event_name == 'push'
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          platforms: linux/amd64,linux/arm64
+          tags: |
+            ${{ env.IMAGE }}:sha-${{ github.sha }}
+            ${{ startsWith(github.ref, 'refs/tags/v') && format('{0}:{1}', env.IMAGE, github.ref_name) || '' }}
+            ${{ github.ref == 'refs/heads/main' && format('{0}:latest', env.IMAGE) || '' }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

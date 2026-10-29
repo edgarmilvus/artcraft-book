@@ -1,0 +1,12 @@
+{
+  "level": "PDF/A-2b",
+  "compliant": true,
+  "declared": {
+    "output_intents": [
+      "Custom"
+    ],
+    "pdfa": "PDF/A-2b",
+    "pdfua": null
+  },
+  "issues": []
+}

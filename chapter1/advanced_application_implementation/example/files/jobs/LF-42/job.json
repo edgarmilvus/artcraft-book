@@ -1,0 +1,9 @@
+// jobs/LF-42/job.json
+{
+  "jobId": "LF-42",
+  "readRoot": "/srv/forge/tenants/acme/in",
+  "writeRoot": "/srv/forge/tenants/acme/out",
+  "recipePath": "jobs/LF-42/recipe.json",
+  "capture": "preview",
+  "replaceSource": null
+}

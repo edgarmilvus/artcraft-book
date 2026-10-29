@@ -1,0 +1,37 @@
+{
+  "iteration": 2,
+  "preview_path": "chapter6/solutions_and_explanations/exercise_3_autonomous-agentic-correction-loop-screenshot-critique-re-clip-repeat/output/audit-deadlock/iter-2.png",
+  "window_path": "chapter6/solutions_and_explanations/exercise_3_autonomous-agentic-correction-loop-screenshot-critique-re-clip-repeat/output/audit-deadlock/iter-2-window.png",
+  "critique": {
+    "verdict": "fix",
+    "issues": [
+      {
+        "kind": "clipping",
+        "severity": 0.8,
+        "hint": "product escapes the card",
+        "region": [
+          0,
+          0,
+          100,
+          100
+        ]
+      },
+      {
+        "kind": "legibility",
+        "severity": 0.6,
+        "hint": "price sits on the cutout",
+        "region": [
+          120,
+          700,
+          700,
+          900
+        ]
+      }
+    ]
+  },
+  "commands_applied": [],
+  "undo_cost": 0,
+  "history_before": 8,
+  "history_after": 8,
+  "note": "the critique repeated; the loop stopped instead of re-applying it"
+}

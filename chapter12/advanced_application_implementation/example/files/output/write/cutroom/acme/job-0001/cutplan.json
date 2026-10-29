@@ -1,0 +1,24 @@
+{
+  "coverage": 0.725,
+  "estimatedRuntimeSec": 4,
+  "silenceWindows": [
+    {
+      "start": 1.6,
+      "end": 2.1
+    },
+    {
+      "start": 3.6,
+      "end": 4.1
+    }
+  ],
+  "shots": [
+    {
+      "itemId": 13,
+      "beatIndex": 1,
+      "sourceStartSec": 2.1,
+      "durationSec": 2.9,
+      "relevance": 1.3353098049315935,
+      "label": "City"
+    }
+  ]
+}

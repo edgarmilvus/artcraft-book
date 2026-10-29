@@ -1,0 +1,22 @@
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { mkdirSync } from "node:fs";
+const root = process.argv[2]; mkdirSync(root,{recursive:true});
+const t = new StdioClientTransport({command:"wordcraft-cli",args:["mcp"],cwd:root,stderr:"pipe"}); t.stderr?.on("data",()=>{});
+const c = new Client({name:"probe",version:"1"},{capabilities:{}}); await c.connect(t);
+const unwrap=(r)=>{const b=r.content?.find(x=>x.type==="text"); try{return JSON.parse(b.text)}catch{return b.text}};
+const call=async(n,a={})=>{const r=await c.callTool({name:n,arguments:a}); if(r.isError) console.log('ERR',n,JSON.stringify(r).slice(0,300)); return unwrap(r)};
+const ex=async(cmd,params={})=>call('execute',{command:cmd,params});
+await call('new_document',{width:612,height:792});
+await ex('text.insert',{text:'Original paragraph. '});
+await ex('text.newParagraph',{});
+await ex('review.trackChanges',{});
+console.log('track',JSON.stringify(await ex('review.changes',{})));
+await ex('text.insert',{text:'Editor insertion.'});
+await ex('text.newParagraph',{});
+// move caret? cannot; we'll just inspect
+console.log('changes',JSON.stringify(await ex('review.changes',{})).slice(0,2000));
+console.log('inspect',JSON.stringify(await call('inspect_document',{})).slice(0,3000));
+console.log('docinspect',JSON.stringify(await call('document.inspect',{text:true})).slice(0,3000));
+console.log('save',JSON.stringify(await call('save_document',{path:'probe.docx'})));
+await c.close();

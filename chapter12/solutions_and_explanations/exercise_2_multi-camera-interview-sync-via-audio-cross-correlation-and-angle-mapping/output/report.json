@@ -1,0 +1,22 @@
+{
+  "exercise": 2,
+  "engine": "filmcraft timebase (pure correlation core)",
+  "assertions": 26,
+  "offsets": {
+    "A": 0,
+    "B": -25401600000,
+    "C": -63504000000
+  },
+  "residualRms_ms": 6.066849360203408e-14,
+  "pauses": 1,
+  "artefacts": [
+    "audio/camA.wav",
+    "audio/camB.wav",
+    "audio/camC.wav",
+    "audio/dialogue.wav",
+    "correlations.png",
+    "correlations.json",
+    "multicam_report.json"
+  ],
+  "result": "three camera WAVs correlated, lags reconciled and speech pauses detected"
+}

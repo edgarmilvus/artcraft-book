@@ -1,0 +1,193 @@
+{
+  "brief": {
+    "campaignId": "6f1a1f2c-9b4d-4f0e-9a2b-2c9b0d5e7a11",
+    "product": {
+      "name": "Lumen Desk Lamp",
+      "tagline": "Light that follows the sun",
+      "priceUsd": 129,
+      "keyBenefits": [
+        "Warm dimmable LED",
+        "Twelve-hour battery",
+        "Ships in a day"
+      ],
+      "palette": {
+        "primary": "#0f172a",
+        "accent": "#f97316",
+        "neutral": "#f8fafc"
+      }
+    },
+    "audience": "designers who work late",
+    "tone": "premium",
+    "channels": [
+      "instagram-post",
+      "email-hero",
+      "web-banner",
+      "tiktok-reel",
+      "print-flyer",
+      "pdf-onepager"
+    ]
+  },
+  "copy": {
+    "headline": "Lumen Desk Lamp: Light that follows the sun",
+    "subhead": "Designed for designers who work late.",
+    "bullets": [
+      "Warm dimmable LED",
+      "Twelve-hour battery",
+      "Ships in a day"
+    ],
+    "cta": "Shop now",
+    "docxPath": "chapter20/advanced_application_implementation/example/files/output/work/6f1a1f2c-9b4d-4f0e-9a2b-2c9b0d5e7a11/copy.docx"
+  },
+  "hero": {
+    "path": "chapter20/advanced_application_implementation/example/files/output/work/6f1a1f2c-9b4d-4f0e-9a2b-2c9b0d5e7a11/hero-1080.png",
+    "palette": {
+      "primary": "#0f172a",
+      "accent": "#f97316",
+      "neutral": "#f8fafc"
+    }
+  },
+  "assets": [
+    {
+      "id": "email-hero-01",
+      "channel": "email-hero",
+      "path": "chapter20/advanced_application_implementation/example/files/output/work/6f1a1f2c-9b4d-4f0e-9a2b-2c9b0d5e7a11/hero-1080.png",
+      "mime": "image/png",
+      "producer": "visual",
+      "binary": "photocraft-cli",
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      },
+      "bytes": 5778,
+      "audit": null,
+      "createdAtIso": "2026-10-26T13:33:12.593Z"
+    },
+    {
+      "id": "instagram-post-01",
+      "channel": "instagram-post",
+      "path": "chapter20/advanced_application_implementation/example/files/output/work/6f1a1f2c-9b4d-4f0e-9a2b-2c9b0d5e7a11/feed-1080.png",
+      "mime": "image/png",
+      "producer": "visual",
+      "binary": "photocraft-cli",
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      },
+      "bytes": 27598,
+      "audit": {
+        "passed": true,
+        "score": 1,
+        "reasons": [
+          "The tones are balanced."
+        ],
+        "corrections": [
+          {
+            "kind": "levels",
+            "gamma": 1.15
+          }
+        ],
+        "auditorModel": "injected-vision"
+      },
+      "createdAtIso": "2026-10-26T13:33:12.593Z"
+    },
+    {
+      "id": "web-banner-01",
+      "channel": "web-banner",
+      "path": "chapter20/advanced_application_implementation/example/files/output/work/6f1a1f2c-9b4d-4f0e-9a2b-2c9b0d5e7a11/banner-1920x1080.png",
+      "mime": "image/png",
+      "producer": "visual",
+      "binary": "photocraft-cli",
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 39869,
+      "audit": null,
+      "createdAtIso": "2026-10-26T13:33:12.593Z"
+    },
+    {
+      "id": "print-flyer-01",
+      "channel": "print-flyer",
+      "path": "chapter20/advanced_application_implementation/example/files/output/work/6f1a1f2c-9b4d-4f0e-9a2b-2c9b0d5e7a11/flyer-p1.png",
+      "mime": "image/png",
+      "producer": "publisher",
+      "binary": "designcraft-cli",
+      "dimensions": {
+        "width": 1191,
+        "height": 1684
+      },
+      "bytes": 57971,
+      "audit": null,
+      "createdAtIso": "2026-10-26T13:33:14.094Z"
+    },
+    {
+      "id": "pdf-onepager-01",
+      "channel": "pdf-onepager",
+      "path": "chapter20/advanced_application_implementation/example/files/output/work/6f1a1f2c-9b4d-4f0e-9a2b-2c9b0d5e7a11/campaign-bundle.pdf",
+      "mime": "application/pdf",
+      "producer": "publisher",
+      "binary": "pdfcraft-cli",
+      "dimensions": null,
+      "bytes": 58581,
+      "audit": null,
+      "createdAtIso": "2026-10-26T13:33:14.094Z"
+    },
+    {
+      "id": "pdf-onepager-02",
+      "channel": "pdf-onepager",
+      "path": "chapter20/advanced_application_implementation/example/files/output/work/6f1a1f2c-9b4d-4f0e-9a2b-2c9b0d5e7a11/flyer-print.pdf",
+      "mime": "application/pdf",
+      "producer": "publisher",
+      "binary": "pdfcraft-cli",
+      "dimensions": null,
+      "bytes": 58292,
+      "audit": null,
+      "createdAtIso": "2026-10-26T13:33:14.094Z"
+    }
+  ],
+  "auditLog": [
+    {
+      "atIso": "2026-10-26T13:33:12.033Z",
+      "agent": "orchestrator",
+      "message": "Connected 6 ArtCraft engines.",
+      "commandsSpent": 0
+    },
+    {
+      "atIso": "2026-10-26T13:33:12.040Z",
+      "agent": "copywriter",
+      "message": "Copy block generated: \"Lumen Desk Lamp: Light that follows the sun\".",
+      "commandsSpent": 10
+    },
+    {
+      "atIso": "2026-10-26T13:33:12.495Z",
+      "agent": "visual",
+      "message": "Hero, badge, feed and banner rendered.",
+      "commandsSpent": 17
+    },
+    {
+      "atIso": "2026-10-26T13:33:12.593Z",
+      "agent": "vision",
+      "message": "Audit passed: The tones are balanced.",
+      "commandsSpent": 2
+    },
+    {
+      "atIso": "2026-10-26T13:33:13.975Z",
+      "agent": "motion",
+      "message": "Rendered 120 frames for \"Reel-6f1a1f2c\".",
+      "commandsSpent": 127
+    },
+    {
+      "atIso": "2026-10-26T13:33:14.094Z",
+      "agent": "publisher",
+      "message": "Flyer rendered, bundle compiled.",
+      "commandsSpent": 15
+    },
+    {
+      "atIso": "2026-10-26T13:33:14.095Z",
+      "agent": "orchestrator",
+      "message": "Campaign complete. commands=171 tokens=3250",
+      "commandsSpent": 0
+    }
+  ],
+  "commandsSpent": 171
+}

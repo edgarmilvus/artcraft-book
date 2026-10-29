@@ -1,0 +1,12 @@
+{
+  "total": 1,
+  "cleanSpreads": 1,
+  "aborted": 0,
+  "blocked": false,
+  "reports": [
+    {
+      "spreadIndex": 0,
+      "outcome": "clean"
+    }
+  ]
+}

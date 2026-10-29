@@ -1,0 +1,13 @@
+{
+  "resolved": true,
+  "iterations": 3,
+  "undoStepsPlanned": 0,
+  "undoStepsApplied": 0,
+  "error": null,
+  "decisionTree": [
+    "iter 1: clipping (severity 0.80) \u2192 corrected, 7 undo step(s)",
+    "iter 1: legibility (severity 0.60) \u2192 corrected, 7 undo step(s)",
+    "iter 2: palette (severity 0.40) \u2192 corrected, 1 undo step(s)",
+    "iter 3: verdict ok \u2014 stopping"
+  ]
+}

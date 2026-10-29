@@ -1,0 +1,72 @@
+[
+  {
+    "index": 0,
+    "audit": {
+      "status": "adjust",
+      "rationale": "The composite needs a change on this axis.",
+      "adjustment": {
+        "target": "highlights",
+        "delta": -8.0
+      }
+    },
+    "delta": {
+      "target": "highlights",
+      "delta": -48.0
+    },
+    "latencyMs": 0,
+    "render": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-005/render_00.png",
+    "applied": true,
+    "rolledBack": false,
+    "verification": {
+      "audit": {
+        "status": "ok",
+        "rationale": "The composite satisfies every criterion of the rubric."
+      },
+      "latencyMs": 0,
+      "render": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-005/render_00_after.png"
+    }
+  },
+  {
+    "index": 1,
+    "audit": {
+      "status": "adjust",
+      "rationale": "The composite needs a change on this axis.",
+      "adjustment": {
+        "target": "saturation",
+        "delta": 5.0
+      }
+    },
+    "delta": {
+      "target": "saturation",
+      "delta": 20.0
+    },
+    "latencyMs": 0,
+    "render": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-005/render_01.png",
+    "applied": true,
+    "rolledBack": false,
+    "verification": {
+      "audit": {
+        "status": "adjust",
+        "rationale": "The composite needs a change on this axis.",
+        "adjustment": {
+          "target": "vibrance",
+          "delta": 4.0
+        }
+      },
+      "latencyMs": 0,
+      "render": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-005/render_01_after.png"
+    }
+  },
+  {
+    "index": 2,
+    "audit": {
+      "status": "ok",
+      "rationale": "The composite satisfies every criterion of the rubric."
+    },
+    "delta": null,
+    "latencyMs": 0,
+    "render": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-005/render_02.png",
+    "applied": false,
+    "rolledBack": false
+  }
+]

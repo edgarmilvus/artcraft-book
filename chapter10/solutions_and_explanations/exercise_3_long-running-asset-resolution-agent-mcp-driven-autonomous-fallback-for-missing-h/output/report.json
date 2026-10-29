@@ -1,0 +1,26 @@
+{
+  "exercise": 3,
+  "engine": "lightcraft-cli + PhotoCraft loopback stub",
+  "assertions": 24,
+  "catalog": {
+    "status": "resolved",
+    "path": "chapter10/solutions_and_explanations/exercise_3_long-running-asset-resolution-agent-mcp-driven-autonomous-fallback-for-missing-h/output/resolved/SKU-100-resolved.jpg",
+    "sha256": "5d4fe4366201d55c25f052101399d20d386c6f540b203afc8ad370686681a978"
+  },
+  "placeholder": {
+    "status": "placeholder",
+    "path": "chapter10/solutions_and_explanations/exercise_3_long-running-asset-resolution-agent-mcp-driven-autonomous-fallback-for-missing-h/output/placeholder/SKU-200-placeholder.png"
+  },
+  "deferred": {
+    "status": "deferred",
+    "strategy": "none"
+  },
+  "artefacts": [
+    "resolution-traces.json",
+    "source/hero.png",
+    "library/catalog.snap",
+    "resolved/SKU-100-resolved.jpg",
+    "placeholder/SKU-200-placeholder.png"
+  ],
+  "result": "catalog hit resolved, missing hero synthesised through the authenticated loopback, empty row deferred with a trace"
+}

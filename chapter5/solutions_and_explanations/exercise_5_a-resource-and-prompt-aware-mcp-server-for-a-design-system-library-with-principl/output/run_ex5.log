@@ -1,0 +1,17 @@
+capability table
+
+PASS three agents share one read root and never share a write root
+PASS copywriting sees one tool, no prompts, no templates
+PASS layout is the only agent that can enumerate templates
+PASS resource prefixes do not overlap between agents
+PASS the color agent sees the composite contrast resource
+PASS prompt grants match the three-agent table
+PASS every granted tool is a design-system tool, never a raw engine id
+PASS scopes carry a placeholder token, never key material
+PASS error codes are distinct and negative
+PASS the anti-enumeration codes are the ones the spec reserves
+PASS the visibility matrix shows the shared read root without leaking grants
+PASS handler policy keeps not-allowed indistinguishable from not-found
+PASS capability matrix and access artefacts were written
+
+13/13 checks passed

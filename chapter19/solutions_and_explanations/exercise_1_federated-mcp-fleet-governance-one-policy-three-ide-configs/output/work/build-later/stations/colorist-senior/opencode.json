@@ -1,0 +1,69 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "designcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [],
+      "env": {
+        "NORTHWIND_DESIGN_TOKEN": "{{vault:northwind/design-token}}"
+      },
+      "enabled": false
+    },
+    "lightcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [
+        "--app",
+        "lightcraft",
+        "--real-binary",
+        "tools/craft-cli/bin/lightcraft-cli",
+        "--server",
+        "lightcraft-prod",
+        "--role",
+        "colorist-senior",
+        "--read-root",
+        "/work/projects",
+        "--write-root",
+        "/work/projects/color",
+        "--cap-hash",
+        "495e785550c8bc2c7565e589e5829939d1ecbdf2cfc47861314d22dfbb80dd9e",
+        "--fleet-lock",
+        "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/mcp.fleet.lock.json",
+        "--vault-key-ref",
+        "mcp-fleet-hmac-v1",
+        "--",
+        "mcp"
+      ],
+      "env": {
+        "NORTHWIND_LIBRARY_TOKEN": "{{vault:northwind/library-token}}"
+      },
+      "enabled": true
+    },
+    "effectcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [],
+      "env": {
+        "NORTHWIND_RENDER_TOKEN": "{{vault:northwind/render-token}}"
+      },
+      "enabled": false
+    },
+    "filmcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [],
+      "env": {},
+      "enabled": false
+    },
+    "pdfcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [],
+      "env": {
+        "NORTHWIND_PDF_TOKEN": "{{vault:northwind/pdf-token}}"
+      },
+      "enabled": false
+    }
+  }
+}

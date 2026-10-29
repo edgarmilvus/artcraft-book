@@ -1,0 +1,14 @@
+{
+  "status": "impossible",
+  "step": "ribbon",
+  "assertions": [],
+  "requirements": {
+    "ribbonBehindProduct": false,
+    "badgeBetweenRibbonAndPrice": false,
+    "scrimHasDropShadow": false,
+    "gradeClippedToTypeOnly": false
+  },
+  "applied": [],
+  "rolledBack": 0,
+  "reason": "step ghost refers to undefined id ghost"
+}

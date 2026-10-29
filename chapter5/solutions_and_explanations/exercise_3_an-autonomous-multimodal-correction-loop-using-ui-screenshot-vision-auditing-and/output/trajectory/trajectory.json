@@ -1,0 +1,103 @@
+{
+  "code": 0,
+  "trajectory": [
+    {
+      "iteration": 0,
+      "currentCurve": [
+        [
+          0,
+          0
+        ],
+        [
+          64,
+          40
+        ],
+        [
+          192,
+          215
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "lastRenderHash": "",
+      "verdict": null,
+      "snapshotName": ""
+    },
+    {
+      "iteration": 1,
+      "currentCurve": [
+        [
+          0,
+          0
+        ],
+        [
+          64,
+          50
+        ],
+        [
+          192,
+          205
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "lastRenderHash": "e7e0412a0a9abe4e34280bc0c40daeecedbd95e6d7ed87051b384346fefb819b",
+      "verdict": {
+        "status": "low_contrast",
+        "suggested_curve": [
+          [
+            0,
+            0
+          ],
+          [
+            64,
+            50
+          ],
+          [
+            192,
+            205
+          ],
+          [
+            255,
+            255
+          ]
+        ],
+        "confidence": 0.91,
+        "notes": "midtones compressed"
+      },
+      "snapshotName": "tone_iter_0"
+    },
+    {
+      "iteration": 2,
+      "currentCurve": [
+        [
+          0,
+          0
+        ],
+        [
+          64,
+          50
+        ],
+        [
+          192,
+          205
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "lastRenderHash": "b3dc686595516e83d1f17394e9009fc7f27623f575ba54c8ecc399e0099bac53",
+      "verdict": {
+        "status": "ok",
+        "confidence": 0.95,
+        "notes": "contrast inside the target band"
+      },
+      "snapshotName": "tone_iter_1"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "campaignUuid": "FW26",
+  "rows": [
+    {
+      "sku": "chair-01",
+      "palette": "autumn",
+      "focalX": 0.5,
+      "focalY": 0.5,
+      "heroPath": "hero.png",
+      "aspect": "square"
+    },
+    {
+      "sku": "chair-01",
+      "palette": "autumn",
+      "focalX": 0.5,
+      "focalY": 0.5,
+      "heroPath": "hero.png",
+      "aspect": "portrait"
+    },
+    {
+      "sku": "chair-01",
+      "palette": "autumn",
+      "focalX": 0.5,
+      "focalY": 0.5,
+      "heroPath": "hero.png",
+      "aspect": "wide"
+    },
+    {
+      "sku": "chair-01",
+      "palette": "autumn",
+      "focalX": 0.5,
+      "focalY": 0.5,
+      "heroPath": "hero.png",
+      "aspect": "story"
+    },
+    {
+      "sku": "chair-02",
+      "palette": "spring",
+      "focalX": 0.4,
+      "focalY": 0.5,
+      "heroPath": "hero.png",
+      "aspect": "square"
+    },
+    {
+      "sku": "chair-02",
+      "palette": "spring",
+      "focalX": 0.4,
+      "focalY": 0.5,
+      "heroPath": "hero.png",
+      "aspect": "portrait"
+    },
+    {
+      "sku": "chair-02",
+      "palette": "spring",
+      "focalX": 0.4,
+      "focalY": 0.5,
+      "heroPath": "hero.png",
+      "aspect": "wide"
+    },
+    {
+      "sku": "chair-02",
+      "palette": "spring",
+      "focalX": 0.4,
+      "focalY": 0.5,
+      "heroPath": "hero.png",
+      "aspect": "story"
+    },
+    {
+      "sku": "chair-03",
+      "palette": "spring",
+      "focalX": 0.6,
+      "focalY": 0.4,
+      "heroPath": "hero.png",
+      "aspect": "square"
+    },
+    {
+      "sku": "chair-03",
+      "palette": "spring",
+      "focalX": 0.6,
+      "focalY": 0.4,
+      "heroPath": "hero.png",
+      "aspect": "portrait"
+    },
+    {
+      "sku": "chair-03",
+      "palette": "spring",
+      "focalX": 0.6,
+      "focalY": 0.4,
+      "heroPath": "hero.png",
+      "aspect": "wide"
+    },
+    {
+      "sku": "chair-03",
+      "palette": "spring",
+      "focalX": 0.6,
+      "focalY": 0.4,
+      "heroPath": "hero.png",
+      "aspect": "story"
+    },
+    {
+      "sku": "chair-bad",
+      "heroPath": "missing-hero.png",
+      "palette": "autumn",
+      "aspect": "story",
+      "focalX": 0.5,
+      "focalY": 0.5
+    }
+  ],
+  "aspects": {
+    "square": {
+      "id": "square",
+      "w": 1080,
+      "h": 1080
+    },
+    "portrait": {
+      "id": "portrait",
+      "w": 1080,
+      "h": 1350
+    },
+    "wide": {
+      "id": "wide",
+      "w": 1200,
+      "h": 628
+    },
+    "story": {
+      "id": "story",
+      "w": 720,
+      "h": 1280
+    }
+  },
+  "palettes": {
+    "spring": {
+      "shadow": [
+        [
+          0,
+          0
+        ],
+        [
+          64,
+          40
+        ],
+        [
+          192,
+          215
+        ],
+        [
+          255,
+          255
+        ]
+      ]
+    },
+    "autumn": {
+      "shadow": [
+        [
+          0,
+          0
+        ],
+        [
+          48,
+          72
+        ],
+        [
+          180,
+          196
+        ],
+        [
+          255,
+          255
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// call-sheet.json (input)
+// The supervisor's only input. `fps` is the frame rate the record timecodes
+// are written in (SMPTE non-drop); it defaults to 24 when it is absent.
+{
+  "runId": "2026-01-14-cathedral",
+  "workerCount": 3,
+  "fps": 24,
+  "scenes": [
+    {
+      "number": 42,
+      "slug": "INT. CHAPEL - NIGHT",
+      "shots": [
+        { "shotId": "042A-1", "clipPath": "/work/cathedral/dailies/042A-1.mov", "recordIn": "00:00:03:12", "duration": "00:00:07:00" },
+        { "shotId": "042A-2", "clipPath": "/work/cathedral/dailies/042A-2.mov", "recordIn": "00:00:03:12", "duration": "00:00:04:18" }
+      ],
+      "audioSync": { "mode": "timecode", "reference": "A001" }
+    }
+  ]
+}

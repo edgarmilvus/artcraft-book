@@ -1,0 +1,3 @@
+crm_record_id,client_legal_name,entity_type,jurisdiction,scope_reference,retainer_amount,retainer_currency,effective_date,partner_of_record,partner_initials
+SFDC-0042571,Northwind Analytics Ltd,GmbH,US-DE,SOW-2026-Q1-8814,1300000,EUR,2026-02-01,J. Moreau,JM
+SFDC-0042572,Harbour Freight SARL,SARL,FR-75,SOW-2026-Q1-8890,48000,EUR,2026-02-04,A. Rossi,AR

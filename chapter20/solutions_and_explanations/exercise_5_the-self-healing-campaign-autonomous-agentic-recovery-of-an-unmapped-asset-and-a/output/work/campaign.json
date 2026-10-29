@@ -1,0 +1,46 @@
+{
+  "id": "cmp-windowsill",
+  "name": "Windowsill launch",
+  "assetRules": {
+    "minWidth": 1600,
+    "minHeight": 1200,
+    "targetTempK": 5200,
+    "tempToleranceK": 400,
+    "cropAspect": [
+      4,
+      3
+    ],
+    "maxCropDiscardFraction": 0.15,
+    "minRating": 3
+  },
+  "scene": {
+    "keyword": "windowsill",
+    "keywords": [
+      "lifestyle",
+      "windowsill"
+    ]
+  },
+  "fallbackCampaignIds": [
+    "var-b",
+    "var-c"
+  ],
+  "fallbackAssetPath": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets/fallback/variant-b.png",
+  "creative": {
+    "headline": "Made for the windowsill",
+    "cta": "See the range",
+    "width": 1080,
+    "height": 1350,
+    "background": "#101820"
+  },
+  "roots": {
+    "derived": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/derived",
+    "assets": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets",
+    "outbox": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/pages.jsonl"
+  },
+  "library": {
+    "libraryDir": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/library",
+    "photosDir": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/photos"
+  },
+  "analyticsPath": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/analytics.json",
+  "missingAssetPath": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets/lifestyle/window-01.jpg"
+}

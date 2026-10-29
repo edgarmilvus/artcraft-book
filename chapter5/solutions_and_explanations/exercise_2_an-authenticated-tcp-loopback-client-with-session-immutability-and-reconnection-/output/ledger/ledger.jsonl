@@ -1,0 +1,4 @@
+{"kind":"issue","nonce":"cc9b511a94af463184b77445e4d3faf8","command_id":"layer.newLayer","params_hash":"4e9305a73a39379f02dc3d6229886a781039b4f9e90f38005fae2b57eda3aee2","issued_at":1793021301.990471,"acked_at":null}
+{"kind":"ack","nonce":"cc9b511a94af463184b77445e4d3faf8","acked_at":1793021301.990958}
+{"kind":"issue","nonce":"1f0810659fb84b6c9c2bf76096ed4d66","command_id":"paint.stroke","params_hash":"689a8f1db95402580476e38c264278ce7b1e664320cfb4e9ae8d3a908cf09964","issued_at":1793021301.9910889,"acked_at":null}
+{"kind":"ack","nonce":"1f0810659fb84b6c9c2bf76096ed4d66","acked_at":1793021301.9925}

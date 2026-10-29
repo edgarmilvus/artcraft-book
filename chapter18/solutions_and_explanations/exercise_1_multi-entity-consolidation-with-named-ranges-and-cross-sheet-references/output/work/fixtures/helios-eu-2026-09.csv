@@ -1,0 +1,5 @@
+account_code,account_label,amount_local,currency,period
+4000,Net Revenue,3100000.0,EUR,2026-09
+IPBOX-EU,IP Box Relief,42000.0,EUR,2026-09
+5000,Cost of Goods Sold,-860000.0,EUR,2026-09
+6000,Operating Expenses,-470000.0,EUR,2026-09

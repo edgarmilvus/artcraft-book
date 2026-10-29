@@ -1,0 +1,62 @@
+{
+  "mcpServers": {
+    "effectcraft-prod": {
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/bin/mcp-shim",
+      "args": [
+        "--app",
+        "effectcraft",
+        "--real-binary",
+        "tools/craft-cli/bin/effectcraft-cli",
+        "--server",
+        "effectcraft-prod",
+        "--role",
+        "motion-senior",
+        "--read-root",
+        "/work/projects",
+        "--write-root",
+        "/work/projects/motion",
+        "--cap-hash",
+        "fdaca37c834c61d48655c9a733b960e23e74f2d2ff545781ed97b52a70b09115",
+        "--fleet-lock",
+        "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/mcp.fleet.lock.json",
+        "--vault-key-ref",
+        "mcp-fleet-hmac-v1",
+        "--",
+        "mcp"
+      ],
+      "env": {
+        "NORTHWIND_RENDER_TOKEN": "{{vault:northwind/render-token}}"
+      }
+    },
+    "filmcraft-prod": {
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/bin/mcp-shim",
+      "args": [
+        "--app",
+        "filmcraft",
+        "--real-binary",
+        "tools/craft-cli/bin/filmcraft-cli",
+        "--server",
+        "filmcraft-prod",
+        "--role",
+        "motion-senior",
+        "--read-root",
+        "/work/projects",
+        "--write-root",
+        "/work/projects/motion",
+        "--cap-hash",
+        "fdaca37c834c61d48655c9a733b960e23e74f2d2ff545781ed97b52a70b09115",
+        "--fleet-lock",
+        "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/mcp.fleet.lock.json",
+        "--vault-key-ref",
+        "mcp-fleet-hmac-v1",
+        "--",
+        "mcp",
+        "--automation-read-root",
+        "/work/projects",
+        "--automation-write-root",
+        "/work/projects/motion"
+      ],
+      "env": {}
+    }
+  }
+}

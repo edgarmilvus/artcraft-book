@@ -1,0 +1,174 @@
+{
+  "input_path": "chapter17/solutions_and_explanations/exercise_2_agentic-pii-redaction-regulatory-compliance-audit/output/work/in/scan-0001.pdf",
+  "output_path": "chapter17/solutions_and_explanations/exercise_2_agentic-pii-redaction-regulatory-compliance-audit/output/work/out/scan-0001.redacted.pdf",
+  "actions": [
+    {
+      "tool": "redact_mark",
+      "page": null,
+      "params": {
+        "pattern": "ssn"
+      },
+      "returned_count": 1,
+      "pages_marked": [
+        1
+      ]
+    },
+    {
+      "tool": "redact_mark",
+      "page": null,
+      "params": {
+        "pattern": "phone"
+      },
+      "returned_count": 1,
+      "pages_marked": [
+        1
+      ]
+    },
+    {
+      "tool": "redact_mark",
+      "page": null,
+      "params": {
+        "pattern": "credit-card"
+      },
+      "returned_count": 1,
+      "pages_marked": [
+        1
+      ]
+    },
+    {
+      "tool": "redact_mark",
+      "page": 1,
+      "params": {
+        "rect": [
+          72.0,
+          92.6028060913086,
+          212.0,
+          104.6028060913086
+        ],
+        "anchored_to": "MRN:"
+      },
+      "returned_count": 1
+    },
+    {
+      "tool": "redact_mark",
+      "page": 1,
+      "params": {
+        "rect": [
+          72.0,
+          125.52960968017578,
+          212.0,
+          137.5296173095703
+        ],
+        "anchored_to": "DOB:"
+      },
+      "returned_count": 1
+    },
+    {
+      "tool": "redact_mark",
+      "page": null,
+      "params": {
+        "find": "Alice Nguyen"
+      },
+      "returned_count": 1
+    },
+    {
+      "tool": "redact_apply",
+      "page": 1,
+      "params": {
+        "pages": [
+          1
+        ]
+      },
+      "returned_count": 6
+    },
+    {
+      "tool": "doc_remove_hidden",
+      "page": null,
+      "params": {
+        "categories": [
+          "metadata"
+        ]
+      },
+      "returned_count": 5
+    },
+    {
+      "tool": "accessibility_fix",
+      "page": null,
+      "params": {
+        "rule": "title",
+        "value": "scan-0001"
+      },
+      "returned_count": 1
+    },
+    {
+      "tool": "pdfa_convert",
+      "page": null,
+      "params": {
+        "level": "2b"
+      },
+      "returned_count": 1
+    }
+  ],
+  "final_hidden_info": {
+    "metadata": 0,
+    "attachments": 0,
+    "comments": 0,
+    "form-fields": 0,
+    "hidden-text": 0,
+    "hidden-layers": 0,
+    "bookmarks": 0,
+    "links-actions-scripts": 0,
+    "private-data": 0
+  },
+  "residual_hidden_categories": {},
+  "accessibility": {
+    "permission-flag": "skipped",
+    "image-only": "skipped",
+    "tagged-pdf": "skipped",
+    "logical-reading-order": "skipped",
+    "primary-language": "passed",
+    "title": "passed",
+    "bookmarks": "skipped",
+    "color-contrast": "skipped",
+    "tagged-content": "skipped",
+    "tagged-annotations": "skipped",
+    "tab-order": "passed",
+    "character-encoding": "skipped",
+    "tagged-multimedia": "skipped",
+    "screen-flicker": "skipped",
+    "scripts": "skipped",
+    "timed-responses": "skipped",
+    "navigation-links": "skipped",
+    "tagged-form-fields": "skipped",
+    "field-descriptions": "skipped",
+    "figures-alt-text": "skipped",
+    "nested-alt-text": "skipped",
+    "alt-text-associated": "skipped",
+    "alt-text-hides-annotation": "skipped",
+    "other-elements-alt-text": "skipped",
+    "table-rows": "skipped",
+    "table-cells": "skipped",
+    "table-headers": "skipped",
+    "table-regularity": "skipped",
+    "table-summary": "skipped",
+    "list-items": "skipped",
+    "lbl-lbody": "skipped",
+    "heading-nesting": "skipped"
+  },
+  "accessibility_summary": {
+    "passed": 3,
+    "failed": 0,
+    "manual": 0
+  },
+  "pdfa": {
+    "level": "2b",
+    "compliant": true,
+    "issues": []
+  },
+  "pdf_sha256": "764750ce1cd5c82d94785f2c0fcce4e058d8fb291ed7dee9684df03c5013828d",
+  "audit_clean": true,
+  "status": "sealed",
+  "suspected_matches": [],
+  "residual_tokens": [],
+  "page_count": 1
+}

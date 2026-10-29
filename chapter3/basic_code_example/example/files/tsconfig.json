@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "lib": ["ES2022"], "module": "ESNext",
+    "moduleResolution": "bundler", "strict": true, "noEmit": true,
+    "skipLibCheck": true, "esModuleInterop": true, "types": ["node"],
+    "noUncheckedIndexedAccess": true, "noPropertyAccessFromIndexSignature": true
+  },
+  "include": ["01_banner-service.ts"]
+}

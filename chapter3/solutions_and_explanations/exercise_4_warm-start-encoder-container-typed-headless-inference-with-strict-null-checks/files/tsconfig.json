@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "lib": ["ES2022"], "module": "NodeNext", "moduleResolution": "NodeNext",
+    "strict": true, "exactOptionalPropertyTypes": true, "noUncheckedIndexedAccess": true,
+    "useUnknownInCatchVariables": true, "outDir": "dist", "sourceMap": true, "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["types.ts", "model.ts", "worker.ts", "server.ts"]
+}

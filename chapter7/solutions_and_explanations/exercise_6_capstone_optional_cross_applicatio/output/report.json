@@ -1,0 +1,32 @@
+{
+  "exercise": 6,
+  "engines": [
+    "photocraft-cli",
+    "designcraft-cli",
+    "pdfcraft-cli"
+  ],
+  "assertions": 76,
+  "integration": {
+    "jobId": "brochure-1",
+    "stages": 15,
+    "cacheHits": 2,
+    "cacheMisses": 2,
+    "finalPdfWritten": true,
+    "rollbackStrategy": "restore_from_copy"
+  },
+  "artefacts": [
+    "pipeline_report.json",
+    "report-rollback.json",
+    "report-human-review.json",
+    "work/brochure.pdf",
+    "work/template.designcraft",
+    "work/design/brochure-1.designcraft",
+    "work/export/brochure-1.pdf",
+    "work/photos/lamp.png",
+    "work/treated/lamp.png",
+    "wide/brochure.pdf",
+    "wide/design/brochure-wide.designcraft",
+    "wide/export/brochure-wide.pdf"
+  ],
+  "result": "cross-application brochure pipeline completed; rollback, human review and PPI correction verified"
+}

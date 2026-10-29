@@ -1,0 +1,20 @@
+{
+  "name": "studio-hello",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "harness": "tsx run_basic.ts",
+    "listing:test": "tsx --test output/work/project/test/pipeline.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

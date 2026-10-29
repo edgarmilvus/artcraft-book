@@ -1,0 +1,38 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "storytold-photocraft": {
+      "type": "local",
+      "command": [
+        "photocraft-cli",
+        "mcp",
+        "--automation-read-root",
+        "chapter19/advanced_application_implementation/example/files/output/work/studio/project",
+        "--automation-write-root",
+        "chapter19/advanced_application_implementation/example/files/output/work/studio/render"
+      ],
+      "enabled": true,
+      "environment": {
+        "STORYTOLD_ROLE": "viewer"
+      }
+    }
+  },
+  "agent": {
+    "build": {
+      "description": "Storytold studio agent (role: viewer)",
+      "mode": "primary",
+      "tools": {
+        "storytold-photocraft_*_command_run": true,
+        "storytold-photocraft_*_doc_inspect": true,
+        "storytold-photocraft_*_list_commands": true,
+        "storytold-photocraft_*_doc_save": false
+      }
+    }
+  },
+  "instructions": [
+    "# Storytold Studio (policy v1.0)",
+    "- Only invoke commands whose id begins with `doc_inspect`.",
+    "- Only invoke commands whose id begins with `doc_new`."
+  ],
+  "autoupdate": false
+}

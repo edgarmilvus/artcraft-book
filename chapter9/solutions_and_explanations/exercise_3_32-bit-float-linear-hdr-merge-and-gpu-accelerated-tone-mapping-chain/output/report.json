@@ -1,0 +1,42 @@
+{
+  "exercise": 3,
+  "engine": "lightcraft-cli",
+  "assertions": 37,
+  "bracketSet": {
+    "name": "set-a",
+    "photo_ids": [
+      1,
+      2,
+      3
+    ],
+    "ev_offsets": [
+      -2.0,
+      0.0,
+      2.0
+    ],
+    "fusion_seed": 20260314
+  },
+  "exitCode": 0,
+  "failed": [],
+  "produced": {
+    "set-a": [
+      "master_hdr.tif",
+      "master_sdr.jpg",
+      "web_hero.avif",
+      "thumbnail.png"
+    ]
+  },
+  "stageCount": 5,
+  "artefacts": [
+    "brackets/bracket-0.png",
+    "brackets/bracket-1.png",
+    "brackets/bracket-2.png",
+    "deliver/set-a/master_hdr.tif",
+    "deliver/set-a/master_sdr.jpg",
+    "deliver/set-a/web_hero.avif",
+    "deliver/set-a/thumbnail.png",
+    "hdr/merged-4.tif",
+    "stage-log.json"
+  ],
+  "result": "three-frame bracket merged to a 32-bit Rec.2020 master and four deliverables"
+}

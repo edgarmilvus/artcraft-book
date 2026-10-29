@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "wordGroupId": "g0",
+      "attackTick": "254016000000",
+      "releaseTick": "355622400000",
+      "expectedSamplesAt48k": "19200",
+      "measuredDropTick": "254016000000",
+      "driftTicks": 0
+    },
+    {
+      "wordGroupId": "g1",
+      "attackTick": "609638400000",
+      "releaseTick": "660441600000",
+      "expectedSamplesAt48k": "9600",
+      "measuredDropTick": "609638400000",
+      "driftTicks": 0
+    }
+  ]
+}

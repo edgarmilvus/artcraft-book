@@ -1,0 +1,190 @@
+{
+  "artboards": [
+    {
+      "height": 512,
+      "name": "Artboard 1",
+      "width": 512,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "height": 512,
+      "name": "Artboard 1 copy",
+      "width": 512,
+      "x": 532,
+      "y": 0
+    }
+  ],
+  "colorMode": "Rgb",
+  "currentLayer": 1,
+  "dirty": true,
+  "history": [
+    "Place",
+    "Layer Options",
+    "Trace mark",
+    "New Swatch",
+    "New Swatch",
+    "Fill Color",
+    "Type",
+    "Character",
+    "Fill Color",
+    "Duplicate Artboard",
+    "New Graphic Style",
+    "Apply Graphic Style",
+    "Apply Graphic Style",
+    "Fill Color",
+    "Fill Color"
+  ],
+  "isolation": null,
+  "key": null,
+  "layerRows": [],
+  "layers": [
+    {
+      "bounds": {
+        "height": 405.55853882204224,
+        "width": 937.5585388220421,
+        "x": 53.650417470045774,
+        "y": 53.650416092037574
+      },
+      "children": [
+        {
+          "bounds": {
+            "height": 116.15625,
+            "width": 283.453125,
+            "x": 646.2734375,
+            "y": 337
+          },
+          "fill": "Brand/Inverse (#f8fafc)",
+          "id": 9,
+          "kind": "Type",
+          "locked": false,
+          "name": "ACME",
+          "stroke": "None",
+          "strokeOptions": {
+            "align": "center",
+            "alignDashes": false,
+            "arrowAlign": "extend",
+            "cap": "butt",
+            "dash": null,
+            "dashOffset": 0,
+            "endArrow": null,
+            "gradientMode": "within",
+            "join": "miter",
+            "miterLimit": 10,
+            "profile": "uniform",
+            "startArrow": null,
+            "widthPoints": null
+          },
+          "strokeWidth": 0,
+          "text": "ACME",
+          "visible": true
+        },
+        {
+          "bounds": {
+            "height": 116.15625,
+            "width": 283.453125,
+            "x": 114.2734375,
+            "y": 337
+          },
+          "fill": "Brand/Primary (#0f172a)",
+          "id": 7,
+          "kind": "Type",
+          "locked": false,
+          "name": "ACME",
+          "stroke": "None",
+          "strokeOptions": {
+            "align": "center",
+            "alignDashes": false,
+            "arrowAlign": "extend",
+            "cap": "butt",
+            "dash": null,
+            "dashOffset": 0,
+            "endArrow": null,
+            "gradientMode": "within",
+            "join": "miter",
+            "miterLimit": 10,
+            "profile": "uniform",
+            "startArrow": null,
+            "widthPoints": null
+          },
+          "strokeWidth": 0,
+          "text": "ACME",
+          "visible": true
+        },
+        {
+          "anchors": 4,
+          "bounds": {
+            "height": 405.55853882204224,
+            "width": 405.55853882204224,
+            "x": 585.6504174700457,
+            "y": 53.650416092037574
+          },
+          "closed": true,
+          "fill": "Brand/Inverse (#f8fafc)",
+          "id": 8,
+          "kind": "Path",
+          "locked": false,
+          "name": "<Path>",
+          "stroke": "None",
+          "strokeWidth": 0,
+          "visible": true
+        },
+        {
+          "anchors": 4,
+          "bounds": {
+            "height": 405.55853882204224,
+            "width": 405.5585388220421,
+            "x": 53.650417470045774,
+            "y": 53.650416092037574
+          },
+          "closed": true,
+          "fill": "Brand/Primary (#0f172a)",
+          "id": 6,
+          "kind": "Path",
+          "locked": false,
+          "name": "<Path>",
+          "stroke": "None",
+          "strokeWidth": 0,
+          "visible": true
+        }
+      ],
+      "clip": false,
+      "color": "#4f80ff",
+      "dimImages": null,
+      "id": 1,
+      "kind": "Layer",
+      "locked": false,
+      "name": "Layer 1",
+      "preview": true,
+      "printable": true,
+      "template": false,
+      "visible": true
+    }
+  ],
+  "objects": 5,
+  "paint": {
+    "appearanceItem": null,
+    "fill": "Brand/Inverse (#f8fafc)",
+    "fillActive": true,
+    "stroke": "#000000",
+    "strokeWidth": 1
+  },
+  "pasteRemembersLayers": false,
+  "path": null,
+  "redo": [],
+  "revision": 18,
+  "selection": [
+    7
+  ],
+  "selectionBounds": {
+    "height": 116.15625,
+    "width": 283.453125,
+    "x": 114.2734375,
+    "y": 337
+  },
+  "selectionRotation": 0,
+  "target": null,
+  "title": "Untitled-2",
+  "tool": "selection",
+  "units": "Pixels"
+}

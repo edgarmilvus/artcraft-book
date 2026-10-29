@@ -1,0 +1,8 @@
+{
+  "jobId": "LF-42",
+  "readRoot": "chapter1/advanced_application_implementation/example/output/LF-42/in",
+  "writeRoot": "chapter1/advanced_application_implementation/example/output/LF-42/out",
+  "recipePath": "jobs/LF-42/recipe.json",
+  "capture": "preview",
+  "replaceSource": null
+}

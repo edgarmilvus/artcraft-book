@@ -1,0 +1,21 @@
+{
+  "rows": [
+    {
+      "wordIndex": 1,
+      "fromTick": "1059458400000",
+      "toTick": "1038269232000",
+      "trimmedTicks": "21189168000",
+      "invariantPassed": false
+    },
+    {
+      "wordIndex": 2,
+      "fromTick": "1059458400000",
+      "toTick": "1038269232000",
+      "trimmedTicks": "21189168000",
+      "invariantPassed": false
+    }
+  ],
+  "totalDriftTicks": 2,
+  "finalDurationTicks": "10573394831999",
+  "frameTicksAt23976": "10594584000"
+}

@@ -1,0 +1,18 @@
+{
+  "exercise": 3,
+  "engine": "filmcraft essential-sound (pure governance ladder)",
+  "assertions": 22,
+  "targetLufs": -24,
+  "toleranceLu": 2,
+  "truePeakCeilingDbtp": -2,
+  "ladder": [
+    "clipGain",
+    "essentialSoundRepair",
+    "masterLimiter",
+    "escalate"
+  ],
+  "artefacts": [
+    "governance_report.json"
+  ],
+  "result": "four-step remediation ladder and the compliant -24 LU / -2 dBTP report verified"
+}

@@ -1,0 +1,126 @@
+{
+  "checks": 24,
+  "failures": [],
+  "summary": {
+    "runId": "run-1793021294336",
+    "startedAt": "2026-10-26T13:28:14.336Z",
+    "finishedAt": "2026-10-26T13:28:14.596Z",
+    "photosRequested": 2,
+    "photosDelivered": 0,
+    "headingsShrunk": 0,
+    "altTextGenerated": 0,
+    "pdfaLevel": "2b",
+    "status": "degraded",
+    "recoveries": [
+      {
+        "at": "2026-10-26T13:28:14.396Z",
+        "engine": "lightcraft",
+        "kind": "retry",
+        "detail": {
+          "attempt": 1,
+          "photoId": "sku-118"
+        }
+      },
+      {
+        "at": "2026-10-26T13:28:14.418Z",
+        "engine": "lightcraft",
+        "kind": "retry",
+        "detail": {
+          "attempt": 2,
+          "photoId": "sku-118"
+        }
+      },
+      {
+        "at": "2026-10-26T13:28:14.439Z",
+        "engine": "lightcraft",
+        "kind": "retry",
+        "detail": {
+          "attempt": 3,
+          "photoId": "sku-118"
+        }
+      },
+      {
+        "at": "2026-10-26T13:28:14.441Z",
+        "engine": "lightcraft",
+        "kind": "placeholder_substituted",
+        "detail": {
+          "photoId": "sku-118",
+          "style": "body"
+        }
+      },
+      {
+        "at": "2026-10-26T13:28:14.463Z",
+        "engine": "lightcraft",
+        "kind": "retry",
+        "detail": {
+          "attempt": 1,
+          "photoId": "sku-204"
+        }
+      },
+      {
+        "at": "2026-10-26T13:28:14.484Z",
+        "engine": "lightcraft",
+        "kind": "retry",
+        "detail": {
+          "attempt": 2,
+          "photoId": "sku-204"
+        }
+      },
+      {
+        "at": "2026-10-26T13:28:14.506Z",
+        "engine": "lightcraft",
+        "kind": "retry",
+        "detail": {
+          "attempt": 3,
+          "photoId": "sku-204"
+        }
+      },
+      {
+        "at": "2026-10-26T13:28:14.507Z",
+        "engine": "lightcraft",
+        "kind": "placeholder_substituted",
+        "detail": {
+          "photoId": "sku-204",
+          "style": "body"
+        }
+      }
+    ]
+  },
+  "quarantineDir": "chapter4/solutions_and_explanations/exercise_5_self-healing-document-assembly-under-partial-engine-failure/output/build-run/quarantine/run-1793021294336",
+  "quarantineFiles": [
+    "sku-118.placeholder.png",
+    "sku-204.placeholder.png"
+  ],
+  "channelDiagnostics": [
+    {
+      "engine": "lightcraft",
+      "port": 7878,
+      "lastFrameRoundTripMs": 12,
+      "heartbeatsMissed": 0
+    },
+    {
+      "engine": "wordcraft",
+      "port": 8888,
+      "lastFrameRoundTripMs": 9,
+      "heartbeatsMissed": 0
+    },
+    {
+      "engine": "pdfcraft",
+      "port": 9999,
+      "lastFrameRoundTripMs": 15,
+      "heartbeatsMissed": 0
+    }
+  ],
+  "inputPdf": {
+    "bytes": 10353,
+    "pages": 2,
+    "textChars": 458
+  },
+  "outputPdf": {
+    "bytes": 13503,
+    "pages": 2,
+    "textChars": 636,
+    "figures": 0,
+    "hasPlaceholders": true
+  }
+}

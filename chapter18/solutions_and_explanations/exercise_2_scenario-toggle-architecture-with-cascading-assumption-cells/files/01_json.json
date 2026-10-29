@@ -1,0 +1,14 @@
+// The control channel's mandatory first frame.  A client that sends anything
+// else first is refused with
+//   {"id": "auth", "ok": false, "error": {"code": "auth_required", ...}}
+// and a wrong token is refused with
+//   {"id": "auth", "ok": false, "error": {"code": "auth_failed", ...}}
+// The token is the 64 hex character automation token the control server mints
+// for the run; it is a loopback credential, not an API key.
+{
+  "id": "auth",
+  "method": "auth",
+  "params": {
+    "token": "a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e"
+  }
+}

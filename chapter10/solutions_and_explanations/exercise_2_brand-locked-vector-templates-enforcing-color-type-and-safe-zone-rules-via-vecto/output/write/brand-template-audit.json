@@ -1,0 +1,31 @@
+{
+  "kitVersion": "2026.1",
+  "results": [
+    {
+      "sku": "LOCKED-1",
+      "accepted": true,
+      "artifacts": [
+        {
+          "format": "vectorcraft",
+          "path": "chapter10/solutions_and_explanations/exercise_2_brand-locked-vector-templates-enforcing-color-type-and-safe-zone-rules-via-vecto/output/write/LOCKED-1.vectorcraft",
+          "bytes": 42274
+        },
+        {
+          "format": "pdf",
+          "path": "chapter10/solutions_and_explanations/exercise_2_brand-locked-vector-templates-enforcing-color-type-and-safe-zone-rules-via-vecto/output/write/LOCKED-1.pdf",
+          "bytes": 16548
+        },
+        {
+          "format": "svg",
+          "path": "chapter10/solutions_and_explanations/exercise_2_brand-locked-vector-templates-enforcing-color-type-and-safe-zone-rules-via-vecto/output/write/LOCKED-1.svg",
+          "bytes": 1421
+        },
+        {
+          "format": "png",
+          "path": "chapter10/solutions_and_explanations/exercise_2_brand-locked-vector-templates-enforcing-color-type-and-safe-zone-rules-via-vecto/output/write/LOCKED-1@2x.png",
+          "bytes": 135757
+        }
+      ]
+    }
+  ]
+}

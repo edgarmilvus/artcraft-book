@@ -1,0 +1,20 @@
+PASS tools advertised                      command_run, command_batch, doc_inspect, ui_screenshot, doc_save, doc_new
+PASS tool: command_run                     
+PASS tool: command_batch                   
+PASS command_run doc.inspect               {
+  "document": {
+    "width": 1920,
+    "height": 1080,
+   
+PASS command_batch through bridge          {
+  "applied": [
+    {
+      "id": 1,
+      "name": "Layer"
+
+PASS tool: doc_inspect                     {
+  "document": {
+    "width": 1920,
+    "height":
+
+6/6 checks passed

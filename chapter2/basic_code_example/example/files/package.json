@@ -1,0 +1,9 @@
+{
+  "name": "cap2-basic-code-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "run": "tsx 01_hello-artcraft-arch.ts",
+    "typecheck": "tsc --noEmit"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "checks": 83,
+  "failures": [],
+  "quirks": [
+    "DesignCraft names the registry tool `list_commands`, while the sibling suites expose `command_list`"
+  ],
+  "snapshots": {
+    "enabled_only_count": 269,
+    "all_count": 444
+  },
+  "buckets": [
+    {
+      "name": "ALWAYS_ENABLED",
+      "count": 269,
+      "escape": null
+    },
+    {
+      "name": "NEEDS_DOCUMENT",
+      "count": 1,
+      "escape": "file.new"
+    },
+    {
+      "name": "NEEDS_SELECTION",
+      "count": 83,
+      "escape": "edit.selectAll"
+    },
+    {
+      "name": "NEEDS_TEXT_CARET",
+      "count": 15,
+      "escape": "frame.create"
+    },
+    {
+      "name": "NEEDS_FRAME_OR_STORY",
+      "count": 53,
+      "escape": "frame.create"
+    },
+    {
+      "name": "NEEDS_STATE",
+      "count": 23,
+      "escape": "library.open"
+    }
+  ]
+}

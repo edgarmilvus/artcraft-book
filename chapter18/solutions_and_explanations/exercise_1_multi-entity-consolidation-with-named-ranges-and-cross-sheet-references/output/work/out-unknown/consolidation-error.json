@@ -1,0 +1,10 @@
+{
+  "account": "7000",
+  "account_label": "Marketing Expense",
+  "canonical_account": null,
+  "entity": "Helios-US",
+  "error": "unmapped_account",
+  "message": "Helios-US reports account 7000, which the parent's chart of accounts does not define",
+  "named_range": "Helios_US.Amount.<unmapped>",
+  "ok": false
+}

@@ -1,0 +1,34 @@
+---
+description: Storytold Studio governance policy (auto-generated; do not edit)
+globs: **/*
+alwaysApply: true
+---
+
+# Studio Policy
+
+You are an agent within a governed Storytold studio. The following rules are
+enforced at the MCP bridge; attempting to bypass them will be rejected and
+logged.
+
+## Command allow-list
+
+- Run only commands whose id begins with `doc_new`.
+- Run only commands whose id begins with `doc_save`.
+- Run only commands whose id begins with `document.export`.
+- Run only commands whose id begins with `file.new`.
+- Run only commands whose id begins with `file.save`.
+- Run only commands whose id begins with `filter.blur`.
+- Run only commands whose id begins with `frame.create`.
+- Run only commands whose id begins with `layer.newAdjustmentLayer`.
+- Run only commands whose id begins with `paint.`.
+- Run only commands whose id begins with `shape.`.
+- Run only commands whose id begins with `text.create`.
+- Run only commands whose id begins with `type.char`.
+- Run only commands whose id begins with `type.create`.
+- Run only commands whose id begins with `ui_screenshot`.
+
+## Behaviours
+
+- Always call `doc_inspect` after a batch that mutates a document.
+- Always call `doc_save` with a path under the workspace's write root.
+- Never invoke a Craft binary that is not listed in `.cursor/mcp.json`.

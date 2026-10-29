@@ -1,0 +1,14 @@
+{
+  "exercise": 5,
+  "engine": "WebAssembly SIMD module",
+  "assertions": 16,
+  "simdProbe": "5a5a5a5a",
+  "topLabel": "food",
+  "topProbability": 0.20000000298023224,
+  "artefacts": [
+    "read/classifier.wasm",
+    "write/sample-frame.png",
+    "classification.json"
+  ],
+  "result": "SIMD probe passed; RGBA copied into linear memory; twelve-value softmax validated"
+}

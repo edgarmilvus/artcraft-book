@@ -1,0 +1,9 @@
+{
+  "mismatches": [
+    {
+      "imagePath": "assets/hero.png",
+      "from": "sRGB",
+      "to": "Coated FOGRA39"
+    }
+  ]
+}

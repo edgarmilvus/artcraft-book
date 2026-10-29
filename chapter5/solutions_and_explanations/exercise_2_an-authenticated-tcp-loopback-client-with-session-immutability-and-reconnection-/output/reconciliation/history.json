@@ -1,0 +1,21 @@
+{
+  "history": [
+    {
+      "command": "layer.newLayer",
+      "params": {
+        "name": "base"
+      }
+    },
+    {
+      "command": "paint.stroke",
+      "params": {
+        "x": 1,
+        "y": 2
+      }
+    }
+  ],
+  "executions": [
+    "layer.newLayer",
+    "paint.stroke"
+  ]
+}

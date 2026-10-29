@@ -1,0 +1,34 @@
+{
+  "release": "2025.11",
+  "codename": "RIVERBED",
+  "generatedFrom": "chapter20/solutions_and_explanations/exercise_4_the-single-source-of-truth-publishing-pipeline-designcraft-pdfcraft-and-wordcraf/output/work/fixtures/framework.json",
+  "chapters": [
+    {
+      "id": "ch-intro",
+      "title": "Introduction",
+      "designcraftPages": 1,
+      "wordcraftPages": 1,
+      "figures": 1,
+      "footnotes": 1,
+      "lineDelta": 17
+    },
+    {
+      "id": "ch-threats",
+      "title": "Worked Example",
+      "designcraftPages": 1,
+      "wordcraftPages": 2,
+      "figures": 0,
+      "footnotes": 0,
+      "lineDelta": -21
+    }
+  ],
+  "totals": {
+    "designcraftPages": 4,
+    "wordcraftPages": 2,
+    "delta": 2,
+    "budget": 2,
+    "perChapterBudget": 1
+  },
+  "spellingIssues": 0,
+  "warnings": []
+}

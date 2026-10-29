@@ -1,0 +1,32 @@
+{
+  "jobId": "job-repair",
+  "campaignId": "cmp-windowsill",
+  "missingPath": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets/lifestyle/window-01.jpg",
+  "assetMap": {
+    "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets/lifestyle/window-01.jpg": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/derived/job-repair/replacement-3.jpg"
+  },
+  "reason": "replacement accepted against the campaign rubric",
+  "candidate": {
+    "photoId": 3,
+    "copyId": 6,
+    "tempK": 5200.0,
+    "rules": {
+      "resolution": {
+        "pass": true,
+        "detail": "2400x1800 against a minimum of 1600x1200"
+      },
+      "color-temp": {
+        "pass": true,
+        "detail": "5200K against a target of 5200K (+/-400K), delta 0K"
+      },
+      "editability": {
+        "pass": true,
+        "detail": "photo is editable"
+      },
+      "framing": {
+        "pass": true,
+        "detail": "the crop would discard 0.0% of the frame (budget 15%)"
+      }
+    }
+  }
+}

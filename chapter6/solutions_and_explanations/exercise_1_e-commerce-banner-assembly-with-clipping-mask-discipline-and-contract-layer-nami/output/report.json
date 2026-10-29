@@ -1,0 +1,51 @@
+{
+  "chapter": 6,
+  "exercise": 1,
+  "checks": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9
+  },
+  "results": [
+    {
+      "sku": "AW26-HOODIE-CHARCOAL",
+      "status": "pass"
+    },
+    {
+      "sku": "AW26-TEE-BONE",
+      "status": "pass"
+    },
+    {
+      "sku": "AW26-MISSING",
+      "status": "fail",
+      "detail": "placement: I/O: automation read `does-not-exist.png` failed (NotFound): No such file or directory (os error 2)"
+    }
+  ],
+  "banners": [
+    {
+      "sku": "AW26-HOODIE-CHARCOAL",
+      "file": "chapter6/solutions_and_explanations/exercise_1_e-commerce-banner-assembly-with-clipping-mask-discipline-and-contract-layer-nami/output/banners/AW26-HOODIE-CHARCOAL/banner.psd",
+      "bytes": 471474,
+      "sha256": "2db60c7847981157906dc3cf23446f7c7384f0a207012e6480e53979105550a2"
+    },
+    {
+      "sku": "AW26-TEE-BONE",
+      "file": "chapter6/solutions_and_explanations/exercise_1_e-commerce-banner-assembly-with-clipping-mask-discipline-and-contract-layer-nami/output/banners/AW26-TEE-BONE/banner.psd",
+      "bytes": 471430,
+      "sha256": "2b885f21c56fda802ac0055820ef1f3daf170fe4effff87e9ebce270a36374a1"
+    }
+  ],
+  "cutout": {
+    "file": "chapter6/solutions_and_explanations/exercise_1_e-commerce-banner-assembly-with-clipping-mask-discipline-and-contract-layer-nami/output/workspace/read/cutout.png",
+    "bytes": 1835,
+    "sha256": "b82b9c11456f02f723ffff31287deb59ef44ebaf8004124123d6ce5f3b89c5f4"
+  },
+  "tree": [
+    "Type::Price",
+    "Grade::Vibrance",
+    "Type::Headline",
+    "Background",
+    "Background"
+  ],
+  "failures": []
+}

@@ -1,0 +1,31 @@
+{
+  "exercise": 1,
+  "engine": "lightcraft-cli",
+  "assertions": 27,
+  "before": [],
+  "imported": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "duplicateGroups": [
+    [
+      1,
+      2
+    ]
+  ],
+  "visiblePhotosBeforeStack": 4,
+  "visiblePhotosAfterStack": 3,
+  "artefacts": [
+    "staging/frame-a.png",
+    "staging/frame-a-copy.png",
+    "staging/frame-a-bright.png",
+    "staging/frame-b.png",
+    "staging/frame-c.png",
+    "previews/photo-1.png",
+    "library/catalog.snap",
+    "library/catalog.log"
+  ],
+  "result": "preview/import was idempotent; byte-exact and perceptual duplicates were grouped and stacked"
+}

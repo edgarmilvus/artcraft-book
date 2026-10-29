@@ -1,0 +1,93 @@
+{
+  "agents": {
+    "copywriting": {
+      "agentId": "copywriting",
+      "readRoot": "/work/design-system",
+      "writeRoot": "/work/scratch/copywriting",
+      "resources": [
+        "designsystem://tokens/type-scale",
+        "designsystem://style-guide"
+      ],
+      "templates": [],
+      "tools": [
+        "design.system.describe"
+      ],
+      "prompts": []
+    },
+    "layout": {
+      "agentId": "layout",
+      "readRoot": "/work/design-system",
+      "writeRoot": "/work/scratch/layout",
+      "resources": [
+        "designsystem://tokens/spacing"
+      ],
+      "templates": [
+        "designsystem://templates/{templateName}"
+      ],
+      "tools": [
+        "design.system.generate_layout",
+        "design.system.resolve_token",
+        "design.system.validate_contrast"
+      ],
+      "prompts": [
+        "layout:generate_grid",
+        "designsystem:apply_brand_kit"
+      ]
+    },
+    "color": {
+      "agentId": "color-consistency",
+      "readRoot": "/work/design-system",
+      "writeRoot": "/work/scratch/color",
+      "resources": [
+        "designsystem://tokens/colors",
+        "designsystem://tokens/contrast-pairs"
+      ],
+      "templates": [],
+      "tools": [
+        "design.system.resolve_token",
+        "design.system.validate_contrast"
+      ],
+      "prompts": [
+        "designsystem:apply_brand_kit"
+      ]
+    }
+  },
+  "counts": {
+    "copywriting": {
+      "resources": 2,
+      "templates": 0,
+      "tools": 1,
+      "prompts": 0
+    },
+    "layout": {
+      "resources": 1,
+      "templates": 1,
+      "tools": 3,
+      "prompts": 2
+    },
+    "color": {
+      "resources": 2,
+      "templates": 0,
+      "tools": 2,
+      "prompts": 1
+    }
+  },
+  "knownResources": [
+    "designsystem://tokens/type-scale",
+    "designsystem://style-guide",
+    "designsystem://tokens/spacing",
+    "designsystem://tokens/colors",
+    "designsystem://tokens/contrast-pairs",
+    "designsystem://templates/{templateName}"
+  ],
+  "knownTools": [
+    "design.system.describe",
+    "design.system.generate_layout",
+    "design.system.resolve_token",
+    "design.system.validate_contrast"
+  ],
+  "knownPrompts": [
+    "designsystem:apply_brand_kit",
+    "layout:generate_grid"
+  ]
+}

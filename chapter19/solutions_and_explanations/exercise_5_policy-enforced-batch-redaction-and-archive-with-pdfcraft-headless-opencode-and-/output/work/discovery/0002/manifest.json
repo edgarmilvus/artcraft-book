@@ -1,0 +1,258 @@
+{
+  "batchId": "0002",
+  "failures": [],
+  "finishedAt": "2026-10-26T13:33:08Z",
+  "items": [
+    {
+      "accessibility": {
+        "failed": 4,
+        "manual": 5,
+        "passed": 22
+      },
+      "accessibilityReport": "discovery/0002/work/0001-disclosure.accessibility.html",
+      "appliedMarks": 7,
+      "converted": "discovery/0002/work/0001-disclosure.pdf",
+      "fontsNotEmbedded": [
+        "Helvetica"
+      ],
+      "incrementalSave": false,
+      "input": "discovery/incoming/0001-disclosure.pdf",
+      "kind": "item",
+      "markPagesMatch": true,
+      "markedPagesObserved": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pageCount": 6,
+      "patternNotes": [
+        {
+          "marked": 1,
+          "pages": [
+            2
+          ],
+          "pattern": "phone"
+        },
+        {
+          "marked": 1,
+          "pages": [
+            2
+          ],
+          "pattern": "email"
+        },
+        {
+          "marked": 1,
+          "pages": [
+            3
+          ],
+          "pattern": "credit-card"
+        },
+        {
+          "marked": 1,
+          "pages": [
+            4
+          ],
+          "pattern": "ssn"
+        },
+        {
+          "marked": 1,
+          "pages": [
+            4
+          ],
+          "pattern": "date"
+        }
+      ],
+      "pdfa": "VERIFIED",
+      "pdfaConvert": {
+        "compliant": true,
+        "issues": []
+      },
+      "pdfaVerify": {
+        "compliant": true,
+        "issues": [],
+        "level": "PDF/A-2b"
+      },
+      "piiPatternsApplied": [
+        "phone",
+        "email",
+        "credit-card",
+        "ssn",
+        "date",
+        "Matter 4421\\-[A-Z]{2}",
+        "ACME\\-CONF\\-\\d{4}"
+      ],
+      "redactedPages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "redactionMarks": 7,
+      "reviewDeliverable": null,
+      "sha256Output": "bdf8fe6d4bd51db5019cb739d2e82e618fa8482e116ec1f49c55228d7092c82a"
+    },
+    {
+      "accessibility": {
+        "failed": 4,
+        "manual": 5,
+        "passed": 22
+      },
+      "accessibilityReport": "discovery/0002/work/0003-clean.accessibility.html",
+      "appliedMarks": 0,
+      "converted": "discovery/0002/work/0003-clean.pdf",
+      "fontsNotEmbedded": [
+        "Helvetica"
+      ],
+      "incrementalSave": false,
+      "input": "discovery/incoming/0003-clean.pdf",
+      "kind": "item",
+      "markPagesMatch": true,
+      "markedPagesObserved": [],
+      "pageCount": 3,
+      "patternNotes": [
+        {
+          "marked": 0,
+          "note": "redact_mark: nothing matched, so nothing was marked",
+          "pattern": "phone"
+        },
+        {
+          "marked": 0,
+          "note": "redact_mark: nothing matched, so nothing was marked",
+          "pattern": "email"
+        },
+        {
+          "marked": 0,
+          "note": "redact_mark: nothing matched, so nothing was marked",
+          "pattern": "credit-card"
+        },
+        {
+          "marked": 0,
+          "note": "redact_mark: nothing matched, so nothing was marked",
+          "pattern": "ssn"
+        },
+        {
+          "marked": 0,
+          "note": "redact_mark: nothing matched, so nothing was marked",
+          "pattern": "date"
+        }
+      ],
+      "pdfa": "VERIFIED",
+      "pdfaConvert": {
+        "compliant": true,
+        "issues": []
+      },
+      "pdfaVerify": {
+        "compliant": true,
+        "issues": [],
+        "level": "PDF/A-2b"
+      },
+      "piiPatternsApplied": [],
+      "redactedPages": [],
+      "redactionMarks": 0,
+      "reviewDeliverable": null,
+      "sha256Output": "dd711ce26d02fed208eec280d573209513ee7d2183b1bba1d8e87d7f88c0b9a4"
+    }
+  ],
+  "manualQueue": [
+    {
+      "input": "discovery/incoming/0002-signed.pdf",
+      "kind": "manual_queue",
+      "signatures": [
+        {
+          "certificate": "O=Harrow & Vale, CN=Harrow Vale Test Signer, E=compliance@harrowvale.test",
+          "modification": "none",
+          "revision": 2,
+          "signer": "Harrow Vale Test Signer",
+          "status": "unknown"
+        }
+      ],
+      "why": "the source carries a signature; redaction would invalidate it"
+    }
+  ],
+  "pdfcraftVersion": "0.5.0",
+  "policy": {
+    "builtInPatterns": [
+      "phone",
+      "email",
+      "credit-card",
+      "ssn",
+      "date"
+    ],
+    "clientPatterns": [
+      "Matter 4421\\-[A-Z]{2}",
+      "ACME\\-CONF\\-\\d{4}"
+    ],
+    "digest": "fde050b83160fc8ab53a3cc68b14a2f961e6f1d881f7aa3f35e7552a60bcfd89",
+    "pdfaLevel": "2b",
+    "requireEmbeddedFonts": false,
+    "signedPolicy": "manual_queue"
+  },
+  "preflight": {
+    "checked": [
+      "a11y.report",
+      "export.docx",
+      "file.close",
+      "file.open",
+      "file.properties",
+      "file.save",
+      "redact.apply",
+      "redact.clear",
+      "redact.mark",
+      "redact.search",
+      "sign.validate",
+      "standards.pdfa"
+    ],
+    "commands": 183,
+    "enabledCommands": [
+      "actions.distribution",
+      "actions.optimize_scans",
+      "actions.wizard",
+      "app.preferences",
+      "create.blank",
+      "create.clipboard",
+      "create.file",
+      "create.images",
+      "create.multiple",
+      "file.clear_recent",
+      "file.open",
+      "file.open_recent",
+      "file.pin_folder",
+      "form.merge_data",
+      "help.about",
+      "help.app_page",
+      "help.check_updates",
+      "help.discord",
+      "help.github",
+      "help.shortcuts",
+      "help.website",
+      "ocr.recognize_batch",
+      "page.combine",
+      "sign.fill.initials.change",
+      "sign.fill.initials.remove",
+      "sign.fill.signature.change",
+      "sign.fill.signature.remove",
+      "view.palette",
+      "view.theme",
+      "view.theme.dark",
+      "view.theme.light",
+      "view.theme.system"
+    ],
+    "tools": 140
+  },
+  "runLogSha256": "0d92833b65e1cf390b38d116758bf7f63f09d1da1623ac94bea4c2bed02381ed",
+  "sandbox": {
+    "message": "doc_open: chapter19/solutions_and_explanations/exercise_5_policy-enforced-batch-redaction-and-archive-with-pdfcraft-headless-opencode-and-/output/__outside_the_batch_root__.pdf is outside the allowed directory chapter19/solutions_and_explanations/exercise_5_policy-enforced-batch-redaction-and-archive-with-pdfcraft-headless-opencode-and-/output/work",
+    "probe": "chapter19/solutions_and_explanations/exercise_5_policy-enforced-batch-redaction-and-archive-with-pdfcraft-headless-opencode-and-/output/__outside_the_batch_root__.pdf",
+    "refused": true
+  },
+  "signature": {
+    "alg": "HMAC-SHA256",
+    "keyId": "harrow-vale-2026",
+    "value": "1c293fa17c7104448756dc094726ba52e3a358364f8fa56de4728f3f1a5c5553"
+  },
+  "startedAt": "2026-10-26T13:33:08Z",
+  "tenant": "harrow-vale"
+}

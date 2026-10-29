@@ -1,0 +1,1237 @@
+{
+  "format": "vectorcraft",
+  "version": 4,
+  "generator": "VectorCraft 0.10.0",
+  "document": {
+    "version": 1,
+    "title": "Untitled-2",
+    "units": "Points",
+    "color_mode": "Cmyk",
+    "artboards": [
+      {
+        "id": 1,
+        "name": "Artboard 1",
+        "rect": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 600.0,
+          "y1": 600.0
+        },
+        "show_center_mark": false,
+        "show_cross_hairs": false
+      }
+    ],
+    "layers": [
+      {
+        "id": 1,
+        "name": "Layer 1",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 0
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 2,
+              "kind": {
+                "type": "text",
+                "kind": {
+                  "kind": "point"
+                },
+                "xf": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  140.0,
+                  260.0
+                ],
+                "runs": [
+                  {
+                    "text": "NORTH ROAST",
+                    "style": {
+                      "font_family": "Helvetica",
+                      "font_style": "Regular",
+                      "size": 64.0,
+                      "tracking": 0.0,
+                      "baseline_shift": 0.0,
+                      "h_scale": 100.0,
+                      "v_scale": 100.0,
+                      "rotation": 0.0,
+                      "fill": {
+                        "type": "solid",
+                        "color": {
+                          "model": "cmyk",
+                          "c": 0.45,
+                          "m": 0.65,
+                          "y": 0.75,
+                          "k": 0.55
+                        },
+                        "swatch": "Roast"
+                      },
+                      "stroke": {
+                        "type": "none"
+                      },
+                      "stroke_width": 0.0,
+                      "underline": false,
+                      "strikethrough": false,
+                      "all_caps": false
+                    }
+                  }
+                ],
+                "para": {
+                  "justify": "Left",
+                  "justify_auto": true,
+                  "left_indent": 0.0,
+                  "right_indent": 0.0,
+                  "first_line_indent": 0.0,
+                  "space_before": 0.0,
+                  "space_after": 0.0,
+                  "hyphenate": false,
+                  "mojikumi": "lineEndHalf",
+                  "burasagari": "standard"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "cmyk",
+                        "c": 0.0,
+                        "m": 0.0,
+                        "y": 0.0,
+                        "k": 0.0
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                      }
+                    },
+                    "width": 1.0
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "stylize.dropShadow",
+                    "params": {
+                      "blur": 5.0,
+                      "color": "#000000",
+                      "mode": "multiply",
+                      "opacity": 75.0,
+                      "x": 7.0,
+                      "y": 7.0
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            330.0,
+                            250.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            390.0,
+                            250.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            390.0,
+                            310.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            330.0,
+                            310.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "swatches": [
+      {
+        "name": "[None]",
+        "paint": {
+          "type": "none"
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "White",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.0,
+            "m": 0.0,
+            "y": 0.0,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Black",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.66663104,
+            "m": 0.6665847,
+            "y": 0.6664863,
+            "k": 1.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Red",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.0,
+            "m": 0.97365516,
+            "y": 0.95533115,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Orange Red",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.0,
+            "m": 0.7424371,
+            "y": 0.9206587,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Orange",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.0,
+            "m": 0.48303652,
+            "y": 0.9074956,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Amber",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.0,
+            "m": 0.3426882,
+            "y": 0.7779128,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Yellow",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.07471964,
+            "m": 0.0,
+            "y": 0.89655167,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Yellow Green",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.22529495,
+            "m": 0.0,
+            "y": 0.9839145,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Lime",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.51275736,
+            "m": 0.0,
+            "y": 1.0,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Green",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.72757566,
+            "m": 0.0,
+            "y": 1.0,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Emerald",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.81303567,
+            "m": 0.12042643,
+            "y": 0.96757424,
+            "k": 0.016500399
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Teal",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.84031034,
+            "m": 0.22544354,
+            "y": 0.91628814,
+            "k": 0.26209193
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Aqua",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.74558055,
+            "m": 0.0,
+            "y": 0.7559702,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Cyan Green",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.72938555,
+            "m": 0.015096361,
+            "y": 0.45834187,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Cyan",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.6472359,
+            "m": 0.08319028,
+            "y": 0.0356553,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Azure",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.8160748,
+            "m": 0.44026133,
+            "y": 0.0,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Blue",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.9954761,
+            "m": 0.95900023,
+            "y": 0.0,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Indigo",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.96941316,
+            "m": 1.0,
+            "y": 0.0,
+            "k": 0.33115488
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Violet",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.7092142,
+            "m": 0.9724123,
+            "y": 0.0,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Purple",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.48125616,
+            "m": 0.97463524,
+            "y": 0.0,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Magenta",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.24737328,
+            "m": 1.0,
+            "y": 0.21295078,
+            "k": 0.17296477
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Rose",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.11331328,
+            "m": 0.99840844,
+            "y": 0.42869046,
+            "k": 0.008396687
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Pink",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.0,
+            "m": 0.9389154,
+            "y": 0.16285656,
+            "k": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Brown",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.16974063,
+            "m": 0.19685924,
+            "y": 0.31398806,
+            "k": 0.09107613
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Tan",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.26639467,
+            "m": 0.2773029,
+            "y": 0.37121907,
+            "k": 0.24194062
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Coffee",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.3099646,
+            "m": 0.31918496,
+            "y": 0.39866316,
+            "k": 0.42935988
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Chocolate",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.22831221,
+            "m": 0.27229267,
+            "y": 0.30042574,
+            "k": 0.6759918
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Sand",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.16858755,
+            "m": 0.311166,
+            "y": 0.51368344,
+            "k": 0.09473906
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Copper",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.2102848,
+            "m": 0.37588328,
+            "y": 0.5833494,
+            "k": 0.22659297
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Rust",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.22818221,
+            "m": 0.43079522,
+            "y": 0.67139757,
+            "k": 0.35658392
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Walnut",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.30644923,
+            "m": 0.51599026,
+            "y": 0.81825525,
+            "k": 0.42171276
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Espresso",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.37864342,
+            "m": 0.60897005,
+            "y": 1.0,
+            "k": 0.488539
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "White, Black",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Linear",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "cmyk",
+                  "c": 0.0,
+                  "m": 0.0,
+                  "y": 0.0,
+                  "k": 0.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "cmyk",
+                  "c": 0.66663104,
+                  "m": 0.6665847,
+                  "y": 0.6664863,
+                  "k": 1.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Radial White, Black",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Radial",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "cmyk",
+                  "c": 0.0,
+                  "m": 0.0,
+                  "y": 0.0,
+                  "k": 0.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "cmyk",
+                  "c": 0.66663104,
+                  "m": 0.6665847,
+                  "y": 0.6664863,
+                  "k": 1.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Sunset",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Linear",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "cmyk",
+                  "c": 0.0,
+                  "m": 0.3426882,
+                  "y": 0.7779128,
+                  "k": 0.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "cmyk",
+                  "c": 0.11331328,
+                  "m": 0.99840844,
+                  "y": 0.42869046,
+                  "k": 0.008396687
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Ocean",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Linear",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "cmyk",
+                  "c": 0.6472359,
+                  "m": 0.08319028,
+                  "y": 0.0356553,
+                  "k": 0.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "cmyk",
+                  "c": 0.9954761,
+                  "m": 0.95900023,
+                  "y": 0.0,
+                  "k": 0.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Roast",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.45,
+            "m": 0.65,
+            "y": 0.75,
+            "k": 0.55
+          }
+        },
+        "global": true,
+        "spot": true
+      },
+      {
+        "name": "Crema",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.08,
+            "m": 0.18,
+            "y": 0.38,
+            "k": 0.04
+          }
+        },
+        "global": true,
+        "spot": true
+      },
+      {
+        "name": "Leaf",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.6,
+            "m": 0.25,
+            "y": 0.7,
+            "k": 0.35
+          }
+        },
+        "global": true,
+        "spot": true
+      },
+      {
+        "name": "Ink",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "cmyk",
+            "c": 0.0,
+            "m": 0.0,
+            "y": 0.0,
+            "k": 0.9
+          }
+        },
+        "global": true,
+        "spot": true
+      }
+    ],
+    "swatch_groups": [
+      {
+        "name": "Grays",
+        "swatches": [
+          {
+            "name": "K=90",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.9
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=80",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.8
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=70",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.7
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=60",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.6
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=50",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.5
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=40",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.4
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=30",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.3
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=20",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.2
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=10",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.1
+              }
+            },
+            "global": false,
+            "spot": false
+          }
+        ]
+      },
+      {
+        "name": "Brights",
+        "swatches": [
+          {
+            "name": "Bright Red",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "cmyk",
+                "c": 0.0,
+                "m": 1.0,
+                "y": 1.0,
+                "k": 0.0
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Yellow",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "cmyk",
+                "c": 0.051894534,
+                "m": 0.03691556,
+                "y": 0.9247822,
+                "k": 0.0
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Green",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "cmyk",
+                "c": 0.7999707,
+                "m": 0.0,
+                "y": 1.0,
+                "k": 0.0
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Blue",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "cmyk",
+                "c": 0.891224,
+                "m": 0.6211689,
+                "y": 0.0,
+                "k": 0.0
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Violet",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "cmyk",
+                "c": 0.41574237,
+                "m": 1.0,
+                "y": 0.0,
+                "k": 0.0
+              }
+            },
+            "global": false,
+            "spot": false
+          }
+        ]
+      }
+    ],
+    "graphic_styles": [
+      {
+        "name": "Default Graphic Style",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0
+                }
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                }
+              },
+              "width": 1.0
+            }
+          ]
+        },
+        "id": 1,
+        "unit_box": true
+      },
+      {
+        "name": "Black Outline",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "none"
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                }
+              },
+              "width": 1.0
+            }
+          ]
+        },
+        "id": 2,
+        "unit_box": true
+      },
+      {
+        "name": "Heavy Ink",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.105882354,
+                  "g": 0.078431375,
+                  "b": 0.39215687
+                }
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                }
+              },
+              "width": 4.0
+            }
+          ]
+        },
+        "id": 3,
+        "unit_box": true
+      },
+      {
+        "name": "Sunshine",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.9843137,
+                  "g": 0.6901961,
+                  "b": 0.23137255
+                }
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.94509804,
+                  "g": 0.3529412,
+                  "b": 0.14117648
+                }
+              },
+              "width": 2.0
+            }
+          ]
+        },
+        "id": 4,
+        "unit_box": true
+      }
+    ],
+    "symbols": [],
+    "guides": [],
+    "grid": {
+      "spacing": 72.0,
+      "subdivisions": 8
+    },
+    "raster_effects_ppi": 72.0,
+    "images": {},
+    "next_id": 4,
+    "metadata": {
+      "author": "",
+      "authorTitle": "",
+      "description": "",
+      "keywords": [],
+      "rating": 0,
+      "copyrightStatus": "unknown",
+      "copyrightNotice": "",
+      "copyrightUrl": "",
+      "created": 1793021357,
+      "modified": 1793021358
+    }
+  },
+  "images": {}
+}

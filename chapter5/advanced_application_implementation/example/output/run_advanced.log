@@ -1,0 +1,11 @@
+brief complete
+
+PASS catalog is the worker registry intersected with META
+PASS loop runs one turn per scripted step
+PASS doc_save is recorded in the tenant output list
+PASS engine wrote an 1200x600 PNG under the session write root
+PASS every tool result came back without an error
+PASS billing is derived from audited worker time
+PASS session sandbox is disposed of its workers
+
+7/7 checks passed

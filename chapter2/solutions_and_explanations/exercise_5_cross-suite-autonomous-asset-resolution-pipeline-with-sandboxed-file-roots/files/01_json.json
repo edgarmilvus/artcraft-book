@@ -1,0 +1,34 @@
+{
+  "request": {
+    "product": "Velvet Chair",
+    "variant": { "upholstery": "ochre", "legs": "walnut" },
+    "price": "1199",
+    "currency": "USD",
+    "cta": "Save 25% This Week",
+    "keywords": ["velvet-chair", "ochre", "studio-shot"]
+  },
+  "roots": {
+    "read_root": "/work/marketing/bundle-2607",
+    "write_root": "/work/marketing/bundle-2607"
+  },
+  "servers": {
+    "lightcraft":  { "binary": "lightcraft-cli",  "mode": "mcp" },
+    "photocraft":  { "binary": "photocraft-cli",  "mode": "mcp" },
+    "designcraft": { "binary": "designcraft-cli", "mode": "mcp" },
+    "pdfcraft":    { "binary": "pdfcraft-cli",    "mode": "mcp" }
+  },
+  "outputs": {
+    "hero_wide":  { "path": "hero/hero_1920x1080.png", "px": [1920, 1080] },
+    "hero_square":{ "path": "hero/hero_1080x1080.png", "px": [1080, 1080] },
+    "spec_sheet": { "path": "spec/FW26_VelvetChair_spec.pdf" }
+  },
+  "resolution_policy": {
+    "primary":   { "minRating": 4, "keywords": "from_request", "flag": "pick" },
+    "fallback":  { "minRating": 3 },
+    "on_empty":  "abort_with_error"
+  },
+  "transaction_log": {
+    "path": "logs/bundle-2607_txn.jsonl",
+    "record": { "suite": "string", "command": "string", "doc_id": "string|number", "reversible": "boolean" }
+  }
+}

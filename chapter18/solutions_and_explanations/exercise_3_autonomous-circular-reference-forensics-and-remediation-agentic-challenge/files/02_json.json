@@ -1,0 +1,24 @@
+{
+  "cycle_id": "cycle-001",
+  "cell": "Interest!B12",
+  "steps": [
+    {
+      "command": "cell.set",
+      "params": {
+        "sheet": "Interest",
+        "cell": "B12",
+        "input": "=('Debt Schedule'!B11+'Debt Schedule'!B11)/2"
+      }
+    },
+    {
+      "command": "review.newNote",
+      "params": {
+        "cell": "Interest!B12",
+        "text": "AUDIT-BREAK cycle-001 | lag-opening-balance: the closing reference 'Debt Schedule'!B14 is replaced by its opening counterpart 'Debt Schedule'!B11 | see remediation-report.json",
+        "author": "circular-forensics"
+      }
+    }
+  ],
+  "atomic": true,
+  "rollback": "GridCraft has no batch tool and its writes are not atomic, so the agent captures the previous content of every target before the steps run and restores it in reverse order if a later step fails; the whole remediation is published with one file.save to a new path."
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "erasableSyntaxOnly": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["run_basic.ts"],
+  "exclude": ["node_modules", "output"]
+}

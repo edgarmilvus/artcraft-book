@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "generatedBy": "responsive-fanout/v1",
+  "entries": {
+    "6dced86ed755a6a4f3a59187ed67c16e8d7b10bc92287b6dbb183bf6fc507d55": {
+      "sku": "TEE-001",
+      "locale": "ar-SA",
+      "aspect": "9:16",
+      "sourceHash": "6dced86ed755a6a4f3a59187ed67c16e8d7b10bc92287b6dbb183bf6fc507d55",
+      "artifacts": [
+        {
+          "format": "png",
+          "path": "TEE-001-arSA-9x16.png",
+          "bytes": 174166,
+          "sha256": "7ce6923a217e12130b5532718ed1d95ef2024cc9240e1aa30bf91e26b7cbfb31"
+        },
+        {
+          "format": "webp",
+          "path": "TEE-001-arSA-9x16.webp",
+          "bytes": 15250,
+          "sha256": "a35845ae9f3ee2e9a3fcd3e3cdb5ce0d9fee512b86efab98f42f69ceab72b8d8"
+        },
+        {
+          "format": "jpg",
+          "path": "TEE-001-arSA-9x16.jpg",
+          "bytes": 229312,
+          "sha256": "569ab88055f678b363f56d25ee9b72fc6f5a65679140870aa0883ce6a6021ed2"
+        }
+      ],
+      "generatedAt": "2026-10-26T13:30:41.220Z",
+      "commandTrace": [
+        "open_document",
+        "set_story_text",
+        "selection.set",
+        "style.paragraph.apply",
+        "story.setDirection",
+        "object.textFrameOptions",
+        "layout.createAlternate",
+        "file.exportPdf",
+        "export_png:png",
+        "export_png:jpg",
+        "doc_open",
+        "doc_export:webp"
+      ]
+    },
+    "af439eec9980cf4253355983e8f03fd0ac52607ca97715beea7b8693cee7d9bf": {
+      "sku": "TEE-001",
+      "locale": "en-US",
+      "aspect": "1:1",
+      "sourceHash": "af439eec9980cf4253355983e8f03fd0ac52607ca97715beea7b8693cee7d9bf",
+      "artifacts": [
+        {
+          "format": "png",
+          "path": "TEE-001-enUS-1x1.png",
+          "bytes": 99616,
+          "sha256": "f9e8910716f5059f1e743a3a4eb3959e88f507d1d5f279d2eb67e5f539b3fc3a"
+        },
+        {
+          "format": "webp",
+          "path": "TEE-001-enUS-1x1.webp",
+          "bytes": 9134,
+          "sha256": "27c3a5b87cc83d4617720c60edf2c271d9ea994de908048fd6d27306fa6240f4"
+        },
+        {
+          "format": "jpg",
+          "path": "TEE-001-enUS-1x1.jpg",
+          "bytes": 130092,
+          "sha256": "f78ad2aeb62179bc4fe43602841ffcb363380ee4b4437dd1d48d1d26d0ae020f"
+        }
+      ],
+      "generatedAt": "2026-10-26T13:30:18.768Z",
+      "commandTrace": [
+        "open_document",
+        "set_story_text",
+        "selection.set",
+        "style.paragraph.apply",
+        "story.setDirection",
+        "object.textFrameOptions",
+        "layout.createAlternate",
+        "file.exportPdf",
+        "export_png:png",
+        "export_png:jpg",
+        "doc_open",
+        "doc_export:webp"
+      ]
+    }
+  }
+}

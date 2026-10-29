@@ -1,0 +1,17 @@
+{
+  "name": "cap1-ex2-autonomous-drift-correction",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "harness": "tsx run_ex2.ts"
+  },
+  "dependencies": {
+    "zod": "^4.6.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

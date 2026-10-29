@@ -1,0 +1,26 @@
+{
+  "crm_record_id": "SFDC-0042571",
+  "docx_path": "chapter17/solutions_and_explanations/exercise_1_contract-lifecycle-compiler-nightly-crm-engagement-letter-sealing/output/work/out/SFDC-0042571.docx",
+  "pdf_path": "chapter17/solutions_and_explanations/exercise_1_contract-lifecycle-compiler-nightly-crm-engagement-letter-sealing/output/work/out/SFDC-0042571.pdf",
+  "docx_revision_index": 0,
+  "pdf_revision_count": 1,
+  "pdf_sha256": "c3a750568cb19088d0355178d07c6b2f06cca524bd1319b8e1b462fc75b08c82",
+  "pipeline_started_utc": "2026-10-26T13:32:27.747Z",
+  "pipeline_finished_utc": "2026-10-26T13:32:27.864Z",
+  "human_override": false,
+  "status": "sealed",
+  "row_hash": "2ffd3baa76e1a1c2365847d6c3b4c224ded95724e3a8ae718465bd48935f876b",
+  "source_row": {
+    "crm_record_id": "SFDC-0042571",
+    "client_legal_name": "Northwind Analytics Ltd",
+    "entity_type": "GmbH",
+    "jurisdiction": "US-DE",
+    "scope_reference": "SOW-2026-Q1-8814",
+    "retainer_amount": 1250000,
+    "retainer_currency": "EUR",
+    "effective_date": "2026-02-01",
+    "partner_of_record": "J. Moreau",
+    "partner_initials": "JM"
+  },
+  "revision_diff": null
+}

@@ -1,0 +1,159 @@
+{
+  "exercise": 2,
+  "engine": "vectorcraft-cli (authenticated loopback stub)",
+  "assertions": 71,
+  "blend": {
+    "steps": 24,
+    "spineAnchors": 6
+  },
+  "samples": [
+    {
+      "t": 0.0,
+      "anchors": [
+        {
+          "id": "spine-0",
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "id": "spine-1",
+          "x": 280.0,
+          "y": 400.0
+        }
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        280.0,
+        400.0
+      ],
+      "spineTangent": [
+        0.507778,
+        -0.861488
+      ],
+      "widthDeltaPct": 0.0,
+      "warnings": []
+    },
+    {
+      "t": 0.25,
+      "anchors": [
+        {
+          "id": "spine-0",
+          "x": 75.5632,
+          "y": 90.5615
+        },
+        {
+          "id": "spine-1",
+          "x": 226.6897,
+          "y": 271.6846
+        }
+      ],
+      "bounds": [
+        75.5632,
+        90.5615,
+        151.1265,
+        181.1231
+      ],
+      "spineTangent": [
+        0.507778,
+        -0.861488
+      ],
+      "widthDeltaPct": 0.0,
+      "warnings": []
+    },
+    {
+      "t": 0.5,
+      "anchors": [
+        {
+          "id": "spine-0",
+          "x": 162.2629,
+          "y": 162.2546
+        },
+        {
+          "id": "spine-1",
+          "x": 162.2629,
+          "y": 162.2546
+        }
+      ],
+      "bounds": [
+        162.2629,
+        162.2546,
+        0.0,
+        0.0
+      ],
+      "spineTangent": [
+        0.705203,
+        -0.709005
+      ],
+      "widthDeltaPct": 0.0,
+      "warnings": []
+    },
+    {
+      "t": 0.75,
+      "anchors": [
+        {
+          "id": "spine-0",
+          "x": 271.6206,
+          "y": 226.5807
+        },
+        {
+          "id": "spine-1",
+          "x": 90.5402,
+          "y": 75.5269
+        }
+      ],
+      "bounds": [
+        90.5402,
+        75.5269,
+        181.08040000000003,
+        151.05380000000002
+      ],
+      "spineTangent": [
+        0.863434,
+        -0.504461
+      ],
+      "widthDeltaPct": 0.0,
+      "warnings": []
+    },
+    {
+      "t": 1.0,
+      "anchors": [
+        {
+          "id": "spine-0",
+          "x": 400.0,
+          "y": 280.0
+        },
+        {
+          "id": "spine-1",
+          "x": 0.0,
+          "y": 0.0
+        }
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        400.0,
+        280.0
+      ],
+      "spineTangent": [
+        0.863434,
+        -0.504461
+      ],
+      "widthDeltaPct": 0.0,
+      "warnings": []
+    }
+  ],
+  "artefacts": [
+    "morph.vectorcraft",
+    "morph.svg",
+    "blend-info.json",
+    "samples.json",
+    "review.json",
+    "samples/t-0.00.png",
+    "samples/t-0.25.png",
+    "samples/t-0.50.png",
+    "samples/t-0.75.png",
+    "samples/t-1.00.png"
+  ],
+  "result": "topology aligned, blend built, spine bent, samples exported, clean review accepted and permanent pinch escalated"
+}

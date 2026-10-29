@@ -1,0 +1,45 @@
+[
+  {
+    "index": 0,
+    "audit": {
+      "status": "adjust",
+      "rationale": "The composite needs a change on this axis.",
+      "adjustment": {
+        "target": "contrast",
+        "delta": 4.0
+      }
+    },
+    "delta": {
+      "target": "contrast",
+      "delta": 16.0
+    },
+    "latencyMs": 0,
+    "render": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-002/render_00.png",
+    "applied": false,
+    "rolledBack": true,
+    "verification": {
+      "audit": {
+        "status": "adjust",
+        "rationale": "A more severe violation than the contrast.",
+        "adjustment": {
+          "target": "highlights",
+          "delta": -3.0
+        }
+      },
+      "latencyMs": 0,
+      "render": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-002/render_00_after.png"
+    }
+  },
+  {
+    "index": 1,
+    "audit": {
+      "status": "ok",
+      "rationale": "The composite satisfies every criterion of the rubric."
+    },
+    "delta": null,
+    "latencyMs": 0,
+    "render": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-002/render_01.png",
+    "applied": false,
+    "rolledBack": false
+  }
+]

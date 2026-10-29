@@ -1,0 +1,75 @@
+{
+  "sequenceId": "seq-ep-142",
+  "totalTicks": "762048000001",
+  "workAreaTicks": "762048000001",
+  "deliverables": [
+    {
+      "name": "master-4k",
+      "format": "prores",
+      "expectedTicks": "762053292000",
+      "expectedSamples48k": "144001",
+      "renderedPath": "master-4k.wav",
+      "actualSamples48k": "144001",
+      "driftSamples": "0",
+      "videoFrameCount": "71",
+      "residualTicks": "9837828000"
+    },
+    {
+      "name": "web-1080",
+      "format": "h264",
+      "expectedTicks": "762053292000",
+      "expectedSamples48k": "144001",
+      "renderedPath": "web-1080.wav",
+      "actualSamples48k": "144001",
+      "driftSamples": "0",
+      "videoFrameCount": "71",
+      "residualTicks": "9837828000"
+    },
+    {
+      "name": "hevc-1080",
+      "format": "hevc",
+      "expectedTicks": "762053292000",
+      "expectedSamples48k": "144001",
+      "renderedPath": "hevc-1080.wav",
+      "actualSamples48k": "144001",
+      "driftSamples": "0",
+      "videoFrameCount": "71",
+      "residualTicks": "9837828000"
+    },
+    {
+      "name": "av1-1080",
+      "format": "av1",
+      "expectedTicks": "762053292000",
+      "expectedSamples48k": "144001",
+      "renderedPath": "av1-1080.wav",
+      "actualSamples48k": "144001",
+      "driftSamples": "0",
+      "videoFrameCount": "71",
+      "residualTicks": "9837828000"
+    },
+    {
+      "name": "archive-mxf",
+      "format": "mxf-op1a",
+      "expectedTicks": "762053292000",
+      "expectedSamples48k": "144001",
+      "renderedPath": "archive-mxf.wav",
+      "actualSamples48k": "144001",
+      "driftSamples": "0",
+      "videoFrameCount": "71",
+      "residualTicks": "9837828000"
+    },
+    {
+      "name": "mix-wav",
+      "format": "wav",
+      "expectedTicks": "762053292000",
+      "expectedSamples48k": "144001",
+      "renderedPath": "mix.wav",
+      "actualSamples48k": "144001",
+      "driftSamples": "0",
+      "videoFrameCount": "71",
+      "residualTicks": "9837828000"
+    }
+  ],
+  "generatedAtUtc": "2026-10-26T13:30:45.946Z",
+  "engineVersion": "test-double/1"
+}

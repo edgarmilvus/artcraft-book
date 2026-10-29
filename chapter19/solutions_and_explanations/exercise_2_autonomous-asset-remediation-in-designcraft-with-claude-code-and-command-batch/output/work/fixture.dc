@@ -1,0 +1,24 @@
+file.new {"width": 612, "height": 792, "title": "q3-catalog"}
+style.compositeFont.set {"name": "Inter-SemiBold", "entries": [{"family": "Source Sans 3", "style": "Semibold"}]}
+frame.create {"rect": [36, 210, 400, 280], "content": "text", "text": "Northwind catalogue headline"}
+text.select {"story": "$2.story", "anchor": 0, "focus": 28}
+type.char {"attrs": {"fontFamily": "Inter-Bold", "fontStyle": "Bold"}}
+frame.create {"rect": [36, 300, 400, 420], "content": "text", "text": "The Q3 catalogue is a legacy magazine document that has crossed three studio storage mounts in eighteen months, and the layout engine still refuses to reflow the body copy that nobody reconciled when the artwork was re-linked from the old mount. The Q3 catalogue is a legacy magazine document that has crossed three studio storage mounts in eighteen months, and the layout engine still refuses to reflow the body copy that nobody reconciled when the artwork was re-linked from the old mount. The Q3 catalogue is a legacy magazine document that has crossed three studio storage mounts in eighteen months, and the layout engine still refuses to reflow the body copy that nobody reconciled when the artwork was re-linked from the old mount. The Q3 catalogue is a legacy magazine document that has crossed three studio storage mounts in eighteen months, and the layout engine still refuses to reflow the body copy that nobody reconciled when the artwork was re-linked from the old mount. The Q3 catalogue is a legacy magazine document that has crossed three studio storage mounts in eighteen months, and the layout engine still refuses to reflow the body copy that nobody reconciled when the artwork was re-linked from the old mount. The Q3 catalogue is a legacy magazine document that has crossed three studio storage mounts in eighteen months, and the layout engine still refuses to reflow the body copy that nobody reconciled when the artwork was re-linked from the old mount. "}
+swatch.create {"name": "Northwind Teal (legacy)", "color": "#0F6E6E"}
+frame.create {"rect": [450, 560, 576, 650], "content": "graphic"}
+object.fill {"swatch": "Northwind Teal (legacy)", "ids": ["$7.id"]}
+swatch.delete {"name": "Northwind Teal (legacy)"}
+frame.create {"rect": [36, 450, 162, 540], "content": "graphic"}
+file.place {"path": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/mounts/old/hero-1.png", "frame": "$10.id"}
+frame.create {"rect": [174, 450, 300, 540], "content": "graphic"}
+file.place {"path": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/mounts/old/hero-2.png", "frame": "$12.id"}
+frame.create {"rect": [312, 450, 438, 540], "content": "graphic"}
+file.place {"path": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/mounts/old/hero-3.png", "frame": "$14.id"}
+frame.create {"rect": [450, 450, 576, 540], "content": "graphic"}
+file.place {"path": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/mounts/old/hero-4.png", "frame": "$16.id"}
+frame.create {"rect": [36, 560, 162, 650], "content": "graphic"}
+file.place {"path": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/mounts/old/hero-5.png", "frame": "$18.id"}
+frame.create {"rect": [174, 560, 300, 650], "content": "graphic"}
+file.place {"path": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/mounts/old/hero-6.png", "frame": "$20.id"}
+frame.create {"rect": [312, 560, 438, 650], "content": "graphic"}
+file.place {"path": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/mounts/old/hero-7.png", "frame": "$22.id"}

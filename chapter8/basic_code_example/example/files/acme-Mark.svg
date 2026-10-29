@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <title>acme-Mark</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <path d="M80 380 C170 300 196 256 256 256 C316 256 342 300 432 380" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 355.2 C170 291.2 196 256 256 256 C316 256 342 291.2 432 355.2" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 330.4 C170 282.4 196 256 256 256 C316 256 342 282.4 432 330.4" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 305.6 C170 273.6 196 256 256 256 C316 256 342 273.6 432 305.6" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 280.8 C170 264.8 196 256 256 256 C316 256 342 264.8 432 280.8" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 256 C170 256 196 256 256 256 C316 256 342 256 432 256" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 231.2 C170 247.2 196 256 256 256 C316 256 342 247.2 432 231.2" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 206.4 C170 238.4 196 256 256 256 C316 256 342 238.4 432 206.4" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 181.6 C170 229.6 196 256 256 256 C316 256 342 229.6 432 181.6" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 156.8 C170 220.8 196 256 256 256 C316 256 342 220.8 432 156.8" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+      <path d="M80 132 C170 212 196 256 256 256 C316 256 342 212 432 132" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-miterlimit="10"/>
+    </g>
+    <path d="M176 208 C176 190.327 190.327 176 208 176 L304 176 C321.673 176 336 190.327 336 208 L336 304 C336 321.673 321.673 336 304 336 L208 336 C190.327 336 176 321.673 176 304 Z" fill="#1e293b"/>
+  </g>
+</svg>

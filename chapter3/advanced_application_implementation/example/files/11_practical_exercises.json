@@ -1,0 +1,14 @@
+{
+  "manifestPath": "/work/assets/manifest.json",
+  "outputRoot": "/work/output",
+  "aspects": [
+    { "id": "1x1",    "w": 2048, "h": 2048 },
+    { "id": "4x5",    "w": 2048, "h": 2560 },
+    { "id": "16x9",   "w": 3840, "h": 2160 },
+    { "id": "9x16",   "w": 2160, "h": 3840 }
+  ],
+  "palettes": {
+    "spring": { "shadow": [[0,0],[64,40],[192,215],[255,255]] },
+    "autumn": { "shadow": [[0,0],[48,72],[180,196],[255,255]] }
+  }
+}

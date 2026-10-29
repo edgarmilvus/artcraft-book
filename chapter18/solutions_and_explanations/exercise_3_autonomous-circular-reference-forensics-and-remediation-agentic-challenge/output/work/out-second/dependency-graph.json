@@ -1,0 +1,401 @@
+{
+  "nodes": [
+    {
+      "key": "Debt Schedule!B11",
+      "sheet": "Debt Schedule",
+      "is_name": false,
+      "formula": "=Assumptions!B4",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Assumptions!B4",
+      "sheet": "Assumptions",
+      "is_name": false,
+      "formula": null,
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Debt Schedule!C11",
+      "sheet": "Debt Schedule",
+      "is_name": false,
+      "formula": "=B14",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Debt Schedule!B14",
+      "sheet": "Debt Schedule",
+      "is_name": false,
+      "formula": "=B11+B12+B13",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Debt Schedule!B12",
+      "sheet": "Debt Schedule",
+      "is_name": false,
+      "formula": "=Interest!B13",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Interest!B13",
+      "sheet": "Interest",
+      "is_name": false,
+      "formula": "=B12*B11",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Debt Schedule!C12",
+      "sheet": "Debt Schedule",
+      "is_name": false,
+      "formula": "=Interest!C13",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Interest!C13",
+      "sheet": "Interest",
+      "is_name": false,
+      "formula": "=C12*C11",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Debt Schedule!B13",
+      "sheet": "Debt Schedule",
+      "is_name": false,
+      "formula": "=-'Cash Flow'!B12",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Cash Flow!B12",
+      "sheet": "Cash Flow",
+      "is_name": false,
+      "formula": "=B11-Interest!B13",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Debt Schedule!C13",
+      "sheet": "Debt Schedule",
+      "is_name": false,
+      "formula": "=-'Cash Flow'!C12",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Cash Flow!C12",
+      "sheet": "Cash Flow",
+      "is_name": false,
+      "formula": "=C11-Interest!C13",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Debt Schedule!C14",
+      "sheet": "Debt Schedule",
+      "is_name": false,
+      "formula": "=C11+C12+C13",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Interest!B11",
+      "sheet": "Interest",
+      "is_name": false,
+      "formula": "=Assumptions!$B$3",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Assumptions!B3",
+      "sheet": "Assumptions",
+      "is_name": false,
+      "formula": null,
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Interest!C11",
+      "sheet": "Interest",
+      "is_name": false,
+      "formula": "=B11",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Interest!B12",
+      "sheet": "Interest",
+      "is_name": false,
+      "formula": "=('Debt Schedule'!B11+'Debt Schedule'!B14)/2",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Interest!C12",
+      "sheet": "Interest",
+      "is_name": false,
+      "formula": "=('Debt Schedule'!C11+'Debt Schedule'!C14)/2",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Cash Flow!B11",
+      "sheet": "Cash Flow",
+      "is_name": false,
+      "formula": "=Assumptions!B6",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Assumptions!B6",
+      "sheet": "Assumptions",
+      "is_name": false,
+      "formula": null,
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Cash Flow!C11",
+      "sheet": "Cash Flow",
+      "is_name": false,
+      "formula": "=Assumptions!B7",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Assumptions!B7",
+      "sheet": "Assumptions",
+      "is_name": false,
+      "formula": null,
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Cash Flow!B14",
+      "sheet": "Cash Flow",
+      "is_name": false,
+      "formula": "=Interest.Charge",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Interest.Charge",
+      "sheet": "",
+      "is_name": true,
+      "formula": "=Interest.Expense",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Rollforward!C11",
+      "sheet": "Rollforward",
+      "is_name": false,
+      "formula": "=B13",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Rollforward!B13",
+      "sheet": "Rollforward",
+      "is_name": false,
+      "formula": "=SUM(B11:B12)",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Rollforward!B11",
+      "sheet": "Rollforward",
+      "is_name": false,
+      "formula": null,
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Rollforward!B12",
+      "sheet": "Rollforward",
+      "is_name": false,
+      "formula": null,
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Rollforward!C13",
+      "sheet": "Rollforward",
+      "is_name": false,
+      "formula": "=SUM(C11:C13)",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Rollforward!C12",
+      "sheet": "Rollforward",
+      "is_name": false,
+      "formula": null,
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Iterative Block!B11",
+      "sheet": "Iterative Block",
+      "is_name": false,
+      "formula": "=B12/2",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Iterative Block!B12",
+      "sheet": "Iterative Block",
+      "is_name": false,
+      "formula": "=B11+100",
+      "iterative_opt_in": false
+    },
+    {
+      "key": "Interest.Expense",
+      "sheet": "",
+      "is_name": true,
+      "formula": "=Interest.Charge",
+      "iterative_opt_in": false
+    }
+  ],
+  "edges": [
+    {
+      "from": "Debt Schedule!B11",
+      "to": "Assumptions!B4"
+    },
+    {
+      "from": "Debt Schedule!C11",
+      "to": "Debt Schedule!B14"
+    },
+    {
+      "from": "Debt Schedule!B12",
+      "to": "Interest!B13"
+    },
+    {
+      "from": "Debt Schedule!C12",
+      "to": "Interest!C13"
+    },
+    {
+      "from": "Debt Schedule!B13",
+      "to": "Cash Flow!B12"
+    },
+    {
+      "from": "Debt Schedule!C13",
+      "to": "Cash Flow!C12"
+    },
+    {
+      "from": "Debt Schedule!B14",
+      "to": "Debt Schedule!B11"
+    },
+    {
+      "from": "Debt Schedule!B14",
+      "to": "Debt Schedule!B12"
+    },
+    {
+      "from": "Debt Schedule!B14",
+      "to": "Debt Schedule!B13"
+    },
+    {
+      "from": "Debt Schedule!C14",
+      "to": "Debt Schedule!C11"
+    },
+    {
+      "from": "Debt Schedule!C14",
+      "to": "Debt Schedule!C12"
+    },
+    {
+      "from": "Debt Schedule!C14",
+      "to": "Debt Schedule!C13"
+    },
+    {
+      "from": "Interest!B11",
+      "to": "Assumptions!B3"
+    },
+    {
+      "from": "Interest!C11",
+      "to": "Interest!B11"
+    },
+    {
+      "from": "Interest!B12",
+      "to": "Debt Schedule!B11"
+    },
+    {
+      "from": "Interest!B12",
+      "to": "Debt Schedule!B14"
+    },
+    {
+      "from": "Interest!C12",
+      "to": "Debt Schedule!C11"
+    },
+    {
+      "from": "Interest!C12",
+      "to": "Debt Schedule!C14"
+    },
+    {
+      "from": "Interest!B13",
+      "to": "Interest!B12"
+    },
+    {
+      "from": "Interest!B13",
+      "to": "Interest!B11"
+    },
+    {
+      "from": "Interest!C13",
+      "to": "Interest!C12"
+    },
+    {
+      "from": "Interest!C13",
+      "to": "Interest!C11"
+    },
+    {
+      "from": "Cash Flow!B11",
+      "to": "Assumptions!B6"
+    },
+    {
+      "from": "Cash Flow!C11",
+      "to": "Assumptions!B7"
+    },
+    {
+      "from": "Cash Flow!B12",
+      "to": "Cash Flow!B11"
+    },
+    {
+      "from": "Cash Flow!B12",
+      "to": "Interest!B13"
+    },
+    {
+      "from": "Cash Flow!C12",
+      "to": "Cash Flow!C11"
+    },
+    {
+      "from": "Cash Flow!C12",
+      "to": "Interest!C13"
+    },
+    {
+      "from": "Cash Flow!B14",
+      "to": "Interest.Charge"
+    },
+    {
+      "from": "Rollforward!C11",
+      "to": "Rollforward!B13"
+    },
+    {
+      "from": "Rollforward!B13",
+      "to": "Rollforward!B11"
+    },
+    {
+      "from": "Rollforward!B13",
+      "to": "Rollforward!B12"
+    },
+    {
+      "from": "Rollforward!C13",
+      "to": "Rollforward!C11"
+    },
+    {
+      "from": "Rollforward!C13",
+      "to": "Rollforward!C12"
+    },
+    {
+      "from": "Rollforward!C13",
+      "to": "Rollforward!C13"
+    },
+    {
+      "from": "Iterative Block!B11",
+      "to": "Iterative Block!B12"
+    },
+    {
+      "from": "Iterative Block!B12",
+      "to": "Iterative Block!B11"
+    },
+    {
+      "from": "Interest.Expense",
+      "to": "Interest.Charge"
+    },
+    {
+      "from": "Interest.Charge",
+      "to": "Interest.Expense"
+    }
+  ],
+  "node_count": 33,
+  "edge_count": 39,
+  "deferred_members": [
+    "Iterative Block!B11",
+    "Iterative Block!B12"
+  ],
+  "acyclic_outside_deferred": true,
+  "remaining_cycles": []
+}

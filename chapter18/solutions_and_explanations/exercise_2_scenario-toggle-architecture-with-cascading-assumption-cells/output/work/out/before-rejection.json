@@ -1,0 +1,1472 @@
+{
+  "sheets": [
+    {
+      "name": "Assumptions",
+      "cells": {
+        "bands": {
+          "0": {
+            "rows": {
+              "0": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Scenario.Active"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 1.0
+                  },
+                  "formula": null,
+                  "style": 0
+                }
+              },
+              "1": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Scenario index"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 1.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 2.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "3": {
+                  "value": {
+                    "t": "Number",
+                    "v": 3.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "4": {
+                  "value": {
+                    "t": "Number",
+                    "v": 4.0
+                  },
+                  "formula": null,
+                  "style": 0
+                }
+              },
+              "2": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "assumption"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Bear"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Base"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "3": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Bull"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "4": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Doom"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "5": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Scenario.Value"
+                  },
+                  "formula": null,
+                  "style": 0
+                }
+              },
+              "3": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "headcount.sales.q1"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 78.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 100.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "3": {
+                  "value": {
+                    "t": "Number",
+                    "v": 121.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "4": {
+                  "value": {
+                    "t": "Number",
+                    "v": 63.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "5": {
+                  "value": {
+                    "t": "Number",
+                    "v": 78.0
+                  },
+                  "formula": {
+                    "text": "CHOOSE(Scenario.Active,B4,C4,D4,E4)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "4": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "arr"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 88.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 100.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "3": {
+                  "value": {
+                    "t": "Number",
+                    "v": 118.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "4": {
+                  "value": {
+                    "t": "Number",
+                    "v": 71.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "5": {
+                  "value": {
+                    "t": "Number",
+                    "v": 88.0
+                  },
+                  "formula": {
+                    "text": "CHOOSE(Scenario.Active,B5,C5,D5,E5)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "5": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "churn"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.12
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.08
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "3": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.05
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "4": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.18
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "5": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.12
+                  },
+                  "formula": {
+                    "text": "CHOOSE(Scenario.Active,B6,C6,D6,E6)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "6": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "gm"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.58
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.64
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "3": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.7
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "4": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.5
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "5": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.58
+                  },
+                  "formula": {
+                    "text": "CHOOSE(Scenario.Active,B7,C7,D7,E7)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "7": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "cac"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 112.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 100.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "3": {
+                  "value": {
+                    "t": "Number",
+                    "v": 91.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "4": {
+                  "value": {
+                    "t": "Number",
+                    "v": 134.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "5": {
+                  "value": {
+                    "t": "Number",
+                    "v": 112.0
+                  },
+                  "formula": {
+                    "text": "CHOOSE(Scenario.Active,B8,C8,D8,E8)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "8": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "price.eur"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 94.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 100.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "3": {
+                  "value": {
+                    "t": "Number",
+                    "v": 107.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "4": {
+                  "value": {
+                    "t": "Number",
+                    "v": 88.0
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "5": {
+                  "value": {
+                    "t": "Number",
+                    "v": 94.0
+                  },
+                  "formula": {
+                    "text": "CHOOSE(Scenario.Active,B9,C9,D9,E9)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              }
+            }
+          }
+        },
+        "len": 49
+      },
+      "cols": {},
+      "rows": {},
+      "default_col_width": 64.0,
+      "default_row_height": 20.0,
+      "merges": [],
+      "freeze": null,
+      "tab_color": null,
+      "visibility": "Visible",
+      "show_gridlines": true,
+      "show_headings": true,
+      "show_formulas": false,
+      "show_zeros": true,
+      "right_to_left": false,
+      "zoom": 100,
+      "cond_formats": [],
+      "validations": [],
+      "tables": [],
+      "autofilter": null,
+      "comments": {},
+      "hyperlinks": {},
+      "charts": [],
+      "images": [],
+      "shapes": [],
+      "sparklines": [],
+      "slicers": [],
+      "pivots": [],
+      "protection": null,
+      "print": {
+        "orientation": "Portrait",
+        "paper": "Letter",
+        "margins": [
+          0.7,
+          0.7,
+          0.75,
+          0.75,
+          0.3,
+          0.3
+        ],
+        "print_area": null,
+        "title_rows": null,
+        "title_cols": null,
+        "scale": 100,
+        "fit_to": null,
+        "gridlines": false,
+        "headings": false,
+        "center_h": false,
+        "center_v": false,
+        "header": "",
+        "footer": "",
+        "row_breaks": [],
+        "col_breaks": [],
+        "different_first": false,
+        "different_odd_even": false,
+        "first_header": "",
+        "first_footer": "",
+        "even_header": "",
+        "even_footer": "",
+        "hf_scale_with_doc": true,
+        "hf_align_with_margins": true
+      },
+      "view_active": {
+        "row": 0,
+        "col": 0
+      },
+      "view_top_left": {
+        "row": 0,
+        "col": 0
+      },
+      "view": "normal"
+    },
+    {
+      "name": "Overrides",
+      "cells": {
+        "bands": {
+          "0": {
+            "rows": {
+              "0": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "assumption"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Text",
+                    "v": "override_value"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Text",
+                    "v": "effective_value"
+                  },
+                  "formula": null,
+                  "style": 0
+                }
+              },
+              "1": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "headcount.sales.q1"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 78.0
+                  },
+                  "formula": {
+                    "text": "IF(Overrides.Value.headcount.sales.q1=\"\",Scenario.Value.headcount.sales.q1,Overrides.Value.headcount.sales.q1)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "2": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "arr"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 88.0
+                  },
+                  "formula": {
+                    "text": "IF(Overrides.Value.arr=\"\",Scenario.Value.arr,Overrides.Value.arr)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "3": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "churn"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.12
+                  },
+                  "formula": {
+                    "text": "IF(Overrides.Value.churn=\"\",Scenario.Value.churn,Overrides.Value.churn)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "4": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "gm"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.66
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 0.66
+                  },
+                  "formula": {
+                    "text": "IF(Overrides.Value.gm=\"\",Scenario.Value.gm,Overrides.Value.gm)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "5": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "cac"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 112.0
+                  },
+                  "formula": {
+                    "text": "IF(Overrides.Value.cac=\"\",Scenario.Value.cac,Overrides.Value.cac)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              },
+              "6": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "price.eur"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "2": {
+                  "value": {
+                    "t": "Number",
+                    "v": 94.0
+                  },
+                  "formula": {
+                    "text": "IF(Overrides.Value.price.eur=\"\",Scenario.Value.price.eur,Overrides.Value.price.eur)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              }
+            }
+          }
+        },
+        "len": 16
+      },
+      "cols": {},
+      "rows": {},
+      "default_col_width": 64.0,
+      "default_row_height": 20.0,
+      "merges": [],
+      "freeze": null,
+      "tab_color": null,
+      "visibility": "Visible",
+      "show_gridlines": true,
+      "show_headings": true,
+      "show_formulas": false,
+      "show_zeros": true,
+      "right_to_left": false,
+      "zoom": 100,
+      "cond_formats": [],
+      "validations": [],
+      "tables": [],
+      "autofilter": null,
+      "comments": {},
+      "hyperlinks": {},
+      "charts": [],
+      "images": [],
+      "shapes": [],
+      "sparklines": [],
+      "slicers": [],
+      "pivots": [],
+      "protection": null,
+      "print": {
+        "orientation": "Portrait",
+        "paper": "Letter",
+        "margins": [
+          0.7,
+          0.7,
+          0.75,
+          0.75,
+          0.3,
+          0.3
+        ],
+        "print_area": null,
+        "title_rows": null,
+        "title_cols": null,
+        "scale": 100,
+        "fit_to": null,
+        "gridlines": false,
+        "headings": false,
+        "center_h": false,
+        "center_v": false,
+        "header": "",
+        "footer": "",
+        "row_breaks": [],
+        "col_breaks": [],
+        "different_first": false,
+        "different_odd_even": false,
+        "first_header": "",
+        "first_footer": "",
+        "even_header": "",
+        "even_footer": "",
+        "hf_scale_with_doc": true,
+        "hf_align_with_margins": true
+      },
+      "view_active": {
+        "row": 0,
+        "col": 0
+      },
+      "view_top_left": {
+        "row": 0,
+        "col": 0
+      },
+      "view": "normal"
+    },
+    {
+      "name": "Revenue",
+      "cells": {
+        "bands": {
+          "0": {
+            "rows": {
+              "0": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Helios revenue (model points)"
+                  },
+                  "formula": null,
+                  "style": 0
+                }
+              },
+              "1": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Revenue.TopLine"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 7279.36
+                  },
+                  "formula": {
+                    "text": "Effective.arr*(1-Effective.churn)*Effective.price.eur",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              }
+            }
+          }
+        },
+        "len": 3
+      },
+      "cols": {},
+      "rows": {},
+      "default_col_width": 64.0,
+      "default_row_height": 20.0,
+      "merges": [],
+      "freeze": null,
+      "tab_color": null,
+      "visibility": "Visible",
+      "show_gridlines": true,
+      "show_headings": true,
+      "show_formulas": false,
+      "show_zeros": true,
+      "right_to_left": false,
+      "zoom": 100,
+      "cond_formats": [],
+      "validations": [],
+      "tables": [],
+      "autofilter": null,
+      "comments": {},
+      "hyperlinks": {},
+      "charts": [],
+      "images": [],
+      "shapes": [],
+      "sparklines": [],
+      "slicers": [],
+      "pivots": [],
+      "protection": null,
+      "print": {
+        "orientation": "Portrait",
+        "paper": "Letter",
+        "margins": [
+          0.7,
+          0.7,
+          0.75,
+          0.75,
+          0.3,
+          0.3
+        ],
+        "print_area": null,
+        "title_rows": null,
+        "title_cols": null,
+        "scale": 100,
+        "fit_to": null,
+        "gridlines": false,
+        "headings": false,
+        "center_h": false,
+        "center_v": false,
+        "header": "",
+        "footer": "",
+        "row_breaks": [],
+        "col_breaks": [],
+        "different_first": false,
+        "different_odd_even": false,
+        "first_header": "",
+        "first_footer": "",
+        "even_header": "",
+        "even_footer": "",
+        "hf_scale_with_doc": true,
+        "hf_align_with_margins": true
+      },
+      "view_active": {
+        "row": 0,
+        "col": 0
+      },
+      "view_top_left": {
+        "row": 0,
+        "col": 0
+      },
+      "view": "normal"
+    },
+    {
+      "name": "Cost",
+      "cells": {
+        "bands": {
+          "0": {
+            "rows": {
+              "0": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Helios cost of revenue (model points)"
+                  },
+                  "formula": null,
+                  "style": 0
+                }
+              },
+              "1": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Cost.TopLine"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 2970.24
+                  },
+                  "formula": {
+                    "text": "Effective.headcount.sales.q1*Effective.cac*(1-Effective.gm)",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              }
+            }
+          }
+        },
+        "len": 3
+      },
+      "cols": {},
+      "rows": {},
+      "default_col_width": 64.0,
+      "default_row_height": 20.0,
+      "merges": [],
+      "freeze": null,
+      "tab_color": null,
+      "visibility": "Visible",
+      "show_gridlines": true,
+      "show_headings": true,
+      "show_formulas": false,
+      "show_zeros": true,
+      "right_to_left": false,
+      "zoom": 100,
+      "cond_formats": [],
+      "validations": [],
+      "tables": [],
+      "autofilter": null,
+      "comments": {},
+      "hyperlinks": {},
+      "charts": [],
+      "images": [],
+      "shapes": [],
+      "sparklines": [],
+      "slicers": [],
+      "pivots": [],
+      "protection": null,
+      "print": {
+        "orientation": "Portrait",
+        "paper": "Letter",
+        "margins": [
+          0.7,
+          0.7,
+          0.75,
+          0.75,
+          0.3,
+          0.3
+        ],
+        "print_area": null,
+        "title_rows": null,
+        "title_cols": null,
+        "scale": 100,
+        "fit_to": null,
+        "gridlines": false,
+        "headings": false,
+        "center_h": false,
+        "center_v": false,
+        "header": "",
+        "footer": "",
+        "row_breaks": [],
+        "col_breaks": [],
+        "different_first": false,
+        "different_odd_even": false,
+        "first_header": "",
+        "first_footer": "",
+        "even_header": "",
+        "even_footer": "",
+        "hf_scale_with_doc": true,
+        "hf_align_with_margins": true
+      },
+      "view_active": {
+        "row": 0,
+        "col": 0
+      },
+      "view_top_left": {
+        "row": 0,
+        "col": 0
+      },
+      "view": "normal"
+    },
+    {
+      "name": "EBITDA",
+      "cells": {
+        "bands": {
+          "0": {
+            "rows": {
+              "0": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Helios EBITDA (model points)"
+                  },
+                  "formula": null,
+                  "style": 0
+                }
+              },
+              "1": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "EBITDA.TopLine"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 4309.12
+                  },
+                  "formula": {
+                    "text": "Revenue.TopLine-Cost.TopLine",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              }
+            }
+          }
+        },
+        "len": 3
+      },
+      "cols": {},
+      "rows": {},
+      "default_col_width": 64.0,
+      "default_row_height": 20.0,
+      "merges": [],
+      "freeze": null,
+      "tab_color": null,
+      "visibility": "Visible",
+      "show_gridlines": true,
+      "show_headings": true,
+      "show_formulas": false,
+      "show_zeros": true,
+      "right_to_left": false,
+      "zoom": 100,
+      "cond_formats": [],
+      "validations": [],
+      "tables": [],
+      "autofilter": null,
+      "comments": {},
+      "hyperlinks": {},
+      "charts": [],
+      "images": [],
+      "shapes": [],
+      "sparklines": [],
+      "slicers": [],
+      "pivots": [],
+      "protection": null,
+      "print": {
+        "orientation": "Portrait",
+        "paper": "Letter",
+        "margins": [
+          0.7,
+          0.7,
+          0.75,
+          0.75,
+          0.3,
+          0.3
+        ],
+        "print_area": null,
+        "title_rows": null,
+        "title_cols": null,
+        "scale": 100,
+        "fit_to": null,
+        "gridlines": false,
+        "headings": false,
+        "center_h": false,
+        "center_v": false,
+        "header": "",
+        "footer": "",
+        "row_breaks": [],
+        "col_breaks": [],
+        "different_first": false,
+        "different_odd_even": false,
+        "first_header": "",
+        "first_footer": "",
+        "even_header": "",
+        "even_footer": "",
+        "hf_scale_with_doc": true,
+        "hf_align_with_margins": true
+      },
+      "view_active": {
+        "row": 0,
+        "col": 0
+      },
+      "view_top_left": {
+        "row": 0,
+        "col": 0
+      },
+      "view": "normal"
+    },
+    {
+      "name": "BalanceSheet",
+      "cells": {
+        "bands": {
+          "0": {
+            "rows": {
+              "0": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "Helios balance sheet (model points)"
+                  },
+                  "formula": null,
+                  "style": 0
+                }
+              },
+              "1": {
+                "0": {
+                  "value": {
+                    "t": "Text",
+                    "v": "BalanceSheet.TopLine"
+                  },
+                  "formula": null,
+                  "style": 0
+                },
+                "1": {
+                  "value": {
+                    "t": "Number",
+                    "v": 4309.12
+                  },
+                  "formula": {
+                    "text": "EBITDA.TopLine",
+                    "array": null
+                  },
+                  "style": 0
+                }
+              }
+            }
+          }
+        },
+        "len": 3
+      },
+      "cols": {},
+      "rows": {},
+      "default_col_width": 64.0,
+      "default_row_height": 20.0,
+      "merges": [],
+      "freeze": null,
+      "tab_color": null,
+      "visibility": "Visible",
+      "show_gridlines": true,
+      "show_headings": true,
+      "show_formulas": false,
+      "show_zeros": true,
+      "right_to_left": false,
+      "zoom": 100,
+      "cond_formats": [],
+      "validations": [],
+      "tables": [],
+      "autofilter": null,
+      "comments": {},
+      "hyperlinks": {},
+      "charts": [],
+      "images": [],
+      "shapes": [],
+      "sparklines": [],
+      "slicers": [],
+      "pivots": [],
+      "protection": null,
+      "print": {
+        "orientation": "Portrait",
+        "paper": "Letter",
+        "margins": [
+          0.7,
+          0.7,
+          0.75,
+          0.75,
+          0.3,
+          0.3
+        ],
+        "print_area": null,
+        "title_rows": null,
+        "title_cols": null,
+        "scale": 100,
+        "fit_to": null,
+        "gridlines": false,
+        "headings": false,
+        "center_h": false,
+        "center_v": false,
+        "header": "",
+        "footer": "",
+        "row_breaks": [],
+        "col_breaks": [],
+        "different_first": false,
+        "different_odd_even": false,
+        "first_header": "",
+        "first_footer": "",
+        "even_header": "",
+        "even_footer": "",
+        "hf_scale_with_doc": true,
+        "hf_align_with_margins": true
+      },
+      "view_active": {
+        "row": 0,
+        "col": 0
+      },
+      "view_top_left": {
+        "row": 0,
+        "col": 0
+      },
+      "view": "normal"
+    }
+  ],
+  "names": [
+    {
+      "name": "Scenario.Active",
+      "scope": null,
+      "formula": "Assumptions!$B$1",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Scenario.Value.headcount.sales.q1",
+      "scope": null,
+      "formula": "Assumptions!$F$4",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Scenario.Value.arr",
+      "scope": null,
+      "formula": "Assumptions!$F$5",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Scenario.Value.churn",
+      "scope": null,
+      "formula": "Assumptions!$F$6",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Scenario.Value.gm",
+      "scope": null,
+      "formula": "Assumptions!$F$7",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Scenario.Value.cac",
+      "scope": null,
+      "formula": "Assumptions!$F$8",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Scenario.Value.price.eur",
+      "scope": null,
+      "formula": "Assumptions!$F$9",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Overrides.Value.headcount.sales.q1",
+      "scope": null,
+      "formula": "Overrides!$B$2",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Overrides.Value.arr",
+      "scope": null,
+      "formula": "Overrides!$B$3",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Overrides.Value.churn",
+      "scope": null,
+      "formula": "Overrides!$B$4",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Overrides.Value.gm",
+      "scope": null,
+      "formula": "Overrides!$B$5",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Overrides.Value.cac",
+      "scope": null,
+      "formula": "Overrides!$B$6",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Overrides.Value.price.eur",
+      "scope": null,
+      "formula": "Overrides!$B$7",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Effective.headcount.sales.q1",
+      "scope": null,
+      "formula": "Overrides!$C$2",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Effective.arr",
+      "scope": null,
+      "formula": "Overrides!$C$3",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Effective.churn",
+      "scope": null,
+      "formula": "Overrides!$C$4",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Effective.gm",
+      "scope": null,
+      "formula": "Overrides!$C$5",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Effective.cac",
+      "scope": null,
+      "formula": "Overrides!$C$6",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Effective.price.eur",
+      "scope": null,
+      "formula": "Overrides!$C$7",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Revenue.TopLine",
+      "scope": null,
+      "formula": "Revenue!$B$2",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "Cost.TopLine",
+      "scope": null,
+      "formula": "Cost!$B$2",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "EBITDA.TopLine",
+      "scope": null,
+      "formula": "EBITDA!$B$2",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "BalanceSheet.TopLine",
+      "scope": null,
+      "formula": "BalanceSheet!$B$2",
+      "comment": "",
+      "hidden": false
+    },
+    {
+      "name": "_sc_scenarios",
+      "scope": null,
+      "formula": "\"[{\"\"name\"\":\"\"Bear\"\",\"\"sheet\"\":\"\"Assumptions\"\",\"\"changing\"\":\"\"B1\"\",\"\"values\"\":[1],\"\"comment\"\":\"\"Scenario.Active index 1\"\"},{\"\"name\"\":\"\"Base\"\",\"\"sheet\"\":\"\"Assumptions\"\",\"\"changing\"\":\"\"B1\"\",\"\"values\"\":[2],\"\"comment\"\":\"\"Scenario.Active index 2\"\"},{\"\"name\"\":\"\"Bull\"\",\"\"sheet\"\":\"\"Assumptions\"\",\"\"chang\"&\"ing\"\":\"\"B1\"\",\"\"values\"\":[3],\"\"comment\"\":\"\"Scenario.Active index 3\"\"},{\"\"name\"\":\"\"Doom\"\",\"\"sheet\"\":\"\"Assumptions\"\",\"\"changing\"\":\"\"B1\"\",\"\"values\"\":[4],\"\"comment\"\":\"\"Scenario.Active index 4\"\"}]\"",
+      "comment": "GridCraft Scenario Manager data",
+      "hidden": true
+    }
+  ],
+  "styles": {
+    "styles": [
+      {
+        "font": {
+          "name": "Calibri",
+          "size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": "None",
+          "strike": false,
+          "color": "Auto",
+          "vert": "Baseline"
+        },
+        "fill": {
+          "pattern": "None",
+          "fg": "Auto",
+          "bg": "Auto"
+        },
+        "borders": {
+          "left": {
+            "style": "None",
+            "color": "Auto"
+          },
+          "right": {
+            "style": "None",
+            "color": "Auto"
+          },
+          "top": {
+            "style": "None",
+            "color": "Auto"
+          },
+          "bottom": {
+            "style": "None",
+            "color": "Auto"
+          },
+          "diag_down": {
+            "style": "None",
+            "color": "Auto"
+          },
+          "diag_up": {
+            "style": "None",
+            "color": "Auto"
+          }
+        },
+        "align": {
+          "h": "General",
+          "v": "Bottom",
+          "wrap": false,
+          "shrink": false,
+          "indent": 0,
+          "rotation": 0
+        },
+        "num_fmt": "General",
+        "protection": {
+          "locked": true,
+          "hidden": false
+        }
+      }
+    ]
+  },
+  "theme": {
+    "name": "Craft",
+    "colors": [
+      16777215,
+      0,
+      15263976,
+      927809,
+      1400962,
+      15298866,
+      1665828,
+      1023701,
+      10496915,
+      5154606,
+      4618374,
+      9855101
+    ],
+    "major_font": "Calibri",
+    "minor_font": "Calibri"
+  },
+  "date_system": "D1900",
+  "calc": {
+    "mode": "Automatic",
+    "iterative": false,
+    "max_iterations": 100,
+    "max_change": 0.001,
+    "precision_as_displayed": false
+  },
+  "active_sheet": 2,
+  "props": {
+    "title": "",
+    "subject": "",
+    "author": "",
+    "company": "",
+    "keywords": "",
+    "description": ""
+  },
+  "protected_structure": false,
+  "custom_lists": [],
+  "cell_styles": [],
+  "vba_project": null
+}

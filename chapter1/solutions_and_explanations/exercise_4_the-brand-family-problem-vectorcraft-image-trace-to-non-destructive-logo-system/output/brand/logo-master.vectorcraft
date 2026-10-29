@@ -1,0 +1,1395 @@
+{
+  "format": "vectorcraft",
+  "version": 4,
+  "generator": "VectorCraft 0.10.0",
+  "preview": {
+    "mime": "image/png",
+    "data": "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"
+  },
+  "document": {
+    "version": 1,
+    "title": "Untitled-2",
+    "units": "Pixels",
+    "color_mode": "Rgb",
+    "artboards": [
+      {
+        "id": 1,
+        "name": "Artboard 1",
+        "rect": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 512.0,
+          "y1": 512.0
+        },
+        "show_center_mark": false,
+        "show_cross_hairs": false
+      },
+      {
+        "id": 2,
+        "name": "Artboard 1 copy",
+        "rect": {
+          "x0": 532.0,
+          "y0": 0.0,
+          "x1": 1044.0,
+          "y1": 512.0
+        },
+        "show_center_mark": false,
+        "show_cross_hairs": false
+      }
+    ],
+    "layers": [
+      {
+        "id": 1,
+        "name": "Layer 1",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 0
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 6,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.050980393,
+                        "g": 0.5803922,
+                        "b": 0.53333336
+                      },
+                      "swatch": "Brand/Primary"
+                    }
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            256.114060211802,
+                            53.65066708313144
+                          ],
+                          "in": [
+                            144.1223007528186,
+                            53.824982879206345
+                          ],
+                          "out": [
+                            368.10581967078537,
+                            53.47635128705659
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            459.2087053009941,
+                            256.1140588337938
+                          ],
+                          "in": [
+                            459.03438950491926,
+                            144.12229937481044
+                          ],
+                          "out": [
+                            459.383021097069,
+                            368.10581829277714
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            256.74531355033173,
+                            459.20870392298593
+                          ],
+                          "in": [
+                            368.73707300931505,
+                            459.03438812691104
+                          ],
+                          "out": [
+                            144.75355409134835,
+                            459.38301971906077
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            53.65066846113963,
+                            256.7453121723235
+                          ],
+                          "in": [
+                            53.824984257214496,
+                            368.7370716313069
+                          ],
+                          "out": [
+                            53.47635266506475,
+                            144.75355271334016
+                          ],
+                          "kind": "Smooth"
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              },
+              "graphic_style": 5
+            },
+            {
+              "id": 8,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.972549,
+                        "g": 0.98039216,
+                        "b": 0.9882353
+                      },
+                      "swatch": "Brand/Inverse"
+                    }
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            788.114060211802,
+                            53.65066708313144
+                          ],
+                          "in": [
+                            676.1223007528185,
+                            53.824982879206345
+                          ],
+                          "out": [
+                            900.1058196707854,
+                            53.47635128705659
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            991.2087053009941,
+                            256.1140588337938
+                          ],
+                          "in": [
+                            991.0343895049193,
+                            144.12229937481044
+                          ],
+                          "out": [
+                            991.383021097069,
+                            368.10581829277714
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            788.7453135503317,
+                            459.20870392298593
+                          ],
+                          "in": [
+                            900.737073009315,
+                            459.03438812691104
+                          ],
+                          "out": [
+                            676.7535540913484,
+                            459.38301971906077
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            585.6506684611396,
+                            256.7453121723235
+                          ],
+                          "in": [
+                            585.8249842572145,
+                            368.7370716313069
+                          ],
+                          "out": [
+                            585.4763526650647,
+                            144.75355271334016
+                          ],
+                          "kind": "Smooth"
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              },
+              "graphic_style": 5
+            },
+            {
+              "id": 7,
+              "kind": {
+                "type": "text",
+                "kind": {
+                  "kind": "point"
+                },
+                "xf": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  256.0,
+                  430.0
+                ],
+                "runs": [
+                  {
+                    "text": "ACME",
+                    "style": {
+                      "font_family": "Inter",
+                      "font_style": "SemiBold",
+                      "size": 96.0,
+                      "tracking": 0.0,
+                      "baseline_shift": 0.0,
+                      "h_scale": 100.0,
+                      "v_scale": 100.0,
+                      "rotation": 0.0,
+                      "fill": {
+                        "type": "solid",
+                        "color": {
+                          "model": "rgb",
+                          "r": 0.050980393,
+                          "g": 0.5803922,
+                          "b": 0.53333336
+                        },
+                        "swatch": "Brand/Primary"
+                      },
+                      "stroke": {
+                        "type": "none"
+                      },
+                      "stroke_width": 0.0,
+                      "underline": false,
+                      "strikethrough": false,
+                      "all_caps": false
+                    }
+                  }
+                ],
+                "para": {
+                  "justify": "Center",
+                  "left_indent": 0.0,
+                  "right_indent": 0.0,
+                  "first_line_indent": 0.0,
+                  "space_before": 0.0,
+                  "space_after": 0.0,
+                  "hyphenate": false,
+                  "mojikumi": "lineEndHalf",
+                  "burasagari": "standard"
+                }
+              }
+            },
+            {
+              "id": 9,
+              "kind": {
+                "type": "text",
+                "kind": {
+                  "kind": "point"
+                },
+                "xf": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  788.0,
+                  430.0
+                ],
+                "runs": [
+                  {
+                    "text": "ACME",
+                    "style": {
+                      "font_family": "Inter",
+                      "font_style": "SemiBold",
+                      "size": 96.0,
+                      "tracking": 0.0,
+                      "baseline_shift": 0.0,
+                      "h_scale": 100.0,
+                      "v_scale": 100.0,
+                      "rotation": 0.0,
+                      "fill": {
+                        "type": "solid",
+                        "color": {
+                          "model": "rgb",
+                          "r": 0.972549,
+                          "g": 0.98039216,
+                          "b": 0.9882353
+                        },
+                        "swatch": "Brand/Inverse"
+                      },
+                      "stroke": {
+                        "type": "none"
+                      },
+                      "stroke_width": 0.0,
+                      "underline": false,
+                      "strikethrough": false,
+                      "all_caps": false
+                    }
+                  }
+                ],
+                "para": {
+                  "justify": "Center",
+                  "left_indent": 0.0,
+                  "right_indent": 0.0,
+                  "first_line_indent": 0.0,
+                  "space_before": 0.0,
+                  "space_after": 0.0,
+                  "hyphenate": false,
+                  "mojikumi": "lineEndHalf",
+                  "burasagari": "standard"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "swatches": [
+      {
+        "name": "[None]",
+        "paint": {
+          "type": "none"
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "White",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Black",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Red",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.92941177,
+            "g": 0.10980392,
+            "b": 0.14117648
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Orange Red",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.94509804,
+            "g": 0.3529412,
+            "b": 0.14117648
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Orange",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.96862745,
+            "g": 0.5764706,
+            "b": 0.11764706
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Amber",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.9843137,
+            "g": 0.6901961,
+            "b": 0.23137255
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Yellow",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.9882353,
+            "g": 0.93333334,
+            "b": 0.12941177
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Yellow Green",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.8509804,
+            "g": 0.8784314,
+            "b": 0.12941177
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Lime",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.54901963,
+            "g": 0.7764706,
+            "b": 0.24705882
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Green",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.22352941,
+            "g": 0.70980394,
+            "b": 0.2901961
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Emerald",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.57254905,
+            "b": 0.27058825
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Teal",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.40784314,
+            "b": 0.21568628
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Aqua",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.13333334,
+            "g": 0.70980394,
+            "b": 0.4509804
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Cyan Green",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.6627451,
+            "b": 0.6156863
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Cyan",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.16078432,
+            "g": 0.67058825,
+            "b": 0.8862745
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Azure",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.44313726,
+            "b": 0.7372549
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Blue",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.18039216,
+            "g": 0.19215687,
+            "b": 0.57254905
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Indigo",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.105882354,
+            "g": 0.078431375,
+            "b": 0.39215687
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Violet",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.4,
+            "g": 0.1764706,
+            "b": 0.5686275
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Purple",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.5764706,
+            "g": 0.15294118,
+            "b": 0.56078434
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Magenta",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.61960787,
+            "g": 0.0,
+            "b": 0.3647059
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Rose",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.83137256,
+            "g": 0.078431375,
+            "b": 0.3529412
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Pink",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.92941177,
+            "g": 0.11764706,
+            "b": 0.4745098
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Brown",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.78039217,
+            "g": 0.69803923,
+            "b": 0.6
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Tan",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.6,
+            "g": 0.5254902,
+            "b": 0.45882353
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Coffee",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.4509804,
+            "g": 0.3882353,
+            "b": 0.34117648
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Chocolate",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.3254902,
+            "g": 0.2784314,
+            "b": 0.25490198
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Sand",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.7764706,
+            "g": 0.6117647,
+            "b": 0.42745098
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Copper",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.6509804,
+            "g": 0.4862745,
+            "b": 0.32156864
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Rust",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.54901963,
+            "g": 0.38431373,
+            "b": 0.22352941
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Walnut",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.45882353,
+            "g": 0.29803923,
+            "b": 0.14117648
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Espresso",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.3764706,
+            "g": 0.21960784,
+            "b": 0.07450981
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "White, Black",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Linear",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Radial White, Black",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Radial",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Sunset",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Linear",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.9843137,
+                  "g": 0.6901961,
+                  "b": 0.23137255
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.83137256,
+                  "g": 0.078431375,
+                  "b": 0.3529412
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Ocean",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Linear",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.16078432,
+                  "g": 0.67058825,
+                  "b": 0.8862745
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.18039216,
+                  "g": 0.19215687,
+                  "b": 0.57254905
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Brand/Primary",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.050980393,
+            "g": 0.5803922,
+            "b": 0.53333336
+          }
+        },
+        "global": true,
+        "spot": false
+      },
+      {
+        "name": "Brand/Inverse",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.972549,
+            "g": 0.98039216,
+            "b": 0.9882353
+          }
+        },
+        "global": true,
+        "spot": false
+      }
+    ],
+    "swatch_groups": [
+      {
+        "name": "Grays",
+        "swatches": [
+          {
+            "name": "K=90",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.9
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=80",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.8
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=70",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.7
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=60",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.6
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=50",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.5
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=40",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.4
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=30",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.3
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=20",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.2
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=10",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.1
+              }
+            },
+            "global": false,
+            "spot": false
+          }
+        ]
+      },
+      {
+        "name": "Brights",
+        "swatches": [
+          {
+            "name": "Bright Red",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 1.0,
+                "g": 0.11372549,
+                "b": 0.14509805
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Yellow",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 1.0,
+                "g": 0.9019608,
+                "b": 0.0
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Green",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 0.0,
+                "g": 0.9019608,
+                "b": 0.4627451
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Blue",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 0.16078432,
+                "g": 0.4745098,
+                "b": 1.0
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Violet",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 0.8352941,
+                "g": 0.0,
+                "b": 0.9764706
+              }
+            },
+            "global": false,
+            "spot": false
+          }
+        ]
+      }
+    ],
+    "graphic_styles": [
+      {
+        "name": "Default Graphic Style",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0
+                }
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                }
+              },
+              "width": 1.0
+            }
+          ]
+        },
+        "id": 1,
+        "unit_box": true
+      },
+      {
+        "name": "Black Outline",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "none"
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                }
+              },
+              "width": 1.0
+            }
+          ]
+        },
+        "id": 2,
+        "unit_box": true
+      },
+      {
+        "name": "Heavy Ink",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.105882354,
+                  "g": 0.078431375,
+                  "b": 0.39215687
+                }
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                }
+              },
+              "width": 4.0
+            }
+          ]
+        },
+        "id": 3,
+        "unit_box": true
+      },
+      {
+        "name": "Sunshine",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.9843137,
+                  "g": 0.6901961,
+                  "b": 0.23137255
+                }
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.94509804,
+                  "g": 0.3529412,
+                  "b": 0.14117648
+                }
+              },
+              "width": 2.0
+            }
+          ]
+        },
+        "id": 4,
+        "unit_box": true
+      },
+      {
+        "name": "Logo/Mark",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.050980393,
+                  "g": 0.5803922,
+                  "b": 0.53333336
+                },
+                "swatch": "Brand/Primary"
+              }
+            }
+          ]
+        },
+        "id": 5,
+        "unit_box": true
+      }
+    ],
+    "symbols": [],
+    "guides": [],
+    "grid": {
+      "spacing": 72.0,
+      "subdivisions": 8
+    },
+    "raster_effects_ppi": 72.0,
+    "images": {},
+    "next_id": 10,
+    "metadata": {
+      "author": "",
+      "authorTitle": "",
+      "description": "",
+      "keywords": [],
+      "rating": 0,
+      "copyrightStatus": "unknown",
+      "copyrightNotice": "",
+      "copyrightUrl": "",
+      "created": 1793021223,
+      "modified": 1793021223
+    },
+    "export_settings": {
+      "folder": "chapter1/solutions_and_explanations/exercise_4_the-brand-family-problem-vectorcraft-image-trace-to-non-destructive-logo-system/output/brand/favicons",
+      "formats": [
+        {
+          "format": "png",
+          "height": 16,
+          "suffix": "-16",
+          "width": 16
+        },
+        {
+          "format": "png",
+          "height": 32,
+          "suffix": "-32",
+          "width": 32
+        },
+        {
+          "format": "png",
+          "height": 180,
+          "suffix": "-180",
+          "width": 180
+        },
+        {
+          "format": "png",
+          "height": 512,
+          "suffix": "-512",
+          "width": 512
+        }
+      ],
+      "prefix": "acme",
+      "settings": {
+        "png": {
+          "antiAlias": "art",
+          "background": "transparent"
+        }
+      }
+    }
+  },
+  "images": {}
+}

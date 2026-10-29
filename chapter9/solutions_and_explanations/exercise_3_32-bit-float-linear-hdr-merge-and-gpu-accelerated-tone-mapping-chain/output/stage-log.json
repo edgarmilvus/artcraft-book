@@ -1,0 +1,42 @@
+[
+  {
+    "stage": "pre_merge_set-a",
+    "ok": true,
+    "elapsed_ms": 31,
+    "gpu_used": true,
+    "gpu_last_fallback": null,
+    "warnings": []
+  },
+  {
+    "stage": "pre_export_hdr_master",
+    "ok": true,
+    "elapsed_ms": 205,
+    "gpu_used": true,
+    "gpu_last_fallback": null,
+    "warnings": []
+  },
+  {
+    "stage": "pre_export_sdr_master",
+    "ok": true,
+    "elapsed_ms": 58,
+    "gpu_used": true,
+    "gpu_last_fallback": null,
+    "warnings": []
+  },
+  {
+    "stage": "pre_export_web_hero",
+    "ok": true,
+    "elapsed_ms": 249,
+    "gpu_used": true,
+    "gpu_last_fallback": null,
+    "warnings": []
+  },
+  {
+    "stage": "pre_export_thumb",
+    "ok": true,
+    "elapsed_ms": 11,
+    "gpu_used": true,
+    "gpu_last_fallback": null,
+    "warnings": []
+  }
+]

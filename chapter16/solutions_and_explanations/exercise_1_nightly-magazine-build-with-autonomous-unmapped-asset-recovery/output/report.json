@@ -1,0 +1,21 @@
+{
+  "exercise": 1,
+  "engine": "DesignCraft nightly build (pure tiers + HMAC, real PDF)",
+  "assertions": 49,
+  "tiers": [
+    "direct",
+    "ledger",
+    "placeholder",
+    "placeholder"
+  ],
+  "articles": 4,
+  "signature": "1bee04f7d6126dc2b811306ed2b949ac03b0a375939d70c5daaef7c9f1cc6bad",
+  "artefacts": [
+    "issue-001.pdf",
+    "sidecar.json",
+    "resolution-log.json",
+    "placeholder.png",
+    "cache/hero-direct.img"
+  ],
+  "result": "twelve-page PDF built; direct, verified-ledger and placeholder tiers exercised; frozen style batch and recursive HMAC sidecar verified"
+}

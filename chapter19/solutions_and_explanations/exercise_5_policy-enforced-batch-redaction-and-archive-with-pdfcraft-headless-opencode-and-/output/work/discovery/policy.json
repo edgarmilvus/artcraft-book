@@ -1,0 +1,15 @@
+{
+  "tenant": "harrow-vale",
+  "pdfaLevel": "2b",
+  "builtInPatterns": [
+    "phone",
+    "email",
+    "credit-card",
+    "ssn",
+    "date"
+  ],
+  "clientPatternFile": "discovery/pii-extra.txt",
+  "signedPolicy": "manual_queue",
+  "sandboxAttestation": true,
+  "requireEmbeddedFonts": true
+}

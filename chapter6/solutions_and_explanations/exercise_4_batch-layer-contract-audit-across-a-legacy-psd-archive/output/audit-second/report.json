@@ -1,0 +1,54 @@
+{
+  "baselineHash": "c4fec7c08592dd0a474cf43fbe4dfb9ecf209f2f97300324a0592d2ccca7a025",
+  "entries": [
+    {
+      "file": "chapter6/solutions_and_explanations/exercise_4_batch-layer-contract-audit-across-a-legacy-psd-archive/output/archive/a-good.psd",
+      "treeHash": "c4fec7c08592dd0a474cf43fbe4dfb9ecf209f2f97300324a0592d2ccca7a025",
+      "layerCount": 6,
+      "deepestNesting": 2,
+      "verdict": "pass",
+      "reasons": []
+    },
+    {
+      "file": "chapter6/solutions_and_explanations/exercise_4_batch-layer-contract-audit-across-a-legacy-psd-archive/output/archive/b-renamed.psd",
+      "treeHash": "1ad6b70d6dd2360b983af74e502a8a97d0f386d506903831734d2d7a902ad3d1",
+      "layerCount": 6,
+      "deepestNesting": 2,
+      "verdict": "warn",
+      "reasons": [
+        "tree-differs-from-baseline"
+      ]
+    },
+    {
+      "file": "chapter6/solutions_and_explanations/exercise_4_batch-layer-contract-audit-across-a-legacy-psd-archive/output/archive/c-flat.psd",
+      "treeHash": "7ca16624256fdf892c5de9c2ba42b18125bd079e36721a877c388a9746c2045f",
+      "layerCount": 1,
+      "deepestNesting": 0,
+      "verdict": "fail",
+      "reasons": [
+        "missing-background-group"
+      ]
+    },
+    {
+      "file": "chapter6/solutions_and_explanations/exercise_4_batch-layer-contract-audit-across-a-legacy-psd-archive/output/archive/d-topclip.psd",
+      "treeHash": "4529672b59228010e45cb8672538c788cf48711d629f40bfd0a4c528176cb97b",
+      "layerCount": 2,
+      "deepestNesting": 0,
+      "verdict": "fail",
+      "reasons": [
+        "top-level-clipped: Loose",
+        "missing-background-group"
+      ]
+    },
+    {
+      "file": "chapter6/solutions_and_explanations/exercise_4_batch-layer-contract-audit-across-a-legacy-psd-archive/output/archive/e-broken.psd",
+      "verdict": "fail",
+      "reasons": [
+        "unreadable: codec: unrecognized image format"
+      ],
+      "treeHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "layerCount": 0,
+      "deepestNesting": 0
+    }
+  ]
+}

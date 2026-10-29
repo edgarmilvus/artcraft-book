@@ -1,0 +1,37 @@
+{
+  "photoId": "P-003",
+  "outcome": "stalled",
+  "iterationCount": 4,
+  "auditCount": 7,
+  "bestIndex": 2,
+  "finalAudit": {
+    "status": "adjust",
+    "rationale": "The composite needs a change on this axis.",
+    "adjustment": {
+      "target": "highlights",
+      "delta": -8.0
+    }
+  },
+  "finalPath": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-003/final.png",
+  "finalSha256": "14b9cc353caa54c24d7be160c1ac130d13d4d0e92f3f563ff46e93d910b2d885",
+  "grade": {
+    "highlights": 111.0,
+    "shadows": 0.0,
+    "whites": 255.0,
+    "blacks": 0.0,
+    "gamma": 1.0,
+    "temperature": 0.0,
+    "tint": 0.0,
+    "split-tone-shadows": 0.0,
+    "split-tone-highlights": 0.0,
+    "vibrance": 0.0,
+    "saturation": 0.0,
+    "contrast": 0.0,
+    "grain": 0.0
+  },
+  "costUsd": 0.02604,
+  "tokens": {
+    "input": 8400,
+    "output": 280
+  }
+}

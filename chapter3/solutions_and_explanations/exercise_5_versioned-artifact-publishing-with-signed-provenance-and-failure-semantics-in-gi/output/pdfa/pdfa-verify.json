@@ -1,0 +1,29 @@
+{
+  "level": "PDF/A-2b",
+  "compliant": false,
+  "declared": {
+    "output_intents": [],
+    "pdfa": null,
+    "pdfua": null
+  },
+  "issues": [
+    {
+      "clause": "6.6.4",
+      "fixable": true,
+      "message": "The metadata doesn't identify the file as PDF/A-2b",
+      "page": null
+    },
+    {
+      "clause": "6.2.3",
+      "fixable": false,
+      "message": "Device colour is used, but there is no PDF/A output intent",
+      "page": null
+    },
+    {
+      "clause": "6.2.4.3",
+      "fixable": false,
+      "message": "DeviceCMYK is used: it needs a CMYK output intent (not added automatically)",
+      "page": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "links": [],
+  "fonts": [
+    {
+      "characters": 28,
+      "family": "Source Serif 4",
+      "missing": false,
+      "source": "bundled",
+      "style": "Regular",
+      "styleMissing": false
+    }
+  ],
+  "colorMismatches": []
+}

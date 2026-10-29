@@ -1,0 +1,3 @@
+{"step": 1, "phase": "observe", "payload": {"trigger": {"jobId": "job-budget", "missingPath": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets/lifestyle/window-01.jpg", "campaignId": "cmp-windowsill"}, "candidatesFound": 0, "refinementsUsed": 0, "elapsedSec": 0.02, "budget": {"tokensIn": 0, "tokensOut": 0, "maxSteps": 8}}, "at": "2026-10-26T13:34:24.928282+00:00"}
+{"step": 1, "phase": "reason", "payload": {"plan": [], "tokensIn": 120000, "tokensOut": 4000}, "at": "2026-10-26T13:34:24.928466+00:00"}
+{"step": 1, "phase": "budget-exceeded", "payload": {"tokensIn": 120000, "tokensOut": 4000}, "at": "2026-10-26T13:34:24.928536+00:00"}

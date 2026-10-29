@@ -1,0 +1,6 @@
+// font-aliases.json (human-committed input the agent MUST honour)
+{
+  "Inter-Bold": "Inter-SemiBold",              // the studio's own composite font definition
+  "Futura-PT-Italic": null,          // null = no acceptable substitute → agent must halt
+  "AdobeGaramondPro-Regular": "Source Serif 4"  // a family the engine can actually resolve
+}

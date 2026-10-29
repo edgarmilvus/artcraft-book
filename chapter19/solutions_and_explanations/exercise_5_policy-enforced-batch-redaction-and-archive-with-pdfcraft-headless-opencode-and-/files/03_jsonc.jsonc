@@ -1,0 +1,7 @@
+// pii-extra.txt (one regular expression per line — client-supplied).
+// A line that starts with # is a comment; every other line is a Python
+// regular expression.  PdfCraft's redact_mark `find` is a literal search, so
+// the pipeline resolves each expression against the page text and then asks
+// the engine for the rectangles of the literal it matched.
+Matter 4421\-[A-Z]{2}
+ACME\-CONF\-\d{4}

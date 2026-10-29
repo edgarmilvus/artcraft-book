@@ -1,0 +1,31 @@
+digraph issue_pipeline {
+  rankdir=LR;
+  "dc_open" [label="dc_open\ndesigncraft\nfile.open"];
+  "dc_frame" [label="dc_frame\ndesigncraft\nframe.create"];
+  "dc_type" [label="dc_type\ndesigncraft\ntype.char"];
+  "print_pdf" [label="print_pdf\ndesigncraft\nfile.exportPdf"];
+  "web_pdf" [label="web_pdf\ndesigncraft\nfile.exportPdf"];
+  "web_html" [label="web_html\ndesigncraft\nfile.exportHtml"];
+  "wc_open" [label="wc_open\nwordcraft\nopen_document"];
+  "wc_apply_style" [label="wc_apply_style\nwordcraft\nformat.set"];
+  "wc_save" [label="wc_save\nwordcraft\nsave_document"];
+  "pc_open" [label="pc_open\npdfcraft\ndoc_open"];
+  "pc_redact_mark" [label="pc_redact_mark\npdfcraft\nredact_mark"];
+  "pc_redact_apply" [label="pc_redact_apply\npdfcraft\nredact_apply"];
+  "pc_sign_field" [label="pc_sign_field\npdfcraft\nform_add_field"];
+  "pc_a11y_check" [label="pc_a11y_check\npdfcraft\naccessibility_check"];
+  "pc_save" [label="pc_save\npdfcraft\ndoc_save"];
+  "dc_open" -> "dc_frame";
+  "dc_frame" -> "dc_type";
+  "dc_type" -> "print_pdf";
+  "dc_type" -> "web_pdf";
+  "dc_type" -> "web_html";
+  "wc_open" -> "wc_apply_style";
+  "wc_apply_style" -> "wc_save";
+  "print_pdf" -> "pc_open";
+  "pc_open" -> "pc_redact_mark";
+  "pc_redact_mark" -> "pc_redact_apply";
+  "pc_redact_apply" -> "pc_sign_field";
+  "pc_sign_field" -> "pc_a11y_check";
+  "pc_a11y_check" -> "pc_save";
+}

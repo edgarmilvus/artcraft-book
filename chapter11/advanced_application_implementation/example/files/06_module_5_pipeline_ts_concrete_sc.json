@@ -1,0 +1,24 @@
+{
+  "sequenceName": "summer-reel-96bpm",
+  "width": 1920,
+  "height": 1080,
+  "fps": { "num": 30000, "den": 1001 },
+  "sampleRate": 48000,
+  "bpm": 96,
+  "beatsPerBar": 4,
+  "barsPerCut": 1,
+  "downbeatSeconds": "0.250",
+  "cutCount": 16,
+  "musicPath": "/work/cloudcut/input/music/bed-96.mp3",
+  "clipPaths": [
+    "/work/cloudcut/input/clip-01.mp4",
+    "/work/cloudcut/input/clip-02.mp4",
+    "/work/cloudcut/input/clip-03.mp4",
+    "/work/cloudcut/input/clip-04.mp4",
+    "/work/cloudcut/input/clip-05.mp4"
+  ],
+  "audioCrossfadeBeats": 0.125,
+  "videoCrossfadeBeats": 0.5,
+  "renderFirstFrame": true,
+  "outputPath": "/work/cloudcut/output/summer-reel.mp4"
+}

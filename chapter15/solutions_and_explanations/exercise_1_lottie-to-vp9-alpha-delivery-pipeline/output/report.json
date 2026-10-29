@@ -1,0 +1,16 @@
+{
+  "exercise": 1,
+  "engine": "ffmpeg + Lottie manifest (pure delivery proof)",
+  "assertions": 18,
+  "frames": 12,
+  "webmBytes": 2673,
+  "pixFmt": "yuva420p",
+  "artefacts": [
+    "lottie.json",
+    "frames/",
+    "hero-vp9.webm",
+    "delivery.json",
+    "delivery-copy.json"
+  ],
+  "result": "12 frames encoded to VP9 alpha; yuva420p, hashes and parity manifest verified"
+}

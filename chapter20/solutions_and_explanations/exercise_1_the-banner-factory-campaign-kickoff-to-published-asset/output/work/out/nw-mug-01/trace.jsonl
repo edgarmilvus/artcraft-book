@@ -1,0 +1,188 @@
+{"seq": 1, "tool": "doc_open", "commandId": "doc_open", "elapsedMs": 0, "error": null}
+{"seq": 2, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 37}}
+{"seq": 3, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 37}}
+{"seq": 4, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 37}}
+{"seq": 5, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 37}}
+{"seq": 6, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 37}}
+{"seq": 7, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 37}}
+{"seq": 8, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 37}}
+{"seq": 9, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 37}}
+{"seq": 10, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 37}}
+{"seq": 11, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 37}}
+{"seq": 12, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 37}}
+{"seq": 13, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 37}}
+{"seq": 14, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 87}}
+{"seq": 15, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 87}}
+{"seq": 16, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 87}}
+{"seq": 17, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 87}}
+{"seq": 18, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 87}}
+{"seq": 19, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 87}}
+{"seq": 20, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 87}}
+{"seq": 21, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 87}}
+{"seq": 22, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 87}}
+{"seq": 23, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 87}}
+{"seq": 24, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 87}}
+{"seq": 25, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 87}}
+{"seq": 26, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 137}}
+{"seq": 27, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 137}}
+{"seq": 28, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 137}}
+{"seq": 29, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 137}}
+{"seq": 30, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 137}}
+{"seq": 31, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 137}}
+{"seq": 32, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 137}}
+{"seq": 33, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 137}}
+{"seq": 34, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 137}}
+{"seq": 35, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 137}}
+{"seq": 36, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 137}}
+{"seq": 37, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 137}}
+{"seq": 38, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 187}}
+{"seq": 39, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 187}}
+{"seq": 40, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 187}}
+{"seq": 41, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 187}}
+{"seq": 42, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 187}}
+{"seq": 43, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 187}}
+{"seq": 44, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 187}}
+{"seq": 45, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 187}}
+{"seq": 46, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 187}}
+{"seq": 47, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 187}}
+{"seq": 48, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 187}}
+{"seq": 49, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 187}}
+{"seq": 50, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 237}}
+{"seq": 51, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 237}}
+{"seq": 52, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 237}}
+{"seq": 53, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 237}}
+{"seq": 54, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 237}}
+{"seq": 55, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 237}}
+{"seq": 56, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 237}}
+{"seq": 57, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 237}}
+{"seq": 58, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 237}}
+{"seq": 59, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 237}}
+{"seq": 60, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 237}}
+{"seq": 61, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 237}}
+{"seq": 62, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 287}}
+{"seq": 63, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 287}}
+{"seq": 64, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 287}}
+{"seq": 65, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 287}}
+{"seq": 66, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 287}}
+{"seq": 67, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 287}}
+{"seq": 68, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 287}}
+{"seq": 69, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 287}}
+{"seq": 70, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 287}}
+{"seq": 71, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 287}}
+{"seq": 72, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 287}}
+{"seq": 73, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 287}}
+{"seq": 74, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 337}}
+{"seq": 75, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 337}}
+{"seq": 76, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 337}}
+{"seq": 77, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 337}}
+{"seq": 78, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 337}}
+{"seq": 79, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 337}}
+{"seq": 80, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 337}}
+{"seq": 81, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 337}}
+{"seq": 82, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 337}}
+{"seq": 83, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 337}}
+{"seq": 84, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 337}}
+{"seq": 85, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 337}}
+{"seq": 86, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 387}}
+{"seq": 87, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 387}}
+{"seq": 88, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 387}}
+{"seq": 89, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 387}}
+{"seq": 90, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 387}}
+{"seq": 91, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 387}}
+{"seq": 92, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 387}}
+{"seq": 93, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 387}}
+{"seq": 94, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 387}}
+{"seq": 95, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 387}}
+{"seq": 96, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 387}}
+{"seq": 97, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 387}}
+{"seq": 98, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 437}}
+{"seq": 99, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 437}}
+{"seq": 100, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 437}}
+{"seq": 101, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 437}}
+{"seq": 102, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 437}}
+{"seq": 103, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 437}}
+{"seq": 104, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 437}}
+{"seq": 105, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 437}}
+{"seq": 106, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 437}}
+{"seq": 107, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 437}}
+{"seq": 108, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 437}}
+{"seq": 109, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 437}}
+{"seq": 110, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 487}}
+{"seq": 111, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 487}}
+{"seq": 112, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 487}}
+{"seq": 113, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 487}}
+{"seq": 114, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 487}}
+{"seq": 115, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 487}}
+{"seq": 116, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 487}}
+{"seq": 117, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 487}}
+{"seq": 118, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 487}}
+{"seq": 119, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 487}}
+{"seq": 120, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 487}}
+{"seq": 121, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 487}}
+{"seq": 122, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 537}}
+{"seq": 123, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 537}}
+{"seq": 124, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 537}}
+{"seq": 125, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 537}}
+{"seq": 126, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 537}}
+{"seq": 127, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 537}}
+{"seq": 128, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 537}}
+{"seq": 129, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 537}}
+{"seq": 130, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 537}}
+{"seq": 131, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 537}}
+{"seq": 132, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 537}}
+{"seq": 133, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 537}}
+{"seq": 134, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 11, "y": 587}}
+{"seq": 135, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 61, "y": 587}}
+{"seq": 136, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 111, "y": 587}}
+{"seq": 137, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 161, "y": 587}}
+{"seq": 138, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 211, "y": 587}}
+{"seq": 139, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 261, "y": 587}}
+{"seq": 140, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 311, "y": 587}}
+{"seq": 141, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 361, "y": 587}}
+{"seq": 142, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 411, "y": 587}}
+{"seq": 143, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 461, "y": 587}}
+{"seq": 144, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 511, "y": 587}}
+{"seq": 145, "tool": "command_run", "commandId": "document.pixel", "elapsedMs": 0, "error": null, "params": {"x": 561, "y": 587}}
+{"seq": 146, "tool": "doc_close", "commandId": "doc_close", "elapsedMs": 0, "error": null}
+{"seq": 147, "tool": "doc_open", "commandId": "doc_open", "elapsedMs": 0, "error": null}
+{"seq": 148, "tool": "command_run", "commandId": "image.crop", "elapsedMs": 7, "error": null, "params": {"x": 0, "y": 143, "width": 600, "height": 314, "targetWidth": 950, "targetHeight": 497}}
+{"seq": 149, "tool": "doc_save", "commandId": "doc_save", "elapsedMs": 24, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out/nw-mug-01/cutouts/amazon.png", "format": "png"}}
+{"seq": 150, "tool": "doc_close", "commandId": "doc_close", "elapsedMs": 0, "error": null}
+{"seq": 151, "tool": "doc_open", "commandId": "doc_open", "elapsedMs": 0, "error": null}
+{"seq": 152, "tool": "command_run", "commandId": "image.crop", "elapsedMs": 8, "error": null, "params": {"x": 0, "y": 212, "width": 600, "height": 176, "targetWidth": 1690, "targetHeight": 497}}
+{"seq": 153, "tool": "doc_save", "commandId": "doc_save", "elapsedMs": 26, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out/nw-mug-01/cutouts/web.png", "format": "png"}}
+{"seq": 154, "tool": "doc_close", "commandId": "doc_close", "elapsedMs": 0, "error": null}
+{"seq": 155, "tool": "doc_open", "commandId": "doc_open", "elapsedMs": 0, "error": null}
+{"seq": 156, "tool": "command_run", "commandId": "image.crop", "elapsedMs": 9, "error": null, "params": {"x": 0, "y": 104, "width": 600, "height": 392, "targetWidth": 950, "targetHeight": 621}}
+{"seq": 157, "tool": "doc_save", "commandId": "doc_save", "elapsedMs": 15, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out/nw-mug-01/cutouts/instagram.png", "format": "png"}}
+{"seq": 158, "tool": "doc_close", "commandId": "doc_close", "elapsedMs": 0, "error": null}
+{"seq": 159, "tool": "doc_new", "commandId": "doc_new", "elapsedMs": 1, "error": null, "params": {"width": 1080, "height": 1080, "mode": "rgb", "depth": 8, "background": "#101820"}}
+{"seq": 160, "tool": "doc_place", "commandId": "doc_place", "elapsedMs": 11, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out/nw-mug-01/cutouts/amazon.png", "center": [540.0, 615.6]}}
+{"seq": 161, "tool": "doc_place", "commandId": "doc_place", "elapsedMs": 243, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/assets/chip.svg", "center": [165, 65]}}
+{"seq": 162, "tool": "command_run", "commandId": "shape.create", "elapsedMs": 1, "error": null, "params": {"kind": "rect", "rect": [65, 880, 367, 6], "fill": "#c85a28", "name": "accent-rule"}}
+{"seq": 163, "tool": "command_run", "commandId": "type.create", "elapsedMs": 3, "error": null, "params": {"x": 0, "y": 0, "box": [65, 108, 950, 140], "align": "left", "text": "Made for the windowsill", "font": "Source Serif 4", "size": 67, "color": "#ffffff"}}
+{"seq": 164, "tool": "command_run", "commandId": "type.create", "elapsedMs": 4, "error": null, "params": {"x": 0, "y": 0, "box": [65, 254, 950, 97], "align": "left", "text": "Ceramic, hand-glazed, 350 ml", "font": "Source Serif 4", "size": 35, "color": "#d8dee6"}}
+{"seq": 165, "tool": "command_run", "commandId": "type.create", "elapsedMs": 1, "error": null, "params": {"x": 0, "y": 0, "box": [65, 913, 950, 86], "align": "left", "text": "See the range", "font": "Source Serif 4", "size": 41, "color": "#ffd166"}}
+{"seq": 166, "tool": "command_run", "commandId": "type.create", "elapsedMs": 5, "error": null, "params": {"x": 0, "y": 0, "box": [65, 1010, 950, 54], "align": "left", "text": "Terms apply. See northwind.example/terms for the full conditions.", "font": "Source Serif 4", "size": 23, "color": "#8b98a5"}}
+{"seq": 167, "tool": "doc_save", "commandId": "doc_save", "elapsedMs": 52, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out/nw-mug-01/banners/amazon.png", "format": "png"}}
+{"seq": 168, "tool": "doc_close", "commandId": "doc_close", "elapsedMs": 0, "error": null}
+{"seq": 169, "tool": "doc_new", "commandId": "doc_new", "elapsedMs": 2, "error": null, "params": {"width": 1920, "height": 1080, "mode": "rgb", "depth": 8, "background": "#101820"}}
+{"seq": 170, "tool": "doc_place", "commandId": "doc_place", "elapsedMs": 21, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out/nw-mug-01/cutouts/web.png", "center": [960.0, 615.6]}}
+{"seq": 171, "tool": "doc_place", "commandId": "doc_place", "elapsedMs": 13, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/assets/chip.svg", "center": [215, 65]}}
+{"seq": 172, "tool": "command_run", "commandId": "shape.create", "elapsedMs": 1, "error": null, "params": {"kind": "rect", "rect": [115, 880, 653, 6], "fill": "#c85a28", "name": "accent-rule"}}
+{"seq": 173, "tool": "command_run", "commandId": "type.create", "elapsedMs": 3, "error": null, "params": {"x": 0, "y": 0, "box": [115, 108, 1690, 140], "align": "left", "text": "Made for the windowsill", "font": "Source Serif 4", "size": 67, "color": "#ffffff"}}
+{"seq": 174, "tool": "command_run", "commandId": "type.create", "elapsedMs": 4, "error": null, "params": {"x": 0, "y": 0, "box": [115, 254, 1690, 97], "align": "left", "text": "Ceramic, hand-glazed, 350 ml", "font": "Source Serif 4", "size": 35, "color": "#d8dee6"}}
+{"seq": 175, "tool": "command_run", "commandId": "type.create", "elapsedMs": 1, "error": null, "params": {"x": 0, "y": 0, "box": [115, 913, 1690, 86], "align": "left", "text": "See the range", "font": "Source Serif 4", "size": 41, "color": "#ffd166"}}
+{"seq": 176, "tool": "command_run", "commandId": "type.create", "elapsedMs": 5, "error": null, "params": {"x": 0, "y": 0, "box": [115, 1010, 1690, 54], "align": "left", "text": "Terms apply. See northwind.example/terms for the full conditions.", "font": "Source Serif 4", "size": 23, "color": "#8b98a5"}}
+{"seq": 177, "tool": "doc_save", "commandId": "doc_save", "elapsedMs": 84, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out/nw-mug-01/banners/web.png", "format": "png"}}
+{"seq": 178, "tool": "doc_close", "commandId": "doc_close", "elapsedMs": 0, "error": null}
+{"seq": 179, "tool": "doc_new", "commandId": "doc_new", "elapsedMs": 1, "error": null, "params": {"width": 1080, "height": 1350, "mode": "rgb", "depth": 8, "background": "#101820"}}
+{"seq": 180, "tool": "doc_place", "commandId": "doc_place", "elapsedMs": 13, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out/nw-mug-01/cutouts/instagram.png", "center": [540.0, 769.5000000000001]}}
+{"seq": 181, "tool": "doc_place", "commandId": "doc_place", "elapsedMs": 13, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/assets/chip.svg", "center": [165, 81]}}
+{"seq": 182, "tool": "command_run", "commandId": "shape.create", "elapsedMs": 1, "error": null, "params": {"kind": "rect", "rect": [65, 1100, 367, 8], "fill": "#c85a28", "name": "accent-rule"}}
+{"seq": 183, "tool": "command_run", "commandId": "type.create", "elapsedMs": 3, "error": null, "params": {"x": 0, "y": 0, "box": [65, 135, 950, 176], "align": "left", "text": "Made for the windowsill", "font": "Source Serif 4", "size": 84, "color": "#ffffff"}}
+{"seq": 184, "tool": "command_run", "commandId": "type.create", "elapsedMs": 2, "error": null, "params": {"x": 0, "y": 0, "box": [65, 317, 950, 122], "align": "left", "text": "Ceramic, hand-glazed, 350 ml", "font": "Source Serif 4", "size": 43, "color": "#d8dee6"}}
+{"seq": 185, "tool": "command_run", "commandId": "type.create", "elapsedMs": 1, "error": null, "params": {"x": 0, "y": 0, "box": [65, 1141, 950, 108], "align": "left", "text": "See the range", "font": "Source Serif 4", "size": 51, "color": "#ffd166"}}
+{"seq": 186, "tool": "command_run", "commandId": "type.create", "elapsedMs": 5, "error": null, "params": {"x": 0, "y": 0, "box": [65, 1262, 950, 68], "align": "left", "text": "Terms apply. See northwind.example/terms for the full conditions.", "font": "Source Serif 4", "size": 28, "color": "#8b98a5"}}
+{"seq": 187, "tool": "doc_save", "commandId": "doc_save", "elapsedMs": 68, "error": null, "params": {"path": "chapter20/solutions_and_explanations/exercise_1_the-banner-factory-campaign-kickoff-to-published-asset/output/work/out/nw-mug-01/banners/instagram.png", "format": "png"}}
+{"seq": 188, "tool": "doc_close", "commandId": "doc_close", "elapsedMs": 0, "error": null}

@@ -1,0 +1,14 @@
+{
+  "exercise": 2,
+  "engine": "DesignCraft baseline-grid QA (pure geometry, real proof sheet)",
+  "assertions": 49,
+  "spreads": 12,
+  "entries": 744,
+  "outliers": 0,
+  "artefacts": [
+    "gridMap.json",
+    "gridAssertion.json",
+    "baseline-grid.png"
+  ],
+  "result": "twelve spreads at 13 pt/6.5 pt invariants; every line measured on the grid and the assertion passes"
+}

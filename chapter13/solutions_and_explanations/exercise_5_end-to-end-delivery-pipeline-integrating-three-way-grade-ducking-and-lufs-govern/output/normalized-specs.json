@@ -1,0 +1,39 @@
+{
+  "streamingA": {
+    "client": "StreamingA",
+    "creativeTone": "warm_cinematic",
+    "acquisitionCamera": "Sony FX6",
+    "loudnessStandard": "STREAMING",
+    "integratedLufsTarget": -14,
+    "integratedLufsTolerance": 1,
+    "truePeakCeilingDbtp": -1,
+    "expectedRuntimeSec": 900,
+    "targetCodec": "h264",
+    "targetContainer": "mov"
+  },
+  "streamingB": {
+    "client": "StreamingB",
+    "creativeTone": "cool_desaturated",
+    "acquisitionCamera": "ARRI Alexa",
+    "loudnessStandard": "ATSC_A85",
+    "integratedLufsTarget": -24,
+    "integratedLufsTolerance": 2,
+    "truePeakCeilingDbtp": -2,
+    "expectedRuntimeSec": 1200,
+    "targetCodec": "prores",
+    "targetContainer": "mov",
+    "proresProfile": "4444"
+  },
+  "broadcastX": {
+    "client": "BroadcastX",
+    "creativeTone": "warm_cinematic",
+    "acquisitionCamera": "Sony HDC-3500",
+    "loudnessStandard": "EBU_R128",
+    "integratedLufsTarget": -23,
+    "integratedLufsTolerance": 0.5,
+    "truePeakCeilingDbtp": -1,
+    "expectedRuntimeSec": 2520,
+    "targetCodec": "dnxhr",
+    "targetContainer": "mov"
+  }
+}

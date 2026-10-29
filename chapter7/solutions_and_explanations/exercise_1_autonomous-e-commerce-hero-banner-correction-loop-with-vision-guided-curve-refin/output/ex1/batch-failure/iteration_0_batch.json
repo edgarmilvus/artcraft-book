@@ -1,0 +1,29 @@
+[
+  {
+    "id": "select.rect",
+    "params": {
+      "x": 100,
+      "y": 100,
+      "width": 500,
+      "height": 400,
+      "mode": "replace",
+      "antiAlias": true,
+      "feather": 24
+    }
+  },
+  {
+    "id": "layer.newAdjustmentLayer.curves",
+    "params": {
+      "points": [
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "id": "select.deselect",
+    "params": {}
+  }
+]

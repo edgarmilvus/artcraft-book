@@ -1,0 +1,13 @@
+{
+  "name": "hello-editorial",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "tsx hello-editorial.ts" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}

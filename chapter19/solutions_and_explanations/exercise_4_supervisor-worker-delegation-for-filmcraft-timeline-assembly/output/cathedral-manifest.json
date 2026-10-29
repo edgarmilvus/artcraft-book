@@ -1,0 +1,90 @@
+{
+  "runId": "2026-01-14-cathedral",
+  "startedIso": "2026-01-14T09:00:00.000Z",
+  "finishedIso": "2026-01-14T09:00:00.000Z",
+  "workers": [
+    "worker-a",
+    "worker-b",
+    "worker-c"
+  ],
+  "scenes": [
+    {
+      "sceneNumber": 42,
+      "slug": "INT. CHAPEL - NIGHT",
+      "workerId": "worker-a",
+      "status": "assembled",
+      "delegationId": "00000000-0000-4000-8000-000000000001",
+      "completed": true,
+      "failedOperations": 0,
+      "skippedOperations": 0,
+      "mediaCacheMisses": 0,
+      "undoMarkers": [
+        "timeline.place",
+        "timeline.place",
+        "sequence.applyVideoTransition",
+        "sequence.applyAudioTransition"
+      ],
+      "clipOrderMatchesCallSheet": true,
+      "mismatches": []
+    },
+    {
+      "sceneNumber": 43,
+      "slug": "EXT. CLIFF - DUSK",
+      "workerId": "worker-b",
+      "status": "assembled",
+      "delegationId": "00000000-0000-4000-8000-000000000002",
+      "completed": true,
+      "failedOperations": 0,
+      "skippedOperations": 0,
+      "mediaCacheMisses": 2,
+      "undoMarkers": [
+        "timeline.place",
+        "timeline.place"
+      ],
+      "clipOrderMatchesCallSheet": true,
+      "mismatches": []
+    },
+    {
+      "sceneNumber": 44,
+      "slug": "INT. CLOISTER - DAWN",
+      "workerId": "worker-c",
+      "status": "assembled",
+      "delegationId": "00000000-0000-4000-8000-000000000003",
+      "completed": true,
+      "failedOperations": 0,
+      "skippedOperations": 0,
+      "mediaCacheMisses": 0,
+      "undoMarkers": [
+        "timeline.place"
+      ],
+      "clipOrderMatchesCallSheet": true,
+      "mismatches": []
+    }
+  ],
+  "postConditions": [
+    {
+      "sceneNumber": 42,
+      "singleWorker": true,
+      "workerId": "worker-a",
+      "clipOrderMatchesCallSheet": true
+    },
+    {
+      "sceneNumber": 43,
+      "singleWorker": true,
+      "workerId": "worker-b",
+      "clipOrderMatchesCallSheet": true
+    },
+    {
+      "sceneNumber": 44,
+      "singleWorker": true,
+      "workerId": "worker-c",
+      "clipOrderMatchesCallSheet": true
+    }
+  ],
+  "journal": {
+    "path": "chapter19/solutions_and_explanations/exercise_4_supervisor-worker-delegation-for-filmcraft-timeline-assembly/output/work/runs/2026-01-14-cathedral/delegations.jsonl",
+    "entries": 14,
+    "verified": true
+  },
+  "ok": true
+}

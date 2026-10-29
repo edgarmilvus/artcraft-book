@@ -1,0 +1,9 @@
+Composition: Place three mugs as a loose descending triangle in the lower two-thirds, largest at front left, middle midground right, smallest tucked behind and slightly higher, with the linen cloth folding diagonally from lower right to upper left. Reserve negative space in the upper right and upper center for typography, keeping at least 18% of canvas empty. Intent is a 4:5 portrait master with 1:1 and 3:2 crop safety, so no mug edge sits within 5% of frame.
+
+Palette: #141210 deep charcoal for background and shadow anchors; #C9B79C warm linen for cloth midtone; #8A5A44 clay terracotta for mug bodies; #E8DCCB glaze highlight for rims and specular edges; #5E665B muted sage for cool shadow accents and atmospheric separation.
+
+Light: Key from upper left at roughly 45 degrees, soft but directional through a large scrim, with black negative fill on the right to deepen shadow sides. Contrast intent is low-key with a 3:1 to 4:1 ratio, letting rims and glaze catch small speculars while keeping shadow detail readable. Protect highlights on the ceramic rims and linen folds below 245 RGB, never clip to pure white, and preserve texture in the brightest glaze areas.
+
+Typography: Use a high-contrast serif such as Canela or Freight Display, light weight, title at 5% of canvas height, caption at 1.6%, left aligned to the front mug’s vertical axis or right aligned in the upper negative space. Keep tracking slightly open, line height 1.15, and never overlap the mug silhouettes or linen folds.
+
+Grading: The single most important tone decision is a split-tone that cools and slightly lifts the shadows while warming and gently rolling off the highlights. This separates the ceramic mugs from the linen cloth, keeps the mood quiet and tactile, and prevents the low-key scene from collapsing into muddy brown or flat gray.

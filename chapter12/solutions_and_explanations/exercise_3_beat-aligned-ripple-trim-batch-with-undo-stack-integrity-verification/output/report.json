@@ -1,0 +1,15 @@
+{
+  "exercise": 3,
+  "engine": "filmcraft timebase (pure beat grid)",
+  "assertions": 24,
+  "bpm": 122.0,
+  "beats": 121,
+  "cumulativeErrorTicks": 0,
+  "snaps": 2,
+  "artefacts": [
+    "snap_report.json",
+    "pre_run_sequence.json",
+    "beats.csv"
+  ],
+  "result": "122 BPM grid built with bounded cumulative error; V1 clips snapped and undo states matched"
+}

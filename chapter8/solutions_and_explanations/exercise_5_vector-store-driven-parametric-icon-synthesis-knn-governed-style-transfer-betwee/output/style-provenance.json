@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "icon-arrow",
+    "weight": 0.17308234192835245,
+    "similarity": 0.059606999999999966
+  },
+  {
+    "slug": "icon-badge",
+    "weight": 0.13364951042953166,
+    "similarity": 0.020824999999999982
+  },
+  {
+    "slug": "icon-frame",
+    "weight": 0.12834399406846372,
+    "similarity": 0.014749000000000012
+  },
+  {
+    "slug": "icon-parcel",
+    "weight": 0.12619572980823449,
+    "similarity": 0.012217000000000033
+  },
+  {
+    "slug": "icon-shield",
+    "weight": 0.12448693610299828,
+    "similarity": 0.010171999999999959
+  },
+  {
+    "slug": "icon-box",
+    "weight": 0.11971821576807389,
+    "similarity": 0.004313000000000011
+  },
+  {
+    "slug": "icon-disc",
+    "weight": 0.097531374192647,
+    "similarity": -0.02643200000000001
+  },
+  {
+    "slug": "icon-token",
+    "weight": 0.0969918977016985,
+    "similarity": -0.027263999999999955
+  }
+]

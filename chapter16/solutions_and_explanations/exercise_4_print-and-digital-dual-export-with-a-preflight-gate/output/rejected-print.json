@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "job": {
+    "docName": "book",
+    "pageRange": "1-12",
+    "print": {
+      "path": "print/book-x4.pdf",
+      "minPpi": 300,
+      "standard": "x4",
+      "flatten": "high",
+      "bleed": true
+    },
+    "digital": {
+      "path": "digital/book.epub",
+      "minPpi": 150,
+      "language": "en",
+      "cover": true
+    },
+    "toc": {
+      "entries": [
+        {
+          "style": "HEAD-H1",
+          "level": 1
+        },
+        {
+          "style": "HEAD-H2",
+          "level": 2
+        }
+      ],
+      "title": "Contents"
+    },
+    "metadata": {
+      "title": "The Book",
+      "author": "Ada Lovelace",
+      "isbn": "9780000000000",
+      "edition": "2026"
+    },
+    "deterministicTimestamp": "2026-10-24T02:00:00Z"
+  },
+  "generatedAt": "2026-10-24T02:00:00Z",
+  "artefacts": [],
+  "preflight": [
+    {
+      "channel": "print",
+      "minPpi": 300,
+      "issues": [
+        {
+          "severity": "error",
+          "kind": "resolution",
+          "message": "image is 120 ppi",
+          "page": 3
+        }
+      ]
+    }
+  ],
+  "rejectedAt": {
+    "stage": "print-preflight",
+    "reason": "1 preflight errors"
+  },
+  "signature": "4b1cbf292a6d385ffd9655a857167fcced2ab19aaf530da2b0b7190d63309e4e"
+}

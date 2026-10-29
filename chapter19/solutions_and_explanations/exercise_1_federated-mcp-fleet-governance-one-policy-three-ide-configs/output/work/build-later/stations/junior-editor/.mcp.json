@@ -1,0 +1,60 @@
+{
+  "mcpServers": {
+    "designcraft-prod": {
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [
+        "--app",
+        "designcraft",
+        "--real-binary",
+        "tools/craft-cli/bin/designcraft-cli",
+        "--server",
+        "designcraft-prod",
+        "--role",
+        "junior-editor",
+        "--read-root",
+        "/work/projects",
+        "--write-root",
+        "/work/projects/banners",
+        "--cap-hash",
+        "43aa529a0c287ede215b00f56d5cf4dca8cfe5d80a934805fd2a2904a41ac57b",
+        "--fleet-lock",
+        "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/mcp.fleet.lock.json",
+        "--vault-key-ref",
+        "mcp-fleet-hmac-v1",
+        "--",
+        "mcp"
+      ],
+      "env": {
+        "NORTHWIND_DESIGN_TOKEN": "{{vault:northwind/design-token}}"
+      }
+    },
+    "pdfcraft-prod": {
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [
+        "--app",
+        "pdfcraft",
+        "--real-binary",
+        "tools/craft-cli/bin/pdfcraft-cli",
+        "--server",
+        "pdfcraft-prod",
+        "--role",
+        "junior-editor",
+        "--read-root",
+        "/work/projects",
+        "--write-root",
+        "/work/projects/archive",
+        "--cap-hash",
+        "43aa529a0c287ede215b00f56d5cf4dca8cfe5d80a934805fd2a2904a41ac57b",
+        "--fleet-lock",
+        "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/mcp.fleet.lock.json",
+        "--vault-key-ref",
+        "mcp-fleet-hmac-v1",
+        "--",
+        "mcp"
+      ],
+      "env": {
+        "NORTHWIND_PDF_TOKEN": "{{vault:northwind/pdf-token}}"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "issue": "2026-W14",
+  "sources": {
+    "layout": "/in/catalog.designcraft",
+    "editorial": "/in/editorial.docx",
+    "influencerPages": [
+      3,
+      7
+    ]
+  },
+  "artifacts": [
+    "print_pdf",
+    "web_pdf",
+    "word_master",
+    "interactive_redacted_pdf"
+  ],
+  "depends": {
+    "print_pdf": [],
+    "web_pdf": [
+      "print_pdf"
+    ],
+    "word_master": [],
+    "interactive_redacted_pdf": [
+      "print_pdf"
+    ]
+  },
+  "houseStyle": {
+    "titleColor": "#0f766e",
+    "accentColor": "#f59e0b"
+  }
+}

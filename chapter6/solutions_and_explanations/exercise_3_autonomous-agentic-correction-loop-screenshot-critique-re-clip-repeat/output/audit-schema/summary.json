@@ -1,0 +1,8 @@
+{
+  "resolved": false,
+  "iterations": 0,
+  "undoStepsPlanned": 0,
+  "undoStepsApplied": 0,
+  "error": "ValidationError: 'severity' is a required property\n\nFailed validating 'required' in schema['properties']['issues']['items']:\n    {'type': 'object',\n     'required': ['kind', 'severity', 'hint', 'region'],\n     'additionalProperties': False,\n     'properties': {'kind': {'enum': ['clipping',\n                                      'legibility',\n                                      'palette',\n                                      'composition']},\n                    'severity': {'type': 'number',\n                                 'minimum': 0,\n                                 'maximum': 1},\n                    'hint': {'type': 'string'},\n                    'region': {'type': 'array',\n                               'minItems': 4,\n                               'maxItems': 4,\n                               'items': {'type': 'number'}}}}\n\nOn instance['issues'][0]:\n    {'kind': 'palette', 'hint': 'missing severity'}",
+  "decisionTree": []
+}

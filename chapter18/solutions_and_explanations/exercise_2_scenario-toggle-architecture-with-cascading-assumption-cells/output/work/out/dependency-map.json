@@ -1,0 +1,265 @@
+{
+  "nodes": [
+    "BalanceSheet.TopLine",
+    "Cost.TopLine",
+    "EBITDA.TopLine",
+    "Effective.arr",
+    "Effective.cac",
+    "Effective.churn",
+    "Effective.gm",
+    "Effective.headcount.sales.q1",
+    "Effective.price.eur",
+    "Overrides.Value.arr",
+    "Overrides.Value.cac",
+    "Overrides.Value.churn",
+    "Overrides.Value.gm",
+    "Overrides.Value.headcount.sales.q1",
+    "Overrides.Value.price.eur",
+    "Revenue.TopLine",
+    "Scenario.Active",
+    "Scenario.Value.arr",
+    "Scenario.Value.cac",
+    "Scenario.Value.churn",
+    "Scenario.Value.gm",
+    "Scenario.Value.headcount.sales.q1",
+    "Scenario.Value.price.eur"
+  ],
+  "edges": [
+    {
+      "from": "Cost.TopLine",
+      "to": "EBITDA.TopLine"
+    },
+    {
+      "from": "EBITDA.TopLine",
+      "to": "BalanceSheet.TopLine"
+    },
+    {
+      "from": "Effective.arr",
+      "to": "Revenue.TopLine"
+    },
+    {
+      "from": "Effective.cac",
+      "to": "Cost.TopLine"
+    },
+    {
+      "from": "Effective.churn",
+      "to": "Revenue.TopLine"
+    },
+    {
+      "from": "Effective.gm",
+      "to": "Cost.TopLine"
+    },
+    {
+      "from": "Effective.headcount.sales.q1",
+      "to": "Cost.TopLine"
+    },
+    {
+      "from": "Effective.price.eur",
+      "to": "Revenue.TopLine"
+    },
+    {
+      "from": "Overrides.Value.arr",
+      "to": "Effective.arr"
+    },
+    {
+      "from": "Overrides.Value.cac",
+      "to": "Effective.cac"
+    },
+    {
+      "from": "Overrides.Value.churn",
+      "to": "Effective.churn"
+    },
+    {
+      "from": "Overrides.Value.gm",
+      "to": "Effective.gm"
+    },
+    {
+      "from": "Overrides.Value.headcount.sales.q1",
+      "to": "Effective.headcount.sales.q1"
+    },
+    {
+      "from": "Overrides.Value.price.eur",
+      "to": "Effective.price.eur"
+    },
+    {
+      "from": "Revenue.TopLine",
+      "to": "EBITDA.TopLine"
+    },
+    {
+      "from": "Scenario.Active",
+      "to": "Scenario.Value.arr"
+    },
+    {
+      "from": "Scenario.Active",
+      "to": "Scenario.Value.cac"
+    },
+    {
+      "from": "Scenario.Active",
+      "to": "Scenario.Value.churn"
+    },
+    {
+      "from": "Scenario.Active",
+      "to": "Scenario.Value.gm"
+    },
+    {
+      "from": "Scenario.Active",
+      "to": "Scenario.Value.headcount.sales.q1"
+    },
+    {
+      "from": "Scenario.Active",
+      "to": "Scenario.Value.price.eur"
+    },
+    {
+      "from": "Scenario.Value.arr",
+      "to": "Effective.arr"
+    },
+    {
+      "from": "Scenario.Value.cac",
+      "to": "Effective.cac"
+    },
+    {
+      "from": "Scenario.Value.churn",
+      "to": "Effective.churn"
+    },
+    {
+      "from": "Scenario.Value.gm",
+      "to": "Effective.gm"
+    },
+    {
+      "from": "Scenario.Value.headcount.sales.q1",
+      "to": "Effective.headcount.sales.q1"
+    },
+    {
+      "from": "Scenario.Value.price.eur",
+      "to": "Effective.price.eur"
+    }
+  ],
+  "external_precedents": [
+    {
+      "cell": "Assumptions!B5",
+      "used_by": "Scenario.Value.arr"
+    },
+    {
+      "cell": "Assumptions!C5",
+      "used_by": "Scenario.Value.arr"
+    },
+    {
+      "cell": "Assumptions!D5",
+      "used_by": "Scenario.Value.arr"
+    },
+    {
+      "cell": "Assumptions!E5",
+      "used_by": "Scenario.Value.arr"
+    },
+    {
+      "cell": "Assumptions!B8",
+      "used_by": "Scenario.Value.cac"
+    },
+    {
+      "cell": "Assumptions!C8",
+      "used_by": "Scenario.Value.cac"
+    },
+    {
+      "cell": "Assumptions!D8",
+      "used_by": "Scenario.Value.cac"
+    },
+    {
+      "cell": "Assumptions!E8",
+      "used_by": "Scenario.Value.cac"
+    },
+    {
+      "cell": "Assumptions!B6",
+      "used_by": "Scenario.Value.churn"
+    },
+    {
+      "cell": "Assumptions!C6",
+      "used_by": "Scenario.Value.churn"
+    },
+    {
+      "cell": "Assumptions!D6",
+      "used_by": "Scenario.Value.churn"
+    },
+    {
+      "cell": "Assumptions!E6",
+      "used_by": "Scenario.Value.churn"
+    },
+    {
+      "cell": "Assumptions!B7",
+      "used_by": "Scenario.Value.gm"
+    },
+    {
+      "cell": "Assumptions!C7",
+      "used_by": "Scenario.Value.gm"
+    },
+    {
+      "cell": "Assumptions!D7",
+      "used_by": "Scenario.Value.gm"
+    },
+    {
+      "cell": "Assumptions!E7",
+      "used_by": "Scenario.Value.gm"
+    },
+    {
+      "cell": "Assumptions!B4",
+      "used_by": "Scenario.Value.headcount.sales.q1"
+    },
+    {
+      "cell": "Assumptions!C4",
+      "used_by": "Scenario.Value.headcount.sales.q1"
+    },
+    {
+      "cell": "Assumptions!D4",
+      "used_by": "Scenario.Value.headcount.sales.q1"
+    },
+    {
+      "cell": "Assumptions!E4",
+      "used_by": "Scenario.Value.headcount.sales.q1"
+    },
+    {
+      "cell": "Assumptions!B9",
+      "used_by": "Scenario.Value.price.eur"
+    },
+    {
+      "cell": "Assumptions!C9",
+      "used_by": "Scenario.Value.price.eur"
+    },
+    {
+      "cell": "Assumptions!D9",
+      "used_by": "Scenario.Value.price.eur"
+    },
+    {
+      "cell": "Assumptions!E9",
+      "used_by": "Scenario.Value.price.eur"
+    }
+  ],
+  "acyclic": true,
+  "depth_max": 5,
+  "engine_audit": {
+    "command": "formulas.errorChecking",
+    "circular": [],
+    "errors": []
+  },
+  "formulas": {
+    "BalanceSheet.TopLine": "=EBITDA.TopLine",
+    "Cost.TopLine": "=Effective.headcount.sales.q1*Effective.cac*(1-Effective.gm)",
+    "EBITDA.TopLine": "=Revenue.TopLine-Cost.TopLine",
+    "Effective.arr": "=IF(Overrides.Value.arr=\"\",Scenario.Value.arr,Overrides.Value.arr)",
+    "Effective.cac": "=IF(Overrides.Value.cac=\"\",Scenario.Value.cac,Overrides.Value.cac)",
+    "Effective.churn": "=IF(Overrides.Value.churn=\"\",Scenario.Value.churn,Overrides.Value.churn)",
+    "Effective.gm": "=IF(Overrides.Value.gm=\"\",Scenario.Value.gm,Overrides.Value.gm)",
+    "Effective.headcount.sales.q1": "=IF(Overrides.Value.headcount.sales.q1=\"\",Scenario.Value.headcount.sales.q1,Overrides.Value.headcount.sales.q1)",
+    "Effective.price.eur": "=IF(Overrides.Value.price.eur=\"\",Scenario.Value.price.eur,Overrides.Value.price.eur)",
+    "Revenue.TopLine": "=Effective.arr*(1-Effective.churn)*Effective.price.eur",
+    "Scenario.Value.arr": "=CHOOSE(Scenario.Active,B5,C5,D5,E5)",
+    "Scenario.Value.cac": "=CHOOSE(Scenario.Active,B8,C8,D8,E8)",
+    "Scenario.Value.churn": "=CHOOSE(Scenario.Active,B6,C6,D6,E6)",
+    "Scenario.Value.gm": "=CHOOSE(Scenario.Active,B7,C7,D7,E7)",
+    "Scenario.Value.headcount.sales.q1": "=CHOOSE(Scenario.Active,B4,C4,D4,E4)",
+    "Scenario.Value.price.eur": "=CHOOSE(Scenario.Active,B9,C9,D9,E9)"
+  },
+  "trace_cross_check": {
+    "checked": 16,
+    "mismatches": []
+  },
+  "computed_under_scenario": 2.0
+}

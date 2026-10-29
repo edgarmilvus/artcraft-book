@@ -1,0 +1,18 @@
+PASS two runs render the same bytes
+PASS the report carries the applied gamma
+PASS nothing was clamped inside the schema's range
+PASS the curve passes through the pivot unchanged
+PASS the curve has five anchors
+PASS the document reports one base layer plus four adjustments
+PASS both colour-balance intents ride on one layer
+PASS the unsupported list is non-empty
+PASS no colour work means no colour-balance layer
+PASS gamma clamps at the engine floor
+PASS saturation clamps at +100
+PASS a brutal S-curve reports its clamp
+PASS a pivot outside the contract never reaches the engine
+PASS a mid-batch failure still reports the applied prefix
+PASS the compensation restores the opening history depth
+PASS the two saved PSDs are byte-identical
+
+16/16 checks passed

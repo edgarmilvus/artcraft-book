@@ -1,0 +1,13 @@
+{
+  "campaignId": "cmp-windowsill",
+  "jobId": "job-degrade",
+  "published": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/derived/job-degrade/campaign_published.png",
+  "sha256": "9433bfe547f8d627f90d419ec1f4ce3a9e8bf97cac8c8669d2cf55814917dfb1",
+  "bytes": 28668,
+  "width": 1080,
+  "height": 1350,
+  "patchedAsset": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets/lifestyle/window-01.jpg",
+  "replacementAsset": "",
+  "fallbackVariant": "var-b",
+  "at": "2026-10-26T13:34:24.836993+00:00"
+}

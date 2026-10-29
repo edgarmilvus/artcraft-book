@@ -1,0 +1,368 @@
+{
+  "version": "1",
+  "period": "2026-09",
+  "sources": {
+    "helios-consolidated": "helios-consolidated.xlsx",
+    "close-reconciliation": "close-reconciliation.xlsx"
+  },
+  "reference": [
+    {
+      "label": "Net revenue",
+      "source_kind": "name",
+      "source_book": "helios-consolidated",
+      "source_ref": "Helios.Revenue.Q3",
+      "format": "$0.0M"
+    },
+    {
+      "label": "EBITDA",
+      "source_kind": "name",
+      "source_book": "helios-consolidated",
+      "source_ref": "Helios.Ebitda.Q3",
+      "format": "$0.0M"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "titleOnly",
+      "title": "Helios - board pack (2026-09)",
+      "frames": [
+        {
+          "slot": "kpi.revenue",
+          "kind": "text",
+          "x": 60,
+          "y": 170,
+          "w": 280,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[kpi.revenue]]",
+          "binding": {
+            "label": "Net revenue",
+            "prefix": "Net revenue: ",
+            "source_kind": "name",
+            "source_book": "helios-consolidated",
+            "source_ref": "Helios.Revenue.Q3",
+            "format": "$0.0M"
+          }
+        },
+        {
+          "slot": "kpi.ebitda",
+          "kind": "text",
+          "x": 60,
+          "y": 240,
+          "w": 280,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[kpi.ebitda]]",
+          "binding": {
+            "label": "EBITDA",
+            "prefix": "EBITDA: ",
+            "source_kind": "name",
+            "source_book": "helios-consolidated",
+            "source_ref": "Helios.Ebitda.Q3",
+            "format": "$0.0M"
+          }
+        },
+        {
+          "slot": "kpi.netincome",
+          "kind": "text",
+          "x": 380,
+          "y": 170,
+          "w": 280,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[kpi.netincome]]",
+          "binding": {
+            "label": "Net income",
+            "prefix": "Net income: ",
+            "source_kind": "name",
+            "source_book": "helios-consolidated",
+            "source_ref": "Helios.NetIncome.Q3",
+            "format": "$0.0M"
+          }
+        },
+        {
+          "slot": "kpi.fcf",
+          "kind": "text",
+          "x": 380,
+          "y": 240,
+          "w": 280,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[kpi.fcf]]",
+          "binding": {
+            "label": "Free cash flow",
+            "prefix": "Free cash flow: ",
+            "source_kind": "name",
+            "source_book": "helios-consolidated",
+            "source_ref": "Helios.FreeCashFlow.Q3",
+            "format": "$0.0M"
+          }
+        },
+        {
+          "slot": "kpi.grossmargin",
+          "kind": "text",
+          "x": 700,
+          "y": 170,
+          "w": 200,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[kpi.grossmargin]]",
+          "binding": {
+            "label": "Gross margin",
+            "prefix": "Gross margin: ",
+            "source_kind": "name",
+            "source_book": "helios-consolidated",
+            "source_ref": "Helios.GrossMargin.Pct",
+            "format": "0.00%"
+          }
+        },
+        {
+          "slot": "kpi.netmargin",
+          "kind": "text",
+          "x": 700,
+          "y": 240,
+          "w": 200,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[kpi.netmargin]]",
+          "binding": {
+            "label": "Net margin",
+            "prefix": "Net margin: ",
+            "source_kind": "name",
+            "source_book": "helios-consolidated",
+            "source_ref": "Helios.NetMargin.Pct",
+            "format": "0.00%"
+          }
+        }
+      ]
+    },
+    {
+      "layout": "titleOnly",
+      "title": "P&L bridge (2026-09)",
+      "frames": [
+        {
+          "slot": "bridge.chart",
+          "kind": "chart",
+          "chart_type": "column",
+          "chart_title": "Scenarios",
+          "x": 60,
+          "y": 150,
+          "w": 840,
+          "h": 300,
+          "placeholder_categories": [
+            "Base"
+          ],
+          "placeholder_series": [
+            {
+              "name": "Net revenue",
+              "values": [
+                0.0
+              ]
+            }
+          ],
+          "binding": {
+            "label": "Scenario comparison",
+            "source_kind": "range",
+            "source_book": "helios-consolidated",
+            "source_ref": "Scenarios!A1:C4",
+            "format": "plain"
+          }
+        },
+        {
+          "slot": "bridge.revenue",
+          "kind": "text",
+          "x": 60,
+          "y": 470,
+          "w": 300,
+          "h": 30,
+          "size": 18,
+          "placeholder": "[[bridge.revenue]]",
+          "binding": {
+            "label": "Net revenue",
+            "prefix": "Net revenue: ",
+            "source_kind": "name",
+            "source_book": "helios-consolidated",
+            "source_ref": "Helios.Revenue.Q3",
+            "format": "$0.0M"
+          }
+        },
+        {
+          "slot": "bridge.ebitda",
+          "kind": "text",
+          "x": 400,
+          "y": 470,
+          "w": 300,
+          "h": 30,
+          "size": 18,
+          "placeholder": "[[bridge.ebitda]]",
+          "binding": {
+            "label": "EBITDA",
+            "prefix": "EBITDA: ",
+            "source_kind": "name",
+            "source_book": "helios-consolidated",
+            "source_ref": "Helios.Ebitda.Q3",
+            "format": "$0.0M"
+          }
+        }
+      ]
+    },
+    {
+      "layout": "titleOnly",
+      "title": "Scenario comparison (2026-09)",
+      "frames": [
+        {
+          "slot": "scenario.base",
+          "kind": "text",
+          "x": 60,
+          "y": 170,
+          "w": 280,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[scenario.base]]",
+          "binding": {
+            "label": "Base",
+            "prefix": "Base: ",
+            "source_kind": "cell",
+            "source_book": "helios-consolidated",
+            "source_ref": "Scenarios!B2",
+            "format": "$0.0M"
+          }
+        },
+        {
+          "slot": "scenario.upside",
+          "kind": "text",
+          "x": 380,
+          "y": 170,
+          "w": 280,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[scenario.upside]]",
+          "binding": {
+            "label": "Upside",
+            "prefix": "Upside: ",
+            "source_kind": "cell",
+            "source_book": "helios-consolidated",
+            "source_ref": "Scenarios!B3",
+            "format": "$0.0M"
+          }
+        },
+        {
+          "slot": "scenario.downside",
+          "kind": "text",
+          "x": 700,
+          "y": 170,
+          "w": 200,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[scenario.downside]]",
+          "binding": {
+            "label": "Downside",
+            "prefix": "Downside: ",
+            "source_kind": "cell",
+            "source_book": "helios-consolidated",
+            "source_ref": "Scenarios!B4",
+            "format": "$0.0M"
+          }
+        },
+        {
+          "slot": "scenario.footnote",
+          "kind": "text",
+          "x": 60,
+          "y": 380,
+          "w": 840,
+          "h": 40,
+          "size": 18,
+          "placeholder": "Footnote 1: the figures of this slide are the audited close and are not\nFootnote 2: the figures of this slide are the audited close and are not\nFootnote 3: the figures of this slide are the audited close and are not\nFootnote 4: the figures of this slide are the audited close and are not\nFootnote 5: the figures of this slide are the audited close and are not\nFootnote 6: the figures of this slide are the audited close and are not\nFootnote 7: the figures of this slide are the audited close and are not"
+        }
+      ]
+    },
+    {
+      "layout": "titleOnly",
+      "title": "Close reconciliation (2026-09)",
+      "frames": [
+        {
+          "slot": "close.reconciled",
+          "kind": "text",
+          "x": 60,
+          "y": 170,
+          "w": 400,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[close.reconciled]]",
+          "binding": {
+            "label": "Reconciled net revenue",
+            "prefix": "Reconciled net revenue: ",
+            "source_kind": "name",
+            "source_book": "close-reconciliation",
+            "source_ref": "Helios.Close.Reconciled",
+            "format": "$0.0M"
+          }
+        },
+        {
+          "slot": "close.items",
+          "kind": "text",
+          "x": 60,
+          "y": 240,
+          "w": 400,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[close.items]]",
+          "binding": {
+            "label": "Items raised",
+            "prefix": "Items raised: ",
+            "source_kind": "name",
+            "source_book": "close-reconciliation",
+            "source_ref": "Helios.Close.Items",
+            "format": "$0K"
+          }
+        },
+        {
+          "slot": "close.unresolved",
+          "kind": "text",
+          "x": 540,
+          "y": 170,
+          "w": 360,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[close.unresolved]]",
+          "binding": {
+            "label": "Unresolved items",
+            "prefix": "Unresolved: ",
+            "source_kind": "name",
+            "source_book": "close-reconciliation",
+            "source_ref": "Helios.Close.Unresolved",
+            "format": "$0K"
+          }
+        },
+        {
+          "slot": "close.variance",
+          "kind": "text",
+          "x": 540,
+          "y": 240,
+          "w": 360,
+          "h": 36,
+          "size": 24,
+          "placeholder": "[[close.variance]]",
+          "binding": {
+            "label": "Variance",
+            "prefix": "Variance to the audited close: ",
+            "source_kind": "name",
+            "source_book": "close-reconciliation",
+            "source_ref": "Helios.Close.Variance",
+            "format": "$0K"
+          }
+        },
+        {
+          "slot": "close.typed_by_hand",
+          "kind": "text",
+          "x": 60,
+          "y": 320,
+          "w": 400,
+          "h": 36,
+          "size": 24,
+          "placeholder": "Net revenue: $168.4M"
+        }
+      ]
+    }
+  ]
+}

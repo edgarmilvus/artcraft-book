@@ -1,0 +1,116 @@
+{
+  "run_id": "run-2026-10-26",
+  "model_id": "deepseek/deepseek-v4.1-flash",
+  "checks": 57,
+  "failures": [],
+  "quirks": [
+    "styles.create only creates paragraph styles (there is no character-style primitive), so the banner is a named paragraph style verified in word/header1.xml",
+    "a paragraph style applied inside the header also lands on the body paragraph at the cursor; the restyle plan is re-applied after insert.closeHeader",
+    "select.collapse collapses to the selection start; caret.end is needed to append the fields at the end of the provenance line",
+    "file.properties has no custom-property field, so source_sha256 rides in keywords and is read back from docProps/core.xml",
+    "stamp_custom scales a stamp to at most 200 pt and centres it on `at`; the card sits at [480, 90] to stay inside the page",
+    "sign_list.all_valid is false for a just-signed file: sign_id_create produced a self-signed ID"
+  ],
+  "passes": [
+    {
+      "pass": 1,
+      "files": [
+        {
+          "input": "input/doc-alpha.docx",
+          "corrected": "corrected/doc-alpha.docx",
+          "pdf": "signed/doc-alpha.pdf",
+          "source_sha256": "9c10e58611d655fdfc6cda2c960c79031d637dfbc9f6d7a3cf821e4b7684d699",
+          "stages": {
+            "restyle": "ok",
+            "export": "ok",
+            "sign": "ok"
+          },
+          "errors": []
+        },
+        {
+          "input": "input/doc-broken.docx",
+          "corrected": "corrected/doc-broken.docx",
+          "pdf": "signed/doc-broken.pdf",
+          "source_sha256": "22c61e6b9ad71a1836ebd689a23cfe255b13a380295e694338017e4328b0198d",
+          "stages": {
+            "restyle": "failed",
+            "export": "skipped",
+            "sign": "skipped"
+          },
+          "errors": [
+            "restyle:not a valid zip package: invalid Zip archive: Could not find EOCD"
+          ]
+        }
+      ],
+      "evidence": {
+        "blocks": 8,
+        "plan": [
+          {
+            "index": 0,
+            "text": "Quarterly Product Specification",
+            "style": "Heading 1"
+          },
+          {
+            "index": 1,
+            "text": "Scope",
+            "style": "Heading 2"
+          },
+          {
+            "index": 3,
+            "text": "Interfaces",
+            "style": "Heading 2"
+          },
+          {
+            "index": 5,
+            "text": "Rollout",
+            "style": "Heading 2"
+          }
+        ],
+        "styledAfter": [
+          "Heading1:\"Quarterly Product Specification\"",
+          "Heading2:\"Scope\"",
+          "Heading2:\"Interfaces\"",
+          "Heading2:\"Rollout\""
+        ],
+        "provenanceBlock": "Provenance lineage for auditors: generated source digest and run identifiers. run=run-2026-10-26 model=deepseek/deepseek-v4.1-flash.",
+        "signatureCount": 1,
+        "signatureAlgorithm": "RSA 2048-bit with SHA-256",
+        "pdfTitle": "Quarterly Product Specification",
+        "pdfKeywords": "model_id=deepseek/deepseek-v4.1-flash;run_id=run-2026-10-26;source_sha256=9c10e58611d655fdfc6cda2c960c79031d637dfbc9f6d7a3cf821e4b7684d699",
+        "pdfText": "CONFIDENTIAL — INTERNAL DISTRIBUTION ONLY\nQuarterly Product Specification\nScope\nThis document describes the interfaces and the acceptance criteria for the Q4 release, \nrestricted to internal distribution.\nInterfaces\nThe ingestion service exposes a single synchronous endpoint and a batch endpoint \nbacked by the same validation core.\nRollout\nDeployment proceeds in three waves with an automated rollback on error budget \nexhaustion.\nProvenance lineage for auditors: generated source digest and run identifiers. run=\nrun\n model=deepseek deepseek v4. ash.",
+        "stamp": true
+      }
+    },
+    {
+      "pass": 2,
+      "files": [
+        {
+          "input": "input/doc-alpha.docx",
+          "corrected": "corrected/doc-alpha.docx",
+          "pdf": "signed/doc-alpha.pdf",
+          "source_sha256": "9c10e58611d655fdfc6cda2c960c79031d637dfbc9f6d7a3cf821e4b7684d699",
+          "stages": {
+            "restyle": "skipped",
+            "export": "skipped",
+            "sign": "skipped"
+          },
+          "errors": []
+        },
+        {
+          "input": "input/doc-broken.docx",
+          "corrected": "corrected/doc-broken.docx",
+          "pdf": "signed/doc-broken.pdf",
+          "source_sha256": "22c61e6b9ad71a1836ebd689a23cfe255b13a380295e694338017e4328b0198d",
+          "stages": {
+            "restyle": "failed",
+            "export": "skipped",
+            "sign": "skipped"
+          },
+          "errors": [
+            "restyle:not a valid zip package: invalid Zip archive: Could not find EOCD"
+          ]
+        }
+      ]
+    }
+  ]
+}

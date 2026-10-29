@@ -1,0 +1,17 @@
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+const t = new StdioClientTransport({ command: "tools/craft-cli/bin/wordcraft-cli", args: ["mcp"], cwd: "/tmp", stderr: "pipe" });
+t.stderr?.on("data", () => {});
+const c = new Client({ name: "p", version: "1" }, { capabilities: {} });
+await c.connect(t);
+const u = (r) => { const b = r.content.find((x) => x.type === "text"); try { return JSON.parse(b.text); } catch { return b.text; } };
+const call = async (n, a = {}) => u(await c.callTool({ name: n, arguments: a }));
+const ex = async (command, params = {}) => call("execute", { command, params });
+await call("new_document", { width: 612, height: 792 });
+const list = await call("list_commands", {});
+const insert = list.filter((x) => x.id === "text.insert" || x.id === "text.newParagraph" || x.id === "para.style");
+console.log(JSON.stringify(insert, null, 1));
+console.log("insert", JSON.stringify(await ex("text.insert", { text: "hello" })));
+const list2 = await call("list_commands", {});
+console.log(JSON.stringify(list2.filter((x) => x.id === "text.insert"), null, 1));
+await c.close();

@@ -1,0 +1,33 @@
+{
+  "checks": 13,
+  "failures": [],
+  "records": [
+    {
+      "cycle": 1,
+      "seconds": 1,
+      "deltaE": 0.5
+    },
+    {
+      "cycle": 1,
+      "seconds": 2,
+      "deltaE": 0.5
+    },
+    {
+      "cycle": 1,
+      "seconds": 3,
+      "deltaE": 0.5
+    }
+  ],
+  "outcomes": [
+    [
+      "seq-1",
+      "converged"
+    ]
+  ],
+  "finalDeltaE": 0.5,
+  "auditFiles": [
+    "cycle-1-1793021292982.png",
+    "cycle-1-1793021292999.png",
+    "cycle-1-1793021293007.png"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "exercise": 5,
+  "engine": "vectorcraft-cli + local vector store",
+  "assertions": 36,
+  "request": {
+    "requestId": "req-0001",
+    "description": "a hexagonal parcel with an arrow leaving from the top",
+    "brandComplianceRequired": true,
+    "k": 8,
+    "similarityRejectThreshold": 0.94,
+    "perturbationBudget": 5,
+    "shrinkStepPct": 4
+  },
+  "storeRows": 8,
+  "accepted": {
+    "status": "accepted",
+    "pathTaken": "accepted",
+    "objectId": 18,
+    "hashes": {
+      "specHash": "099e97a3ef32e532462944e59b38c64a15749fc6103143ff60e5bc2bb971755a",
+      "retrievalHash": "948e7c80573da32f1bc358d791c87319cfc4c55de3f8164e7961b5c579a5d034",
+      "geometryHash": "2a70a6c8012d398b1c7daad2cd4e88a17f3312242e4984d6403c4f659db65f0b",
+      "validationHash": "0f29fa80f6e3d472a943f50eabbd2d1ad9ae2d0ad592d51963805c70e3194787",
+      "composite": "980a6f22878663c9b677c34bb63b9b59c718b191685c4c05a6073af27c35ee07"
+    }
+  },
+  "rejection": {
+    "status": "accepted",
+    "pathTaken": "perturbed"
+  },
+  "artefacts": [
+    "candidate.vectorcraft",
+    "candidate.svg",
+    "candidate.png",
+    "style-provenance.json",
+    "validation.json",
+    "store.json"
+  ],
+  "result": "description embedded, eight neighbours retrieved, style consensus synthesised, provenance hash chain written"
+}

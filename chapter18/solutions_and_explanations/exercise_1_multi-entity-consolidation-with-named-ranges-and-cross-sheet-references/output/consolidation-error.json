@@ -1,0 +1,10 @@
+{
+  "account": "4000",
+  "canonical_account": "Rev.Net",
+  "entity": "Helios-EU",
+  "error": "missing_account",
+  "expected_label": "Net Revenue",
+  "message": "Helios-EU does not report Rev.Net (4000)",
+  "named_range": "Helios_EU.Amount.Rev_Net",
+  "ok": false
+}

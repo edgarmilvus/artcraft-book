@@ -1,0 +1,10 @@
+router rules
+
+PASS rule 1: ui_screenshot is refused without the entitlement
+PASS rule 2: schema violation is rejected before routing
+PASS rule 2: an undeclared tool name is rejected, not a crash
+PASS rule 3: ambiguous tool with no app is refused
+PASS rule 4: doc_new is routed to its default app and executed
+PASS every dispatch produced an audit record
+
+6/6 checks passed

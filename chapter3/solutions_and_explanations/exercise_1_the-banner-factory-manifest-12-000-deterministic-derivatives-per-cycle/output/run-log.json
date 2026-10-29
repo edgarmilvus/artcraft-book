@@ -1,0 +1,14 @@
+{
+  "checks": 83,
+  "failures": [],
+  "quirks": [
+    "doc_export returned no job handle; the export completed synchronously, which the drain gate accepts"
+  ],
+  "banners": 12,
+  "failuresJsonl": 1,
+  "identicalPngs": 12,
+  "shards": [
+    6,
+    6
+  ]
+}

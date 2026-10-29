@@ -1,0 +1,131 @@
+{
+  "harness": "sparse_tile_delta",
+  "document": "chapter2/solutions_and_explanations/exercise_1_sparse-tile-memory-delta-harness-for-interactive-undo-budgets/output/retouch/FW26_hero_048.tif",
+  "tile_geometry": {
+    "size": 256,
+    "origin_px": [
+      0,
+      0
+    ]
+  },
+  "document_size": {
+    "width": 8000,
+    "height": 6000
+  },
+  "layer_tree_nodes_baseline": 2,
+  "layer_tree_nodes_final": 3,
+  "engine_tile_census": {
+    "baseline": null,
+    "final": null
+  },
+  "steps": [
+    {
+      "id": "localized_brush_strokes",
+      "category": "batch",
+      "elapsed_ms": 39.59,
+      "damage_area_px": 1227743,
+      "sparse_coverage_pct": 2.56,
+      "estimated_tiles_touched": 60,
+      "damage_rects": [
+        [
+          1029,
+          1762,
+          1370,
+          2103
+        ],
+        [
+          2425,
+          1758,
+          2771,
+          2104
+        ],
+        [
+          3821,
+          1754,
+          4174,
+          2107
+        ],
+        [
+          5217,
+          1750,
+          5580,
+          2113
+        ],
+        [
+          6629,
+          1762,
+          6970,
+          2103
+        ],
+        [
+          1025,
+          3891,
+          1371,
+          4237
+        ],
+        [
+          2421,
+          3887,
+          2774,
+          4240
+        ],
+        [
+          3817,
+          3883,
+          4180,
+          4246
+        ],
+        [
+          5229,
+          3895,
+          5570,
+          4236
+        ],
+        [
+          6625,
+          3891,
+          6971,
+          4237
+        ]
+      ]
+    },
+    {
+      "id": "layer.newAdjustmentLayer.curves",
+      "category": "command",
+      "elapsed_ms": 0.219,
+      "damage_area_px": 48000000,
+      "sparse_coverage_pct": 100.0,
+      "estimated_tiles_touched": 708,
+      "damage_rects": [
+        [
+          0,
+          0,
+          7999,
+          5999
+        ]
+      ]
+    },
+    {
+      "id": "filter.blur.gaussianBlur",
+      "category": "async_command",
+      "elapsed_ms": 1427.673,
+      "damage_area_px": 48000000,
+      "sparse_coverage_pct": 100.0,
+      "estimated_tiles_touched": 0,
+      "damage_rects": [
+        [
+          0,
+          0,
+          7999,
+          5999
+        ]
+      ]
+    }
+  ],
+  "cumulative_estimated_tiles": 768,
+  "notes": [
+    "Headless runner composites exclusively via the CPU SIMD reference oracle. The wgpu (Metal/Vulkan/DX12) pipeline lives in the desktop binary and is selected at launch; it is a red herring for memory-delta work, because the sparse-tile arithmetic belongs to the *document model*, not to the rasterizer that eventually reads it.",
+    "Damage rectangles come from the engine (paint.stroke `damage`). Tile counts are computed at a fixed 256-px geometry anchored at (0, 0); every tile is counted once per step.",
+    "Tiles already touched by an earlier step are removed from later steps so cumulative_estimated_tiles never double counts."
+  ]
+}

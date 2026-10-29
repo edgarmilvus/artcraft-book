@@ -1,0 +1,376 @@
+[
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Basic Code Example",
+    "section_slug": "basic_code_example",
+    "type": "example",
+    "subheading": "Basic Code Example",
+    "lang": "typescript",
+    "lines": [
+      15209,
+      15704
+    ],
+    "file": "01_loopback-control-channel.ts",
+    "chars": 18608,
+    "contract": false,
+    "first_line": "// ============================================================================="
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Advanced Application Implementation",
+    "lang": "typescript",
+    "lines": [
+      15790,
+      15908
+    ],
+    "file": "types.ts",
+    "chars": 4313,
+    "contract": false,
+    "first_line": "// src/types.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Advanced Application Implementation",
+    "lang": "typescript",
+    "lines": [
+      15910,
+      15992
+    ],
+    "file": "codec.ts",
+    "chars": 2808,
+    "contract": false,
+    "first_line": "// src/codec.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Advanced Application Implementation",
+    "lang": "typescript",
+    "lines": [
+      15994,
+      16620
+    ],
+    "file": "session.ts",
+    "chars": 20258,
+    "contract": false,
+    "first_line": "// src/session.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Advanced Application Implementation",
+    "lang": "typescript",
+    "lines": [
+      16622,
+      16846
+    ],
+    "file": "mcp-bridge.ts",
+    "chars": 6537,
+    "contract": false,
+    "first_line": "// src/mcp-bridge.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Advanced Application Implementation",
+    "lang": "typescript",
+    "lines": [
+      16848,
+      16962
+    ],
+    "file": "vision-loop.ts",
+    "chars": 3572,
+    "contract": false,
+    "first_line": "// src/vision-loop.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Advanced Application Implementation",
+    "lang": "typescript",
+    "lines": [
+      16964,
+      17062
+    ],
+    "file": "index.ts",
+    "chars": 3007,
+    "contract": false,
+    "first_line": "// src/index.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Advanced Application Implementation",
+    "lang": "json",
+    "lines": [
+      17064,
+      17085
+    ],
+    "file": "package.json",
+    "chars": 442,
+    "contract": false,
+    "first_line": "{"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Advanced Application Implementation",
+    "section_slug": "advanced_application_implementation",
+    "type": "example",
+    "subheading": "Advanced Application Implementation",
+    "lang": "json",
+    "lines": [
+      17087,
+      17107
+    ],
+    "file": "tsconfig.json",
+    "chars": 442,
+    "contract": false,
+    "first_line": "// tsconfig.json"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 1: A Backpressure-Aware JSON-Lines Channel Client for PhotoCraft Banner Batch",
+    "section_slug": "exercise_1_a_backpressure_aware_json_lines_ch",
+    "type": "exercise",
+    "subheading": "Exercise 1: A Backpressure-Aware JSON-Lines Channel Client for PhotoCraft Banner Batch",
+    "lang": "typescript",
+    "lines": [
+      17213,
+      17254
+    ],
+    "file": "01_typescript.ts",
+    "chars": 1676,
+    "contract": false,
+    "first_line": "/** Every frame on the wire. `id` is unique per channel session; `method` is the dispatcher key. */"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 2: Autonomous Agentic Asset Resolution \u2014 Claude Code via MCP Resolving an Unmapped Placeholder through the Loopback Channel",
+    "section_slug": "exercise_2_autonomous_agentic_asset_resolutio",
+    "type": "exercise",
+    "subheading": "Exercise 2: Autonomous Agentic Asset Resolution \u2014 Claude Code via MCP Resolving an Unmapped Placeholder through the Loopback Channel",
+    "lang": "typescript",
+    "lines": [
+      17284,
+      17315
+    ],
+    "file": "01_typescript.ts",
+    "chars": 1291,
+    "contract": false,
+    "first_line": "/** One unresolved graphic frame. Derived from links.list + doc_inspect. */"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 2: Autonomous Agentic Asset Resolution \u2014 Claude Code via MCP Resolving an Unmapped Placeholder through the Loopback Channel",
+    "section_slug": "exercise_2_autonomous_agentic_asset_resolutio",
+    "type": "exercise",
+    "subheading": "Exercise 2: Autonomous Agentic Asset Resolution \u2014 Claude Code via MCP Resolving an Unmapped Placeholder through the Loopback Channel",
+    "lang": "jsonc",
+    "lines": [
+      17319,
+      17337
+    ],
+    "file": "02_jsonc.jsonc",
+    "chars": 759,
+    "contract": false,
+    "first_line": "// Open the document"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 3: Multimodal Color-Grading Correction Loop for FilmCraft Using `ui_screenshot`-Style Feedback",
+    "section_slug": "exercise_3_multimodal_color_grading_correctio",
+    "type": "exercise",
+    "subheading": "Exercise 3: Multimodal Color-Grading Correction Loop for FilmCraft Using `ui_screenshot`-Style Feedback",
+    "lang": "typescript",
+    "lines": [
+      17379,
+      17424
+    ],
+    "file": "01_typescript.ts",
+    "chars": 2053,
+    "contract": false,
+    "first_line": "// ---------- Vision verdict: a CLOSED palette. No \"other\" escape hatch. ----------"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 4: Heterogeneous Multi-Engine Fan-Out with Schema-Routed Commands",
+    "section_slug": "exercise_4_heterogeneous_multi_engine_fan_out",
+    "type": "exercise",
+    "subheading": "Exercise 4: Heterogeneous Multi-Engine Fan-Out with Schema-Routed Commands",
+    "lang": "typescript",
+    "lines": [
+      17458,
+      17497
+    ],
+    "file": "01_typescript.ts",
+    "chars": 1413,
+    "contract": false,
+    "first_line": "export type Engine = \"photocraft\" | \"vectorcraft\" | \"designcraft\" | \"pdfcraft\";"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 5: Self-Healing Document Assembly under Partial Engine Failure",
+    "section_slug": "exercise_5_self_healing_document_assembly_und",
+    "type": "exercise",
+    "subheading": "Exercise 5: Self-Healing Document Assembly under Partial Engine Failure",
+    "lang": "typescript",
+    "lines": [
+      17552,
+      17598
+    ],
+    "file": "01_typescript.ts",
+    "chars": 1373,
+    "contract": false,
+    "first_line": "export interface RunSummary {"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 5: Self-Healing Document Assembly under Partial Engine Failure",
+    "section_slug": "exercise_5_self_healing_document_assembly_und",
+    "type": "exercise",
+    "subheading": "Exercise 5: Self-Healing Document Assembly under Partial Engine Failure",
+    "lang": "jsonc",
+    "lines": [
+      17602,
+      17609
+    ],
+    "file": "02_jsonc.jsonc",
+    "chars": 848,
+    "contract": false,
+    "first_line": "{ \"name\": \"command_run\",   \"arguments\": { \"id\": \"catalog.query\", \"params\": { \"filter\": { \"keyword\": "
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 5: Self-Healing Document Assembly under Partial Engine Failure",
+    "section_slug": "exercise_5_self_healing_document_assembly_und",
+    "type": "exercise",
+    "subheading": "Exercise 5: Self-Healing Document Assembly under Partial Engine Failure",
+    "lang": "jsonc",
+    "lines": [
+      17613,
+      17617
+    ],
+    "file": "03_jsonc.jsonc",
+    "chars": 230,
+    "contract": false,
+    "first_line": "{ \"id\": \"auth\", \"method\": \"auth\", \"params\": { \"token\": \"<64_hex_chars>\" } }"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Solutions and Explanations",
+    "section_slug": "solutions_and_explanations",
+    "type": "exercise",
+    "subheading": "Solutions and Explanations",
+    "lang": "typescript",
+    "lines": [
+      17636,
+      18033
+    ],
+    "file": "01_channel-client.ts",
+    "chars": 14801,
+    "contract": false,
+    "first_line": "// channel-client.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 2: Autonomous Agentic Asset Resolution \u2014 Claude Code via MCP Resolving an Unmapped Placeholder through the Loopback Channel",
+    "section_slug": "exercise_2_autonomous_agentic_asset_resolutio",
+    "type": "exercise",
+    "subheading": "Exercise 2: Autonomous Agentic Asset Resolution \u2014 Claude Code via MCP Resolving an Unmapped Placeholder through the Loopback Channel",
+    "lang": "typescript",
+    "lines": [
+      18048,
+      18280
+    ],
+    "file": "03_asset-resolver.ts",
+    "chars": 9914,
+    "contract": false,
+    "first_line": "// asset-resolver.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 3: Multimodal Color-Grading Correction Loop for FilmCraft Using `ui_screenshot`-Style Feedback",
+    "section_slug": "exercise_3_multimodal_color_grading_correctio",
+    "type": "exercise",
+    "subheading": "Exercise 3: Multimodal Color-Grading Correction Loop for FilmCraft Using `ui_screenshot`-Style Feedback",
+    "lang": "typescript",
+    "lines": [
+      18295,
+      18559
+    ],
+    "file": "02_color-loop.ts",
+    "chars": 10694,
+    "contract": false,
+    "first_line": "// color-loop.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 4: Heterogeneous Multi-Engine Fan-Out with Schema-Routed Commands",
+    "section_slug": "exercise_4_heterogeneous_multi_engine_fan_out",
+    "type": "exercise",
+    "subheading": "Exercise 4: Heterogeneous Multi-Engine Fan-Out with Schema-Routed Commands",
+    "lang": "typescript",
+    "lines": [
+      18574,
+      18850
+    ],
+    "file": "02_fanout-orchestrator.ts",
+    "chars": 11917,
+    "contract": false,
+    "first_line": "// fanout-orchestrator.ts"
+  },
+  {
+    "chapter": 4,
+    "chapter_title": "Chapter 4: The Loopback Control Channel - Wiring High-Speed JSON-Lines TCP Sockets and Auth Handshakes",
+    "section": "Exercise 5: Self-Healing Document Assembly under Partial Engine Failure",
+    "section_slug": "exercise_5_self_healing_document_assembly_und",
+    "type": "exercise",
+    "subheading": "Exercise 5: Self-Healing Document Assembly under Partial Engine Failure",
+    "lang": "typescript",
+    "lines": [
+      18865,
+      19200
+    ],
+    "file": "04_self-healing-build.ts",
+    "chars": 16384,
+    "contract": false,
+    "first_line": "// self-healing-build.ts"
+  }
+]

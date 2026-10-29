@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <title>home</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M64 16 C48 32 32 48 16 64 C48 64 80 64 112 64 C85.333 66.667 58.667 69.333 32 72 C32 85.333 32 98.667 32 112 C53.333 112 74.667 112 96 112 C96 98.667 96 85.333 96 72 C85.333 53.333 74.667 34.667 64 16 Z M56 80 L72 80 L72 112 L56 112 Z" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

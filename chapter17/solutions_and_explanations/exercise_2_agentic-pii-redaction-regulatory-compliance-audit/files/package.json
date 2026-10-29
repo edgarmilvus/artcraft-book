@@ -1,0 +1,12 @@
+{
+  "name": "cap17-ex2-solution",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "python3 -m py_compile 02_agentic-pii-redaction-regulatory-compliance-audit.py",
+    "harness": "python3 run_2.py"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

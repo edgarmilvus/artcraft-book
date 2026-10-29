@@ -1,0 +1,13 @@
+{
+  "checks": 116,
+  "failures": [],
+  "quirks": [
+    "the local signer is OpenSSL with PGP armor; GPG itself is absent on this machine"
+  ],
+  "release": "2026.10.0",
+  "manifestSha256": "3d861a08be76d77b8d42b04770d6c8bfb70ee1137d9d66b7be33d745586831a1",
+  "artifacts": [
+    "catalog-print.pdf",
+    "catalog-web.pdf"
+  ]
+}

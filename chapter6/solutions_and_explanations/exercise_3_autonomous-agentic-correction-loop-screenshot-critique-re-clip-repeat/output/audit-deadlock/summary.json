@@ -1,0 +1,13 @@
+{
+  "resolved": false,
+  "iterations": 2,
+  "undoStepsPlanned": 7,
+  "undoStepsApplied": 7,
+  "error": "the critique did not change after a correction",
+  "decisionTree": [
+    "iter 1: clipping (severity 0.80) \u2192 corrected, 7 undo step(s)",
+    "iter 1: legibility (severity 0.60) \u2192 corrected, 7 undo step(s)",
+    "iter 2: clipping (severity 0.80) \u2192 corrected, 0 undo step(s)",
+    "iter 2: legibility (severity 0.60) \u2192 corrected, 0 undo step(s)"
+  ]
+}

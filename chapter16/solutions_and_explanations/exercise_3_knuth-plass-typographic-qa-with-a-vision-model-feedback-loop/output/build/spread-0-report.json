@@ -1,0 +1,58 @@
+{
+  "spreadIndex": 0,
+  "pageRange": [
+    1,
+    2
+  ],
+  "passes": [
+    {
+      "passNumber": 1,
+      "renderedAt": "2026-10-26T13:32:23.153Z",
+      "renderedFiles": [
+        "chapter16/solutions_and_explanations/exercise_3_knuth-plass-typographic-qa-with-a-vision-model-feedback-loop/output/build/qa/spread-0/pass-1-page-1.png",
+        "chapter16/solutions_and_explanations/exercise_3_knuth-plass-typographic-qa-with-a-vision-model-feedback-loop/output/build/qa/spread-0/pass-1-page-2.png"
+      ],
+      "metrics": {
+        "hyphenatedLineEnds": 4,
+        "maxConsecutiveHyphens": 2,
+        "riverRows": 0,
+        "riverRowsHighSeverity": 0,
+        "widows": 1,
+        "orphans": 0,
+        "looseLines": 0
+      },
+      "rawModelResponse": "{\"hyphenatedLineEnds\":[1,2,3,4],\"maxConsecutiveHyphens\":2,\"riverRows\":[],\"widows\":1,\"orphans\":0,\"looseLines\":0,\"suggestions\":[{\"style\":\"BODY-CANONICAL\",\"attr\":\"hyphenation\",\"from\":false,\"to\":true,\"rationale\":\"tighten the justified column\"}]}",
+      "suggestions": [
+        {
+          "style": "BODY-CANONICAL",
+          "attr": "hyphenation",
+          "from": false,
+          "to": true,
+          "rationale": "tighten the justified column",
+          "applied": true
+        }
+      ]
+    },
+    {
+      "passNumber": 2,
+      "renderedAt": "2026-10-26T13:32:23.232Z",
+      "renderedFiles": [
+        "chapter16/solutions_and_explanations/exercise_3_knuth-plass-typographic-qa-with-a-vision-model-feedback-loop/output/build/qa/spread-0/pass-2-page-1.png",
+        "chapter16/solutions_and_explanations/exercise_3_knuth-plass-typographic-qa-with-a-vision-model-feedback-loop/output/build/qa/spread-0/pass-2-page-2.png"
+      ],
+      "metrics": {
+        "hyphenatedLineEnds": 4,
+        "maxConsecutiveHyphens": 2,
+        "riverRows": 0,
+        "riverRowsHighSeverity": 0,
+        "widows": 0,
+        "orphans": 0,
+        "looseLines": 0
+      },
+      "rawModelResponse": "{\"hyphenatedLineEnds\":[1,2,3,4],\"maxConsecutiveHyphens\":2,\"riverRows\":[],\"widows\":0,\"orphans\":0,\"looseLines\":0,\"suggestions\":[]}",
+      "suggestions": []
+    }
+  ],
+  "outcome": "clean",
+  "capturedSnapshotRef": "styles-snapshot.json"
+}

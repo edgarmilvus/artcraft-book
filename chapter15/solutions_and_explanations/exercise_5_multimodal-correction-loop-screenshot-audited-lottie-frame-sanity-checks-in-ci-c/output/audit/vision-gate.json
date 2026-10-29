@@ -1,0 +1,12 @@
+{
+  "expectedHex": "#0F62FE",
+  "observedSamples": [
+    "#0F62FE",
+    "#0F62FE",
+    "#0F62FE"
+  ],
+  "agreedHex": "#0F62FE",
+  "deltaE2000": 0,
+  "pass": true,
+  "fallbackUsed": false
+}

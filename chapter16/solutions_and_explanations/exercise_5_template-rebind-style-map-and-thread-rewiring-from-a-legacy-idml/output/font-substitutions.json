@@ -1,0 +1,10 @@
+[
+  {
+    "family": "Helvetica Neue",
+    "style": "Regular",
+    "toFamily": "Inter",
+    "toStyle": "Regular",
+    "reason": "not-installed",
+    "documentFontPreserved": false
+  }
+]

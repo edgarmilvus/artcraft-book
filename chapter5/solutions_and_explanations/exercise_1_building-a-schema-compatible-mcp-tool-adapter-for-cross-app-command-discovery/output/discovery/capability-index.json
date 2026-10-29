@@ -1,0 +1,5486 @@
+{
+  "photocraft_command_batch": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_command_list": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_command_run": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_control_call": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_close": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_export": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_export_data_sets": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_export_layers": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_import_data_sets": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_inspect": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_new": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_open": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_place": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_render_preview": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_save": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_doc_select": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_jobs_cancel": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_jobs_list": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_render_preview": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_session_list": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_ui_inspect": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_ui_menu_invoke": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_ui_pointer": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_ui_screenshot": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_ui_set": {
+    "app": "photocraft",
+    "commandId": null,
+    "isMetaTool": true,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_new": {
+    "app": "photocraft",
+    "commandId": "file.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_close": {
+    "app": "photocraft",
+    "commandId": "file.close",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_undo": {
+    "app": "photocraft",
+    "commandId": "edit.undo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_redo": {
+    "app": "photocraft",
+    "commandId": "edit.redo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_fill": {
+    "app": "photocraft",
+    "commandId": "edit.fill",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_clear": {
+    "app": "photocraft",
+    "commandId": "edit.clear",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_all": {
+    "app": "photocraft",
+    "commandId": "select.all",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_deselect": {
+    "app": "photocraft",
+    "commandId": "select.deselect",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_inverse": {
+    "app": "photocraft",
+    "commandId": "select.inverse",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_rect": {
+    "app": "photocraft",
+    "commandId": "select.rect",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_layer": {
+    "app": "photocraft",
+    "commandId": "layer.new.layer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_group": {
+    "app": "photocraft",
+    "commandId": "layer.new.group",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_groupLayers": {
+    "app": "photocraft",
+    "commandId": "layer.groupLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_duplicate": {
+    "app": "photocraft",
+    "commandId": "layer.duplicate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_delete": {
+    "app": "photocraft",
+    "commandId": "layer.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_select": {
+    "app": "photocraft",
+    "commandId": "layer.select",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_setProps": {
+    "app": "photocraft",
+    "commandId": "layer.setProps",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_arrange_bringForward": {
+    "app": "photocraft",
+    "commandId": "layer.arrange.bringForward",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_arrange_sendBackward": {
+    "app": "photocraft",
+    "commandId": "layer.arrange.sendBackward",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_arrange_bringToFront": {
+    "app": "photocraft",
+    "commandId": "layer.arrange.bringToFront",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_arrange_sendToBack": {
+    "app": "photocraft",
+    "commandId": "layer.arrange.sendToBack",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_createClippingMask": {
+    "app": "photocraft",
+    "commandId": "layer.createClippingMask",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_releaseClippingMask": {
+    "app": "photocraft",
+    "commandId": "layer.releaseClippingMask",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_revealAll": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.revealAll",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_hideAll": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.hideAll",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_revealSelection": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.revealSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_delete": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_mergeDown": {
+    "app": "photocraft",
+    "commandId": "layer.mergeDown",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_mergeGroup": {
+    "app": "photocraft",
+    "commandId": "layer.mergeGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_flattenImage": {
+    "app": "photocraft",
+    "commandId": "layer.flattenImage",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newFillLayer_solidColor": {
+    "app": "photocraft",
+    "commandId": "layer.newFillLayer.solidColor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newFillLayer_gradient": {
+    "app": "photocraft",
+    "commandId": "layer.newFillLayer.gradient",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_setAdjustment": {
+    "app": "photocraft",
+    "commandId": "layer.setAdjustment",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_moveTo": {
+    "app": "photocraft",
+    "commandId": "layer.moveTo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_translate": {
+    "app": "photocraft",
+    "commandId": "layer.translate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_imageRotation_flipCanvasHorizontal": {
+    "app": "photocraft",
+    "commandId": "image.imageRotation.flipCanvasHorizontal",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_imageRotation_flipCanvasVertical": {
+    "app": "photocraft",
+    "commandId": "image.imageRotation.flipCanvasVertical",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_imageRotation_180": {
+    "app": "photocraft",
+    "commandId": "image.imageRotation.180",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_imageRotation_90cw": {
+    "app": "photocraft",
+    "commandId": "image.imageRotation.90cw",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_imageRotation_90ccw": {
+    "app": "photocraft",
+    "commandId": "image.imageRotation.90ccw",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_desaturate": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.desaturate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_stroke": {
+    "app": "photocraft",
+    "commandId": "paint.stroke",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tools_setColors": {
+    "app": "photocraft",
+    "commandId": "tools.setColors",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tools_swapColors": {
+    "app": "photocraft",
+    "commandId": "tools.swapColors",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tools_defaultColors": {
+    "app": "photocraft",
+    "commandId": "tools.defaultColors",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_session_inspect": {
+    "app": "photocraft",
+    "commandId": "session.inspect",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_inspect": {
+    "app": "photocraft",
+    "commandId": "document.inspect",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_activate": {
+    "app": "photocraft",
+    "commandId": "document.activate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_move": {
+    "app": "photocraft",
+    "commandId": "document.move",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_pixel": {
+    "app": "photocraft",
+    "commandId": "document.pixel",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_brightnessContrast": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.brightnessContrast",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_brightnessContrast": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.brightnessContrast",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_levels": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.levels",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_levels": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.levels",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_curves": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.curves",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_curves": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.curves",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_exposure": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.exposure",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_exposure": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.exposure",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_vibrance": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.vibrance",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_vibrance": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.vibrance",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_hueSaturation": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.hueSaturation",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_hueSaturation": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.hueSaturation",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_colorBalance": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.colorBalance",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_colorBalance": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.colorBalance",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_blackWhite": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.blackWhite",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_blackWhite": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.blackWhite",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_photoFilter": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.photoFilter",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_photoFilter": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.photoFilter",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_channelMixer": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.channelMixer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_channelMixer": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.channelMixer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_invert": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.invert",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_invert": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.invert",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_posterize": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.posterize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_posterize": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.posterize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_threshold": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.threshold",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_threshold": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.threshold",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_gradientMap": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.gradientMap",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_gradientMap": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.gradientMap",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_selectiveColor": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.selectiveColor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_selectiveColor": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.selectiveColor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newAdjustmentLayer_colorLookup": {
+    "app": "photocraft",
+    "commandId": "layer.newAdjustmentLayer.colorLookup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_colorLookup": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.colorLookup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_dropShadow": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.dropShadow",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_innerShadow": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.innerShadow",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_outerGlow": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.outerGlow",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_innerGlow": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.innerGlow",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_stroke": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.stroke",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_colorOverlay": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.colorOverlay",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_gradientOverlay": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.gradientOverlay",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_patternOverlay": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.patternOverlay",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_bevelEmboss": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.bevelEmboss",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_satin": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.satin",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_replace": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.replace",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_makeDefault": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.makeDefault",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_defaultFor": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.defaultFor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_clear": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.clear",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_gaussianBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blur.gaussianBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_blur": {
+    "app": "photocraft",
+    "commandId": "filter.blur.blur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_blurMore": {
+    "app": "photocraft",
+    "commandId": "filter.blur.blurMore",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_sharpen_sharpen": {
+    "app": "photocraft",
+    "commandId": "filter.sharpen.sharpen",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_sharpen_sharpenMore": {
+    "app": "photocraft",
+    "commandId": "filter.sharpen.sharpenMore",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_sharpen_sharpenEdges": {
+    "app": "photocraft",
+    "commandId": "filter.sharpen.sharpenEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_noise_despeckle": {
+    "app": "photocraft",
+    "commandId": "filter.noise.despeckle",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_boxBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blur.boxBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_motionBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blur.motionBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_radialBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blur.radialBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_surfaceBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blur.surfaceBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_sharpen_unsharpMask": {
+    "app": "photocraft",
+    "commandId": "filter.sharpen.unsharpMask",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_sharpen_smartSharpen": {
+    "app": "photocraft",
+    "commandId": "filter.sharpen.smartSharpen",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_noise_addNoise": {
+    "app": "photocraft",
+    "commandId": "filter.noise.addNoise",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_noise_median": {
+    "app": "photocraft",
+    "commandId": "filter.noise.median",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_noise_dustAndScratches": {
+    "app": "photocraft",
+    "commandId": "filter.noise.dustAndScratches",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_pixelate_mosaic": {
+    "app": "photocraft",
+    "commandId": "filter.pixelate.mosaic",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_stylize_emboss": {
+    "app": "photocraft",
+    "commandId": "filter.stylize.emboss",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_stylize_findEdges": {
+    "app": "photocraft",
+    "commandId": "filter.stylize.findEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_stylize_solarize": {
+    "app": "photocraft",
+    "commandId": "filter.stylize.solarize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_distort_twirl": {
+    "app": "photocraft",
+    "commandId": "filter.distort.twirl",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_distort_pinch": {
+    "app": "photocraft",
+    "commandId": "filter.distort.pinch",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_distort_spherize": {
+    "app": "photocraft",
+    "commandId": "filter.distort.spherize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_distort_wave": {
+    "app": "photocraft",
+    "commandId": "filter.distort.wave",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_distort_ripple": {
+    "app": "photocraft",
+    "commandId": "filter.distort.ripple",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_distort_polarCoordinates": {
+    "app": "photocraft",
+    "commandId": "filter.distort.polarCoordinates",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_other_highPass": {
+    "app": "photocraft",
+    "commandId": "filter.other.highPass",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_other_minimum": {
+    "app": "photocraft",
+    "commandId": "filter.other.minimum",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_other_maximum": {
+    "app": "photocraft",
+    "commandId": "filter.other.maximum",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_other_offset": {
+    "app": "photocraft",
+    "commandId": "filter.other.offset",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_lastFilter": {
+    "app": "photocraft",
+    "commandId": "filter.lastFilter",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_pixelate_colorHalftone": {
+    "app": "photocraft",
+    "commandId": "filter.pixelate.colorHalftone",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_pixelate_crystallize": {
+    "app": "photocraft",
+    "commandId": "filter.pixelate.crystallize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_pixelate_facet": {
+    "app": "photocraft",
+    "commandId": "filter.pixelate.facet",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_pixelate_fragment": {
+    "app": "photocraft",
+    "commandId": "filter.pixelate.fragment",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_pixelate_mezzotint": {
+    "app": "photocraft",
+    "commandId": "filter.pixelate.mezzotint",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_pixelate_pointillize": {
+    "app": "photocraft",
+    "commandId": "filter.pixelate.pointillize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_stylize_diffuse": {
+    "app": "photocraft",
+    "commandId": "filter.stylize.diffuse",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_stylize_extrude": {
+    "app": "photocraft",
+    "commandId": "filter.stylize.extrude",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_stylize_oilPaint": {
+    "app": "photocraft",
+    "commandId": "filter.stylize.oilPaint",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_stylize_tiles": {
+    "app": "photocraft",
+    "commandId": "filter.stylize.tiles",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_stylize_traceContour": {
+    "app": "photocraft",
+    "commandId": "filter.stylize.traceContour",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_stylize_wind": {
+    "app": "photocraft",
+    "commandId": "filter.stylize.wind",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_distort_displace": {
+    "app": "photocraft",
+    "commandId": "filter.distort.displace",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_distort_shear": {
+    "app": "photocraft",
+    "commandId": "filter.distort.shear",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_distort_zigZag": {
+    "app": "photocraft",
+    "commandId": "filter.distort.zigZag",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_render_fibers": {
+    "app": "photocraft",
+    "commandId": "filter.render.fibers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_render_lensFlare": {
+    "app": "photocraft",
+    "commandId": "filter.render.lensFlare",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_render_lightingEffects": {
+    "app": "photocraft",
+    "commandId": "filter.render.lightingEffects",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_render_relight": {
+    "app": "photocraft",
+    "commandId": "filter.render.relight",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_noise_reduceNoise": {
+    "app": "photocraft",
+    "commandId": "filter.noise.reduceNoise",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_smartBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blur.smartBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_lensBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blur.lensBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_shapeBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blur.shapeBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blurGallery_tiltShift": {
+    "app": "photocraft",
+    "commandId": "filter.blurGallery.tiltShift",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blurGallery_irisBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blurGallery.irisBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blurGallery_fieldBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blurGallery.fieldBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blurGallery_spinBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blurGallery.spinBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blurGallery_pathBlur": {
+    "app": "photocraft",
+    "commandId": "filter.blurGallery.pathBlur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_other_custom": {
+    "app": "photocraft",
+    "commandId": "filter.other.custom",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_other_hsbHsl": {
+    "app": "photocraft",
+    "commandId": "filter.other.hsbHsl",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_video_deInterlace": {
+    "app": "photocraft",
+    "commandId": "filter.video.deInterlace",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_video_ntscColors": {
+    "app": "photocraft",
+    "commandId": "filter.video.ntscColors",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_other_colorToAlpha": {
+    "app": "photocraft",
+    "commandId": "filter.other.colorToAlpha",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_filterGallery": {
+    "app": "photocraft",
+    "commandId": "filter.filterGallery",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_coloredPencil": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.coloredPencil",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_cutout": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.cutout",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_dryBrush": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.dryBrush",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_filmGrain": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.filmGrain",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_fresco": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.fresco",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_neonGlow": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.neonGlow",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_paintDaubs": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.paintDaubs",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_paletteKnife": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.paletteKnife",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_plasticWrap": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.plasticWrap",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_posterEdges": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.posterEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_roughPastels": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.roughPastels",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_smudgeStick": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.smudgeStick",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_sponge": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.sponge",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_underpainting": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.underpainting",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_watercolor": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.watercolor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_accentedEdges": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.accentedEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_angledStrokes": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.angledStrokes",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_crosshatch": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.crosshatch",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_darkStrokes": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.darkStrokes",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_inkOutlines": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.inkOutlines",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_spatter": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.spatter",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_sprayedStrokes": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.sprayedStrokes",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_sumiE": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.sumiE",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_diffuseGlow": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.diffuseGlow",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_glass": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.glass",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_oceanRipple": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.oceanRipple",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_basRelief": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.basRelief",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_chalkCharcoal": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.chalkCharcoal",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_charcoal": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.charcoal",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_chrome": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.chrome",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_conteCrayon": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.conteCrayon",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_graphicPen": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.graphicPen",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_halftonePattern": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.halftonePattern",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_notePaper": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.notePaper",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_photocopy": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.photocopy",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_plaster": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.plaster",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_reticulation": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.reticulation",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_stamp": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.stamp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_tornEdges": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.tornEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_waterPaper": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.waterPaper",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_glowingEdges": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.glowingEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_craquelure": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.craquelure",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_grain": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.grain",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_mosaicTiles": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.mosaicTiles",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_patchwork": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.patchwork",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_stainedGlass": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.stainedGlass",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_gallery_texturizer": {
+    "app": "photocraft",
+    "commandId": "filter.gallery.texturizer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_fill_create": {
+    "app": "photocraft",
+    "commandId": "gradient.fill.create",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_fill_set": {
+    "app": "photocraft",
+    "commandId": "gradient.fill.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_fill_stop": {
+    "app": "photocraft",
+    "commandId": "gradient.fill.stop",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_fill_get": {
+    "app": "photocraft",
+    "commandId": "gradient.fill.get",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_fill_solidColor_set": {
+    "app": "photocraft",
+    "commandId": "layer.fill.solidColor.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_fill_pattern_set": {
+    "app": "photocraft",
+    "commandId": "layer.fill.pattern.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_create": {
+    "app": "photocraft",
+    "commandId": "type.create",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_edit": {
+    "app": "photocraft",
+    "commandId": "type.edit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_setStyle": {
+    "app": "photocraft",
+    "commandId": "type.setStyle",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_rasterize": {
+    "app": "photocraft",
+    "commandId": "type.rasterize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_info": {
+    "app": "photocraft",
+    "commandId": "type.info",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_fonts": {
+    "app": "photocraft",
+    "commandId": "type.fonts",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_increaseSize": {
+    "app": "photocraft",
+    "commandId": "type.increaseSize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_decreaseSize": {
+    "app": "photocraft",
+    "commandId": "type.decreaseSize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_increaseSizeMore": {
+    "app": "photocraft",
+    "commandId": "type.increaseSizeMore",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_decreaseSizeMore": {
+    "app": "photocraft",
+    "commandId": "type.decreaseSizeMore",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_createSelection": {
+    "app": "photocraft",
+    "commandId": "type.createSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform": {
+    "app": "photocraft",
+    "commandId": "edit.transform",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_float": {
+    "app": "photocraft",
+    "commandId": "select.float",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_drop": {
+    "app": "photocraft",
+    "commandId": "select.drop",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_shape_create": {
+    "app": "photocraft",
+    "commandId": "shape.create",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_shape_edit": {
+    "app": "photocraft",
+    "commandId": "shape.edit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_shape_info": {
+    "app": "photocraft",
+    "commandId": "shape.info",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_shape_rasterize": {
+    "app": "photocraft",
+    "commandId": "shape.rasterize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_list": {
+    "app": "photocraft",
+    "commandId": "path.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_info": {
+    "app": "photocraft",
+    "commandId": "path.info",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_set": {
+    "app": "photocraft",
+    "commandId": "path.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_delete": {
+    "app": "photocraft",
+    "commandId": "path.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_transform": {
+    "app": "photocraft",
+    "commandId": "path.transform",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_clippingPath_set": {
+    "app": "photocraft",
+    "commandId": "path.clippingPath.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_clippingPath_clear": {
+    "app": "photocraft",
+    "commandId": "path.clippingPath.clear",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_style_copyFill": {
+    "app": "photocraft",
+    "commandId": "path.style.copyFill",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_style_copyStroke": {
+    "app": "photocraft",
+    "commandId": "path.style.copyStroke",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_style_pasteFill": {
+    "app": "photocraft",
+    "commandId": "path.style.pasteFill",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_style_pasteStroke": {
+    "app": "photocraft",
+    "commandId": "path.style.pasteStroke",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_rename": {
+    "app": "photocraft",
+    "commandId": "path.rename",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_toSelection": {
+    "app": "photocraft",
+    "commandId": "path.toSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_toWorkPath": {
+    "app": "photocraft",
+    "commandId": "select.toWorkPath",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_fill": {
+    "app": "photocraft",
+    "commandId": "path.fill",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_stroke": {
+    "app": "photocraft",
+    "commandId": "path.stroke",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_add": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.add",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_fromPath": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.fromPath",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_edit": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.edit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_delete": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_rasterize_vectorMask": {
+    "app": "photocraft",
+    "commandId": "layer.rasterize.vectorMask",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_revealAll": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.revealAll",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_hideAll": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.hideAll",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_currentPath": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.currentPath",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_enabled": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.enabled",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_linked": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.linked",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_rasterize_shape": {
+    "app": "photocraft",
+    "commandId": "layer.rasterize.shape",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_combineShapes_unite": {
+    "app": "photocraft",
+    "commandId": "layer.combineShapes.unite",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_combineShapes_subtractFrontShape": {
+    "app": "photocraft",
+    "commandId": "layer.combineShapes.subtractFrontShape",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_combineShapes_intersectShapeAreas": {
+    "app": "photocraft",
+    "commandId": "layer.combineShapes.intersectShapeAreas",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_combineShapes_excludeOverlappingShapes": {
+    "app": "photocraft",
+    "commandId": "layer.combineShapes.excludeOverlappingShapes",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_combineShapes_mergeShapeComponents": {
+    "app": "photocraft",
+    "commandId": "layer.combineShapes.mergeShapeComponents",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_convertToShape": {
+    "app": "photocraft",
+    "commandId": "select.convertToShape",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_vectorMask_info": {
+    "app": "photocraft",
+    "commandId": "layer.vectorMask.info",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_moveAnchors": {
+    "app": "photocraft",
+    "commandId": "path.moveAnchors",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_moveHandle": {
+    "app": "photocraft",
+    "commandId": "path.moveHandle",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_bendSegment": {
+    "app": "photocraft",
+    "commandId": "path.bendSegment",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_convertPoint": {
+    "app": "photocraft",
+    "commandId": "path.convertPoint",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_addAnchor": {
+    "app": "photocraft",
+    "commandId": "path.addAnchor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_path_deleteAnchor": {
+    "app": "photocraft",
+    "commandId": "path.deleteAnchor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_quick": {
+    "app": "photocraft",
+    "commandId": "select.quick",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_object": {
+    "app": "photocraft",
+    "commandId": "select.object",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_subject": {
+    "app": "photocraft",
+    "commandId": "select.subject",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_refineEdge": {
+    "app": "photocraft",
+    "commandId": "select.refineEdge",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_focusArea": {
+    "app": "photocraft",
+    "commandId": "select.focusArea",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_removeBackground": {
+    "app": "photocraft",
+    "commandId": "layer.removeBackground",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_setSymmetry": {
+    "app": "photocraft",
+    "commandId": "paint.setSymmetry",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_symmetryFromPath": {
+    "app": "photocraft",
+    "commandId": "paint.symmetryFromPath",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_symmetryDisable": {
+    "app": "photocraft",
+    "commandId": "paint.symmetryDisable",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_cut": {
+    "app": "photocraft",
+    "commandId": "edit.cut",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_copy": {
+    "app": "photocraft",
+    "commandId": "edit.copy",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_copyMerged": {
+    "app": "photocraft",
+    "commandId": "edit.copyMerged",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_paste": {
+    "app": "photocraft",
+    "commandId": "edit.paste",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_newFromClipboard": {
+    "app": "photocraft",
+    "commandId": "file.newFromClipboard",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_pasteSpecial_pasteInPlace": {
+    "app": "photocraft",
+    "commandId": "edit.pasteSpecial.pasteInPlace",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_layerViaCopy": {
+    "app": "photocraft",
+    "commandId": "layer.new.layerViaCopy",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_layerViaCut": {
+    "app": "photocraft",
+    "commandId": "layer.new.layerViaCut",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_mergeVisible": {
+    "app": "photocraft",
+    "commandId": "layer.mergeVisible",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_autoTone": {
+    "app": "photocraft",
+    "commandId": "image.autoTone",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_autoContrast": {
+    "app": "photocraft",
+    "commandId": "image.autoContrast",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_autoColor": {
+    "app": "photocraft",
+    "commandId": "image.autoColor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_toggleLastState": {
+    "app": "photocraft",
+    "commandId": "edit.toggleLastState",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_again": {
+    "app": "photocraft",
+    "commandId": "edit.transform.again",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_againCopy": {
+    "app": "photocraft",
+    "commandId": "edit.transform.againCopy",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_newGuide": {
+    "app": "photocraft",
+    "commandId": "view.newGuide",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_moveGuide": {
+    "app": "photocraft",
+    "commandId": "view.moveGuide",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_deleteGuide": {
+    "app": "photocraft",
+    "commandId": "view.deleteGuide",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_clearGuides": {
+    "app": "photocraft",
+    "commandId": "view.clearGuides",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_assignProfile": {
+    "app": "photocraft",
+    "commandId": "edit.assignProfile",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_convertToProfile": {
+    "app": "photocraft",
+    "commandId": "edit.convertToProfile",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_colorSettings": {
+    "app": "photocraft",
+    "commandId": "edit.colorSettings",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_color_profileMismatch": {
+    "app": "photocraft",
+    "commandId": "color.profileMismatch",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_profileInfo": {
+    "app": "photocraft",
+    "commandId": "edit.profileInfo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofSetup": {
+    "app": "photocraft",
+    "commandId": "view.proofSetup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofColors": {
+    "app": "photocraft",
+    "commandId": "view.proofColors",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_gamutWarning": {
+    "app": "photocraft",
+    "commandId": "view.gamutWarning",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_pencil": {
+    "app": "photocraft",
+    "commandId": "paint.pencil",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_mixerBrush": {
+    "app": "photocraft",
+    "commandId": "paint.mixerBrush",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_colorReplacement": {
+    "app": "photocraft",
+    "commandId": "paint.colorReplacement",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_list": {
+    "app": "photocraft",
+    "commandId": "brush.presets.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_save": {
+    "app": "photocraft",
+    "commandId": "brush.presets.save",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_update": {
+    "app": "photocraft",
+    "commandId": "brush.presets.update",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_delete": {
+    "app": "photocraft",
+    "commandId": "brush.presets.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_setCurrent": {
+    "app": "photocraft",
+    "commandId": "brush.presets.setCurrent",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_defineFromSelection": {
+    "app": "photocraft",
+    "commandId": "brush.defineFromSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_get": {
+    "app": "photocraft",
+    "commandId": "brush.get",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tools_setBrush": {
+    "app": "photocraft",
+    "commandId": "tools.setBrush",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_rename": {
+    "app": "photocraft",
+    "commandId": "brush.presets.rename",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_move": {
+    "app": "photocraft",
+    "commandId": "brush.presets.move",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_moveGroup": {
+    "app": "photocraft",
+    "commandId": "brush.presets.moveGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_renameGroup": {
+    "app": "photocraft",
+    "commandId": "brush.presets.renameGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_deleteGroup": {
+    "app": "photocraft",
+    "commandId": "brush.presets.deleteGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_magicEraser": {
+    "app": "photocraft",
+    "commandId": "paint.magicEraser",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_backgroundEraser": {
+    "app": "photocraft",
+    "commandId": "paint.backgroundEraser",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_presets_importAbr": {
+    "app": "photocraft",
+    "commandId": "brush.presets.importAbr",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_presets_importGrd": {
+    "app": "photocraft",
+    "commandId": "gradient.presets.importGrd",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_list": {
+    "app": "photocraft",
+    "commandId": "swatches.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_add": {
+    "app": "photocraft",
+    "commandId": "swatches.add",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_delete": {
+    "app": "photocraft",
+    "commandId": "swatches.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_rename": {
+    "app": "photocraft",
+    "commandId": "swatches.rename",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_move": {
+    "app": "photocraft",
+    "commandId": "swatches.move",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_newGroup": {
+    "app": "photocraft",
+    "commandId": "swatches.newGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_renameGroup": {
+    "app": "photocraft",
+    "commandId": "swatches.renameGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_deleteGroup": {
+    "app": "photocraft",
+    "commandId": "swatches.deleteGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_use": {
+    "app": "photocraft",
+    "commandId": "swatches.use",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_reset": {
+    "app": "photocraft",
+    "commandId": "swatches.reset",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_import": {
+    "app": "photocraft",
+    "commandId": "swatches.import",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_swatches_export": {
+    "app": "photocraft",
+    "commandId": "swatches.export",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_cloneStamp": {
+    "app": "photocraft",
+    "commandId": "paint.cloneStamp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_patternStamp": {
+    "app": "photocraft",
+    "commandId": "paint.patternStamp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_healingBrush": {
+    "app": "photocraft",
+    "commandId": "paint.healingBrush",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_spotHealing": {
+    "app": "photocraft",
+    "commandId": "paint.spotHealing",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_patch": {
+    "app": "photocraft",
+    "commandId": "paint.patch",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_contentAwareMove": {
+    "app": "photocraft",
+    "commandId": "paint.contentAwareMove",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_remove": {
+    "app": "photocraft",
+    "commandId": "paint.remove",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_dodge": {
+    "app": "photocraft",
+    "commandId": "paint.dodge",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_burn": {
+    "app": "photocraft",
+    "commandId": "paint.burn",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_sponge": {
+    "app": "photocraft",
+    "commandId": "paint.sponge",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_blur": {
+    "app": "photocraft",
+    "commandId": "paint.blur",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_sharpen": {
+    "app": "photocraft",
+    "commandId": "paint.sharpen",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_smudge": {
+    "app": "photocraft",
+    "commandId": "paint.smudge",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_historyBrush": {
+    "app": "photocraft",
+    "commandId": "paint.historyBrush",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_redEye": {
+    "app": "photocraft",
+    "commandId": "paint.redEye",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_imageSize": {
+    "app": "photocraft",
+    "commandId": "image.imageSize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_canvasSize": {
+    "app": "photocraft",
+    "commandId": "image.canvasSize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_crop": {
+    "app": "photocraft",
+    "commandId": "image.crop",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_trim": {
+    "app": "photocraft",
+    "commandId": "image.trim",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_rgb": {
+    "app": "photocraft",
+    "commandId": "image.mode.rgb",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_grayscale": {
+    "app": "photocraft",
+    "commandId": "image.mode.grayscale",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_cmyk": {
+    "app": "photocraft",
+    "commandId": "image.mode.cmyk",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_lab": {
+    "app": "photocraft",
+    "commandId": "image.mode.lab",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_bits8": {
+    "app": "photocraft",
+    "commandId": "image.mode.bits8",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_bits16": {
+    "app": "photocraft",
+    "commandId": "image.mode.bits16",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_bits32": {
+    "app": "photocraft",
+    "commandId": "image.mode.bits32",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_duplicate": {
+    "app": "photocraft",
+    "commandId": "image.duplicate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_perspectiveCrop": {
+    "app": "photocraft",
+    "commandId": "image.perspectiveCrop",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_magicWand": {
+    "app": "photocraft",
+    "commandId": "select.magicWand",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_colorRange": {
+    "app": "photocraft",
+    "commandId": "select.colorRange",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_modify_border": {
+    "app": "photocraft",
+    "commandId": "select.modify.border",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_modify_smooth": {
+    "app": "photocraft",
+    "commandId": "select.modify.smooth",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_modify_expand": {
+    "app": "photocraft",
+    "commandId": "select.modify.expand",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_modify_contract": {
+    "app": "photocraft",
+    "commandId": "select.modify.contract",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_modify_feather": {
+    "app": "photocraft",
+    "commandId": "select.modify.feather",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_grow": {
+    "app": "photocraft",
+    "commandId": "select.grow",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_similar": {
+    "app": "photocraft",
+    "commandId": "select.similar",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_lasso": {
+    "app": "photocraft",
+    "commandId": "select.lasso",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_magneticLasso": {
+    "app": "photocraft",
+    "commandId": "select.magneticLasso",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_sky": {
+    "app": "photocraft",
+    "commandId": "select.sky",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_isolateLayers": {
+    "app": "photocraft",
+    "commandId": "select.isolateLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_transformSelection": {
+    "app": "photocraft",
+    "commandId": "select.transformSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_bucket": {
+    "app": "photocraft",
+    "commandId": "paint.bucket",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_paint_gradient": {
+    "app": "photocraft",
+    "commandId": "paint.gradient",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_stroke": {
+    "app": "photocraft",
+    "commandId": "edit.stroke",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_rotate180": {
+    "app": "photocraft",
+    "commandId": "edit.transform.rotate180",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_rotate90Cw": {
+    "app": "photocraft",
+    "commandId": "edit.transform.rotate90Cw",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_rotate90Ccw": {
+    "app": "photocraft",
+    "commandId": "edit.transform.rotate90Ccw",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_flipHorizontal": {
+    "app": "photocraft",
+    "commandId": "edit.transform.flipHorizontal",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_flipVertical": {
+    "app": "photocraft",
+    "commandId": "edit.transform.flipVertical",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_pasteSpecial_pasteInto": {
+    "app": "photocraft",
+    "commandId": "edit.pasteSpecial.pasteInto",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_pasteSpecial_pasteOutside": {
+    "app": "photocraft",
+    "commandId": "edit.pasteSpecial.pasteOutside",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_reselect": {
+    "app": "photocraft",
+    "commandId": "select.reselect",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_equalize": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.equalize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_revealAll": {
+    "app": "photocraft",
+    "commandId": "image.revealAll",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_layerFromBackground": {
+    "app": "photocraft",
+    "commandId": "layer.new.layerFromBackground",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_copyLayerStyle": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.copyLayerStyle",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_pasteLayerStyle": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.pasteLayerStyle",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_hideAllEffects": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.hideAllEffects",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_showAllEffects": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.showAllEffects",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_enabled": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.enabled",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_linked": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.linked",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_rasterize_layer": {
+    "app": "photocraft",
+    "commandId": "layer.rasterize.layer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_rasterize_allLayers": {
+    "app": "photocraft",
+    "commandId": "layer.rasterize.allLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_rasterize_type": {
+    "app": "photocraft",
+    "commandId": "layer.rasterize.type",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_rasterize_fillContent": {
+    "app": "photocraft",
+    "commandId": "layer.rasterize.fillContent",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_rasterize_smartObject": {
+    "app": "photocraft",
+    "commandId": "layer.rasterize.smartObject",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_delete_hiddenLayers": {
+    "app": "photocraft",
+    "commandId": "layer.delete.hiddenLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_scripts_deleteAllEmptyLayers": {
+    "app": "photocraft",
+    "commandId": "file.scripts.deleteAllEmptyLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_ungroupLayers": {
+    "app": "photocraft",
+    "commandId": "layer.ungroupLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_hideLayers": {
+    "app": "photocraft",
+    "commandId": "layer.hideLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_showLayers": {
+    "app": "photocraft",
+    "commandId": "layer.showLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_toggleLockTransparency": {
+    "app": "photocraft",
+    "commandId": "layer.toggleLockTransparency",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_showOnly": {
+    "app": "photocraft",
+    "commandId": "layer.showOnly",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_blur_average": {
+    "app": "photocraft",
+    "commandId": "filter.blur.average",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_render_clouds": {
+    "app": "photocraft",
+    "commandId": "filter.render.clouds",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_render_differenceClouds": {
+    "app": "photocraft",
+    "commandId": "filter.render.differenceClouds",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_backgroundFromLayer": {
+    "app": "photocraft",
+    "commandId": "layer.new.backgroundFromLayer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_closeAll": {
+    "app": "photocraft",
+    "commandId": "file.closeAll",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_closeOthers": {
+    "app": "photocraft",
+    "commandId": "file.closeOthers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_revealInFinder": {
+    "app": "photocraft",
+    "commandId": "file.revealInFinder",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_revert": {
+    "app": "photocraft",
+    "commandId": "file.revert",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_saveACopy": {
+    "app": "photocraft",
+    "commandId": "file.saveACopy",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_openAs": {
+    "app": "photocraft",
+    "commandId": "file.openAs",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_placeEmbedded": {
+    "app": "photocraft",
+    "commandId": "file.placeEmbedded",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_placeLinked": {
+    "app": "photocraft",
+    "commandId": "file.placeLinked",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_fileInfo": {
+    "app": "photocraft",
+    "commandId": "file.fileInfo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_fitImage": {
+    "app": "photocraft",
+    "commandId": "file.automate.fitImage",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_conditionalModeChange": {
+    "app": "photocraft",
+    "commandId": "file.automate.conditionalModeChange",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_batch": {
+    "app": "photocraft",
+    "commandId": "file.automate.batch",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_scripts_imageProcessor": {
+    "app": "photocraft",
+    "commandId": "file.scripts.imageProcessor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_scripts_loadFilesIntoStack": {
+    "app": "photocraft",
+    "commandId": "file.scripts.loadFilesIntoStack",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_scripts_flattenAllLayerEffects": {
+    "app": "photocraft",
+    "commandId": "file.scripts.flattenAllLayerEffects",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_scripts_flattenAllMasks": {
+    "app": "photocraft",
+    "commandId": "file.scripts.flattenAllMasks",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_layersToFiles": {
+    "app": "photocraft",
+    "commandId": "file.export.layersToFiles",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_colorLookupTables": {
+    "app": "photocraft",
+    "commandId": "file.export.colorLookupTables",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_newGuideLayout": {
+    "app": "photocraft",
+    "commandId": "view.newGuideLayout",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_newGuidesFromShape": {
+    "app": "photocraft",
+    "commandId": "view.newGuidesFromShape",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_clearCanvasGuides": {
+    "app": "photocraft",
+    "commandId": "view.clearCanvasGuides",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_exrParts": {
+    "app": "photocraft",
+    "commandId": "file.exrParts",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_openExrParts": {
+    "app": "photocraft",
+    "commandId": "file.openExrParts",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_antiAlias_none": {
+    "app": "photocraft",
+    "commandId": "type.antiAlias.none",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_antiAlias_sharp": {
+    "app": "photocraft",
+    "commandId": "type.antiAlias.sharp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_antiAlias_crisp": {
+    "app": "photocraft",
+    "commandId": "type.antiAlias.crisp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_antiAlias_strong": {
+    "app": "photocraft",
+    "commandId": "type.antiAlias.strong",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_antiAlias_smooth": {
+    "app": "photocraft",
+    "commandId": "type.antiAlias.smooth",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_antiAlias_windowsLcd": {
+    "app": "photocraft",
+    "commandId": "type.antiAlias.windowsLcd",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_antiAlias_windows": {
+    "app": "photocraft",
+    "commandId": "type.antiAlias.windows",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_orientation_horizontal": {
+    "app": "photocraft",
+    "commandId": "type.orientation.horizontal",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_orientation_vertical": {
+    "app": "photocraft",
+    "commandId": "type.orientation.vertical",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_standardLigatures": {
+    "app": "photocraft",
+    "commandId": "type.openType.standardLigatures",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_contextualAlternates": {
+    "app": "photocraft",
+    "commandId": "type.openType.contextualAlternates",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_discretionaryLigatures": {
+    "app": "photocraft",
+    "commandId": "type.openType.discretionaryLigatures",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_swash": {
+    "app": "photocraft",
+    "commandId": "type.openType.swash",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_oldstyle": {
+    "app": "photocraft",
+    "commandId": "type.openType.oldstyle",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_stylisticAlternates": {
+    "app": "photocraft",
+    "commandId": "type.openType.stylisticAlternates",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_titlingAlternates": {
+    "app": "photocraft",
+    "commandId": "type.openType.titlingAlternates",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_ornaments": {
+    "app": "photocraft",
+    "commandId": "type.openType.ornaments",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_ordinals": {
+    "app": "photocraft",
+    "commandId": "type.openType.ordinals",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_openType_fractions": {
+    "app": "photocraft",
+    "commandId": "type.openType.fractions",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_createWorkPath": {
+    "app": "photocraft",
+    "commandId": "type.createWorkPath",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_convertToShape": {
+    "app": "photocraft",
+    "commandId": "type.convertToShape",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_rasterizeTypeLayer": {
+    "app": "photocraft",
+    "commandId": "type.rasterizeTypeLayer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_convertToParagraphText": {
+    "app": "photocraft",
+    "commandId": "type.convertToParagraphText",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_convertToPointText": {
+    "app": "photocraft",
+    "commandId": "type.convertToPointText",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_warpText": {
+    "app": "photocraft",
+    "commandId": "type.warpText",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_updateAllTextLayers": {
+    "app": "photocraft",
+    "commandId": "type.updateAllTextLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_replaceAllMissingFonts": {
+    "app": "photocraft",
+    "commandId": "type.replaceAllMissingFonts",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_resolveMissingFonts": {
+    "app": "photocraft",
+    "commandId": "type.resolveMissingFonts",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_pasteLoremIpsum": {
+    "app": "photocraft",
+    "commandId": "type.pasteLoremIpsum",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_saveDefaultTypeStyles": {
+    "app": "photocraft",
+    "commandId": "type.saveDefaultTypeStyles",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_loadDefaultTypeStyles": {
+    "app": "photocraft",
+    "commandId": "type.loadDefaultTypeStyles",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_characterStyle_new": {
+    "app": "photocraft",
+    "commandId": "type.characterStyle.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_characterStyle_duplicate": {
+    "app": "photocraft",
+    "commandId": "type.characterStyle.duplicate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_characterStyle_delete": {
+    "app": "photocraft",
+    "commandId": "type.characterStyle.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_characterStyle_rename": {
+    "app": "photocraft",
+    "commandId": "type.characterStyle.rename",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_characterStyle_set": {
+    "app": "photocraft",
+    "commandId": "type.characterStyle.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_characterStyle_apply": {
+    "app": "photocraft",
+    "commandId": "type.characterStyle.apply",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_characterStyle_redefine": {
+    "app": "photocraft",
+    "commandId": "type.characterStyle.redefine",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_characterStyle_clearOverride": {
+    "app": "photocraft",
+    "commandId": "type.characterStyle.clearOverride",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_characterStyle_list": {
+    "app": "photocraft",
+    "commandId": "type.characterStyle.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_paragraphStyle_new": {
+    "app": "photocraft",
+    "commandId": "type.paragraphStyle.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_paragraphStyle_duplicate": {
+    "app": "photocraft",
+    "commandId": "type.paragraphStyle.duplicate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_paragraphStyle_delete": {
+    "app": "photocraft",
+    "commandId": "type.paragraphStyle.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_paragraphStyle_rename": {
+    "app": "photocraft",
+    "commandId": "type.paragraphStyle.rename",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_paragraphStyle_set": {
+    "app": "photocraft",
+    "commandId": "type.paragraphStyle.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_paragraphStyle_apply": {
+    "app": "photocraft",
+    "commandId": "type.paragraphStyle.apply",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_paragraphStyle_redefine": {
+    "app": "photocraft",
+    "commandId": "type.paragraphStyle.redefine",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_paragraphStyle_clearOverride": {
+    "app": "photocraft",
+    "commandId": "type.paragraphStyle.clearOverride",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_paragraphStyle_list": {
+    "app": "photocraft",
+    "commandId": "type.paragraphStyle.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_checkSpelling": {
+    "app": "photocraft",
+    "commandId": "edit.checkSpelling",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_insertText": {
+    "app": "photocraft",
+    "commandId": "type.insertText",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_hitTest": {
+    "app": "photocraft",
+    "commandId": "type.hitTest",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_caret": {
+    "app": "photocraft",
+    "commandId": "type.caret",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_type_navigate": {
+    "app": "photocraft",
+    "commandId": "type.navigate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_convertToSmartObject": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.convertToSmartObject",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_convertForSmartFilters": {
+    "app": "photocraft",
+    "commandId": "filter.convertForSmartFilters",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_newSmartObjectViaCopy": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.newSmartObjectViaCopy",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_rasterize": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.rasterize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_editContents": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.editContents",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_saveContents": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.saveContents",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_replaceContents": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.replaceContents",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_exportContents": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.exportContents",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_relinkToFile": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.relinkToFile",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_updateModifiedContent": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.updateModifiedContent",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_updateChanged": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.updateChanged",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_updateAllModifiedContent": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.updateAllModifiedContent",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_convertToLayers": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.convertToLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_convertToEmbedded": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.convertToEmbedded",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_convertToLinked": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.convertToLinked",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartFilter_disableSmartFilters": {
+    "app": "photocraft",
+    "commandId": "layer.smartFilter.disableSmartFilters",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartFilter_deleteFilterMask": {
+    "app": "photocraft",
+    "commandId": "layer.smartFilter.deleteFilterMask",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartFilter_disableFilterMask": {
+    "app": "photocraft",
+    "commandId": "layer.smartFilter.disableFilterMask",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartFilter_blendingOptions": {
+    "app": "photocraft",
+    "commandId": "layer.smartFilter.blendingOptions",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartFilter_clearSmartFilters": {
+    "app": "photocraft",
+    "commandId": "layer.smartFilter.clearSmartFilters",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartFilter_setVisible": {
+    "app": "photocraft",
+    "commandId": "layer.smartFilter.setVisible",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartFilter_setParams": {
+    "app": "photocraft",
+    "commandId": "layer.smartFilter.setParams",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartFilter_delete": {
+    "app": "photocraft",
+    "commandId": "layer.smartFilter.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartFilter_move": {
+    "app": "photocraft",
+    "commandId": "layer.smartFilter.move",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_allLayers": {
+    "app": "photocraft",
+    "commandId": "select.allLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_deselectLayers": {
+    "app": "photocraft",
+    "commandId": "select.deselectLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_findLayers": {
+    "app": "photocraft",
+    "commandId": "select.findLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_selectLinkedLayers": {
+    "app": "photocraft",
+    "commandId": "layer.selectLinkedLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_align_topEdges": {
+    "app": "photocraft",
+    "commandId": "layer.align.topEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_align_verticalCenters": {
+    "app": "photocraft",
+    "commandId": "layer.align.verticalCenters",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_align_bottomEdges": {
+    "app": "photocraft",
+    "commandId": "layer.align.bottomEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_align_leftEdges": {
+    "app": "photocraft",
+    "commandId": "layer.align.leftEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_align_horizontalCenters": {
+    "app": "photocraft",
+    "commandId": "layer.align.horizontalCenters",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_align_rightEdges": {
+    "app": "photocraft",
+    "commandId": "layer.align.rightEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_distribute_topEdges": {
+    "app": "photocraft",
+    "commandId": "layer.distribute.topEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_distribute_verticalCenters": {
+    "app": "photocraft",
+    "commandId": "layer.distribute.verticalCenters",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_distribute_bottomEdges": {
+    "app": "photocraft",
+    "commandId": "layer.distribute.bottomEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_distribute_leftEdges": {
+    "app": "photocraft",
+    "commandId": "layer.distribute.leftEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_distribute_horizontalCenters": {
+    "app": "photocraft",
+    "commandId": "layer.distribute.horizontalCenters",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_distribute_rightEdges": {
+    "app": "photocraft",
+    "commandId": "layer.distribute.rightEdges",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_distribute_horizontally": {
+    "app": "photocraft",
+    "commandId": "layer.distribute.horizontally",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_distribute_vertically": {
+    "app": "photocraft",
+    "commandId": "layer.distribute.vertically",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_linkLayers": {
+    "app": "photocraft",
+    "commandId": "layer.linkLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_mergeLayers": {
+    "app": "photocraft",
+    "commandId": "layer.mergeLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_groupFromLayers": {
+    "app": "photocraft",
+    "commandId": "layer.new.groupFromLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_arrange_reverse": {
+    "app": "photocraft",
+    "commandId": "layer.arrange.reverse",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_lockLayers": {
+    "app": "photocraft",
+    "commandId": "layer.lockLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_renameLayer": {
+    "app": "photocraft",
+    "commandId": "layer.renameLayer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_copyToDocument": {
+    "app": "photocraft",
+    "commandId": "layer.copyToDocument",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_prefs_get": {
+    "app": "photocraft",
+    "commandId": "prefs.get",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_prefs_set": {
+    "app": "photocraft",
+    "commandId": "prefs.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_prefs_reset": {
+    "app": "photocraft",
+    "commandId": "prefs.reset",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_general": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.general",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_interface": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.interface",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_workspace": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.workspace",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_tools": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.tools",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_historyLog": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.historyLog",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_fileHandling": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.fileHandling",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_export": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.export",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_performance": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.performance",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_scratchDisks": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.scratchDisks",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_cursors": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.cursors",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_transparencyAndGamut": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.transparencyAndGamut",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_unitsAndRulers": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.unitsAndRulers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_guidesGridAndSlices": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.guidesGridAndSlices",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_plugIns": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.plugIns",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_type": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.type",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_enhancedControls": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.enhancedControls",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_rawDefaults": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.rawDefaults",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_preferences_integrations": {
+    "app": "photocraft",
+    "commandId": "edit.preferences.integrations",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_keyboardShortcuts": {
+    "app": "photocraft",
+    "commandId": "edit.keyboardShortcuts",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_menus": {
+    "app": "photocraft",
+    "commandId": "edit.menus",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_toolbar": {
+    "app": "photocraft",
+    "commandId": "edit.toolbar",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_fade": {
+    "app": "photocraft",
+    "commandId": "edit.fade",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_purge_undo": {
+    "app": "photocraft",
+    "commandId": "edit.purge.undo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_purge_clipboard": {
+    "app": "photocraft",
+    "commandId": "edit.purge.clipboard",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_purge_histories": {
+    "app": "photocraft",
+    "commandId": "edit.purge.histories",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_purge_videoCache": {
+    "app": "photocraft",
+    "commandId": "edit.purge.videoCache",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_purge_all": {
+    "app": "photocraft",
+    "commandId": "edit.purge.all",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_contentAwareFill": {
+    "app": "photocraft",
+    "commandId": "edit.contentAwareFill",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_deleteAndFillSelection": {
+    "app": "photocraft",
+    "commandId": "edit.deleteAndFillSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_contentAwareScale": {
+    "app": "photocraft",
+    "commandId": "edit.contentAwareScale",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_defineBrushPreset": {
+    "app": "photocraft",
+    "commandId": "edit.defineBrushPreset",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_defineCustomShape": {
+    "app": "photocraft",
+    "commandId": "edit.defineCustomShape",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_findAndReplaceText": {
+    "app": "photocraft",
+    "commandId": "edit.findAndReplaceText",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_presets_presetManager": {
+    "app": "photocraft",
+    "commandId": "edit.presets.presetManager",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_presets_exportImportPresets": {
+    "app": "photocraft",
+    "commandId": "edit.presets.exportImportPresets",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_fillForeground": {
+    "app": "photocraft",
+    "commandId": "edit.fillForeground",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_fillBackground": {
+    "app": "photocraft",
+    "commandId": "edit.fillBackground",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_fillForegroundPreserve": {
+    "app": "photocraft",
+    "commandId": "edit.fillForegroundPreserve",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_fillBackgroundPreserve": {
+    "app": "photocraft",
+    "commandId": "edit.fillBackgroundPreserve",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_fillHistory": {
+    "app": "photocraft",
+    "commandId": "edit.fillHistory",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_sampleColor": {
+    "app": "photocraft",
+    "commandId": "document.sampleColor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_colorSamplers_add": {
+    "app": "photocraft",
+    "commandId": "view.colorSamplers.add",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_colorSamplers_move": {
+    "app": "photocraft",
+    "commandId": "view.colorSamplers.move",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_colorSamplers_delete": {
+    "app": "photocraft",
+    "commandId": "view.colorSamplers.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_colorSamplers_clear": {
+    "app": "photocraft",
+    "commandId": "view.colorSamplers.clear",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_colorSamplers_list": {
+    "app": "photocraft",
+    "commandId": "view.colorSamplers.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tools_decreaseBrushSize": {
+    "app": "photocraft",
+    "commandId": "tools.decreaseBrushSize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tools_increaseBrushSize": {
+    "app": "photocraft",
+    "commandId": "tools.increaseBrushSize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tools_decreaseBrushHardness": {
+    "app": "photocraft",
+    "commandId": "tools.decreaseBrushHardness",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tools_increaseBrushHardness": {
+    "app": "photocraft",
+    "commandId": "tools.increaseBrushHardness",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tools_rotateBrush": {
+    "app": "photocraft",
+    "commandId": "tools.rotateBrush",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_stampVisible": {
+    "app": "photocraft",
+    "commandId": "layer.stampVisible",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_stampDown": {
+    "app": "photocraft",
+    "commandId": "layer.stampDown",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_autoAlignLayers": {
+    "app": "photocraft",
+    "commandId": "edit.autoAlignLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_autoBlendLayers": {
+    "app": "photocraft",
+    "commandId": "edit.autoBlendLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_photomerge": {
+    "app": "photocraft",
+    "commandId": "file.automate.photomerge",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_mergeToHdrPro": {
+    "app": "photocraft",
+    "commandId": "file.automate.mergeToHdrPro",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_cropAndStraightenPhotos": {
+    "app": "photocraft",
+    "commandId": "file.automate.cropAndStraightenPhotos",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_lensCorrection": {
+    "app": "photocraft",
+    "commandId": "filter.lensCorrection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_adaptiveWideAngle": {
+    "app": "photocraft",
+    "commandId": "filter.adaptiveWideAngle",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_cameraRaw": {
+    "app": "photocraft",
+    "commandId": "filter.cameraRaw",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_lensCorrection": {
+    "app": "photocraft",
+    "commandId": "file.automate.lensCorrection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_vanishingPoint": {
+    "app": "photocraft",
+    "commandId": "filter.vanishingPoint",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_saveSelection": {
+    "app": "photocraft",
+    "commandId": "select.saveSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_loadSelection": {
+    "app": "photocraft",
+    "commandId": "select.loadSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_editInQuickMaskMode": {
+    "app": "photocraft",
+    "commandId": "select.editInQuickMaskMode",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_applyImage": {
+    "app": "photocraft",
+    "commandId": "image.applyImage",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_calculations": {
+    "app": "photocraft",
+    "commandId": "image.calculations",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_new": {
+    "app": "photocraft",
+    "commandId": "channel.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_newSpot": {
+    "app": "photocraft",
+    "commandId": "channel.newSpot",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_duplicate": {
+    "app": "photocraft",
+    "commandId": "channel.duplicate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_delete": {
+    "app": "photocraft",
+    "commandId": "channel.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_rename": {
+    "app": "photocraft",
+    "commandId": "channel.rename",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_move": {
+    "app": "photocraft",
+    "commandId": "channel.move",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target": {
+    "app": "photocraft",
+    "commandId": "channel.target",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_setVisible": {
+    "app": "photocraft",
+    "commandId": "channel.setVisible",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_options": {
+    "app": "photocraft",
+    "commandId": "channel.options",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_mergeSpot": {
+    "app": "photocraft",
+    "commandId": "channel.mergeSpot",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_split": {
+    "app": "photocraft",
+    "commandId": "channel.split",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_merge": {
+    "app": "photocraft",
+    "commandId": "channel.merge",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_list": {
+    "app": "photocraft",
+    "commandId": "channel.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target_composite": {
+    "app": "photocraft",
+    "commandId": "channel.target.composite",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target_layerMask": {
+    "app": "photocraft",
+    "commandId": "channel.target.layerMask",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_select_loadLuminosity": {
+    "app": "photocraft",
+    "commandId": "select.loadLuminosity",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target_slot3": {
+    "app": "photocraft",
+    "commandId": "channel.target.slot3",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target_slot4": {
+    "app": "photocraft",
+    "commandId": "channel.target.slot4",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target_slot5": {
+    "app": "photocraft",
+    "commandId": "channel.target.slot5",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target_slot6": {
+    "app": "photocraft",
+    "commandId": "channel.target.slot6",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target_slot7": {
+    "app": "photocraft",
+    "commandId": "channel.target.slot7",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target_slot8": {
+    "app": "photocraft",
+    "commandId": "channel.target.slot8",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_channel_target_slot9": {
+    "app": "photocraft",
+    "commandId": "channel.target.slot9",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_shadowsHighlights": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.shadowsHighlights",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_replaceColor": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.replaceColor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_matchColor": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.matchColor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_hdrToning": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.hdrToning",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_adjustments_colorLookup_list": {
+    "app": "photocraft",
+    "commandId": "image.adjustments.colorLookup.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_apply": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.apply",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_fromTransparency": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.fromTransparency",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_hideSelection": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.hideSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_maskAllObjects": {
+    "app": "photocraft",
+    "commandId": "layer.maskAllObjects",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_matting_defringe": {
+    "app": "photocraft",
+    "commandId": "layer.matting.defringe",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_matting_removeBlackMatte": {
+    "app": "photocraft",
+    "commandId": "layer.matting.removeBlackMatte",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_matting_removeWhiteMatte": {
+    "app": "photocraft",
+    "commandId": "layer.matting.removeWhiteMatte",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_matting_colorDecontaminate": {
+    "app": "photocraft",
+    "commandId": "layer.matting.colorDecontaminate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_entropy": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.entropy",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_kurtosis": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.kurtosis",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_maximum": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.maximum",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_mean": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.mean",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_median": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.median",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_minimum": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.minimum",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_range": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.range",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_skewness": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.skewness",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_standardDeviation": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.standardDeviation",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_summation": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.summation",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_variance": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.variance",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_stackMode_none": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.stackMode.none",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_revealInFinder": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.revealInFinder",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_blendingOptions": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.blendingOptions",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_globalLight": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.globalLight",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_createLayer": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.createLayer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_scaleEffects": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.scaleEffects",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerStyle_transferEffects": {
+    "app": "photocraft",
+    "commandId": "layer.layerStyle.transferEffects",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerContentOptions": {
+    "app": "photocraft",
+    "commandId": "layer.layerContentOptions",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_quickExportAsPng": {
+    "app": "photocraft",
+    "commandId": "layer.quickExportAsPng",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_exportAs": {
+    "app": "photocraft",
+    "commandId": "layer.exportAs",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_setLabelColor": {
+    "app": "photocraft",
+    "commandId": "layer.setLabelColor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_rotation_arbitrary": {
+    "app": "photocraft",
+    "commandId": "image.rotation.arbitrary",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_indexedColor": {
+    "app": "photocraft",
+    "commandId": "image.mode.indexedColor",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_colorTable": {
+    "app": "photocraft",
+    "commandId": "image.mode.colorTable",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_bitmap": {
+    "app": "photocraft",
+    "commandId": "image.mode.bitmap",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_duotone": {
+    "app": "photocraft",
+    "commandId": "image.mode.duotone",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_mode_multichannel": {
+    "app": "photocraft",
+    "commandId": "image.mode.multichannel",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_definePattern": {
+    "app": "photocraft",
+    "commandId": "edit.definePattern",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_list": {
+    "app": "photocraft",
+    "commandId": "pattern.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_rename": {
+    "app": "photocraft",
+    "commandId": "pattern.rename",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_delete": {
+    "app": "photocraft",
+    "commandId": "pattern.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_import": {
+    "app": "photocraft",
+    "commandId": "pattern.import",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_export": {
+    "app": "photocraft",
+    "commandId": "pattern.export",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newFillLayer_pattern": {
+    "app": "photocraft",
+    "commandId": "layer.newFillLayer.pattern",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_brush_texturePattern": {
+    "app": "photocraft",
+    "commandId": "brush.texturePattern",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_warp": {
+    "app": "photocraft",
+    "commandId": "edit.transform.warp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_warp": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.warp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_splitWarpCrosswise": {
+    "app": "photocraft",
+    "commandId": "edit.transform.splitWarpCrosswise",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_splitWarpHorizontally": {
+    "app": "photocraft",
+    "commandId": "edit.transform.splitWarpHorizontally",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_splitWarpVertically": {
+    "app": "photocraft",
+    "commandId": "edit.transform.splitWarpVertically",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_removeWarpSplit": {
+    "app": "photocraft",
+    "commandId": "edit.transform.removeWarpSplit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_transform_warpGrid": {
+    "app": "photocraft",
+    "commandId": "edit.transform.warpGrid",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_new": {
+    "app": "photocraft",
+    "commandId": "layerComp.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_update": {
+    "app": "photocraft",
+    "commandId": "layerComp.update",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_apply": {
+    "app": "photocraft",
+    "commandId": "layerComp.apply",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_previous": {
+    "app": "photocraft",
+    "commandId": "layerComp.previous",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_next": {
+    "app": "photocraft",
+    "commandId": "layerComp.next",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_delete": {
+    "app": "photocraft",
+    "commandId": "layerComp.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_duplicate": {
+    "app": "photocraft",
+    "commandId": "layerComp.duplicate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_rename": {
+    "app": "photocraft",
+    "commandId": "layerComp.rename",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_setComment": {
+    "app": "photocraft",
+    "commandId": "layerComp.setComment",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_setOptions": {
+    "app": "photocraft",
+    "commandId": "layerComp.setOptions",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_restoreLastDocumentState": {
+    "app": "photocraft",
+    "commandId": "layerComp.restoreLastDocumentState",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_updateWarnings": {
+    "app": "photocraft",
+    "commandId": "layerComp.updateWarnings",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layerComp_list": {
+    "app": "photocraft",
+    "commandId": "layerComp.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_layerCompsToFiles": {
+    "app": "photocraft",
+    "commandId": "file.export.layerCompsToFiles",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_artboard": {
+    "app": "photocraft",
+    "commandId": "layer.new.artboard",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_artboardFromGroup": {
+    "app": "photocraft",
+    "commandId": "layer.new.artboardFromGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_artboardFromLayers": {
+    "app": "photocraft",
+    "commandId": "layer.new.artboardFromLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_artboard_set": {
+    "app": "photocraft",
+    "commandId": "layer.artboard.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_clearSelectedArtboardGuides": {
+    "app": "photocraft",
+    "commandId": "view.clearSelectedArtboardGuides",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_artboard_addBeside": {
+    "app": "photocraft",
+    "commandId": "layer.artboard.addBeside",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_artboardsToFiles": {
+    "app": "photocraft",
+    "commandId": "file.export.artboardsToFiles",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_artboardsToPdf": {
+    "app": "photocraft",
+    "commandId": "file.export.artboardsToPdf",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_liquify": {
+    "app": "photocraft",
+    "commandId": "filter.liquify",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_puppetWarp": {
+    "app": "photocraft",
+    "commandId": "edit.puppetWarp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_puppetWarp": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.puppetWarp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_perspectiveWarp": {
+    "app": "photocraft",
+    "commandId": "edit.perspectiveWarp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_smartObjects_perspectiveWarp": {
+    "app": "photocraft",
+    "commandId": "layer.smartObjects.perspectiveWarp",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_analysis_setMeasurementScale": {
+    "app": "photocraft",
+    "commandId": "image.analysis.setMeasurementScale",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_analysis_selectDataPoints": {
+    "app": "photocraft",
+    "commandId": "image.analysis.selectDataPoints",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_analysis_recordMeasurements": {
+    "app": "photocraft",
+    "commandId": "image.analysis.recordMeasurements",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_analysis_rulerTool": {
+    "app": "photocraft",
+    "commandId": "image.analysis.rulerTool",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_analysis_countTool": {
+    "app": "photocraft",
+    "commandId": "image.analysis.countTool",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_analysis_placeScaleMarker": {
+    "app": "photocraft",
+    "commandId": "image.analysis.placeScaleMarker",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_analysis_straightenLayer": {
+    "app": "photocraft",
+    "commandId": "image.analysis.straightenLayer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_analysis_info": {
+    "app": "photocraft",
+    "commandId": "image.analysis.info",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_count_add": {
+    "app": "photocraft",
+    "commandId": "count.add",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_count_remove": {
+    "app": "photocraft",
+    "commandId": "count.remove",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_count_move": {
+    "app": "photocraft",
+    "commandId": "count.move",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_count_clear": {
+    "app": "photocraft",
+    "commandId": "count.clear",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_count_newGroup": {
+    "app": "photocraft",
+    "commandId": "count.newGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_count_deleteGroup": {
+    "app": "photocraft",
+    "commandId": "count.deleteGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_count_setGroup": {
+    "app": "photocraft",
+    "commandId": "count.setGroup",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_measurementLog_list": {
+    "app": "photocraft",
+    "commandId": "measurementLog.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_measurementLog_delete": {
+    "app": "photocraft",
+    "commandId": "measurementLog.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_measurementLog_export": {
+    "app": "photocraft",
+    "commandId": "measurementLog.export",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_notes_add": {
+    "app": "photocraft",
+    "commandId": "notes.add",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_notes_set": {
+    "app": "photocraft",
+    "commandId": "notes.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_notes_delete": {
+    "app": "photocraft",
+    "commandId": "notes.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_notes_list": {
+    "app": "photocraft",
+    "commandId": "notes.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_import_notes": {
+    "app": "photocraft",
+    "commandId": "file.import.notes",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_history_undo": {
+    "app": "photocraft",
+    "commandId": "history.undo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_history_redo": {
+    "app": "photocraft",
+    "commandId": "history.redo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_history_deleteState": {
+    "app": "photocraft",
+    "commandId": "history.deleteState",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_history_newDocument": {
+    "app": "photocraft",
+    "commandId": "history.newDocument",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_history_newSnapshot": {
+    "app": "photocraft",
+    "commandId": "history.newSnapshot",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_history_selectSnapshot": {
+    "app": "photocraft",
+    "commandId": "history.selectSnapshot",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_history_renameSnapshot": {
+    "app": "photocraft",
+    "commandId": "history.renameSnapshot",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_history_deleteSnapshot": {
+    "app": "photocraft",
+    "commandId": "history.deleteSnapshot",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofSetup_workingCyanPlate": {
+    "app": "photocraft",
+    "commandId": "view.proofSetup.workingCyanPlate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofSetup_workingMagentaPlate": {
+    "app": "photocraft",
+    "commandId": "view.proofSetup.workingMagentaPlate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofSetup_workingYellowPlate": {
+    "app": "photocraft",
+    "commandId": "view.proofSetup.workingYellowPlate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofSetup_workingBlackPlate": {
+    "app": "photocraft",
+    "commandId": "view.proofSetup.workingBlackPlate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofSetup_workingCmyPlate": {
+    "app": "photocraft",
+    "commandId": "view.proofSetup.workingCmyPlate",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofSetup_legacyMacintoshRgb": {
+    "app": "photocraft",
+    "commandId": "view.proofSetup.legacyMacintoshRgb",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofSetup_colorBlindnessProtanopia": {
+    "app": "photocraft",
+    "commandId": "view.proofSetup.colorBlindnessProtanopia",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_proofSetup_colorBlindnessDeuteranopia": {
+    "app": "photocraft",
+    "commandId": "view.proofSetup.colorBlindnessDeuteranopia",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_thirtyTwoBitPreviewOptions": {
+    "app": "photocraft",
+    "commandId": "view.thirtyTwoBitPreviewOptions",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_presets_list": {
+    "app": "photocraft",
+    "commandId": "gradient.presets.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_presets_select": {
+    "app": "photocraft",
+    "commandId": "gradient.presets.select",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_presets_stop": {
+    "app": "photocraft",
+    "commandId": "gradient.presets.stop",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_presets_apply": {
+    "app": "photocraft",
+    "commandId": "gradient.presets.apply",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_presets_new": {
+    "app": "photocraft",
+    "commandId": "gradient.presets.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_presets_edit": {
+    "app": "photocraft",
+    "commandId": "gradient.presets.edit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_gradient_presets_reset": {
+    "app": "photocraft",
+    "commandId": "gradient.presets.reset",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_presets_list": {
+    "app": "photocraft",
+    "commandId": "pattern.presets.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_presets_select": {
+    "app": "photocraft",
+    "commandId": "pattern.presets.select",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_presets_apply": {
+    "app": "photocraft",
+    "commandId": "pattern.presets.apply",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_presets_new": {
+    "app": "photocraft",
+    "commandId": "pattern.presets.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_pattern_presets_edit": {
+    "app": "photocraft",
+    "commandId": "pattern.presets.edit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_style_presets_list": {
+    "app": "photocraft",
+    "commandId": "style.presets.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_style_presets_apply": {
+    "app": "photocraft",
+    "commandId": "style.presets.apply",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_style_presets_new": {
+    "app": "photocraft",
+    "commandId": "style.presets.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_style_presets_edit": {
+    "app": "photocraft",
+    "commandId": "style.presets.edit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_style_presets_reset": {
+    "app": "photocraft",
+    "commandId": "style.presets.reset",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_shape_presets_list": {
+    "app": "photocraft",
+    "commandId": "shape.presets.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_shape_presets_place": {
+    "app": "photocraft",
+    "commandId": "shape.presets.place",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_shape_presets_new": {
+    "app": "photocraft",
+    "commandId": "shape.presets.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_shape_presets_edit": {
+    "app": "photocraft",
+    "commandId": "shape.presets.edit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_shape_presets_reset": {
+    "app": "photocraft",
+    "commandId": "shape.presets.reset",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tool_presets_list": {
+    "app": "photocraft",
+    "commandId": "tool.presets.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tool_presets_new": {
+    "app": "photocraft",
+    "commandId": "tool.presets.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tool_presets_select": {
+    "app": "photocraft",
+    "commandId": "tool.presets.select",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tool_presets_edit": {
+    "app": "photocraft",
+    "commandId": "tool.presets.edit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_tool_presets_reset": {
+    "app": "photocraft",
+    "commandId": "tool.presets.reset",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_cloneSource_list": {
+    "app": "photocraft",
+    "commandId": "cloneSource.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_cloneSource_select": {
+    "app": "photocraft",
+    "commandId": "cloneSource.select",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_cloneSource_set": {
+    "app": "photocraft",
+    "commandId": "cloneSource.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_cloneSource_resetTransform": {
+    "app": "photocraft",
+    "commandId": "cloneSource.resetTransform",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_cloneSource_overlay": {
+    "app": "photocraft",
+    "commandId": "cloneSource.overlay",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_presets_list": {
+    "app": "photocraft",
+    "commandId": "document.presets.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_presets_get": {
+    "app": "photocraft",
+    "commandId": "document.presets.get",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_presets_save": {
+    "app": "photocraft",
+    "commandId": "document.presets.save",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_presets_delete": {
+    "app": "photocraft",
+    "commandId": "document.presets.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_recent_list": {
+    "app": "photocraft",
+    "commandId": "document.recent.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_document_recent_add": {
+    "app": "photocraft",
+    "commandId": "document.recent.add",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_render_flame": {
+    "app": "photocraft",
+    "commandId": "filter.render.flame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_render_pictureFrame": {
+    "app": "photocraft",
+    "commandId": "filter.render.pictureFrame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_filter_render_tree": {
+    "app": "photocraft",
+    "commandId": "filter.render.tree",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_slice_new": {
+    "app": "photocraft",
+    "commandId": "slice.new",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_slice_fromGuides": {
+    "app": "photocraft",
+    "commandId": "slice.fromGuides",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_slice_set": {
+    "app": "photocraft",
+    "commandId": "slice.set",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_slice_promote": {
+    "app": "photocraft",
+    "commandId": "slice.promote",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_slice_delete": {
+    "app": "photocraft",
+    "commandId": "slice.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_slice_divide": {
+    "app": "photocraft",
+    "commandId": "slice.divide",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_slice_list": {
+    "app": "photocraft",
+    "commandId": "slice.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_newLayerBasedSlice": {
+    "app": "photocraft",
+    "commandId": "layer.newLayerBasedSlice",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_lockSlices": {
+    "app": "photocraft",
+    "commandId": "view.lockSlices",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_clearSlices": {
+    "app": "photocraft",
+    "commandId": "view.clearSlices",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_saveForWebLegacy": {
+    "app": "photocraft",
+    "commandId": "file.export.saveForWebLegacy",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_exportPreferences": {
+    "app": "photocraft",
+    "commandId": "file.export.exportPreferences",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_quickExport": {
+    "app": "photocraft",
+    "commandId": "file.export.quickExport",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_generate_imageAssets": {
+    "app": "photocraft",
+    "commandId": "file.generate.imageAssets",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_contactSheetII": {
+    "app": "photocraft",
+    "commandId": "file.automate.contactSheetII",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_createDroplet": {
+    "app": "photocraft",
+    "commandId": "file.automate.createDroplet",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_automate_runDroplet": {
+    "app": "photocraft",
+    "commandId": "file.automate.runDroplet",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_scripts_statistics": {
+    "app": "photocraft",
+    "commandId": "file.scripts.statistics",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_scripts_browse": {
+    "app": "photocraft",
+    "commandId": "file.scripts.browse",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_scripts_scriptEventsManager": {
+    "app": "photocraft",
+    "commandId": "file.scripts.scriptEventsManager",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_print": {
+    "app": "photocraft",
+    "commandId": "file.print",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_printOneCopy": {
+    "app": "photocraft",
+    "commandId": "file.printOneCopy",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_package": {
+    "app": "photocraft",
+    "commandId": "file.package",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_pathsToIllustrator": {
+    "app": "photocraft",
+    "commandId": "file.export.pathsToIllustrator",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_installedProfiles": {
+    "app": "photocraft",
+    "commandId": "edit.installedProfiles",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_selectInRect": {
+    "app": "photocraft",
+    "commandId": "layer.selectInRect",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_pickAt": {
+    "app": "photocraft",
+    "commandId": "layer.pickAt",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_selectAbove": {
+    "app": "photocraft",
+    "commandId": "layer.selectAbove",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_selectBelow": {
+    "app": "photocraft",
+    "commandId": "layer.selectBelow",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_selectTop": {
+    "app": "photocraft",
+    "commandId": "layer.selectTop",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_selectBottom": {
+    "app": "photocraft",
+    "commandId": "layer.selectBottom",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_addAboveToSelection": {
+    "app": "photocraft",
+    "commandId": "layer.addAboveToSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_addBelowToSelection": {
+    "app": "photocraft",
+    "commandId": "layer.addBelowToSelection",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_frame": {
+    "app": "photocraft",
+    "commandId": "layer.new.frame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_new_frameFromLayers": {
+    "app": "photocraft",
+    "commandId": "layer.new.frameFromLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_edit_presets_migratePresets": {
+    "app": "photocraft",
+    "commandId": "edit.presets.migratePresets",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_trap": {
+    "app": "photocraft",
+    "commandId": "image.trap",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_timeline_create": {
+    "app": "photocraft",
+    "commandId": "timeline.create",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_timeline_delete": {
+    "app": "photocraft",
+    "commandId": "timeline.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_timeline_setFrame": {
+    "app": "photocraft",
+    "commandId": "timeline.setFrame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_timeline_nextFrame": {
+    "app": "photocraft",
+    "commandId": "timeline.nextFrame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_timeline_previousFrame": {
+    "app": "photocraft",
+    "commandId": "timeline.previousFrame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_timeline_setProps": {
+    "app": "photocraft",
+    "commandId": "timeline.setProps",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_timeline_info": {
+    "app": "photocraft",
+    "commandId": "timeline.info",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_newBlankVideoLayer": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.newBlankVideoLayer",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_insertBlankFrame": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.insertBlankFrame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_duplicateFrame": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.duplicateFrame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_deleteFrame": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.deleteFrame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_restoreFrame": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.restoreFrame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_restoreAllFrames": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.restoreAllFrames",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_showAlteredVideo": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.showAlteredVideo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_rasterize": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.rasterize",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_rasterize_video": {
+    "app": "photocraft",
+    "commandId": "layer.rasterize.video",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_newVideoLayerFromFile": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.newVideoLayerFromFile",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_replaceFootage": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.replaceFootage",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_interpretFootage": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.interpretFootage",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_videoLayers_reloadFrame": {
+    "app": "photocraft",
+    "commandId": "layer.videoLayers.reloadFrame",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_import_videoFramesToLayers": {
+    "app": "photocraft",
+    "commandId": "file.import.videoFramesToLayers",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_renderVideo": {
+    "app": "photocraft",
+    "commandId": "file.export.renderVideo",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_import_wiaSupport": {
+    "app": "photocraft",
+    "commandId": "file.import.wiaSupport",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_rasterize_layerStyle": {
+    "app": "photocraft",
+    "commandId": "layer.rasterize.layerStyle",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_variables_define": {
+    "app": "photocraft",
+    "commandId": "image.variables.define",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_variables_dataSets": {
+    "app": "photocraft",
+    "commandId": "image.variables.dataSets",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_image_applyDataSet": {
+    "app": "photocraft",
+    "commandId": "image.applyDataSet",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_import_variableDataSets": {
+    "app": "photocraft",
+    "commandId": "file.import.variableDataSets",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_file_export_dataSetsAsFiles": {
+    "app": "photocraft",
+    "commandId": "file.export.dataSetsAsFiles",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_variables_list": {
+    "app": "photocraft",
+    "commandId": "variables.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_plugin_list": {
+    "app": "photocraft",
+    "commandId": "plugin.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_plugin_install": {
+    "app": "photocraft",
+    "commandId": "plugin.install",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_plugin_remove": {
+    "app": "photocraft",
+    "commandId": "plugin.remove",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_plugin_reload": {
+    "app": "photocraft",
+    "commandId": "plugin.reload",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_plugin_run": {
+    "app": "photocraft",
+    "commandId": "plugin.run",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_setExpanded": {
+    "app": "photocraft",
+    "commandId": "layer.setExpanded",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_setEffectsExpanded": {
+    "app": "photocraft",
+    "commandId": "layer.setEffectsExpanded",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_setEffectsVisible": {
+    "app": "photocraft",
+    "commandId": "layer.setEffectsVisible",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_view_layerMask": {
+    "app": "photocraft",
+    "commandId": "view.layerMask",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_toggleMaskOverlay": {
+    "app": "photocraft",
+    "commandId": "layer.toggleMaskOverlay",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_layer_layerMask_edit": {
+    "app": "photocraft",
+    "commandId": "layer.layerMask.edit",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_actions_move": {
+    "app": "photocraft",
+    "commandId": "actions.move",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_actions_list": {
+    "app": "photocraft",
+    "commandId": "actions.list",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_actions_get": {
+    "app": "photocraft",
+    "commandId": "actions.get",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_actions_record": {
+    "app": "photocraft",
+    "commandId": "actions.record",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_actions_stop": {
+    "app": "photocraft",
+    "commandId": "actions.stop",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_actions_play": {
+    "app": "photocraft",
+    "commandId": "actions.play",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_actions_delete": {
+    "app": "photocraft",
+    "commandId": "actions.delete",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_actions_toggle": {
+    "app": "photocraft",
+    "commandId": "actions.toggle",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  },
+  "photocraft_actions_rename": {
+    "app": "photocraft",
+    "commandId": "actions.rename",
+    "isMetaTool": false,
+    "transportRequired": "mcp"
+  }
+}

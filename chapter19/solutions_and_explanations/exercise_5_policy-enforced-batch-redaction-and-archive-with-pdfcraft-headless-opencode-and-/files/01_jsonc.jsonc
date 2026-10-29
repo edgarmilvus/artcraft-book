@@ -1,0 +1,47 @@
+// manifest.json - the canonical structure the pipeline seals.
+// The signature covers the canonical JSON serialisation (sorted keys, no
+// whitespace) of the whole document minus the "signature" field itself.
+{
+  "batchId": "<uuid>",
+  "startedAt": "<ISO8601>",
+  "finishedAt": "<ISO8601>",
+  "tenant": "harrow-vale",
+  "pdfcraftVersion": "<from the MCP initialize handshake, else 'unknown'>",
+  "policy": {
+    "digest": "<sha256 of the canonical policy document>",
+    "builtInPatterns": ["phone", "email", "credit-card", "ssn", "date"],
+    "clientPatterns": ["Matter 4421\\-[A-Z]{2}", "ACME\\-CONF\\-\\d{4}"],
+    "pdfaLevel": "2b",
+    "requireEmbeddedFonts": true,
+    "signedPolicy": "manual_queue"
+  },
+  "preflight": {
+    "commands": 183,
+    "tools": 140,
+    "checked": ["redact.mark", "redact.apply", "file.open", "file.save"]
+  },
+  "sandbox": {
+    "probe": "<a path outside the batch root>",
+    "refused": true,
+    "message": "<the engine's own refusal message>"
+  },
+  "items": [
+    {
+      "input": "discovery/incoming/0001-disclosure.pdf",
+      "converted": "discovery/0001/work/0001-disclosure.pdf",
+      "piiPatternsApplied": ["phone", "email", "credit-card", "ssn", "date"],
+      "redactedPages": [3, 4, 7],
+      "pdfa": "VERIFIED", // or "PDFA_PENDING"
+      "accessibilityReport": "discovery/0001/work/0001-disclosure.accessibility.html",
+      "sha256Output": "<hex>"
+    }
+  ],
+  "failures": [],
+  "manualQueue": [],
+  "runLogSha256": "<sha256 of run.log, chained in so a tampered journal breaks the seal>",
+  "signature": {
+    "alg": "HMAC-SHA256",
+    "keyId": "harrow-vale-2026",
+    "value": "<hex>"
+  }
+}

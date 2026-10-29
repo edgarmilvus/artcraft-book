@@ -1,0 +1,18 @@
+{
+  "workbookPath": "chapter18/basic_code_example/example/files/output/var/finance/northwind/2026-10-23/pnl.xlsx",
+  "sheets": [
+    "Assumptions",
+    "Revenue",
+    "P&L"
+  ],
+  "namedRanges": {
+    "GrowthRate": "=Assumptions!$B$1",
+    "GrossMargin": "=Assumptions!$B$2",
+    "MonthlyOpex": "=Assumptions!$B$3",
+    "SeedRevenue": "=Assumptions!$B$4"
+  },
+  "dependencyEdges": 35,
+  "circularReferences": [],
+  "revisionHash": "1c2d0b2a1ee437055262cbb3725f2aecedaa359ab52f64ef220979bfcac95508",
+  "auditedAt": "2026-10-23T20:57:11.090Z"
+}

@@ -1,0 +1,21 @@
+{
+  "checks": 6,
+  "failures": 0,
+  "port": 7903,
+  "wireCalls": [
+    "auth",
+    "auth",
+    "engine.execute",
+    "engine.execute",
+    "engine.batch",
+    "engine.execute",
+    "engine.execute",
+    "engine.execute",
+    "engine.execute",
+    "engine.execute",
+    "auth",
+    "auth",
+    "auth",
+    "engine.execute"
+  ]
+}

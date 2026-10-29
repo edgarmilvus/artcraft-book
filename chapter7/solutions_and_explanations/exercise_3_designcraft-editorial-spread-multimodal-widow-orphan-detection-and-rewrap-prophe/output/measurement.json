@@ -1,0 +1,2946 @@
+{
+  "measurement": {
+    "spread": 0,
+    "columns": 6,
+    "columnMeasurePt": 110,
+    "perColumnFillRatio": [
+      0.781,
+      0.801,
+      0.799,
+      0.814,
+      0.818,
+      0.836
+    ],
+    "fillRatioVariance": 0.000299,
+    "candidates": [
+      {
+        "id": "c3-w01",
+        "kind": "widow",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          17
+        ],
+        "paragraphIndex": 6,
+        "fillRatio": 0.2,
+        "boundsPt": [
+          280,
+          302,
+          390,
+          307
+        ],
+        "cropRect": [
+          35,
+          225,
+          635,
+          385
+        ]
+      },
+      {
+        "id": "c3-o01",
+        "kind": "orphan",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          33
+        ],
+        "paragraphIndex": 8,
+        "fillRatio": 0.873,
+        "boundsPt": [
+          280,
+          559,
+          390,
+          569
+        ],
+        "cropRect": [
+          35,
+          452,
+          635,
+          612
+        ]
+      },
+      {
+        "id": "c2-r01",
+        "kind": "ragged",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          30,
+          31,
+          32
+        ],
+        "paragraphIndex": 5,
+        "fillRatio": 0.718,
+        "boundsPt": [
+          158,
+          561,
+          268,
+          569
+        ],
+        "cropRect": [
+          0,
+          452,
+          600,
+          612
+        ]
+      },
+      {
+        "id": "c3-r01",
+        "kind": "ragged",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          31,
+          32,
+          33
+        ],
+        "paragraphIndex": 8,
+        "fillRatio": 0.873,
+        "boundsPt": [
+          280,
+          559,
+          390,
+          569
+        ],
+        "cropRect": [
+          35,
+          452,
+          635,
+          612
+        ]
+      },
+      {
+        "id": "c6-r01",
+        "kind": "ragged",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          28,
+          29,
+          30
+        ],
+        "paragraphIndex": 14,
+        "fillRatio": 0.8,
+        "boundsPt": [
+          646,
+          558,
+          756,
+          566
+        ],
+        "cropRect": [
+          192,
+          452,
+          792,
+          612
+        ]
+      }
+    ]
+  },
+  "lines": [
+    {
+      "column": 0,
+      "columnLineIndex": 0,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        40,
+        146,
+        50
+      ],
+      "fillRatio": 0.7818181818181819
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 1,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        54,
+        146,
+        62
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 2,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        68,
+        146,
+        76
+      ],
+      "fillRatio": 0.6909090909090909
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 3,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        83,
+        146,
+        91
+      ],
+      "fillRatio": 0.7181818181818181
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 4,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        99,
+        146,
+        105
+      ],
+      "fillRatio": 0.8454545454545455
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 5,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        112,
+        146,
+        120
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 6,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        129,
+        146,
+        137
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 7,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        141,
+        146,
+        148
+      ],
+      "fillRatio": 0.7454545454545455
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 8,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        158,
+        146,
+        163
+      ],
+      "fillRatio": 0.8363636363636363
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 9,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        170,
+        146,
+        177
+      ],
+      "fillRatio": 0.7363636363636363
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 10,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        184,
+        146,
+        192
+      ],
+      "fillRatio": 0.9090909090909091
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 11,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        198,
+        146,
+        209
+      ],
+      "fillRatio": 0.9181818181818182
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 12,
+      "paragraphIndex": 0,
+      "paragraphLineIndex": 12,
+      "paragraphLines": 13,
+      "boundsPt": [
+        36,
+        215,
+        146,
+        220
+      ],
+      "fillRatio": 0.44545454545454544
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 13,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        242,
+        146,
+        252
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 14,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        256,
+        146,
+        264
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 15,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        270,
+        146,
+        278
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 16,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        285,
+        146,
+        292
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 17,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        302,
+        146,
+        309
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 18,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        313,
+        146,
+        321
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 19,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        331,
+        146,
+        336
+      ],
+      "fillRatio": 0.7909090909090909
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 20,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        345,
+        146,
+        350
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 21,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        357,
+        146,
+        364
+      ],
+      "fillRatio": 0.7636363636363637
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 22,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        374,
+        146,
+        381
+      ],
+      "fillRatio": 0.7272727272727273
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 23,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        385,
+        146,
+        393
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 24,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        400,
+        146,
+        408
+      ],
+      "fillRatio": 0.8545454545454545
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 25,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 12,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        414,
+        146,
+        422
+      ],
+      "fillRatio": 0.9636363636363636
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 26,
+      "paragraphIndex": 1,
+      "paragraphLineIndex": 13,
+      "paragraphLines": 14,
+      "boundsPt": [
+        36,
+        431,
+        146,
+        436
+      ],
+      "fillRatio": 0.4727272727272727
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 27,
+      "paragraphIndex": 2,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 8,
+      "boundsPt": [
+        36,
+        458,
+        146,
+        468
+      ],
+      "fillRatio": 0.7181818181818181
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 28,
+      "paragraphIndex": 2,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 8,
+      "boundsPt": [
+        36,
+        472,
+        146,
+        480
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 29,
+      "paragraphIndex": 2,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 8,
+      "boundsPt": [
+        36,
+        489,
+        146,
+        497
+      ],
+      "fillRatio": 0.7181818181818181
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 30,
+      "paragraphIndex": 2,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 8,
+      "boundsPt": [
+        36,
+        501,
+        146,
+        508
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 31,
+      "paragraphIndex": 2,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 8,
+      "boundsPt": [
+        36,
+        518,
+        146,
+        523
+      ],
+      "fillRatio": 0.7818181818181819
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 32,
+      "paragraphIndex": 2,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 8,
+      "boundsPt": [
+        36,
+        532,
+        146,
+        537
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 33,
+      "paragraphIndex": 2,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 8,
+      "boundsPt": [
+        36,
+        544,
+        146,
+        552
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 0,
+      "columnLineIndex": 34,
+      "paragraphIndex": 2,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 8,
+      "boundsPt": [
+        36,
+        561,
+        146,
+        569
+      ],
+      "fillRatio": 0.7363636363636363
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 0,
+      "paragraphIndex": 3,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 7,
+      "boundsPt": [
+        158,
+        40,
+        268,
+        48
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 1,
+      "paragraphIndex": 3,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 7,
+      "boundsPt": [
+        158,
+        54,
+        268,
+        62
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 2,
+      "paragraphIndex": 3,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 7,
+      "boundsPt": [
+        158,
+        68,
+        268,
+        76
+      ],
+      "fillRatio": 0.9636363636363636
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 3,
+      "paragraphIndex": 3,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 7,
+      "boundsPt": [
+        158,
+        83,
+        268,
+        105
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 4,
+      "paragraphIndex": 3,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 7,
+      "boundsPt": [
+        158,
+        112,
+        268,
+        120
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 5,
+      "paragraphIndex": 3,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 7,
+      "boundsPt": [
+        158,
+        129,
+        268,
+        137
+      ],
+      "fillRatio": 0.7181818181818181
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 6,
+      "paragraphIndex": 3,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 7,
+      "boundsPt": [
+        158,
+        143,
+        268,
+        148
+      ],
+      "fillRatio": 0.34545454545454546
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 7,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        169,
+        268,
+        180
+      ],
+      "fillRatio": 0.9818181818181818
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 8,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        187,
+        268,
+        192
+      ],
+      "fillRatio": 0.7909090909090909
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 9,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        201,
+        268,
+        206
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 10,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        213,
+        268,
+        220
+      ],
+      "fillRatio": 0.7636363636363637
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 11,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        230,
+        268,
+        237
+      ],
+      "fillRatio": 0.7272727272727273
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 12,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        241,
+        268,
+        249
+      ],
+      "fillRatio": 0.6909090909090909
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 13,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        256,
+        268,
+        264
+      ],
+      "fillRatio": 0.7454545454545455
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 14,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        270,
+        268,
+        278
+      ],
+      "fillRatio": 0.8
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 15,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        285,
+        268,
+        292
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 16,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        299,
+        268,
+        307
+      ],
+      "fillRatio": 0.8454545454545455
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 17,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        313,
+        268,
+        321
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 18,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        331,
+        268,
+        338
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 19,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 12,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        342,
+        268,
+        350
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 20,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 13,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        359,
+        268,
+        365
+      ],
+      "fillRatio": 0.8363636363636363
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 21,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 14,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        371,
+        268,
+        379
+      ],
+      "fillRatio": 0.7363636363636363
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 22,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 15,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        385,
+        268,
+        393
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 23,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 16,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        400,
+        268,
+        410
+      ],
+      "fillRatio": 0.9181818181818182
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 24,
+      "paragraphIndex": 4,
+      "paragraphLineIndex": 17,
+      "paragraphLines": 18,
+      "boundsPt": [
+        158,
+        416,
+        268,
+        422
+      ],
+      "fillRatio": 0.44545454545454544
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 25,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 12,
+      "boundsPt": [
+        158,
+        443,
+        268,
+        453
+      ],
+      "fillRatio": 0.9818181818181818
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 26,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 12,
+      "boundsPt": [
+        158,
+        457,
+        268,
+        468
+      ],
+      "fillRatio": 0.8090909090909091
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 27,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 12,
+      "boundsPt": [
+        158,
+        472,
+        268,
+        480
+      ],
+      "fillRatio": 0.7363636363636363
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 28,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 12,
+      "boundsPt": [
+        158,
+        489,
+        268,
+        494
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 29,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 12,
+      "boundsPt": [
+        158,
+        501,
+        268,
+        508
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 30,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 12,
+      "boundsPt": [
+        158,
+        515,
+        268,
+        537
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 31,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 12,
+      "boundsPt": [
+        158,
+        544,
+        268,
+        552
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 1,
+      "columnLineIndex": 32,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 12,
+      "boundsPt": [
+        158,
+        561,
+        268,
+        569
+      ],
+      "fillRatio": 0.7181818181818181
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 0,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 12,
+      "boundsPt": [
+        280,
+        40,
+        390,
+        48
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 1,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 12,
+      "boundsPt": [
+        280,
+        57,
+        390,
+        62
+      ],
+      "fillRatio": 0.7909090909090909
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 2,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 12,
+      "boundsPt": [
+        280,
+        71,
+        390,
+        76
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 3,
+      "paragraphIndex": 5,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 12,
+      "boundsPt": [
+        280,
+        85,
+        390,
+        91
+      ],
+      "fillRatio": 0.38181818181818183
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 4,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        112,
+        390,
+        122
+      ],
+      "fillRatio": 0.8909090909090909
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 5,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        126,
+        390,
+        134
+      ],
+      "fillRatio": 0.8
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 6,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        141,
+        390,
+        148
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 7,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        155,
+        390,
+        163
+      ],
+      "fillRatio": 0.8454545454545455
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 8,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        169,
+        390,
+        177
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 9,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        187,
+        390,
+        194
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 10,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        198,
+        390,
+        206
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 11,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        215,
+        390,
+        221
+      ],
+      "fillRatio": 0.8363636363636363
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 12,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        227,
+        390,
+        235
+      ],
+      "fillRatio": 0.7363636363636363
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 13,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        241,
+        390,
+        249
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 14,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        256,
+        390,
+        266
+      ],
+      "fillRatio": 0.9181818181818182
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 15,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        270,
+        390,
+        278
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 16,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 12,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        285,
+        390,
+        292
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 17,
+      "paragraphIndex": 6,
+      "paragraphLineIndex": 13,
+      "paragraphLines": 14,
+      "boundsPt": [
+        280,
+        302,
+        390,
+        307
+      ],
+      "fillRatio": 0.2
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 18,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        328,
+        390,
+        338
+      ],
+      "fillRatio": 0.8090909090909091
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 19,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        344,
+        390,
+        350
+      ],
+      "fillRatio": 0.8454545454545455
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 20,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        357,
+        390,
+        364
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 21,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        374,
+        390,
+        381
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 22,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        385,
+        390,
+        393
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 23,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        402,
+        390,
+        408
+      ],
+      "fillRatio": 0.8363636363636363
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 24,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        414,
+        390,
+        422
+      ],
+      "fillRatio": 0.7363636363636363
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 25,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        429,
+        390,
+        436
+      ],
+      "fillRatio": 0.9090909090909091
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 26,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        443,
+        390,
+        453
+      ],
+      "fillRatio": 0.9181818181818182
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 27,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        457,
+        390,
+        465
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 28,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        472,
+        390,
+        480
+      ],
+      "fillRatio": 0.8545454545454545
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 29,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        486,
+        390,
+        494
+      ],
+      "fillRatio": 0.9636363636363636
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 30,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 12,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        501,
+        390,
+        509
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 31,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 13,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        515,
+        390,
+        523
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 32,
+      "paragraphIndex": 7,
+      "paragraphLineIndex": 14,
+      "paragraphLines": 15,
+      "boundsPt": [
+        280,
+        529,
+        390,
+        537
+      ],
+      "fillRatio": 0.41818181818181815
+    },
+    {
+      "column": 2,
+      "columnLineIndex": 33,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 22,
+      "boundsPt": [
+        280,
+        559,
+        390,
+        569
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 0,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        42,
+        512,
+        50
+      ],
+      "fillRatio": 0.8
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 1,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        54,
+        512,
+        62
+      ],
+      "fillRatio": 0.9181818181818182
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 2,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        71,
+        512,
+        76
+      ],
+      "fillRatio": 0.7909090909090909
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 3,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        86,
+        512,
+        91
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 4,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        97,
+        512,
+        105
+      ],
+      "fillRatio": 0.7636363636363637
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 5,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        115,
+        512,
+        122
+      ],
+      "fillRatio": 0.7272727272727273
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 6,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        126,
+        512,
+        134
+      ],
+      "fillRatio": 0.6909090909090909
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 7,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        141,
+        512,
+        148
+      ],
+      "fillRatio": 0.7454545454545455
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 8,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        155,
+        512,
+        163
+      ],
+      "fillRatio": 0.8
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 9,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        169,
+        512,
+        177
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 10,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        184,
+        512,
+        192
+      ],
+      "fillRatio": 0.8454545454545455
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 11,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 12,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        198,
+        512,
+        206
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 12,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 13,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        215,
+        512,
+        223
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 13,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 14,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        227,
+        512,
+        235
+      ],
+      "fillRatio": 0.7454545454545455
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 14,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 15,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        244,
+        512,
+        250
+      ],
+      "fillRatio": 0.8363636363636363
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 15,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 16,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        256,
+        512,
+        264
+      ],
+      "fillRatio": 0.7363636363636363
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 16,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 17,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        272,
+        512,
+        278
+      ],
+      "fillRatio": 0.6545454545454545
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 17,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 18,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        299,
+        512,
+        309
+      ],
+      "fillRatio": 0.9363636363636364
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 18,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 19,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        316,
+        512,
+        321
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 19,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 20,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        328,
+        512,
+        336
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 20,
+      "paragraphIndex": 8,
+      "paragraphLineIndex": 21,
+      "paragraphLines": 22,
+      "boundsPt": [
+        402,
+        345,
+        512,
+        364
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 21,
+      "paragraphIndex": 9,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 8,
+      "boundsPt": [
+        402,
+        371,
+        512,
+        379
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 22,
+      "paragraphIndex": 9,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 8,
+      "boundsPt": [
+        402,
+        385,
+        512,
+        393
+      ],
+      "fillRatio": 0.9636363636363636
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 23,
+      "paragraphIndex": 9,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 8,
+      "boundsPt": [
+        402,
+        400,
+        512,
+        408
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 24,
+      "paragraphIndex": 9,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 8,
+      "boundsPt": [
+        402,
+        414,
+        512,
+        422
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 25,
+      "paragraphIndex": 9,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 8,
+      "boundsPt": [
+        402,
+        429,
+        512,
+        436
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 26,
+      "paragraphIndex": 9,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 8,
+      "boundsPt": [
+        402,
+        446,
+        512,
+        453
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 27,
+      "paragraphIndex": 9,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 8,
+      "boundsPt": [
+        402,
+        457,
+        512,
+        465
+      ],
+      "fillRatio": 0.7272727272727273
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 28,
+      "paragraphIndex": 9,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 8,
+      "boundsPt": [
+        402,
+        486,
+        512,
+        508
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 29,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 11,
+      "boundsPt": [
+        402,
+        515,
+        512,
+        523
+      ],
+      "fillRatio": 0.7454545454545455
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 30,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 11,
+      "boundsPt": [
+        402,
+        529,
+        512,
+        537
+      ],
+      "fillRatio": 0.8
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 31,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 11,
+      "boundsPt": [
+        402,
+        544,
+        512,
+        552
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 3,
+      "columnLineIndex": 32,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 11,
+      "boundsPt": [
+        402,
+        560,
+        512,
+        566
+      ],
+      "fillRatio": 0.8454545454545455
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 0,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 11,
+      "boundsPt": [
+        524,
+        40,
+        634,
+        48
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 1,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 11,
+      "boundsPt": [
+        524,
+        57,
+        634,
+        65
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 2,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 11,
+      "boundsPt": [
+        524,
+        69,
+        634,
+        76
+      ],
+      "fillRatio": 0.7454545454545455
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 3,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 11,
+      "boundsPt": [
+        524,
+        86,
+        634,
+        91
+      ],
+      "fillRatio": 0.8363636363636363
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 4,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 11,
+      "boundsPt": [
+        524,
+        98,
+        634,
+        105
+      ],
+      "fillRatio": 0.7363636363636363
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 5,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 11,
+      "boundsPt": [
+        524,
+        112,
+        634,
+        120
+      ],
+      "fillRatio": 0.9090909090909091
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 6,
+      "paragraphIndex": 10,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 11,
+      "boundsPt": [
+        524,
+        126,
+        634,
+        148
+      ],
+      "fillRatio": 0.9181818181818182
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 7,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        169,
+        634,
+        180
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 8,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        184,
+        634,
+        192
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 9,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        198,
+        634,
+        207
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 10,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        213,
+        634,
+        220
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 11,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        227,
+        634,
+        235
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 12,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        244,
+        634,
+        252
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 13,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        256,
+        634,
+        264
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 14,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        273,
+        634,
+        278
+      ],
+      "fillRatio": 0.7909090909090909
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 15,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        287,
+        634,
+        292
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 16,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        299,
+        634,
+        307
+      ],
+      "fillRatio": 0.7636363636363637
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 17,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        316,
+        634,
+        324
+      ],
+      "fillRatio": 0.7363636363636363
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 18,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        328,
+        634,
+        336
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 19,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 12,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        342,
+        634,
+        350
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 20,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 13,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        356,
+        634,
+        364
+      ],
+      "fillRatio": 0.9636363636363636
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 21,
+      "paragraphIndex": 11,
+      "paragraphLineIndex": 14,
+      "paragraphLines": 15,
+      "boundsPt": [
+        524,
+        371,
+        634,
+        379
+      ],
+      "fillRatio": 0.6545454545454545
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 22,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        400,
+        634,
+        410
+      ],
+      "fillRatio": 0.9272727272727272
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 23,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        414,
+        634,
+        422
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 24,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        429,
+        634,
+        436
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 25,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        446,
+        634,
+        453
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 26,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        457,
+        634,
+        465
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 27,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        475,
+        634,
+        480
+      ],
+      "fillRatio": 0.7909090909090909
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 28,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        489,
+        634,
+        494
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 29,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        501,
+        634,
+        508
+      ],
+      "fillRatio": 0.7636363636363637
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 30,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        518,
+        634,
+        525
+      ],
+      "fillRatio": 0.7272727272727273
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 31,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        529,
+        634,
+        537
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 32,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        544,
+        634,
+        552
+      ],
+      "fillRatio": 0.8545454545454545
+    },
+    {
+      "column": 4,
+      "columnLineIndex": 33,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 22,
+      "boundsPt": [
+        524,
+        558,
+        634,
+        566
+      ],
+      "fillRatio": 0.9636363636363636
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 0,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 12,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        40,
+        756,
+        48
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 1,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 13,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        54,
+        756,
+        62
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 2,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 14,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        69,
+        756,
+        76
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 3,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 15,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        86,
+        756,
+        93
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 4,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 16,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        97,
+        756,
+        105
+      ],
+      "fillRatio": 0.7272727272727273
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 5,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 17,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        126,
+        756,
+        148
+      ],
+      "fillRatio": 0.7909090909090909
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 6,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 18,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        158,
+        756,
+        163
+      ],
+      "fillRatio": 0.7818181818181819
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 7,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 19,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        172,
+        756,
+        177
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 8,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 20,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        184,
+        756,
+        192
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 9,
+      "paragraphIndex": 12,
+      "paragraphLineIndex": 21,
+      "paragraphLines": 22,
+      "boundsPt": [
+        646,
+        201,
+        756,
+        220
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 10,
+      "paragraphIndex": 13,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 8,
+      "boundsPt": [
+        646,
+        227,
+        756,
+        235
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 11,
+      "paragraphIndex": 13,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 8,
+      "boundsPt": [
+        646,
+        241,
+        756,
+        249
+      ],
+      "fillRatio": 0.9636363636363636
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 12,
+      "paragraphIndex": 13,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 8,
+      "boundsPt": [
+        646,
+        256,
+        756,
+        264
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 13,
+      "paragraphIndex": 13,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 8,
+      "boundsPt": [
+        646,
+        270,
+        756,
+        278
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 14,
+      "paragraphIndex": 13,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 8,
+      "boundsPt": [
+        646,
+        285,
+        756,
+        292
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 15,
+      "paragraphIndex": 13,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 8,
+      "boundsPt": [
+        646,
+        314,
+        756,
+        324
+      ],
+      "fillRatio": 0.9272727272727272
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 16,
+      "paragraphIndex": 13,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 8,
+      "boundsPt": [
+        646,
+        328,
+        756,
+        336
+      ],
+      "fillRatio": 0.7545454545454545
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 17,
+      "paragraphIndex": 13,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 8,
+      "boundsPt": [
+        646,
+        345,
+        756,
+        364
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 18,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 0,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        371,
+        756,
+        379
+      ],
+      "fillRatio": 0.8636363636363636
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 19,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 1,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        385,
+        756,
+        393
+      ],
+      "fillRatio": 0.9636363636363636
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 20,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 2,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        400,
+        756,
+        408
+      ],
+      "fillRatio": 0.9
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 21,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 3,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        414,
+        756,
+        422
+      ],
+      "fillRatio": 0.9727272727272728
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 22,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 4,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        429,
+        756,
+        436
+      ],
+      "fillRatio": 0.8727272727272727
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 23,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 5,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        446,
+        756,
+        453
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 24,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 6,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        457,
+        756,
+        465
+      ],
+      "fillRatio": 0.7090909090909091
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 25,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 7,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        475,
+        756,
+        480
+      ],
+      "fillRatio": 0.7909090909090909
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 26,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 8,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        489,
+        756,
+        494
+      ],
+      "fillRatio": 0.6727272727272727
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 27,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 9,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        501,
+        756,
+        508
+      ],
+      "fillRatio": 0.7909090909090909
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 28,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 10,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        530,
+        756,
+        540
+      ],
+      "fillRatio": 0.9272727272727272
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 29,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 11,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        544,
+        756,
+        552
+      ],
+      "fillRatio": 0.7454545454545455
+    },
+    {
+      "column": 5,
+      "columnLineIndex": 30,
+      "paragraphIndex": 14,
+      "paragraphLineIndex": 12,
+      "paragraphLines": 13,
+      "boundsPt": [
+        646,
+        558,
+        756,
+        566
+      ],
+      "fillRatio": 0.8
+    }
+  ]
+}

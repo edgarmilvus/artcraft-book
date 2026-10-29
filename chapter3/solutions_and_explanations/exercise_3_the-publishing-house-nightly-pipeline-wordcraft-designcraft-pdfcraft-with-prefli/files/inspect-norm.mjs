@@ -1,0 +1,11 @@
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+const root=process.argv[2];
+const t=new StdioClientTransport({command:"wordcraft-cli",args:["mcp"],cwd:root,stderr:"pipe"}); t.stderr?.on("data",()=>{});
+const c=new Client({name:"i",version:"1"},{capabilities:{}}); await c.connect(t);
+const u=r=>{const b=r.content.find(x=>x.type==="text");try{return JSON.parse(b.text)}catch{return b.text}};
+const call=async(n,a={})=>u(await c.callTool({name:n,arguments:a}));
+console.log('changes',JSON.stringify(await call("execute",{command:"review.changes",params:{}}),null,1));
+const d=await call("inspect_document",{});
+console.log('text',(d.blocks||[]).map(b=>b.text).join('\n'));
+await c.close();

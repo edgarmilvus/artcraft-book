@@ -1,0 +1,50 @@
+{
+  "model": "deepseek/deepseek-v4.1-flash",
+  "brief": "flash sale banner for a stoneware mug",
+  "plan": {
+    "canvas": {
+      "width": 1200,
+      "height": 628
+    },
+    "palette": {
+      "background": "#F5F2ED",
+      "foreground": "#2E2A27",
+      "accent": "#A65A3A"
+    },
+    "headline": "MUG. MARKED DOWN.",
+    "subhead": "Stoneware flash sale. Today only.",
+    "exposure": 0.25,
+    "contrast": 12
+  },
+  "usage": {
+    "inputTokens": 109,
+    "inputTokenDetails": {
+      "noCacheTokens": 109,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1553,
+    "outputTokenDetails": {
+      "textTokens": 113,
+      "reasoningTokens": 1440
+    },
+    "totalTokens": 1662,
+    "raw": {
+      "input_tokens": 109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1553,
+      "output_tokens_details": {
+        "reasoning_tokens": 1440
+      },
+      "total_tokens": 1662,
+      "cost": 0.00102035,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00102035,
+        "upstream_inference_input_cost": 0.0000109,
+        "upstream_inference_output_cost": 0.00100945
+      }
+    }
+  }
+}

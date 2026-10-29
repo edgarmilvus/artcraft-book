@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <title>chart-bars</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M16 112 L112 112 L112 96 L16 96 Z M32 64 L48 64 L48 96 L32 96 Z M64 32 L80 32 L80 96 L64 96 Z" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

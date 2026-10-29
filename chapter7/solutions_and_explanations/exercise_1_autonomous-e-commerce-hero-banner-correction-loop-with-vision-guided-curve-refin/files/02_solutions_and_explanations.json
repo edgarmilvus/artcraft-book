@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "script": [
+    { "id": "doc_open",                "params": { "path": "master_demo.png" } },
+    { "id": "layer.newAdjustmentLayer.curves",  "params": { "points": [[0,0],[64,40],[192,215],[255,255]] } },
+    { "id": "layer.newAdjustmentLayer.vibrance","params": { "vibrance": 12, "saturation": 0 } },
+    { "id": "doc_render_preview",      "params": { "max_side": 768 } },
+    { "id": "doc_save",                "params": { "path": "audit/SKU-0001_final.pcraft" } }
+  ]
+}

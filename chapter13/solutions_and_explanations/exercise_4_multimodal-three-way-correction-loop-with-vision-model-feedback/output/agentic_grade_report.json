@@ -1,0 +1,78 @@
+{
+  "sequenceId": 0,
+  "clipId": 7,
+  "maxIterations": 6,
+  "iterations": [
+    {
+      "iteration": 1,
+      "frameHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "visionParsed": {
+        "status": "too_cool",
+        "confidence": 0.8
+      },
+      "appliedAdjustments": [
+        {
+          "id": "effects.setParam",
+          "params": {
+            "param": "wheel_shadows",
+            "value": [
+              0.45,
+              0.2
+            ]
+          }
+        },
+        {
+          "id": "effects.setParam",
+          "params": {
+            "param": "wheel_shadows_l",
+            "value": -0.04
+          }
+        }
+      ],
+      "scopeReadout": {
+        "waveformMinIre": 0.0,
+        "waveformMaxIre": 100.0,
+        "midtoneMeanY": 50.0
+      },
+      "passedNumeric": true,
+      "passedVision": false,
+      "oscillated": false
+    },
+    {
+      "iteration": 2,
+      "frameHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "visionParsed": {
+        "status": "ok",
+        "confidence": 0.9
+      },
+      "appliedAdjustments": [],
+      "scopeReadout": {
+        "waveformMinIre": 0.0,
+        "waveformMaxIre": 100.0,
+        "midtoneMeanY": 50.0
+      },
+      "passedNumeric": true,
+      "passedVision": true,
+      "oscillated": false
+    }
+  ],
+  "finalStatus": "CONVERGED",
+  "finalFrameHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "finalGradeState": {
+    "shadows": {
+      "hue": 195,
+      "sat": 22,
+      "balance": -0.04
+    },
+    "midtones": {
+      "hue": 35,
+      "sat": 13,
+      "balance": 0.03
+    },
+    "highlights": {
+      "hue": 48,
+      "sat": 3,
+      "balance": 0.0
+    }
+  }
+}

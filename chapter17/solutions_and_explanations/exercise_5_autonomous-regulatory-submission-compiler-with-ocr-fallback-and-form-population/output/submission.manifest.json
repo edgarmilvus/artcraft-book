@@ -1,0 +1,178 @@
+{
+  "submission_id": "MEDDEV-2026-Q1",
+  "source_docx_revision_index": 1,
+  "ocr_log": [
+    {
+      "file": "chapter17/solutions_and_explanations/exercise_5_autonomous-regulatory-submission-compiler-with-ocr-fallback-and-form-population/output/work/submission/certificates/cert-001.pdf",
+      "action": "skip",
+      "reason": "visible text (339 c/p)",
+      "ocr_error": null
+    },
+    {
+      "file": "chapter17/solutions_and_explanations/exercise_5_autonomous-regulatory-submission-compiler-with-ocr-fallback-and-form-population/output/work/submission/certificates/cert-002.pdf",
+      "action": "ocr",
+      "reason": "avg 4 chars/page < 40",
+      "ocr_error": "ocr_recognize failed: the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)"
+    }
+  ],
+  "variants": [
+    {
+      "regulator": "FDA_CDRH",
+      "output_path": "chapter17/solutions_and_explanations/exercise_5_autonomous-regulatory-submission-compiler-with-ocr-fallback-and-form-population/output/work/out/FDA_CDRH.pdf",
+      "pdf_sha256": "b5e8a2464934e3566e85f2badc03639e93fa0e778fbf6bb014cc2e32d0c92c9f",
+      "byte_size": 36648,
+      "page_count": 5,
+      "form_field_map_covered": false,
+      "ocr_pages": 1,
+      "ocr_skipped_pages": 1,
+      "accessibility_rules": {
+        "permission-flag": "skipped",
+        "image-only": "skipped",
+        "tagged-pdf": "failed",
+        "logical-reading-order": "skipped",
+        "primary-language": "passed",
+        "title": "passed",
+        "bookmarks": "skipped",
+        "color-contrast": "skipped",
+        "tagged-content": "skipped",
+        "tagged-annotations": "skipped",
+        "tab-order": "passed",
+        "character-encoding": "skipped",
+        "tagged-multimedia": "skipped",
+        "screen-flicker": "skipped",
+        "scripts": "skipped",
+        "timed-responses": "skipped",
+        "navigation-links": "skipped",
+        "tagged-form-fields": "skipped",
+        "field-descriptions": "skipped",
+        "figures-alt-text": "passed",
+        "nested-alt-text": "skipped",
+        "alt-text-associated": "skipped",
+        "alt-text-hides-annotation": "skipped",
+        "other-elements-alt-text": "skipped",
+        "table-rows": "skipped",
+        "table-cells": "skipped",
+        "table-headers": "skipped",
+        "table-regularity": "skipped",
+        "table-summary": "skipped",
+        "list-items": "skipped",
+        "lbl-lbody": "skipped",
+        "heading-nesting": "skipped"
+      },
+      "pdfa_compliant": true,
+      "diff_report_path": null,
+      "unmapped_fields": [
+        "legacy_field"
+      ],
+      "accessibility_unfixable": [
+        "tagged-pdf"
+      ]
+    },
+    {
+      "regulator": "EU_MDR",
+      "output_path": "chapter17/solutions_and_explanations/exercise_5_autonomous-regulatory-submission-compiler-with-ocr-fallback-and-form-population/output/work/out/EU_MDR.pdf",
+      "pdf_sha256": "c7cdbee5507653f1955fcb9948d8bc79f204dfe0ba53a90805fb2f8adba8b5e2",
+      "byte_size": 35943,
+      "page_count": 5,
+      "form_field_map_covered": false,
+      "ocr_pages": 1,
+      "ocr_skipped_pages": 1,
+      "accessibility_rules": {
+        "permission-flag": "skipped",
+        "image-only": "skipped",
+        "tagged-pdf": "failed",
+        "logical-reading-order": "skipped",
+        "primary-language": "passed",
+        "title": "passed",
+        "bookmarks": "skipped",
+        "color-contrast": "skipped",
+        "tagged-content": "skipped",
+        "tagged-annotations": "skipped",
+        "tab-order": "passed",
+        "character-encoding": "skipped",
+        "tagged-multimedia": "skipped",
+        "screen-flicker": "skipped",
+        "scripts": "skipped",
+        "timed-responses": "skipped",
+        "navigation-links": "skipped",
+        "tagged-form-fields": "skipped",
+        "field-descriptions": "skipped",
+        "figures-alt-text": "passed",
+        "nested-alt-text": "skipped",
+        "alt-text-associated": "skipped",
+        "alt-text-hides-annotation": "skipped",
+        "other-elements-alt-text": "skipped",
+        "table-rows": "skipped",
+        "table-cells": "skipped",
+        "table-headers": "skipped",
+        "table-regularity": "skipped",
+        "table-summary": "skipped",
+        "list-items": "skipped",
+        "lbl-lbody": "skipped",
+        "heading-nesting": "skipped"
+      },
+      "pdfa_compliant": true,
+      "diff_report_path": "chapter17/solutions_and_explanations/exercise_5_autonomous-regulatory-submission-compiler-with-ocr-fallback-and-form-population/output/work/out/EU_MDR.diff.pdf",
+      "unmapped_fields": [
+        "legacy_field"
+      ],
+      "accessibility_unfixable": [
+        "tagged-pdf"
+      ]
+    },
+    {
+      "regulator": "HC_CA",
+      "output_path": "chapter17/solutions_and_explanations/exercise_5_autonomous-regulatory-submission-compiler-with-ocr-fallback-and-form-population/output/work/out/HC_CA.pdf",
+      "pdf_sha256": "d32236039e66018cecd58ee46fb5eca80be82da8799cbdb99b81ac38d200f2e6",
+      "byte_size": 35325,
+      "page_count": 5,
+      "form_field_map_covered": false,
+      "ocr_pages": 1,
+      "ocr_skipped_pages": 1,
+      "accessibility_rules": {
+        "permission-flag": "skipped",
+        "image-only": "skipped",
+        "tagged-pdf": "failed",
+        "logical-reading-order": "skipped",
+        "primary-language": "passed",
+        "title": "passed",
+        "bookmarks": "skipped",
+        "color-contrast": "skipped",
+        "tagged-content": "skipped",
+        "tagged-annotations": "skipped",
+        "tab-order": "passed",
+        "character-encoding": "skipped",
+        "tagged-multimedia": "skipped",
+        "screen-flicker": "skipped",
+        "scripts": "skipped",
+        "timed-responses": "skipped",
+        "navigation-links": "skipped",
+        "tagged-form-fields": "skipped",
+        "field-descriptions": "skipped",
+        "figures-alt-text": "passed",
+        "nested-alt-text": "skipped",
+        "alt-text-associated": "skipped",
+        "alt-text-hides-annotation": "skipped",
+        "other-elements-alt-text": "skipped",
+        "table-rows": "skipped",
+        "table-cells": "skipped",
+        "table-headers": "skipped",
+        "table-regularity": "skipped",
+        "table-summary": "skipped",
+        "list-items": "skipped",
+        "lbl-lbody": "skipped",
+        "heading-nesting": "skipped"
+      },
+      "pdfa_compliant": true,
+      "diff_report_path": "chapter17/solutions_and_explanations/exercise_5_autonomous-regulatory-submission-compiler-with-ocr-fallback-and-form-population/output/work/out/HC_CA.diff.pdf",
+      "unmapped_fields": [
+        "legacy_field"
+      ],
+      "accessibility_unfixable": [
+        "tagged-pdf"
+      ]
+    }
+  ],
+  "baseline": "FDA_CDRH",
+  "trust_verified": true
+}

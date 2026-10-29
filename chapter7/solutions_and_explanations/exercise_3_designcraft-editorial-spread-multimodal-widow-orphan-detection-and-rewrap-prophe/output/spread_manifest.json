@@ -1,0 +1,228 @@
+{
+  "spread": 0,
+  "passes": [
+    {
+      "pass": 0,
+      "fillRatioVariance": 0.000299,
+      "perColumn": [
+        0.781,
+        0.801,
+        0.799,
+        0.814,
+        0.818,
+        0.836
+      ]
+    },
+    {
+      "pass": 1,
+      "fillRatioVariance": 0.000284,
+      "perColumn": [
+        0.781,
+        0.801,
+        0.813,
+        0.814,
+        0.818,
+        0.836
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidate": {
+        "id": "c3-w01",
+        "kind": "widow",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          17
+        ],
+        "paragraphIndex": 6,
+        "fillRatio": 0.2,
+        "boundsPt": [
+          280,
+          302,
+          390,
+          307
+        ],
+        "cropRect": [
+          35,
+          225,
+          635,
+          385
+        ]
+      },
+      "verdict": {
+        "candidateId": "c3-w01",
+        "verdict": "confirmed",
+        "note": "The last line holds one word, so the paragraph needs a little more tracking.",
+        "proposed_wrap_strategy": "increase_tracking",
+        "confidence": 0.86
+      },
+      "appliedCommands": [
+        {
+          "id": "type.char",
+          "params": {
+            "attrs": {
+              "tracking": 20
+            }
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "id": "c3-o01",
+        "kind": "orphan",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          33
+        ],
+        "paragraphIndex": 8,
+        "fillRatio": 0.873,
+        "boundsPt": [
+          280,
+          559,
+          390,
+          569
+        ],
+        "cropRect": [
+          35,
+          452,
+          635,
+          612
+        ]
+      },
+      "verdict": {
+        "candidateId": "c3-o01",
+        "verdict": "rejected",
+        "note": "The line is short because the next paragraph starts here.",
+        "proposed_wrap_strategy": "none",
+        "confidence": 0.55
+      },
+      "appliedCommands": []
+    },
+    {
+      "candidate": {
+        "id": "c2-r01",
+        "kind": "ragged",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          30,
+          31,
+          32
+        ],
+        "paragraphIndex": 5,
+        "fillRatio": 0.718,
+        "boundsPt": [
+          158,
+          561,
+          268,
+          569
+        ],
+        "cropRect": [
+          0,
+          452,
+          600,
+          612
+        ]
+      },
+      "verdict": {
+        "candidateId": "c2-r01",
+        "verdict": "rejected",
+        "note": "The line is short because the next paragraph starts here.",
+        "proposed_wrap_strategy": "none",
+        "confidence": 0.55
+      },
+      "appliedCommands": []
+    },
+    {
+      "candidate": {
+        "id": "c3-r01",
+        "kind": "ragged",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          31,
+          32,
+          33
+        ],
+        "paragraphIndex": 8,
+        "fillRatio": 0.873,
+        "boundsPt": [
+          280,
+          559,
+          390,
+          569
+        ],
+        "cropRect": [
+          35,
+          452,
+          635,
+          612
+        ]
+      },
+      "verdict": {
+        "candidateId": "c3-r01",
+        "verdict": "rejected",
+        "note": "The line is short because the next paragraph starts here.",
+        "proposed_wrap_strategy": "none",
+        "confidence": 0.55
+      },
+      "appliedCommands": []
+    },
+    {
+      "candidate": {
+        "id": "c6-r01",
+        "kind": "ragged",
+        "spread": 0,
+        "frameId": 7,
+        "storyId": 8,
+        "lineIndices": [
+          28,
+          29,
+          30
+        ],
+        "paragraphIndex": 14,
+        "fillRatio": 0.8,
+        "boundsPt": [
+          646,
+          558,
+          756,
+          566
+        ],
+        "cropRect": [
+          192,
+          452,
+          792,
+          612
+        ]
+      },
+      "verdict": {
+        "candidateId": "c6-r01",
+        "verdict": "rejected",
+        "note": "The line is short because the next paragraph starts here.",
+        "proposed_wrap_strategy": "none",
+        "confidence": 0.55
+      },
+      "appliedCommands": []
+    }
+  ],
+  "appliedCommands": [
+    {
+      "id": "type.char",
+      "params": {
+        "attrs": {
+          "tracking": 20
+        }
+      }
+    }
+  ],
+  "undoBudgetAvailable": 1,
+  "rollback": null
+}

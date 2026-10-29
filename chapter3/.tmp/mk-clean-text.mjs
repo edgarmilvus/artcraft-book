@@ -1,0 +1,11 @@
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+const root=process.argv[2];
+const t=new StdioClientTransport({command:"tools/craft-cli/bin/designcraft-cli",args:["mcp"],cwd:root,stderr:"pipe"}); t.stderr?.on("data",()=>{});
+const c=new Client({name:"m",version:"1"},{capabilities:{}}); await c.connect(t);
+const u=r=>{const b=r.content.find(x=>x.type==="text");try{return JSON.parse(b.text)}catch{return b.text}};
+const call=async(n,a={})=>{const r=await c.callTool({name:n,arguments:a}); if(r.isError) console.log("ERR",n,JSON.stringify(r).slice(0,300)); return u(r)};
+await call("new_document",{width:612,height:792,pages:1,margins:72,title:"Clean Catalog"});
+console.log("frame",JSON.stringify(await call("execute",{command:"frame.create",params:{rect:[72,72,468,120],content:"text",text:"Clean Catalog\nMonthly release"}})).slice(0,300));
+console.log("save",JSON.stringify(await call("save_document",{path:"clean-layout.designcraft"})));
+await c.close();

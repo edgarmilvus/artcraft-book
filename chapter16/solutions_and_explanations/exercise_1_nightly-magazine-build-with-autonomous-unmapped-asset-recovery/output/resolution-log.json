@@ -1,0 +1,24 @@
+[
+  {
+    "contentId": "hero-direct",
+    "tier": "direct",
+    "resolvedPath": "chapter16/solutions_and_explanations/exercise_1_nightly-magazine-build-with-autonomous-unmapped-asset-recovery/output/cache/hero-direct.img"
+  },
+  {
+    "contentId": "fig-ledger",
+    "tier": "ledger",
+    "resolvedPath": "chapter16/solutions_and_explanations/exercise_1_nightly-magazine-build-with-autonomous-unmapped-asset-recovery/output/assets/figure.png"
+  },
+  {
+    "contentId": "fig-mismatch",
+    "tier": "placeholder",
+    "substitutedAt": "2026-10-26T13:32:21.398Z",
+    "reason": "ledger-hash-mismatch"
+  },
+  {
+    "contentId": "nobody",
+    "tier": "placeholder",
+    "substitutedAt": "2026-10-26T13:32:21.399Z",
+    "reason": "url-404-and-no-ledger"
+  }
+]

@@ -1,0 +1,15 @@
+PASS one record per target second                records=3
+PASS target seconds preserved                    
+PASS each clip converged in one cycle            [1,1,1]
+PASS all clip outcomes converged                 [["seq-1","converged"]]
+PASS under the delta-E target                    deltaE=0.5
+PASS records are immutable                       
+PASS frame paths were recorded                   
+PASS rendered frames exist                       
+PASS frame rotation keeps only three files       files=3
+PASS every audit file is a PNG                   
+PASS audit frames are real renders               min=53251 bytes
+PASS auth reached the socket                     ["auth","ui.screenshot","ui.screenshot","ui.screenshot"]
+PASS one screenshot per rendered frame           ["auth","ui.screenshot","ui.screenshot","ui.screenshot"]
+
+13/13 checks passed

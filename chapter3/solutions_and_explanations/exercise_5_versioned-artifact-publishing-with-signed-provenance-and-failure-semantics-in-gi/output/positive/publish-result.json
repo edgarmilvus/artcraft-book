@@ -1,0 +1,52 @@
+{
+  "status": "published",
+  "release": "2026.10.0",
+  "channel": "beta",
+  "manifest": "chapter3/solutions_and_explanations/exercise_5_versioned-artifact-publishing-with-signed-provenance-and-failure-semantics-in-gi/output/positive/release-manifest.json",
+  "manifestSha256": "3d861a08be76d77b8d42b04770d6c8bfb70ee1137d9d66b7be33d745586831a1",
+  "artifacts": [
+    {
+      "name": "catalog-print.pdf",
+      "sha256": "3fbbd430fd0bc223eb1377be03409a696c4c2752d2c8b9a62e8e43a7df372aa1",
+      "bytes": 6489,
+      "pages": 1,
+      "pdfStandard": "none",
+      "signatureArmored": "LS0tLS1CRUdJTiBQR1AgU0lHTkFUVVJFLS0tLS0KClJZTFlHNStCVlVqOS84cjdRcVJJNVppanJtc2xWTnFUaXdRMVR0ZmtSRG5uNFZIbWExMlR3Wkl1SzUvSy9BTG8KaEZ4aERJWHZYeVBjSHlKN1JSN0FieHZ1Tm5wdllWN2RCa0lVdnkvUHNEeG5aV2drVGlpNVVtbkVNYzFLVE5YQwp0MTAwVGJxdWJLQk1od1FqczB5M2RPNi84TkVTUTZQMEs4eExmaGFzNXFEUmhJanZEMmJtM1JxL0FadktHVFVkCmtQRTZPVEtoeDY1bVhHVUJxTUV6YTcwbU1RNHpuSXNyRTNnZnB1U1ZZZDFoWmV3Nis2aXZMR2pSY3U0c05GVUEKRzRDRlluK2dlN2lUZkVLVVlOY2NYd2tMcU5zbDYrRnpXdTR4UUt0TXRMQy90aFdKTXZjUWQ3bzBXdFVob1hQbgp4elFPYWpCWDRUT1lna29aTit4OWF3PT0KLS0tLS1FTkQgUEdQIFNJR05BVFVSRS0tLS0tCg=="
+    },
+    {
+      "name": "catalog-web.pdf",
+      "sha256": "893ae77748a948567ecbc93f9ec5318dc6328fe985b7d1fd8e23e12fe63d47db",
+      "bytes": 10257,
+      "pages": 1,
+      "pdfStandard": "pdfa2b",
+      "signatureArmored": "LS0tLS1CRUdJTiBQR1AgU0lHTkFUVVJFLS0tLS0KCnQ5VThYdlI4OUxSN1hsUXg1TklLZTNOd1JiSjFxSThPbUI2dk1SZTg2MnJ5cGRlZzBqSHh2N1RFVDB2aFoxUTcKOGRmSXNST0FIOVNzU0h3Q1ZRWVFjL2liTXRERHJRNC9jYmJrQXFjdmNCN0hMVHdvMFdPY0FWL2lINEpEQVBYWgpMbG96ejZPUG9panBYbGpkMVVNSVhGbEdseFdWb09BSklIamJjMi94ZXFLQU1sTTBVWXBGMVR1WmZaaXZ1TUQ2CmdHdU5ES0lvWjNtc2NlalhIc20yQmI3eWo3NHFSSm9DSHBBWmN0enBiZGlzMlN3b1R1VnZCVFNWc0d4YUF4SloKRFRjdTdTMlFpR1FhdnRJQ2FOSEVRUmRGTkl3aGYyQkxoeE1uS21LZjAwbm4yeUpNbXRNSDl0Sld4cy9pS09lagpDSmx4MTcraDBPdThwdExFQ1ZvWFVRPT0KLS0tLS1FTkQgUEdQIFNJR05BVFVSRS0tLS0tCg=="
+    }
+  ],
+  "exported": {
+    "print": {
+      "path": "catalog-print.pdf",
+      "bytes": 6489,
+      "pages": 1
+    },
+    "web": {
+      "path": "catalog-web.pdf",
+      "bytes": 10257,
+      "pages": 1
+    }
+  },
+  "pdfa": {
+    "level": "PDF/A-2b",
+    "compliant": true,
+    "declared": {
+      "output_intents": [
+        "Custom"
+      ],
+      "pdfa": "PDF/A-2b",
+      "pdfua": null
+    },
+    "issues": []
+  },
+  "signaturesVerified": true,
+  "catalog": "registry/catalog/2026.10.0",
+  "stagingRemoved": true
+}

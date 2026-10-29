@@ -1,0 +1,11 @@
+{
+  "role": "scheduler",
+  "toggles": 149,
+  "errors": [],
+  "indexes": [
+    1,
+    3
+  ],
+  "interval_s": 0.05,
+  "duration_s": 10.0
+}

@@ -1,0 +1,755 @@
+{
+  "envelopeVersion": "1",
+  "studio": "Northwind Motion",
+  "generatorVersion": "1.4.0",
+  "generatedAt": "2026-01-15T09:00:00.000Z",
+  "roles": [
+    "colorist-senior",
+    "compliance-auditor",
+    "junior-editor",
+    "motion-senior"
+  ],
+  "entries": [
+    {
+      "server": "lightcraft-prod",
+      "app": "lightcraft",
+      "binary": "lightcraft-cli",
+      "role": "colorist-senior",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/color",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/color"
+      ],
+      "sha256RoleCapabilities": "495e785550c8bc2c7565e589e5829939d1ecbdf2cfc47861314d22dfbb80dd9e",
+      "sha256ServerCapabilities": "dcfe3cac3f64f54c68cd76b00cb17527334930761987514908cc78b517f7a6f1",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "worker",
+        "engineFlags": [],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "lightcraft",
+        "runTool": "command_run",
+        "runArg": "id",
+        "batchTool": "command_batch",
+        "batchArg": "steps",
+        "batchStopArg": "stop_on_error",
+        "discoveryTool": "command_list",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabled_only",
+        "documentTools": {
+          "new": null,
+          "open": null,
+          "save": null,
+          "inspect": "doc_inspect"
+        },
+        "enforcesRoots": false
+      },
+      "capabilities": {
+        "allow": [
+          "curve.applyPreset",
+          "develop.adjust",
+          "develop.controls",
+          "develop.curve",
+          "develop.get",
+          "develop.matchExposure",
+          "develop.wb",
+          "export.checkTarget",
+          "filter.applyPreset",
+          "keyword.toggleFromSet",
+          "photo.flag",
+          "photo.pick",
+          "photo.rate"
+        ],
+        "deny": [
+          "develop.autoSync",
+          "develop.resetSection",
+          "history.clear",
+          "keyword.delete",
+          "library.emptyRecentlyDeleted",
+          "library.removeFolder",
+          "photo.delete",
+          "photo.deletePermanently"
+        ],
+        "requireApproval": [
+          "app.export",
+          "develop.reset"
+        ],
+        "effectiveAllow": [
+          "app.export",
+          "curve.applyPreset",
+          "develop.adjust",
+          "develop.controls",
+          "develop.curve",
+          "develop.get",
+          "develop.matchExposure",
+          "develop.reset",
+          "develop.wb",
+          "export.checkTarget",
+          "filter.applyPreset",
+          "keyword.toggleFromSet",
+          "photo.flag",
+          "photo.pick",
+          "photo.rate"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    },
+    {
+      "server": "designcraft-prod",
+      "app": "designcraft",
+      "binary": "designcraft-cli",
+      "role": "compliance-auditor",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/audit",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/audit"
+      ],
+      "sha256RoleCapabilities": "a1d11c3bf7a8290af74a557d1079d8d5ba45eeb600c91f73004270ae76f7c92d",
+      "sha256ServerCapabilities": "0f7566b9243bc0a35b7989b5088b759e47c79a1912b92de7d7566e10b56f71a1",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "worker",
+        "engineFlags": [],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "designcraft",
+        "runTool": "execute",
+        "runArg": "command",
+        "batchTool": "batch",
+        "batchArg": "commands",
+        "batchStopArg": null,
+        "discoveryTool": "list_commands",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabledOnly",
+        "documentTools": {
+          "new": "new_document",
+          "open": "open_document",
+          "save": "save_document",
+          "inspect": "inspect_document"
+        },
+        "enforcesRoots": false
+      },
+      "capabilities": {
+        "allow": [
+          "find.find",
+          "find.objects",
+          "font.list",
+          "links.list",
+          "story.get"
+        ],
+        "deny": [
+          "bookmark.delete",
+          "edit.clear",
+          "file.exportIdml",
+          "font.replace",
+          "layer.delete",
+          "layout.pages.delete",
+          "links.relink",
+          "note.delete",
+          "object.setLayer"
+        ],
+        "requireApproval": [],
+        "effectiveAllow": [
+          "find.find",
+          "find.objects",
+          "font.list",
+          "links.list",
+          "story.get"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    },
+    {
+      "server": "effectcraft-prod",
+      "app": "effectcraft",
+      "binary": "effectcraft-cli",
+      "role": "compliance-auditor",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/audit",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/audit"
+      ],
+      "sha256RoleCapabilities": "a1d11c3bf7a8290af74a557d1079d8d5ba45eeb600c91f73004270ae76f7c92d",
+      "sha256ServerCapabilities": "932e5bae67418a9e6c9d5ab2aa575fd282fb8e686c733c1c9b47315280208a22",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "worker",
+        "engineFlags": [],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "effectcraft",
+        "runTool": "execute_command",
+        "runArg": "command",
+        "batchTool": "batch",
+        "batchArg": "steps",
+        "batchStopArg": null,
+        "discoveryTool": "list_commands",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabled_only",
+        "documentTools": {
+          "new": null,
+          "open": "open_project",
+          "save": "save_project",
+          "inspect": "get_project"
+        },
+        "enforcesRoots": false
+      },
+      "capabilities": {
+        "allow": [
+          "comp.info",
+          "file.open",
+          "layer.tree",
+          "prop.get"
+        ],
+        "deny": [
+          "edit.purge",
+          "file.installScript",
+          "file.runScript",
+          "file.save",
+          "prop.set"
+        ],
+        "requireApproval": [],
+        "effectiveAllow": [
+          "comp.info",
+          "file.open",
+          "layer.tree",
+          "prop.get"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    },
+    {
+      "server": "filmcraft-prod",
+      "app": "filmcraft",
+      "binary": "filmcraft-cli",
+      "role": "compliance-auditor",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/audit",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/audit"
+      ],
+      "sha256RoleCapabilities": "a1d11c3bf7a8290af74a557d1079d8d5ba45eeb600c91f73004270ae76f7c92d",
+      "sha256ServerCapabilities": "13f37e1061f041111888aeda60c824a08707b43f996b2e1fb3dc5b91b46beee0",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "engine",
+        "engineFlags": [
+          "--automation-read-root",
+          "/work/projects",
+          "--automation-write-root",
+          "/work/projects/audit"
+        ],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "filmcraft",
+        "runTool": "command_run",
+        "runArg": "id",
+        "batchTool": "command_batch",
+        "batchArg": "steps",
+        "batchStopArg": "stop_on_error",
+        "discoveryTool": "command_list",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabled_only",
+        "documentTools": {
+          "new": null,
+          "open": null,
+          "save": null,
+          "inspect": "doc_inspect"
+        },
+        "enforcesRoots": true
+      },
+      "capabilities": {
+        "allow": [
+          "history.list",
+          "project.inspect",
+          "scopes.read",
+          "sequence.inspect"
+        ],
+        "deny": [
+          "edit.consolidateDuplicates",
+          "file.save",
+          "project.delete",
+          "sequence.renderEffectsInToOut"
+        ],
+        "requireApproval": [],
+        "effectiveAllow": [
+          "history.list",
+          "project.inspect",
+          "scopes.read",
+          "sequence.inspect"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    },
+    {
+      "server": "lightcraft-prod",
+      "app": "lightcraft",
+      "binary": "lightcraft-cli",
+      "role": "compliance-auditor",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/audit",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/audit"
+      ],
+      "sha256RoleCapabilities": "a1d11c3bf7a8290af74a557d1079d8d5ba45eeb600c91f73004270ae76f7c92d",
+      "sha256ServerCapabilities": "d5e6b55fe8e3056090a44cea37d354478e44de06745b031d43e3153896a58074",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "worker",
+        "engineFlags": [],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "lightcraft",
+        "runTool": "command_run",
+        "runArg": "id",
+        "batchTool": "command_batch",
+        "batchArg": "steps",
+        "batchStopArg": "stop_on_error",
+        "discoveryTool": "command_list",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabled_only",
+        "documentTools": {
+          "new": null,
+          "open": null,
+          "save": null,
+          "inspect": "doc_inspect"
+        },
+        "enforcesRoots": false
+      },
+      "capabilities": {
+        "allow": [
+          "develop.get",
+          "history.list",
+          "journal.list",
+          "library.info",
+          "photo.inspect"
+        ],
+        "deny": [
+          "develop.autoSync",
+          "develop.reset",
+          "history.clear",
+          "library.emptyRecentlyDeleted",
+          "library.removeFolder",
+          "photo.delete",
+          "photo.deletePermanently"
+        ],
+        "requireApproval": [],
+        "effectiveAllow": [
+          "develop.get",
+          "history.list",
+          "journal.list",
+          "library.info",
+          "photo.inspect"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    },
+    {
+      "server": "pdfcraft-prod",
+      "app": "pdfcraft",
+      "binary": "pdfcraft-cli",
+      "role": "compliance-auditor",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/audit",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/audit"
+      ],
+      "sha256RoleCapabilities": "a1d11c3bf7a8290af74a557d1079d8d5ba45eeb600c91f73004270ae76f7c92d",
+      "sha256ServerCapabilities": "bc4a10e16773b62fd9f310a4752adcdd04ae219345e19695b485ee71eb00fa43",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "worker",
+        "engineFlags": [],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "pdfcraft",
+        "runTool": "command_run",
+        "runArg": "id",
+        "batchTool": "command_batch",
+        "batchArg": "steps",
+        "batchStopArg": "stop_on_error",
+        "discoveryTool": "command_list",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabled_only",
+        "documentTools": {
+          "new": null,
+          "open": "doc_open",
+          "save": "doc_save",
+          "inspect": "doc_inspect"
+        },
+        "enforcesRoots": false
+      },
+      "capabilities": {
+        "allow": [
+          "doc.compare",
+          "file.open",
+          "redact.sanitize",
+          "redact.search"
+        ],
+        "deny": [
+          "file.save",
+          "redact.apply",
+          "redact.clear",
+          "redact.mark"
+        ],
+        "requireApproval": [],
+        "effectiveAllow": [
+          "doc.compare",
+          "file.open",
+          "redact.sanitize",
+          "redact.search"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    },
+    {
+      "server": "designcraft-prod",
+      "app": "designcraft",
+      "binary": "designcraft-cli",
+      "role": "junior-editor",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/banners/preview",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/banners/preview"
+      ],
+      "sha256RoleCapabilities": "01bca0165f13c32074170d556a602488cd2df645000b22efda0fee650bfb9d12",
+      "sha256ServerCapabilities": "ff72dfa09374ec277c82f22fe7496b69063cda79b32bc2e226e20ce165431bfe",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "worker",
+        "engineFlags": [],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "designcraft",
+        "runTool": "execute",
+        "runArg": "command",
+        "batchTool": "batch",
+        "batchArg": "commands",
+        "batchStopArg": null,
+        "discoveryTool": "list_commands",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabledOnly",
+        "documentTools": {
+          "new": "new_document",
+          "open": "open_document",
+          "save": "save_document",
+          "inspect": "inspect_document"
+        },
+        "enforcesRoots": false
+      },
+      "capabilities": {
+        "allow": [
+          "bookmark.add",
+          "file.new",
+          "font.list",
+          "frame.create",
+          "layer.new",
+          "links.list",
+          "object.fill",
+          "place.styles",
+          "story.get",
+          "type.char",
+          "type.create"
+        ],
+        "deny": [
+          "bookmark.delete",
+          "edit.clear",
+          "file.exportIdml",
+          "layer.delete",
+          "layout.pages.delete",
+          "links.relink",
+          "note.delete",
+          "object.setLayer"
+        ],
+        "requireApproval": [
+          "file.open",
+          "place.styles"
+        ],
+        "effectiveAllow": [
+          "bookmark.add",
+          "file.new",
+          "file.open",
+          "font.list",
+          "frame.create",
+          "layer.new",
+          "links.list",
+          "object.fill",
+          "place.styles",
+          "story.get",
+          "type.char",
+          "type.create"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    },
+    {
+      "server": "pdfcraft-prod",
+      "app": "pdfcraft",
+      "binary": "pdfcraft-cli",
+      "role": "junior-editor",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/archive",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/archive"
+      ],
+      "sha256RoleCapabilities": "01bca0165f13c32074170d556a602488cd2df645000b22efda0fee650bfb9d12",
+      "sha256ServerCapabilities": "9654697f215841eddc79ac37ca1705df095c65d0826e216f26f2d58a243aaa4e",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "worker",
+        "engineFlags": [],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "pdfcraft",
+        "runTool": "command_run",
+        "runArg": "id",
+        "batchTool": "command_batch",
+        "batchArg": "steps",
+        "batchStopArg": "stop_on_error",
+        "discoveryTool": "command_list",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabled_only",
+        "documentTools": {
+          "new": null,
+          "open": "doc_open",
+          "save": "doc_save",
+          "inspect": "doc_inspect"
+        },
+        "enforcesRoots": false
+      },
+      "capabilities": {
+        "allow": [
+          "file.open"
+        ],
+        "deny": [
+          "redact.apply",
+          "redact.clear",
+          "redact.mark",
+          "redact.sanitize"
+        ],
+        "requireApproval": [
+          "file.save"
+        ],
+        "effectiveAllow": [
+          "file.open",
+          "file.save"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    },
+    {
+      "server": "effectcraft-prod",
+      "app": "effectcraft",
+      "binary": "effectcraft-cli",
+      "role": "motion-senior",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/motion",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/motion"
+      ],
+      "sha256RoleCapabilities": "fdaca37c834c61d48655c9a733b960e23e74f2d2ff545781ed97b52a70b09115",
+      "sha256ServerCapabilities": "0380e45e30bb57dfe0a6d66fead4bc689f002873673de5141aa91e900aa79852",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "worker",
+        "engineFlags": [],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "effectcraft",
+        "runTool": "execute_command",
+        "runArg": "command",
+        "batchTool": "batch",
+        "batchArg": "steps",
+        "batchStopArg": null,
+        "discoveryTool": "list_commands",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabled_only",
+        "documentTools": {
+          "new": null,
+          "open": "open_project",
+          "save": "save_project",
+          "inspect": "get_project"
+        },
+        "enforcesRoots": false
+      },
+      "capabilities": {
+        "allow": [
+          "comp.new",
+          "comp.open",
+          "effect.apply",
+          "effect.list",
+          "file.open",
+          "file.save",
+          "keys.easyEase",
+          "layer.addShapeItem",
+          "layer.applyTextPreset",
+          "layer.newSolid",
+          "layer.newText",
+          "prop.addKey",
+          "prop.set",
+          "renderQueue.add"
+        ],
+        "deny": [
+          "edit.purge",
+          "file.installScript",
+          "file.installScriptUIPanel",
+          "prop.reset"
+        ],
+        "requireApproval": [
+          "file.runScript"
+        ],
+        "effectiveAllow": [
+          "comp.new",
+          "comp.open",
+          "effect.apply",
+          "effect.list",
+          "file.open",
+          "file.runScript",
+          "file.save",
+          "keys.easyEase",
+          "layer.addShapeItem",
+          "layer.applyTextPreset",
+          "layer.newSolid",
+          "layer.newText",
+          "prop.addKey",
+          "prop.set",
+          "renderQueue.add"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    },
+    {
+      "server": "filmcraft-prod",
+      "app": "filmcraft",
+      "binary": "filmcraft-cli",
+      "role": "motion-senior",
+      "readRoot": "/work/projects",
+      "writeRoot": "/work/projects/motion",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects/motion"
+      ],
+      "sha256RoleCapabilities": "fdaca37c834c61d48655c9a733b960e23e74f2d2ff545781ed97b52a70b09115",
+      "sha256ServerCapabilities": "5012f8e3baa30d064b4e9443113c672057caa2e2703a9777e021adb655d80bf4",
+      "generatorVersion": "1.4.0",
+      "generatedAt": "2026-01-15T09:00:00.000Z",
+      "sandbox": {
+        "enforcedBy": "engine",
+        "engineFlags": [
+          "--automation-read-root",
+          "/work/projects",
+          "--automation-write-root",
+          "/work/projects/motion"
+        ],
+        "workerEnforced": true
+      },
+      "surface": {
+        "app": "filmcraft",
+        "runTool": "command_run",
+        "runArg": "id",
+        "batchTool": "command_batch",
+        "batchArg": "steps",
+        "batchStopArg": "stop_on_error",
+        "discoveryTool": "command_list",
+        "discoveryFilterArg": "filter",
+        "discoveryEnabledArg": "enabled_only",
+        "documentTools": {
+          "new": null,
+          "open": null,
+          "save": null,
+          "inspect": "doc_inspect"
+        },
+        "enforcesRoots": true
+      },
+      "capabilities": {
+        "allow": [
+          "clip.createMulticam",
+          "file.newProject",
+          "file.newSequence",
+          "file.open",
+          "file.save",
+          "lut.export",
+          "lut.import",
+          "markers.add",
+          "media.attachProxies",
+          "media.linkMedia",
+          "sequence.addEdit",
+          "sequence.renderInToOut"
+        ],
+        "deny": [
+          "edit.consolidateDuplicates",
+          "file.discardRecovery",
+          "project.delete"
+        ],
+        "requireApproval": [
+          "sequence.renderEffectsInToOut"
+        ],
+        "effectiveAllow": [
+          "clip.createMulticam",
+          "file.newProject",
+          "file.newSequence",
+          "file.open",
+          "file.save",
+          "lut.export",
+          "lut.import",
+          "markers.add",
+          "media.attachProxies",
+          "media.linkMedia",
+          "sequence.addEdit",
+          "sequence.renderEffectsInToOut",
+          "sequence.renderInToOut"
+        ]
+      },
+      "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+    }
+  ],
+  "signature": "a446670fcb346f7dc7b8c7ab834420cc053e8422d2d8834e53b946e0bd4c33f9"
+}

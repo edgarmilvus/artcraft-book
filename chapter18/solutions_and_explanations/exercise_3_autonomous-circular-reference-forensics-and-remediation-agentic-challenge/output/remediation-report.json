@@ -1,0 +1,605 @@
+{
+  "input_path": "chapter18/solutions_and_explanations/exercise_3_autonomous-circular-reference-forensics-and-remediation-agentic-challenge/output/work/fixtures/legacy-plan-grid.xlsx",
+  "output_path": "chapter18/solutions_and_explanations/exercise_3_autonomous-circular-reference-forensics-and-remediation-agentic-challenge/output/work/out/legacy-plan-grid-remediated.xlsx",
+  "input_sha256": "fe383dfb028407dbb18d55d4490d5d7ebcf88d1cada82a154adc03a0f379e08f",
+  "output_sha256": "6a363cd31be593c0fb29f7ff81c62703d71e0e2f0ab7696e0dc14b395e2af11e",
+  "cycles_found": [
+    {
+      "members": [
+        "Cash Flow!B12",
+        "Debt Schedule!B12",
+        "Debt Schedule!B13",
+        "Debt Schedule!B14",
+        "Interest!B12",
+        "Interest!B13"
+      ],
+      "walk": [
+        "Debt Schedule!B12",
+        "Interest!B13",
+        "Interest!B12",
+        "Debt Schedule!B14"
+      ],
+      "classification": "true",
+      "iterative_marker": [],
+      "id": "cycle-001"
+    },
+    {
+      "members": [
+        "Cash Flow!C12",
+        "Debt Schedule!C12",
+        "Debt Schedule!C13",
+        "Debt Schedule!C14",
+        "Interest!C12",
+        "Interest!C13"
+      ],
+      "walk": [
+        "Debt Schedule!C12",
+        "Interest!C13",
+        "Interest!C12",
+        "Debt Schedule!C14"
+      ],
+      "classification": "true",
+      "iterative_marker": [],
+      "id": "cycle-002"
+    },
+    {
+      "members": [
+        "Interest.Charge",
+        "Interest.Expense"
+      ],
+      "walk": [
+        "Interest.Charge",
+        "Interest.Expense"
+      ],
+      "classification": "named-mutual",
+      "iterative_marker": [],
+      "id": "cycle-003"
+    },
+    {
+      "members": [
+        "Iterative Block!B11",
+        "Iterative Block!B12"
+      ],
+      "walk": [
+        "Iterative Block!B11",
+        "Iterative Block!B12"
+      ],
+      "classification": "iterative",
+      "iterative_marker": [
+        "Iterative Block!B11"
+      ],
+      "id": "cycle-004"
+    },
+    {
+      "members": [
+        "Rollforward!C13"
+      ],
+      "walk": [
+        "Rollforward!C13"
+      ],
+      "classification": "self",
+      "iterative_marker": [],
+      "id": "cycle-005"
+    }
+  ],
+  "remediations": [
+    {
+      "cycle_id": "cycle-001",
+      "chosen": {
+        "edge": {
+          "from": "Interest!B12",
+          "to": "Debt Schedule!B14"
+        },
+        "semantic_plausibility": 5,
+        "blast_radius": 6,
+        "formula_complexity": 2,
+        "total_score": 4.3875,
+        "proposed_formula": "=('Debt Schedule'!B11+'Debt Schedule'!B11)/2",
+        "rationale": "The cycle runs because Interest!B12 depends on the closing balance, the closing balance depends on the interest charge, and the interest charge depends on the closing balance. The break site selected here is the reference to the closing balance itself: rewriting it to the opening balance is the convention finance models already use when they accrue interest on the opening position, so the roll-forward keeps its economics and only the averaging is dropped (the closing reference 'Debt Schedule'!B14 is replaced by its opening counterpart 'Debt Schedule'!B11). The alternative break points score 0 on semantic plausibility against 5 here, so they are recorded but not applied.",
+        "applicable": true,
+        "rewrite_kind": "lag-opening-balance",
+        "rewrite_explanation": "the closing reference 'Debt Schedule'!B14 is replaced by its opening counterpart 'Debt Schedule'!B11",
+        "rewrite_name": null,
+        "cycles_broken": 2,
+        "cycles_in_cluster": 2
+      },
+      "alternatives": [
+        {
+          "edge": {
+            "from": "Cash Flow!B12",
+            "to": "Interest!B13"
+          },
+          "semantic_plausibility": 0,
+          "blast_radius": 6,
+          "formula_complexity": 2,
+          "total_score": 2.1375,
+          "proposed_formula": "",
+          "rationale": "",
+          "applicable": false,
+          "rewrite_kind": "",
+          "rewrite_explanation": "the sheet offers neither an opening balance nor a previous period for this reference, so no rewrite of the edge keeps the accounting meaning",
+          "rewrite_name": null,
+          "cycles_broken": 1,
+          "cycles_in_cluster": 2
+        },
+        {
+          "edge": {
+            "from": "Debt Schedule!B12",
+            "to": "Interest!B13"
+          },
+          "semantic_plausibility": 0,
+          "blast_radius": 6,
+          "formula_complexity": 2,
+          "total_score": 2.1375,
+          "proposed_formula": "",
+          "rationale": "",
+          "applicable": false,
+          "rewrite_kind": "",
+          "rewrite_explanation": "the sheet offers neither an opening balance nor a previous period for this reference, so no rewrite of the edge keeps the accounting meaning",
+          "rewrite_name": null,
+          "cycles_broken": 1,
+          "cycles_in_cluster": 2
+        },
+        {
+          "edge": {
+            "from": "Debt Schedule!B13",
+            "to": "Cash Flow!B12"
+          },
+          "semantic_plausibility": 0,
+          "blast_radius": 6,
+          "formula_complexity": 2,
+          "total_score": 2.1375,
+          "proposed_formula": "",
+          "rationale": "",
+          "applicable": false,
+          "rewrite_kind": "",
+          "rewrite_explanation": "the sheet offers neither an opening balance nor a previous period for this reference, so no rewrite of the edge keeps the accounting meaning",
+          "rewrite_name": null,
+          "cycles_broken": 1,
+          "cycles_in_cluster": 2
+        },
+        {
+          "edge": {
+            "from": "Debt Schedule!B14",
+            "to": "Debt Schedule!B12"
+          },
+          "semantic_plausibility": 0,
+          "blast_radius": 6,
+          "formula_complexity": 2,
+          "total_score": 2.1375,
+          "proposed_formula": "",
+          "rationale": "",
+          "applicable": false,
+          "rewrite_kind": "",
+          "rewrite_explanation": "the sheet offers neither an opening balance nor a previous period for this reference, so no rewrite of the edge keeps the accounting meaning",
+          "rewrite_name": null,
+          "cycles_broken": 1,
+          "cycles_in_cluster": 2
+        }
+      ],
+      "cycle_members": [
+        "Cash Flow!B12",
+        "Debt Schedule!B12",
+        "Debt Schedule!B13",
+        "Debt Schedule!B14",
+        "Interest!B12",
+        "Interest!B13"
+      ],
+      "pre_formula": "=('Debt Schedule'!B11+'Debt Schedule'!B14)/2",
+      "post_formula": "=('Debt Schedule'!B11+'Debt Schedule'!B11)/2",
+      "verified_acyclic": true,
+      "status": "applied",
+      "steps": [
+        {
+          "sheet": "Interest",
+          "cell": "B12",
+          "input": "=('Debt Schedule'!B11+'Debt Schedule'!B11)/2",
+          "command": "cell.set"
+        },
+        {
+          "cell": "Interest!B12",
+          "text": "AUDIT-BREAK cycle-001 | lag-opening-balance: the closing reference 'Debt Schedule'!B14 is replaced by its opening counterpart 'Debt Schedule'!B11 | see remediation-report.json",
+          "author": "circular-forensics",
+          "command": "review.newNote"
+        }
+      ]
+    },
+    {
+      "cycle_id": "cycle-002",
+      "chosen": {
+        "edge": {
+          "from": "Interest!C12",
+          "to": "Debt Schedule!C14"
+        },
+        "semantic_plausibility": 5,
+        "blast_radius": 16,
+        "formula_complexity": 2,
+        "total_score": 3.8667,
+        "proposed_formula": "=('Debt Schedule'!C11+'Debt Schedule'!C11)/2",
+        "rationale": "The cycle runs because Interest!C12 depends on the closing balance, the closing balance depends on the interest charge, and the interest charge depends on the closing balance. The break site selected here is the reference to the closing balance itself: rewriting it to the opening balance is the convention finance models already use when they accrue interest on the opening position, so the roll-forward keeps its economics and only the averaging is dropped (the closing reference 'Debt Schedule'!C14 is replaced by its opening counterpart 'Debt Schedule'!C11). The alternative break points score 3 on semantic plausibility against 5 here, so they are recorded but not applied.",
+        "applicable": true,
+        "rewrite_kind": "lag-opening-balance",
+        "rewrite_explanation": "the closing reference 'Debt Schedule'!C14 is replaced by its opening counterpart 'Debt Schedule'!C11",
+        "rewrite_name": null,
+        "cycles_broken": 2,
+        "cycles_in_cluster": 2
+      },
+      "alternatives": [
+        {
+          "edge": {
+            "from": "Interest!C12",
+            "to": "Debt Schedule!C14"
+          },
+          "semantic_plausibility": 3,
+          "blast_radius": 16,
+          "formula_complexity": 2,
+          "total_score": 2.9667,
+          "proposed_formula": "=('Debt Schedule'!C11+'Debt Schedule'!B14)/2",
+          "rationale": "",
+          "applicable": true,
+          "rewrite_kind": "lag-prior-period",
+          "rewrite_explanation": "the reference 'Debt Schedule'!C14 is lagged one period to the previous period's 'Debt Schedule'!B14",
+          "rewrite_name": null,
+          "cycles_broken": 2,
+          "cycles_in_cluster": 2
+        },
+        {
+          "edge": {
+            "from": "Cash Flow!C12",
+            "to": "Interest!C13"
+          },
+          "semantic_plausibility": 0,
+          "blast_radius": 16,
+          "formula_complexity": 2,
+          "total_score": 1.6167,
+          "proposed_formula": "",
+          "rationale": "",
+          "applicable": false,
+          "rewrite_kind": "",
+          "rewrite_explanation": "the sheet offers neither an opening balance nor a previous period for this reference, so no rewrite of the edge keeps the accounting meaning",
+          "rewrite_name": null,
+          "cycles_broken": 1,
+          "cycles_in_cluster": 2
+        },
+        {
+          "edge": {
+            "from": "Debt Schedule!C12",
+            "to": "Interest!C13"
+          },
+          "semantic_plausibility": 0,
+          "blast_radius": 16,
+          "formula_complexity": 2,
+          "total_score": 1.6167,
+          "proposed_formula": "",
+          "rationale": "",
+          "applicable": false,
+          "rewrite_kind": "",
+          "rewrite_explanation": "the sheet offers neither an opening balance nor a previous period for this reference, so no rewrite of the edge keeps the accounting meaning",
+          "rewrite_name": null,
+          "cycles_broken": 1,
+          "cycles_in_cluster": 2
+        },
+        {
+          "edge": {
+            "from": "Debt Schedule!C13",
+            "to": "Cash Flow!C12"
+          },
+          "semantic_plausibility": 0,
+          "blast_radius": 16,
+          "formula_complexity": 2,
+          "total_score": 1.6167,
+          "proposed_formula": "",
+          "rationale": "",
+          "applicable": false,
+          "rewrite_kind": "",
+          "rewrite_explanation": "the sheet offers neither an opening balance nor a previous period for this reference, so no rewrite of the edge keeps the accounting meaning",
+          "rewrite_name": null,
+          "cycles_broken": 1,
+          "cycles_in_cluster": 2
+        }
+      ],
+      "cycle_members": [
+        "Cash Flow!C12",
+        "Debt Schedule!C12",
+        "Debt Schedule!C13",
+        "Debt Schedule!C14",
+        "Interest!C12",
+        "Interest!C13"
+      ],
+      "pre_formula": "=('Debt Schedule'!C11+'Debt Schedule'!C14)/2",
+      "post_formula": "=('Debt Schedule'!C11+'Debt Schedule'!C11)/2",
+      "verified_acyclic": true,
+      "status": "applied",
+      "steps": [
+        {
+          "sheet": "Interest",
+          "cell": "C12",
+          "input": "=('Debt Schedule'!C11+'Debt Schedule'!C11)/2",
+          "command": "cell.set"
+        },
+        {
+          "cell": "Interest!C12",
+          "text": "AUDIT-BREAK cycle-002 | lag-opening-balance: the closing reference 'Debt Schedule'!C14 is replaced by its opening counterpart 'Debt Schedule'!C11 | see remediation-report.json",
+          "author": "circular-forensics",
+          "command": "review.newNote"
+        }
+      ]
+    },
+    {
+      "cycle_id": "cycle-003",
+      "chosen": {
+        "edge": {
+          "from": "Interest.Expense",
+          "to": "Interest.Charge"
+        },
+        "semantic_plausibility": 5,
+        "blast_radius": 0,
+        "formula_complexity": 1,
+        "total_score": 5.0,
+        "proposed_formula": "=Interest!$B$13",
+        "rationale": "Two defined names point at each other, so neither can be resolved and every cell that reads them fails. The model already carries the quantity on a labelled line of the Interest sheet, so the name is re-pointed at that cell and the other name resolves through it: the name Interest.Expense is re-pointed at Interest!B13, the cell it was aliasing. The names keep their spelling, their scope and their consumers; only the broken link is replaced.",
+        "applicable": true,
+        "rewrite_kind": "repoint-defined-name",
+        "rewrite_explanation": "the name Interest.Expense is re-pointed at Interest!B13, the cell it was aliasing",
+        "rewrite_name": "Interest.Expense",
+        "cycles_broken": 1,
+        "cycles_in_cluster": 1
+      },
+      "alternatives": [
+        {
+          "edge": {
+            "from": "Interest.Charge",
+            "to": "Interest.Expense"
+          },
+          "semantic_plausibility": 0,
+          "blast_radius": 0,
+          "formula_complexity": 1,
+          "total_score": 2.75,
+          "proposed_formula": "",
+          "rationale": "",
+          "applicable": false,
+          "rewrite_kind": "",
+          "rewrite_explanation": "the name Interest.Expense is the one that aliases a line of the model, so re-pointing Interest.Charge instead would leave the cycle open",
+          "rewrite_name": null,
+          "cycles_broken": 1,
+          "cycles_in_cluster": 1
+        }
+      ],
+      "cycle_members": [
+        "Interest.Charge",
+        "Interest.Expense"
+      ],
+      "pre_formula": "=Interest.Charge",
+      "post_formula": "=Interest!$B$13",
+      "verified_acyclic": true,
+      "status": "applied",
+      "steps": [
+        {
+          "name": "Interest.Expense",
+          "refersTo": "=Interest!$B$13",
+          "command": "formulas.defineName"
+        }
+      ]
+    },
+    {
+      "cycle_id": "cycle-005",
+      "chosen": {
+        "edge": {
+          "from": "Rollforward!C13",
+          "to": "Rollforward!C13"
+        },
+        "semantic_plausibility": 4,
+        "blast_radius": 5,
+        "formula_complexity": 4,
+        "total_score": 3.3896,
+        "proposed_formula": "=SUM(C11:C12)",
+        "rationale": "The cell totals a window that contains the cell itself, so it reads its own result; this is the off-by-one a rolling schedule picks up when a row is inserted. Trimming the window to the rows before the cell keeps every other period untouched and removes the self-reference without touching any other formula: the rolling window C11:C13 contains the cell itself, so it is trimmed to C11:C12.",
+        "applicable": true,
+        "rewrite_kind": "trim-rolling-window",
+        "rewrite_explanation": "the rolling window C11:C13 contains the cell itself, so it is trimmed to C11:C12",
+        "rewrite_name": null,
+        "cycles_broken": 1,
+        "cycles_in_cluster": 1
+      },
+      "alternatives": [],
+      "cycle_members": [
+        "Rollforward!C13"
+      ],
+      "pre_formula": "=SUM(C11:C13)",
+      "post_formula": "=SUM(C11:C12)",
+      "verified_acyclic": true,
+      "status": "applied",
+      "steps": [
+        {
+          "sheet": "Rollforward",
+          "cell": "C13",
+          "input": "=SUM(C11:C12)",
+          "command": "cell.set"
+        },
+        {
+          "cell": "Rollforward!C13",
+          "text": "AUDIT-BREAK cycle-005 | trim-rolling-window: the rolling window C11:C13 contains the cell itself, so it is trimmed to C11:C12 | see remediation-report.json",
+          "author": "circular-forensics",
+          "command": "review.newNote"
+        }
+      ]
+    }
+  ],
+  "residual_cycles": [],
+  "warnings": [
+    "1 cycle(s) traverse cells the model marks as iterative calculation; they are reported and left untouched",
+    "the workbook's calculation options have iterative calculation switched off, so the iterative block still evaluates to #CIRC!; enable it in Formulas > Calculation Options or have the model owner restate the block"
+  ],
+  "rendered_previews": [
+    "chapter18/solutions_and_explanations/exercise_3_autonomous-circular-reference-forensics-and-remediation-agentic-challenge/output/work/out/previews/sheet-Interest.png",
+    "chapter18/solutions_and_explanations/exercise_3_autonomous-circular-reference-forensics-and-remediation-agentic-challenge/output/work/out/previews/sheet-Cash_Flow.png",
+    "chapter18/solutions_and_explanations/exercise_3_autonomous-circular-reference-forensics-and-remediation-agentic-challenge/output/work/out/previews/sheet-Debt_Schedule.png",
+    "chapter18/solutions_and_explanations/exercise_3_autonomous-circular-reference-forensics-and-remediation-agentic-challenge/output/work/out/previews/sheet-Rollforward.png"
+  ],
+  "deferred_cycles": [
+    "cycle-004"
+  ],
+  "engine": {
+    "name": "gridcraft",
+    "version": "0.10.0"
+  },
+  "method": {
+    "dependency_graph": "sheet.read with formulas, parsed into nodes and edges",
+    "detector": "formulas.errorChecking, the engine's own auditor",
+    "tracer": "formulas.tracePrecedents, cross-checked on the cycle members",
+    "atomicity": "cell.set plus review.newNote applied as one break and rolled back together if a step fails",
+    "publish": "one file.save to a new path; the inherited file is never written to",
+    "previews": "the sheet region is rasterised by the agent from the values the engine computed; GridCraft cannot rasterise in headless mode, where its screenshot tool needs a UI session, so the engine's own HTML render of the sheet is used when no image library is available",
+    "scoring_weights": {
+      "semantic_plausibility": 0.45,
+      "formula_complexity": 0.3,
+      "blast_radius": 0.25
+    }
+  },
+  "workbook_iterative_calculation": false,
+  "engine_audit": {
+    "before": {
+      "circular": [
+        "Debt Schedule!B14",
+        "Debt Schedule!C12",
+        "Interest!C13",
+        "Rollforward!C13",
+        "Rollforward!C13",
+        "Iterative Block!B11"
+      ],
+      "errors": [
+        {
+          "cell": "C11",
+          "error": "#CIRC!",
+          "formula": "=B14",
+          "sheet": "Debt Schedule"
+        },
+        {
+          "cell": "B12",
+          "error": "#CIRC!",
+          "formula": "=Interest!B13",
+          "sheet": "Debt Schedule"
+        },
+        {
+          "cell": "C12",
+          "error": "#CIRC!",
+          "formula": "=Interest!C13",
+          "sheet": "Debt Schedule"
+        },
+        {
+          "cell": "B13",
+          "error": "#CIRC!",
+          "formula": "=-'Cash Flow'!B12",
+          "sheet": "Debt Schedule"
+        },
+        {
+          "cell": "C13",
+          "error": "#CIRC!",
+          "formula": "=-'Cash Flow'!C12",
+          "sheet": "Debt Schedule"
+        },
+        {
+          "cell": "B14",
+          "error": "#CIRC!",
+          "formula": "=B11+B12+B13",
+          "sheet": "Debt Schedule"
+        },
+        {
+          "cell": "C14",
+          "error": "#CIRC!",
+          "formula": "=C11+C12+C13",
+          "sheet": "Debt Schedule"
+        },
+        {
+          "cell": "B12",
+          "error": "#CIRC!",
+          "formula": "=('Debt Schedule'!B11+'Debt Schedule'!B14)/2",
+          "sheet": "Interest"
+        },
+        {
+          "cell": "C12",
+          "error": "#CIRC!",
+          "formula": "=('Debt Schedule'!C11+'Debt Schedule'!C14)/2",
+          "sheet": "Interest"
+        },
+        {
+          "cell": "B13",
+          "error": "#CIRC!",
+          "formula": "=B12*B11",
+          "sheet": "Interest"
+        },
+        {
+          "cell": "C13",
+          "error": "#CIRC!",
+          "formula": "=C12*C11",
+          "sheet": "Interest"
+        },
+        {
+          "cell": "B12",
+          "error": "#CIRC!",
+          "formula": "=B11-Interest!B13",
+          "sheet": "Cash Flow"
+        },
+        {
+          "cell": "C12",
+          "error": "#CIRC!",
+          "formula": "=C11-Interest!C13",
+          "sheet": "Cash Flow"
+        },
+        {
+          "cell": "B14",
+          "error": "#CALC!",
+          "formula": "=Interest.Charge",
+          "sheet": "Cash Flow"
+        },
+        {
+          "cell": "C13",
+          "error": "#CIRC!",
+          "formula": "=SUM(C11:C13)",
+          "sheet": "Rollforward"
+        },
+        {
+          "cell": "B11",
+          "error": "#CIRC!",
+          "formula": "=B12/2",
+          "sheet": "Iterative Block"
+        },
+        {
+          "cell": "B12",
+          "error": "#CIRC!",
+          "formula": "=B11+100",
+          "sheet": "Iterative Block"
+        }
+      ]
+    },
+    "after": {
+      "circular": [
+        "Iterative Block!B11"
+      ],
+      "errors": [
+        {
+          "cell": "B11",
+          "error": "#CIRC!",
+          "formula": "=B12/2",
+          "sheet": "Iterative Block"
+        },
+        {
+          "cell": "B12",
+          "error": "#CIRC!",
+          "formula": "=B11+100",
+          "sheet": "Iterative Block"
+        }
+      ]
+    }
+  },
+  "graph_cross_check": {
+    "checked": 15,
+    "mismatches": []
+  },
+  "dependency_graph": {
+    "path": "chapter18/solutions_and_explanations/exercise_3_autonomous-circular-reference-forensics-and-remediation-agentic-challenge/output/work/out/dependency-graph.json",
+    "nodes": 33,
+    "edges": 39,
+    "acyclic_outside_deferred": true
+  }
+}

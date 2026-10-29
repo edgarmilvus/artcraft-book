@@ -1,0 +1,10 @@
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+const [bin, ...args] = process.argv.slice(2);
+const t = new StdioClientTransport({ command: bin, args: ["mcp", ...args], stderr: "pipe" });
+t.stderr?.on("data", () => {});
+const c = new Client({ name: "list", version: "1" }, { capabilities: {} });
+await c.connect(t);
+const tools = await c.listTools();
+console.log(JSON.stringify(tools.tools.map(x => ({name:x.name, desc:(x.description||"").slice(0,200), input:x.inputSchema})), null, 1));
+await c.close();

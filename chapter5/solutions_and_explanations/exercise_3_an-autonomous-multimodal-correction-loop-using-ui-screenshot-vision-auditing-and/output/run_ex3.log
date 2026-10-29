@@ -1,0 +1,12 @@
+auditing…
+
+PASS loop converged with exit code 0
+PASS trajectory is the bootstrap state plus one state per audit
+PASS vision model was asked twice, one render each
+PASS every iteration logged a snapshot and a render hash
+PASS audited renders are distinct, real PNG files
+PASS corrected PNG was written and the master left untouched
+PASS validator rejects malformed curves and accepts the valid one
+PASS trajectory and event log were written for replay
+
+8/8 checks passed

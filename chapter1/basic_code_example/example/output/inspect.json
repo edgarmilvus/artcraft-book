@@ -1,0 +1,207 @@
+{
+  "activeLayer": 7,
+  "canRedo": false,
+  "canUndo": true,
+  "channels": {
+    "alpha": [],
+    "colors": [
+      {
+        "name": "Red",
+        "visible": true
+      },
+      {
+        "name": "Green",
+        "visible": true
+      },
+      {
+        "name": "Blue",
+        "visible": true
+      }
+    ],
+    "composite": "RGB",
+    "compositeVisible": true,
+    "layerMaskView": null,
+    "quickMask": null,
+    "target": {
+      "kind": "composite"
+    }
+  },
+  "depth": 8,
+  "hasSelection": false,
+  "height": 628,
+  "history": [
+    "Open",
+    "New Color Fill Layer",
+    "New Shape Layer",
+    "New Type Layer",
+    "New Type Layer",
+    "New Brightness/Contrast Layer"
+  ],
+  "isolatedLayers": [],
+  "lastAppliedComp": null,
+  "layerComps": [],
+  "layerMaskView": null,
+  "layers": [
+    {
+      "adjustment": {
+        "BrightnessContrast": {
+          "brightness": 25,
+          "contrast": 12,
+          "legacy": false
+        }
+      },
+      "blend": "Normal",
+      "bounds": null,
+      "clipped": false,
+      "fill": 1,
+      "hasMask": true,
+      "hasVectorMask": false,
+      "id": 7,
+      "kind": "Adjustment",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Brightness/Contrast 1",
+      "opacity": 1,
+      "selected": true,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": [
+        132,
+        304,
+        316,
+        22
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 6,
+      "kind": "Type",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Stoneware flash sale. Today only.",
+      "opacity": 1,
+      "selected": false,
+      "text": {
+        "font": "Inter",
+        "sizePt": 20,
+        "text": "Stoneware flash sale. Today only."
+      },
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": [
+        136,
+        177,
+        619,
+        45
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 5,
+      "kind": "Type",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "MUG. MARKED DOWN.",
+      "opacity": 1,
+      "selected": false,
+      "text": {
+        "font": "Inter",
+        "sizePt": 57,
+        "text": "MUG. MARKED DOWN."
+      },
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": [
+        84,
+        75,
+        1032,
+        477
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 4,
+      "kind": "Shape",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Accent Panel",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": null,
+      "clipped": false,
+      "fill": 1,
+      "hasMask": true,
+      "hasVectorMask": false,
+      "id": 3,
+      "kind": "Fill",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Color Fill 1",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": [
+        0,
+        0,
+        1200,
+        628
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 2,
+      "kind": "Pixel",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Background",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    }
+  ],
+  "measurement": {
+    "count": 0,
+    "countGroups": 0,
+    "ruler": null,
+    "scale": "1 pixels = 1.0000 pixels"
+  },
+  "mode": "Rgb",
+  "name": "studio-render.pcraft",
+  "notes": [],
+  "path": "chapter1/basic_code_example/example/output/studio-render.pcraft",
+  "quickMask": false,
+  "resolution": 72,
+  "revision": 6,
+  "selectedLayers": [
+    7
+  ],
+  "selectionBounds": null,
+  "snapshots": [],
+  "symmetry": null,
+  "timeline": null,
+  "variables": null,
+  "width": 1200
+}

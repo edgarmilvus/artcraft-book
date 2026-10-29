@@ -1,0 +1,11 @@
+{"event": "auth", "ok": true, "ts": 1793021237.359321}
+{"event": "execute", "command": "layer.newFillLayer.gradient", "params": {"from": "#0b1530", "to": "#f4d7a1", "angle": 90, "style": "linear"}, "reply_ok": true, "ts": 1793021237.361498}
+{"event": "screenshot", "path": "audit/vision_curve_pass_0.png", "via": "doc.render", "reply_ok": true, "ts": 1793021237.378881}
+{"event": "execute", "command": "layer.newAdjustmentLayer.curves", "params": {"points": [[0, 0], [64, 40], [192, 215], [255, 255]]}, "reply_ok": true, "ts": 1793021237.379203}
+{"event": "screenshot", "path": "audit/vision_curve_pass_1.png", "via": "doc.render", "reply_ok": true, "ts": 1793021237.3988411}
+{"event": "vision_decision", "pass": 1, "decision": {"status": "ok"}, "ts": 1793021237.8405278}
+{"event": "screenshot", "path": "audit/vision_curve_pass_2.png", "via": "doc.render", "reply_ok": true, "ts": 1793021237.861362}
+{"event": "vision_decision", "pass": 2, "decision": {"status": "ok"}, "ts": 1793021238.304034}
+{"event": "screenshot", "path": "audit/vision_curve_pass_3.png", "via": "doc.render", "reply_ok": true, "ts": 1793021238.3225431}
+{"event": "vision_decision", "pass": 3, "decision": {"status": "ok"}, "ts": 1793021238.7619042}
+{"event": "final", "converged": true, "passes": 3, "winning_curve": [[0, 0], [64, 40], [192, 215], [255, 255]], "applied_edits": 1, "ts": 1793021238.762052}

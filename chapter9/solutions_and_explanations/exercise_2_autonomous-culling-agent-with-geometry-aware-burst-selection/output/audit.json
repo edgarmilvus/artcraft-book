@@ -1,0 +1,48 @@
+{
+  "job": "wedding-culling",
+  "seedPhotoIds": [
+    1
+  ],
+  "cluster": [
+    {
+      "photo_id": 3,
+      "dist": -0.42000000000000015,
+      "dt": 600
+    },
+    {
+      "photo_id": 2,
+      "dist": -0.28,
+      "dt": 300
+    }
+  ],
+  "scores": [
+    {
+      "id": 1,
+      "sharpness": 4.900000095367432
+    },
+    {
+      "id": 2,
+      "sharpness": 0.30000001192092896
+    },
+    {
+      "id": 3,
+      "sharpness": 4.900000095367432
+    }
+  ],
+  "flags": [
+    {
+      "id": 3,
+      "flag": "reject"
+    },
+    {
+      "id": 2,
+      "flag": "reject"
+    },
+    {
+      "id": 1,
+      "flag": "pick"
+    }
+  ],
+  "bestId": 1,
+  "report": "Culled 1 cluster: 1 hero, 3 rejects."
+}

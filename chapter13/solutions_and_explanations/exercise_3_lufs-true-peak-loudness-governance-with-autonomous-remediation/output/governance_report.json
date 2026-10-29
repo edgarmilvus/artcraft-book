@@ -1,0 +1,67 @@
+{
+  "programId": "master-42min",
+  "spec": {
+    "programId": "master-42min",
+    "targetIntegratedLufs": -24,
+    "integratedToleranceLu": 2,
+    "truePeakCeilingDbtp": -2,
+    "maxSilenceMs": 200,
+    "iterationCap": 4
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "integratedLufs": -20,
+      "truePeakDbtp": -1.2,
+      "shortTermLufs": [
+        -18,
+        -17
+      ],
+      "hotWindows": [
+        {
+          "startSec": 0,
+          "endSec": 10,
+          "peakDbtp": -1.2,
+          "shortTermLufs": -18
+        }
+      ],
+      "silenceViolations": [],
+      "compliant": false
+    },
+    {
+      "iteration": 2,
+      "integratedLufs": -24.2,
+      "truePeakDbtp": -2.2,
+      "shortTermLufs": [
+        -25
+      ],
+      "hotWindows": [],
+      "silenceViolations": [],
+      "compliant": true
+    }
+  ],
+  "decisions": [
+    {
+      "iteration": 1,
+      "targetWindows": [
+        {
+          "startSec": 0,
+          "endSec": 10
+        }
+      ],
+      "targetClips": [
+        7,
+        8
+      ],
+      "action": {
+        "kind": "clipGain",
+        "db": -4
+      },
+      "reasoning": "Iteration 1: integrated = -20.00 LKFS, target -24. Applying -4.00 dB clip gain to 1 hot window(s) (all windows with peak > -2 dBTP or short-term > -20 LKFS). Flat gain rejected — would clip quiet dialogue passages."
+    }
+  ],
+  "finalStatus": "COMPLIANT",
+  "residualLufsDelta": 0,
+  "residualTruePeakDbtp": 0,
+  "generatedAt": "2026-10-26T13:31:30.225Z"
+}

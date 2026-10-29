@@ -1,0 +1,7 @@
+// The MASTER. Layer stack, adjustment layers, masks, smart-object links,
+// history and layer comps are all written. This file is revisable forever.
+{ "path": "jobs/LF-42/hero.pcraft" }
+
+// The DELIVERABLE. Flattened pixels for a channel. Nothing is destroyed —
+// the open document keeps every layer; only the file on disk is flat.
+{ "path": "jobs/LF-42/deliver/hero_1920x1080.png", "format": "png" }

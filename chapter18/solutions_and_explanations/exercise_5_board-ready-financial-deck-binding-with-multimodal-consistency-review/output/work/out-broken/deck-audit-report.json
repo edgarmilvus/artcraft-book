@@ -1,0 +1,381 @@
+{
+  "deck_path": "chapter18/solutions_and_explanations/exercise_5_board-ready-financial-deck-binding-with-multimodal-consistency-review/output/work/out-broken/helios-board-2026-09.deck",
+  "pdf_path": "chapter18/solutions_and_explanations/exercise_5_board-ready-financial-deck-binding-with-multimodal-consistency-review/output/work/out-broken/helios-board-2026-09.pdf",
+  "binding_map_path": "chapter18/solutions_and_explanations/exercise_5_board-ready-financial-deck-binding-with-multimodal-consistency-review/output/work/out-broken/bindings.json",
+  "iterations": [
+    {
+      "iteration": 1,
+      "records": [],
+      "blocking_issues": [],
+      "applied_commands": []
+    }
+  ],
+  "converged": false,
+  "termination_reason": "error",
+  "failure": "attempt 1 was refused: the answer is str, not an object; attempt 2 was refused: the answer is str, not an object; attempt 3 was refused: the answer is str, not an object",
+  "total_wall_clock_ms": 660,
+  "human_review_queue": [],
+  "bound_values": [
+    {
+      "slot": "kpi.revenue",
+      "deck_frame_id": 259,
+      "slide_index": 0,
+      "source": "helios-consolidated!Helios.Revenue.Q3",
+      "value": 164200000.0,
+      "display": "Net revenue: $164.2M"
+    },
+    {
+      "slot": "kpi.ebitda",
+      "deck_frame_id": 260,
+      "slide_index": 0,
+      "source": "helios-consolidated!Helios.Ebitda.Q3",
+      "value": 40200000.0,
+      "display": "EBITDA: $40.2M"
+    },
+    {
+      "slot": "kpi.netincome",
+      "deck_frame_id": 261,
+      "slide_index": 0,
+      "source": "helios-consolidated!Helios.NetIncome.Q3",
+      "value": 16860000.0,
+      "display": "Net income: $16.9M"
+    },
+    {
+      "slot": "kpi.fcf",
+      "deck_frame_id": 262,
+      "slide_index": 0,
+      "source": "helios-consolidated!Helios.FreeCashFlow.Q3",
+      "value": 7960000.0,
+      "display": "Free cash flow: $8.0M"
+    },
+    {
+      "slot": "kpi.grossmargin",
+      "deck_frame_id": 263,
+      "slide_index": 0,
+      "source": "helios-consolidated!Helios.GrossMargin.Pct",
+      "value": 0.5633373934226553,
+      "display": "Gross margin: 56.33%"
+    },
+    {
+      "slot": "kpi.netmargin",
+      "deck_frame_id": 264,
+      "slide_index": 0,
+      "source": "helios-consolidated!Helios.NetMargin.Pct",
+      "value": 0.10267965895249695,
+      "display": "Net margin: 10.27%"
+    },
+    {
+      "slot": "bridge.chart",
+      "deck_frame_id": 267,
+      "slide_index": 1,
+      "source": "helios-consolidated!Scenarios!A1:C4",
+      "value": [
+        [
+          "Scenario",
+          "Net revenue",
+          "EBITDA"
+        ],
+        [
+          "Base",
+          164200000.0,
+          40200000.0
+        ],
+        [
+          "Upside",
+          177336000.0,
+          45024000.00000001
+        ],
+        [
+          "Downside",
+          152706000.0,
+          35376000.0
+        ]
+      ],
+      "display": "3 categories, 2 series"
+    },
+    {
+      "slot": "bridge.revenue",
+      "deck_frame_id": 268,
+      "slide_index": 1,
+      "source": "helios-consolidated!Helios.Revenue.Q3",
+      "value": 164200000.0,
+      "display": "Net revenue: $164.2M"
+    },
+    {
+      "slot": "bridge.ebitda",
+      "deck_frame_id": 269,
+      "slide_index": 1,
+      "source": "helios-consolidated!Helios.Ebitda.Q3",
+      "value": 40200000.0,
+      "display": "EBITDA: $40.2M"
+    },
+    {
+      "slot": "scenario.base",
+      "deck_frame_id": 272,
+      "slide_index": 2,
+      "source": "helios-consolidated!Scenarios!B2",
+      "value": 164200000.0,
+      "display": "Base: $164.2M"
+    },
+    {
+      "slot": "scenario.upside",
+      "deck_frame_id": 273,
+      "slide_index": 2,
+      "source": "helios-consolidated!Scenarios!B3",
+      "value": 177336000.0,
+      "display": "Upside: $177.3M"
+    },
+    {
+      "slot": "scenario.downside",
+      "deck_frame_id": 274,
+      "slide_index": 2,
+      "source": "helios-consolidated!Scenarios!B4",
+      "value": 152706000.0,
+      "display": "Downside: $152.7M"
+    },
+    {
+      "slot": "close.reconciled",
+      "deck_frame_id": 278,
+      "slide_index": 3,
+      "source": "close-reconciliation!Helios.Close.Reconciled",
+      "value": 164285000.0,
+      "display": "Reconciled net revenue: $164.3M"
+    },
+    {
+      "slot": "close.items",
+      "deck_frame_id": 279,
+      "slide_index": 3,
+      "source": "close-reconciliation!Helios.Close.Items",
+      "value": 125000.0,
+      "display": "Items raised: $125K"
+    },
+    {
+      "slot": "close.unresolved",
+      "deck_frame_id": 280,
+      "slide_index": 3,
+      "source": "close-reconciliation!Helios.Close.Unresolved",
+      "value": 40000.0,
+      "display": "Unresolved: $40K"
+    },
+    {
+      "slot": "close.variance",
+      "deck_frame_id": 281,
+      "slide_index": 3,
+      "source": "close-reconciliation!Helios.Close.Variance",
+      "value": 85000.0,
+      "display": "Variance to the audited close: $85K"
+    }
+  ],
+  "ground_truth": {
+    "period": "2026-09",
+    "source_of_truth": "the audited GridCraft workbooks",
+    "slides": [
+      {
+        "slide_index": 0,
+        "title": "Helios - board pack (2026-09)",
+        "figures": [
+          {
+            "slot": "kpi.revenue",
+            "label": "Net revenue",
+            "expected": "Net revenue: $164.2M",
+            "value": 164200000.0,
+            "source": "helios-consolidated!Helios.Revenue.Q3"
+          },
+          {
+            "slot": "kpi.ebitda",
+            "label": "EBITDA",
+            "expected": "EBITDA: $40.2M",
+            "value": 40200000.0,
+            "source": "helios-consolidated!Helios.Ebitda.Q3"
+          },
+          {
+            "slot": "kpi.netincome",
+            "label": "Net income",
+            "expected": "Net income: $16.9M",
+            "value": 16860000.0,
+            "source": "helios-consolidated!Helios.NetIncome.Q3"
+          },
+          {
+            "slot": "kpi.fcf",
+            "label": "Free cash flow",
+            "expected": "Free cash flow: $8.0M",
+            "value": 7960000.0,
+            "source": "helios-consolidated!Helios.FreeCashFlow.Q3"
+          },
+          {
+            "slot": "kpi.grossmargin",
+            "label": "Gross margin",
+            "expected": "Gross margin: 56.33%",
+            "value": 0.5633373934226553,
+            "source": "helios-consolidated!Helios.GrossMargin.Pct"
+          },
+          {
+            "slot": "kpi.netmargin",
+            "label": "Net margin",
+            "expected": "Net margin: 10.27%",
+            "value": 0.10267965895249695,
+            "source": "helios-consolidated!Helios.NetMargin.Pct"
+          }
+        ]
+      },
+      {
+        "slide_index": 1,
+        "title": "P&L bridge (2026-09)",
+        "figures": [
+          {
+            "slot": "bridge.chart",
+            "label": "Scenario comparison",
+            "expected": "3 categories, 2 series",
+            "value": [
+              [
+                "Scenario",
+                "Net revenue",
+                "EBITDA"
+              ],
+              [
+                "Base",
+                164200000.0,
+                40200000.0
+              ],
+              [
+                "Upside",
+                177336000.0,
+                45024000.00000001
+              ],
+              [
+                "Downside",
+                152706000.0,
+                35376000.0
+              ]
+            ],
+            "source": "helios-consolidated!Scenarios!A1:C4"
+          },
+          {
+            "slot": "bridge.revenue",
+            "label": "Net revenue",
+            "expected": "Net revenue: $164.2M",
+            "value": 164200000.0,
+            "source": "helios-consolidated!Helios.Revenue.Q3"
+          },
+          {
+            "slot": "bridge.ebitda",
+            "label": "EBITDA",
+            "expected": "EBITDA: $40.2M",
+            "value": 40200000.0,
+            "source": "helios-consolidated!Helios.Ebitda.Q3"
+          }
+        ]
+      },
+      {
+        "slide_index": 2,
+        "title": "Scenario comparison (2026-09)",
+        "figures": [
+          {
+            "slot": "scenario.base",
+            "label": "Base",
+            "expected": "Base: $164.2M",
+            "value": 164200000.0,
+            "source": "helios-consolidated!Scenarios!B2"
+          },
+          {
+            "slot": "scenario.upside",
+            "label": "Upside",
+            "expected": "Upside: $177.3M",
+            "value": 177336000.0,
+            "source": "helios-consolidated!Scenarios!B3"
+          },
+          {
+            "slot": "scenario.downside",
+            "label": "Downside",
+            "expected": "Downside: $152.7M",
+            "value": 152706000.0,
+            "source": "helios-consolidated!Scenarios!B4"
+          }
+        ]
+      },
+      {
+        "slide_index": 3,
+        "title": "Close reconciliation (2026-09)",
+        "figures": [
+          {
+            "slot": "close.reconciled",
+            "label": "Reconciled net revenue",
+            "expected": "Reconciled net revenue: $164.3M",
+            "value": 164285000.0,
+            "source": "close-reconciliation!Helios.Close.Reconciled"
+          },
+          {
+            "slot": "close.items",
+            "label": "Items raised",
+            "expected": "Items raised: $125K",
+            "value": 125000.0,
+            "source": "close-reconciliation!Helios.Close.Items"
+          },
+          {
+            "slot": "close.unresolved",
+            "label": "Unresolved items",
+            "expected": "Unresolved: $40K",
+            "value": 40000.0,
+            "source": "close-reconciliation!Helios.Close.Unresolved"
+          },
+          {
+            "slot": "close.variance",
+            "label": "Variance",
+            "expected": "Variance to the audited close: $85K",
+            "value": 85000.0,
+            "source": "close-reconciliation!Helios.Close.Variance"
+          }
+        ]
+      }
+    ],
+    "reference_figures": [
+      {
+        "label": "Net revenue",
+        "expected": "$164.2M",
+        "value": 164200000.0,
+        "source": "helios-consolidated!Helios.Revenue.Q3"
+      },
+      {
+        "label": "EBITDA",
+        "expected": "$40.2M",
+        "value": 40200000.0,
+        "source": "helios-consolidated!Helios.Ebitda.Q3"
+      }
+    ]
+  },
+  "commands": {
+    "deckcraft": {
+      "new_slide": "slide.new",
+      "text_box": "insert.textBox",
+      "chart": "insert.chart",
+      "set_text": "text.set",
+      "rename_shape": "shape.rename",
+      "set_bounds": "shape.setBounds",
+      "resize_shape": "shape.resize",
+      "select": "edit.select",
+      "font_size": "format.size",
+      "font_color": "format.color",
+      "align": "format.align",
+      "autofit": "format.autofit",
+      "chart_data": "chart.data",
+      "chart_options": "chart.options",
+      "shape_fill": "shape.fill",
+      "export": "file.export",
+      "save": "file.save",
+      "open": "file.open",
+      "inspect_shape": "shape.inspect"
+    },
+    "gridcraft": {
+      "open": "file.open",
+      "save": "file.save",
+      "read": "sheet.read",
+      "cell_get": "cell.get",
+      "names": "formulas.nameManager",
+      "calculate": "formulas.calculateNow",
+      "error_check": "formulas.errorChecking",
+      "activate_window": "window.activate",
+      "set_cell": "cell.set",
+      "define_name": "formulas.defineName"
+    }
+  }
+}

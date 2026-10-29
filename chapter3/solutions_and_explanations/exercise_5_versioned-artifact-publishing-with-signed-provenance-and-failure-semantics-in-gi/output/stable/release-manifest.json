@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "releaseVersion": "2026.11.0",
+  "channel": "stable",
+  "layoutRef": "commit-a",
+  "generatedAt": "2026-10-26T13:27:46.164Z",
+  "artifacts": [
+    {
+      "name": "catalog-print.pdf",
+      "sha256": "9d65ef1f415b2fbbb4106df4ef7f09aa49409193a34020879e4bcfc5a86e64d7",
+      "bytes": 6489,
+      "pages": 1,
+      "pdfStandard": "none",
+      "signatureArmored": "LS0tLS1CRUdJTiBQR1AgU0lHTkFUVVJFLS0tLS0KClJxR2Q5MW51em9saElYMFRaOVVxVnN1RjQ3SXpqelloUC95RDcrVkdJN3UyVFRUVlE4YmRUclF5Qld4WE5HM2YKV2t2eGFjUld2Y1ZBcFZlWHkwY2wxbGo4M3BPekxxYlBWaGhvSWxwTjA0OUloS1hzbnRpbnpJa0EwOEpTNFE2SQp0RGw5Y2tIS2c5V1VFSXp6elNxb2JJdEl6ZEJIUDVPdWJ5cHB4U1gyeDVHc3lIcVNXRytoR3U5NXEvd3djVFlOClRpeHlTOGJCazlDSEFIeTliS0VnaDdEcmZodncxeUQ3QkRib0Q2bFBSTlowcWd3U2c3SjZjK2txUGNxODdvY1IKVnlhRUIwYmE1RjF5ZDBKUzk2UGw2cXdlZTNBZlhiYWUyNFgwb2d0K2piLzQybzRYUjZwUUVCZHVxemhMNUk2QwowRUR1d3BvZk55djRnTnk0M3NSRStRPT0KLS0tLS1FTkQgUEdQIFNJR05BVFVSRS0tLS0tCg=="
+    },
+    {
+      "name": "catalog-web.pdf",
+      "sha256": "f26827b74c6239065f479a8b62647d3146bcef4387a0d06e3e18253c641bd78f",
+      "bytes": 10257,
+      "pages": 1,
+      "pdfStandard": "pdfa2b",
+      "signatureArmored": "LS0tLS1CRUdJTiBQR1AgU0lHTkFUVVJFLS0tLS0KCkgwL0JacmU2aWovZmZpVlgrSkxCK0toV3FFb2J3MXFSUm1veXg4RWkzYzVsOCtldXdNVmg3VzFaTHpNa2I3aFMKUXJ3dloyd1NnOCtsd2l0OEsxMUNubU1zcGs0cWc0NDE1NTl0R3JMOHJNMjE4NSt6dEZEdmVGcWdPTENrcjZUKwpCVzkwREo3czhVRVhlVlJvakxtTVdRZGpBZHJPbm1JdkJFQXNhNkZRa1hpWWVvSW5qN3VNWHlnM29EdzRYOUFDCkV1ZStoemdWcFFuYWNhMWVvajV0YXB0cGtJQUo2TjI5NzB4R2pMUDlUYkYzanVvOGRHelFqL0w4dytiYmpSVS8KMWJadGtYaTVSYXVQcmp1ZUV4dGcvak8raU5VTUtDdnVXMy9CSWV4UW42SWpGbHUvTk1wZGZHenpNOEVWT2szMQpoMTF5MHpVVGZBKy9uNk9UeWszZy93PT0KLS0tLS1FTkQgUEdQIFNJR05BVFVSRS0tLS0tCg=="
+    }
+  ],
+  "audit": {
+    "modifiedLinks": [],
+    "missingFonts": [],
+    "colorSpaceMismatches": [],
+    "passed": true
+  },
+  "provenance": {
+    "ciPipelineId": "local-pipeline",
+    "ciJobId": "local-job",
+    "commitSha": "commit-a",
+    "runnerId": "local-runner"
+  }
+}

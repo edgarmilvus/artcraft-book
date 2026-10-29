@@ -1,0 +1,90 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "designcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/bin/mcp-shim",
+      "args": [
+        "--app",
+        "designcraft",
+        "--real-binary",
+        "tools/craft-cli/bin/designcraft-cli",
+        "--server",
+        "designcraft-prod",
+        "--role",
+        "junior-editor",
+        "--read-root",
+        "/work/projects",
+        "--write-root",
+        "/work/projects/banners/preview",
+        "--cap-hash",
+        "01bca0165f13c32074170d556a602488cd2df645000b22efda0fee650bfb9d12",
+        "--fleet-lock",
+        "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/mcp.fleet.lock.json",
+        "--vault-key-ref",
+        "mcp-fleet-hmac-v1",
+        "--",
+        "mcp"
+      ],
+      "env": {
+        "NORTHWIND_DESIGN_TOKEN": "{{vault:northwind/design-token}}"
+      },
+      "enabled": true
+    },
+    "lightcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/bin/mcp-shim",
+      "args": [],
+      "env": {
+        "NORTHWIND_LIBRARY_TOKEN": "{{vault:northwind/library-token}}"
+      },
+      "enabled": false
+    },
+    "effectcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/bin/mcp-shim",
+      "args": [],
+      "env": {
+        "NORTHWIND_RENDER_TOKEN": "{{vault:northwind/render-token}}"
+      },
+      "enabled": false
+    },
+    "filmcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/bin/mcp-shim",
+      "args": [],
+      "env": {},
+      "enabled": false
+    },
+    "pdfcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/bin/mcp-shim",
+      "args": [
+        "--app",
+        "pdfcraft",
+        "--real-binary",
+        "tools/craft-cli/bin/pdfcraft-cli",
+        "--server",
+        "pdfcraft-prod",
+        "--role",
+        "junior-editor",
+        "--read-root",
+        "/work/projects",
+        "--write-root",
+        "/work/projects/archive",
+        "--cap-hash",
+        "01bca0165f13c32074170d556a602488cd2df645000b22efda0fee650bfb9d12",
+        "--fleet-lock",
+        "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-drifted/mcp.fleet.lock.json",
+        "--vault-key-ref",
+        "mcp-fleet-hmac-v1",
+        "--",
+        "mcp"
+      ],
+      "env": {
+        "NORTHWIND_PDF_TOKEN": "{{vault:northwind/pdf-token}}"
+      },
+      "enabled": true
+    }
+  }
+}

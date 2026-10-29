@@ -1,0 +1,21 @@
+{
+  "critique_category": "exposure",
+  "reasoning": "the render is flat",
+  "confidence": 0.9,
+  "proposed_fix": {
+    "kind": "localized_curves",
+    "points": [
+      [
+        0,
+        0
+      ]
+    ],
+    "mask_rect": [
+      100,
+      100,
+      600,
+      500
+    ]
+  },
+  "footprint_pct": 60
+}

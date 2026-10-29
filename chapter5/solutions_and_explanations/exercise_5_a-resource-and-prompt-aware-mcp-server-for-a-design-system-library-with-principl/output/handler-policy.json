@@ -1,0 +1,58 @@
+{
+  "checkOrder": {
+    "listResources": [
+      "load_scope",
+      "enumerate_permitted_prefixes",
+      "filter_server_side"
+    ],
+    "listResourceTemplates": [
+      "load_scope",
+      "return_scope_templates_only"
+    ],
+    "readResource": [
+      "parse_uri",
+      "permission_check",
+      "resolve_under_read_root",
+      "recheck_symlinks",
+      "read_or_derive"
+    ],
+    "listTools": [
+      "load_scope",
+      "filter_to_granted_tools"
+    ],
+    "callTool": [
+      "tool_visibility",
+      "schema_validation",
+      "acquire_lease",
+      "dispatch",
+      "release_lease",
+      "audit_log"
+    ],
+    "listPrompts": [
+      "load_scope",
+      "filter_to_granted_prompts"
+    ],
+    "getPrompt": [
+      "prompt_visibility",
+      "argument_validation",
+      "render_messages_without_execution"
+    ]
+  },
+  "antiEnumeration": {
+    "unknownOrUngranted": -32601,
+    "rule": "unknown and ungranted names share one generic -32601 response",
+    "templatesAreScopeLocal": true
+  },
+  "compositeResources": {
+    "designsystem://tokens/contrast-pairs": "derived@wcag21"
+  },
+  "writerDescriptions": "every writing tool must state its side effect in the description",
+  "errorCodes": {
+    "METHOD_NOT_FOUND": -32601,
+    "INVALID_PARAMS": -32602,
+    "CAPABILITY_DENIED": -32010,
+    "DOWNSTREAM_UNAVAILABLE": -32011,
+    "DOWNSTREAM_TIMEOUT": -32012,
+    "SESSION_DRAINING": -32013
+  }
+}

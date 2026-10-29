@@ -1,0 +1,2 @@
+Plan step references unknown command 'type.charZZZ' on cli 'designcraft'.
+Nearest live ids: ["type.createOutlines","type.onPath","type.pathOptions","type.fillWithPlaceholder","type.char","type.para","type.align","type.alignLeft","type.alignCenter","type.alignRight","type.justify","type.bold"]

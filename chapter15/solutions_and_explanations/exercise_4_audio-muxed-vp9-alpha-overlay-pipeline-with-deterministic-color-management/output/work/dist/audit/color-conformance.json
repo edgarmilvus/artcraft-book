@@ -1,0 +1,14 @@
+{
+  "contract": {
+    "primaries": "bt709",
+    "transfer": "bt709",
+    "colorspace": "bt709",
+    "range": "tv",
+    "peakNits": 100
+  },
+  "observedPrimaries": "bt709",
+  "observedTransfer": "bt709",
+  "observedColorspace": "bt709",
+  "failedFrames": [],
+  "pass": true
+}

@@ -1,0 +1,110 @@
+{
+  "dc_open": {
+    "app": "designcraft",
+    "command": "file.open",
+    "exposed": true,
+    "compensation": null
+  },
+  "dc_frame": {
+    "app": "designcraft",
+    "command": "frame.create",
+    "exposed": true,
+    "compensation": {
+      "command": "edit.undo",
+      "exposed": true
+    }
+  },
+  "dc_type": {
+    "app": "designcraft",
+    "command": "type.char",
+    "exposed": true,
+    "compensation": {
+      "command": "edit.undo",
+      "exposed": true
+    }
+  },
+  "print_pdf": {
+    "app": "designcraft",
+    "command": "file.exportPdf",
+    "exposed": true,
+    "compensation": null
+  },
+  "web_pdf": {
+    "app": "designcraft",
+    "command": "file.exportPdf",
+    "exposed": true,
+    "compensation": null
+  },
+  "web_html": {
+    "app": "designcraft",
+    "command": "file.exportHtml",
+    "exposed": true,
+    "compensation": null
+  },
+  "wc_open": {
+    "app": "wordcraft",
+    "command": "open_document",
+    "exposed": true,
+    "compensation": null
+  },
+  "wc_apply_style": {
+    "app": "wordcraft",
+    "command": "format.set",
+    "exposed": true,
+    "compensation": {
+      "command": "edit.undo",
+      "exposed": true
+    }
+  },
+  "wc_save": {
+    "app": "wordcraft",
+    "command": "save_document",
+    "exposed": true,
+    "compensation": null
+  },
+  "pc_open": {
+    "app": "pdfcraft",
+    "command": "doc_open",
+    "exposed": true,
+    "compensation": null
+  },
+  "pc_redact_mark": {
+    "app": "pdfcraft",
+    "command": "redact_mark",
+    "exposed": true,
+    "compensation": {
+      "command": "redact_clear",
+      "exposed": true
+    }
+  },
+  "pc_redact_apply": {
+    "app": "pdfcraft",
+    "command": "redact_apply",
+    "exposed": true,
+    "compensation": {
+      "command": "edit_undo",
+      "exposed": true
+    }
+  },
+  "pc_sign_field": {
+    "app": "pdfcraft",
+    "command": "form_add_field",
+    "exposed": true,
+    "compensation": {
+      "command": "edit_undo",
+      "exposed": true
+    }
+  },
+  "pc_a11y_check": {
+    "app": "pdfcraft",
+    "command": "accessibility_check",
+    "exposed": true,
+    "compensation": null
+  },
+  "pc_save": {
+    "app": "pdfcraft",
+    "command": "doc_save",
+    "exposed": true,
+    "compensation": null
+  }
+}

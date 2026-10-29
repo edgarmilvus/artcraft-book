@@ -1,0 +1,132 @@
+{
+  "checks": 82,
+  "failures": [],
+  "quirks": [
+    "object.pathfinder.unite is selection-only in the registry; the MCP `pathfinder` tool takes ids",
+    "graphicStyle.new does not link its source object; the style is applied to both marks to link them",
+    "imageTrace.makeAndExpand consumed the placed raster, so no source layer was left to delete",
+    "a paint override on a graphic-style object unlinks it (Illustrator-style override); the inverse mark stays linked to Brand/Inverse instead"
+  ],
+  "steps": [
+    {
+      "label": "A file.new 512x512",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "A file.place trace source",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "A rename _trace-source",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "B undoGroup.begin",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "B imageTrace.makeAndExpand",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "B object.path.cleanUp",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "B undoGroup.end",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "C swatch.new Brand/Primary",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "C swatch.new Brand/Inverse",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "C mark <- Brand/Primary",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "D text.create wordmark",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "D centre the wordmark",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "D wordmark <- Brand/Primary",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "E artboard.duplicate",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "E graphicStyle.new Logo/Mark",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "E graphicStyle.apply to master mark",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "E graphicStyle.apply to inverse mark",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "E inverse mark <- Brand/Inverse",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "E inverse wordmark <- Brand/Inverse",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "G export SVG before rebrand",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "rebrand: swatch.edit Brand/Primary",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "G re-export SVG after rebrand",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "G exportForScreens favicons",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "G save native master",
+      "ok": true,
+      "error": null
+    }
+  ]
+}

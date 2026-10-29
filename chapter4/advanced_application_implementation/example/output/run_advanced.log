@@ -1,0 +1,15 @@
+  state: connecting
+  state: authenticating
+  state: ready
+PASS handshake (challenge-response)        state=ready
+PASS engine.execute doc.inspect            0 layers
+PASS engine.execute layer.new.layer        id=1
+PASS engine.batch (2 steps)                layers=3
+PASS ui.screenshot                         96 b64 chars
+  audit #0: fix
+  audit #1: ok
+PASS vision loop applies one fix           iterations=2
+  state: closed
+PASS heartbeat observed                    pings=3 calls=12
+
+7/7 checks passed

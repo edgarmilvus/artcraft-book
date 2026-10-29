@@ -1,0 +1,19 @@
+{
+  "photoId": 1,
+  "initialDeltaE": {
+    "shadows": 6.252,
+    "midtones": 8.149,
+    "highlights": 7.035
+  },
+  "finalDeltaE": {
+    "shadows": 4.965,
+    "midtones": 4.967,
+    "highlights": 1.726
+  },
+  "iterationsUsed": 2,
+  "converged": false,
+  "escalated": true,
+  "rolledBack": true,
+  "appliedDeltas": [],
+  "reason": "vision confidence below 0.65 twice"
+}

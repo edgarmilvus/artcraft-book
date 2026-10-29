@@ -1,0 +1,17 @@
+{
+  "exercise": 5,
+  "engine": "effectcraft rig preset library (pure validation)",
+  "assertions": 23,
+  "presets": [
+    "pushFollow",
+    "shakeNull",
+    "wordmarkRig",
+    "trimWipe",
+    "counterRig"
+  ],
+  "runtimeVersion": 2,
+  "artefacts": [
+    "preset-validation.json"
+  ],
+  "result": "five descriptors validated, unknown/range/type/version failures exercised and the result guard checked"
+}

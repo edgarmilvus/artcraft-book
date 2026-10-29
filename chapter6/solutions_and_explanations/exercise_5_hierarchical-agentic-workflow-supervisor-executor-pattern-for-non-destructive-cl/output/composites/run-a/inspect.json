@@ -1,0 +1,499 @@
+{
+  "activeLayer": 16,
+  "canRedo": false,
+  "canUndo": true,
+  "channels": {
+    "alpha": [],
+    "colors": [
+      {
+        "name": "Red",
+        "visible": true
+      },
+      {
+        "name": "Green",
+        "visible": true
+      },
+      {
+        "name": "Blue",
+        "visible": true
+      }
+    ],
+    "composite": "RGB",
+    "compositeVisible": true,
+    "layerMaskView": null,
+    "quickMask": null,
+    "target": {
+      "kind": "composite"
+    }
+  },
+  "depth": 8,
+  "hasSelection": false,
+  "height": 1080,
+  "history": [
+    "Open",
+    "Work Path",
+    "New Color Fill Layer",
+    "Layer Properties",
+    "New Group",
+    "New Gradient Fill Layer",
+    "Layer Properties",
+    "New Layer",
+    "Reorder Layers",
+    "Reorder Layers",
+    "Create Clipping Mask",
+    "New Group",
+    "Work Path",
+    "New Color Fill Layer",
+    "Layer Properties",
+    "New Type Layer",
+    "Layer Properties",
+    "Reorder Layers",
+    "Reorder Layers",
+    "New Group",
+    "New Group",
+    "New Type Layer",
+    "Layer Properties",
+    "Reorder Layers",
+    "New Group",
+    "Work Path",
+    "New Color Fill Layer",
+    "Layer Properties",
+    "Layer Style: Drop Shadow",
+    "Reorder Layers",
+    "New Type Layer",
+    "Layer Properties",
+    "Reorder Layers",
+    "Reorder Layers",
+    "Reorder Layers",
+    "Reorder Layers",
+    "Reorder Layers",
+    "Reorder Layers",
+    "New Hue/Saturation Layer",
+    "Layer Properties",
+    "Reorder Layers",
+    "Create Clipping Mask"
+  ],
+  "isolatedLayers": [],
+  "lastAppliedComp": null,
+  "layerComps": [],
+  "layerMaskView": null,
+  "layers": [
+    {
+      "adjustment": {
+        "HueSaturation": {
+          "colorize": false,
+          "hue": -4,
+          "lightness": 2,
+          "ranges": [
+            {
+              "bounds": [
+                -45,
+                -15,
+                15,
+                45
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                15,
+                45,
+                75,
+                105
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                75,
+                105,
+                135,
+                165
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                135,
+                165,
+                195,
+                225
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                195,
+                225,
+                255,
+                285
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            },
+            {
+              "bounds": [
+                255,
+                285,
+                315,
+                345
+              ],
+              "hue": 0,
+              "lightness": 0,
+              "saturation": 0
+            }
+          ],
+          "saturation": 6
+        }
+      },
+      "blend": "Normal",
+      "bounds": null,
+      "clipped": true,
+      "fill": 1,
+      "hasMask": true,
+      "hasVectorMask": false,
+      "id": 16,
+      "kind": "Adjustment",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Type::Grade",
+      "opacity": 1,
+      "selected": true,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Pass Through",
+      "bounds": null,
+      "children": [
+        {
+          "blend": "Pass Through",
+          "bounds": null,
+          "children": [
+            {
+              "blend": "Normal",
+              "bounds": [
+                1224,
+                778,
+                294,
+                86
+              ],
+              "clipped": false,
+              "fill": 1,
+              "hasMask": false,
+              "hasVectorMask": false,
+              "id": 15,
+              "kind": "Type",
+              "labelColor": "none",
+              "linkGroup": null,
+              "name": "Type::Price",
+              "opacity": 1,
+              "selected": false,
+              "text": {
+                "font": "Helvetica",
+                "sizePt": 112,
+                "text": "€ 168"
+              },
+              "vectorMaskEnabled": null,
+              "visible": true
+            },
+            {
+              "blend": "Normal",
+              "bounds": null,
+              "clipped": false,
+              "effects": {
+                "enabled": true,
+                "items": [
+                  {
+                    "enabled": true,
+                    "kind": "Drop Shadow"
+                  }
+                ]
+              },
+              "fill": 1,
+              "hasMask": false,
+              "hasVectorMask": true,
+              "id": 14,
+              "kind": "Fill",
+              "labelColor": "none",
+              "linkGroup": null,
+              "name": "Type::Scrim",
+              "opacity": 1,
+              "selected": false,
+              "vectorMaskEnabled": true,
+              "visible": true
+            }
+          ],
+          "clipped": false,
+          "expanded": true,
+          "fill": 1,
+          "hasMask": false,
+          "hasVectorMask": false,
+          "id": 13,
+          "kind": "Group",
+          "labelColor": "none",
+          "linkGroup": null,
+          "name": "Type::Price",
+          "opacity": 1,
+          "selected": false,
+          "vectorMaskEnabled": null,
+          "visible": true
+        },
+        {
+          "blend": "Pass Through",
+          "bounds": null,
+          "children": [
+            {
+              "blend": "Normal",
+              "bounds": [
+                96,
+                760,
+                607,
+                72
+              ],
+              "clipped": false,
+              "fill": 1,
+              "hasMask": false,
+              "hasVectorMask": false,
+              "id": 12,
+              "kind": "Type",
+              "labelColor": "none",
+              "linkGroup": null,
+              "name": "Type::Headline",
+              "opacity": 1,
+              "selected": false,
+              "text": {
+                "font": "Helvetica",
+                "sizePt": 96,
+                "text": "AW26 / FIELD"
+              },
+              "vectorMaskEnabled": null,
+              "visible": true
+            }
+          ],
+          "clipped": false,
+          "expanded": true,
+          "fill": 1,
+          "hasMask": false,
+          "hasVectorMask": false,
+          "id": 11,
+          "kind": "Group",
+          "labelColor": "none",
+          "linkGroup": null,
+          "name": "Type::Headline",
+          "opacity": 1,
+          "selected": false,
+          "vectorMaskEnabled": null,
+          "visible": true
+        }
+      ],
+      "clipped": false,
+      "expanded": true,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 10,
+      "kind": "Group",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Type::Stack",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Pass Through",
+      "bounds": null,
+      "children": [
+        {
+          "blend": "Normal",
+          "bounds": null,
+          "clipped": false,
+          "fill": 1,
+          "hasMask": false,
+          "hasVectorMask": true,
+          "id": 8,
+          "kind": "Fill",
+          "labelColor": "none",
+          "linkGroup": null,
+          "name": "Sale::Badge",
+          "opacity": 1,
+          "selected": false,
+          "vectorMaskEnabled": true,
+          "visible": true
+        },
+        {
+          "blend": "Normal",
+          "bounds": [
+            92,
+            115,
+            102,
+            32
+          ],
+          "clipped": false,
+          "fill": 1,
+          "hasMask": false,
+          "hasVectorMask": false,
+          "id": 9,
+          "kind": "Type",
+          "labelColor": "none",
+          "linkGroup": null,
+          "name": "Sale::Label",
+          "opacity": 1,
+          "selected": false,
+          "text": {
+            "font": "Helvetica",
+            "sizePt": 40,
+            "text": "SALE"
+          },
+          "vectorMaskEnabled": null,
+          "visible": true
+        }
+      ],
+      "clipped": false,
+      "expanded": true,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 7,
+      "kind": "Group",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Sale",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Pass Through",
+      "bounds": null,
+      "children": [
+        {
+          "blend": "Normal",
+          "bounds": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "clipped": true,
+          "fill": 1,
+          "hasMask": false,
+          "hasVectorMask": false,
+          "id": 6,
+          "kind": "Pixel",
+          "labelColor": "none",
+          "linkGroup": null,
+          "name": "Product::Cutout",
+          "opacity": 1,
+          "selected": false,
+          "vectorMaskEnabled": null,
+          "visible": true
+        },
+        {
+          "blend": "Normal",
+          "bounds": null,
+          "clipped": false,
+          "fill": 1,
+          "hasMask": true,
+          "hasVectorMask": false,
+          "id": 5,
+          "kind": "Fill",
+          "labelColor": "none",
+          "linkGroup": null,
+          "name": "Gradient::Product",
+          "opacity": 1,
+          "selected": false,
+          "vectorMaskEnabled": null,
+          "visible": true
+        }
+      ],
+      "clipped": false,
+      "expanded": true,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 4,
+      "kind": "Group",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Product::Stack",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": null,
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": true,
+      "id": 3,
+      "kind": "Fill",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Ribbon::Band",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": true,
+      "visible": true
+    },
+    {
+      "blend": "Normal",
+      "bounds": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "clipped": false,
+      "fill": 1,
+      "hasMask": false,
+      "hasVectorMask": false,
+      "id": 2,
+      "kind": "Pixel",
+      "labelColor": "none",
+      "linkGroup": null,
+      "name": "Background",
+      "opacity": 1,
+      "selected": false,
+      "vectorMaskEnabled": null,
+      "visible": true
+    }
+  ],
+  "measurement": {
+    "count": 0,
+    "countGroups": 0,
+    "ruler": null,
+    "scale": "1 pixels = 1.0000 pixels"
+  },
+  "mode": "Rgb",
+  "name": "composite.psd",
+  "notes": [],
+  "path": "chapter6/solutions_and_explanations/exercise_5_hierarchical-agentic-workflow-supervisor-executor-pattern-for-non-destructive-cl/output/composites/run-a/composite.psd",
+  "quickMask": false,
+  "resolution": 72,
+  "revision": 42,
+  "selectedLayers": [
+    16
+  ],
+  "selectionBounds": null,
+  "snapshots": [],
+  "symmetry": null,
+  "timeline": null,
+  "variables": null,
+  "width": 1920
+}

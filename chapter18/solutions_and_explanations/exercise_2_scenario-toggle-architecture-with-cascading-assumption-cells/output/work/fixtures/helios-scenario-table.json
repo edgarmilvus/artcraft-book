@@ -1,0 +1,43 @@
+{
+  "assumptions": {
+    "headcount.sales.q1": {
+      "Bear": 78.0,
+      "Base": 100.0,
+      "Bull": 121.0,
+      "Doom": 63.0
+    },
+    "arr": {
+      "Bear": 88.0,
+      "Base": 100.0,
+      "Bull": 118.0,
+      "Doom": 71.0
+    },
+    "churn": {
+      "Bear": 0.12,
+      "Base": 0.08,
+      "Bull": 0.05,
+      "Doom": 0.18
+    },
+    "gm": {
+      "Bear": 0.58,
+      "Base": 0.64,
+      "Bull": 0.7,
+      "Doom": 0.5
+    },
+    "cac": {
+      "Bear": 112.0,
+      "Base": 100.0,
+      "Bull": 91.0,
+      "Doom": 134.0
+    },
+    "price.eur": {
+      "Bear": 94.0,
+      "Base": 100.0,
+      "Bull": 107.0,
+      "Doom": 88.0
+    }
+  },
+  "overrides": {
+    "gm": 0.66
+  }
+}

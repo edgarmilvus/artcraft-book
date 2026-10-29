@@ -1,0 +1,1 @@
+{"path":"chapter3/advanced_application_implementation/example/output/out/banners/acme-1793021246220.png","format":"PNG","width":3840,"height":2160,"bytes":223906,"sha256":"373e5bc6112e69978e892792a08629ef260a9073fa52ed7f56eb5cf8bf57d929","renderMs":273,"stages":[{"name":"photocraft.normalize","ms":233,"ok":true},{"name":"designcraft.compose","ms":39,"ok":true}]}

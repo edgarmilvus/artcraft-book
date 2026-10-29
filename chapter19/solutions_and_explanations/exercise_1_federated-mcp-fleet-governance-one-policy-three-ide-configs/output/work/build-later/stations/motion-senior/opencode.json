@@ -1,0 +1,94 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "designcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [],
+      "env": {
+        "NORTHWIND_DESIGN_TOKEN": "{{vault:northwind/design-token}}"
+      },
+      "enabled": false
+    },
+    "lightcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [],
+      "env": {
+        "NORTHWIND_LIBRARY_TOKEN": "{{vault:northwind/library-token}}"
+      },
+      "enabled": false
+    },
+    "effectcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [
+        "--app",
+        "effectcraft",
+        "--real-binary",
+        "tools/craft-cli/bin/effectcraft-cli",
+        "--server",
+        "effectcraft-prod",
+        "--role",
+        "motion-senior",
+        "--read-root",
+        "/work/projects",
+        "--write-root",
+        "/work/projects/motion",
+        "--cap-hash",
+        "fdaca37c834c61d48655c9a733b960e23e74f2d2ff545781ed97b52a70b09115",
+        "--fleet-lock",
+        "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/mcp.fleet.lock.json",
+        "--vault-key-ref",
+        "mcp-fleet-hmac-v1",
+        "--",
+        "mcp"
+      ],
+      "env": {
+        "NORTHWIND_RENDER_TOKEN": "{{vault:northwind/render-token}}"
+      },
+      "enabled": true
+    },
+    "filmcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [
+        "--app",
+        "filmcraft",
+        "--real-binary",
+        "tools/craft-cli/bin/filmcraft-cli",
+        "--server",
+        "filmcraft-prod",
+        "--role",
+        "motion-senior",
+        "--read-root",
+        "/work/projects",
+        "--write-root",
+        "/work/projects/motion",
+        "--cap-hash",
+        "fdaca37c834c61d48655c9a733b960e23e74f2d2ff545781ed97b52a70b09115",
+        "--fleet-lock",
+        "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/mcp.fleet.lock.json",
+        "--vault-key-ref",
+        "mcp-fleet-hmac-v1",
+        "--",
+        "mcp",
+        "--automation-read-root",
+        "/work/projects",
+        "--automation-write-root",
+        "/work/projects/motion"
+      ],
+      "env": {},
+      "enabled": true
+    },
+    "pdfcraft-prod": {
+      "type": "stdio",
+      "command": "chapter19/solutions_and_explanations/exercise_1_federated-mcp-fleet-governance-one-policy-three-ide-configs/output/work/build-later/bin/mcp-shim",
+      "args": [],
+      "env": {
+        "NORTHWIND_PDF_TOKEN": "{{vault:northwind/pdf-token}}"
+      },
+      "enabled": false
+    }
+  }
+}

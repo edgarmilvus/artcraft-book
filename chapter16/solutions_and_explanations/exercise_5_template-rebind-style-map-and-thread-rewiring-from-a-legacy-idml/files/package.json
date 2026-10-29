@@ -1,0 +1,19 @@
+{
+  "name": "cap16-ex5-solution",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "harness": "tsx run_ex5.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pngjs": "^6.0.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

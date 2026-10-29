@@ -1,0 +1,29 @@
+{
+  "sequenceId": 42,
+  "preDuckLufs": {
+    "dialogue": -24,
+    "music": -28,
+    "integrated": -26
+  },
+  "postDuckLufs": {
+    "integrated": -24,
+    "dialogue": -24,
+    "music": -38
+  },
+  "truePeakDbtp": -2,
+  "generatedKeys": 16,
+  "maxDuckDepthDb": 14,
+  "speechIntervals": [
+    {
+      "startSec": 10,
+      "endSec": 12
+    },
+    {
+      "startSec": 20,
+      "endSec": 21
+    }
+  ],
+  "masterCorrectionDb": -3,
+  "residualDeviation": 1,
+  "pass": true
+}

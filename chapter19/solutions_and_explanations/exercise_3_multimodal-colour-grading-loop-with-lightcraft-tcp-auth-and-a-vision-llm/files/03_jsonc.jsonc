@@ -1,0 +1,10 @@
+// Expected audit line (jsonl, one per iteration):
+{
+  "photoId": 4711,
+  "iteration": 3,
+  "control": "light.shadows",
+  "delta": 12,
+  "preRenderMd5": "<hex>",
+  "llmStatus": "retry",
+  "timestamp": "<ISO8601>"
+}

@@ -1,0 +1,102 @@
+{
+  "project": {
+    "activeSequence": 4,
+    "dirty": true,
+    "name": "Untitled",
+    "path": null,
+    "revision": 2,
+    "root": {
+      "children": [
+        {
+          "duration": 0,
+          "item": 4,
+          "label": "Forest",
+          "name": "B-Roll Assembly",
+          "type": "Sequence"
+        }
+      ],
+      "id": 0,
+      "name": "Untitled"
+    },
+    "sourceItem": null
+  },
+  "sequence": {
+    "audio": [
+      {
+        "enabled": true,
+        "id": 3,
+        "items": [],
+        "locked": false,
+        "muted": false,
+        "name": "Audio 1",
+        "solo": false,
+        "syncLock": true,
+        "transitions": []
+      }
+    ],
+    "duration": 0,
+    "durationFrames": 0,
+    "id": 4,
+    "in": null,
+    "markers": [],
+    "name": "B-Roll Assembly",
+    "out": null,
+    "playhead": null,
+    "selection": [],
+    "settings": {
+      "audio_master": "Stereo",
+      "color": {
+        "auto_tone_map": true,
+        "wide_gamut": false,
+        "working": "Rec709"
+      },
+      "drop_frame": false,
+      "frame_rate": {
+        "den": 1,
+        "num": 24
+      },
+      "height": 1080,
+      "max_bit_depth": false,
+      "max_render_quality": false,
+      "par": [
+        1,
+        1
+      ],
+      "preset": "1920x1080 24",
+      "preview_codec": "ProRes 422",
+      "sample_rate": 48000,
+      "width": 1920,
+      "working_space": "Rec. 709"
+    },
+    "split": {
+      "audioIn": null,
+      "audioOut": null,
+      "videoIn": null,
+      "videoOut": null
+    },
+    "video": [
+      {
+        "enabled": true,
+        "id": 1,
+        "items": [],
+        "locked": false,
+        "muted": false,
+        "name": "Video 1",
+        "solo": false,
+        "syncLock": true,
+        "transitions": []
+      },
+      {
+        "enabled": true,
+        "id": 2,
+        "items": [],
+        "locked": false,
+        "muted": false,
+        "name": "Video 2",
+        "solo": false,
+        "syncLock": true,
+        "transitions": []
+      }
+    ]
+  }
+}

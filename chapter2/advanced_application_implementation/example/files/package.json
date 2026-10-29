@@ -1,0 +1,9 @@
+{
+  "name": "cap2-advanced-application",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "run": "tsx run-factory.ts",
+    "typecheck": "tsc --noEmit"
+  }
+}

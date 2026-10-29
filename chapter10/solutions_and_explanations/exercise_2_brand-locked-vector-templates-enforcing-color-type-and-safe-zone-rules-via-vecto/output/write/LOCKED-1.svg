@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2000" height="2500" viewBox="0 0 2000 2500">
+  <title>Brand Banner</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M0 0 L2000 0 L2000 2500 L0 2500 Z" fill="#f4f1ea"/>
+    <path d="M100 100 L124 100 L124 2400 L100 2400 Z" fill="#1d4ed8"/>
+    <path d="M200 200 L1800 200 L1800 1800 L200 1800 Z" fill="#f4f1ea"/>
+    <path d="M1640 200 C1640 172.386 1675.817 150 1720 150 C1764.183 150 1800 172.386 1800 200 C1800 227.614 1764.183 250 1720 250 C1675.817 250 1640 227.614 1640 200 Z" fill="#1d4ed8"/>
+    <text transform="matrix(1 0 0 1 200 2000)" x="0" y="96" xml:space="preserve" font-family="Inter-Black" font-size="96" fill="#111827"><tspan x="0" y="96">TRAIL RUNNER</tspan></text>
+    <text transform="matrix(1 0 0 1 200 2220)" x="0" y="0" xml:space="preserve" font-family="Inter-Bold" font-size="128" fill="#9a3412"><tspan x="0" y="0">$129.99</tspan></text>
+    <path d="M1100 2240 L1800 2240 C1833.137 2240 1860 2266.863 1860 2300 C1860 2333.137 1833.137 2360 1800 2360 L1100 2360 C1066.863 2360 1040 2333.137 1040 2300 C1040 2266.863 1066.863 2240 1100 2240 Z" fill="#1d4ed8"/>
+    <text transform="matrix(1 0 0 1 1260 2280)" x="0" y="0" xml:space="preserve" font-family="Inter-SemiBold" font-size="48" fill="#ffffff"><tspan x="0" y="0">SHOP NOW</tspan></text>
+  </g>
+</svg>

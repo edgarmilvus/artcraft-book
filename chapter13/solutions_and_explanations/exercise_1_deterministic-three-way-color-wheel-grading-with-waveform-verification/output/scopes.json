@@ -1,0 +1,51 @@
+{
+  "passing": {
+    "clipId": 7,
+    "paradeMaxIre": 50,
+    "waveformMinIre": 0,
+    "waveformMaxIre": 100,
+    "midtoneMeanY": 50,
+    "shadowBlueLift": 10,
+    "pass": true
+  },
+  "parade": {
+    "clipId": 7,
+    "paradeMaxIre": 120,
+    "waveformMinIre": 0,
+    "waveformMaxIre": 100,
+    "midtoneMeanY": 50,
+    "shadowBlueLift": 10,
+    "pass": false,
+    "failedInvariant": "parade"
+  },
+  "waveform": {
+    "clipId": 7,
+    "paradeMaxIre": 50,
+    "waveformMinIre": 0,
+    "waveformMaxIre": 110,
+    "midtoneMeanY": 50,
+    "shadowBlueLift": 10,
+    "pass": false,
+    "failedInvariant": "waveform"
+  },
+  "midtones": {
+    "clipId": 7,
+    "paradeMaxIre": 50,
+    "waveformMinIre": 0,
+    "waveformMaxIre": 100,
+    "midtoneMeanY": 10,
+    "shadowBlueLift": 10,
+    "pass": false,
+    "failedInvariant": "midtones"
+  },
+  "shadow": {
+    "clipId": 7,
+    "paradeMaxIre": 50,
+    "waveformMinIre": 0,
+    "waveformMaxIre": 100,
+    "midtoneMeanY": 50,
+    "shadowBlueLift": 0,
+    "pass": false,
+    "failedInvariant": "shadowBlueLift"
+  }
+}

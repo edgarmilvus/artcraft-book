@@ -1,0 +1,813 @@
+{
+  "status": "ok",
+  "step": "done",
+  "assertions": [
+    {
+      "step": "ribbon",
+      "passed": true,
+      "detail": "ribbon is layer 3"
+    },
+    {
+      "step": "ribbon",
+      "passed": true,
+      "detail": "ribbon sits below product-stack"
+    },
+    {
+      "step": "product",
+      "passed": true,
+      "detail": "product clips to layer 5"
+    },
+    {
+      "step": "product",
+      "passed": true,
+      "detail": "product is inside layer 4"
+    },
+    {
+      "step": "badge",
+      "passed": true,
+      "detail": "badge is inside layer 7"
+    },
+    {
+      "step": "badge",
+      "passed": true,
+      "detail": "badge sits directly above layer 9"
+    },
+    {
+      "step": "sale",
+      "passed": true,
+      "detail": "sale sits below type-stack"
+    },
+    {
+      "step": "product-stack",
+      "passed": true,
+      "detail": "product-stack sits below sale"
+    },
+    {
+      "step": "scrim",
+      "passed": true,
+      "detail": "scrim carries Drop Shadow"
+    },
+    {
+      "step": "scrim",
+      "passed": true,
+      "detail": "scrim is inside layer 13"
+    },
+    {
+      "step": "price-text",
+      "passed": true,
+      "detail": "price-text sits directly above layer 14"
+    },
+    {
+      "step": "grade",
+      "passed": true,
+      "detail": "grade clips to layer 10"
+    }
+  ],
+  "requirements": {
+    "ribbonBehindProduct": true,
+    "badgeBetweenRibbonAndPrice": true,
+    "scrimHasDropShadow": true,
+    "gradeClippedToTypeOnly": true
+  },
+  "applied": [
+    {
+      "step": "ribbon",
+      "commands": [
+        {
+          "id": "path.set",
+          "params": {
+            "name": "work",
+            "path": {
+              "subpaths": [
+                {
+                  "closed": true,
+                  "op": "combine",
+                  "knots": [
+                    [
+                      0,
+                      620
+                    ],
+                    [
+                      1920,
+                      620
+                    ],
+                    [
+                      1920,
+                      800
+                    ],
+                    [
+                      0,
+                      800
+                    ]
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "layer.newFillLayer.solidColor",
+          "params": {
+            "color": "#8a1c3b",
+            "path": "work"
+          }
+        },
+        {
+          "id": "layer.setProps",
+          "params": {
+            "layer": 3,
+            "name": "Ribbon::Band"
+          }
+        }
+      ]
+    },
+    {
+      "step": "product-stack",
+      "commands": [
+        {
+          "id": "layer.new.group",
+          "params": {
+            "name": "Product::Stack"
+          }
+        }
+      ]
+    },
+    {
+      "step": "gradient",
+      "commands": [
+        {
+          "id": "layer.newFillLayer.gradient",
+          "params": {
+            "from": "#f4efe6",
+            "to": "#2b2b2b",
+            "angle": 90,
+            "style": "linear"
+          }
+        },
+        {
+          "id": "layer.setProps",
+          "params": {
+            "layer": 5,
+            "name": "Gradient::Product"
+          }
+        }
+      ]
+    },
+    {
+      "step": "product",
+      "commands": [
+        {
+          "id": "layer.new.layer",
+          "params": {
+            "name": "Product::Cutout"
+          }
+        }
+      ]
+    },
+    {
+      "step": "gradient",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 5,
+            "target": 4,
+            "position": "into"
+          }
+        }
+      ]
+    },
+    {
+      "step": "product",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 6,
+            "target": 4,
+            "position": "into"
+          }
+        }
+      ]
+    },
+    {
+      "step": "product",
+      "commands": [
+        {
+          "id": "layer.createClippingMask",
+          "params": {
+            "layer": 6
+          }
+        }
+      ]
+    },
+    {
+      "step": "sale",
+      "commands": [
+        {
+          "id": "layer.new.group",
+          "params": {
+            "name": "Sale"
+          }
+        }
+      ]
+    },
+    {
+      "step": "badge",
+      "commands": [
+        {
+          "id": "path.set",
+          "params": {
+            "name": "work",
+            "path": {
+              "subpaths": [
+                {
+                  "closed": true,
+                  "op": "combine",
+                  "knots": [
+                    [
+                      288,
+                      96
+                    ],
+                    [
+                      294,
+                      97
+                    ],
+                    [
+                      300,
+                      99
+                    ],
+                    [
+                      305,
+                      103
+                    ],
+                    [
+                      309,
+                      108
+                    ],
+                    [
+                      311,
+                      114
+                    ],
+                    [
+                      312,
+                      120
+                    ],
+                    [
+                      312,
+                      168
+                    ],
+                    [
+                      311,
+                      174
+                    ],
+                    [
+                      309,
+                      180
+                    ],
+                    [
+                      305,
+                      185
+                    ],
+                    [
+                      300,
+                      189
+                    ],
+                    [
+                      294,
+                      191
+                    ],
+                    [
+                      288,
+                      192
+                    ],
+                    [
+                      96,
+                      192
+                    ],
+                    [
+                      90,
+                      191
+                    ],
+                    [
+                      84,
+                      189
+                    ],
+                    [
+                      79,
+                      185
+                    ],
+                    [
+                      75,
+                      180
+                    ],
+                    [
+                      73,
+                      174
+                    ],
+                    [
+                      72,
+                      168
+                    ],
+                    [
+                      72,
+                      120
+                    ],
+                    [
+                      73,
+                      114
+                    ],
+                    [
+                      75,
+                      108
+                    ],
+                    [
+                      79,
+                      103
+                    ],
+                    [
+                      84,
+                      99
+                    ],
+                    [
+                      90,
+                      97
+                    ],
+                    [
+                      96,
+                      96
+                    ]
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "layer.newFillLayer.solidColor",
+          "params": {
+            "color": "#e4572e",
+            "path": "work"
+          }
+        },
+        {
+          "id": "layer.setProps",
+          "params": {
+            "layer": 8,
+            "name": "Sale::Badge"
+          }
+        }
+      ]
+    },
+    {
+      "step": "badge-label",
+      "commands": [
+        {
+          "id": "type.create",
+          "params": {
+            "box": [
+              92,
+              116,
+              200,
+              56
+            ],
+            "text": "SALE",
+            "font": "Helvetica",
+            "size": 40,
+            "color": "#ffffff"
+          }
+        },
+        {
+          "id": "layer.setProps",
+          "params": {
+            "layer": 9,
+            "name": "Sale::Label"
+          }
+        }
+      ]
+    },
+    {
+      "step": "badge-label",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 9,
+            "target": 7,
+            "position": "into"
+          }
+        }
+      ]
+    },
+    {
+      "step": "badge",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 8,
+            "target": 7,
+            "position": "into"
+          }
+        }
+      ]
+    },
+    {
+      "step": "type-stack",
+      "commands": [
+        {
+          "id": "layer.new.group",
+          "params": {
+            "name": "Type::Stack"
+          }
+        }
+      ]
+    },
+    {
+      "step": "headline",
+      "commands": [
+        {
+          "id": "layer.new.group",
+          "params": {
+            "name": "Type::Headline"
+          }
+        }
+      ]
+    },
+    {
+      "step": "headline-text",
+      "commands": [
+        {
+          "id": "type.create",
+          "params": {
+            "box": [
+              96,
+              760,
+              1100,
+              120
+            ],
+            "text": "AW26 / FIELD",
+            "font": "Helvetica",
+            "size": 96,
+            "color": "#f4efe6"
+          }
+        },
+        {
+          "id": "layer.setProps",
+          "params": {
+            "layer": 12,
+            "name": "Type::Headline"
+          }
+        }
+      ]
+    },
+    {
+      "step": "headline-text",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 12,
+            "target": 11,
+            "position": "into"
+          }
+        }
+      ]
+    },
+    {
+      "step": "price",
+      "commands": [
+        {
+          "id": "layer.new.group",
+          "params": {
+            "name": "Type::Price"
+          }
+        }
+      ]
+    },
+    {
+      "step": "scrim",
+      "commands": [
+        {
+          "id": "path.set",
+          "params": {
+            "name": "work",
+            "path": {
+              "subpaths": [
+                {
+                  "closed": true,
+                  "op": "combine",
+                  "knots": [
+                    [
+                      1768,
+                      720
+                    ],
+                    [
+                      1776,
+                      721
+                    ],
+                    [
+                      1784,
+                      724
+                    ],
+                    [
+                      1791,
+                      729
+                    ],
+                    [
+                      1796,
+                      736
+                    ],
+                    [
+                      1799,
+                      744
+                    ],
+                    [
+                      1800,
+                      752
+                    ],
+                    [
+                      1800,
+                      928
+                    ],
+                    [
+                      1799,
+                      936
+                    ],
+                    [
+                      1796,
+                      944
+                    ],
+                    [
+                      1791,
+                      951
+                    ],
+                    [
+                      1784,
+                      956
+                    ],
+                    [
+                      1776,
+                      959
+                    ],
+                    [
+                      1768,
+                      960
+                    ],
+                    [
+                      1212,
+                      960
+                    ],
+                    [
+                      1204,
+                      959
+                    ],
+                    [
+                      1196,
+                      956
+                    ],
+                    [
+                      1189,
+                      951
+                    ],
+                    [
+                      1184,
+                      944
+                    ],
+                    [
+                      1181,
+                      936
+                    ],
+                    [
+                      1180,
+                      928
+                    ],
+                    [
+                      1180,
+                      752
+                    ],
+                    [
+                      1181,
+                      744
+                    ],
+                    [
+                      1184,
+                      736
+                    ],
+                    [
+                      1189,
+                      729
+                    ],
+                    [
+                      1196,
+                      724
+                    ],
+                    [
+                      1204,
+                      721
+                    ],
+                    [
+                      1212,
+                      720
+                    ]
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "layer.newFillLayer.solidColor",
+          "params": {
+            "color": "#111111",
+            "path": "work"
+          }
+        },
+        {
+          "id": "layer.setProps",
+          "params": {
+            "layer": 14,
+            "name": "Type::Scrim"
+          }
+        },
+        {
+          "id": "layer.layerStyle.dropShadow",
+          "params": {
+            "layer": 14,
+            "color": "#000000",
+            "opacity": 55,
+            "angle": 120,
+            "distance": 10,
+            "size": 18
+          }
+        }
+      ]
+    },
+    {
+      "step": "scrim",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 14,
+            "target": 13,
+            "position": "into"
+          }
+        }
+      ]
+    },
+    {
+      "step": "price-text",
+      "commands": [
+        {
+          "id": "type.create",
+          "params": {
+            "box": [
+              1220,
+              780,
+              540,
+              128
+            ],
+            "text": "€ 168",
+            "font": "Helvetica",
+            "size": 112,
+            "color": "#ffffff"
+          }
+        },
+        {
+          "id": "layer.setProps",
+          "params": {
+            "layer": 15,
+            "name": "Type::Price"
+          }
+        }
+      ]
+    },
+    {
+      "step": "price-text",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 15,
+            "target": 13,
+            "position": "into"
+          }
+        }
+      ]
+    },
+    {
+      "step": "headline",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 11,
+            "target": 10,
+            "position": "into"
+          }
+        }
+      ]
+    },
+    {
+      "step": "price",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 13,
+            "target": 10,
+            "position": "into"
+          }
+        }
+      ]
+    },
+    {
+      "step": "sale",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 7,
+            "target": 4,
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "step": "type-stack",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 10,
+            "target": 7,
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "step": "ribbon",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 3,
+            "target": 4,
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "step": "grade",
+      "commands": [
+        {
+          "id": "layer.newAdjustmentLayer.hueSaturation",
+          "params": {
+            "hue": -4,
+            "saturation": 6,
+            "lightness": 2,
+            "colorize": false
+          }
+        },
+        {
+          "id": "layer.setProps",
+          "params": {
+            "layer": 16,
+            "name": "Type::Grade"
+          }
+        }
+      ]
+    },
+    {
+      "step": "grade",
+      "commands": [
+        {
+          "id": "layer.moveTo",
+          "params": {
+            "layer": 16,
+            "target": 10,
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "step": "grade",
+      "commands": [
+        {
+          "id": "layer.createClippingMask",
+          "params": {
+            "layer": 16
+          }
+        }
+      ]
+    }
+  ],
+  "rolledBack": 0,
+  "outputPath": "chapter6/solutions_and_explanations/exercise_5_hierarchical-agentic-workflow-supervisor-executor-pattern-for-non-destructive-cl/output/composites/run-a/composite.psd",
+  "outputHash": "992a0423cb633f52f34ac1da94daa9cd988c903898987b447dcd4084392a56b3"
+}

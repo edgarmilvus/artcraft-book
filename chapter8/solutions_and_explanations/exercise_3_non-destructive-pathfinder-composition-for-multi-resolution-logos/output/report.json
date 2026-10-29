@@ -1,0 +1,41 @@
+{
+  "exercise": 3,
+  "engine": "vectorcraft-cli",
+  "assertions": 75,
+  "logo": "caduceus-h",
+  "tiers": [
+    {
+      "tier": "xl",
+      "liveOpsRetained": 2,
+      "booleanOpsApplied": 0,
+      "finalPathCount": 9,
+      "contentHash": "2bc7d6439a62160bf9c76798ed12e5ace0d8656ae06467f8d3cf02fe06b20aec"
+    },
+    {
+      "tier": "md",
+      "liveOpsRetained": 2,
+      "booleanOpsApplied": 0,
+      "finalPathCount": 9,
+      "contentHash": "6497e1d096a4afde36fba5fd8ba939196e65408c51c346bd0547583176a04293"
+    },
+    {
+      "tier": "sm",
+      "liveOpsRetained": 0,
+      "booleanOpsApplied": 1,
+      "finalPathCount": 1,
+      "contentHash": "2e9fa2f5e23d45de232f4330141447ad42942f05c6c340d1f8fdcd69a364557a"
+    }
+  ],
+  "artefacts": [
+    "build/caduceus-h-xl.vectorcraft",
+    "build/caduceus-h-xl.svg",
+    "build/caduceus-h-md.vectorcraft",
+    "build/caduceus-h-md.svg",
+    "build/caduceus-h-sm.vectorcraft",
+    "build/caduceus-h-sm.svg",
+    "build/diff.json",
+    "build-2/caduceus-h-xl.vectorcraft",
+    "composition-spec.json"
+  ],
+  "result": "xl and md keep live Pathfinder effects; sm flattens one boolean and still matches the deterministic hash"
+}

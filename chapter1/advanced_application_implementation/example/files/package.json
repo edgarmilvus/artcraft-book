@@ -1,0 +1,29 @@
+{
+  "name": "artcraft-layered-forge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chapter 1 — Advanced Application Implementation (ArtCraft layered forge)",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "smoke": "tsx examples/compile-smoke.ts",
+    "forge:real": "tsx examples/forge-real-engine.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "latest",
+    "@ai-sdk/react": "latest",
+    "@modelcontextprotocol/sdk": "latest",
+    "ai": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "tsx": "^4.23.15",
+    "typescript": "latest"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "exercise": 5,
+  "checks": 13,
+  "passed": 13,
+  "failed": 0,
+  "results": [
+    {
+      "name": "three agents share one read root and never share a write root",
+      "ok": true
+    },
+    {
+      "name": "copywriting sees one tool, no prompts, no templates",
+      "ok": true
+    },
+    {
+      "name": "layout is the only agent that can enumerate templates",
+      "ok": true
+    },
+    {
+      "name": "resource prefixes do not overlap between agents",
+      "ok": true
+    },
+    {
+      "name": "the color agent sees the composite contrast resource",
+      "ok": true
+    },
+    {
+      "name": "prompt grants match the three-agent table",
+      "ok": true
+    },
+    {
+      "name": "every granted tool is a design-system tool, never a raw engine id",
+      "ok": true
+    },
+    {
+      "name": "scopes carry a placeholder token, never key material",
+      "ok": true
+    },
+    {
+      "name": "error codes are distinct and negative",
+      "ok": true
+    },
+    {
+      "name": "the anti-enumeration codes are the ones the spec reserves",
+      "ok": true
+    },
+    {
+      "name": "the visibility matrix shows the shared read root without leaking grants",
+      "ok": true
+    },
+    {
+      "name": "handler policy keeps not-allowed indistinguishable from not-found",
+      "ok": true
+    },
+    {
+      "name": "capability matrix and access artefacts were written",
+      "ok": true
+    }
+  ],
+  "agents": [
+    {
+      "agent": "copywriting",
+      "readRoot": "/work/design-system",
+      "writeRoot": "/work/scratch/copywriting",
+      "resources": 2,
+      "templates": 0,
+      "tools": 1,
+      "prompts": 0
+    },
+    {
+      "agent": "layout",
+      "readRoot": "/work/design-system",
+      "writeRoot": "/work/scratch/layout",
+      "resources": 1,
+      "templates": 1,
+      "tools": 3,
+      "prompts": 2
+    },
+    {
+      "agent": "color",
+      "readRoot": "/work/design-system",
+      "writeRoot": "/work/scratch/color",
+      "resources": 2,
+      "templates": 0,
+      "tools": 2,
+      "prompts": 1
+    }
+  ],
+  "errorCodes": {
+    "METHOD_NOT_FOUND": -32601,
+    "INVALID_PARAMS": -32602,
+    "CAPABILITY_DENIED": -32010,
+    "DOWNSTREAM_UNAVAILABLE": -32011,
+    "DOWNSTREAM_TIMEOUT": -32012,
+    "SESSION_DRAINING": -32013
+  },
+  "artifacts": [
+    "scopes.json",
+    "capability-matrix.json",
+    "visibility.json",
+    "handler-policy.json",
+    "access-matrix.csv",
+    "report.json"
+  ]
+}

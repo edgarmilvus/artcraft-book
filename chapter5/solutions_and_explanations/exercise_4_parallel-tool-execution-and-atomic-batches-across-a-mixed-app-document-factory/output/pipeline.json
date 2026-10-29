@@ -1,0 +1,264 @@
+{
+  "pipelineId": "pipe-01",
+  "correlationId": "corr-01",
+  "nodes": [
+    {
+      "nodeId": "dc_open",
+      "app": "designcraft",
+      "command": "file.open",
+      "params": {
+        "path": "/in/catalog.designcraft",
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [],
+      "compensateWith": null,
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "dc_frame",
+      "app": "designcraft",
+      "command": "frame.create",
+      "params": {
+        "rect": [
+          36,
+          36,
+          576,
+          300
+        ],
+        "content": "text",
+        "text": "Issue 2026-W14",
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "dc_open"
+      ],
+      "compensateWith": {
+        "command": "edit.undo",
+        "params": {}
+      },
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "dc_type",
+      "app": "designcraft",
+      "command": "type.char",
+      "params": {
+        "attrs": {
+          "fontFamily": "Inter",
+          "fontStyle": "Bold",
+          "size": 72,
+          "fill": {
+            "color": "#0f766e"
+          }
+        },
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "dc_frame"
+      ],
+      "compensateWith": {
+        "command": "edit.undo",
+        "params": {}
+      },
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "print_pdf",
+      "app": "designcraft",
+      "command": "file.exportPdf",
+      "params": {
+        "path": "2026-W14-print.pdf",
+        "pages": "all",
+        "bleed": true,
+        "marks": true,
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "dc_type"
+      ],
+      "compensateWith": null,
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "web_pdf",
+      "app": "designcraft",
+      "command": "file.exportPdf",
+      "params": {
+        "path": "2026-W14-web.pdf",
+        "pages": "all",
+        "bleed": false,
+        "marks": false,
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "dc_type"
+      ],
+      "compensateWith": null,
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "web_html",
+      "app": "designcraft",
+      "command": "file.exportHtml",
+      "params": {
+        "path": "2026-W14-web.html",
+        "title": "Catalog 2026-W14",
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "dc_type"
+      ],
+      "compensateWith": null,
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "wc_open",
+      "app": "wordcraft",
+      "command": "open_document",
+      "params": {
+        "path": "/in/editorial.docx",
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [],
+      "compensateWith": null,
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "wc_apply_style",
+      "app": "wordcraft",
+      "command": "format.set",
+      "params": {
+        "props": {
+          "color": "#f59e0b",
+          "font": "Inter"
+        },
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "wc_open"
+      ],
+      "compensateWith": {
+        "command": "edit.undo",
+        "params": {}
+      },
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "wc_save",
+      "app": "wordcraft",
+      "command": "save_document",
+      "params": {
+        "path": "2026-W14-editorial.docx",
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "wc_apply_style"
+      ],
+      "compensateWith": null,
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "pc_open",
+      "app": "pdfcraft",
+      "command": "doc_open",
+      "params": {
+        "path": "2026-W14-print.pdf",
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "print_pdf"
+      ],
+      "compensateWith": null,
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "pc_redact_mark",
+      "app": "pdfcraft",
+      "command": "redact_mark",
+      "params": {
+        "pages": [
+          3,
+          7
+        ],
+        "whole_pages": true,
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "pc_open"
+      ],
+      "compensateWith": {
+        "command": "redact_clear",
+        "params": {}
+      },
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "pc_redact_apply",
+      "app": "pdfcraft",
+      "command": "redact_apply",
+      "params": {
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "pc_redact_mark"
+      ],
+      "compensateWith": {
+        "command": "edit_undo",
+        "params": {}
+      },
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "pc_sign_field",
+      "app": "pdfcraft",
+      "command": "form_add_field",
+      "params": {
+        "page": 1,
+        "type": "signature",
+        "rect": [
+          400,
+          700,
+          560,
+          750
+        ],
+        "name": "CustomerSignature",
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "pc_redact_apply"
+      ],
+      "compensateWith": {
+        "command": "edit_undo",
+        "params": {}
+      },
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "pc_a11y_check",
+      "app": "pdfcraft",
+      "command": "accessibility_check",
+      "params": {
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "pc_sign_field"
+      ],
+      "compensateWith": null,
+      "nativeAtomic": false
+    },
+    {
+      "nodeId": "pc_save",
+      "app": "pdfcraft",
+      "command": "doc_save",
+      "params": {
+        "path": "2026-W14-interactive.pdf",
+        "correlationId": "corr-01"
+      },
+      "dependsOn": [
+        "pc_a11y_check"
+      ],
+      "compensateWith": null,
+      "nativeAtomic": false
+    }
+  ]
+}

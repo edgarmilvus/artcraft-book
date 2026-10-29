@@ -1,0 +1,12 @@
+PASS wrong token rejected                    AuthFailedError
+PASS run doc.inspect                         
+PASS run layer.new.layer                     id=1
+PASS batch (2 steps)                         
+  [scoped] inspect…
+  [scoped] inspect ok
+  [scoped] run ok
+  [scoped] save ok
+PASS withDocument scope                      layers before=0
+PASS survives a dropped socket               dropped=1
+
+6/6 checks passed

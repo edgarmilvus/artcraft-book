@@ -1,0 +1,25 @@
+{
+  "finalBytes": 8751,
+  "finalPath": "chapter10/solutions_and_explanations/exercise_4_multimodal-aesthetic-gate-vision-model-driven-loop-on-rendered-banners/output/graded/SKU-BAD_1:1-en-US.png",
+  "finalSha256": "84c1943b314d52537dbf8598db6acc3537736a7c62ca3c731ca277815d56971f",
+  "iterations": [
+    {
+      "correction": null,
+      "elapsedMs": 9,
+      "imageBase64Preview": "iVBORw0KGgoAAAANSUhEUgAABDgAAAVGCAIAAAD0LZzdAAAh9klEQVR4nO3dfaxfdX3A8XMvbQczI6wlMBNhAeWhrtDyVJ6EOURHNsPGGBod4gAf5pzEUUAUJzHAMhFxyMg2IyPYbGaykTmH46E2UArWguADo7AJjsdBAkoQKHBv24Xc7IZxaSndoO/a1+uv08/99ntO",
+      "iteration": 1,
+      "score": null
+    },
+    {
+      "correction": null,
+      "elapsedMs": 8,
+      "imageBase64Preview": "iVBORw0KGgoAAAANSUhEUgAABDgAAAVGCAIAAAD0LZzdAAAh9klEQVR4nO3dfaxfdX3A8XMvbQczI6wlMBNhAeWhrtDyVJ6EOURHNsPGGBod4gAf5pzEUUAUJzHAMhFxyMg2IyPYbGaykTmH46E2UArWguADo7AJjsdBAkoQKHBv24Xc7IZxaSndoO/a1+uv08/99ntO",
+      "iteration": 2,
+      "score": null
+    }
+  ],
+  "renderer": "banner-runtime",
+  "sku": "SKU-BAD",
+  "status": "max-iterations",
+  "variant": "1:1-en-US"
+}

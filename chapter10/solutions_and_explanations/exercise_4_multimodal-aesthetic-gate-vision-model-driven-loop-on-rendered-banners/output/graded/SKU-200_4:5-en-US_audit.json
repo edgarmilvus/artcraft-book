@@ -1,0 +1,91 @@
+{
+  "finalBytes": 8741,
+  "finalPath": "chapter10/solutions_and_explanations/exercise_4_multimodal-aesthetic-gate-vision-model-driven-loop-on-rendered-banners/output/graded/SKU-200_4:5-en-US.png",
+  "finalSha256": "d6a4fe8f0136e7273eae5a4ea633ea51543c510b6943f39dd6bf65680028455e",
+  "iterations": [
+    {
+      "correction": {
+        "id": "type.setStyle",
+        "params": {
+          "layer": 3,
+          "leading": 64,
+          "size": 52
+        }
+      },
+      "elapsedMs": 12,
+      "imageBase64Preview": "iVBORw0KGgoAAAANSUhEUgAABDgAAAVGCAIAAAD0LZzdAAAh9klEQVR4nO3dfaxfdX3A8XMvbQczI6wlMBNhAeWhrtDyVJ6EOURHNsPGGBod4gAf5pzEUUAUJzHAMhFxyMg2IyPYbGaykTmH46E2UArWguADo7AJjsdBAkoQKHBv24Xc7IZxaSndoO/a1+uv08/99ntO",
+      "iteration": 1,
+      "score": {
+        "contrast": 0.3,
+        "heroCentered": false,
+        "heroOffsetPx": [
+          30,
+          10
+        ],
+        "hueDrift": 0.5,
+        "rationale": "Text clipped at the right edge.",
+        "textClipped": true
+      }
+    },
+    {
+      "correction": {
+        "id": "layer.newAdjustmentLayer.curves",
+        "params": {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              64,
+              48
+            ],
+            [
+              192,
+              208
+            ],
+            [
+              255,
+              255
+            ]
+          ]
+        }
+      },
+      "elapsedMs": 9,
+      "imageBase64Preview": "iVBORw0KGgoAAAANSUhEUgAABDgAAAVGCAIAAAD0LZzdAAAh+UlEQVR4nO3dfaxf9V3A8XMvbQUWJ7ZEXDKIQKB0W4HysPI0kOGY6CSTIRgZGQMm6GbYtKAgyuYmWzZGGEPjHFkGpouSVU0GwgoNhQIdMMCBAUoAQ3kIJOAIAwrcPpjmmhvk0q5Uoe+ur9df537u937P",
+      "iteration": 2,
+      "score": {
+        "contrast": 0.42,
+        "heroCentered": false,
+        "heroOffsetPx": [
+          12,
+          0
+        ],
+        "hueDrift": 0.3,
+        "rationale": "Contrast is low and the hue drifted.",
+        "textClipped": false
+      }
+    },
+    {
+      "correction": null,
+      "elapsedMs": 9,
+      "imageBase64Preview": "iVBORw0KGgoAAAANSUhEUgAABDgAAAVGCAIAAAD0LZzdAAAh7ElEQVR4nO3ce6yfdX3A8eecXpRLUKG4dSwbRDDcQ7ljKbeCuslKNpYMh8CmzCmgKJmXuVHciBdGMocaFmSTODOIf4hSaEooFKjlMtBhBmoo2yiXQAKDBdEK7WlZurOckB5aSxPou+vrlf7xnM/5nu/z",
+      "iteration": 3,
+      "score": {
+        "contrast": 0.8,
+        "heroCentered": true,
+        "heroOffsetPx": [
+          0,
+          0
+        ],
+        "hueDrift": 0.05,
+        "rationale": "Clean.",
+        "textClipped": false
+      }
+    }
+  ],
+  "renderer": "banner-runtime",
+  "sku": "SKU-200",
+  "status": "passed",
+  "variant": "4:5-en-US"
+}

@@ -1,0 +1,68 @@
+{
+  "copywriting": {
+    "agentId": "copywriting",
+    "token": "<opaque>",
+    "resources": {
+      "uriPrefixes": [
+        "designsystem://tokens/type-scale",
+        "designsystem://style-guide"
+      ],
+      "templates": []
+    },
+    "tools": [
+      "design.system.describe"
+    ],
+    "prompts": [],
+    "roots": {
+      "read": "/work/design-system",
+      "write": "/work/scratch/copywriting"
+    }
+  },
+  "layout": {
+    "agentId": "layout",
+    "token": "<opaque>",
+    "resources": {
+      "uriPrefixes": [
+        "designsystem://tokens/spacing"
+      ],
+      "templates": [
+        "designsystem://templates/{templateName}"
+      ]
+    },
+    "tools": [
+      "design.system.generate_layout",
+      "design.system.resolve_token",
+      "design.system.validate_contrast"
+    ],
+    "prompts": [
+      "layout:generate_grid",
+      "designsystem:apply_brand_kit"
+    ],
+    "roots": {
+      "read": "/work/design-system",
+      "write": "/work/scratch/layout"
+    }
+  },
+  "color": {
+    "agentId": "color-consistency",
+    "token": "<opaque>",
+    "resources": {
+      "uriPrefixes": [
+        "designsystem://tokens/colors",
+        "designsystem://tokens/contrast-pairs"
+      ],
+      "templates": []
+    },
+    "tools": [
+      "design.system.resolve_token",
+      "design.system.validate_contrast"
+    ],
+    "prompts": [
+      "designsystem:apply_brand_kit"
+    ],
+    "roots": {
+      "read": "/work/design-system",
+      "write": "/work/scratch/color"
+    }
+  }
+}

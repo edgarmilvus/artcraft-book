@@ -1,0 +1,170 @@
+{
+  "version": "1.0",
+  "workspace": "chapter19/advanced_application_implementation/example/files/output/work/studio",
+  "crafts": [
+    {
+      "id": "photocraft",
+      "binary": "photocraft-cli",
+      "args": [],
+      "roots": {
+        "read": [
+          "chapter19/advanced_application_implementation/example/files/output/work/studio/project"
+        ],
+        "write": [
+          "chapter19/advanced_application_implementation/example/files/output/work/studio/render"
+        ]
+      },
+      "allow": [
+        "type.create",
+        "layer.newAdjustmentLayer",
+        "filter.blur",
+        "doc_new",
+        "doc_save",
+        "ui_screenshot"
+      ],
+      "deny": [
+        "file.runScript"
+      ],
+      "desktopControl": true,
+      "secretEnv": [
+        "PHOTOCRAFT_TOKEN"
+      ],
+      "sandboxFlags": true
+    },
+    {
+      "id": "vectorcraft",
+      "binary": "vectorcraft-cli",
+      "args": [],
+      "roots": {
+        "read": [
+          "chapter19/advanced_application_implementation/example/files/output/work/studio/project"
+        ],
+        "write": [
+          "chapter19/advanced_application_implementation/example/files/output/work/studio/render"
+        ]
+      },
+      "allow": [
+        "file.new",
+        "shape.",
+        "paint.",
+        "text.create",
+        "document.export"
+      ],
+      "deny": [],
+      "desktopControl": false,
+      "secretEnv": [],
+      "sandboxFlags": true
+    },
+    {
+      "id": "designcraft",
+      "binary": "designcraft-cli",
+      "args": [],
+      "roots": {
+        "read": [
+          "chapter19/advanced_application_implementation/example/files/output/work/studio/project"
+        ],
+        "write": [
+          "chapter19/advanced_application_implementation/example/files/output/work/studio/render"
+        ]
+      },
+      "allow": [
+        "file.new",
+        "file.save",
+        "frame.create",
+        "type.char"
+      ],
+      "deny": [],
+      "desktopControl": false,
+      "secretEnv": [],
+      "sandboxFlags": false
+    }
+  ],
+  "roles": [
+    {
+      "name": "producer",
+      "allow": [
+        "type.create",
+        "layer.newAdjustmentLayer",
+        "filter.blur",
+        "doc_new",
+        "doc_save",
+        "ui_screenshot",
+        "file.new",
+        "shape.",
+        "paint.",
+        "text.create",
+        "document.export",
+        "file.new",
+        "file.save",
+        "frame.create",
+        "type.char"
+      ],
+      "deny": [
+        "file.runScript"
+      ],
+      "mayExport": true,
+      "mayDriveDesktop": true,
+      "requiresHumanInTheLoop": false
+    },
+    {
+      "name": "viewer",
+      "allow": [
+        "doc_new",
+        "doc_inspect"
+      ],
+      "deny": [
+        "*"
+      ],
+      "mayExport": false,
+      "mayDriveDesktop": false,
+      "requiresHumanInTheLoop": true
+    }
+  ],
+  "agents": [
+    {
+      "id": "claude-code:brand-producer",
+      "shell": "claude-code",
+      "role": "producer",
+      "crafts": [
+        "photocraft",
+        "vectorcraft",
+        "designcraft"
+      ],
+      "overrides": {},
+      "visibleSecrets": []
+    },
+    {
+      "id": "cursor:lead-designer",
+      "shell": "cursor",
+      "role": "producer",
+      "crafts": [
+        "photocraft"
+      ],
+      "overrides": {},
+      "visibleSecrets": [
+        "PHOTOCRAFT_TOKEN"
+      ]
+    },
+    {
+      "id": "opencode:asset-pipeline",
+      "shell": "opencode",
+      "role": "viewer",
+      "crafts": [
+        "photocraft"
+      ],
+      "overrides": {},
+      "visibleSecrets": []
+    }
+  ],
+  "audit": {
+    "path": "chapter19/advanced_application_implementation/example/files/output/work/studio/audit/audit.jsonl",
+    "chained": true,
+    "bundle": true
+  },
+  "secrets": {
+    "ciphertext": "HlkVe9+eGcOH0Suxtrplw2ES6DUW/bY96HbfFornYyCdEe8u",
+    "salt": "QbRcYkf4nEpA9oAg7rZySQ==",
+    "iv": "GEZULdOPLEkmvSOc",
+    "tag": "tjp97AAruxT0pVUE1149Jg=="
+  }
+}

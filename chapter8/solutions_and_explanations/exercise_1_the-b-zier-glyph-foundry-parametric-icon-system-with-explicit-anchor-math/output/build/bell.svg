@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <title>bell</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M64 16 C53.333 26.667 42.667 37.333 32 48 C34.667 61.333 37.333 74.667 40 88 C56 88 72 88 88 88 C90.667 74.667 93.333 61.333 96 48 C85.333 37.333 74.667 26.667 64 16 Z M56 104 L72 104 Z" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

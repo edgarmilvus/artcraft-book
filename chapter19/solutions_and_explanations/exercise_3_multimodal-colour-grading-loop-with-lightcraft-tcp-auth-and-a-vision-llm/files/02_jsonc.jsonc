@@ -1,0 +1,19 @@
+// Voice-of-the-loop schema the LLM MUST honour:
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status"],
+  "properties": {
+    "status": { "enum": ["ok", "retry"] },
+    "violations": { "type": "array", "items": { "enum": ["skin","shadows","contrast","other"] } },
+    "fix": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["control","delta"],
+      "properties": {
+        "control": { "type": "string" },
+        "delta":   { "type": "number", "minimum": -50, "maximum": 50 }
+      }
+    }
+  }
+}

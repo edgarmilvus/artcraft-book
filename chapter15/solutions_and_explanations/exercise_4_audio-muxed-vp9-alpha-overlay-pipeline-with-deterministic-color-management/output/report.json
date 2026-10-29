@@ -1,0 +1,33 @@
+{
+  "exercise": 4,
+  "engine": "ffmpeg VP9 alpha + Opus",
+  "assertions": 39,
+  "frames": 12,
+  "resolution": "640x360",
+  "containers": [
+    "mkv",
+    "webm"
+  ],
+  "videoStreamSha256": "92f1eb7db4c4f2319061264e3f0b405d902994775be2efe27e01dcd8a5618bd6",
+  "audio": {
+    "codec": "opus",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "tcpMethods": [
+    "auth",
+    "engine.execute",
+    "auth"
+  ],
+  "artefacts": [
+    "overlay.mkv",
+    "overlay.webm",
+    "overlay.json",
+    "thumb.png",
+    "color-conformance.json",
+    "delivery.json",
+    "whoosh_stem.wav",
+    "tcp-handshake.json"
+  ],
+  "result": "two containers carry the same VP9 alpha stream, BT.709 triad and Opus 48 kHz audio; TCP authenticates first"
+}

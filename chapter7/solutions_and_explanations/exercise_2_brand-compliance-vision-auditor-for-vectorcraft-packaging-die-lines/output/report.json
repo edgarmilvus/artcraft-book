@@ -1,0 +1,19 @@
+{
+  "exercise": 2,
+  "engine": "vectorcraft-cli",
+  "jobIds": [
+    "ex2-main",
+    "ex2-escalate",
+    "ex2-budget"
+  ],
+  "assertions": 71,
+  "artefacts": [
+    "final-main.png",
+    "report-main.json",
+    "final-escalation.png",
+    "report-escalation.json",
+    "final-budget.png",
+    "report-budget.json"
+  ],
+  "result": "brand compliance audit converged; escalation and budget paths verified"
+}

@@ -1,0 +1,35 @@
+{
+  "logo": "caduceus-h",
+  "tiers": [
+    {
+      "tier": "xl",
+      "booleanOpsApplied": 0,
+      "liveOpsRetained": 2,
+      "finalPathCount": 9,
+      "fillRule": "nonZero",
+      "selfIntersections": 0,
+      "warnings": [],
+      "contentHash": "2bc7d6439a62160bf9c76798ed12e5ace0d8656ae06467f8d3cf02fe06b20aec"
+    },
+    {
+      "tier": "md",
+      "booleanOpsApplied": 0,
+      "liveOpsRetained": 2,
+      "finalPathCount": 9,
+      "fillRule": "nonZero",
+      "selfIntersections": 0,
+      "warnings": [],
+      "contentHash": "6497e1d096a4afde36fba5fd8ba939196e65408c51c346bd0547583176a04293"
+    },
+    {
+      "tier": "sm",
+      "booleanOpsApplied": 1,
+      "liveOpsRetained": 0,
+      "finalPathCount": 1,
+      "fillRule": "nonZero",
+      "selfIntersections": 0,
+      "warnings": [],
+      "contentHash": "2e9fa2f5e23d45de232f4330141447ad42942f05c6c340d1f8fdcd69a364557a"
+    }
+  ]
+}

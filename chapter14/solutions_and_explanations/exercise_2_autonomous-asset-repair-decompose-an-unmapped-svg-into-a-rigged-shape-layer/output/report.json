@@ -1,0 +1,12 @@
+{
+  "exercise": 2,
+  "engine": "effectcraft SVG repair (pure parser/hash)",
+  "assertions": 17,
+  "subpaths": 2,
+  "warnings": 1,
+  "artefacts": [
+    "parsed-paths.json",
+    "repaired-logo.svg"
+  ],
+  "result": "SVG paths parsed with anchor handles; unsupported circle warned and repaired to a path"
+}

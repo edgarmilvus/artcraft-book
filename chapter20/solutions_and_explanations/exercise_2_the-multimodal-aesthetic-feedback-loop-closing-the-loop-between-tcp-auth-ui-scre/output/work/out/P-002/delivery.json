@@ -1,0 +1,33 @@
+{
+  "photoId": "P-002",
+  "outcome": "ok",
+  "iterationCount": 2,
+  "auditCount": 3,
+  "bestIndex": 1,
+  "finalAudit": {
+    "status": "ok",
+    "rationale": "The composite satisfies every criterion of the rubric."
+  },
+  "finalPath": "chapter20/solutions_and_explanations/exercise_2_the-multimodal-aesthetic-feedback-loop-closing-the-loop-between-tcp-auth-ui-scre/output/work/out/P-002/final.png",
+  "finalSha256": "6dc06b5e98a22dfaed3a618109b833d57e06e8734d8f61978896b80fbe3db0a6",
+  "grade": {
+    "highlights": 255.0,
+    "shadows": 0.0,
+    "whites": 255.0,
+    "blacks": 0.0,
+    "gamma": 1.0,
+    "temperature": 0.0,
+    "tint": 0.0,
+    "split-tone-shadows": 0.0,
+    "split-tone-highlights": 0.0,
+    "vibrance": 0.0,
+    "saturation": 0.0,
+    "contrast": 0.0,
+    "grain": 0.0
+  },
+  "costUsd": 0.01116,
+  "tokens": {
+    "input": 3600,
+    "output": 120
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "job": {
+    "docName": "book",
+    "pageRange": "1-12",
+    "print": {
+      "path": "print/book-x4.pdf",
+      "minPpi": 300,
+      "standard": "x4",
+      "flatten": "high",
+      "bleed": true
+    },
+    "digital": {
+      "path": "digital/book.epub",
+      "minPpi": 150,
+      "language": "en",
+      "cover": true
+    },
+    "toc": {
+      "entries": [
+        {
+          "style": "HEAD-H1",
+          "level": 1
+        },
+        {
+          "style": "HEAD-H2",
+          "level": 2
+        }
+      ],
+      "title": "Contents"
+    },
+    "metadata": {
+      "title": "The Book",
+      "author": "Ada Lovelace",
+      "isbn": "9780000000000",
+      "edition": "2026"
+    },
+    "deterministicTimestamp": "2026-10-24T02:00:00Z"
+  },
+  "generatedAt": "2026-10-24T02:00:00Z",
+  "artefacts": [
+    {
+      "channel": "print",
+      "path": "chapter16/solutions_and_explanations/exercise_4_print-and-digital-dual-export-with-a-preflight-gate/output/work/print/book-x4.pdf",
+      "sha256": "c796dcaa1226dbe38cb968f8986ba945339273a4d988b0c753efc5ad63a5d66a",
+      "bytes": 2487
+    },
+    {
+      "channel": "digital",
+      "path": "chapter16/solutions_and_explanations/exercise_4_print-and-digital-dual-export-with-a-preflight-gate/output/work/digital/book.epub",
+      "sha256": "6da379952f25c401e9edc748095dd942b2214c1734f32e7051fa65a663f59ef4",
+      "bytes": 1303
+    }
+  ],
+  "preflight": [
+    {
+      "channel": "print",
+      "minPpi": 300,
+      "issues": []
+    },
+    {
+      "channel": "digital",
+      "minPpi": 150,
+      "issues": []
+    }
+  ],
+  "signature": "0bd702e3b23389b3acbd84501190b4049a649ba08125c891bc7afe9947009ef2"
+}

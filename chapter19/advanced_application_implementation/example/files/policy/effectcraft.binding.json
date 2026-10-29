@@ -1,0 +1,10 @@
+{
+  "id": "effectcraft",
+  "binary": "effectcraft-cli",
+  "args": [],
+  "roots": { "read": ["/work/assets"], "write": ["/work/render"] },
+  "allow": ["layer.newText", "layer.newSolid", "layer.newShape", "effect.apply", "prop.set", "keys.easyEaseStateMachine", "renderQueue.add"],
+  "deny": [],
+  "desktopControl": false,
+  "secretEnv": []
+}

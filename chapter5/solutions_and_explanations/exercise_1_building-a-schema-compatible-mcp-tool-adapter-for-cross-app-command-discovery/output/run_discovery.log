@@ -1,0 +1,28 @@
+discovering photocraft…
+
+PASS meta-tools are read from the live registry, not a static table
+vectorcraft-cli: files confined: read root chapter5/solutions_and_explanations/exercise_1_building-a-schema-compatible-mcp-tool-adapter-for-cross-app-command-discovery/output/discovery/read, write root chapter5/solutions_and_explanations/exercise_1_building-a-schema-compatible-mcp-tool-adapter-for-cross-app-command-discovery/output/discovery/write
+vectorcraft-cli: MCP server on stdio (headless)
+designcraft-cli: MCP server on stdio (headless (in-process engine, no window))
+lightcraft-cli mcp: serving MCP on stdio (headless)
+pdfcraft-cli: MCP server on stdio (protocol 2025-06-18); close stdin to stop
+designcraft-cli: MCP server on stdio (headless (in-process engine, no window))
+   catalog sizes: {
+  photocraft: 914,
+  vectorcraft: 610,
+  filmcraft: 689,
+  effectcraft: 677,
+  designcraft: 363,
+  lightcraft: 583,
+  pdfcraft: 298,
+  wordcraft: 404
+}
+PASS every engine's catalog is discovered with its own naming
+PASS registry commands are normalized into parameters + commandId
+PASS command ids are kebab-normalized into tool names
+PASS registryVersion is a content hash, stable across runs
+PASS diff of two identical discoveries is empty
+PASS diff reports removals without mutating the previous catalog
+PASS capability index maps every tool back to its app and command
+
+8/8 checks passed

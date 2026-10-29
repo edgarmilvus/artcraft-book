@@ -1,0 +1,99 @@
+// framework.json — the canonical manifest. It is validated against this
+// schema before any engine is dispatched: a missing key, a duplicate id, a
+// figure reference that does not resolve or a Markdown file that is not on
+// disk is a validation failure, never an engine failure.
+{
+  "release": "2025.11",
+  "codename": "RIVERBED",
+  "title": "Threat Modeling Framework",
+  "edition": "First",
+  "authors": [
+    { "name": "…", "affiliation": "…" }
+  ],
+  "chapters": [
+    {
+      "id": "ch-intro",
+      "number": 1,
+      "title": "Introduction",
+      "markdownPath": "content/01-intro.md",
+      "columns": 2,
+      "figures": [
+        { "id": "fig-pipeline", "path": "assets/fig-pipeline.png", "caption": "The threat-modeling pipeline in practice." }
+      ],
+      "footnotes": [
+        { "id": "fn-1", "text": "…" }
+      ]
+    }
+  ],
+  "frontMatter": {
+    "executiveSummaryMarkdownPath": "content/00-exec-summary.md",
+    "heroBackgroundPath": "assets/hero-plate.png"
+  },
+  "outputRoot": "/srv/build/out",
+
+  // The one family used for every run of text. It must be installed on the
+  // CI runner *and* on the reviewer's workstation: a silent fallback
+  // changes the line metrics and with them the page geometry, so the
+  // pipeline asserts the family with `font.list` and refuses to run
+  // without it.
+  "typography": {
+    "fontFamily": "Source Serif 4",
+    // The divergence budget: how far the two engines' page counts may
+    // drift apart before the release engineer is warned. Exceeding the
+    // budget never fails the run — the report is advisory.
+    "divergenceBudget": {
+      "totalPages": 2,
+      "perChapterPages": 1
+    }
+  }
+}
+
+/* Command-invocation surface the spec must name, at least for these.
+ * The ids are the engines' own: a meta-tool and a command are different
+ * things, and the four engines do not even agree on which is which.
+ *
+ *   DesignCraft  (meta-tools) new_document, place_image, render_page,
+ *                export_png, inspect_document, get_story, set_story_text
+ *                (commands)  file.new, file.place, file.exportPdf,
+ *                style.paragraph.create, style.paragraph.apply,
+ *                style.exportTag, frame.create, story.placeAndLink,
+ *                story.get, text.select, text.insert, footnote.insert,
+ *                bookmark.add, toc.generate, toc.entries, variables.define,
+ *                layout.pages.insert, font.list, object.altText,
+ *                swatch.create, object.fill, object.stroke
+ *
+ *   PdfCraft     (meta-tools) doc_open, doc_save, doc_close, doc_info,
+ *                text_extract, pdfa_verify, pdfa_convert,
+ *                accessibility_check, accessibility_report,
+ *                accessibility_figures, accessibility_set_alt, sign_list,
+ *                redact_mark, redact_apply
+ *                (commands)  file.open, file.save, doc.compare,
+ *                standards.pdfa, a11y.report
+ *                `redact.mark` and `redact.apply` are in the registry but
+ *                have no headless tool: `command_run { id: "redact.mark" }`
+ *                fails, and only the redact_mark / redact_apply meta-tools
+ *                can reach them.
+ *
+ *   WordCraft    (meta-tools) new_document, open_document, save_document,
+ *                type_text, select_text, get_text, inspect_document,
+ *                render_page, list_commands, execute, batch
+ *                (commands)  file.new, file.open, file.save, file.saveAs,
+ *                file.exportPdf, file.properties, type.insert,
+ *                text.newParagraph, text.pageBreak, para.style,
+ *                para.heading1, para.heading2, para.set, format.set,
+ *                styles.create, styles.modify, styles.list,
+ *                layout.size, layout.margins, layout.orientation,
+ *                insert.picture, insert.bookmark, insert.header,
+ *                references.toc, references.updateToc, references.footnote,
+ *                references.citationStyle, references.sources,
+ *                references.citation, references.bibliography,
+ *                review.spelling, review.issues, document.layout,
+ *                document.inspect
+ *
+ *   PhotoCraft   (meta-tools) doc_new, doc_open, doc_place, doc_save,
+ *                doc_inspect, doc_render_preview, command_run,
+ *                command_batch, command_list
+ *                (commands)  file.new, file.placeEmbedded, file.close,
+ *                type.create, type.info, image.canvasSize, document.pixel,
+ *                edit.convertToProfile, filter.blur.gaussianBlur
+ */

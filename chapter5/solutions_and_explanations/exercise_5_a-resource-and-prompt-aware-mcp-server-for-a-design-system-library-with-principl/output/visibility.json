@@ -1,0 +1,47 @@
+{
+  "resources": {
+    "designsystem://tokens/type-scale": [
+      "copywriting"
+    ],
+    "designsystem://style-guide": [
+      "copywriting"
+    ],
+    "designsystem://tokens/spacing": [
+      "layout"
+    ],
+    "designsystem://tokens/colors": [
+      "color"
+    ],
+    "designsystem://tokens/contrast-pairs": [
+      "color"
+    ],
+    "designsystem://templates/{templateName}": [
+      "layout"
+    ]
+  },
+  "tools": {
+    "design.system.describe": [
+      "copywriting"
+    ],
+    "design.system.generate_layout": [
+      "layout"
+    ],
+    "design.system.resolve_token": [
+      "layout",
+      "color"
+    ],
+    "design.system.validate_contrast": [
+      "layout",
+      "color"
+    ]
+  },
+  "prompts": {
+    "designsystem:apply_brand_kit": [
+      "layout",
+      "color"
+    ],
+    "layout:generate_grid": [
+      "layout"
+    ]
+  }
+}

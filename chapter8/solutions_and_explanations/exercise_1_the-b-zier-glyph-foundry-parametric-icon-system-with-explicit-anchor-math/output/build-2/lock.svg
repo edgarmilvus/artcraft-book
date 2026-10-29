@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <title>lock</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M24 56 L88 56 L88 112 L24 112 Z M40 56 C50.667 56 61.333 56 72 56 C72 53.333 72 50.667 72 48 C61.333 48 50.667 48 40 48 C40 50.667 40 53.333 40 56 Z" fill="none" fill-rule="evenodd" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

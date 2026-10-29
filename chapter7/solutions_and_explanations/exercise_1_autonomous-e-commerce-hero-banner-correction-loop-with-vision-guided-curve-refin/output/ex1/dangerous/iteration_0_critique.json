@@ -1,0 +1,15 @@
+{
+  "critique_category": "exposure",
+  "reasoning": "the render is flat",
+  "confidence": 0.95,
+  "proposed_fix": {
+    "kind": "content_aware_fill",
+    "rect": [
+      0,
+      0,
+      1800,
+      1000
+    ]
+  },
+  "footprint_pct": 40
+}

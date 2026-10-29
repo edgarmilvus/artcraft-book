@@ -1,0 +1,86 @@
+{
+  "checks": 79,
+  "failures": [],
+  "steps": [
+    {
+      "label": "lut.import neutral",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "lut.import warm",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "file.newSequence",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "import demo footage (batch)",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "place three V1 clips (batch)",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "grade every V1 clip (batch)",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "file.newAdjustmentLayer",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "place adjustment on V2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "warm LUT on adjustment",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "save project",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "razor + ripple delete shot 2 (batch)",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "edit.undo #1",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "edit.undo #2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "edit.redo #1",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "edit.redo #2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "label": "save final project",
+      "ok": true,
+      "error": null
+    }
+  ]
+}

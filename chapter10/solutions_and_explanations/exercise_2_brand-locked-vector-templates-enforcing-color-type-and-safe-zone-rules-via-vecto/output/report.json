@@ -1,0 +1,26 @@
+{
+  "exercise": 2,
+  "engine": "vectorcraft-cli",
+  "assertions": 33,
+  "kitVersion": "2026.1",
+  "accepted": true,
+  "artifacts": [
+    "read/hero.png",
+    "read/logo.svg",
+    "write/LOCKED-1.vectorcraft",
+    "write/LOCKED-1.pdf",
+    "write/LOCKED-1.svg",
+    "write/LOCKED-1@2x.png",
+    "write/brand-template-audit.json"
+  ],
+  "artefacts": [
+    "read/hero.png",
+    "read/logo.svg",
+    "write/LOCKED-1.vectorcraft",
+    "write/LOCKED-1.pdf",
+    "write/LOCKED-1.svg",
+    "write/LOCKED-1@2x.png",
+    "write/brand-template-audit.json"
+  ],
+  "result": "brand tokens, contrast, safe zone and tool-order composition passed; four artifacts exported"
+}

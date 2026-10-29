@@ -1,0 +1,17 @@
+phase A: building the fixture with DesignCraft
+PASS IDML package written                          8569 bytes
+PASS fixture link is broken                        ["missing"]
+phase B: resolving the broken link
+designcraft-cli: MCP server on stdio (headless (in-process engine, no window))
+  result: {"resolved":[8],"unresolved":[],"attempts":{}}
+PASS one asset relinked                            resolved=1
+PASS no unresolved assets left                     left=0
+PASS deterministic relink attempted                1 attempts
+PASS candidate found in incoming                   
+PASS resolved document saved                       12970 bytes
+PASS resolved native package is non-trivial        
+PASS reopened link table has no missing entries    ["ok"]
+PASS refuses an output outside the write root      Refusing to write outside automation write root: /tmp/asset-run-outside.idml
+PASS outside file was not written                  
+
+11/11 checks passed

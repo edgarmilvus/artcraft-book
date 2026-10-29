@@ -1,0 +1,15 @@
+{
+  "exercise": 3,
+  "engine": "DesignCraft typographic QA (scripted vision, real renders)",
+  "assertions": 51,
+  "passes": 2,
+  "outcome": "clean",
+  "suggestions": 1,
+  "artefacts": [
+    "build/qa/",
+    "build/styles-snapshot.json",
+    "build/chapter-qa-summary.json",
+    "build/spread-0-report.json"
+  ],
+  "result": "two-pass spread converged clean; cascade protection and snapshot restore exercised"
+}

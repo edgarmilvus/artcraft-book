@@ -1,0 +1,59 @@
+{
+  "waves": [
+    [
+      {
+        "nodeId": "pc_sign_field",
+        "app": "pdfcraft",
+        "command": "edit_undo",
+        "params": {}
+      }
+    ],
+    [
+      {
+        "nodeId": "pc_redact_apply",
+        "app": "pdfcraft",
+        "command": "edit_undo",
+        "params": {}
+      }
+    ],
+    [
+      {
+        "nodeId": "pc_redact_mark",
+        "app": "pdfcraft",
+        "command": "redact_clear",
+        "params": {}
+      }
+    ],
+    [
+      {
+        "nodeId": "dc_type",
+        "app": "designcraft",
+        "command": "edit.undo",
+        "params": {}
+      }
+    ],
+    [
+      {
+        "nodeId": "dc_frame",
+        "app": "designcraft",
+        "command": "edit.undo",
+        "params": {}
+      },
+      {
+        "nodeId": "wc_apply_style",
+        "app": "wordcraft",
+        "command": "edit.undo",
+        "params": {}
+      }
+    ]
+  ],
+  "irreversible": [
+    "pc_open",
+    "print_pdf",
+    "web_pdf",
+    "web_html",
+    "wc_save",
+    "dc_open",
+    "wc_open"
+  ]
+}

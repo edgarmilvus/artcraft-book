@@ -1,0 +1,31 @@
+{
+  "trace_preset": "Flat Logo",
+  "trace_params": {
+    "mode": "logo",
+    "paths": 85,
+    "corners": 60,
+    "noise": 4,
+    "colors": 4
+  },
+  "pathfinder_ops": [
+    "pathfinder.unite",
+    "object.path.cleanUp"
+  ],
+  "swatch_refs": [
+    "Brand/Primary",
+    "Brand/Inverse"
+  ],
+  "graphic_style_refs": [
+    "Logo/Mark"
+  ],
+  "source_asset_sha256": "1374bbae730668712e0f78acdc0158019ac71b5ba61c3181dae2514007f83940",
+  "rebrand": {
+    "swatch": "Brand/Primary",
+    "from": "#0f172a",
+    "to": "#0d9488",
+    "relinked": 3,
+    "retraced": false
+  },
+  "engine": "vectorcraft",
+  "created_at": "2026-10-26T13:27:03.689Z"
+}

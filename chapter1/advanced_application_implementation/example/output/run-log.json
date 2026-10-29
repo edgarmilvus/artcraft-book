@@ -1,0 +1,44 @@
+{
+  "model": "deepseek/deepseek-v4.1-flash",
+  "prompt": "A moody still life of three ceramic mugs on a linen cloth",
+  "source": "app/api/art/brief/route.ts",
+  "first_chunk_ms": 12160,
+  "total_ms": 13803,
+  "chars": 2047,
+  "usage": {
+    "inputTokens": 162,
+    "inputTokenDetails": {
+      "noCacheTokens": 162,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 2149,
+    "outputTokenDetails": {
+      "textTokens": 463,
+      "reasoningTokens": 1686
+    },
+    "totalTokens": 2311,
+    "raw": {
+      "input_tokens": 162,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 2149,
+      "output_tokens_details": {
+        "reasoning_tokens": 1686
+      },
+      "total_tokens": 2311,
+      "cost": 0.00240764,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00240764,
+        "upstream_inference_input_cost": 0.00004374,
+        "upstream_inference_output_cost": 0.0023639
+      }
+    }
+  },
+  "sections_found": 5,
+  "flags": [
+    "maxOutputTokens:700 (the book's value) truncates a reasoning model mid-reasoning and returns an empty brief; raised to 3000",
+    "the model follows the section order but drops the \"1./2./…\" numbering the system prompt asks for, so a numbered-list parser finds no sections"
+  ]
+}

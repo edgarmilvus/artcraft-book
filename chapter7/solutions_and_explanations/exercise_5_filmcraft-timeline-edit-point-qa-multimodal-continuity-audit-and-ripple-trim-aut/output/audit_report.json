@@ -1,0 +1,190 @@
+{
+  "sequence": {
+    "id": 8,
+    "name": "Travel Cut",
+    "fps": 23.976023976023978,
+    "width": 1920,
+    "height": 1080,
+    "tracks": [
+      "V1",
+      "A1"
+    ]
+  },
+  "editPoints": [
+    {
+      "editPoint": {
+        "clipA": 9,
+        "clipB": 10,
+        "cutTick": 508032000000,
+        "track": "V1",
+        "clipBMediaInTick": 0,
+        "clipBDurationTick": 508032000000,
+        "clipAName": "shot-a.png",
+        "clipBName": "shot-b.png",
+        "clipADurationTick": 508032000000,
+        "trackIndex": 6
+      },
+      "jumpCut": {
+        "jump_detected": true,
+        "horizontal_shift_fraction": 0.12499999999999996,
+        "shift_direction": "right",
+        "is_numeric_claim": true,
+        "confidence": 0.96,
+        "note": "measured head centres 213.0 → 293.0 px"
+      },
+      "luminance": {
+        "luminance_delta_pct": 0,
+        "is_numeric_claim": true,
+        "confidence": 0.95,
+        "note": "measured mean L* 23.7 → 23.7"
+      },
+      "audio": {
+        "tick": 508032000000,
+        "delta_dbfs": 43.94773199993913,
+        "is_pop": false
+      },
+      "unverifiable": false,
+      "applied": true,
+      "rollback": {
+        "rolledBack": false,
+        "undoDepth": 0,
+        "ssdDownstream": 0,
+        "restoredExactly": true
+      },
+      "error": null,
+      "remediation": {
+        "remediations": [
+          {
+            "kind": "ripple_trim_a_out",
+            "frames": 12,
+            "rationale": "Jump cut: head moved 12.5% of the frame width."
+          }
+        ],
+        "clipsTouched": 2,
+        "framesTrimmed": 12,
+        "requiresHumanReview": false,
+        "reviewReason": null
+      }
+    },
+    {
+      "editPoint": {
+        "clipA": 10,
+        "clipB": 12,
+        "cutTick": 888928992000,
+        "track": "V1",
+        "clipBMediaInTick": 0,
+        "clipBDurationTick": 508032000000,
+        "clipAName": "shot-b.png",
+        "clipBName": "shot-c.png",
+        "clipADurationTick": 508032000000,
+        "trackIndex": 6
+      },
+      "jumpCut": {
+        "jump_detected": false,
+        "horizontal_shift_fraction": 0.000014103449865476848,
+        "shift_direction": "none",
+        "is_numeric_claim": true,
+        "confidence": 0.96,
+        "note": "measured head centres 293.0 → 293.0 px"
+      },
+      "luminance": {
+        "luminance_delta_pct": 117.57,
+        "is_numeric_claim": true,
+        "confidence": 0.95,
+        "note": "measured mean L* 23.7 → 51.6"
+      },
+      "audio": {
+        "tick": 888928992000,
+        "delta_dbfs": 43.94773199993913,
+        "is_pop": false
+      },
+      "unverifiable": false,
+      "applied": true,
+      "rollback": {
+        "rolledBack": false,
+        "undoDepth": 0,
+        "ssdDownstream": 0,
+        "restoredExactly": true
+      },
+      "error": null,
+      "remediation": {
+        "remediations": [
+          {
+            "kind": "exposure_ramp",
+            "durationSeconds": 1,
+            "rationale": "Luminance delta 117.6% exceeds 12%."
+          }
+        ],
+        "clipsTouched": 1,
+        "framesTrimmed": 0,
+        "requiresHumanReview": false,
+        "reviewReason": null
+      }
+    },
+    {
+      "editPoint": {
+        "clipA": 12,
+        "clipB": 14,
+        "cutTick": 1396960992000,
+        "track": "V1",
+        "clipBMediaInTick": 0,
+        "clipBDurationTick": 508540032000,
+        "clipAName": "shot-c.png",
+        "clipBName": "shot-d.png",
+        "clipADurationTick": 508032000000,
+        "trackIndex": 6
+      },
+      "jumpCut": {
+        "jump_detected": false,
+        "horizontal_shift_fraction": 0,
+        "shift_direction": "none",
+        "is_numeric_claim": true,
+        "confidence": 0.96,
+        "note": "measured head centres 293.0 → 293.0 px"
+      },
+      "luminance": {
+        "luminance_delta_pct": 0,
+        "is_numeric_claim": true,
+        "confidence": 0.95,
+        "note": "measured mean L* 51.6 → 51.6"
+      },
+      "audio": {
+        "tick": 1396960992000,
+        "delta_dbfs": 0.38785034716737465,
+        "is_pop": true
+      },
+      "unverifiable": false,
+      "applied": true,
+      "rollback": {
+        "rolledBack": false,
+        "undoDepth": 0,
+        "ssdDownstream": 0,
+        "restoredExactly": true
+      },
+      "error": null,
+      "remediation": {
+        "remediations": [
+          {
+            "kind": "crossfade",
+            "frames": 3,
+            "rationale": "Audio discontinuity 0.4 dBFS is louder than -24 dBFS."
+          }
+        ],
+        "clipsTouched": 2,
+        "framesTrimmed": 0,
+        "requiresHumanReview": false,
+        "reviewReason": null
+      }
+    }
+  ],
+  "summary": {
+    "cuts": 3,
+    "jumpCuts": 1,
+    "pops": 1,
+    "luminanceJumps": 1,
+    "remediated": 3,
+    "rolledBack": 0,
+    "escalated": 0,
+    "unverifiable": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "jobId": "job-budget",
+  "campaignId": "cmp-windowsill",
+  "missingPath": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets/lifestyle/window-01.jpg",
+  "reason": "token budget exceeded",
+  "decision": "budget-exceeded",
+  "steps": 1,
+  "refinements": 0,
+  "tokensIn": 120000,
+  "tokensOut": 4000,
+  "candidates": [],
+  "policyViolations": [],
+  "pages": [],
+  "at": "2026-10-26T13:34:24.928592+00:00"
+}

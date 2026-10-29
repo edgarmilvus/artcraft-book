@@ -1,0 +1,6 @@
+shell recipe
+
+PASS the script starts an MCP server on stdio
+PASS the server advertises its tool surface
+
+2/2 checks passed

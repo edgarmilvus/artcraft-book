@@ -1,0 +1,5 @@
+For each cubic segment S(t) = (1-t)³P0 + 3(1-t)²tP1 + 3(1-t)t²P2 + t³P3,
+  load 8 consecutive t values into a SIMD vector,
+  compute the four cubic coefficients,
+  multiply-accumulate in parallel,
+  store the 8 (x, y) results into the flattening buffer.

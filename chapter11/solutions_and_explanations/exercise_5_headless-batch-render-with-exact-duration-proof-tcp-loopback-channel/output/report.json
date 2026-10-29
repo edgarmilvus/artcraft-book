@@ -1,0 +1,26 @@
+{
+  "exercise": 5,
+  "engine": "filmcraft timebase (pure) + generated 48 kHz WAV proofs",
+  "assertions": 43,
+  "ticksPerSample48k": "5292000",
+  "totalTicks": "762048000001",
+  "expectedSamples48k": "144001",
+  "deliverables": [
+    "master-4k",
+    "web-1080",
+    "hevc-1080",
+    "av1-1080",
+    "archive-mxf",
+    "mix-wav"
+  ],
+  "artefacts": [
+    "DurationProof.json",
+    "deliverables/master-4k.wav",
+    "deliverables/web-1080.wav",
+    "deliverables/hevc-1080.wav",
+    "deliverables/av1-1080.wav",
+    "deliverables/archive-mxf.wav",
+    "deliverables/mix.wav"
+  ],
+  "result": "the span was padded to an exact sample boundary; six deliverables matched the predicted count"
+}

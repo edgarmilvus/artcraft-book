@@ -1,0 +1,22 @@
+# The third-party Python packages the book's listings import.
+#
+# They are installed into the repository's own virtual environment by
+# tools/install_python_deps.sh, which the runners use in preference to
+# the system interpreter. Nothing here is needed at runtime by the
+# engines — the harnesses inject their own clients — but the imports
+# have to resolve.
+#
+#   Pillow     — the image work in chapters 8 and 9
+#   numpy      — the signal work in chapters 9 and 12
+#   jsonschema — the manifest validation in chapter 6
+#   pydantic   — the request contracts in chapter 17
+#   openai     — the provider SDK the listings' adapters are written against
+#   mcp        — the MCP Python SDK, in chapter 10
+#   asyncpg    — the Postgres driver the chapter 9 listing is written against
+Pillow>=11.0
+numpy>=1.26
+jsonschema>=4.20
+pydantic>=2.6
+openai>=1.40
+mcp>=1.0
+asyncpg>=0.29

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <title>caduceus-h-sm</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M16 10.2 L20.6 12.6 L20.6 17.4 L16 21.8 L11.4 17.4 L11.4 12.6 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10"/>
+    <g id="logo-sm">
+      <path d="M12 18.866 L12 14 L15 14 L15 21.663 C14.524 21.529 14.075 21.303 13.667 21 L12 21 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10"/>
+    </g>
+  </g>
+</svg>

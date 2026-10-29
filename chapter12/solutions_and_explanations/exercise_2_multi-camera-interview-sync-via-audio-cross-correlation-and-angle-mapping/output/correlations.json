@@ -1,0 +1,34 @@
+[
+  {
+    "pair": [
+      "A",
+      "B"
+    ],
+    "sampleRate": 48000,
+    "windowStartSamples": 0,
+    "windowLengthSamples": 1440000,
+    "peakOffsetSamples": 4800,
+    "peakValue": 1.0,
+    "noiseFloorStdDev": 0.2619883602440357,
+    "peakZScore": 3.2766793813406565,
+    "lobeWidthSamples": 18,
+    "rejected": false,
+    "rejectionReason": null
+  },
+  {
+    "pair": [
+      "A",
+      "C"
+    ],
+    "sampleRate": 48000,
+    "windowStartSamples": 0,
+    "windowLengthSamples": 1440000,
+    "peakOffsetSamples": 12000,
+    "peakValue": 1.0,
+    "noiseFloorStdDev": 0.25102418085336686,
+    "peakZScore": 3.441342293691911,
+    "lobeWidthSamples": 18,
+    "rejected": false,
+    "rejectionReason": null
+  }
+]

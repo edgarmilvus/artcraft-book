@@ -1,0 +1,37 @@
+{
+  "status": "impossible",
+  "step": "a",
+  "assertions": [],
+  "requirements": {
+    "ribbonBehindProduct": false,
+    "badgeBetweenRibbonAndPrice": false,
+    "scrimHasDropShadow": false,
+    "gradeClippedToTypeOnly": false
+  },
+  "applied": [
+    {
+      "step": "a",
+      "commands": [
+        {
+          "id": "layer.new.layer",
+          "params": {
+            "name": "A"
+          }
+        }
+      ]
+    },
+    {
+      "step": "b",
+      "commands": [
+        {
+          "id": "layer.new.layer",
+          "params": {
+            "name": "B"
+          }
+        }
+      ]
+    }
+  ],
+  "rolledBack": 2,
+  "reason": "a is not directly above b, so the clip would attach to a different layer"
+}

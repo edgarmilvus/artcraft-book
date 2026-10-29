@@ -1,0 +1,2308 @@
+{
+  "audio": [
+    {
+      "enabled": true,
+      "id": 4,
+      "items": [
+        {
+          "clip": 96,
+          "duration": 7620289488000,
+          "durationFrames": 719,
+          "effects": [
+            {
+              "effect": "volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "level": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "channel_volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "left": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "right": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "panner",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "balance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 7620289488000,
+          "endFrame": 719,
+          "gainDb": 0,
+          "item": 39,
+          "label": "Caribbean",
+          "link": null,
+          "name": "music.wav",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 7620289488000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Audio 1",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    },
+    {
+      "enabled": true,
+      "id": 5,
+      "items": [
+        {
+          "clip": 97,
+          "duration": 1525620096000,
+          "durationFrames": 144,
+          "effects": [
+            {
+              "effect": "volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "level": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "channel_volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "left": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "right": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "panner",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "balance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 1525620096000,
+          "endFrame": 144,
+          "gainDb": 0,
+          "item": 40,
+          "label": "Caribbean",
+          "link": null,
+          "name": "vo.wav",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1525620096000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Audio 2",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    },
+    {
+      "enabled": true,
+      "id": 6,
+      "items": [
+        {
+          "clip": 98,
+          "duration": 7620289488000,
+          "durationFrames": 719,
+          "effects": [
+            {
+              "effect": "volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "level": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "channel_volume",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "bypass": {
+                  "keyframes": 0,
+                  "value": "Bool(false)"
+                },
+                "left": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "right": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            },
+            {
+              "effect": "panner",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "balance": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 7620289488000,
+          "endFrame": 719,
+          "gainDb": 0,
+          "item": 41,
+          "label": "Caribbean",
+          "link": null,
+          "name": "roomtone.wav",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 7620289488000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Audio 3",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    }
+  ],
+  "duration": 7621813584000,
+  "durationFrames": 719,
+  "id": 7,
+  "in": null,
+  "markers": [],
+  "name": "Trailer_FirstCut",
+  "out": null,
+  "playhead": null,
+  "selection": [
+    98
+  ],
+  "settings": {
+    "audio_master": "Stereo",
+    "color": {
+      "auto_tone_map": true,
+      "wide_gamut": false,
+      "working": "Rec709"
+    },
+    "drop_frame": false,
+    "frame_rate": {
+      "den": 1001,
+      "num": 24000
+    },
+    "height": 1080,
+    "max_bit_depth": false,
+    "max_render_quality": false,
+    "par": [
+      1,
+      1
+    ],
+    "preset": "1920x1080 23.976",
+    "preview_codec": "ProRes 422",
+    "sample_rate": 48000,
+    "width": 1920,
+    "working_space": "Rec. 709"
+  },
+  "split": {
+    "audioIn": null,
+    "audioOut": null,
+    "videoIn": null,
+    "videoOut": null
+  },
+  "video": [
+    {
+      "enabled": true,
+      "id": 1,
+      "items": [
+        {
+          "clip": 42,
+          "duration": 1523905488000,
+          "durationFrames": 143,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 2,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 1523905488000,
+          "endFrame": 143,
+          "gainDb": 0,
+          "item": 13,
+          "label": "Violet",
+          "link": null,
+          "name": "interview-a.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1523905488000,
+          "speed": 1,
+          "start": 0,
+          "startFrame": 0
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Video 1",
+      "solo": false,
+      "syncLock": true,
+      "transitions": [
+        {
+          "duration": 254270016000,
+          "effect": "cross_dissolve",
+          "from": 42,
+          "id": 94,
+          "params": {},
+          "reverse": false,
+          "start": 1260755496000,
+          "to": null
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "id": 2,
+      "items": [
+        {
+          "clip": 43,
+          "duration": 508032000000,
+          "durationFrames": 47,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 2031937488000,
+          "endFrame": 191,
+          "gainDb": 0,
+          "item": 15,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-00.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 508032000000,
+          "speed": 1,
+          "start": 1523905488000,
+          "startFrame": 143
+        },
+        {
+          "clip": 44,
+          "duration": 381024000000,
+          "durationFrames": 35,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 2412961488000,
+          "endFrame": 227,
+          "gainDb": 0,
+          "item": 16,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-01.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 381024000000,
+          "speed": 1,
+          "start": 2031937488000,
+          "startFrame": 191
+        },
+        {
+          "clip": 45,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 2666977488000,
+          "endFrame": 251,
+          "gainDb": 0,
+          "item": 17,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-02.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 2412961488000,
+          "startFrame": 227
+        },
+        {
+          "clip": 46,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 2920993488000,
+          "endFrame": 275,
+          "gainDb": 0,
+          "item": 18,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-03.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 2666977488000,
+          "startFrame": 251
+        },
+        {
+          "clip": 47,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3175009488000,
+          "endFrame": 299,
+          "gainDb": 0,
+          "item": 19,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-04.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 2920993488000,
+          "startFrame": 275
+        },
+        {
+          "clip": 48,
+          "duration": 127008000000,
+          "durationFrames": 11,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3302017488000,
+          "endFrame": 311,
+          "gainDb": 0,
+          "item": 20,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-05.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 127008000000,
+          "speed": 1,
+          "start": 3175009488000,
+          "startFrame": 299
+        },
+        {
+          "clip": 49,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3556033488000,
+          "endFrame": 335,
+          "gainDb": 0,
+          "item": 21,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-06.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 3302017488000,
+          "startFrame": 311
+        },
+        {
+          "clip": 50,
+          "duration": 127008000000,
+          "durationFrames": 11,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3683041488000,
+          "endFrame": 347,
+          "gainDb": 0,
+          "item": 22,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-07.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 127008000000,
+          "speed": 1,
+          "start": 3556033488000,
+          "startFrame": 335
+        },
+        {
+          "clip": 51,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 3937057488000,
+          "endFrame": 371,
+          "gainDb": 0,
+          "item": 23,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-08.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 3683041488000,
+          "startFrame": 347
+        },
+        {
+          "clip": 52,
+          "duration": 127008000000,
+          "durationFrames": 11,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 4064065488000,
+          "endFrame": 383,
+          "gainDb": 0,
+          "item": 24,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-09.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 127008000000,
+          "speed": 1,
+          "start": 3937057488000,
+          "startFrame": 371
+        },
+        {
+          "clip": 53,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 4318081488000,
+          "endFrame": 407,
+          "gainDb": 0,
+          "item": 25,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-10.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 4064065488000,
+          "startFrame": 383
+        },
+        {
+          "clip": 54,
+          "duration": 127008000000,
+          "durationFrames": 11,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 4445089488000,
+          "endFrame": 419,
+          "gainDb": 0,
+          "item": 26,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-11.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 127008000000,
+          "speed": 1,
+          "start": 4318081488000,
+          "startFrame": 407
+        },
+        {
+          "clip": 55,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 4699105488000,
+          "endFrame": 443,
+          "gainDb": 0,
+          "item": 27,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-12.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 4445089488000,
+          "startFrame": 419
+        },
+        {
+          "clip": 56,
+          "duration": 127008000000,
+          "durationFrames": 11,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 4826113488000,
+          "endFrame": 455,
+          "gainDb": 0,
+          "item": 28,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-13.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 127008000000,
+          "speed": 1,
+          "start": 4699105488000,
+          "startFrame": 443
+        },
+        {
+          "clip": 57,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 5080129488000,
+          "endFrame": 479,
+          "gainDb": 0,
+          "item": 29,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-14.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 4826113488000,
+          "startFrame": 455
+        },
+        {
+          "clip": 58,
+          "duration": 127008000000,
+          "durationFrames": 11,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 5207137488000,
+          "endFrame": 491,
+          "gainDb": 0,
+          "item": 30,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-15.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 127008000000,
+          "speed": 1,
+          "start": 5080129488000,
+          "startFrame": 479
+        },
+        {
+          "clip": 59,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 5461153488000,
+          "endFrame": 515,
+          "gainDb": 0,
+          "item": 31,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-16.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 5207137488000,
+          "startFrame": 491
+        },
+        {
+          "clip": 60,
+          "duration": 127008000000,
+          "durationFrames": 11,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 5588161488000,
+          "endFrame": 527,
+          "gainDb": 0,
+          "item": 32,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-17.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 127008000000,
+          "speed": 1,
+          "start": 5461153488000,
+          "startFrame": 515
+        },
+        {
+          "clip": 61,
+          "duration": 254016000000,
+          "durationFrames": 23,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 5842177488000,
+          "endFrame": 551,
+          "gainDb": 0,
+          "item": 33,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-18.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 254016000000,
+          "speed": 1,
+          "start": 5588161488000,
+          "startFrame": 527
+        },
+        {
+          "clip": 62,
+          "duration": 127008000000,
+          "durationFrames": 11,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 5969185488000,
+          "endFrame": 563,
+          "gainDb": 0,
+          "item": 34,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-19.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 127008000000,
+          "speed": 1,
+          "start": 5842177488000,
+          "startFrame": 551
+        },
+        {
+          "clip": 63,
+          "duration": 127008000000,
+          "durationFrames": 11,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 160.0, y: 90.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 6096193488000,
+          "endFrame": 575,
+          "gainDb": 0,
+          "item": 35,
+          "label": "Violet",
+          "link": null,
+          "name": "broll-20.mp4",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 127008000000,
+          "speed": 1,
+          "start": 5969185488000,
+          "startFrame": 563
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Video 2",
+      "solo": false,
+      "syncLock": true,
+      "transitions": []
+    },
+    {
+      "enabled": true,
+      "id": 3,
+      "items": [
+        {
+          "clip": 68,
+          "duration": 508032000000,
+          "durationFrames": 47,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 2031937488000,
+          "endFrame": 191,
+          "gainDb": 0,
+          "item": 67,
+          "label": "Lavender",
+          "link": null,
+          "name": "Black Video",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 508032000000,
+          "speed": 1,
+          "start": 1523905488000,
+          "startFrame": 143
+        },
+        {
+          "clip": 93,
+          "duration": 1525620096000,
+          "durationFrames": 144,
+          "effects": [
+            {
+              "effect": "motion",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "anchor": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "anti_flicker": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "position": {
+                  "keyframes": 0,
+                  "value": "Vec2(Vec2 { x: 960.0, y: 540.0 })"
+                },
+                "rotation": {
+                  "keyframes": 0,
+                  "value": "Float(0.0)"
+                },
+                "scale": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "scale_width": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                },
+                "uniform_scale": {
+                  "keyframes": 0,
+                  "value": "Bool(true)"
+                }
+              }
+            },
+            {
+              "effect": "opacity",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "blend": {
+                  "keyframes": 0,
+                  "value": "Choice(0)"
+                },
+                "opacity": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            },
+            {
+              "effect": "time_remap",
+              "enabled": true,
+              "masks": 0,
+              "params": {
+                "speed": {
+                  "keyframes": 0,
+                  "value": "Float(100.0)"
+                }
+              }
+            }
+          ],
+          "enabled": true,
+          "end": 7621813584000,
+          "endFrame": 719,
+          "gainDb": 0,
+          "item": 92,
+          "label": "Lavender",
+          "link": null,
+          "name": "Black Video",
+          "reverse": false,
+          "sourceIn": 0,
+          "sourceOut": 1525620096000,
+          "speed": 1,
+          "start": 6096193488000,
+          "startFrame": 575
+        }
+      ],
+      "locked": false,
+      "muted": false,
+      "name": "Video 3",
+      "solo": false,
+      "syncLock": true,
+      "transitions": [
+        {
+          "duration": 127135008000,
+          "effect": "cross_dissolve",
+          "from": null,
+          "id": 95,
+          "params": {},
+          "reverse": false,
+          "start": 6091885800000,
+          "to": 93
+        }
+      ]
+    }
+  ]
+}

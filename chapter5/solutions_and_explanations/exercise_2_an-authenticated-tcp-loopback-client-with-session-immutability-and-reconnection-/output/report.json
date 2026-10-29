@@ -1,0 +1,71 @@
+{
+  "exercise": 2,
+  "checks": 8,
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "a wrong token fails closed",
+      "ok": true
+    },
+    {
+      "name": "connect() adopts the server's active document",
+      "ok": true
+    },
+    {
+      "name": "execute() records an issue and an ack",
+      "ok": true
+    },
+    {
+      "name": "a lost reply leaves the command unacked",
+      "ok": true
+    },
+    {
+      "name": "recover() acks from history instead of replaying",
+      "ok": true
+    },
+    {
+      "name": "recover() is pure: the prior snapshot is untouched",
+      "ok": true
+    },
+    {
+      "name": "the FSM escalates after three auth rejections",
+      "ok": true
+    },
+    {
+      "name": "the JSONL ledger replays with every command acknowledged",
+      "ok": true
+    }
+  ],
+  "initial_snapshot": {
+    "active_doc_index": 0,
+    "active_layer_id": null,
+    "selection": [],
+    "history_depth": 0,
+    "epoch": 0,
+    "token": "<redacted>",
+    "token_fingerprint": "ffe054fe7ae0cb6d"
+  },
+  "recovered_snapshot": {
+    "active_doc_index": 0,
+    "active_layer_id": null,
+    "selection": [],
+    "history_depth": 2,
+    "epoch": 1,
+    "token": "<redacted>",
+    "token_fingerprint": "ffe054fe7ae0cb6d"
+  },
+  "unacked_after_crash": 1,
+  "replayed": false,
+  "ledger_lines": 4,
+  "ledger_issues": 2,
+  "ledger_acks": 2,
+  "artifacts": [
+    "ledger/ledger.jsonl",
+    "session/initial.json",
+    "session/recovered.json",
+    "reconciliation/history.json",
+    "reconciliation/ledger-records.json",
+    "report.json"
+  ]
+}

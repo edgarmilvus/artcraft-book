@@ -1,0 +1,18 @@
+{
+  "exercise": 1,
+  "engine": "filmcraft timebase (pure scope invariants)",
+  "assertions": 26,
+  "batchSteps": 8,
+  "scope": {
+    "paradeMaxIre": 50,
+    "midtoneMeanY": 50,
+    "shadowBlueLift": 10,
+    "pass": true
+  },
+  "artefacts": [
+    "scopes.json",
+    "delivery_report.json",
+    "verification.png"
+  ],
+  "result": "LUT-first grade batch and all four scope invariants verified"
+}

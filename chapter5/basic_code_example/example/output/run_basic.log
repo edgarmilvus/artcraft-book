@@ -1,0 +1,11 @@
+connected to bridge
+
+PASS tool surface
+PASS defaults produce out/hello.png
+PASS custom greeting and filename
+PASS schema rejects a path instead of a bare filename
+PASS schema rejects a 90-character greeting
+PASS bridge exits when the agent disconnects
+PASS missing engine becomes a handler-level MCP error
+
+7/7 checks passed

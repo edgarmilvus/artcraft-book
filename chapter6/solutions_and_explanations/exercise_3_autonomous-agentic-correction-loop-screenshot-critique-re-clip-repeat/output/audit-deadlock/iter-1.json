@@ -1,0 +1,87 @@
+{
+  "iteration": 1,
+  "preview_path": "chapter6/solutions_and_explanations/exercise_3_autonomous-agentic-correction-loop-screenshot-critique-re-clip-repeat/output/audit-deadlock/iter-1.png",
+  "window_path": "chapter6/solutions_and_explanations/exercise_3_autonomous-agentic-correction-loop-screenshot-critique-re-clip-repeat/output/audit-deadlock/iter-1-window.png",
+  "critique": {
+    "verdict": "fix",
+    "issues": [
+      {
+        "kind": "clipping",
+        "severity": 0.8,
+        "hint": "product escapes the card",
+        "region": [
+          0,
+          0,
+          100,
+          100
+        ]
+      },
+      {
+        "kind": "legibility",
+        "severity": 0.6,
+        "hint": "price sits on the cutout",
+        "region": [
+          120,
+          700,
+          700,
+          900
+        ]
+      }
+    ]
+  },
+  "commands_applied": [
+    {
+      "id": "layer.releaseClippingMask",
+      "params": {
+        "layer": 2
+      }
+    },
+    {
+      "id": "layer.createClippingMask",
+      "params": {
+        "layer": 2
+      }
+    },
+    {
+      "id": "select.rect",
+      "params": {
+        "x": 120,
+        "y": 700,
+        "width": 580,
+        "height": 200,
+        "mode": "replace"
+      }
+    },
+    {
+      "id": "layer.newFillLayer.solidColor",
+      "params": {
+        "color": "#111111"
+      }
+    },
+    {
+      "id": "layer.setProps",
+      "params": {
+        "layer": 1,
+        "name": "LegibilityScrim::Price",
+        "opacity": 0.35,
+        "blend": "Normal"
+      }
+    },
+    {
+      "id": "layer.moveTo",
+      "params": {
+        "layer": 1,
+        "target": 4,
+        "position": "below"
+      }
+    },
+    {
+      "id": "select.deselect",
+      "params": {}
+    }
+  ],
+  "undo_cost": 7,
+  "history_before": 1,
+  "history_after": 8,
+  "note": null
+}

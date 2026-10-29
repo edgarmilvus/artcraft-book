@@ -1,0 +1,12 @@
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+const [cwd] = process.argv.slice(2);
+const t = new StdioClientTransport({ command: "designcraft-cli", args: ["mcp"], cwd });
+const c = new Client({ name: "mk", version: "1" }, { capabilities: {} });
+await c.connect(t);
+const txt = (r) => { const b = r.content.find(x=>x.type==="text"); try { return JSON.parse(b.text); } catch { return b.text; } };
+const call = async (n,a={}) => txt(await c.callTool({ name:n, arguments:a }));
+await call("new_document", { width: 612, height: 792, pages: 1, margins: 72, title: "Catalog" });
+console.log("place:", JSON.stringify(await call("place_image", { path: "assets/hero.png", x: 72, y: 72, width: 300 })).slice(0,200));
+console.log("save:", JSON.stringify(await call("save_document", { path: "layout.designcraft" })).slice(0,200));
+await c.close();

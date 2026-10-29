@@ -1,0 +1,10 @@
+// The request frames the control channel accepts after the auth frame.
+// scenario.set applies one of the four scenarios (1 Bear, 2 Base, 3 Bull,
+// 4 Doom) by writing the index into the switch cell; the engine recalculates
+// the whole tree before the frame is answered, so the answer always carries
+// a settled model.  An index outside 1..4 is refused with
+//   {"id": 1, "ok": false, "error": {"code": "illegal_scenario_index", ...}}
+// and nothing is written.
+{ "id": 1, "method": "scenario.set", "params": { "index": 1 } }
+{ "id": 2, "method": "engine.execute",
+  "params": { "command": "output.read", "params": { "name": "Effective.arr" } } }

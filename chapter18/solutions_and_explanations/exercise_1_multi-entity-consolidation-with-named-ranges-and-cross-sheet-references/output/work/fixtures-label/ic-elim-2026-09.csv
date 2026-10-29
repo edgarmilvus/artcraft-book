@@ -1,0 +1,4 @@
+from_entity,to_entity,account_code,amount_usd
+Helios-EU,Helios-US,4000,240000.0
+Helios-APAC,Helios-US,4000,86000.0
+Helios-LATAM,Helios-US,4000,41000.0

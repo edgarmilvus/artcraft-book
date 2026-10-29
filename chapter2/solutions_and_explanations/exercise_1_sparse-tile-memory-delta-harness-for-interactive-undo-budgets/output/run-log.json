@@ -1,0 +1,28 @@
+{
+  "checks": 64,
+  "failures": [],
+  "quirks": [
+    "doc_inspect exposes no tile census in the headless CLI; the report estimates tiles from damage rectangles"
+  ],
+  "report": {
+    "document": "chapter2/solutions_and_explanations/exercise_1_sparse-tile-memory-delta-harness-for-interactive-undo-budgets/output/retouch/FW26_hero_048.tif",
+    "steps": [
+      {
+        "id": "localized_brush_strokes",
+        "tiles": 60,
+        "coverage_pct": 2.56
+      },
+      {
+        "id": "layer.newAdjustmentLayer.curves",
+        "tiles": 708,
+        "coverage_pct": 100.0
+      },
+      {
+        "id": "filter.blur.gaussianBlur",
+        "tiles": 0,
+        "coverage_pct": 100.0
+      }
+    ],
+    "cumulative_estimated_tiles": 768
+  }
+}

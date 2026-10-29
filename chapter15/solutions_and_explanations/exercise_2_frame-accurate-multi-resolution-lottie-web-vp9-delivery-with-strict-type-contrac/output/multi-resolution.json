@@ -1,0 +1,45 @@
+{
+  "composition": "ParityProbe",
+  "fps": 25,
+  "frames": 6,
+  "resolutions": [
+    "485x125",
+    "970x250",
+    "1940x500"
+  ],
+  "results": [
+    {
+      "resolution": "485x125",
+      "frames": 6,
+      "encodedFrames": 6,
+      "maxDelta": 0,
+      "pass": true,
+      "histogram": {
+        "0": 6
+      },
+      "webmBytes": 6134
+    },
+    {
+      "resolution": "970x250",
+      "frames": 6,
+      "encodedFrames": 6,
+      "maxDelta": 0,
+      "pass": true,
+      "histogram": {
+        "0": 6
+      },
+      "webmBytes": 11211
+    },
+    {
+      "resolution": "1940x500",
+      "frames": 6,
+      "encodedFrames": 6,
+      "maxDelta": 0,
+      "pass": true,
+      "histogram": {
+        "0": 6
+      },
+      "webmBytes": 20058
+    }
+  ]
+}

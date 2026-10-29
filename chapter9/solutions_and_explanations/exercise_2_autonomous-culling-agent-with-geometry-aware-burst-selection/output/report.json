@@ -1,0 +1,36 @@
+{
+  "exercise": 2,
+  "engine": "lightcraft-cli",
+  "assertions": 20,
+  "job": "wedding-culling",
+  "clusterMembers": [
+    3,
+    2
+  ],
+  "flags": [
+    {
+      "id": 3,
+      "flag": "reject"
+    },
+    {
+      "id": 2,
+      "flag": "reject"
+    },
+    {
+      "id": 1,
+      "flag": "pick"
+    }
+  ],
+  "bestId": 1,
+  "artefacts": [
+    "audit.json",
+    "staging/shot-0.png",
+    "staging/shot-1.png",
+    "staging/shot-2.png",
+    "previews/shot-0.jpg",
+    "previews/shot-1.jpg",
+    "previews/shot-2.jpg",
+    "library/"
+  ],
+  "result": "agent clustered the burst, scored every frame and committed one pick with rejects"
+}

@@ -1,0 +1,13 @@
+{
+  "exercise": 2,
+  "engine": "filmcraft essential-sound (pure mix math)",
+  "assertions": 25,
+  "duckDepthDb": 14,
+  "generatedKeys": 16,
+  "speechIntervals": 2,
+  "artefacts": [
+    "mix_report.json",
+    "keyframes.csv"
+  ],
+  "result": "attack/release keyframes, loudness summary and master correction verified"
+}

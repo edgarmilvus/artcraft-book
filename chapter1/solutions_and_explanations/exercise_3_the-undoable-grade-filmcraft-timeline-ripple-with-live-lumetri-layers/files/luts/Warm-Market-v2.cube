@@ -1,0 +1,11 @@
+TITLE "Warm-Market-v2"
+# Warm grade 3D LUT (2x2x2): lift reds, cool blues slightly.
+LUT_3D_SIZE 2
+0.0 0.0 0.0
+1.0 0.02 0.0
+0.0 1.0 0.0
+1.0 1.0 0.0
+0.0 0.06 0.92
+1.0 0.08 0.92
+0.0 1.0 0.92
+1.0 1.0 0.94

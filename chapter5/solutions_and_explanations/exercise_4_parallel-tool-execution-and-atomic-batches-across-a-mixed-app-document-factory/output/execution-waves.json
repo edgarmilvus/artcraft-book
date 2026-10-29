@@ -1,0 +1,37 @@
+[
+  [
+    "dc_open",
+    "wc_open"
+  ],
+  [
+    "dc_frame",
+    "wc_apply_style"
+  ],
+  [
+    "dc_type",
+    "wc_save"
+  ],
+  [
+    "print_pdf",
+    "web_pdf",
+    "web_html"
+  ],
+  [
+    "pc_open"
+  ],
+  [
+    "pc_redact_mark"
+  ],
+  [
+    "pc_redact_apply"
+  ],
+  [
+    "pc_sign_field"
+  ],
+  [
+    "pc_a11y_check"
+  ],
+  [
+    "pc_save"
+  ]
+]

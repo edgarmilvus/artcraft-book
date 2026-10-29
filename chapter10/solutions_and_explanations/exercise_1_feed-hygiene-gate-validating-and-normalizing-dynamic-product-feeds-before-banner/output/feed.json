@@ -1,0 +1,55 @@
+[
+  {
+    "sku": "SKU-1",
+    "title": "Trail Runner",
+    "price": 129.99,
+    "currency": "USD",
+    "heroImage": "hero-a.png",
+    "locale": "en-US"
+  },
+  {
+    "sku": "SKU-2",
+    "title": "City Pack",
+    "price": 89,
+    "salePrice": 69,
+    "currency": "EUR",
+    "heroImage": "hero-b.png",
+    "locale": "de-DE"
+  },
+  {
+    "sku": "NO-TITLE",
+    "title": "  ",
+    "price": 10,
+    "currency": "USD",
+    "heroImage": "hero-a.png"
+  },
+  {
+    "sku": "BAD-CURRENCY",
+    "title": "Ok",
+    "price": 10,
+    "currency": "usd",
+    "heroImage": "hero-a.png"
+  },
+  {
+    "sku": "ESCAPE",
+    "title": "Ok",
+    "price": 10,
+    "currency": "USD",
+    "heroImage": "../secret.png"
+  },
+  {
+    "sku": "BAD-SALE",
+    "title": "Ok",
+    "price": 10,
+    "salePrice": 12,
+    "currency": "USD",
+    "heroImage": "hero-a.png"
+  },
+  {
+    "sku": "MOJIBAKE",
+    "title": "Caf�",
+    "price": 10,
+    "currency": "USD",
+    "heroImage": "hero-a.png"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "checks": 56,
+  "failures": [],
+  "quirks": [
+    "doc_save does not create missing parent directories; the audit directory is created before the first save",
+    "the headless CLI has only the CPU SIMD oracle; the wgpu compositor requires the desktop app, so the audit compares one model at two resolutions",
+    "document.pixel clamps out-of-range coordinates instead of rejecting them (y=2048 on a 1600-tall canvas returned a pixel)"
+  ],
+  "report": {
+    "convergent": true,
+    "max_mean_delta": 0.3392578125,
+    "tiles": 77,
+    "batch": {
+      "completed": 6,
+      "failed": 0,
+      "failures": []
+    }
+  }
+}

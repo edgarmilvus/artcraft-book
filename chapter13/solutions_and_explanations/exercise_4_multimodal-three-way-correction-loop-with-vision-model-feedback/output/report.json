@@ -1,0 +1,17 @@
+{
+  "exercise": 4,
+  "engine": "filmcraft TCP (pure scope/oscillation core)",
+  "assertions": 20,
+  "scope": {
+    "waveformMinIre": 0.0,
+    "waveformMaxIre": 100.0,
+    "midtoneMeanY": 50.0
+  },
+  "finalStatus": "CONVERGED",
+  "artefacts": [
+    "verification.png",
+    "scopes.json",
+    "agentic_grade_report.json"
+  ],
+  "result": "scope gate, oscillation detector and converged audit verified; verification frame written"
+}

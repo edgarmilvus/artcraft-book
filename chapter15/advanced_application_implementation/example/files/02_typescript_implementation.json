@@ -1,0 +1,14 @@
+{
+  "name": "lottie-vp9-worker",
+  "type": "module",
+  "engines": { "node": ">=20.11" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "playwright": "1.48.2",
+    "zod": "^3.23.8"
+  },
+  "scripts": {
+    "postinstall": "playwright install chromium --with-deps",
+    "start": "node --loader tsx/esm src/lottie-vp9-pipeline.ts"
+  }
+}

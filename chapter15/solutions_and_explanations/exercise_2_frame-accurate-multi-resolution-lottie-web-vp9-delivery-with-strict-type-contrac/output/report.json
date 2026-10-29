@@ -1,0 +1,21 @@
+{
+  "exercise": 2,
+  "engine": "lottie-web + Chromium + ffmpeg VP9",
+  "assertions": 52,
+  "resolutions": [
+    "485x125",
+    "970x250",
+    "1940x500"
+  ],
+  "framesPerResolution": 6,
+  "maxDelta": 0,
+  "artefacts": [
+    "lottie.json",
+    "web-*/frames",
+    "native-*/hero.webm",
+    "native-*/decoded",
+    "parity-all.json",
+    "multi-resolution.json"
+  ],
+  "result": "three resolutions rendered in Chromium, encoded to VP9 and audited frame-by-frame at delta <= 3"
+}

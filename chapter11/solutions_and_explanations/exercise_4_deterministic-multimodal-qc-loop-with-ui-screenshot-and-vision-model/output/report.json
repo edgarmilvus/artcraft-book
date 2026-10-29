@@ -1,0 +1,17 @@
+{
+  "exercise": 4,
+  "engine": "filmcraft integer-pixel bridge (pure classification)",
+  "assertions": 23,
+  "passThresholdTicks": "10584000",
+  "ticksPerSample48k": "5292000",
+  "verdicts": {
+    "pass": "pass",
+    "fail": "fail",
+    "inconclusive": "inconclusive"
+  },
+  "artefacts": [
+    "program-monitor.png",
+    "sync-qc-report.json"
+  ],
+  "result": "integer pixel-to-tick mapping and the two-sample sync verdict verified; screenshot and report written"
+}

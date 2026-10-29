@@ -1,0 +1,15 @@
+{
+  "manuscriptId": "JAMS-2026-0089",
+  "sourceDocx": "in/JAMS-2026-0089.docx",
+  "masterTemplate": "templates/does-not-exist.designcraft",
+  "signaturePages": 2,
+  "styleMap": {
+    "Heading1": "heading 1",
+    "Heading2": "heading 2",
+    "BodyText": "Basic Paragraph",
+    "Quote": "Basic Paragraph",
+    "Footnote": "Basic Paragraph"
+  },
+  "pdfaConformance": "2b",
+  "outputRoot": "chapter3/solutions_and_explanations/exercise_3_the-publishing-house-nightly-pipeline-wordcraft-designcraft-pdfcraft-with-prefli/output/failing"
+}

@@ -1,0 +1,10 @@
+sequence: Travel Cut (1920x1080 @ 23.976 fps)
+cuts: 3
+jump cuts: 1
+luminance jumps: 1
+audio pops: 1
+remediated: 3
+rolled back: 0
+escalated: 0
+
+ticks per second: 254016000000

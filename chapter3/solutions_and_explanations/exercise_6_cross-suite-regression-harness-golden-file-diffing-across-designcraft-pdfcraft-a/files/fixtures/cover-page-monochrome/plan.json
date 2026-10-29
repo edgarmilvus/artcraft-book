@@ -1,0 +1,12 @@
+{
+  "fixtureId": "cover-page-monochrome",
+  "tolerance": { "textDamerauLevenshtein": 0, "renderPixelLevenshtein": 0 },
+  "steps": [
+    { "cli": "designcraft", "command": "file.new", "params": { "preset": "Letter", "pages": 1 } },
+    { "cli": "designcraft", "command": "frame.create", "params": { "rect": [72, 96, 540, 240], "content": "text", "text": "Quarterly" } },
+    { "cli": "designcraft", "command": "file.exportPdf", "params": { "path": "out.pdf" } },
+    { "cli": "pdfcraft", "command": "doc_open", "params": { "path": "out.pdf" } },
+    { "cli": "pdfcraft", "command": "text_extract", "params": { "doc": 1 } },
+    { "cli": "pdfcraft", "command": "page_render", "params": { "doc": 1, "page": 1, "dpi": 150 } }
+  ]
+}

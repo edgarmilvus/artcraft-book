@@ -1,0 +1,5 @@
+{"step":1,"name":"embed","detail":"1536 dimensions","at":"2026-01-01T00:00:00.000Z"}
+{"step":2,"name":"retrieve","detail":"brand-001 at 1.000","at":"2026-01-01T00:00:00.000Z"}
+{"step":3,"name":"compose","detail":"Ship faster / Try it now","at":"2026-01-01T00:00:00.000Z"}
+{"step":4,"name":"render","detail":"5 engine call(s) → hero.png","at":"2026-01-01T00:00:00.000Z"}
+{"step":5,"name":"materialise","detail":"hero.png, 17426 bytes","at":"2026-01-01T00:00:00.000Z"}

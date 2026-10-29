@@ -1,0 +1,12 @@
+{
+  "name": "cap17-ex5-solution",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "python3 -m py_compile 05_autonomous-regulatory-submission-compiler-with-ocr-fallback-and-form-population.py",
+    "harness": "python3 run_5.py"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

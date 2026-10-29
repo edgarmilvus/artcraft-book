@@ -1,0 +1,11 @@
+{
+  "exercise": 4,
+  "engine": "effectcraft loopback stub",
+  "assertions": 16,
+  "tokenLength": 64,
+  "frameCalls": 7,
+  "artefacts": [
+    "write/preview.png"
+  ],
+  "result": "auth-first TCP rig, repeater batch, stagger update, screenshot and non-destructive reset verified"
+}

@@ -1,0 +1,8 @@
+route handler
+
+PASS rejects a request with no tenant
+PASS rejects a body with no brief
+PASS rejects an unknown app id
+PASS streams status then a terminal event
+
+4/4 checks passed

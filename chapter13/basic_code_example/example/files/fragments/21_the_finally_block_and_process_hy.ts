@@ -1,0 +1,3 @@
+} finally {
+  await fc.close();
+}

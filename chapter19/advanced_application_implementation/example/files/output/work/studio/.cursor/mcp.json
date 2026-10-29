@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "storytold-photocraft": {
+      "command": "photocraft-cli",
+      "args": [
+        "mcp",
+        "--automation-read-root",
+        "chapter19/advanced_application_implementation/example/files/output/work/studio/project",
+        "--automation-write-root",
+        "chapter19/advanced_application_implementation/example/files/output/work/studio/render"
+      ]
+    }
+  }
+}

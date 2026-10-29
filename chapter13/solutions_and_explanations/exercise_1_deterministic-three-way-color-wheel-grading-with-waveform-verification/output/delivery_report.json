@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-10-26T13:31:28.833Z",
+  "clips": [
+    {
+      "clipId": 7,
+      "batchSteps": 8,
+      "scope": {
+        "clipId": 7,
+        "paradeMaxIre": 50,
+        "waveformMinIre": 0,
+        "waveformMaxIre": 100,
+        "midtoneMeanY": 50,
+        "shadowBlueLift": 10,
+        "pass": true
+      },
+      "verificationPng": "verification.png"
+    }
+  ],
+  "rollbacks": [],
+  "rollbackPlan": [
+    {
+      "clipId": 7,
+      "steps": 8
+    }
+  ]
+}

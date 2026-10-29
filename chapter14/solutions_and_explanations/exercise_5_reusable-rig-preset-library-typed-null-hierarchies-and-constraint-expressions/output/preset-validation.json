@@ -1,0 +1,188 @@
+{
+  "runtimeVersion": 2,
+  "descriptors": {
+    "pushFollow": {
+      "name": "pushFollow",
+      "version": 2,
+      "params": {
+        "dampX": {
+          "type": "number",
+          "default": 0.8,
+          "since": 1,
+          "min": 0,
+          "max": 1
+        },
+        "dampY": {
+          "type": "number",
+          "default": 0.8,
+          "since": 1,
+          "min": 0,
+          "max": 1
+        },
+        "delayFrames": {
+          "type": "integer",
+          "default": 2,
+          "since": 1,
+          "min": 0,
+          "max": 12
+        }
+      },
+      "preconditions": []
+    },
+    "shakeNull": {
+      "name": "shakeNull",
+      "version": 2,
+      "params": {
+        "amplitude": {
+          "type": "number",
+          "default": 20,
+          "since": 1,
+          "min": 0,
+          "max": 100
+        },
+        "frequency": {
+          "type": "number",
+          "default": 3,
+          "since": 1,
+          "min": 0,
+          "max": 20
+        }
+      },
+      "preconditions": []
+    },
+    "wordmarkRig": {
+      "name": "wordmarkRig",
+      "version": 2,
+      "params": {
+        "breath": {
+          "type": "number",
+          "default": 0.02,
+          "since": 2,
+          "min": 0,
+          "max": 0.2
+        },
+        "settleFrames": {
+          "type": "integer",
+          "default": 4,
+          "since": 2,
+          "min": 0,
+          "max": 24
+        }
+      },
+      "preconditions": []
+    },
+    "trimWipe": {
+      "name": "trimWipe",
+      "version": 2,
+      "params": {
+        "wipeDuration": {
+          "type": "number",
+          "default": 1,
+          "since": 1,
+          "min": 0.1,
+          "max": 5
+        }
+      },
+      "preconditions": []
+    },
+    "counterRig": {
+      "name": "counterRig",
+      "version": 2,
+      "params": {
+        "multiplier": {
+          "type": "number",
+          "default": 1,
+          "since": 1,
+          "min": 0,
+          "max": 100
+        },
+        "padWidth": {
+          "type": "integer",
+          "default": 4,
+          "since": 1,
+          "min": 1,
+          "max": 8
+        }
+      },
+      "preconditions": []
+    }
+  },
+  "results": {
+    "pushFollow": {
+      "ok": true,
+      "value": {
+        "params": {
+          "dampX": 0.8,
+          "dampY": 0.8,
+          "delayFrames": 2
+        },
+        "warnings": []
+      }
+    },
+    "shakeNull": {
+      "ok": true,
+      "value": {
+        "params": {
+          "amplitude": 20,
+          "frequency": 3
+        },
+        "warnings": []
+      }
+    },
+    "wordmarkRig": {
+      "ok": true,
+      "value": {
+        "params": {
+          "breath": 0.02,
+          "settleFrames": 4
+        },
+        "warnings": []
+      }
+    },
+    "trimWipe": {
+      "ok": true,
+      "value": {
+        "params": {
+          "wipeDuration": 1
+        },
+        "warnings": []
+      }
+    },
+    "counterRig": {
+      "ok": true,
+      "value": {
+        "params": {
+          "multiplier": 1,
+          "padWidth": 4
+        },
+        "warnings": []
+      }
+    }
+  },
+  "rejected": {
+    "outOfRange": {
+      "ok": false,
+      "error": {
+        "code": "PresetParameterMismatch",
+        "message": "dampX=2 > max 1",
+        "hint": "Range [0, 1]"
+      }
+    },
+    "wrongType": {
+      "ok": false,
+      "error": {
+        "code": "PresetParameterMismatch",
+        "message": "param dampX must be number",
+        "hint": "See preset descriptor"
+      }
+    },
+    "tooNew": {
+      "ok": false,
+      "error": {
+        "code": "PresetVersionTooNew",
+        "message": "preset trimWipe is v99, runtime is v2",
+        "hint": "Update the rig-presets library or pin to an older version"
+      }
+    }
+  }
+}

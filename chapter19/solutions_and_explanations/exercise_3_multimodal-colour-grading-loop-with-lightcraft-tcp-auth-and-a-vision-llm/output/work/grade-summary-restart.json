@@ -1,0 +1,76 @@
+{
+  "startedAt": "2026-10-26T13:33:05Z",
+  "finishedAt": "2026-10-26T13:33:05Z",
+  "converged": [],
+  "timedOut": [
+    2
+  ],
+  "skipped": [
+    3,
+    1
+  ],
+  "iterations": {
+    "3": 0,
+    "2": 8,
+    "1": 0
+  },
+  "controls": {
+    "3": [],
+    "2": [
+      "light.contrast",
+      "light.contrast",
+      "light.whites",
+      "light.contrast",
+      "light.contrast",
+      "light.highlights",
+      "light.contrast",
+      "light.contrast"
+    ],
+    "1": []
+  },
+  "results": [
+    {
+      "photoId": 3,
+      "status": "skipped",
+      "iterations": 0,
+      "controls": [],
+      "verdicts": [],
+      "reason": "already tagged"
+    },
+    {
+      "photoId": 2,
+      "status": "timed_out",
+      "iterations": 8,
+      "controls": [
+        "light.contrast",
+        "light.contrast",
+        "light.whites",
+        "light.contrast",
+        "light.contrast",
+        "light.highlights",
+        "light.contrast",
+        "light.contrast"
+      ],
+      "verdicts": [
+        "retry",
+        "retry",
+        "retry",
+        "retry",
+        "retry",
+        "retry",
+        "retry",
+        "retry"
+      ],
+      "reason": "the iteration budget ran out"
+    },
+    {
+      "photoId": 1,
+      "status": "skipped",
+      "iterations": 0,
+      "controls": [],
+      "verdicts": [],
+      "reason": "already tagged"
+    }
+  ],
+  "auditTrail": "chapter19/solutions_and_explanations/exercise_3_multimodal-colour-grading-loop-with-lightcraft-tcp-auth-and-a-vision-llm/output/work/library/apex/grade-audit.jsonl"
+}

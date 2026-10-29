@@ -1,0 +1,5 @@
+// swatch-aliases.json (human-committed input the agent MUST honour)
+{
+  "Northwind Teal (legacy)": "#0F6E6E",       // the colour swatch.create expects
+  "Client Stripe (2022 brand)": "#F5A623"
+}

@@ -1,0 +1,49 @@
+{
+  "exercise": 4,
+  "renderer": "banner-runtime (PhotoCraft-shaped interface)",
+  "assertions": 29,
+  "status": "passed",
+  "iterations": 3,
+  "corrections": [
+    {
+      "id": "type.setStyle",
+      "params": {
+        "layer": 3,
+        "size": 52,
+        "leading": 64
+      }
+    },
+    {
+      "id": "layer.newAdjustmentLayer.curves",
+      "params": {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            64,
+            48
+          ],
+          [
+            192,
+            208
+          ],
+          [
+            255,
+            255
+          ]
+        ]
+      }
+    }
+  ],
+  "finalPath": "chapter10/solutions_and_explanations/exercise_4_multimodal-aesthetic-gate-vision-model-driven-loop-on-rendered-banners/output/graded/SKU-200_4:5-en-US.png",
+  "finalBytes": 8741,
+  "finalSha256": "d6a4fe8f0136e7273eae5a4ea633ea51543c510b6943f39dd6bf65680028455e",
+  "artefacts": [
+    "graded/SKU-200_4:5-en-US.png",
+    "graded/SKU-200_4:5-en-US_audit.json",
+    "graded/SKU-BAD_1:1-en-US_audit.json"
+  ],
+  "result": "clipping, contrast/hue and centring corrected in bounded passes; accepted render hashed"
+}

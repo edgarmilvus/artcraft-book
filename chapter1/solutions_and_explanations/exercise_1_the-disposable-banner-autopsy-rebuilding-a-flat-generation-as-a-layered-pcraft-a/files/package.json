@@ -1,0 +1,13 @@
+{
+  "name": "cap1-solutions-photocraft",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chapter 1 — Solutions and Explanations (Exercise 1 banner) against real PhotoCraft",
+  "scripts": {
+    "run": "node run_photocraft.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest"
+  }
+}

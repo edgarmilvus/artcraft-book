@@ -1,0 +1,16 @@
+{
+  "exercise": 4,
+  "engine": "DesignCraft dual export (scripted engine, real PDF/EPUB)",
+  "assertions": 47,
+  "artefactCount": 2,
+  "preflight": 2,
+  "signature": "0bd702e3b23389b3acbd84501190b4049a649ba08125c891bc7afe9947009ef2",
+  "artefacts": [
+    "book-print.pdf",
+    "book.epub",
+    "qa-manifest.json",
+    "rejected-print.json",
+    "rejected-digital.json"
+  ],
+  "result": "print + digital exported with two preflight gates; print, digital and export failures all roll both files back"
+}

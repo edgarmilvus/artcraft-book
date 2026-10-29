@@ -1,0 +1,11 @@
+{
+  "account": "4000",
+  "account_label": "Total Revenue",
+  "canonical_account": "Rev.Net",
+  "entity": "Helios-EU",
+  "error": "label_drift",
+  "expected_label": "Net Revenue",
+  "message": "Helios-EU reports account 4000 as 'Total Revenue'; the parent's chart of accounts expects 'Net Revenue'",
+  "named_range": "Helios_EU.Amount.Rev_Net",
+  "ok": false
+}

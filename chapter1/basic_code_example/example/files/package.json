@@ -1,0 +1,26 @@
+{
+  "name": "artcraft-layered-render-basic",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chapter 1 — Basic Code Example (brief -> structured plan -> layered .pcraft via MCP)",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "latest",
+    "@ai-sdk/react": "latest",
+    "@modelcontextprotocol/sdk": "latest",
+    "ai": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

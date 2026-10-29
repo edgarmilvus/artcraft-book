@@ -1,0 +1,16 @@
+{
+  "exercise": 3,
+  "engine": "filmcraft timebase (pure)",
+  "assertions": 29,
+  "cuts": 12,
+  "edges": 24,
+  "maxResidualAbsTicks": "5153823675",
+  "maxResidualMicroseconds": 20289,
+  "maxResidualSamples48k": 973,
+  "dfRoundTripFailures": 0,
+  "artefacts": [
+    "edl-conversion.csv",
+    "parity-report.json"
+  ],
+  "result": "25 -> 23.976 conversion stayed within half a target frame; 29.97 DF round-tripped"
+}

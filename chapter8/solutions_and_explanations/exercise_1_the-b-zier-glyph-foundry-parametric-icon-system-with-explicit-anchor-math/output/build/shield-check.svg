@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <title>shield-check</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M64 8 C80 18.667 96 29.333 112 40 C106.667 58.667 101.333 77.333 96 96 C85.333 104 74.667 112 64 120 C53.333 112 42.667 104 32 96 C26.667 77.333 21.333 58.667 16 40 C32 29.333 48 18.667 64 8 Z M88 56 L80 48 L56 72 L48 64 Z" fill="none" fill-rule="evenodd" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

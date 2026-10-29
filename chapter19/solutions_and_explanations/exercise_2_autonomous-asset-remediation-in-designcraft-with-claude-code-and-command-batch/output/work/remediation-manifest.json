@@ -1,0 +1,33 @@
+{
+  "documentId": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/q3-catalog.designcraft",
+  "remediated": {
+    "linksRelinked": [
+      "hero-1.png",
+      "hero-2.png",
+      "hero-3.png",
+      "hero-4.png"
+    ],
+    "linksPlaceholdered": [
+      "hero-5.png",
+      "hero-6.png",
+      "hero-7.png"
+    ],
+    "fontsReplaced": [
+      {
+        "from": "Inter-Bold",
+        "to": "Inter-SemiBold"
+      }
+    ],
+    "oversetResolved": true,
+    "swatchesRestored": [
+      "Northwind Teal (legacy)"
+    ]
+  },
+  "halted": [],
+  "certificate": {
+    "pdf": "cert-q3-catalog.pdf",
+    "sha256": "89c66d9e57717427812b37168c4be52a446a260652b63660fbcad79f9d8a355c",
+    "auditLog": "cert-q3-catalog.audit.json"
+  },
+  "remediatedDocument": "chapter19/solutions_and_explanations/exercise_2_autonomous-asset-remediation-in-designcraft-with-claude-code-and-command-batch/output/work/q3-catalog.remediated.designcraft"
+}

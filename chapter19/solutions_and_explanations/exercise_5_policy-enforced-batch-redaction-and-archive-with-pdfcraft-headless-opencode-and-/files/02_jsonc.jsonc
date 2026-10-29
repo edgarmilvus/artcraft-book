@@ -1,0 +1,37 @@
+// opencode.json - the MCP entry that points the headless agent at PdfCraft.
+//
+// OpenCode V2 keeps MCP servers under `mcp.servers` (not directly under
+// `mcp`), a local server is `type: "local"` with `command` as an ARRAY of the
+// executable followed by its arguments, and a server is switched off with
+// `disabled: true` - there is no `enabled` field.
+//
+// PdfCraft's `mcp` sub-command takes NO `--automation-read-root` or
+// `--automation-write-root` flag: those belong to PhotoCraft, FilmCraft,
+// VectorCraft and DeckCraft.  PdfCraft confines every path to the directory
+// given by `--root`, and refuses anything else with
+//     <path> is outside the allowed directory <root>
+// so the batch root is the whole boundary and the flag is spelled `--root`.
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "pdfcraft-prod": {
+        "type": "local",
+        "command": ["pdfcraft-cli", "mcp", "--root", "/work/harrow-vale"],
+        "cwd": "/work/harrow-vale",
+        "disabled": false,
+        "timeout": {
+          "startup": 45000,
+          "execution": 600000
+        }
+      }
+    }
+  }
+}
+//
+// Under the default Code Mode the engine's tools are grouped under the
+// normalised server name, so the agent calls them as
+//     tools.pdfcraft_prod.command_run({ "id": "export.docx", "params": { ... } })
+//     tools.pdfcraft_prod.redact_mark({ "doc": 1, "pattern": "phone" })
+// and the command catalogue is discovered with
+//     tools.pdfcraft_prod.command_list({})

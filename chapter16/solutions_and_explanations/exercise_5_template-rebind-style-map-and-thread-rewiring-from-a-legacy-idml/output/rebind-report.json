@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "styleMapApplied": [
+    {
+      "from": "BodyText-Legacy",
+      "to": "BODY-CANONICAL",
+      "paragraphsAffected": 2
+    },
+    {
+      "from": "Headline-02",
+      "to": "HEAD-H1-GRID",
+      "paragraphsAffected": 0
+    },
+    {
+      "from": "Caption_7",
+      "to": "CAPTION-GRID",
+      "paragraphsAffected": 0
+    }
+  ],
+  "storiesRewired": [
+    {
+      "name": "Story 1",
+      "frames": [
+        100,
+        101
+      ],
+      "overset": false
+    },
+    {
+      "name": "Story 2",
+      "frames": [
+        102,
+        103
+      ],
+      "overset": false
+    },
+    {
+      "name": "Story 3",
+      "frames": [
+        104,
+        105
+      ],
+      "overset": false
+    },
+    {
+      "name": "Story 4",
+      "frames": [
+        106,
+        107
+      ],
+      "overset": false
+    },
+    {
+      "name": "Story 5",
+      "frames": [
+        108,
+        109
+      ],
+      "overset": false
+    },
+    {
+      "name": "Story 6",
+      "frames": [
+        110,
+        111
+      ],
+      "overset": false
+    },
+    {
+      "name": "Story 7",
+      "frames": [
+        112,
+        113
+      ],
+      "overset": false
+    },
+    {
+      "name": "Story 8",
+      "frames": [
+        114,
+        115
+      ],
+      "overset": false
+    }
+  ],
+  "orphanFramesRemoved": 1,
+  "fontSubstitutions": [
+    {
+      "family": "Helvetica Neue",
+      "style": "Regular",
+      "toFamily": "Inter",
+      "toStyle": "Regular",
+      "reason": "not-installed",
+      "documentFontPreserved": false
+    }
+  ],
+  "gridPort": {
+    "templateStart": 48,
+    "templateIncrement": 13,
+    "newStart": 52,
+    "newIncrement": 14,
+    "ratio": 1.0732323232323233
+  },
+  "postConditions": {
+    "everyFrameSingleStory": true,
+    "everyThreadTerminates": true,
+    "allStylesCanonical": true,
+    "allMissingFontsResolved": false
+  }
+}

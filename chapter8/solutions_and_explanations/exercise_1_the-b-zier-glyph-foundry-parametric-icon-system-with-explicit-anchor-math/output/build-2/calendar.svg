@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <title>calendar</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M16 24 L112 24 L112 112 L16 112 Z M16 56 L112 56 L112 48 L16 48 Z" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

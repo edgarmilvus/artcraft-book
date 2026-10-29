@@ -1,0 +1,14 @@
+{"suite":"lightcraft","command":"export","doc_id":1,"reversible":true}
+{"suite":"photocraft","command":"command_batch","doc_id":0,"reversible":true}
+{"suite":"photocraft","command":"doc_save","doc_id":0,"reversible":true}
+{"suite":"designcraft","command":"open_document","doc_id":"templates/hero_furniture.designcraft","reversible":false}
+{"suite":"designcraft","command":"layout.documentSetup","doc_id":"templates/hero_furniture.designcraft","reversible":true}
+{"suite":"designcraft","command":"place_image","doc_id":"templates/hero_furniture.designcraft","reversible":true}
+{"suite":"designcraft","command":"frame.create","doc_id":"templates/hero_furniture.designcraft","reversible":true}
+{"suite":"designcraft","command":"text.insert","doc_id":10,"reversible":true}
+{"suite":"designcraft","command":"export_png","doc_id":"hero/hero_1920x1080.png","reversible":false}
+{"suite":"designcraft","command":"layout.documentSetup","doc_id":"templates/hero_furniture.designcraft","reversible":true}
+{"suite":"designcraft","command":"export_png","doc_id":"hero/hero_1080x1080.png","reversible":false}
+{"suite":"pdfcraft","command":"form_fill","doc_id":1,"reversible":true}
+{"suite":"pdfcraft","command":"doc_set_info","doc_id":1,"reversible":true}
+{"suite":"pdfcraft","command":"doc_save","doc_id":1,"reversible":false}

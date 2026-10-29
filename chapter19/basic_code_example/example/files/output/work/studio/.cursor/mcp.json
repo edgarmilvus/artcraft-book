@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "photocraft": {
+      "command": "photocraft-cli",
+      "args": [
+        "mcp",
+        "--automation-read-root",
+        "chapter19/basic_code_example/example/files/output/work/studio",
+        "--automation-write-root",
+        "chapter19/basic_code_example/example/files/output/work/studio/render"
+      ],
+      "env": {
+        "PHOTOCRAFT_TOKEN": "harness-token"
+      }
+    }
+  }
+}

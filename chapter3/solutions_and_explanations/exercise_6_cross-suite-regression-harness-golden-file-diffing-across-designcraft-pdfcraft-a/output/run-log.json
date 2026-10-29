@@ -1,0 +1,23 @@
+{
+  "checks": 69,
+  "failures": [],
+  "quirks": [
+    "WordCraft's list_commands omits the enabled flag; the harness treats a missing flag as enabled",
+    "PdfCraft render PNG bytes are compared with pngjs only when the sha256 hashes differ",
+    "goldens keep canonical text and one 150-dpi render per PDF page"
+  ],
+  "fixtures": [
+    "cover-page",
+    "cover-page-monochrome",
+    "cross-suite",
+    "designcraft-cover",
+    "wordcraft-note"
+  ],
+  "goldens": [
+    "fixtures/cover-page/golden.json",
+    "fixtures/cover-page-monochrome/golden.json",
+    "fixtures/cross-suite/golden.json",
+    "fixtures/designcraft-cover/golden.json",
+    "fixtures/wordcraft-note/golden.json"
+  ]
+}

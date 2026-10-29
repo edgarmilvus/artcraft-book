@@ -1,0 +1,65 @@
+{
+  "exercise": 1,
+  "engine": "photocraft-cli",
+  "assertions": 35,
+  "feedRows": 7,
+  "accepted": 2,
+  "deferred": 0,
+  "rejected": [
+    {
+      "rowIndex": 2,
+      "sku": "NO-TITLE",
+      "reason": "missing-title",
+      "detail": "title missing or whitespace-only"
+    },
+    {
+      "rowIndex": 3,
+      "sku": "BAD-CURRENCY",
+      "reason": "invalid-currency",
+      "detail": "currency must be an uppercase 3-letter ISO 4217 code (got \"usd\")"
+    },
+    {
+      "rowIndex": 4,
+      "sku": "ESCAPE",
+      "reason": "path-escape",
+      "detail": "heroImage \"../secret.png\" escapes the read root"
+    },
+    {
+      "rowIndex": 5,
+      "sku": "BAD-SALE",
+      "reason": "invalid-sale-price",
+      "detail": "salePrice 12 must be a finite number strictly below price 10"
+    },
+    {
+      "rowIndex": 6,
+      "sku": "MOJIBAKE",
+      "reason": "mojibake-title",
+      "detail": "title contains U+FFFD (upstream decode error)"
+    }
+  ],
+  "artifacts": [
+    {
+      "rowIndex": 0,
+      "sku": "SKU-1",
+      "path": "SKU-1.png",
+      "bytes": 699747,
+      "sha256": "dda526c725080822704f7487ac6a3e91c0a80b3b10aece62e5ac7053a701d554"
+    },
+    {
+      "rowIndex": 1,
+      "sku": "SKU-2",
+      "path": "SKU-2.png",
+      "bytes": 701959,
+      "sha256": "eb55e5b13ebb3050b24c3b94ee38ade054d8f630f609a9a5e25f780dca6f1067"
+    }
+  ],
+  "artefacts": [
+    "feed.json",
+    "feeds/hero-a.png",
+    "feeds/hero-b.png",
+    "banners/SKU-1.png",
+    "banners/SKU-2.png",
+    "banners/feed-audit.json"
+  ],
+  "result": "two usable rows rendered and hashed; five rows rejected in feed order with one reason each"
+}

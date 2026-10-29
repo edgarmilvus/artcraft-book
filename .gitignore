@@ -1,0 +1,92 @@
+# --- dependencies -----------------------------------------------------------
+# The twenty chapters ship ninety-odd projects. They all share one
+# dependency tree at the repository root; "npm install" writes it there
+# and "npm run link" points the projects at it.
+# No trailing slash: the per-project entries are *symlinks* to the root
+# tree, and "node_modules/" only matches real directories.
+node_modules
+.pnpm-store/
+.npm/
+
+# --- engine binaries --------------------------------------------------------
+# The ArtCraft CLIs are proprietary macOS executables. They are published
+# as GitHub Release assets and fetched by tools/install_craft_clis.sh —
+# they are never committed.
+tools/craft-cli/bin/
+tools/craft-cli/*.tar.gz
+tools/craft-cli/*.zip
+# the extracted release payloads
+tools/craft-cli/*-*/
+
+# --- node -------------------------------------------------------------------
+# A pinned Node 22 is downloaded by tools/install_node.sh; the system
+# Node is used when it is new enough.
+tools/node/
+
+# --- secrets ----------------------------------------------------------------
+# The harnesses run with an empty environment; these exist only for the
+# optional live-provider paths.
+tools/secrets.env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- python -----------------------------------------------------------------
+# The repository's own environment, built by
+# tools/install_python_deps.sh.
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- build output -----------------------------------------------------------
+# Only the repository's own build scratch is ignored. The `out/`,
+# `build/` and `dist/` directories *inside* a chapter are the artefacts
+# the harnesses produced, and they are part of the record.
+/dist/
+/build/
+/out/
+*.tsbuildinfo
+*.tgz
+
+# --- run outputs ------------------------------------------------------------
+# A harness writes its results under output/. The repository keeps the proof
+# that it ran — the log, the manifest, the checksums, one small preview — and
+# leaves the bulk to the release bundle (see artifacts/README.md). These rules
+# cover files produced by a later run; the ones already committed are tracked
+# and stay. Nothing here is an input: a harness rebuilds what it needs.
+**/output/**/*.pcraft
+**/output/**/*.tif
+**/output/**/*.tiff
+**/output/**/*.wav
+**/output/**/*.mp4
+**/output/**/*.mov
+**/output/**/*.webm
+**/output/**/*.psd
+**/output/**/*.dng
+**/output/**/*.exr
+**/output/**/*.onnx
+**/output/**/*.designcraft
+**/output/**/*.vectorcraft
+**/output/**/*.craft
+
+# --- scratch ----------------------------------------------------------------
+.scratch/
+*.swp
+.DS_Store
+
+# --- working files ----------------------------------------------------------
+# Book production notes: they describe the manuscript pipeline and the
+# tooling that maintains it. They live in the working tree, never here.
+/NOTES_book_production.md
+# Local scratch used while building the book. Not part of the companion
+# repository, and not referenced by any chapter.
+/access.log
+/craft_apps_agent_docs.md
+/.probe/

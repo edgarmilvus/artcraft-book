@@ -1,0 +1,92 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "slug": "icon-parcel",
+      "brandCompliant": true,
+      "anchorCount": 10,
+      "strokeWidthPt": 3.0,
+      "strokeCap": "round",
+      "fillOpacity": 0.9,
+      "cornerClass": "soft",
+      "sourcePath": "icon-parcel.vectorcraft"
+    },
+    {
+      "id": 2,
+      "slug": "icon-box",
+      "brandCompliant": true,
+      "anchorCount": 4,
+      "strokeWidthPt": 2.5,
+      "strokeCap": "butt",
+      "fillOpacity": 1.0,
+      "cornerClass": "sharp",
+      "sourcePath": "icon-box.vectorcraft"
+    },
+    {
+      "id": 3,
+      "slug": "icon-disc",
+      "brandCompliant": true,
+      "anchorCount": 48,
+      "strokeWidthPt": 4.0,
+      "strokeCap": "round",
+      "fillOpacity": 0.8,
+      "cornerClass": "rounded",
+      "sourcePath": "icon-disc.vectorcraft"
+    },
+    {
+      "id": 4,
+      "slug": "icon-shield",
+      "brandCompliant": true,
+      "anchorCount": 6,
+      "strokeWidthPt": 2.0,
+      "strokeCap": "square",
+      "fillOpacity": 1.0,
+      "cornerClass": "sharp",
+      "sourcePath": "icon-shield.vectorcraft"
+    },
+    {
+      "id": 5,
+      "slug": "icon-arrow",
+      "brandCompliant": true,
+      "anchorCount": 7,
+      "strokeWidthPt": 3.5,
+      "strokeCap": "round",
+      "fillOpacity": 0.9,
+      "cornerClass": "soft",
+      "sourcePath": "icon-arrow.vectorcraft"
+    },
+    {
+      "id": 6,
+      "slug": "icon-frame",
+      "brandCompliant": true,
+      "anchorCount": 4,
+      "strokeWidthPt": 2.0,
+      "strokeCap": "butt",
+      "fillOpacity": 1.0,
+      "cornerClass": "soft",
+      "sourcePath": "icon-frame.vectorcraft"
+    },
+    {
+      "id": 7,
+      "slug": "icon-badge",
+      "brandCompliant": true,
+      "anchorCount": 6,
+      "strokeWidthPt": 3.0,
+      "strokeCap": "square",
+      "fillOpacity": 0.95,
+      "cornerClass": "rounded",
+      "sourcePath": "icon-badge.vectorcraft"
+    },
+    {
+      "id": 8,
+      "slug": "icon-token",
+      "brandCompliant": true,
+      "anchorCount": 48,
+      "strokeWidthPt": 2.5,
+      "strokeCap": "round",
+      "fillOpacity": 1.0,
+      "cornerClass": "soft",
+      "sourcePath": "icon-token.vectorcraft"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+agent,read_root,write_root,resource_prefixes,templates,tools,prompts
+"copywriting","/work/design-system","/work/scratch/copywriting","designsystem://tokens/type-scale|designsystem://style-guide","","design.system.describe",""
+"layout","/work/design-system","/work/scratch/layout","designsystem://tokens/spacing","designsystem://templates/{templateName}","design.system.generate_layout|design.system.resolve_token|design.system.validate_contrast","layout:generate_grid|designsystem:apply_brand_kit"
+"color","/work/design-system","/work/scratch/color","designsystem://tokens/colors|designsystem://tokens/contrast-pairs","","design.system.resolve_token|design.system.validate_contrast","designsystem:apply_brand_kit"

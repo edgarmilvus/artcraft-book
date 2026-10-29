@@ -1,0 +1,375 @@
+{
+  "fleet": {
+    "studio": "Northwind Motion",
+    "vaultUri": "vault://northwind/mcp-fleet",
+    "keyRef": "mcp-fleet-hmac-v1",
+    "defaultReadRoots": [
+      "/work/projects"
+    ],
+    "defaultWriteRoots": [
+      "/work/projects"
+    ],
+    "generatorVersion": "1.4.0"
+  },
+  "roles": [
+    "junior-editor",
+    "colorist-senior",
+    "motion-senior",
+    "compliance-auditor"
+  ],
+  "servers": [
+    {
+      "id": "designcraft-prod",
+      "app": "designcraft",
+      "binary": "designcraft-cli",
+      "mode": "mcp",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects"
+      ],
+      "env": {
+        "NORTHWIND_DESIGN_TOKEN": "sk-live-0f9a2c"
+      }
+    },
+    {
+      "id": "lightcraft-prod",
+      "app": "lightcraft",
+      "binary": "lightcraft-cli",
+      "mode": "mcp",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects"
+      ],
+      "env": {
+        "NORTHWIND_LIBRARY_TOKEN": "{{vault:northwind/library-token}}"
+      }
+    },
+    {
+      "id": "effectcraft-prod",
+      "app": "effectcraft",
+      "binary": "effectcraft-cli",
+      "mode": "mcp",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects"
+      ],
+      "env": {
+        "NORTHWIND_RENDER_TOKEN": "{{vault:northwind/render-token}}"
+      }
+    },
+    {
+      "id": "filmcraft-prod",
+      "app": "filmcraft",
+      "binary": "filmcraft-cli",
+      "mode": "mcp",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects"
+      ],
+      "env": {}
+    },
+    {
+      "id": "pdfcraft-prod",
+      "app": "pdfcraft",
+      "binary": "pdfcraft-cli",
+      "mode": "mcp",
+      "readRoots": [
+        "/work/projects"
+      ],
+      "writeRoots": [
+        "/work/projects"
+      ],
+      "env": {
+        "NORTHWIND_PDF_TOKEN": "{{vault:northwind/pdf-token}}"
+      }
+    }
+  ],
+  "capabilities": {
+    "junior-editor": {
+      "designcraft-prod": {
+        "allow": [
+          "file.new",
+          "frame.create",
+          "type.create",
+          "type.char",
+          "object.fill",
+          "layer.new",
+          "place.styles",
+          "links.list",
+          "font.list",
+          "story.get"
+        ],
+        "deny": [
+          "edit.clear",
+          "layout.pages.delete",
+          "object.setLayer",
+          "file.exportIdml",
+          "bookmark.delete",
+          "layer.delete",
+          "note.delete",
+          "links.relink"
+        ],
+        "requireApproval": [
+          "file.open",
+          "place.styles"
+        ],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/banners"
+        ]
+      },
+      "pdfcraft-prod": {
+        "allow": [
+          "file.open"
+        ],
+        "deny": [
+          "redact.mark",
+          "redact.apply",
+          "redact.clear",
+          "redact.sanitize"
+        ],
+        "requireApproval": [
+          "file.save"
+        ],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/archive"
+        ]
+      }
+    },
+    "colorist-senior": {
+      "lightcraft-prod": {
+        "allow": [
+          "develop.get",
+          "develop.adjust",
+          "develop.curve",
+          "develop.controls",
+          "develop.matchExposure",
+          "develop.wb",
+          "curve.applyPreset",
+          "filter.applyPreset",
+          "photo.flag",
+          "photo.pick",
+          "photo.rate",
+          "keyword.toggleFromSet",
+          "export.checkTarget"
+        ],
+        "deny": [
+          "develop.autoSync",
+          "develop.resetSection",
+          "photo.delete",
+          "photo.deletePermanently",
+          "library.emptyRecentlyDeleted",
+          "library.removeFolder",
+          "history.clear",
+          "keyword.delete"
+        ],
+        "requireApproval": [
+          "develop.reset",
+          "app.export"
+        ],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/color"
+        ]
+      }
+    },
+    "motion-senior": {
+      "effectcraft-prod": {
+        "allow": [
+          "comp.new",
+          "comp.open",
+          "layer.newSolid",
+          "layer.newText",
+          "layer.addShapeItem",
+          "layer.applyTextPreset",
+          "prop.set",
+          "prop.addKey",
+          "keys.easyEase",
+          "effect.apply",
+          "effect.list",
+          "renderQueue.add",
+          "file.open",
+          "file.save"
+        ],
+        "deny": [
+          "file.installScript",
+          "file.installScriptUIPanel",
+          "prop.reset",
+          "edit.purge"
+        ],
+        "requireApproval": [
+          "file.runScript"
+        ],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/motion"
+        ]
+      },
+      "filmcraft-prod": {
+        "allow": [
+          "file.newProject",
+          "file.newSequence",
+          "file.open",
+          "file.save",
+          "media.linkMedia",
+          "media.attachProxies",
+          "clip.createMulticam",
+          "sequence.addEdit",
+          "sequence.renderInToOut",
+          "markers.add",
+          "lut.import",
+          "lut.export"
+        ],
+        "deny": [
+          "project.delete",
+          "file.discardRecovery",
+          "edit.consolidateDuplicates"
+        ],
+        "requireApproval": [
+          "sequence.renderEffectsInToOut"
+        ],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/motion"
+        ]
+      }
+    },
+    "compliance-auditor": {
+      "designcraft-prod": {
+        "allow": [
+          "links.list",
+          "font.list",
+          "story.get",
+          "find.objects",
+          "find.find"
+        ],
+        "deny": [
+          "edit.clear",
+          "layout.pages.delete",
+          "object.setLayer",
+          "file.exportIdml",
+          "bookmark.delete",
+          "layer.delete",
+          "note.delete",
+          "links.relink",
+          "font.replace"
+        ],
+        "requireApproval": [],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/audit"
+        ]
+      },
+      "lightcraft-prod": {
+        "allow": [
+          "develop.get",
+          "photo.inspect",
+          "history.list",
+          "journal.list",
+          "library.info"
+        ],
+        "deny": [
+          "develop.reset",
+          "develop.autoSync",
+          "photo.delete",
+          "photo.deletePermanently",
+          "library.emptyRecentlyDeleted",
+          "library.removeFolder",
+          "history.clear"
+        ],
+        "requireApproval": [],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/audit"
+        ]
+      },
+      "effectcraft-prod": {
+        "allow": [
+          "comp.info",
+          "layer.tree",
+          "prop.get",
+          "file.open"
+        ],
+        "deny": [
+          "file.save",
+          "file.runScript",
+          "file.installScript",
+          "prop.set",
+          "edit.purge"
+        ],
+        "requireApproval": [],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/audit"
+        ]
+      },
+      "filmcraft-prod": {
+        "allow": [
+          "sequence.inspect",
+          "project.inspect",
+          "scopes.read",
+          "history.list"
+        ],
+        "deny": [
+          "project.delete",
+          "file.save",
+          "sequence.renderEffectsInToOut",
+          "edit.consolidateDuplicates"
+        ],
+        "requireApproval": [],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/audit"
+        ]
+      },
+      "pdfcraft-prod": {
+        "allow": [
+          "file.open",
+          "doc.compare",
+          "redact.search",
+          "redact.sanitize"
+        ],
+        "deny": [
+          "file.save",
+          "redact.mark",
+          "redact.apply",
+          "redact.clear"
+        ],
+        "requireApproval": [],
+        "readRoots": [
+          "/work/projects"
+        ],
+        "writeRoots": [
+          "/work/projects/audit"
+        ]
+      }
+    }
+  }
+}

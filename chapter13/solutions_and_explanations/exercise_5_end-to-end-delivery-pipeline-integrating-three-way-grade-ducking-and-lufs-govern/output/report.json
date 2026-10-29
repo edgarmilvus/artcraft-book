@@ -1,0 +1,54 @@
+{
+  "exercise": 5,
+  "engine": "filmcraft delivery pipeline (pure spec normalizer)",
+  "assertions": 31,
+  "clients": [
+    "StreamingA",
+    "StreamingB",
+    "BroadcastX"
+  ],
+  "normalized": {
+    "A": {
+      "client": "StreamingA",
+      "creativeTone": "warm_cinematic",
+      "acquisitionCamera": "Sony FX6",
+      "loudnessStandard": "STREAMING",
+      "integratedLufsTarget": -14,
+      "integratedLufsTolerance": 1,
+      "truePeakCeilingDbtp": -1,
+      "expectedRuntimeSec": 900,
+      "targetCodec": "h264",
+      "targetContainer": "mov"
+    },
+    "B": {
+      "client": "StreamingB",
+      "creativeTone": "cool_desaturated",
+      "acquisitionCamera": "ARRI Alexa",
+      "loudnessStandard": "ATSC_A85",
+      "integratedLufsTarget": -24,
+      "integratedLufsTolerance": 2,
+      "truePeakCeilingDbtp": -2,
+      "expectedRuntimeSec": 1200,
+      "targetCodec": "prores",
+      "targetContainer": "mov",
+      "proresProfile": "4444"
+    },
+    "X": {
+      "client": "BroadcastX",
+      "creativeTone": "warm_cinematic",
+      "acquisitionCamera": "Sony HDC-3500",
+      "loudnessStandard": "EBU_R128",
+      "integratedLufsTarget": -23,
+      "integratedLufsTolerance": 0.5,
+      "truePeakCeilingDbtp": -1,
+      "expectedRuntimeSec": 2520,
+      "targetCodec": "dnxhr",
+      "targetContainer": "mov"
+    }
+  },
+  "artefacts": [
+    "normalized-specs.json",
+    "delivery_manifest.json"
+  ],
+  "result": "three client briefs normalized to one delivery spec; manifest and idempotency hash written"
+}

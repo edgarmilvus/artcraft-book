@@ -1,0 +1,45 @@
+{
+  "name": "artcraft-web-ai-series",
+  "version": "1.0.0",
+  "description": "Companion code for ArtCraft Book: The Agentic Creative Studio in TypeScript — 20 chapters of headless ArtCraft automation, every listing executed against the real engines.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "postinstall": "node tools/link_node_modules.mjs",
+    "link": "node tools/link_node_modules.mjs",
+    "typecheck": "node tools/typecheck_all.mjs",
+    "test": "./run_all.sh"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "latest",
+    "@ai-sdk/react": "latest",
+    "@anthropic-ai/sdk": "^0.71.0",
+    "@langchain/langgraph": "^0.2.0",
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "ai": "latest",
+    "ajv": "^8.17.1",
+    "execa": "^10.0.0",
+    "lottie-web": "^5.13.0",
+    "next": "latest",
+    "openai": "^7.0.0",
+    "pino": "^9.3.2",
+    "playwright-core": "^1.56.0",
+    "pngjs": "^7.0.0",
+    "puppeteer-core": "^25.15.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

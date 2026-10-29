@@ -1,0 +1,18 @@
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { copyFileSync } from "node:fs";
+const root=process.argv[2];
+copyFileSync(`${root}/JAMS-2026-0089.pdf`,`${root}/test.pdf`);
+const t=new StdioClientTransport({command:"tools/craft-cli/bin/pdfcraft-cli",args:["mcp","--root",root],cwd:root,stderr:"pipe"}); t.stderr?.on("data",()=>{});
+const c=new Client({name:"p",version:"1"},{capabilities:{}}); await c.connect(t);
+const u=r=>{const b=r.content.find(x=>x.type==="text");try{return JSON.parse(b.text)}catch{return b.text}};
+const call=async(n,a={})=>u(await c.callTool({name:n,arguments:a}));
+let o=await call('doc_open',{path:'test.pdf'}); let doc=o.doc;
+console.log('convert',JSON.stringify(await call('pdfa_convert',{doc,level:'2b'})).slice(0,400));
+console.log('verify-before-save',JSON.stringify(await call('pdfa_verify',{doc,level:'2b'})).slice(0,600));
+console.log('save',JSON.stringify(await call('doc_save',{doc})));
+console.log('verify-after-save',JSON.stringify(await call('pdfa_verify',{doc,level:'2b'})).slice(0,600));
+await call('doc_close',{doc});
+o=await call('doc_open',{path:'test.pdf'}); doc=o.doc;
+console.log('verify-reopen',JSON.stringify(await call('pdfa_verify',{doc,level:'2b'})).slice(0,800));
+await c.close();

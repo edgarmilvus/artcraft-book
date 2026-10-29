@@ -1,0 +1,16 @@
+{
+  "exercise": 3,
+  "engine": "bounded MCP recovery (pure detection + schema, real PNG repair)",
+  "assertions": 46,
+  "budgetUsed": 6,
+  "maxCalls": 12,
+  "repaired": 2,
+  "artefacts": [
+    "broken.json",
+    "Main_HeroLoop.healed.json",
+    "plan.json",
+    "recovery-transcript.md",
+    "recovered-assets/"
+  ],
+  "result": "two unmapped assets detected, regenerated as content-addressed PNGs and healed into a schema-valid Lottie"
+}

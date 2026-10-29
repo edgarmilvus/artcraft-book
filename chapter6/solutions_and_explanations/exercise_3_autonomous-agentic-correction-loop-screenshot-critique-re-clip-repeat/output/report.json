@@ -1,0 +1,200 @@
+{
+  "chapter": 6,
+  "exercise": 3,
+  "checks": {
+    "passed": 18,
+    "failed": 0,
+    "total": 18
+  },
+  "scenarios": {
+    "resolved": {
+      "resolved": true,
+      "iterations": 3,
+      "undoStepsPlanned": 0,
+      "undoStepsApplied": 0,
+      "error": null,
+      "decisionTree": [
+        "iter 1: clipping (severity 0.80) \u2192 corrected, 7 undo step(s)",
+        "iter 1: legibility (severity 0.60) \u2192 corrected, 7 undo step(s)",
+        "iter 2: palette (severity 0.40) \u2192 corrected, 1 undo step(s)",
+        "iter 3: verdict ok \u2014 stopping"
+      ]
+    },
+    "deadlock": {
+      "resolved": false,
+      "iterations": 2,
+      "undoStepsPlanned": 7,
+      "undoStepsApplied": 7,
+      "error": "the critique did not change after a correction",
+      "decisionTree": [
+        "iter 1: clipping (severity 0.80) \u2192 corrected, 7 undo step(s)",
+        "iter 1: legibility (severity 0.60) \u2192 corrected, 7 undo step(s)",
+        "iter 2: clipping (severity 0.80) \u2192 corrected, 0 undo step(s)",
+        "iter 2: legibility (severity 0.60) \u2192 corrected, 0 undo step(s)"
+      ]
+    },
+    "schema": {
+      "resolved": false,
+      "iterations": 0,
+      "undoStepsPlanned": 0,
+      "undoStepsApplied": 0,
+      "error": "ValidationError: 'severity' is a required property\n\nFailed validating 'required' in schema['properties']['issues']['items']:\n    {'type': 'object',\n     'required': ['kind', 'severity', 'hint', 'region'],\n     'additionalProperties': False,\n     'properties': {'kind': {'enum': ['clipping',\n                                      'legibility',\n                                      'palette',\n                                      'composition']},\n                    'severity': {'type': 'number',\n                                 'minimum': 0,\n                                 'maximum': 1},\n                    'hint': {'type': 'string'},\n                    'region': {'type': 'array',\n                               'minItems': 4,\n                               'maxItems': 4,\n                               'items': {'type': 'number'}}}}\n\nOn instance['issues'][0]:\n    {'kind': 'palette', 'hint': 'missing severity'}",
+      "decisionTree": []
+    }
+  },
+  "serverCalls": {
+    "resolved": [
+      "document.inspect",
+      "layer.releaseClippingMask",
+      "layer.createClippingMask",
+      "select.rect",
+      "layer.newFillLayer.solidColor",
+      "document.inspect",
+      "layer.setProps",
+      "layer.moveTo",
+      "select.deselect",
+      "document.inspect",
+      "document.inspect",
+      "layer.newAdjustmentLayer.hueSaturation",
+      "document.inspect",
+      "document.inspect",
+      "document.inspect"
+    ],
+    "deadlock": [
+      "file.new",
+      "document.inspect",
+      "document.inspect",
+      "layer.releaseClippingMask",
+      "layer.createClippingMask",
+      "select.rect",
+      "layer.newFillLayer.solidColor",
+      "document.inspect",
+      "layer.setProps",
+      "layer.moveTo",
+      "select.deselect",
+      "document.inspect",
+      "document.inspect",
+      "document.inspect",
+      "document.inspect",
+      "edit.undo",
+      "document.inspect",
+      "edit.undo",
+      "document.inspect",
+      "edit.undo",
+      "document.inspect",
+      "edit.undo",
+      "document.inspect",
+      "edit.undo",
+      "document.inspect",
+      "edit.undo",
+      "document.inspect",
+      "edit.undo",
+      "document.inspect",
+      "document.inspect"
+    ],
+    "schema": []
+  },
+  "artefacts": [
+    {
+      "file": "audit-deadlock/iter-1-window.png",
+      "bytes": 2001,
+      "sha256": "eb8f668bd9b9bc8011ac8de60e4d3185f954c974234c687ca8699116ccfbce3d"
+    },
+    {
+      "file": "audit-deadlock/iter-1.json",
+      "bytes": 1887,
+      "sha256": "8f0207aecf84e5c314bda408c6bbed1cd400c9c588e6121297f2e4cd19bcfbc9"
+    },
+    {
+      "file": "audit-deadlock/iter-1.png",
+      "bytes": 2001,
+      "sha256": "eb8f668bd9b9bc8011ac8de60e4d3185f954c974234c687ca8699116ccfbce3d"
+    },
+    {
+      "file": "audit-deadlock/iter-2-window.png",
+      "bytes": 2321,
+      "sha256": "736b5d62b306dc523bcc42d5529a8c2445de3e4441a11db80dcefd33faad115e"
+    },
+    {
+      "file": "audit-deadlock/iter-2.json",
+      "bytes": 1086,
+      "sha256": "bbb1f22e295ee508c4340bc4a216cab28dec863a4f58fa501d7eeb07902611df"
+    },
+    {
+      "file": "audit-deadlock/iter-2.png",
+      "bytes": 2321,
+      "sha256": "736b5d62b306dc523bcc42d5529a8c2445de3e4441a11db80dcefd33faad115e"
+    },
+    {
+      "file": "audit-deadlock/summary.json",
+      "bytes": 473,
+      "sha256": "cf4228858e0963343ab4370138b6564a2b71a64b9e0b968d21a39fe508e15d28"
+    },
+    {
+      "file": "audit-resolved/iter-1-window.png",
+      "bytes": 1970,
+      "sha256": "41d1edfbb536e45fefba5c0a655eac388a0a40139547e04629254f50f1a82d59"
+    },
+    {
+      "file": "audit-resolved/iter-1.json",
+      "bytes": 1887,
+      "sha256": "6d02d0ee67f53fed97265da91a7a551147ccf44ee9ba3b57a048742816b56f81"
+    },
+    {
+      "file": "audit-resolved/iter-1.png",
+      "bytes": 1970,
+      "sha256": "41d1edfbb536e45fefba5c0a655eac388a0a40139547e04629254f50f1a82d59"
+    },
+    {
+      "file": "audit-resolved/iter-2-window.png",
+      "bytes": 2092,
+      "sha256": "e155673db9d9df7dcb1c7bdb7117f122af7bf3e62e76fa2642be45e2629aaaf6"
+    },
+    {
+      "file": "audit-resolved/iter-2.json",
+      "bytes": 993,
+      "sha256": "1343fca1bb81b5a6cc9a09b56fe2b9e94d614e74cedde7ffacf585cf6d8a6d2f"
+    },
+    {
+      "file": "audit-resolved/iter-2.png",
+      "bytes": 2092,
+      "sha256": "e155673db9d9df7dcb1c7bdb7117f122af7bf3e62e76fa2642be45e2629aaaf6"
+    },
+    {
+      "file": "audit-resolved/iter-3-window.png",
+      "bytes": 2321,
+      "sha256": "736b5d62b306dc523bcc42d5529a8c2445de3e4441a11db80dcefd33faad115e"
+    },
+    {
+      "file": "audit-resolved/iter-3.json",
+      "bytes": 614,
+      "sha256": "752e18740bca0cec17c2fb1f71c9d61ebae76f65975524d5a837bfca59e3b409"
+    },
+    {
+      "file": "audit-resolved/iter-3.png",
+      "bytes": 2321,
+      "sha256": "736b5d62b306dc523bcc42d5529a8c2445de3e4441a11db80dcefd33faad115e"
+    },
+    {
+      "file": "audit-resolved/summary.json",
+      "bytes": 394,
+      "sha256": "ac71dacf3f86cc7923ca5c497920a95948489d4bc37eb20d779252cdf56a116b"
+    },
+    {
+      "file": "audit-schema/iter-1-window.png",
+      "bytes": 2001,
+      "sha256": "eb8f668bd9b9bc8011ac8de60e4d3185f954c974234c687ca8699116ccfbce3d"
+    },
+    {
+      "file": "audit-schema/iter-1.png",
+      "bytes": 2001,
+      "sha256": "eb8f668bd9b9bc8011ac8de60e4d3185f954c974234c687ca8699116ccfbce3d"
+    },
+    {
+      "file": "audit-schema/summary.json",
+      "bytes": 1070,
+      "sha256": "618c53c23f9967dc22ceae1cb49064db6e671a0fbeb64eac9919f5b34d21fb90"
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,19 @@
+{
+  "compositionHash": "722452a05bb3a37adade2e521e89fed1efaaacfd24320fa39e7be043f96ca52d",
+  "lottie": {
+    "path": "lottie.json",
+    "sha256": "800c9535f43480aad4648f899ccd4791a9abc74d9abb4393e61962f21ac933c4"
+  },
+  "webmAlpha": {
+    "path": "hero-vp9.webm",
+    "sha256": "ada74059bf594752239756206f49238522b6c82f444c5d91da2b1618cf0fee36",
+    "pixFmt": "yuva420p",
+    "crf": 28,
+    "twoPassSizeBytes": 2673
+  },
+  "parity": {
+    "lottieFrames": 12,
+    "encodedFrames": 12,
+    "matched": true
+  }
+}

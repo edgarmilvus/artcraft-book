@@ -1,0 +1,27 @@
+{
+  "exercise": 1,
+  "engine": "filmcraft-cli",
+  "assertions": 15,
+  "sequenceId": 4,
+  "placements": [
+    {
+      "track": "V2",
+      "startTicks": 3048384000000,
+      "durationTicks": 1016064000000,
+      "brollItemId": 8,
+      "matchedPhrase": "hives",
+      "confidence": 0.5
+    }
+  ],
+  "contactSheets": [
+    "contact_8.png"
+  ],
+  "reviewDoc": "broll_review.md",
+  "preRunSnapshot": "chapter12/solutions_and_explanations/exercise_1_transcript-driven-b-roll-assembly-with-semantic-cut-point-discovery/output/write/assembly_pre_run.json",
+  "undoStepsRequired": 3,
+  "artefacts": [
+    "read/",
+    "write/"
+  ],
+  "result": "transcript phrases matched to the B-roll pool and placed on V2 without rippling A-roll"
+}

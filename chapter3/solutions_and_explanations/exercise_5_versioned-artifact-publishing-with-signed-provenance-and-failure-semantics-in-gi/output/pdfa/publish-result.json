@@ -1,0 +1,7 @@
+{
+  "status": "blocked",
+  "reason": "pdfa",
+  "blockers": [
+    "pdfa-verify.json"
+  ]
+}

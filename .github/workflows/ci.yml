@@ -1,0 +1,84 @@
+name: CI
+
+# While this repository is private, Actions run only on request. On a private
+# repository macOS runner minutes are billed at ten times the normal rate, and
+# one full run of the "e2e" job costs about 155 of them.
+#
+# When this repository becomes public, restore the automatic triggers by
+# uncommenting the two blocks below.
+on:
+  # push:
+  #   branches: [main]
+  # pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  typecheck:
+    name: Type-check every listing (Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build the Python environment
+        run: tools/install_python_deps.sh
+
+      - name: Link the shared dependency tree into every project
+        run: node tools/link_node_modules.mjs --check
+
+      - name: Type-check the twenty chapters
+        run: node tools/typecheck_all.mjs
+
+      - name: Type-check the master MCP server
+        run: ./node_modules/.bin/tsc -p tsconfig.master.json
+
+      - name: Check every project README against the files it names
+        run: python3 tools/check_project_readmes.py
+
+  e2e:
+    name: Run every harness against the real engines (macOS)
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build the Python environment
+        run: tools/install_python_deps.sh
+
+      - name: Install the ArtCraft engine binaries
+        # The CLIs are macOS-only and are never committed. They are
+        # fetched from the vendor's release pages; set CRAFT_CLI_SOURCE
+        # in the repository's secrets to install from a mirror instead.
+        env:
+          CRAFT_CLI_SOURCE: ${{ vars.CRAFT_CLI_SOURCE }}
+        run: tools/install_craft_clis.sh
+
+      - name: Verify the installed binaries
+        run: tools/install_craft_clis.sh --check
+
+      - name: Run the harnesses
+        run: ./run_all.sh
+
+      - name: Upload the harness logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: harness-logs
+          path: chapter*/**/output/*.log
+          retention-days: 14

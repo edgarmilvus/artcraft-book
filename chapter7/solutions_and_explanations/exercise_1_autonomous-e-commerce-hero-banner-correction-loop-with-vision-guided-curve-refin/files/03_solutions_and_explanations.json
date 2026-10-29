@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VisionCritique",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["critique_category", "reasoning", "confidence", "proposed_fix", "footprint_pct"],
+  "properties": {
+    "critique_category": {
+      "enum": ["exposure", "color_balance", "composition", "artifact", "brand_compliance", "none"]
+    },
+    "reasoning": { "type": "string", "maxLength": 400 },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "footprint_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+    "proposed_fix": {
+      "anyOf": [
+        { "type": "null" },
+        { "type": "object", "additionalProperties": false, "required": ["kind","points"],
+          "properties": { "kind": { "const": "curves" },
+                          "points": { "type": "array", "items": { "type": "array", "minItems": 2, "maxItems": 2 }, "minItems": 2, "maxItems": 19 },
+                          "channel": { "enum": ["rgb","red","green","blue"] } } },
+        { "type": "object", "additionalProperties": false, "required": ["kind"],
+          "properties": { "kind": { "const": "levels" },
+                          "inBlack": { "type": "integer", "minimum": 0, "maximum": 253 },
+                          "gamma": { "type": "number", "minimum": 0.01, "maximum": 9.99 },
+                          "inWhite": { "type": "integer", "minimum": 2, "maximum": 255 },
+                          "outBlack": { "type": "integer", "minimum": 0, "maximum": 255 },
+                          "outWhite": { "type": "integer", "minimum": 0, "maximum": 255 } } },
+        { "type": "object", "additionalProperties": false, "required": ["kind"],
+          "properties": { "kind": { "const": "vibrance" },
+                          "vibrance": { "type": "integer", "minimum": -100, "maximum": 100 },
+                          "saturation": { "type": "integer", "minimum": -100, "maximum": 100 } } },
+        { "type": "object", "additionalProperties": false, "required": ["kind","points","mask_rect"],
+          "properties": { "kind": { "const": "localized_curves" },
+                          "points": { "type": "array", "items": { "type": "array", "minItems": 2, "maxItems": 2 }, "minItems": 2, "maxItems": 19 },
+                          "mask_rect": { "type": "array", "items": { "type": "integer" }, "minItems": 4, "maxItems": 4 } } },
+        { "type": "object", "additionalProperties": false, "required": ["kind","rect"],
+          "properties": { "kind": { "const": "content_aware_fill" },
+                          "rect": { "type": "array", "items": { "type": "integer" }, "minItems": 4, "maxItems": 4 } } },
+        { "type": "object", "additionalProperties": false, "required": ["kind","rect"],
+          "properties": { "kind": { "const": "crop" },
+                          "rect": { "type": "array", "items": { "type": "integer" }, "minItems": 4, "maxItems": 4 } } }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+hello-editorial/
+├── package.json          # type: "module", deps below
+├── tsconfig.json         # "module": "NodeNext", "target": "ES2022"
+└── hello-editorial.ts    # the file in this chapter

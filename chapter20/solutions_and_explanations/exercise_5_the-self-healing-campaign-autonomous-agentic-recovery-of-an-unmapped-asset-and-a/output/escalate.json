@@ -1,0 +1,24 @@
+{
+  "jobId": "job-escalate",
+  "campaignId": "cmp-windowsill",
+  "missingPath": "chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets/lifestyle/window-01.jpg",
+  "reason": "escalated by the reasoner",
+  "decision": "escalated",
+  "steps": 1,
+  "refinements": 0,
+  "tokensIn": 300,
+  "tokensOut": 20,
+  "candidates": [],
+  "policyViolations": [],
+  "pages": [
+    {
+      "ticket": "PAGE-8446361fe0",
+      "severity": "error",
+      "channel": "creative-ops",
+      "message": "no replacement for chapter20/solutions_and_explanations/exercise_5_the-self-healing-campaign-autonomous-agentic-recovery-of-an-unmapped-asset-and-a/output/work/assets/lifestyle/window-01.jpg",
+      "artefact": "escalation.json",
+      "at": "2026-10-26T13:34:24.887198+00:00"
+    }
+  ],
+  "at": "2026-10-26T13:34:24.887480+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "role": "reader",
+  "name": "Effective.arr",
+  "reads": 3585,
+  "distinct_values": [
+    118.0,
+    88.0
+  ],
+  "legal_values": [
+    88.0,
+    118.0
+  ],
+  "illegal_reads": 0,
+  "illegal_samples": [],
+  "max_read_latency_ms": 38.774
+}

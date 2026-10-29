@@ -1,0 +1,17 @@
+{
+  "schema": "lineage/provenance/v1",
+  "run_id": "run-2026-10-26",
+  "model_id": "deepseek/deepseek-v4.1-flash",
+  "base": "doc-alpha",
+  "input": "input/doc-alpha.docx",
+  "corrected": "corrected/doc-alpha.docx",
+  "pdf": "pdf/doc-alpha.pdf",
+  "signed": "signed/doc-alpha.pdf",
+  "source_sha256": "9c10e58611d655fdfc6cda2c960c79031d637dfbc9f6d7a3cf821e4b7684d699",
+  "engines": {
+    "restyle_export": "wordcraft",
+    "provenance_render": "vectorcraft",
+    "stamp_sign": "pdfcraft"
+  },
+  "created_at": "2026-10-26T13:27:04.700Z"
+}
