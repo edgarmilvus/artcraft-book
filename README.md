@@ -257,6 +257,12 @@ Two workflows, split by cost:
   private repository bills a macOS runner at ten times the rate; on a public
   one the weekly schedule in the file can be uncommented.
 
+The same five commands run on your machine with **`make check`** — dependencies,
+the shared `node_modules` links, every TypeScript listing, the master MCP server,
+and every project README against the files it names. `make e2e` runs the
+harnesses. CI earns its three minutes because it runs on a clean tree; a green
+`make check` and a green CI run then mean the same thing.
+
 ## License
 
 The code in this repository is released under the MIT license. The full text
