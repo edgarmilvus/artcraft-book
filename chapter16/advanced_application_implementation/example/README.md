@@ -87,7 +87,7 @@ Everything lands under `files/output/work/`:
 | artifact | what it is |
 | --- | --- |
 | `the-frame-and-the-story.designcraft` | the native document, saved by `save_document` |
-| `the-frame-and-the-story.pdf` | the tagged print PDF, exported with `file.exportPdf` |
+| `the-frame-and-the-story.pdf` | the tagged print PDF, exported with `file.exportPdf` (in the `outputs-v1` release bundle, not committed) |
 | `the-frame-and-the-story.epub` | the reflowable EPUB, exported with `file.exportEpub` |
 | `the-frame-and-the-story.html` | the self-contained HTML proof, exported with `file.exportHtml` |
 

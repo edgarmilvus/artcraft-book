@@ -1,0 +1,79 @@
+name: e2e
+
+# The full contract: every harness against the real engine binaries, on the
+# only platform they ship for. One run takes about an hour of wall-clock time
+# and, on a private repository, roughly 155 billed minutes.
+#
+# Hence: on request only. When this repository becomes public, standard
+# runners are free, and the weekly schedule below can be uncommented so the
+# tree is verified even when nobody pushes.
+
+on:
+  workflow_dispatch:
+    inputs:
+      chapters:
+        description: "Chapters to run, space separated (empty runs all twenty)"
+        required: false
+        default: ""
+  # schedule:
+  #   - cron: "0 3 * * 1"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  e2e:
+    name: Run every harness against the real engines (macOS)
+    runs-on: macos-14
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build the Python environment
+        run: tools/install_python_deps.sh
+
+      - name: Install the ArtCraft engine binaries
+        # The CLIs are macOS-only and are never committed. They are fetched
+        # from the vendor's release pages; set CRAFT_CLI_SOURCE in the
+        # repository's variables to install from a mirror instead.
+        env:
+          CRAFT_CLI_SOURCE: ${{ vars.CRAFT_CLI_SOURCE }}
+        run: tools/install_craft_clis.sh
+
+      - name: Verify the installed binaries
+        run: tools/install_craft_clis.sh --check
+
+      - name: Run the harnesses
+        env:
+          CHAPTERS: ${{ github.event.inputs.chapters }}
+        run: |
+          export PATH="$PWD/tools/craft-cli/bin:$PWD/tools/node/bin:$PATH"
+          if [ -z "$CHAPTERS" ]; then
+            ./run_all.sh
+          else
+            failed=0
+            for n in $CHAPTERS; do
+              printf '\n=== chapter %s ===\n' "$n"
+              ./chapter$n/run_all.sh || failed=1
+            done
+            exit "$failed"
+          fi
+
+      - name: Upload the harness logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: harness-logs
+          path: chapter*/**/output/*.log
+          retention-days: 14

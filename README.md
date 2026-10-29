@@ -14,6 +14,44 @@ The exercise *prompts* — the starting contracts the book prints before each
 worked solution — are kept outside this tree, so that everything here is
 code with a harness attached.
 
+## Sixty seconds
+
+A clone is about 90 MB, and one harness runs with nothing but Node and npm.
+Nothing is mocked and nothing needs the engine binaries:
+
+```bash
+git clone https://github.com/edgarmilvus/artcraft-book.git
+cd artcraft-book
+npm ci
+npx tsx chapter11/solutions_and_explanations/exercise_3_frame-rate-rational-conversion-harness-23-976-25-29-97df/files/run_ex3.ts
+```
+
+That prints twenty-nine assertions and exits zero in about a second:
+
+```
+PASS output: edl-conversion.csv
+PASS output: parity-report.json
+PASS csv: one row per edge plus header
+PASS output: report manifest
+
+29 assertions passed
+```
+
+It converts a 25 fps edit decision list to 23.976, measures the residual in
+ticks, microseconds and 48 kHz samples, and round-trips 29.97 drop-frame
+timecode — the whole argument of chapter 11 in one file with no engine.
+
+**Everything else needs the engines.** The other 37 projects drive the real
+ArtCraft CLIs, which are proprietary, macOS-only, about 4 GB, and never
+committed: `tools/install_craft_clis.sh` fetches and verifies them. If you do
+not want to install them, the Docker path in [Run](#run) carries the same
+binaries inside the image.
+
+A handful of projects compute rather than compose. The frame-rate harness above
+is pure arithmetic and needs nothing beyond Node; most of the others open an
+engine session in their first few lines, which is why the CLIs or the Docker
+path are the normal way in.
+
 ```
 chapter1/ … chapter20/          one tree per chapter
   README.md              the chapter: what it needs, how to run it, the index
@@ -199,14 +237,19 @@ holds the optional live-provider keys and is never committed.
 
 ## Continuous integration
 
-`.github/workflows/ci.yml` runs two jobs:
+Two workflows, split by cost:
 
-- **Linux** — installs the dependencies and type-checks all 38 TypeScript
-  projects with `tools/typecheck_all.mjs`. The engine binaries are macOS-only,
-  so this is the check that can run everywhere.
-- **macOS** — installs the engine binaries, verifies their checksums, and
-  runs `./run_all.sh` against the real engines. The harness logs are
-  uploaded as an artifact.
+- **`.github/workflows/ci.yml`** — on every push and pull request to `main`.
+  Installs the dependencies and type-checks all 38 TypeScript projects with
+  `tools/typecheck_all.mjs`, type-checks the master MCP server, and checks
+  every project README against the files it names. The engine binaries are
+  macOS-only, so this is the check that can run everywhere, in a few minutes.
+- **`.github/workflows/e2e.yml`** — on request only (`workflow_dispatch`).
+  Installs the engine binaries, verifies their checksums, and runs
+  `./run_all.sh` against the real engines; the harness logs are uploaded as
+  an artifact. It takes about an hour, so it is not wired to every push. A
+  private repository bills a macOS runner at ten times the rate; on a public
+  one the weekly schedule in the file can be uncommented.
 
 ## License
 

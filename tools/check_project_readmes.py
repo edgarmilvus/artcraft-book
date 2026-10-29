@@ -35,17 +35,22 @@ FORBIDDEN = [
 ]
 
 
-def table_files(body: str) -> list[str]:
-    """The backticked file names in the first column of a markdown table."""
-    names = []
+def table_files(body: str) -> list[tuple[str, str]]:
+    """The backticked file names in the first column, with their row.
+
+    The row is returned so a caller can tell an artifact the repository
+    carries from one it only describes: the large outputs live in the
+    `outputs-v1` release bundle and are named here without being committed.
+    """
+    rows = []
     for line in body.splitlines():
         if not line.startswith("|"):
             continue
         cell = line.split("|")[1].strip()
         match = re.search(r"`([^`]+)`", cell)
         if match:
-            names.append(match.group(1))
-    return names
+            rows.append((match.group(1), line))
+    return rows
 
 
 def section(text: str, heading: str) -> str:
@@ -75,7 +80,7 @@ def check(project: pathlib.Path) -> list[str]:
     if not 25 <= len(lines) <= 140:
         problems.append(f"{len(lines)} lines (outside 25–130)")
 
-    for name in table_files(section(text, "The listings")):
+    for name, _row in table_files(section(text, "The listings")):
         if name.startswith("output/"):
             continue
         if not (files / name).exists() and not (project / name).exists():
@@ -84,7 +89,9 @@ def check(project: pathlib.Path) -> list[str]:
     produced = section(text, "What it produces")
     outside = "AUTOMATION_ROOT" in produced or "/tmp" in produced
     is_solutions = "solutions_and_explanations" in str(project)
-    for name in ([] if outside else table_files(produced)):
+    for name, row in ([] if outside else table_files(produced)):
+        if "release bundle" in row:
+            continue
         raw_name = name.split("…")[0]
         is_dir = raw_name.endswith("/")
         name = raw_name.rstrip("/")

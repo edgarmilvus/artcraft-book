@@ -70,7 +70,7 @@ Everything lands under `files/output/work/`:
 
 | artifact | what it is |
 | --- | --- |
-| `hello-editorial-page1.png` | the page-1 render at 2× scale — 1191 × 1684 px, twice the A4 size |
+| `hello-editorial-page1.png` | the page-1 render at 2× scale, 1191 × 1684 px (in the `outputs-v1` release bundle, not committed) |
 | `hello-editorial.designcraft` | the native document, with every story, style, thread link and grid offset intact |
 
 ## Notes

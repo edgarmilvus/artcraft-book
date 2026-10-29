@@ -79,7 +79,7 @@ Everything lands under `files/output/`, split by sandbox role:
 | --- | --- |
 | `read/dialogue.png`, `read/music.wav` | the input media the harness writes into the read root |
 | `read/broll-city.png`, `read/broll-desk.png` | the two B-roll candidates |
-| `write/cutroom/acme/job-0001/assembly.mp4` | the exported H.264 assembly |
+| `write/cutroom/acme/job-0001/assembly.mp4` | the exported H.264 assembly (in the `outputs-v1` release bundle, not committed) |
 | `write/cutroom/acme/job-0001/assembly.fcproj` | the project file, so an editor can pick the job up |
 | `write/cutroom/acme/job-0001/cutplan.json` | coverage, runtime, silence windows and the shots that were placed |
 | `write/cutroom/acme/job-0001/manifest.json` | the validated manifest, kept for reproducibility |

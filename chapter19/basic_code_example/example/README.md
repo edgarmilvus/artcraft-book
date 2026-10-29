@@ -68,7 +68,7 @@ Everything lands under `output/work/`:
 | artifact | what it is |
 | --- | --- |
 | `work/studio/.cursor/mcp.json` | the shared config the bridge reads: the `photocraft` entry, its `mcp` args, the two roots, the token in `env` |
-| `work/studio/render/hello.psd` | the document, saved inside the declared write root |
+| `work/studio/render/hello.psd` | the document, saved inside the declared write root (in the `outputs-v1` release bundle, not committed) |
 | `work/outside.psd` | the output of the harness's escape attempt through `photocraft-cli run`, the one-shot sub-command that is *not* behind the MCP roots |
 
 ## Notes
