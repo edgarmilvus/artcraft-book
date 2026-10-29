@@ -4,3 +4,6 @@
 # the Python requirements file, which the build has to install.
 *
 !tools/requirements.txt
+# The engine versions are shared with the native installer, so the build
+# reads the same list rather than a second copy.
+!tools/craft-cli/versions.txt
