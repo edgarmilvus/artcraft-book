@@ -31,9 +31,9 @@ jobs:
     runs-on: macos-14
     timeout-minutes: 240
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: "22"
 
@@ -72,7 +72,7 @@ jobs:
 
       - name: Upload the harness logs
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: harness-logs
           path: chapter*/**/output/*.log
