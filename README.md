@@ -26,7 +26,7 @@ pathfinder boolean, a frame-accurate FilmCraft assembly, a governed PDF/DOCX
 pipeline and a capstone studio that runs end to end over MCP. Every listing in
 the book is here, and every one of them has a harness.
 
-[**Buy the book →**](https://tiny.cc/ArtCraftBook)
+[**Additional Information →**](https://tiny.cc/ArtCraftBook)
 
 ### Quickstart
 
