@@ -14,6 +14,69 @@ The exercise *prompts* — the starting contracts the book prints before each
 worked solution — are kept outside this tree, so that everything here is
 code with a harness attached.
 
+---
+
+<p align="center">
+  <img src="images/36cover.jpg" alt="ArtCraft: The Agentic Creative Studio in TypeScript" width="360">
+</p>
+
+**A production field guide to agents that edit creative work.** Twenty chapters
+take the agent from a flat generated image to a layered PhotoCraft document, a
+pathfinder boolean, a frame-accurate FilmCraft assembly, a governed PDF/DOCX
+pipeline and a capstone studio that runs end to end over MCP. Every listing in
+the book is here, and every one of them has a harness.
+
+[**Buy the book →**](https://tiny.cc/ArtCraftBook)
+
+### Quickstart
+
+One harness runs with nothing but Node and npm — no engines, no Docker:
+
+```bash
+git clone https://github.com/edgarmilvus/artcraft-book.git
+cd artcraft-book
+npm ci
+npx tsx chapter11/solutions_and_explanations/exercise_3_frame-rate-rational-conversion-harness-23-976-25-29-97df/files/run_ex3.ts
+```
+
+That is the frame-rate argument of chapter 11 in one file. For the projects that
+drive the real engines, use the Docker path:
+
+```bash
+docker compose build
+docker compose run --rm artcraft
+```
+
+The rest of this README explains the native install, the per-chapter runners and
+the artefacts each harness leaves behind.
+
+### Chapter index
+
+| # | Chapter | Code |
+| --- | --- | --- |
+| 1 | The Death of Flat Generative Pixels | [chapter1](chapter1/README.md) |
+| 2 | Inside the ArtCraft Architecture | [chapter2](chapter2/README.md) |
+| 3 | Headless CLI Orchestration | [chapter3](chapter3/README.md) |
+| 4 | The Loopback Control Channel | [chapter4](chapter4/README.md) |
+| 5 | The Model Context Protocol Bridge | [chapter5](chapter5/README.md) |
+| 6 | Automated PSD Manipulation | [chapter6](chapter6/README.md) |
+| 7 | Multimodal Visual Feedback Loops | [chapter7](chapter7/README.md) |
+| 8 | Programmatic Vector Engineering | [chapter8](chapter8/README.md) |
+| 9 | High-Throughput RAW Development | [chapter9](chapter9/README.md) |
+| 10 | E-Commerce Graphics Factory | [chapter10](chapter10/README.md) |
+| 11 | Inside the Integer Timebase | [chapter11](chapter11/README.md) |
+| 12 | Autonomous Video Assembly | [chapter12](chapter12/README.md) |
+| 13 | Three-Way Colour Wheels and Loudness | [chapter13](chapter13/README.md) |
+| 14 | Programmatic Motion Graphics | [chapter14](chapter14/README.md) |
+| 15 | Cross-Platform Lottie and VP9 | [chapter15](chapter15/README.md) |
+| 16 | Automated Editorial Publishing | [chapter16](chapter16/README.md) |
+| 17 | Headless Office Pipelines | [chapter17](chapter17/README.md) |
+| 18 | Financial Engineering at Scale | [chapter18](chapter18/README.md) |
+| 19 | Full-Stack Studio Governance | [chapter19](chapter19/README.md) |
+| 20 | The Autonomous Creative Studio | [chapter20](chapter20/README.md) |
+
+---
+
 ## Sixty seconds
 
 A clone is about 90 MB, and one harness runs with nothing but Node and npm.
