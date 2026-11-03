@@ -804,6 +804,9 @@ export async function runVisionQa(
     },
     body: JSON.stringify({
       model,
+      // A reasoning model spends tokens before it writes: give it room, or
+      // the visible reply comes back empty.
+      max_tokens: 1200,
       response_format: { type: "json_object" },
       messages: [
         { role: "system", content: systemPrompt },
@@ -827,9 +830,14 @@ export async function runVisionQa(
   const body = (await response.json()) as {
     choices: Array<{ message: { content: string } }>;
   };
+  // The verdict, even when the prose around it is not what we asked for.
+  const raw = body.choices[0]?.message?.content ?? "";
+  const start = raw.indexOf("{");
+  const end = raw.lastIndexOf("}");
+  if (start === -1 || end <= start) return null;
   let parsed: Omit<VisionVerdict, "model">;
   try {
-    parsed = JSON.parse(body.choices[0].message.content) as Omit<VisionVerdict, "model">;
+    parsed = JSON.parse(raw.slice(start, end + 1)) as Omit<VisionVerdict, "model">;
   } catch {
     return null;                       // the model broke its own JSON contract
   }

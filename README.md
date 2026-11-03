@@ -279,7 +279,9 @@ export OPENAI_COMPATIBLE_VISION_MODEL=deepseek/deepseek-v4.1-flash
 ```
 
 Add `EMBEDDING_API_KEY`, `EMBEDDING_BASE_URL` and `EMBEDDING_MODEL` if you want
-the embedding path; each stage README says which it needs. A stage that cannot
+the embedding path. Chapter 9's culling agent also needs a Postgres with
+pgvector (`PG_DSN`) and the ids of the frames to cull (`SEED_PHOTO_IDS`), and
+chapter 9's library path comes from `LIGHTCRAFT_LIBRARY`. A stage that cannot
 run says so and is skipped instead of failing.
 
 The script reads, in order: your shell, `$ARTCRAFT_LIVE_ENV`

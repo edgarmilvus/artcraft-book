@@ -197,7 +197,9 @@ def call_vision(png_bytes: bytes) -> Dict[str, Any]:
         f"{VISION_PROMPT}\nMeasured mean luma: {measured:.0f}/255.")
     body = {
         "model": VISION_MODEL,
-        "max_tokens": 60,
+        # A reasoning model spends tokens before it writes: at 60 the whole
+        # budget goes to the thought and the visible reply comes back empty.
+        "max_tokens": 800,
         "temperature": 0,
         "response_format": {"type": "json_object"},
         "messages": [{
@@ -219,8 +221,28 @@ def call_vision(png_bytes: bytes) -> Dict[str, Any]:
     with urllib.request.urlopen(req, timeout=90) as resp:
         payload = json.loads(resp.read().decode("utf-8"))
     content = payload["choices"][0]["message"]["content"]
-    decision = json.loads(content) if isinstance(content, str) else content
+    decision = _json_object(content if isinstance(content, str) else "")
+    if decision is None:
+        # An empty or malformed reply is not a decision. Measure the frame
+        # instead of mutating the document on a guess, exactly as the
+        # key-free path does.
+        return _heuristic_decision(png_bytes)
     return _whitelist(decision)
+
+
+def _json_object(text: str) -> Optional[Dict[str, Any]]:
+    """The reply as an object, even when it arrives fenced or with prose."""
+    text = (text or "").strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```[a-zA-Z]*\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+    start, end = text.find("{"), text.rfind("}")
+    if start == -1 or end <= start:
+        return None
+    try:
+        return json.loads(text[start:end + 1])
+    except json.JSONDecodeError:
+        return None
 
 
 # ---------------------------------------------------------------------------

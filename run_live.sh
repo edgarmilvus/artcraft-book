@@ -149,8 +149,9 @@ while IFS='|' read -r name dir needs cmd; do
   stage_pid=$!
   ( sleep "$TIMEOUT"; kill -TERM "$stage_pid" 2>/dev/null ) >/dev/null 2>&1 &
   watchdog=$!
+  disown "$watchdog" 2>/dev/null
   if wait "$stage_pid"; then
-    kill "$watchdog" 2>/dev/null; wait "$watchdog" 2>/dev/null
+    kill "$watchdog" 2>/dev/null
     summary=$(grep -v '^[[:space:]]*$' "$log" | tail -1)
     case "$summary" in "{"|"}"|"[]"|"null") summary="ok" ;; esac
     printf '%-20s %s\n' "$name" "${summary:-ok}"
