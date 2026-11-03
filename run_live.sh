@@ -11,6 +11,7 @@
 #   ./run_live.sh --list          # what would run, and what it needs
 #   ./run_live.sh --only ch5-brief
 #   ./run_live.sh --dry           # print the commands, execute nothing
+#   ./run_live.sh --timeout 300   # kill a stage that runs longer than 300 s
 #
 # Configuration, highest priority first:
 #   1. variables already exported in your shell
@@ -35,11 +36,14 @@ export PATH="$ROOT/tools/craft-cli/bin:$ROOT/tools/node/bin:$PATH"
 ONLY=""
 DRY=0
 LIST=0
+TIMEOUT=1200
 while [ $# -gt 0 ]; do
   case "$1" in
     --only) ONLY="${2:-}"; shift 2 ;;
     --only=*) ONLY="${1#--only=}"; shift ;;
     --dry) DRY=1; shift ;;
+    --timeout) TIMEOUT="${2:-1200}"; shift 2 ;;
+    --timeout=*) TIMEOUT="${1#--timeout=}"; shift ;;
     --list) LIST=1; shift ;;
     -h|--help) sed -n '2,24p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
     *) echo "unknown option: $1 (try --help)" >&2; exit 2 ;;
@@ -139,11 +143,19 @@ while IFS='|' read -r name dir needs cmd; do
   fi
 
   log="$LOGDIR/$name.log"
-  if ( cd "$ROOT/$dir" && eval "$cmd" ) > "$log" 2>&1; then
+  # A hung MCP child can hold the event loop open forever, so every stage
+  # gets a wall clock. The watchdog is killed as soon as the stage returns.
+  ( cd "$ROOT/$dir" && eval "$cmd" ) > "$log" 2>&1 &
+  stage_pid=$!
+  ( sleep "$TIMEOUT"; kill -TERM "$stage_pid" 2>/dev/null ) >/dev/null 2>&1 &
+  watchdog=$!
+  if wait "$stage_pid"; then
+    kill "$watchdog" 2>/dev/null; wait "$watchdog" 2>/dev/null
     summary=$(grep -v '^[[:space:]]*$' "$log" | tail -1)
     case "$summary" in "{"|"}"|"[]"|"null") summary="ok" ;; esac
     printf '%-20s %s\n' "$name" "${summary:-ok}"
   else
+    kill "$watchdog" 2>/dev/null
     printf '%-20s %s\n' "$name" "FAILED — see live/$STAMP/$name.log"
     failed=1
   fi

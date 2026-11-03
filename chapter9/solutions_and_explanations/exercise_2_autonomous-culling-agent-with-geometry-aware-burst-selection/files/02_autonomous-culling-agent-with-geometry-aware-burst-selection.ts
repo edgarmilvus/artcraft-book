@@ -41,7 +41,10 @@ export class LightCraftMCP {
   private pending = new Map<number, (v: any) => void>();
   private stdoutBuffer = "";
 
-  constructor(binary = "lightcraft-cli", library = "/work/wedding") {
+  constructor(
+    binary = "lightcraft-cli",
+    library = process.env.LIGHTCRAFT_LIBRARY ?? "/work/wedding",
+  ) {
     // LightCraft has no automation roots: the library is opened with
     // `--library` and the engine reads the files the agent hands it.
     this.child = spawn(binary, ["mcp", "--library", library]);
@@ -495,8 +498,15 @@ if (process.env.SEED_PHOTO_IDS) {
       model: await getCompatibleModel(),
       eyes: new OpenAiEyes(),
     };
-    const report = await runAgent(seedIds, deps);
-    console.log(report);
+    try {
+      const report = await runAgent(seedIds, deps);
+      console.log(report);
+    } finally {
+      // The MCP child and the pg pool hold sockets open: close both, or the
+      // process prints its report and then hangs instead of exiting.
+      deps.lc.kill();
+      await (deps.store as unknown as { end?: () => Promise<void> }).end?.();
+    }
   })().catch((error) => {
     console.error(error);
     process.exit(1);

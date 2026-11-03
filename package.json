@@ -25,6 +25,7 @@
     "lottie-web": "^5.13.0",
     "next": "latest",
     "openai": "^7.0.0",
+    "pg": "^8.23.1",
     "pino": "^9.3.2",
     "playwright-core": "^1.56.0",
     "pngjs": "^7.0.0",

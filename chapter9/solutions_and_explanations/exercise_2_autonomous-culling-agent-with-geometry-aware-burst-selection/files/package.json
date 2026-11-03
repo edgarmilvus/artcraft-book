@@ -8,6 +8,7 @@
     "harness": "tsx run_ex2.ts"
   },
   "dependencies": {
+    "pg": "^8.23.1",
     "pngjs": "^7.0.0"
   },
   "devDependencies": {
