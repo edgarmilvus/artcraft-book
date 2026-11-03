@@ -339,10 +339,20 @@ export interface VisionInput {
 
 export type VisionFn = (input: VisionInput) => Promise<VisionCritique>;
 
-export function createOpenAiVision(model = "gpt-4o"): VisionFn {
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) throw new Error("OPENAI_API_KEY is not set");
-  const openai = new OpenAI({ apiKey });
+/** Any OpenAI-compatible endpoint: three variables, no vendor assumptions. */
+function compatEndpoint(): { apiKey: string; baseURL: string; vision: string } {
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  const text = process.env.OPENAI_COMPATIBLE_MODEL;
+  if (!apiKey || !baseURL || !text) {
+    throw new Error('OPENAI_COMPATIBLE_API_KEY, OPENAI_COMPATIBLE_BASE_URL and OPENAI_COMPATIBLE_MODEL must be set');
+  }
+  return { apiKey, baseURL, vision: process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? text };
+}
+
+export function createOpenAiVision(model = compatEndpoint().vision): VisionFn {
+  const { apiKey, baseURL } = compatEndpoint();
+  const openai = new OpenAI({ apiKey, baseURL });
 
   return async ({ auditPngB64, productCropB64, job, currentMean }) => {
     const sys = [

@@ -325,10 +325,21 @@ rationale, confidence}. Direction means: increase or decrease the strength of
 the look in that zone, not a numeric slider. Also return global_confidence 0..1
 and an optional anomaly note. Never estimate ΔE: it is measured elsewhere.`;
 
-export function createOpenAiCritique(model = process.env.OPENAI_VISION_MODEL ?? "gpt-4.1-mini"): CritiqueFn {
+/** Any OpenAI-compatible endpoint: three variables, no vendor assumptions. */
+function compatEndpoint(): { apiKey: string; baseURL: string; vision: string } {
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  const text = process.env.OPENAI_COMPATIBLE_MODEL;
+  if (!apiKey || !baseURL || !text) {
+    throw new Error('OPENAI_COMPATIBLE_API_KEY, OPENAI_COMPATIBLE_BASE_URL and OPENAI_COMPATIBLE_MODEL must be set');
+  }
+  return { apiKey, baseURL, vision: process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? text };
+}
+
+export function createOpenAiCritique(model = compatEndpoint().vision): CritiqueFn {
   let client: OpenAI | undefined;
   return async ({ proxyPng, referencePng }) => {
-    client ??= new OpenAI();
+    client ??= new OpenAI(compatEndpoint());
     const completion = await client.chat.completions.create({
       model,
       temperature: 0,

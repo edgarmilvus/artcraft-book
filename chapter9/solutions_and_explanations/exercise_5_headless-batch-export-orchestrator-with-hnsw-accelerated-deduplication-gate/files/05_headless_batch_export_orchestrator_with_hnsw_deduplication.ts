@@ -319,8 +319,15 @@ export async function exportOne(file: SubmissionFile, subId: string,
   const store = deps.store ?? await getVectorStore();
   const embedder = deps.embedder ?? (async (description: string) => {
     const { default: OpenAI } = await import("openai");
-    const response = await new OpenAI().embeddings.create({
-      model: "text-embedding-3-small", input: description, dimensions: 512,
+    const baseURL = process.env.EMBEDDING_BASE_URL;
+    const apiKey = process.env.EMBEDDING_API_KEY;
+    const model = process.env.EMBEDDING_MODEL;
+    if (!baseURL || !apiKey || !model) {
+      throw new Error("EMBEDDING_BASE_URL, EMBEDDING_API_KEY and EMBEDDING_MODEL must be set");
+    }
+    const response = await new OpenAI({ apiKey, baseURL }).embeddings.create({
+      model, input: description,
+      dimensions: Number(process.env.EMBEDDING_DIMENSIONS ?? 512),
     });
     return response.data[0].embedding;
   });

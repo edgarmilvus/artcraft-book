@@ -1428,10 +1428,17 @@ export interface AuditContext {
  */
 export class OpenAiVisionAuditor implements VisionAuditor {
   constructor(
-    private readonly apiKey: string,
-    private readonly model = "gpt-4o-mini",
-    private readonly endpoint = "https://api.openai.com/v1/chat/completions",
-  ) {}
+    private readonly apiKey = process.env.OPENAI_COMPATIBLE_API_KEY ?? "",
+    private readonly model = process.env.OPENAI_COMPATIBLE_VISION_MODEL
+      ?? process.env.OPENAI_COMPATIBLE_MODEL ?? "gpt-4o-mini",
+    private readonly endpoint = `${process.env.OPENAI_COMPATIBLE_BASE_URL ?? ""}/chat/completions`,
+  ) {
+    if (!this.apiKey || !this.endpoint.startsWith("http")) {
+      throw new Error(
+        "OpenAiVisionAuditor needs OPENAI_COMPATIBLE_API_KEY and OPENAI_COMPATIBLE_BASE_URL",
+      );
+    }
+  }
 
   async audit(pngBase64: string, context: AuditContext): Promise<CutVerdict> {
     const system =
@@ -1529,7 +1536,7 @@ interface SessionContext {
  *
  * Usage:
  * ```ts
- * const worker = new AutonomousAssembler(new OpenAiVisionAuditor(process.env.OPENAI_API_KEY!));
+ * const worker = new AutonomousAssembler(new OpenAiVisionAuditor());
  * const result = await worker.run(manifest, { binaryPath: "/usr/local/bin/filmcraft-cli" });
  * ```
  */

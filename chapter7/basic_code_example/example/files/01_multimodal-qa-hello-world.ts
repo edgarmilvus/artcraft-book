@@ -16,11 +16,11 @@
  * The vision model is injected, so the loop can be driven by GPT-4o in
  * production and by a scripted auditor in tests and offline demos.
  *
- * Requires (for the default auditor): OPENAI_API_KEY in the environment.
+ * Requires (for the default auditor): the OPENAI_COMPATIBLE_* variables.
  */
 
 import { mkdirSync } from "node:fs";
-import { dirname, resolve } from "node:path";
+import { dirname, isAbsolute, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
@@ -251,13 +251,24 @@ export function parseVerdict(raw: string): VaResult {
  * validates the reply. Throws if the model returns malformed JSON or
  * violates the schema.
  */
+/** Any OpenAI-compatible endpoint: three variables, no vendor assumptions. */
+function compatEndpoint(): { apiKey: string; baseURL: string; vision: string } {
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  const text = process.env.OPENAI_COMPATIBLE_MODEL;
+  if (!apiKey || !baseURL || !text) {
+    throw new Error('OPENAI_COMPATIBLE_API_KEY, OPENAI_COMPATIBLE_BASE_URL and OPENAI_COMPATIBLE_MODEL must be set');
+  }
+  return { apiKey, baseURL, vision: process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? text };
+}
+
 export function createOpenAiAuditor(
   openai: OpenAI,
   systemPrompt: string = SYSTEM_PROMPT,
 ): VisionAuditor {
   return async (pngBase64: string): Promise<VaResult> => {
     const completion = await openai.chat.completions.create({
-      model: "gpt-4o",
+      model: process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? process.env.OPENAI_COMPATIBLE_MODEL ?? "gpt-4o",
       // Response-format "json_object" makes OpenAI guarantee valid JSON.
       response_format: { type: "json_object" },
       temperature: 0.2,
@@ -441,16 +452,20 @@ export async function runQaLoop(options: QaLoopOptions): Promise<QaLoopResult> {
   }
 
   // 4. Persist the final document. doc_save does not create the parent
-  //    directory, so the caller does — the path is resolved and passed
-  //    absolutely to remove any doubt about the engine's write root.
-  const absolutePath = resolve(outputPath);
-  mkdirSync(dirname(absolutePath), { recursive: true });
+  //    directory, so the caller does. The path is passed exactly as the
+  //    caller wrote it: the engine resolves a relative name inside its write
+  //    root, and the default below is relative for that reason.
+  mkdirSync(dirname(resolve(outputPath)), { recursive: true });
   const saved = await mcp.callTool({
     name: "doc_save",
-    arguments: { path: absolutePath },
+    arguments: { path: outputPath },
   });
   const saveReply = extractText(saved) as { path?: string; warnings?: string[] };
-  const savedPath = saveReply?.path ?? absolutePath;
+  // The engine answers with the name it used, relative to its write root.
+  // Callers want a path they can open, so trust an absolute reply and
+  // otherwise fall back to the location the caller asked for.
+  const replied = saveReply?.path;
+  const savedPath = replied && isAbsolute(replied) ? replied : resolve(outputPath);
   const warnings = saveReply?.warnings ?? [];
   log(`\nSaved: ${savedPath}`);
   for (const warning of warnings) log(`⚠ ${warning}`);
@@ -463,13 +478,14 @@ export async function runQaLoop(options: QaLoopOptions): Promise<QaLoopResult> {
 // ─────────────────────────────────────────────────────────────
 
 async function main(): Promise<void> {
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) throw new Error("OPENAI_API_KEY is not set");
+  const { apiKey, baseURL } = compatEndpoint();
 
-  // Spawn the PhotoCraft MCP server over stdio.
+  // Spawn the PhotoCraft MCP server over stdio, with the directory the loop
+  // may write into. Without a write root every doc_save is refused.
   const transport = new StdioClientTransport({
     command: "photocraft-cli",
-    args: ["mcp"],
+    args: ["mcp", "--automation-write-root", process.cwd()],
+    cwd: process.cwd(),
   });
   const mcp = new Client(
     { name: "qa-loop", version: "1.0.0" },
@@ -480,7 +496,7 @@ async function main(): Promise<void> {
   try {
     const result = await runQaLoop({
       mcp,
-      vision: createOpenAiAuditor(new OpenAI({ apiKey })),
+      vision: createOpenAiAuditor(new OpenAI({ apiKey, baseURL })),
     });
     console.log(
       `\nDone: ${result.iterations} iteration(s), ` +

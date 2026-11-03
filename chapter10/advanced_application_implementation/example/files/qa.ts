@@ -147,7 +147,7 @@ async function visionQa(
   ].join("\n");
 
   const completion = await openai.chat.completions.create({
-    model: "gpt-4o",
+    model: process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? process.env.OPENAI_COMPATIBLE_MODEL ?? "gpt-4o",
     response_format: { type: "json_schema", json_schema: RubricSchema },
     messages: [
       {

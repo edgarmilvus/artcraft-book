@@ -23,6 +23,9 @@ tools/craft-cli/*-*/
 # Node is used when it is new enough.
 tools/node/
 
+# --- local run output
+live/
+
 # --- secrets ----------------------------------------------------------------
 # The harnesses run with an empty environment; these exist only for the
 # optional live-provider paths.

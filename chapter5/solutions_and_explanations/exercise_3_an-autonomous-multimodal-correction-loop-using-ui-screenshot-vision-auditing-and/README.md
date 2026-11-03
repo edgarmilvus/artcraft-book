@@ -78,7 +78,7 @@ curve was applied between audits.
   automation roots pinned under `output/workspace/`.
 - **No API key.** The harness injects a `ScriptedVision` object with the same
   `chat.completions.create` surface as the OpenAI client. The loop's production
-  client drops in unchanged when `OPENAI_API_KEY` is set.
+  client drops in unchanged when the `OPENAI_COMPATIBLE_*` variables are set.
 - The engine may read only from the read root, so the master is written under
   the write root first and copied across the capability boundary — the same
   path a tenant upload takes.

@@ -94,8 +94,11 @@ def main() -> int:
     env = dict(os.environ)
     env["PATH"] = f"{CLIS}:{env.get('PATH', '')}"
     # Force the deterministic stand-in: no network, no API key required.
-    for key in ("OPENROUTER_API_KEY", "OPENAI_API_KEY", "OPENROUTER_BASE_URL", "OPENAI_BASE_URL"):
-        env.pop(key, None)
+    # Deterministic by default; LIVE=1 lets ./run_live.sh exercise the model.
+    if os.environ.get("LIVE") != "1":
+        for key in ("OPENAI_COMPATIBLE_API_KEY", "OPENAI_COMPATIBLE_BASE_URL",
+                    "OPENAI_COMPATIBLE_MODEL", "OPENAI_COMPATIBLE_VISION_MODEL"):
+            env.pop(key, None)
 
     for stale in ("audit", "logs", "serve.out", "serve.err", "agent.log", "run-log.json", "run_ex3.log"):
         target = OUT / stale

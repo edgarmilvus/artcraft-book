@@ -50,9 +50,10 @@ and the environment that command needs.
 - **One `node_modules` for the whole repository.** Each project's
   `node_modules` is a symlink to the root — the same MCP SDK and `tsx`, not
   ninety copies.
-- **LLM calls** go through OpenRouter with a stdlib client. The key lives in
-  `tools/secrets.env` (`OPENROUTER_API_KEY`, `OPENROUTER_BASE_URL`, optional
-  `OPENROUTER_VISION_MODEL`). With no key, the vision exercise falls back to a
-  deterministic luma heuristic and still converges.
+- **LLM calls** go to any OpenAI-compatible endpoint with a stdlib client:
+  `OPENAI_COMPATIBLE_API_KEY`, `OPENAI_COMPATIBLE_BASE_URL` and
+  `OPENAI_COMPATIBLE_VISION_MODEL` (or `OPENAI_COMPATIBLE_MODEL`). With none of
+  them set, the vision exercise falls back to a deterministic luma heuristic and
+  still converges.
 - **Python 3.10+**, standard library only. The runner picks the repository
   `.venv` when it exists.

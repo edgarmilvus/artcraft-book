@@ -5,7 +5,7 @@
  * PhotoCraft worker — with a scripted model, so no API key is needed and
  * the sequence of tool calls is deterministic.
  */
-import Anthropic from '@anthropic-ai/sdk';
+import type OpenAI from 'openai';
 import { runBrief, type LlmClient } from './src/agent-loop.js';
 import { strict as assert } from 'node:assert';
 import { existsSync, readFileSync, readdirSync, rmSync } from 'node:fs';
@@ -44,43 +44,52 @@ class ScriptedModel implements LlmClient {
   public offered: string[][] = [];
   public toolResults: string[] = [];
 
-  public readonly messages = {
-    create: async (body: Anthropic.MessageCreateParamsNonStreaming): Promise<Anthropic.Message> => {
-      this.offered.push((body.tools ?? []).map((t) => t.name));
+  public readonly chat = {
+    completions: {
+      create: async (
+        body: OpenAI.ChatCompletionCreateParamsNonStreaming,
+      ): Promise<OpenAI.ChatCompletion> => {
+        this.offered.push(
+          (body.tools ?? []).map((t) => (t.type === 'function' ? t.function.name : 'custom')),
+        );
 
-      // Only the newest user turn carries fresh results.
-      this.toolResults = [];
-      for (const m of body.messages) {
-        if (m.role !== 'user' || typeof m.content === 'string') continue;
-        for (const block of m.content) {
-          if (block.type === 'tool_result') {
-            this.toolResults.push(String(block.content));
-          }
+        // Only the newest turn carries fresh results.
+        this.toolResults = [];
+        for (const m of body.messages) {
+          if (m.role === 'tool') this.toolResults.push(String(m.content));
         }
-      }
 
-      const turn = body.messages.filter((m) => m.role === 'assistant').length;
-      const step = SCRIPT[turn] ?? { text: 'done' };
-      const content =
-        'text' in step
-          ? [{ type: 'text' as const, text: step.text }]
-          : step.tools.map((t, i) => ({
-              type: 'tool_use' as const,
-              id: `toolu_${turn}_${i}`,
-              name: t.name,
-              input: t.input,
-            }));
+        const turn = body.messages.filter((m) => m.role === 'assistant').length;
+        const step = SCRIPT[turn] ?? { text: 'done' };
+        const message =
+          'text' in step
+            ? { role: 'assistant' as const, content: step.text }
+            : {
+                role: 'assistant' as const,
+                content: null,
+                tool_calls: step.tools.map((t, i) => ({
+                  id: `call_${turn}_${i}`,
+                  type: 'function' as const,
+                  function: { name: t.name, arguments: JSON.stringify(t.input) },
+                })),
+              };
 
-      return {
-        id: `msg_${turn}`,
-        type: 'message',
-        role: 'assistant',
-        model: body.model,
-        content,
-        stop_reason: 'text' in step ? 'end_turn' : 'tool_use',
-        stop_sequence: null,
-        usage: { input_tokens: 0, output_tokens: 0 },
-      } as unknown as Anthropic.Message;
+        return {
+          id: `chatcmpl_${turn}`,
+          object: 'chat.completion',
+          created: 0,
+          model: body.model,
+          choices: [
+            {
+              index: 0,
+              message,
+              finish_reason: 'text' in step ? 'stop' : 'tool_calls',
+              logprobs: null,
+            },
+          ],
+          usage: { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0 },
+        } as unknown as OpenAI.ChatCompletion;
+      },
     },
   };
 }
@@ -158,12 +167,20 @@ await check('billing is derived from audited worker time', () => {
 await check('session sandbox is disposed of its workers', async () => {
   // A second brief must get its own sandbox, never reuse the first one.
   const again = await runBrief('tenant-42', 'noop', ['photocraft'], false, {
-    messages: {
-      create: async () =>
-        ({
-          content: [{ type: 'text', text: 'nothing to do' }],
-          role: 'assistant',
-        }) as unknown as Anthropic.Message,
+    chat: {
+      completions: {
+        create: async () =>
+          ({
+            choices: [
+              {
+                index: 0,
+                message: { role: 'assistant', content: 'nothing to do' },
+                finish_reason: 'stop',
+                logprobs: null,
+              },
+            ],
+          }) as unknown as OpenAI.ChatCompletion,
+      },
     },
   });
   assert.notEqual(again.sessionId, outcome.sessionId);

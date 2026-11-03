@@ -90,7 +90,9 @@ Everything lands under `files/output/`, split by sandbox role:
   every path in the manifest is checked against the read root.
 - **The harness supplies its own transcript and auditor**, so no speech model
   and no API key are needed to run it. `OpenAiVisionAuditor` is the production
-  implementation and reads `OPENAI_API_KEY` only if you construct it.
+  implementation; it reads `OPENAI_COMPATIBLE_API_KEY` and
+  `OPENAI_COMPATIBLE_BASE_URL` from the environment and refuses to construct
+  without them.
 - **The timebase is exact.** `secToTicks` rounds to the nearest tick at
   254 016 000 000 ticks per second, and the worker refuses timelines longer than
   124 000 s where `Number` would lose precision.

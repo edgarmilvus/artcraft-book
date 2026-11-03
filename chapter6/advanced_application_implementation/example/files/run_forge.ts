@@ -2,7 +2,8 @@
  * Harness for the Brand Forge worker.
  *
  * A real photocraft-cli child does the rendering; only the vision model is
- * absent (no OPENAI_API_KEY), which the worker already treats as "no audit".
+ * absent (no OPENAI_COMPATIBLE_*), which the worker already treats as
+ * "no audit".
  */
 import { mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { spawn } from "node:child_process";

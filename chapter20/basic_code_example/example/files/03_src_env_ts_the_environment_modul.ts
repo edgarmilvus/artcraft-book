@@ -5,10 +5,10 @@
  * boundary — before an engine is spawned or a file is written.
  *
  * The studio asks for no secrets. A hosted deployment would also read
- * `OPENAI_API_KEY` and `SUPABASE_URL` here; this build takes the
- * embedding model and the brand store as injected interfaces instead,
- * so the process starts with an empty environment and still runs from
- * the first line to the last.
+ * `EMBEDDING_API_KEY`, `EMBEDDING_BASE_URL` and `SUPABASE_URL` here; this
+ * build takes the embedding model and the brand store as injected
+ * interfaces instead, so the process starts with an empty environment and
+ * still runs from the first line to the last.
  */
 import { accessSync, constants, mkdirSync } from "node:fs";
 import { resolve } from "node:path";

@@ -57,9 +57,9 @@ npx tsx run_ex5.ts
 
 ## Notes
 
-- The OpenAI client is created lazily: loading the module with no
-  `OPENAI_API_KEY` used to throw before `--dry-run` could run. The key is now
-  required only when a real vision sample is requested.
+- The model client is created lazily: loading the module with no
+  `OPENAI_COMPATIBLE_*` variables used to throw before `--dry-run` could run.
+  The key is now required only when a real vision sample is requested.
 - Capturing the same frame twice produces byte-identical PNGs on this
   Chromium, which is what makes the gate safe to run in CI.
 - The fallback accepts a dark overlay instead of demanding a mid-gray frame;

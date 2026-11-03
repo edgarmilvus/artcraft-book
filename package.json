@@ -1,7 +1,7 @@
 {
   "name": "artcraft-web-ai-series",
   "version": "1.0.0",
-  "description": "Companion code for ArtCraft Book: The Agentic Creative Studio in TypeScript — 20 chapters of headless ArtCraft automation, every listing executed against the real engines.",
+  "description": "Companion code for ArtCraft Book: The Agentic Creative Studio in TypeScript \u2014 20 chapters of headless ArtCraft automation, every listing executed against the real engines.",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -17,7 +17,6 @@
   "dependencies": {
     "@ai-sdk/openai": "latest",
     "@ai-sdk/react": "latest",
-    "@anthropic-ai/sdk": "^0.71.0",
     "@langchain/langgraph": "^0.2.0",
     "@modelcontextprotocol/sdk": "^1.32.0",
     "ai": "latest",

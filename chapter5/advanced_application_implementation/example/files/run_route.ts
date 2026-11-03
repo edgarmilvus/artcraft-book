@@ -2,9 +2,9 @@
  * Harness for the Next.js route handler.
  *
  * `next/server` is a real dependency, so the handler runs unchanged; the
- * request object is the only thing faked. Without ANTHROPIC_API_KEY the
- * model call fails, which is exactly the error path the SSE stream must
- * report instead of hanging the connection.
+ * request object is the only thing faked. With no OPENAI_COMPATIBLE_* in the
+ * environment the model call fails, which is exactly the error path the SSE
+ * stream must report instead of hanging the connection.
  */
 import { POST } from './src/app/api/briefs/route.js';
 import { strict as assert } from 'node:assert';

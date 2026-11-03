@@ -764,17 +764,17 @@ export interface VisionVerdict {
  * aesthetic audit.  The audit is intentionally narrow (five checkable
  * invariants) so the model has no room to hallucinate.
  *
- * This function returns null when `OPENAI_API_KEY` is missing, which is the
- * correct behaviour for hermetic CI runs.
+ * This function returns null when the OPENAI_COMPATIBLE_* variables are
+ * missing, which is the correct behaviour for hermetic CI runs.
  */
 export async function runVisionQa(
   image: Buffer,
   job: PsdBrandForgeJob,
 ): Promise<VisionVerdict | null> {
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) return null;
-
-  const model = process.env.OPENAI_VISION_MODEL ?? "gpt-4o";
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  const model = process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? process.env.OPENAI_COMPATIBLE_MODEL;
+  if (!apiKey || !baseURL || !model) return null;
   const b64 = image.toString("base64");
 
   const systemPrompt =
@@ -796,7 +796,7 @@ export async function runVisionQa(
     curveStopCount: job.oklchCurve.stops.length,
   };
 
-  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+  const response = await fetch(`${baseURL.replace(/\/+$/, "")}/chat/completions`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

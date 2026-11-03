@@ -74,12 +74,19 @@ class Mcp {
 }
 
 /** The default auditor: a real multimodal model, with a self-correcting parse. */
-export function openAiAuditor(model = "gpt-4o"): VisionAuditor {
+export function openAiAuditor(
+  model = process.env.OPENAI_COMPATIBLE_VISION_MODEL
+    ?? process.env.OPENAI_COMPATIBLE_MODEL
+    ?? "gpt-4o",
+): VisionAuditor {
   // The SDK is imported lazily so the pipeline still runs when no provider
   // key is configured and a scripted auditor is injected instead.
   return async (pngBase64, prompt) => {
     const { default: OpenAI } = await import("openai");
-    const openai = new OpenAI();
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_COMPATIBLE_API_KEY,
+      baseURL: process.env.OPENAI_COMPATIBLE_BASE_URL,
+    });
     let lastErr = "";
     for (let attempt = 0; attempt < 3; attempt++) {
       try {

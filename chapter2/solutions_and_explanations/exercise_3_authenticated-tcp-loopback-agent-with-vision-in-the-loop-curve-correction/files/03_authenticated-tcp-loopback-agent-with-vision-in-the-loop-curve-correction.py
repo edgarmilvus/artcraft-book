@@ -149,9 +149,8 @@ VISION_PROMPT = (
     "Points are in the 0..255 range."
 )
 
-VISION_MODEL = os.environ.get(
-    "OPENROUTER_VISION_MODEL",
-    os.environ.get("OPENAI_MODEL", "openai/gpt-4o-mini"),
+VISION_MODEL = os.environ.get("OPENAI_COMPATIBLE_VISION_MODEL") or os.environ.get(
+    "OPENAI_COMPATIBLE_MODEL", ""
 )
 
 
@@ -179,18 +178,17 @@ def call_vision(png_bytes: bytes) -> Dict[str, Any]:
     contract, so the agent never mutates the engine based on an off-schema
     reply (a Level 1 ground-truth violation waiting to happen).
 
-    The request goes to any OpenAI-compatible endpoint — OpenRouter by
-    default, via plain `urllib` so the agent has no third-party dependency.
-    With no key configured, a deterministic luma heuristic stands in, which
-    keeps the convergence/unwind logic testable offline.
+    The request goes to any OpenAI-compatible endpoint, configured by the
+    three OPENAI_COMPATIBLE_* variables, via plain `urllib` so the agent has
+    no third-party dependency. With nothing configured, a deterministic luma
+    heuristic stands in, which keeps the convergence/unwind logic testable
+    offline.
     """
-    key = os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENAI_API_KEY")
-    if not key:
+    key = os.environ.get("OPENAI_COMPATIBLE_API_KEY")
+    base = os.environ.get("OPENAI_COMPATIBLE_BASE_URL")
+    if not key or not base or not VISION_MODEL:
         return _heuristic_decision(png_bytes)
-
-    base = (os.environ.get("OPENROUTER_BASE_URL")
-            or os.environ.get("OPENAI_BASE_URL")
-            or "https://openrouter.ai/api/v1").rstrip("/")
+    base = base.rstrip("/")
     b64 = base64.b64encode(png_bytes).decode("ascii")
     # One number is enough context to stop the model asking for "brighter"
     # forever: the measured luma against the target band.

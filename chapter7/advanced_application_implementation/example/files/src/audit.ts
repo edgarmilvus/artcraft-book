@@ -56,13 +56,19 @@ export type AuditFn = (pngBase64: string, ctx: AuditContext) => Promise<Critique
  * GPT-4o implementation. The client is constructed on first use, so
  * importing this module never requires a key — only auditing does.
  */
-export function createOpenAiVision(apiKey = process.env.OPENAI_API_KEY): VisionClient {
-  if (!apiKey) throw new Error('OPENAI_API_KEY is not set');
-  const client = new OpenAI({ apiKey });
+export function createOpenAiVision(
+  apiKey = process.env.OPENAI_COMPATIBLE_API_KEY,
+  baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL,
+  model = process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? process.env.OPENAI_COMPATIBLE_MODEL,
+): VisionClient {
+  if (!apiKey || !baseURL || !model) {
+    throw new Error('OPENAI_COMPATIBLE_API_KEY, OPENAI_COMPATIBLE_BASE_URL and OPENAI_COMPATIBLE_MODEL must be set');
+  }
+  const client = new OpenAI({ apiKey, baseURL });
   return {
     async complete(request: VisionRequest): Promise<string> {
       const response = await client.chat.completions.create({
-        model: 'gpt-4o',
+        model,
         temperature: 0.15,
         response_format: { type: 'json_object' },
         messages: [

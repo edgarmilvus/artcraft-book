@@ -271,17 +271,19 @@ export async function captureProofFrame(lottiePath: string, frame: number, outPa
 // load this module and capture the proof frame without credentials.
 let openai: OpenAI | null = null;
 function visionClient(): OpenAI {
-  if (!process.env.OPENAI_API_KEY) {
-    throw new Error("OPENAI_API_KEY is required unless the audit runs with --dry-run");
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  if (!apiKey || !baseURL) {
+    throw new Error("OPENAI_COMPATIBLE_API_KEY and OPENAI_COMPATIBLE_BASE_URL are required unless the audit runs with --dry-run");
   }
-  openai ??= new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  openai ??= new OpenAI({ apiKey, baseURL });
   return openai;
 }
 
 async function sampleVision(pngPath: string): Promise<VisionResponse> {
   const b64 = (await fs.readFile(pngPath)).toString("base64");
   const resp = await visionClient().chat.completions.create({
-    model: "gpt-4o",
+    model: process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? process.env.OPENAI_COMPATIBLE_MODEL ?? "gpt-4o",
     temperature: 0,
     response_format: { type: "json_object" },
     messages: [{

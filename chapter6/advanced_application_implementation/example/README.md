@@ -62,8 +62,8 @@ layers, four of them clipped) and a 1024-pixel PNG preview; call
   extension chooses the writer. `runCommand` defaults `wait: true` and the
   orchestrator never overrides it, so every creation call is synchronous.
 - The manifest is Zod-validated before a child process exists.
-- Vision QA returns `null` when `OPENAI_API_KEY` is unset; that is a supported
-  outcome, not a failure.
+- Vision QA returns `null` when the `OPENAI_COMPATIBLE_*` variables are unset;
+  that is a supported outcome, not a failure.
 - The curves layer is built with `lightness`, which puts it in Lab space. Note
   that the space flag is not written to the PSD: reopening the saved file
   reports `space: "Rgb"` with the same anchors in `per_channel[0]`.

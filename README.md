@@ -260,6 +260,32 @@ cd chapter20/advanced_application_implementation/example/files
 npx tsx run_forge.ts
 ```
 
+## Run the live model paths
+
+`run_all.sh` never contacts a model: the LLM is behind an interface and the
+harnesses inject a scripted one, so the suite is deterministic and needs no
+key. The handful of entry points that do call a real model live behind a
+second script, and it runs them against any OpenAI-compatible endpoint:
+
+```bash
+export OPENAI_COMPATIBLE_API_KEY=…
+export OPENAI_COMPATIBLE_BASE_URL=https://openrouter.ai/api/v1
+export OPENAI_COMPATIBLE_MODEL=deepseek/deepseek-v4.1-flash
+export OPENAI_COMPATIBLE_VISION_MODEL=deepseek/deepseek-v4.1-flash
+
+./run_live.sh --list     # the stages, and what each one needs
+./run_live.sh            # run them all; skips stages whose requirements are missing
+./run_live.sh --only ch5-brief
+```
+
+Add `EMBEDDING_API_KEY`, `EMBEDDING_BASE_URL` and `EMBEDDING_MODEL` if you want
+the embedding path; each stage README says which it needs. A stage that cannot
+run says so and is skipped instead of failing.
+
+The script reads, in order: your shell, `$ARTCRAFT_LIVE_ENV`
+(default `~/.config/artcraft/live.env`), and `tools/secrets.env`. Nothing in
+the repository names a provider, and `run_all.sh` is unchanged by any of it.
+
 To type-check the listings without running them (this is what CI does on
 Linux, where the macOS binaries cannot be installed):
 
@@ -308,8 +334,9 @@ command, params }`.
 | `tools/check_project_readmes.py` | check every project README against the files it names |
 
 Everything above ships in the repository except the two things it installs:
-`tools/craft-cli/bin/` and `tools/node/` are downloaded, and `tools/secrets.env`
-holds the optional live-provider keys and is never committed.
+`tools/craft-cli/bin/` and `tools/node/` are downloaded. `tools/secrets.env`
+is a slot for optional live-model keys: it is listed in `.gitignore`, so you
+create it yourself and it is never committed.
 
 ## Continuous integration
 

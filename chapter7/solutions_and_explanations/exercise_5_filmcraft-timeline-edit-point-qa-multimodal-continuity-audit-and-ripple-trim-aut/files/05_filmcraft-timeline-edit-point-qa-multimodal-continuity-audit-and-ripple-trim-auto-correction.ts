@@ -531,7 +531,11 @@ export function createOpenAiVision(options: OpenAiVisionOptions = {}): VisionCli
       // Imported lazily so the rest of the module (and its unit tests) does not
       // need an API key or a network connection.
       const { OpenAI } = await import("openai");
-      const client = new OpenAI({ apiKey: options.apiKey });
+      const endpoint = compatEndpoint();
+      const client = new OpenAI({
+        apiKey: options.apiKey ?? endpoint.apiKey,
+        baseURL: endpoint.baseURL,
+      });
       const prompt = [
         "Image 1 is the frame 0.5 s before the cut (context).",
         "Image 2 is the last frame of the outgoing clip A.",
@@ -547,7 +551,7 @@ export function createOpenAiVision(options: OpenAiVisionOptions = {}): VisionCli
       ].join(" ");
 
       const response = await client.chat.completions.create({
-        model: options.model ?? "gpt-4o",
+        model: options.model ?? endpoint.vision,
         temperature: 0,
         messages: [
           {

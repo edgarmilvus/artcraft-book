@@ -67,14 +67,18 @@ async function askVision(
   pageRect: { x: number; y: number; width: number; height: number; },
   description: string,
 ): Promise<{ x: number; y: number } | null> {
-  const resp = await fetch("https://api.openai.com/v1/chat/completions", {
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const model = process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? process.env.OPENAI_COMPATIBLE_MODEL;
+  if (!baseURL || !apiKey || !model) return null;
+  const resp = await fetch(`${baseURL.replace(/\/+$/, "")}/chat/completions`, {
     method: "POST",
     headers: {
-      "authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
+      "authorization": `Bearer ${apiKey}`,
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      model: "gpt-4o",
+      model,
       response_format: { type: "json_object" },
       messages: [{
         role: "user",

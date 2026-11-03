@@ -560,10 +560,21 @@ Allowed strategies: none, increase_tracking, decrease_tracking, hyphenate_on,
 loosen_letter_spacing, rebalance_columns, reorder_paragraphs.`;
 
 /** Lazy client so the module imports without an API key. */
-export function createOpenAiVerifier(model = process.env.OPENAI_VISION_MODEL ?? "gpt-4.1-mini"): SpreadVisionFn {
+/** Any OpenAI-compatible endpoint: three variables, no vendor assumptions. */
+function compatEndpoint(): { apiKey: string; baseURL: string; vision: string } {
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  const text = process.env.OPENAI_COMPATIBLE_MODEL;
+  if (!apiKey || !baseURL || !text) {
+    throw new Error('OPENAI_COMPATIBLE_API_KEY, OPENAI_COMPATIBLE_BASE_URL and OPENAI_COMPATIBLE_MODEL must be set');
+  }
+  return { apiKey, baseURL, vision: process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? text };
+}
+
+export function createOpenAiVerifier(model = compatEndpoint().vision): SpreadVisionFn {
   let client: OpenAI | undefined;
   return async ({ candidates, crops }) => {
-    client ??= new OpenAI();
+    client ??= new OpenAI(compatEndpoint());
     const blocks: unknown[] = [
       {
         type: "text",

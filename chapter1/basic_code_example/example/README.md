@@ -60,8 +60,9 @@ doc_export -> [{"type":"text","text":"{\"path\":\"probe.png\",\"warnings\":[\"3 
 ## Notes
 
 - `photocraft-cli` must be on `PATH`; `PHOTOCRAFT_BIN` overrides the binary name.
-- The model-driven scripts need an API key: `OPENROUTER_API_KEY`, plus optionally
-  `OPENROUTER_BASE_URL` and `OPENROUTER_MODEL`. The route reads `OPENAI_MODEL`,
-  `OPENAI_BASE_URL` and `OPENAI_API_KEY` instead, and falls back to `gpt-4o-mini`.
+- The model-driven scripts and the route read the same three variables:
+  `OPENAI_COMPATIBLE_API_KEY`, `OPENAI_COMPATIBLE_BASE_URL` and
+  `OPENAI_COMPATIBLE_MODEL`. Any OpenAI-compatible endpoint works; nothing here
+  is tied to a vendor. `./run_live.sh` at the repository root runs them for you.
 - `npm run typecheck` runs `tsc --noEmit` over the project.
 - The probes are deterministic: same engine, same document, same bytes.

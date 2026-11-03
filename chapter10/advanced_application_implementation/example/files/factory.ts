@@ -33,6 +33,8 @@ export interface FactoryConfig {
   writeRoot: string;
   /** Optional OpenAI key; when absent, vision QA is skipped. */
   openaiKey?: string;
+  /** Base URL of the OpenAI-compatible endpoint that serves the model. */
+  openaiBaseURL?: string;
   /** Skip work whose recipe hash is already in the cache. */
   softCache?: boolean;
   /**
@@ -66,7 +68,9 @@ export class GraphicsFactory {
       writeRoot: cfg.writeRoot,
     });
     this.assets = new AssetResolver(cfg.assetRoot, cfg.fetchImpl ?? globalThis.fetch);
-    this.openai = cfg.openaiKey ? new OpenAI({ apiKey: cfg.openaiKey }) : null;
+    this.openai = cfg.openaiKey
+      ? new OpenAI({ apiKey: cfg.openaiKey, baseURL: cfg.openaiBaseURL ?? process.env.OPENAI_COMPATIBLE_BASE_URL })
+      : null;
   }
 
   /**
@@ -212,7 +216,8 @@ async function main(): Promise<void> {
     outRoot,
     readRoot: process.cwd(),
     writeRoot: process.cwd(),
-    openaiKey: process.env.OPENAI_API_KEY,
+    openaiKey: process.env.OPENAI_COMPATIBLE_API_KEY,
+    openaiBaseURL: process.env.OPENAI_COMPATIBLE_BASE_URL,
     softCache: true,
   });
   const report = await factory.run({ brandJson, placementsJson });

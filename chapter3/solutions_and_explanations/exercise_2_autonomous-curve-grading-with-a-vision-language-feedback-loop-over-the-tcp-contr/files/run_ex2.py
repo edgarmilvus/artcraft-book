@@ -150,6 +150,11 @@ def main() -> int:
     serve_log = OUT / "serve.log"
     env = dict(os.environ)
     env["PATH"] = f"{CLIS}:{env.get('PATH', '')}"
+    # Deterministic by default; LIVE=1 lets ./run_live.sh exercise the model.
+    if os.environ.get("LIVE") != "1":
+        for key in ("OPENAI_COMPATIBLE_API_KEY", "OPENAI_COMPATIBLE_BASE_URL",
+                    "OPENAI_COMPATIBLE_MODEL", "OPENAI_COMPATIBLE_VISION_MODEL"):
+            env.pop(key, None)
     serve = subprocess.Popen(
         [str(CLIS / "photocraft-cli"), "serve", "--port", str(port),
          "--control-token", token,

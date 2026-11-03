@@ -4,7 +4,7 @@
 // ═══════════════════════════════════════════════════════════════════════════
 
 import { streamText } from 'ai';
-import { openai } from '@ai-sdk/openai';
+import { createOpenAI } from '@ai-sdk/openai';
 
 export const runtime = 'nodejs';
 export const maxDuration = 60;
@@ -28,14 +28,20 @@ export async function POST(req: Request): Promise<Response> {
     return new Response('prompt is required', { status: 400 });
   }
 
+  const model = createOpenAI({
+    apiKey: process.env.OPENAI_COMPATIBLE_API_KEY,
+    baseURL: process.env.OPENAI_COMPATIBLE_BASE_URL,
+  })(process.env.OPENAI_COMPATIBLE_MODEL!);
+
   const result = streamText({
-    model: openai(process.env.OPENAI_MODEL ?? 'gpt-4o-mini'),
+    model,
     system: BRIEF_SYSTEM,
     prompt: description,
     temperature: 0.4,
-    // 700 is ample for gpt-4o-mini but starves a reasoning model: the whole
-    // budget goes to reasoning tokens and the visible stream comes back empty.
-    maxOutputTokens: Number(process.env.OPENAI_MAX_OUTPUT_TOKENS ?? 700),
+    // 700 is ample for a small chat model but starves a reasoning model: the
+    // whole budget goes to reasoning tokens and the visible stream comes back
+    // empty. Raise this if your model thinks before it answers.
+    maxOutputTokens: Number(process.env.OPENAI_COMPATIBLE_MAX_OUTPUT_TOKENS ?? 700),
   });
 
   return result.toTextStreamResponse();

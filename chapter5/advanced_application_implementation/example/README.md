@@ -95,9 +95,11 @@ shell recipe (2/2) and the batch workflow (3/3). Their logs are in `output/`.
 
 - **`photocraft-cli` must be on `PATH`.** The router, loop and workflow
   harnesses start real workers; the route harness only needs the SSE path.
-- **No API key.** `run_advanced.ts` injects a scripted `LlmClient`; the model
-  name `claude-sonnet-4-20250514` is what the real client would ask for,
-  `ANTHROPIC_API_KEY` is only read when `runBrief` builds its own client.
+- **No API key for the harness.** `run_advanced.ts` injects a scripted
+  `LlmClient`. `runBrief` builds a real client only when you leave the last
+  argument out, and that client needs `OPENAI_COMPATIBLE_API_KEY`,
+  `OPENAI_COMPATIBLE_BASE_URL` and `OPENAI_COMPATIBLE_MODEL`. `run_live.ts` is
+  exactly that call, ready to run.
 - Each harness wipes its own output subtree first, so runs do not accumulate
   sandboxes.
 - `npm run typecheck` type-checks the listings; `npm run brief` is the same

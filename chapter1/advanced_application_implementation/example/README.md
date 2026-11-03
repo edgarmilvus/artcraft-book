@@ -81,9 +81,10 @@ TOTAL completed=11 failed=0
 - The CLI entry point needs the job files that the chapter does not ship, so run
   `node jobs/LF-42/setup.mjs` first, then
   `PHOTOCRAFT_BIN=photocraft-cli bash scripts/forge.sh jobs/LF-42/job.local.json`.
-- `examples/llm-brief.mjs` needs `OPENROUTER_API_KEY`; the route reads
-  `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `OPENAI_MODEL` and
-  `OPENAI_MAX_OUTPUT_TOKENS` instead.
+- `examples/llm-brief.mjs` and the route read the same three variables:
+  `OPENAI_COMPATIBLE_API_KEY`, `OPENAI_COMPATIBLE_BASE_URL` and
+  `OPENAI_COMPATIBLE_MODEL`. `OPENAI_COMPATIBLE_MAX_OUTPUT_TOKENS` caps the
+  visible answer; a reasoning model needs more than the default 700.
 - `npm run typecheck` runs `tsc --noEmit` over the project.
 - The real-engine run is deterministic: the same recipe produces the same
   document and the same preview.

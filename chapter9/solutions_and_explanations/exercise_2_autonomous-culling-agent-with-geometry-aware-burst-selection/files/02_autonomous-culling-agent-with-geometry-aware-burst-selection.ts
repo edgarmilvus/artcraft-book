@@ -7,12 +7,12 @@ import { join } from "node:path";
 // The model and the vector store are optional dependencies: they are loaded
 // lazily, so the module (and its unit tests) run without either. A caller
 // that has them injects them instead — see `AgentDeps`.
-type AnthropicTool = {
+type BlockTool = {
   name: string;
   description: string;
   input_schema: Record<string, unknown>;
 };
-type AnthropicMessage = { role: "user" | "assistant"; content: any };
+type BlockMessage = { role: "user" | "assistant"; content: any };
 export type ModelReply = {
   stop_reason: string | null;
   content: any[];
@@ -22,8 +22,8 @@ export interface CullModel {
     model: string;
     max_tokens: number;
     system: string;
-    tools: AnthropicTool[];
-    messages: AnthropicMessage[];
+    tools: BlockTool[];
+    messages: BlockMessage[];
   }): Promise<ModelReply>;
 }
 export interface VectorStore {
@@ -31,7 +31,7 @@ export interface VectorStore {
 }
 
 // ---------------------------------------------------------------------------
-// 1. Server-side tool implementations (bound to Claude via tool_use)
+// 1. Server-side tool implementations (bound to the model via tool_use)
 // ---------------------------------------------------------------------------
 type ToolResult = { content: { type: "text"; text: string }[] };
 
@@ -130,13 +130,75 @@ function getLc(): LightCraftMCP {
   return defaultLc;
 }
 
-async function getAnthropicModel(): Promise<CullModel> {
-  const moduleName = "@anthropic-ai/sdk";
-  const { default: Anthropic } = (await import(moduleName)) as any;
-  const client = new Anthropic();
+/**
+ * The default model: any OpenAI-compatible endpoint, adapted to the block
+ * shape the loop above speaks. The loop itself never learns the wire format,
+ * which is why the same agent runs against a hosted model or a local one.
+ */
+async function getCompatibleModel(): Promise<CullModel> {
+  const moduleName = "openai";
+  const { default: OpenAI } = (await import(moduleName)) as any;
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  const modelId = process.env.OPENAI_COMPATIBLE_MODEL;
+  if (!apiKey || !baseURL || !modelId) {
+    throw new Error("OPENAI_COMPATIBLE_API_KEY, OPENAI_COMPATIBLE_BASE_URL and OPENAI_COMPATIBLE_MODEL must be set");
+  }
+  const client = new OpenAI({ apiKey, baseURL });
   return {
-    create: (request) => client.messages.create(request),
+    create: async (request) => {
+      const res = await client.chat.completions.create({
+        model: modelId,
+        max_tokens: request.max_tokens,
+        messages: [
+          { role: "system", content: request.system },
+          ...request.messages.flatMap(toOpenAi),
+        ],
+        tools: request.tools.map((t) => ({
+          type: "function",
+          function: { name: t.name, description: t.description, parameters: t.input_schema },
+        })),
+      });
+      const message = res.choices[0]?.message;
+      const content: any[] = [];
+      if (message?.content) content.push({ type: "text", text: message.content });
+      for (const call of message?.tool_calls ?? []) {
+        if (call.type !== "function") continue;
+        content.push({
+          type: "tool_use",
+          id: call.id,
+          name: call.function.name,
+          input: JSON.parse(call.function.arguments || "{}"),
+        });
+      }
+      return {
+        stop_reason: message?.tool_calls?.length ? "tool_use" : "end_turn",
+        content,
+      };
+    },
   };
+}
+
+/** Translate one block-shaped turn into the messages an OpenAI server expects. */
+function toOpenAi(m: BlockMessage): any[] {
+  if (typeof m.content === "string") return [{ role: m.role, content: m.content }];
+  if (m.role === "assistant") {
+    const text = m.content.filter((b: any) => b.type === "text").map((b: any) => b.text).join("");
+    return [{
+      role: "assistant",
+      content: text || null,
+      tool_calls: m.content.filter((b: any) => b.type === "tool_use").map((b: any) => ({
+        id: b.id,
+        type: "function",
+        function: { name: b.name, arguments: JSON.stringify(b.input ?? {}) },
+      })),
+    }];
+  }
+  return m.content.filter((b: any) => b.type === "tool_result").map((b: any) => ({
+    role: "tool",
+    tool_call_id: b.tool_use_id,
+    content: typeof b.content === "string" ? b.content : JSON.stringify(b.content),
+  }));
 }
 
 async function getStore(): Promise<VectorStore> {
@@ -147,9 +209,9 @@ async function getStore(): Promise<VectorStore> {
   return defaultStore;
 }
 // ---------------------------------------------------------------------------
-// 2. Tool schemas handed to Claude
+// 2. Tool schemas handed to the model
 // ---------------------------------------------------------------------------
-const TOOLS: AnthropicTool[] = [
+const TOOLS: BlockTool[] = [
   { name: "run_lightcraft",
     description: "Run any LightCraft command by id. Returns the JSON result.",
     input_schema: { type: "object", properties: {
@@ -236,14 +298,26 @@ interface ScoreBreakdown {
 const WEIGHTS = { sharp: 0.40, eyes: 0.25, horizon: 0.20, comp: 0.15 } as const;
 const HYSTERESIS = 0.08;
 
+/** Any OpenAI-compatible endpoint: three variables, no vendor assumptions. */
+function compatEndpoint(): { apiKey: string; baseURL: string; vision: string } {
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  const text = process.env.OPENAI_COMPATIBLE_MODEL;
+  if (!apiKey || !baseURL || !text) {
+    throw new Error('OPENAI_COMPATIBLE_API_KEY, OPENAI_COMPATIBLE_BASE_URL and OPENAI_COMPATIBLE_MODEL must be set');
+  }
+  return { apiKey, baseURL, vision: process.env.OPENAI_COMPATIBLE_VISION_MODEL ?? text };
+}
+
 /** The production implementation of the eyes model. */
 export class OpenAiEyes implements EyesModel {
   async eyesOpen(cropBase64: string): Promise<{ leftEyeOpen: boolean; rightEyeOpen: boolean; confidence: number }> {
     const moduleName = "openai";
     const { default: OpenAI } = (await import(moduleName)) as any;
-    const client = new OpenAI();
+    const endpoint = compatEndpoint();
+    const client = new OpenAI(endpoint);
     const r = await client.chat.completions.create({
-      model: "gpt-4o",
+      model: endpoint.vision,
       response_format: { type: "json_object" },
       messages: [
         { role: "system",
@@ -376,14 +450,14 @@ Finish by producing a Markdown report (clusters, hero scores, rejects,
 declined clusters).`;
 
 export async function runAgent(seedPhotoIds: number[], deps: AgentDeps): Promise<string> {
-  const messages: AnthropicMessage[] = [{
+  const messages: BlockMessage[] = [{
     role: "user",
     content: `Cull these seed frames: ${seedPhotoIds.join(", ")}`,
   }];
 
   for (let turn = 0; turn < 60; turn++) {
     const res = await deps.model.create({
-      model: "claude-sonnet-4-5",
+      model: process.env.OPENAI_COMPATIBLE_MODEL ?? "model",
       max_tokens: 8192,
       system: SYSTEM_PROMPT,
       tools: TOOLS,
@@ -418,7 +492,7 @@ if (process.env.SEED_PHOTO_IDS) {
     const deps: AgentDeps = {
       lc: getLc(),
       store: await getStore(),
-      model: await getAnthropicModel(),
+      model: await getCompatibleModel(),
       eyes: new OpenAiEyes(),
     };
     const report = await runAgent(seedIds, deps);

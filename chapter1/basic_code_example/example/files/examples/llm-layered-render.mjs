@@ -2,11 +2,12 @@
 // MCP batch pipeline from app/api/studio/layered-render/route.ts, run
 // outside Next.js against the real engine.
 //
-//   OPENROUTER_API_KEY=… node examples/llm-layered-render.mjs
+//   OPENAI_COMPATIBLE_API_KEY=… OPENAI_COMPATIBLE_BASE_URL=… \
+//   OPENAI_COMPATIBLE_MODEL=… node examples/llm-layered-render.mjs
 //
-// The only changes vs the route: the model is the OpenRouter deepseek slug
-// (the route hard-codes openai('gpt-4o-mini')) and `doc_save` gets an absolute
-// path (automation resolves relative paths against the process cwd).
+// The only change vs the route: the script takes its output directory from
+// RUN_OUTPUT and `doc_save` gets an absolute path (automation resolves
+// relative paths against the process cwd).
 import { generateObject } from 'ai';
 import { createOpenAI } from '@ai-sdk/openai';
 import { z } from 'zod';
@@ -20,13 +21,13 @@ const here = dirname(fileURLToPath(import.meta.url));
 const outDir = process.env.RUN_OUTPUT ?? resolve(here, '..', '..', 'output');
 await mkdir(outDir, { recursive: true });
 
-const key = process.env.OPENROUTER_API_KEY;
-if (!key) { console.error('OPENROUTER_API_KEY is not set'); process.exit(1); }
-const openrouter = createOpenAI({
-  baseURL: process.env.OPENROUTER_BASE_URL ?? 'https://openrouter.ai/api/v1',
-  apiKey: key,
-});
-const MODEL = process.env.OPENROUTER_MODEL ?? 'deepseek/deepseek-v4.1-flash';
+const key = process.env.OPENAI_COMPATIBLE_API_KEY;
+if (!key) { console.error('OPENAI_COMPATIBLE_API_KEY is not set'); process.exit(1); }
+const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+if (!baseURL) { console.error('OPENAI_COMPATIBLE_BASE_URL is not set'); process.exit(1); }
+const MODEL = process.env.OPENAI_COMPATIBLE_MODEL;
+if (!MODEL) { console.error('OPENAI_COMPATIBLE_MODEL is not set'); process.exit(1); }
+const compatible = createOpenAI({ baseURL, apiKey: key });
 
 const hex = z.string().regex(/^#[0-9a-fA-F]{6}$/, 'must be a #rrggbb hex colour');
 const CreativePlan = z.object({
@@ -48,7 +49,7 @@ const check = (l, c, d = '') => c ? ok(l, d) : bad(l, d);
 const BRIEF = process.env.BRIEF ?? 'flash sale banner for a stoneware mug';
 const t0 = Date.now();
 const { object: plan, usage } = await generateObject({
-  model: openrouter(MODEL),
+  model: compatible(MODEL),
   schema: CreativePlan,
   system: [
     'You are the art-director module of a design-tool SaaS.',

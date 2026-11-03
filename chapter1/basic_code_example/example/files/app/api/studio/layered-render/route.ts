@@ -12,7 +12,7 @@
 
 import { NextResponse } from 'next/server';
 import { generateObject } from 'ai';
-import { openai } from '@ai-sdk/openai';
+import { createOpenAI } from '@ai-sdk/openai';
 import { z } from 'zod';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
@@ -56,8 +56,14 @@ type CreativePlan = z.infer<typeof CreativePlan>;
 // ---------------------------------------------------------------------------
 
 async function planFromBrief(brief: string): Promise<CreativePlan> {
+  // Any OpenAI-compatible endpoint: the three OPENAI_COMPATIBLE_* variables.
+  const model = createOpenAI({
+    apiKey: process.env.OPENAI_COMPATIBLE_API_KEY,
+    baseURL: process.env.OPENAI_COMPATIBLE_BASE_URL,
+  })(process.env.OPENAI_COMPATIBLE_MODEL!);
+
   const { object } = await generateObject({
-    model: openai(process.env.OPENAI_MODEL ?? 'gpt-4o-mini'),
+    model,
     schema: CreativePlan,
     system: [
       'You are the art-director module of a design-tool SaaS.',

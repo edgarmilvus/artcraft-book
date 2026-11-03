@@ -2,9 +2,9 @@
  * The vector-memory module: it owns the embedding model and the query
  * that turns a fresh brief into a grounded, on-brand headline.
  *
- * The embedding model is injected. The production model is OpenAI's
- * `text-embedding-3-small`, which returns 1536 dimensions — the exact
- * width of the `vector(1536)` column in
+ * The embedding model is injected. Any OpenAI-compatible embedding
+ * endpoint works: the three EMBEDDING_* variables name it, the model and
+ * the key. The width must match the `vector(1536)` column in
  * `supabase/migrations/0001_brand_assets.sql`; a vector of any other
  * width is refused by the database, and the hosted store refuses it
  * here first. The implementation below is a deterministic,
@@ -13,14 +13,14 @@
  *
  * The production implementation of an injected model is one HTTP call:
  *
- *     const res = await fetch("https://api.openai.com/v1/embeddings", {
+ *     const res = await fetch(`${process.env.EMBEDDING_BASE_URL}/embeddings`, {
  *       method: "POST",
  *       headers: {
  *         "Content-Type": "application/json",
- *         Authorization: `Bearer ${apiKey}`,
+ *         Authorization: `Bearer ${process.env.EMBEDDING_API_KEY}`,
  *       },
  *       body: JSON.stringify({
- *         model: "text-embedding-3-small",
+ *         model: process.env.EMBEDDING_MODEL,
  *         input: text,
  *         dimensions: 1536,
  *       }),

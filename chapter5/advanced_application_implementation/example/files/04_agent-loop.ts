@@ -14,13 +14,19 @@
  *      validation, policy, and audit.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
 import { ToolRouter } from './router.js';
 import { ClientPool } from './pool.js';
 import { Session, CraftApp } from './session.js';
 
 const MAX_TURNS = 24;
-const MODEL = 'claude-sonnet-4-20250514';
+/**
+ * The endpoint is configuration, not code: any OpenAI-compatible server —
+ * DeepSeek, OpenRouter, vLLM, a gateway — speaks this same API. The model id
+ * comes from the environment too. The literal below only keeps the listing
+ * runnable when a scripted model replays the loop in a test.
+ */
+const MODEL = process.env.OPENAI_COMPATIBLE_MODEL ?? 'gpt-4o-mini';
 
 /** Namespace we prefix every MCP tool with, so the LLM can't collide them. */
 const NS = (app: CraftApp, tool: string) => `${app}__${tool}`;
@@ -29,7 +35,7 @@ interface RegisteredTool {
   app: CraftApp;
   mcpName: string;                                    // e.g. "command_run"
   description: string;                                // from tools/list
-  input_schema: { type: 'object'; [k: string]: unknown };
+  parameters: { type: 'object'; [k: string]: unknown };
 }
 
 /**
@@ -48,7 +54,7 @@ async function buildToolCatalog(
 ): Promise<RegisteredTool[]> {
   const tools: RegisteredTool[] = [];
 
-  const META: Array<{ name: string; desc: string; schema: RegisteredTool["input_schema"] }> = [
+  const META: Array<{ name: string; desc: string; schema: RegisteredTool["parameters"] }> = [
     {
       name: 'command_run',
       desc: 'Execute one ArtCraft engine command by id with JSON params.',
@@ -149,7 +155,7 @@ async function buildToolCatalog(
         app,
         mcpName: meta.name,
         description: `[${app}] ${description || meta.desc}`,
-        input_schema: meta.schema,
+        parameters: meta.schema,
       });
     }
   }
@@ -166,14 +172,26 @@ export interface BriefOutcome {
 }
 
 /**
- * The slice of the Anthropic client the loop actually uses. Keeping it
- * narrow lets a test drive the whole pipeline — router, pool, engines —
+ * The slice of the OpenAI-compatible client the loop actually uses. Keeping
+ * it narrow lets a test drive the whole pipeline — router, pool, engines —
  * with a scripted model and no API key.
  */
 export interface LlmClient {
-  messages: {
-    create(body: Anthropic.MessageCreateParamsNonStreaming): Promise<Anthropic.Message>;
+  chat: {
+    completions: {
+      create(body: OpenAI.ChatCompletionCreateParamsNonStreaming): Promise<OpenAI.ChatCompletion>;
+    };
   };
+}
+
+/** The real client, built from the environment and checked before use. */
+function defaultClient(): LlmClient {
+  const apiKey = process.env.OPENAI_COMPATIBLE_API_KEY;
+  const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+  if (!apiKey || !baseURL) {
+    throw new Error('OPENAI_COMPATIBLE_API_KEY and OPENAI_COMPATIBLE_BASE_URL must be set');
+  }
+  return new OpenAI({ apiKey, baseURL });
 }
 
 /**
@@ -191,7 +209,7 @@ export async function runBrief(
   apps: CraftApp[],
   visualAttach: boolean,
   /** Inject a scripted model in tests; production passes nothing. */
-  llm: LlmClient = new Anthropic(),
+  llm: LlmClient = defaultClient(),
 ): Promise<BriefOutcome> {
   const session = await Session.create(tenantId, visualAttach);
   const pool = new ClientPool();
@@ -200,63 +218,80 @@ export async function runBrief(
   try {
     const catalog = await buildToolCatalog(pool, session, apps);
 
-    // Translate our internal catalog into Anthropic's tool shape.
-    const anthropicTools = catalog.map((t) => ({
-      name: NS(t.app, t.mcpName),
-      description: t.description,
-      input_schema: t.input_schema,
+    // Translate our internal catalog into OpenAI's function-tool shape.
+    const tools: OpenAI.ChatCompletionTool[] = catalog.map((t) => ({
+      type: 'function',
+      function: {
+        name: NS(t.app, t.mcpName),
+        description: t.description,
+        parameters: t.parameters,
+      },
     }));
 
     // A name → registration map so we can un-namespace on dispatch.
     const byName = new Map(catalog.map((t) => [NS(t.app, t.mcpName), t]));
 
-    const messages: Anthropic.MessageParam[] = [
+    const messages: OpenAI.ChatCompletionMessageParam[] = [
       {
-        role: 'user',
+        role: 'system',
         content:
           `You are CreativeForge, an autonomous creative director agent.\n` +
           `You have access to the following ArtCraft applications:\n` +
           apps.map((a) => `- ${a}`).join('\n') +
-          `\n\nBrief:\n${brief}\n\n` +
-          `Work step-by-step. Prefer command_batch for multi-step edits. ` +
+          `\n\nWork step-by-step. Prefer command_batch for multi-step edits. ` +
           `Save every artifact into the session write root: pass a bare ` +
           `relative filename, never an absolute path. When you are done, reply ` +
           `with a concise plain-text summary of what you produced.`,
       },
+      { role: 'user', content: brief },
     ];
 
     let turn = 0;
     let finalMessage = '';
     while (turn < MAX_TURNS) {
       turn += 1;
-      const resp = await llm.messages.create({
+      const resp = await llm.chat.completions.create({
         model: MODEL,
         max_tokens: 4096,
-        tools: anthropicTools,
+        tools,
         messages,
       });
 
-      messages.push({ role: 'assistant', content: resp.content });
+      const message = resp.choices[0]?.message;
+      if (!message) throw new Error('the model returned no choices');
 
-      const asksForTools = resp.content.some((b) => b.type === 'tool_use');
-      if (!asksForTools) {
-        finalMessage = resp.content
-          .filter((b): b is Anthropic.TextBlock => b.type === 'text')
-          .map((b) => b.text)
-          .join('\n');
+      // The assistant turn goes back into the transcript verbatim: the ids in
+      // `tool_calls` are what the tool results below have to answer.
+      messages.push(message);
+
+      if (!message.tool_calls?.length) {
+        finalMessage = message.content ?? '';
         break;
       }
 
-      const results: Anthropic.ToolResultBlockParam[] = [];
-      for (const block of resp.content) {
-        if (block.type !== 'tool_use') continue;
-        const registered = byName.get(block.name);
+      for (const call of message.tool_calls) {
+        if (call.type !== 'function') {
+          messages.push({
+            role: 'tool',
+            tool_call_id: call.id,
+            content: 'error: unsupported tool call',
+          });
+          continue;
+        }
+
+        let args: Record<string, unknown> = {};
+        try {
+          args = JSON.parse(call.function.arguments || '{}');
+        } catch {
+          args = {};
+        }
+
+        const registered = byName.get(call.function.name);
         if (!registered) {
-          results.push({
-            type: 'tool_result',
-            tool_use_id: block.id,
-            content: `error: unknown tool ${block.name}`,
-            is_error: true,
+          messages.push({
+            role: 'tool',
+            tool_call_id: call.id,
+            content: `error: unknown tool ${call.function.name}`,
           });
           continue;
         }
@@ -264,28 +299,25 @@ export async function runBrief(
         const dispatched = await router.dispatch(session, {
           app: registered.app,
           tool: registered.mcpName as never,
-          args: block.input as Record<string, unknown>,
+          args,
         });
 
-        results.push({
-          type: 'tool_result',
-          tool_use_id: block.id,
+        messages.push({
+          role: 'tool',
+          tool_call_id: call.id,
           content: dispatched.ok
             ? JSON.stringify(dispatched.result ?? null)
             : `error: ${dispatched.error}`,
-          is_error: !dispatched.ok,
         });
 
         // Track written documents for the tenant's output listing. Only a
         // successful save counts: a refused path must not appear as delivered.
         if (dispatched.ok &&
             registered.mcpName === 'doc_save' &&
-            typeof (block.input as { path?: unknown }).path === 'string') {
-          session.outputs.push((block.input as { path: string }).path);
+            typeof args.path === 'string') {
+          session.outputs.push(args.path);
         }
       }
-
-      messages.push({ role: 'user', content: results });
     }
 
     // Rough billing model: sum the wall-clock seconds of worker calls.

@@ -25,8 +25,8 @@ from typing import Any, Dict, List, Optional, Tuple
 # ---------- Config ----------
 WRITE_ROOT = os.environ.get("CRAFT_WRITE_ROOT", os.getcwd())
 AUDIT_DIR = os.environ.get("GRADE_AUDIT_DIR", "grade")
-MODEL = os.environ.get("VISION_MODEL") or os.environ.get(
-    "OPENROUTER_VISION_MODEL", "openai/gpt-4o-mini")
+MODEL = os.environ.get("OPENAI_COMPATIBLE_VISION_MODEL") or os.environ.get(
+    "OPENAI_COMPATIBLE_MODEL", "")
 MAX_ITER = int(os.environ.get("GRADE_MAX_ITER", "5"))
 CONF_THRESH = 0.85
 MAX_TOKENS = int(os.environ.get("MAX_VISION_TOKENS", "250000"))
@@ -174,19 +174,20 @@ VISION_PROMPT = PROMPT_TEXT
 
 
 def _vl_client_audit(png: bytes) -> Tuple[Dict[str, Any], int]:
-    """OpenRouter (OpenAI-compatible) call via `urllib`; offline luma fallback."""
-    key = os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENAI_API_KEY")
-    if not key:
+    """OpenAI-compatible call via `urllib`; offline luma fallback."""
+    key = os.environ.get("OPENAI_COMPATIBLE_API_KEY")
+    base = os.environ.get("OPENAI_COMPATIBLE_BASE_URL")
+    if not key or not base or not MODEL:
         return _heuristic_decision(png), 0
-
-    base = (os.environ.get("OPENROUTER_BASE_URL")
-            or "https://openrouter.ai/api/v1").rstrip("/")
+    base = base.rstrip("/")
     measured = _png_mean_luma(png)
     prompt = VISION_PROMPT if measured is None else (
         f"{VISION_PROMPT}\nMeasured mean luma: {measured:.0f}/255.")
     body = {
         "model": MODEL,
-        "max_tokens": 80,
+        # A reasoning model spends tokens before it writes: at 80 the whole
+        # budget goes to the thought and the visible reply comes back empty.
+        "max_tokens": 800,
         "temperature": 0,
         "response_format": {"type": "json_object"},
         "messages": [{
@@ -209,7 +210,25 @@ def _vl_client_audit(png: bytes) -> Tuple[Dict[str, Any], int]:
         payload = json.loads(resp.read().decode("utf-8"))
     content = payload["choices"][0]["message"]["content"]
     used = int((payload.get("usage") or {}).get("total_tokens") or 0)
-    return json.loads(content), used
+    return _json_object(content), used
+
+
+def _json_object(text: str) -> Dict[str, Any]:
+    """The verdict, even when the model wraps it in prose or a code fence.
+
+    `response_format: json_object` asks for a bare object, and most servers
+    comply. A reasoning model occasionally answers with a sentence and then
+    the object, which is still a usable decision — so take the outermost
+    braces instead of failing the pass.
+    """
+    text = (text or "").strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```[a-zA-Z]*\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+    start, end = text.find("{"), text.rfind("}")
+    if start == -1 or end <= start:
+        return {}
+    return json.loads(text[start:end + 1])
 
 
 def _whitelist(decision: Dict[str, Any]) -> Dict[str, Any]:

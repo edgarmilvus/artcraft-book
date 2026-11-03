@@ -2,7 +2,8 @@
 // brief from app/api/art/brief/route.ts ("File 9/9 part A"), run outside
 // Next.js.
 //
-//   OPENROUTER_API_KEY=… node examples/llm-brief.mjs
+//   OPENAI_COMPATIBLE_API_KEY=… OPENAI_COMPATIBLE_BASE_URL=… \
+//   OPENAI_COMPATIBLE_MODEL=… node examples/llm-brief.mjs
 //
 // Only change vs the route: the model is the OpenRouter deepseek slug.
 import { streamText } from 'ai';
@@ -15,13 +16,13 @@ const here = dirname(fileURLToPath(import.meta.url));
 const outDir = process.env.RUN_OUTPUT ?? resolve(here, '..', '..', 'output');
 await mkdir(outDir, { recursive: true });
 
-const key = process.env.OPENROUTER_API_KEY;
-if (!key) { console.error('OPENROUTER_API_KEY is not set'); process.exit(1); }
-const openrouter = createOpenAI({
-  baseURL: process.env.OPENROUTER_BASE_URL ?? 'https://openrouter.ai/api/v1',
-  apiKey: key,
-});
-const MODEL = process.env.OPENROUTER_MODEL ?? 'deepseek/deepseek-v4.1-flash';
+const key = process.env.OPENAI_COMPATIBLE_API_KEY;
+if (!key) { console.error('OPENAI_COMPATIBLE_API_KEY is not set'); process.exit(1); }
+const baseURL = process.env.OPENAI_COMPATIBLE_BASE_URL;
+if (!baseURL) { console.error('OPENAI_COMPATIBLE_BASE_URL is not set'); process.exit(1); }
+const MODEL = process.env.OPENAI_COMPATIBLE_MODEL;
+if (!MODEL) { console.error('OPENAI_COMPATIBLE_MODEL is not set'); process.exit(1); }
+const compatible = createOpenAI({ baseURL, apiKey: key });
 
 const BRIEF_SYSTEM = [
   'You are an art director writing a production brief for a layered image pipeline.',
@@ -43,7 +44,7 @@ const MAX_OUT = Number(process.env.MAX_OUTPUT_TOKENS ?? 3000);
 
 const t0 = Date.now();
 const result = streamText({
-  model: openrouter(MODEL),
+  model: compatible(MODEL),
   system: BRIEF_SYSTEM,
   prompt: description,
   temperature: 0.4,

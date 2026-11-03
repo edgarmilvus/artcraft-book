@@ -174,15 +174,20 @@ export class PgVectorStore implements VectorStore {
 
 /** The OpenAI embedder, imported lazily for the same reason. */
 export class OpenAiEmbedder implements Embedder {
-  constructor(private readonly apiKey: string, private readonly model = "text-embedding-3-small") {}
+  constructor(
+    private readonly apiKey: string = process.env.EMBEDDING_API_KEY ?? "",
+    private readonly model: string = process.env.EMBEDDING_MODEL ?? "text-embedding-3-small",
+    private readonly baseURL: string | undefined = process.env.EMBEDDING_BASE_URL,
+  ) {}
 
   async embed(text: string): Promise<number[]> {
     const { default: OpenAI } = await import("openai");
-    const client = new OpenAI({ apiKey: this.apiKey });
+    const client = new OpenAI({ apiKey: this.apiKey, baseURL: this.baseURL });
     const response = await client.embeddings.create({
       model: this.model,
       input: text,
-      dimensions: 512, // must match VECTOR(512) exactly, or pgvector rejects the row
+      // Must match VECTOR(512) exactly, or pgvector rejects the row.
+      dimensions: Number(process.env.EMBEDDING_DIMENSIONS ?? 512),
     });
     return response.data[0].embedding;
   }

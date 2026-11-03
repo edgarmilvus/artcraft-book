@@ -26,9 +26,9 @@ The screenshot path tries `ui.screenshot` first and falls back to
 goes through `doc.render`, which is recorded in the JSONL exchange log.
 
 Without an API key the agent uses a deterministic mean-luma heuristic; with
-`OPENROUTER_API_KEY` or `OPENAI_API_KEY` it posts the PNG to an
-OpenAI-compatible endpoint and whitelists the reply against a discriminated
-union, so an off-schema answer becomes a no-op instead of a mutation.
+the three `OPENAI_COMPATIBLE_*` variables set it posts the PNG to that endpoint
+and whitelists the reply against a discriminated union, so an off-schema answer
+becomes a no-op instead of a mutation.
 
 If the loop cannot converge in six passes it unwinds every edit with
 `edit.undo` and exits 2 rather than leaving a half-graded document behind.
