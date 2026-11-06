@@ -93,3 +93,7 @@ venv/
 /access.log
 /craft_apps_agent_docs.md
 /.probe/
+
+# --- chapter 3 scratch and build output -------------------------------------
+/chapter3/.tmp/
+/chapter3/advanced_application_implementation/example/files/dist/
