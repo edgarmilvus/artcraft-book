@@ -260,6 +260,14 @@ cd chapter20/advanced_application_implementation/example/files
 npx tsx run_forge.ts
 ```
 
+`make e2e` is `./run_all.sh`. `make check` type-checks every project, links the
+shared dependency tree and checks the master MCP server, without touching the
+engines — useful on Linux, where the macOS binaries cannot be installed:
+
+```bash
+node tools/typecheck_all.mjs chapter20   # one chapter
+```
+
 ## Run the live model paths
 
 `run_all.sh` never contacts a model: the LLM is behind an interface and the
@@ -287,14 +295,6 @@ run says so and is skipped instead of failing.
 The script reads, in order: your shell, `$ARTCRAFT_LIVE_ENV`
 (default `~/.config/artcraft/live.env`), and `tools/secrets.env`. Nothing in
 the repository names a provider, and `run_all.sh` is unchanged by any of it.
-
-To type-check the listings without running them (this is what CI does on
-Linux, where the macOS binaries cannot be installed):
-
-```bash
-node tools/typecheck_all.mjs
-node tools/typecheck_all.mjs chapter20
-```
 
 The first line covers every chapter, the second only chapter 20.
 
@@ -335,28 +335,6 @@ Everything above ships in the repository except the two things it installs:
 `tools/craft-cli/bin/` and `tools/node/` are downloaded. `tools/secrets.env`
 is a slot for optional live-model keys: it is listed in `.gitignore`, so you
 create it yourself and it is never committed.
-
-## Continuous integration
-
-Two workflows, split by cost:
-
-- **`.github/workflows/ci.yml`** — on every push and pull request to `main`.
-  Installs the dependencies and type-checks all 38 TypeScript projects with
-  `tools/typecheck_all.mjs`, type-checks the master MCP server, and checks
-  every project README against the files it names. The engine binaries are
-  macOS-only, so this is the check that can run everywhere, in a few minutes.
-- **`.github/workflows/e2e.yml`** — on request only (`workflow_dispatch`).
-  Installs the engine binaries, verifies their checksums, and runs
-  `./run_all.sh` against the real engines; the harness logs are uploaded as
-  an artifact. It takes about an hour, so it is not wired to every push. A
-  private repository bills a macOS runner at ten times the rate; on a public
-  one the weekly schedule in the file can be uncommented.
-
-The same five commands run on your machine with **`make check`** — dependencies,
-the shared `node_modules` links, every TypeScript listing, the master MCP server,
-and every project README against the files it names. `make e2e` runs the
-harnesses. CI earns its three minutes because it runs on a clean tree; a green
-`make check` and a green CI run then mean the same thing.
 
 ## License
 
