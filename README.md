@@ -300,14 +300,14 @@ The first line covers every chapter, the second only chapter 20.
 
 ## The engine surfaces
 
-The API each chapter relies on is recorded in `tools/craft-cli/`, one
-file per group of chapters:
+The API each chapter relies on is recorded in `maintenance/engine-facts/`,
+one file per group of chapters:
 
 | file | chapters |
 | --- | --- |
-| `FACTS-ch18.md` | GridCraft, DeckCraft |
-| `FACTS-ch19.md` | PhotoCraft, VectorCraft, DesignCraft, LightCraft, PdfCraft |
-| `FACTS-ch20.md` | the capstone engines, FilmCraft, the control channel |
+| `maintenance/engine-facts/FACTS-ch18.md` | GridCraft, DeckCraft |
+| `maintenance/engine-facts/FACTS-ch19.md` | PhotoCraft, VectorCraft, DesignCraft, LightCraft, PdfCraft |
+| `maintenance/engine-facts/FACTS-ch20.md` | the capstone engines, FilmCraft, the control channel |
 
 They were written by running the binaries, not by reading their
 documentation, and they are the reference for every listing in the book.
@@ -330,10 +330,9 @@ command, params }`.
 | `tools/pick_python.sh` | print the Python 3.10+ interpreter the runners use |
 | `tools/craft-cli/bin/` | the installed binaries (not committed) |
 | `tools/craft-cli/SHA256SUMS` | the checksums the install verifies |
-| `tools/craft-cli/FACTS-ch*.md` | what each engine actually speaks |
 | `tools/link_node_modules.mjs` | point the projects at the root `node_modules` |
 | `tools/typecheck_all.mjs` | type-check every project |
-| `tools/check_project_readmes.py` | check every project README against the files it names |
+| `maintenance/` | what *authoring* the book needs: CI's checks and the engine fact sheets (see below) |
 
 Everything above ships in the repository except the two things it installs:
 `tools/craft-cli/bin/` and `tools/node/` are downloaded. `tools/secrets.env`

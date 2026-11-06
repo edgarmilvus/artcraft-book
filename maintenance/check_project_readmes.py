@@ -11,8 +11,8 @@ directory, parses the tables in its README, and reports:
   * production language that should not be public
   * a README outside the 30–130 line range
 
-    python3 tools/check_project_readmes.py
-    python3 tools/check_project_readmes.py 17 18
+    python3 maintenance/check_project_readmes.py
+    python3 maintenance/check_project_readmes.py 17 18
 """
 from __future__ import annotations
 

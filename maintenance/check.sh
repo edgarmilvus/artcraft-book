@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Everything the CI workflow checks, on this machine.
 #
-#   tools/check.sh              # all five steps
-#   tools/check.sh --fast       # skip the install step, assume node_modules
+#   maintenance/check.sh         # all five steps
+#   maintenance/check.sh --fast  # skip the install step, assume node_modules
 #
 # The point of running it here is that CI's value is a *clean* tree: no
 # leftover node_modules, no installed engines, no outputs from an earlier run.
@@ -47,7 +47,7 @@ head "the master MCP server compiles"
 run ./node_modules/.bin/tsc -p tsconfig.master.json
 
 head "every project README matches the files it names"
-run python3 tools/check_project_readmes.py
+run python3 maintenance/check_project_readmes.py
 
 if [ "$fail" -eq 0 ]; then
   printf '\n\033[1mOK\033[0m  five checks, no failures\n'

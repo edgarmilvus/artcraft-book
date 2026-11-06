@@ -8,7 +8,7 @@
 .PHONY: check e2e clean
 
 check:
-	@tools/check.sh
+	@maintenance/check.sh
 
 e2e:
 	@./run_all.sh

@@ -49,4 +49,4 @@ jobs:
         run: ./node_modules/.bin/tsc -p tsconfig.master.json
 
       - name: Check every project README against the files it names
-        run: python3 tools/check_project_readmes.py
+        run: python3 maintenance/check_project_readmes.py

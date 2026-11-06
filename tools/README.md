@@ -11,7 +11,6 @@ rights, and it all runs natively on macOS.
 | `craft-cli/bin/` | the ten ArtCraft macOS CLIs (`photocraft-cli`, …) — *not committed* |
 | `craft-cli/<app>-<ver>/` | the extracted release payloads (licenses, docs) — *not committed* |
 | `craft-cli/SHA256SUMS` | the checksums `install_craft_clis.sh` verifies |
-| `craft-cli/FACTS-ch*.md` | the engines' real surfaces, written by running them |
 | `install_craft_clis.sh` | (Re)downloads and verifies the CLIs |
 | `install_node.sh` | (Re)downloads the pinned Node |
 | `install_python_deps.sh` | builds the repository's `.venv` |
@@ -20,7 +19,6 @@ rights, and it all runs natively on macOS.
 | `env.sh` | `source tools/env.sh` to put Node and the CLIs on `PATH` |
 | `link_node_modules.mjs` | points the chapter projects at the root `node_modules` |
 | `typecheck_all.mjs` | type-checks every chapter project |
-| `check_project_readmes.py` | checks every project README against the files it names |
 
 The first three rows are produced by the installers and are listed here so you
 know what to expect after running them; they are not in the repository.
@@ -47,8 +45,8 @@ should report v22.x.
 - The binaries are Apache-2.0 and are **never committed**.
   `install_craft_clis.sh` downloads them and checks the SHA-256 against
   `craft-cli/SHA256SUMS`; set `CRAFT_CLI_SOURCE` to install from a mirror.
-- The engines do **not** share a dialect. `craft-cli/FACTS-ch*.md` records what
-  each one actually speaks.
+- The engines do **not** share a dialect. `maintenance/engine-facts/FACTS-ch*.md`
+  records what each one actually speaks.
 
 ## `../master_mcp_server.ts` — one MCP server for all ten CLIs
 
