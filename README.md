@@ -300,23 +300,20 @@ The first line covers every chapter, the second only chapter 20.
 
 ## The engine surfaces
 
-The API each chapter relies on is recorded in `maintenance/engine-facts/`,
-one file per group of chapters:
+**The ten binaries do not share a dialect.** This is the first thing every
+listing has to get right, and it was established by running them, not by
+reading their documentation:
 
-| file | chapters |
+| apps | call |
 | --- | --- |
-| `maintenance/engine-facts/FACTS-ch18.md` | GridCraft, DeckCraft |
-| `maintenance/engine-facts/FACTS-ch19.md` | PhotoCraft, VectorCraft, DesignCraft, LightCraft, PdfCraft |
-| `maintenance/engine-facts/FACTS-ch20.md` | the capstone engines, FilmCraft, the control channel |
+| PhotoCraft, VectorCraft, FilmCraft, LightCraft, PdfCraft | `command_run { id, params }` |
+| DesignCraft, WordCraft | `execute { command, params }` |
+| EffectCraft, GridCraft | `execute_command { command, params }` |
+| DeckCraft | `run_command { command, params }` |
 
-They were written by running the binaries, not by reading their
-documentation, and they are the reference for every listing in the book.
-The single most important thing they record: **the ten binaries do not
-share a dialect.** PhotoCraft, VectorCraft, FilmCraft, LightCraft and
-PdfCraft run `command_run { id, params }`; DesignCraft and WordCraft run
-`execute { command, params }`; EffectCraft and GridCraft run
-`execute_command { command, params }`; DeckCraft runs `run_command {
-command, params }`.
+`photocraft-cli commands` (or the same subcommand on any of the others) is
+the authority for what a given binary accepts; the chapters use that, never
+a guessed name.
 
 ## Layout of the tools
 
@@ -332,7 +329,7 @@ command, params }`.
 | `tools/craft-cli/SHA256SUMS` | the checksums the install verifies |
 | `tools/link_node_modules.mjs` | point the projects at the root `node_modules` |
 | `tools/typecheck_all.mjs` | type-check every project |
-| `maintenance/` | what *authoring* the book needs: CI's checks and the engine fact sheets (see below) |
+| `tools/README.md` | the toolchain in one page, including the four call dialects |
 
 Everything above ships in the repository except the two things it installs:
 `tools/craft-cli/bin/` and `tools/node/` are downloaded. `tools/secrets.env`

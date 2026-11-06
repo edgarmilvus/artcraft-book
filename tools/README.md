@@ -45,8 +45,15 @@ should report v22.x.
 - The binaries are Apache-2.0 and are **never committed**.
   `install_craft_clis.sh` downloads them and checks the SHA-256 against
   `craft-cli/SHA256SUMS`; set `CRAFT_CLI_SOURCE` to install from a mirror.
-- The engines do **not** share a dialect. `maintenance/engine-facts/FACTS-ch*.md`
-  records what each one actually speaks.
+- The engines do **not** share a dialect. Checked by running them, this is
+  what each one answers:
+
+  | apps | call |
+  | --- | --- |
+  | PhotoCraft, VectorCraft, FilmCraft, LightCraft, PdfCraft | `command_run { id, params }` |
+  | DesignCraft, WordCraft | `execute { command, params }` |
+  | EffectCraft, GridCraft | `execute_command { command, params }` |
+  | DeckCraft | `run_command { command, params }` |
 
 ## `../master_mcp_server.ts` — one MCP server for all ten CLIs
 

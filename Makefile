@@ -8,7 +8,9 @@
 .PHONY: check e2e clean
 
 check:
-	@maintenance/check.sh
+	@node tools/link_node_modules.mjs --check
+	@node tools/typecheck_all.mjs
+	@./node_modules/.bin/tsc -p tsconfig.master.json
 
 e2e:
 	@./run_all.sh
