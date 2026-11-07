@@ -36,7 +36,7 @@ pathfinder boolean, a frame-accurate FilmCraft assembly, a governed PDF/DOCX
 pipeline and a capstone studio that runs end to end over MCP. Every listing in
 the book is here, and every one of them has a harness.
 
-[**Additional Information →**](https://tiny.cc/ArtCraftBook)
+[**Additional Information →**](https://leanpub.com/ArtCraftBook)
 
 ### Quickstart
 
@@ -206,8 +206,9 @@ docker compose build
 The image carries Node, Python, the ten Linux builds of the engines and a
 Chromium to drive the pages in chapter 15.
 
-Nothing else is needed: the harnesses run with an empty environment — no
-API key, no database server, no network.
+Nothing else is needed to run a harness: no API key, no database server. The
+harnesses never contact a model or a server, though the install steps above do
+download Node, the engine binaries and the Python packages.
 
 ## Run
 
@@ -304,9 +305,9 @@ run says so and is skipped instead of failing.
 
 The script reads, in order: your shell, `$ARTCRAFT_LIVE_ENV`
 (default `~/.config/artcraft/live.env`), and `tools/secrets.env`. Nothing in
-the repository names a provider, and `run_all.sh` is unchanged by any of it.
-
-The first line covers every chapter, the second only chapter 20.
+the code is tied to a provider — the example above points at a gateway, but
+any OpenAI-compatible endpoint works — and `run_all.sh` is unchanged by any
+of it.
 
 ## The engine surfaces
 
