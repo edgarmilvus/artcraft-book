@@ -14,6 +14,16 @@ The exercise *prompts* — the starting contracts the book prints before each
 worked solution — are kept outside this tree, so that everything here is
 code with a harness attached.
 
+**The engines are never simulated; the model is not called.** `run_all.sh`
+passes each project a scripted model through the same interface production
+uses, so a red harness points at the engine code rather than at a model's
+mood. The paths that do call a real model are collected behind `run_live.sh`,
+which is never part of that suite.
+
+**Not affiliated with the ArtCraft team.** This repository and the book are an
+independent project. The engines are Apache-2.0 and belong to their authors;
+the code, the harnesses and the prose here are the book's.
+
 ---
 
 <p align="center">
@@ -80,7 +90,7 @@ the artefacts each harness leaves behind.
 ## Sixty seconds
 
 A clone is about 90 MB, and one harness runs with nothing but Node and npm.
-Nothing is mocked and nothing needs the engine binaries:
+It needs neither the engine binaries nor a model:
 
 ```bash
 git clone https://github.com/edgarmilvus/artcraft-book.git
