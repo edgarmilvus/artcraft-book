@@ -1,0 +1,47 @@
+name: Errata
+description: Something in the book is wrong — a sentence, a number, an explanation, a figure.
+title: "Errata: chapter N — "
+labels: ["errata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a sentence that contradicts the code, a number that does not add up, or an
+        explanation that describes something the listing does not do. If a listing does
+        not run at all, use the other template.
+  - type: input
+    id: chapter
+    attributes:
+      label: Chapter
+      placeholder: "12 — the chapter title"
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Section heading, or the page in the PDF if you have it.
+      placeholder: "section 2, the paragraph after the trace table / p. 294"
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: What the book says
+      description: Paste the sentence, or the smallest piece of it that is wrong.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What it should say
+      description: If you know. A sentence is enough; a patch is better.
+      render: text
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Before opening
+      options:
+        - label: I checked this against the code in the repository, not only the printed page.
+          required: true

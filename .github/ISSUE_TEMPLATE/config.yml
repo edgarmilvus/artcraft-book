@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the setup section first
+    url: https://github.com/OWNER/REPO#readme
+    about: The interpreter version, the virtual environment, and the variables the listings read.

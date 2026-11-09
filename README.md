@@ -186,11 +186,11 @@ ship in a container image for the Docker path. Both read the versions pinned in
 Natively:
 
 ```bash
-npm install
+npm ci
 tools/install_python_deps.sh
 ```
 
-`npm install` writes one `node_modules` at the repository root and points
+`npm ci` writes one `node_modules` at the repository root and points
 the ninety-odd chapter projects at it. `install_python_deps.sh` builds a
 virtual environment with the third-party packages the Python listings
 import — Pillow, numpy, jsonschema, pydantic, the OpenAI SDK, the MCP
@@ -308,6 +308,22 @@ The script reads, in order: your shell, `$ARTCRAFT_LIVE_ENV`
 the code is tied to a provider — the example above points at a gateway, but
 any OpenAI-compatible endpoint works — and `run_all.sh` is unchanged by any
 of it.
+
+## When something does not start
+
+The five messages a first run actually produces:
+
+| message | what it means | fix |
+| --- | --- | --- |
+| `photocraft-cli not found at …/tools/craft-cli/bin/photocraft-cli` | the engine binaries were not installed | `tools/install_craft_clis.sh`, then `--check` |
+| `no Python 3.10+ interpreter found on the PATH` | macOS ships 3.9, which is too old | install a newer Python, rerun `tools/install_python_deps.sh` |
+| `no tsc — run "npm install" first` | you are inside a chapter project, not at the root | `npm ci` at the repository root |
+| `Cannot find module '@modelcontextprotocol/sdk'` | the shared `node_modules` is missing | same: `npm ci` at the root |
+| a large export stops after sixty seconds | the MCP client's default timeout | `MCP_TIMEOUT_MS=300000 ./run_all.sh` |
+
+Anything else: the failing harness prints its full output into the project's `output/`,
+and the last non-blank line is usually the message that matters. Open an issue with the
+chapter, the file and that line.
 
 ## The engine surfaces
 

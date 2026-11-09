@@ -1,0 +1,59 @@
+name: A listing does not run
+description: A script in the repository fails, prints the wrong thing, or cannot be installed.
+title: "chN listing — "
+labels: ["code"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The facts below are what makes a report reproducible. Without them the first
+        three replies are questions.
+  - type: input
+    id: chapter
+    attributes:
+      label: Chapter
+      placeholder: "7"
+    validations:
+      required: true
+  - type: input
+    id: listing
+    attributes:
+      label: Listing
+      description: The path under the repository root, or the folder plus the file name.
+      placeholder: "chapter7/example/files/01_script.py"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: The command you ran
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Full traceback or output
+      description: The last 30 lines are enough, but include the error line itself.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Node and OS
+      placeholder: "20.11.1 on macOS 15.2"
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Gateway
+      description: The base URL the listing was pointed at, if it calls a model. Never paste the key.
+      placeholder: "https://openrouter.ai/api/v1"
+  - type: textarea
+    id: freeze
+    attributes:
+      label: Npm (optional)
+      render: shell
+      placeholder: "npm ls --depth=0"
