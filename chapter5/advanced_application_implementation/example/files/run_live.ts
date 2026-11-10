@@ -6,18 +6,24 @@
  *   OPENAI_COMPATIBLE_MODEL=… npx tsx run_live.ts
  *
  * Not printed in the book: the chapter shows `runBrief` called directly.
+ * A real model can spend all its turns exploring and never save, so the
+ * harness asks once more before calling it a failure.
  */
 import { runBrief } from './src/agent-loop.js';
 
-const outcome = await runBrief(
-  'tenant-live',
-  'Design a 1200x600 launch banner with the headline Q3 LAUNCH and save it as brief.png.',
-  ['photocraft'],
-  false,
-);
+const brief =
+  'Design a 1200x600 launch banner with the headline Q3 LAUNCH and save it as brief.png.';
+
+const attempt = () => runBrief('tenant-live', brief, ['photocraft'], false);
+
+let outcome = await attempt();
+if (outcome.outputs.length === 0) {
+  console.error('the model finished without saving a document; retrying once');
+  outcome = await attempt();
+}
 
 console.log(JSON.stringify(outcome, null, 2));
 if (outcome.outputs.length === 0) {
-  console.error('the model finished without saving a document');
+  console.error('two attempts, no document saved');
   process.exit(1);
 }
