@@ -99,7 +99,7 @@ Paths are relative to `example/`:
 | `output/responses.jsonl` | all three responses, one JSON object per line |
 
 Filenames carry a millisecond stamp, so a run adds a pair of files per request
-rather than overwriting the last one. `run_all.sh` clears `out/banners` and
+rather than overwriting the last one. `run_offline.sh` clears `out/banners` and
 `out/stage-a` first, so the folder holds the last run's three requests; the
 first of them cost 343 ms and the next two 238 ms and 238 ms, and
 `artifact.json` is the third response (`responses.jsonl` has all three).

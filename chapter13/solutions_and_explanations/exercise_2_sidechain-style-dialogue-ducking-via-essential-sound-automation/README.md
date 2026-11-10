@@ -40,7 +40,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/mix_report.json` | pre/post loudness, true peak, duck depth and master correction |
 | `output/keyframes.csv` | every attack/hold/release keyframe with its tick |
 | `output/report.json` | assertion count, duck depth and artifact list |
-| `output/run_ex2.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex2.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

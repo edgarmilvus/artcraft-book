@@ -70,7 +70,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/wide/export/brochure-wide.pdf` | the exported corrected PDF |
 | `output/wide/_pristine/` | pristine copy for the one-column job |
 | `output/report.json` | scenario index, assertion count and artifact list |
-| `output/run_ex6.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex6.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

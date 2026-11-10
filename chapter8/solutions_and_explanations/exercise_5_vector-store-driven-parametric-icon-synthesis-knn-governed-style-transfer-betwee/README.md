@@ -54,7 +54,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/validation.json` | the spec, retrieval, geometry, validation and composite hashes |
 | `output/store.json` | the eight approved rows without their embedding vectors |
 | `output/report.json` | assertion count, request, accepted/rejected paths and artifact list |
-| `output/run_ex5.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex5.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

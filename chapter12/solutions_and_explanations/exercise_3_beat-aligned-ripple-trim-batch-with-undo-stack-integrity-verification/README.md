@@ -44,7 +44,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/pre_run_sequence.json` | the snapshot the undo check compares against |
 | `output/beats.csv` | every beat index and tick |
 | `output/report.json` | BPM, cumulative error, snap count and artifact list |
-| `output/run_ex3.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex3.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

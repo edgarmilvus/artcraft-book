@@ -39,7 +39,7 @@ All evidence is written to the solution's `output/` directory.
 | --- | --- |
 | `output/preset-validation.json` | five descriptors, default merges and the rejected cases |
 | `output/report.json` | assertion count, preset list and artifact list |
-| `output/run_ex5.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex5.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

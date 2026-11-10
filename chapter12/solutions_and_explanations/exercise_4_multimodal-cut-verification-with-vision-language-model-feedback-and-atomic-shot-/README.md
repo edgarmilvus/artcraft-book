@@ -50,7 +50,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/write/cutdown_S01_midpoint.png` | midpoint Program frame |
 | `output/write/cutdown_S01_audit.json` | candidates, clauses, scores and decisions |
 | `output/report.json` | accepted/rejected counts, call counts and artifact list |
-| `output/run_exercise4.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_exercise4.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

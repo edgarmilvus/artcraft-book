@@ -12,7 +12,7 @@
     "postinstall": "node tools/link_node_modules.mjs",
     "link": "node tools/link_node_modules.mjs",
     "typecheck": "node tools/typecheck_all.mjs",
-    "test": "./run_all.sh"
+    "test": "./run_offline.sh"
   },
   "dependencies": {
     "@ai-sdk/openai": "latest",

@@ -57,7 +57,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/final-budget.png` | artboard after the two-round budget scenario |
 | `output/report-budget.json` | two applied fixes and two budget escalations |
 | `output/report.json` | scenario index, assertion count and artifact list |
-| `output/run_ex2.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex2.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

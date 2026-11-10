@@ -55,7 +55,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/work/TEE-001-arSA-9x16-proof.pdf` | RTL proof |
 | `output/work/cache-manifest.json` | entries with source hashes, artifact hashes and command traces |
 | `output/report.json` | hits, misses, variants and artifact list |
-| `output/run_ex5.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex5.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

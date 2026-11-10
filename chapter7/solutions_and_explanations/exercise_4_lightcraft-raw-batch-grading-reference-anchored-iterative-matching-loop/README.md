@@ -56,7 +56,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/grading_report.json` | initial/final zone ΔE, applied deltas, iterations, convergence reason |
 | `output/report-rollback.json` | the escalated, rolled-back report |
 | `output/report.json` | scenario index, assertion count and artifact list |
-| `output/run_ex4.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex4.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

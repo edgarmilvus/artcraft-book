@@ -54,7 +54,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/library/catalog.log` | the journal of imports and flags |
 | `output/audit.json` | cluster rows, engine scores, flags and the agent report |
 | `output/report.json` | assertion count, cluster members and artifact list |
-| `output/run_ex2.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex2.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

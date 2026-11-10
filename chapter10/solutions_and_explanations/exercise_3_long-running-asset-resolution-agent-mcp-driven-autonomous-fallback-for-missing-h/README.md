@@ -51,7 +51,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/placeholder/SKU-200-placeholder.png` | generated loopback placeholder |
 | `output/resolution-traces.json` | all three traces with call tables and digests |
 | `output/report.json` | statuses, paths and artifact list |
-| `output/run_ex3.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex3.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

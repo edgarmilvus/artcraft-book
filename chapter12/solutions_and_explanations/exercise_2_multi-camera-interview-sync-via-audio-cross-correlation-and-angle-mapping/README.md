@@ -49,7 +49,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/correlations.json` | full correlation rows, including rejection reasons |
 | `output/multicam_report.json` | alignment, residual, pauses and validation flag |
 | `output/report.json` | assertion count, offsets and artifact list |
-| `output/run_ex2.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex2.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

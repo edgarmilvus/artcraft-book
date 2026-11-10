@@ -50,7 +50,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/sofa-refined.svg` | SVG preview of the refined path |
 | `output/refinement-log.jsonl` | the per-run audit line: iterations, spikes, critique, edits, hashes and termination reason |
 | `output/report.json` | assertion count, anchor counts, iteration summaries and artifact list |
-| `output/run_ex4.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex4.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

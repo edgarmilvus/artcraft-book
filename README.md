@@ -14,7 +14,7 @@ The exercise *prompts* — the starting contracts the book prints before each
 worked solution — are kept outside this tree, so that everything here is
 code with a harness attached.
 
-**The engines are never simulated; the model is not called.** `run_all.sh`
+**The engines are never simulated; the model is not called.** `run_offline.sh`
 passes each project a scripted model through the same interface production
 uses, so a red harness points at the engine code rather than at a model's
 mood. The paths that do call a real model are collected behind `run_live.sh`,
@@ -144,15 +144,18 @@ produces. The chapter README is the index over them.
 
 ## What you need
 
-There are two ways to run this book. On macOS you run the harnesses
-natively. On any other system, or on a Mac where you would rather not
-install three gigabytes of engines, you run them inside Docker.
+The ArtCraft CLIs are **macOS builds**. That decides the platform matrix:
+
+| | macOS 14+ | Linux | Windows |
+| --- | --- | --- | --- |
+| Engines natively | yes, `tools/install_craft_clis.sh` | no | no |
+| Engines in Docker | yes | yes | Docker Desktop (WSL2) |
+| One harness, no engines | yes | yes | yes, Node 22.5+ |
 
 | | Native on macOS | Docker |
 | --- | --- | --- |
-| You need | macOS 14+, Node.js 22.5+, Python 3.10+ | Docker |
+| You need | Node.js 22.5+, Python 3.10+ | Docker |
 | Disk | about 4 GB | about 8 GB |
-| Engine binaries | fetched by `tools/install_craft_clis.sh` | inside the image |
 | Speed | fastest | slower |
 
 The engine binaries are Apache-2.0, are never committed, and are the one
@@ -212,14 +215,27 @@ download Node, the engine binaries and the Python packages.
 
 ## Run
 
+Three scripts, one vocabulary. `run_offline` never calls a model; it is not
+about the network, it is about the model.
+
+| command | what it runs | needs |
+| --- | --- | --- |
+| `./run_offline.sh` | 154 harnesses against the real engines, with a scripted model | the engine binaries |
+| `./run_live.sh` | the nine entry points that call a real model | `OPENAI_COMPATIBLE_*` |
+| `./run_everything.sh` | offline, then live; skips the live half when no key is set | both |
+| `make check` | types, the shared tree, the master server | `npm ci` |
+
+### The deterministic suite
+
 ```bash
-./run_all.sh
+./run_offline.sh
 ```
 
-Every harness writes its log next to the code it exercises and prints
-its result. The root script calls each chapter's own `run_all.sh` in
-turn and keeps going when one of them fails, so one command covers the
-whole book: 154 harnesses across the twenty chapters.
+About eight minutes on an Apple Silicon Mac, longer on Intel and in a
+container. Every harness writes its log next to the code it exercises and
+prints its result; the root script calls each chapter's own `run_all.sh` in
+turn and keeps going when one of them fails, so one command covers the whole
+book: 154 harnesses across the twenty chapters.
 
 Each project writes its artifacts under its own `output/`, or under
 `files/output/` when the listings live in `files/`; the project README
@@ -234,54 +250,51 @@ Some tools are invoked over the MCP control channel, whose client waits
 export can exceed that. Raise it without editing any code:
 
 ```bash
-MCP_TIMEOUT_MS=300000 ./run_all.sh
+MCP_TIMEOUT_MS=300000 ./run_offline.sh
 ```
 
-With Docker, the same run, with everything already inside the image:
+### One chapter, one harness
 
 ```bash
+./chapter14/run_all.sh          # one chapter, natively
+cd chapter20/advanced_application_implementation/example/files
+npx tsx run_forge.ts            # one artifact
+node tools/typecheck_all.mjs chapter20   # types only, no engines
+```
+
+`make check` runs the last of those for every project, plus the shared-tree check
+and the master server. It does not touch the engines, so it works on Linux too.
+
+### Run in Docker
+
+Everything inside the image, no install on the host:
+
+```bash
+docker compose build
 docker compose run --rm artcraft
 ```
 
-A container is slower than a native run, so a harness that waits on the engine
-can cross the 60-second default. Pass the same setting through the container:
+On Linux and on Windows with Docker Desktop that is the whole story. A container
+is slower than a native run, so a harness that waits on an engine can cross the
+60-second default:
 
 ```bash
 docker compose run --rm -e MCP_TIMEOUT_MS=300000 artcraft
 ```
 
 The sources are mounted into the container rather than copied, so edits are
-picked up without a rebuild and the artifacts land on your disk. To run one
-chapter there:
+picked up without a rebuild and the artifacts land on your disk. One chapter:
 
 ```bash
 docker compose run --rm artcraft ./chapter14/run_all.sh
 ```
 
-To run one chapter:
-
-```bash
-./chapter14/run_all.sh
-```
-
-To run one artifact:
-
-```bash
-cd chapter20/advanced_application_implementation/example/files
-npx tsx run_forge.ts
-```
-
-`make e2e` is `./run_all.sh`. `make check` type-checks every project, links the
-shared dependency tree and checks the master MCP server, without touching the
-engines — useful on Linux, where the macOS binaries cannot be installed:
-
-```bash
-node tools/typecheck_all.mjs chapter20   # one chapter
-```
-
 ## Run the live model paths
 
-`run_all.sh` never contacts a model: the LLM is behind an interface and the
+`./run_live.sh` runs the other half. `./run_everything.sh` runs both, in order,
+and skips the live half when no key is configured.
+
+`run_offline.sh` never contacts a model: the LLM is behind an interface and the
 harnesses inject a scripted one, so the suite is deterministic and needs no
 key. The handful of entry points that do call a real model live behind a
 second script, and it runs them against any OpenAI-compatible endpoint:
@@ -306,7 +319,7 @@ run says so and is skipped instead of failing.
 The script reads, in order: your shell, `$ARTCRAFT_LIVE_ENV`
 (default `~/.config/artcraft/live.env`), and `tools/secrets.env`. Nothing in
 the code is tied to a provider — the example above points at a gateway, but
-any OpenAI-compatible endpoint works — and `run_all.sh` is unchanged by any
+any OpenAI-compatible endpoint works — and `run_offline.sh` is unchanged by any
 of it.
 
 ## When something does not start
@@ -319,7 +332,7 @@ The five messages a first run actually produces:
 | `no Python 3.10+ interpreter found on the PATH` | macOS ships 3.9, which is too old | install a newer Python, rerun `tools/install_python_deps.sh` |
 | `no tsc — run "npm install" first` | you are inside a chapter project, not at the root | `npm ci` at the repository root |
 | `Cannot find module '@modelcontextprotocol/sdk'` | the shared `node_modules` is missing | same: `npm ci` at the root |
-| a large export stops after sixty seconds | the MCP client's default timeout | `MCP_TIMEOUT_MS=300000 ./run_all.sh` |
+| a large export stops after sixty seconds | the MCP client's default timeout | `MCP_TIMEOUT_MS=300000 ./run_offline.sh` |
 
 Anything else: the failing harness prints its full output into the project's `output/`,
 and the last non-blank line is usually the message that matters. Open an issue with the

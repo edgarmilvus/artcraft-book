@@ -54,7 +54,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/spread_manifest.json` | pass ledger, applied commands, verdicts and rollback state |
 | `output/reject-manifest.json` | the same manifest for the all-rejected scenario |
 | `output/report.json` | scenario index, assertion count and artifact list |
-| `output/run_ex3.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex3.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

@@ -61,7 +61,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/exports/sub-b/metadata.json` | second metadata record |
 | `output/library/` | the real LightCraft catalog after the imports |
 | `output/report.json` | batch ids, exported/rejected counts, health and artifacts |
-| `output/run_ex5.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex5.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

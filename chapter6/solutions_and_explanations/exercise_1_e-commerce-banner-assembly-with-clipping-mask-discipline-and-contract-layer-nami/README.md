@@ -80,7 +80,7 @@ PASS the compensation restores the opening history depth
 
 The failed SKU has no directory under `output/banners/`: a placement failure is
 reported and never saved. The harness clears only its own subdirectories, so
-the log written by `run_all.sh` survives a rerun.
+the log written by `run_offline.sh` survives a rerun.
 
 ## Notes
 

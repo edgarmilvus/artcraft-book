@@ -1,10 +1,10 @@
 #!/bin/sh
 # Runs every code path in the book that needs a real model.
 #
-# `run_all.sh` is the deterministic suite: real engines, scripted models, no
+# `run_offline.sh` is the deterministic suite: real engines, scripted models, no
 # network and no key. This script is the other half — the entry points that
 # talk to an OpenAI-compatible endpoint and therefore cost money and vary
-# from run to run. It is never called by `run_all.sh`, and `run_all.sh` never
+# from run to run. It is never called by `run_offline.sh`, and `run_offline.sh` never
 # contacts a provider.
 #
 #   ./run_live.sh                 # every stage it can run
@@ -27,7 +27,7 @@
 # Deliberately not stages: chapter 15's gate needs an EffectCraft project
 # already open (the book ships the gate, not a project), and chapters 10 and
 # 12 have no CLI entry — their model paths are exercised through injected
-# dependencies in `run_all.sh`.
+# dependencies in `run_offline.sh`.
 set -u
 
 ROOT=$(cd "$(dirname "$0")" && pwd)

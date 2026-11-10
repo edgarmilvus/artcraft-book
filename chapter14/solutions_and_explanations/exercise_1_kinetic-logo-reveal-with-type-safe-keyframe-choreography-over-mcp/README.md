@@ -38,7 +38,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/rig-steps.json` | the five primitive commands and their parameters |
 | `output/preview.png` | a 1920×1080 logo-layout preview |
 | `output/report.json` | assertion count, step list and artifact list |
-| `output/run_ex1.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex1.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

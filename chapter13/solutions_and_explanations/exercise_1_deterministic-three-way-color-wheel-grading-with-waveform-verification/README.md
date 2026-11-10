@@ -40,7 +40,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/delivery_report.json` | clip batch depth, scope verdict and rollback plan |
 | `output/verification.png` | a 960×540 verification frame |
 | `output/report.json` | assertion count, batch shape and artifact list |
-| `output/run_ex1.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex1.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

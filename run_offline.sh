@@ -1,9 +1,13 @@
 #!/bin/sh
 # Runs every harness in the book and prints one line per harness.
 #
-# Each chapter carries its own `run_all.sh`; this script calls them in
-# order and keeps going after a failing chapter, so one run reports the
-# state of the whole book.
+# The deterministic half: the real engines, a scripted model, no key. Each
+# chapter carries its own runner; this script calls them in order and keeps
+# going after a failing chapter, so one run reports the state of the book.
+#
+#   run_offline.sh      this file
+#   run_live.sh         the paths that call a real model
+#   run_everything.sh   both
 set -e
 ROOT=$(cd "$(dirname "$0")" && pwd)
 export PATH="$ROOT/tools/craft-cli/bin:$ROOT/tools/node/bin:$PATH"

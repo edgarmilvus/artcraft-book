@@ -42,7 +42,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/ducking_audit.json` | per-group attack/release ticks and sample counts |
 | `output/ducking_audit.csv` | the same audit as a diffable CSV |
 | `output/report.json` | timebase constants, assertion count and artifact list |
-| `output/run_ex1.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex1.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

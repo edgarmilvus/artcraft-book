@@ -57,7 +57,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/build-2/` | the second build used for the determinism comparison |
 | `output/composition-spec.json` | the Boolean tree and simplification rules used by the build |
 | `output/report.json` | assertion count, tier summary and artifact list |
-| `output/run_ex3.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex3.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

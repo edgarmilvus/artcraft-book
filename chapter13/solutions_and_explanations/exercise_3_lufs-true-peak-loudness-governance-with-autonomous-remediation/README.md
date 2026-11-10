@@ -41,7 +41,7 @@ All evidence is written to the solution's `output/` directory.
 | --- | --- |
 | `output/governance_report.json` | spec, measurements, decisions, final status and residuals |
 | `output/report.json` | ladder summary, target and artifact list |
-| `output/run_ex3.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex3.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

@@ -35,7 +35,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/loop-report.json` | config, three iteration records and the final influence vector |
 | `output/frames/iter_1.png` … `iter_3.png` | 960×540 preview frames |
 | `output/report.json` | assertion count, final mean and artifact list |
-| `output/run_ex3.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex3.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

@@ -46,7 +46,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/graded/SKU-BAD_1:1-en-US.png` | render from the malformed-response run |
 | `output/graded/SKU-BAD_1:1-en-US_audit.json` | malformed-response audit |
 | `output/report.json` | status, corrections, final hash and artifact list |
-| `output/run_ex4.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex4.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

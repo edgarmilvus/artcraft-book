@@ -38,7 +38,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/edl-conversion.csv` | one row per cut edge with source/target ticks and DF timecode |
 | `output/parity-report.json` | all rows plus max residual in ticks, µs and samples |
 | `output/report.json` | cut count, bounds, DF failures and artifact list |
-| `output/run_ex3.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex3.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

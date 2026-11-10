@@ -50,7 +50,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/banners/SKU-2.png` | second rendered banner |
 | `output/banners/feed-audit.json` | accepted/deferred counts, ordered rejections and artifact hashes |
 | `output/report.json` | harness summary and artifact list |
-| `output/run_ex1.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex1.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

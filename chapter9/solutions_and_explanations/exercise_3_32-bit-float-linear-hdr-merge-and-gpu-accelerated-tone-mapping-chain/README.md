@@ -55,7 +55,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/hdr/merged-4.tif` | the working-space proof export |
 | `output/stage-log.json` | per-stage GPU, timing and warning records |
 | `output/report.json` | bracket set, exit code, produced files and artifact list |
-| `output/run_ex3.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex3.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

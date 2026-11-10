@@ -56,7 +56,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/library/catalog.snap` | the library catalog after the run |
 | `output/library/catalog.log` | the import / stack journal |
 | `output/report.json` | snapshot ids, imported ids, duplicate groups and stack counts |
-| `output/run_ex1.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex1.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

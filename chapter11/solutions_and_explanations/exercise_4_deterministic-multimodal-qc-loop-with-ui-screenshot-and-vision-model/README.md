@@ -42,7 +42,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/program-monitor.png` | a real 1280×720 Program-monitor screenshot with a center marker |
 | `output/sync-qc-report.json` | pass/fail/inconclusive reports and the anchor rows |
 | `output/report.json` | threshold, ticks-per-sample and artifact list |
-| `output/run_ex4.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex4.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

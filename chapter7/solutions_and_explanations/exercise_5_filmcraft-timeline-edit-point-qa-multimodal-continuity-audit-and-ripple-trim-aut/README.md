@@ -62,7 +62,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/frames/cut-3-*.png` | the three frames around the audio-pop cut |
 | `output/summary.txt` | human-readable sequence and finding counts |
 | `output/report.json` | sequence, findings, assertion count and artifact list |
-| `output/run_ex5.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex5.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

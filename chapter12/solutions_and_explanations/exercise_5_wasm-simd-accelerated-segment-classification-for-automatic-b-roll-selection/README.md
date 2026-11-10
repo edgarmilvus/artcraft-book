@@ -44,7 +44,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/write/sample-frame.png` | the RGBA source frame |
 | `output/classification.json` | twelve probabilities, top label and probe value |
 | `output/report.json` | assertion count, probe, label and artifact list |
-| `output/run_ex5.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex5.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

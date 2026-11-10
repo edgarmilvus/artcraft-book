@@ -43,7 +43,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/ripple_audit.json` | two trim rows with zero drift |
 | `output/ripple_audit_drift.json` | the same plan with a one-tick drift counter-example |
 | `output/report.json` | constants, assertion count and artifact list |
-| `output/run_ex2.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex2.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

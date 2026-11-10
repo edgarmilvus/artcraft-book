@@ -52,7 +52,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/write/LOCKED-1@2x.png` | 2× raster proof |
 | `output/write/brand-template-audit.json` | per-row rule result and artifacts |
 | `output/report.json` | harness summary and artifact list |
-| `output/run_ex2.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex2.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

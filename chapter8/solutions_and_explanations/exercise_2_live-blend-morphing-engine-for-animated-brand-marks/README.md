@@ -59,7 +59,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/morph.svg` | SVG preview of the same document |
 | `output/review.json` | the accepted critique and the escalated pinch run |
 | `output/report.json` | assertion count, blend summary and artifact list |
-| `output/run_ex2.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex2.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

@@ -37,7 +37,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/parsed-paths.json` | subpaths, handles, warnings and the source dHash |
 | `output/repaired-logo.svg` | the SVG with the unsupported circle decomposed to a path |
 | `output/report.json` | assertion count, subpath/warning counts and artifact list |
-| `output/run_ex2.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex2.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

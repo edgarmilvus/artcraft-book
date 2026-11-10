@@ -3,7 +3,7 @@
  * verify_examples.mjs — checks that the Chapter 1 basic and advanced examples
  * left real artefacts in their output folders.
  *
- * It deliberately does not re-run the examples: `run_all.sh` does that first.
+ * It deliberately does not re-run the examples: `run_offline.sh` does that first.
  * This script reads what is on disk and asserts the properties the chapter
  * promises: the PNGs have the right dimensions, the `.pcraft` files are real
  * layered documents (not renamed PNGs), the model-driven JSON is coherent and

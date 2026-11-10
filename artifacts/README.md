@@ -49,7 +49,7 @@ unzip artcraft-outputs-ch11-20.zip
 
 Paths inside the archives are relative to the repository root, so every file
 lands back in its own project folder. Nothing is overwritten that a run of
-`./run_all.sh` would not rewrite anyway.
+`./run_offline.sh` would not rewrite anyway.
 
 ## What is inside, and what is not
 

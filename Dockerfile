@@ -160,4 +160,4 @@ ENV PHOTOCRAFT_DISABLE_GPU=1 \
 WORKDIR /work
 
 ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/artcraft-entry.sh"]
-CMD ["./run_all.sh"]
+CMD ["./run_offline.sh"]

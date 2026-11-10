@@ -79,7 +79,7 @@ The run ends with `11/11 checks passed`.
 ## Notes
 
 - **DesignCraft must be on `PATH`.** The harness sets `PATH` through
-  `run_all.sh`; when running manually, include `tools/craft-cli/bin`.
+  `run_offline.sh`; when running manually, include `tools/craft-cli/bin`.
 - `AUTOMATION_ROOT` defaults to the solution's `output/asset-run`. The
   harness sets `CANDIDATE_DIR` and `SEARCH_DIRS` to the fixture folders.
 - The image fixture is shared with Chapter 1, so the check proves a real PNG

@@ -55,7 +55,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/audit/1/iter_3.jpg` | third iteration render |
 | `output/source/product.xmp` | the XMP sidecar written by the audit |
 | `output/report.json` | issues, deltas, final develop state, convergence and artifacts |
-| `output/run_ex4.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex4.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 

@@ -47,7 +47,7 @@ All evidence is written to the solution's `output/` directory.
 | `output/deliverables/archive-mxf.wav` | deliverable 5 |
 | `output/deliverables/mix.wav` | deliverable 6 |
 | `output/report.json` | span, expected samples and artifact list |
-| `output/run_ex5.log` | shell-captured harness log written by `run_all.sh` |
+| `output/run_ex5.log` | shell-captured harness log written by `run_offline.sh` |
 
 ## The listings
 
