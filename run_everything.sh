@@ -14,6 +14,23 @@
 set -u
 
 ROOT=$(cd "$(dirname "$0")" && pwd)
+
+# The live half reads its configuration the same way run_live.sh does, so this
+# script has to know about it before it decides whether a key exists.
+load_env() {
+  [ -f "$1" ] || return 0
+  while IFS= read -r line; do
+    case "$line" in ''|'#'*) continue ;; esac
+    key=${line%%=*}; val=${line#*=}
+    case "$key" in *[!A-Za-z0-9_]*) continue ;; esac
+    eval "current=\${$key-}"
+    [ -n "$current" ] && continue
+    export "$key=$val"
+  done < "$1"
+}
+load_env "${ARTCRAFT_LIVE_ENV:-$HOME/.config/artcraft/live.env}"
+load_env "$ROOT/tools/secrets.env"
+
 PG_NAME=artcraft-pg
 PG_PASSWORD=${PG_PASSWORD:-artcraft}
 PG_PORT=${PG_PORT:-5432}
@@ -22,6 +39,20 @@ say() { printf '%s\n' "$*"; }
 
 ensure_postgres() {
   command -v docker >/dev/null 2>&1 || return 1
+
+  # Docker Desktop is not a daemon that starts itself on macOS: ask it, then
+  # give it the minute it usually needs.
+  if ! docker info >/dev/null 2>&1; then
+    if [ -d /Applications/Docker.app ]; then
+      say "postgres: starting Docker Desktop"
+      open -a Docker >/dev/null 2>&1
+      i=0
+      while [ "$i" -lt 60 ]; do
+        docker info >/dev/null 2>&1 && break
+        i=$((i + 1)); sleep 2
+      done
+    fi
+  fi
   docker info >/dev/null 2>&1 || return 1
 
   if ! docker ps --format '{{.Names}}' | grep -qx "$PG_NAME"; then

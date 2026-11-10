@@ -29,12 +29,11 @@ const job = {
   paths: { psd: "brand-kit.psd", preview: "brand-kit.png" },
 };
 
-try {
+async function runWorker(): Promise<string> {
   const child = spawn(process.execPath, ["--import", "tsx", "01_psd-brand-forge.ts"], {
     env: { ...process.env, PHOTOCRAFT_READ_ROOT: scratch, PHOTOCRAFT_WRITE_ROOT: scratch },
   });
-
-  const out = await new Promise<string>((resolve, reject) => {
+  return await new Promise<string>((resolve, reject) => {
     let buf = "";
     child.stdout.on("data", (d) => { buf += d; });
     child.stderr.on("data", (d) => { buf += d; });
@@ -43,6 +42,10 @@ try {
     child.stdin.end(JSON.stringify({ requestId: "live", job }) + "\n");
     setTimeout(() => child.kill(), 180_000);
   });
+}
+
+try {
+  const out = await runWorker();
 
   const envelope = JSON.parse(
     out.trim().split("\n").filter((l) => l.startsWith("{")).pop() ?? "null",
@@ -54,8 +57,20 @@ try {
     process.exit(1);
   }
   if (!envelope.report?.visionVerdict) {
-    console.error("the worker ran but produced no vision verdict");
-    process.exit(1);
+    // One unusable reply (a 429, a dropped connection, an empty completion)
+    // is not a failed stage: the worker is cheap, so ask it once more before
+    // giving up. The book's code has no retry here on purpose; this harness
+    // does, because it exists to smoke-test the live path.
+    console.error("no vision verdict in the first reply; retrying once");
+    const retry = await runWorker();
+    const second = JSON.parse(retry.trim().split("\n").filter((l) => l.startsWith("{")).pop() ?? "null") as typeof envelope | null;
+    if (!second?.report?.visionVerdict) {
+      console.error("the worker ran twice and produced no vision verdict");
+      process.exit(1);
+    }
+    console.log(JSON.stringify(second.report.visionVerdict, null, 2));
+    console.log("vision audit ok");
+    process.exit(0);
   }
 
   console.log(JSON.stringify(envelope.report.visionVerdict, null, 2));
