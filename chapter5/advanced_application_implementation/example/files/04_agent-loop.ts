@@ -29,10 +29,35 @@ const MAX_TURNS = 24;
  * narrower inspect instead of drowning in the whole document.
  */
 const MAX_TOOL_CHARS = 16_000;
-const clip = (s: string): string =>
-  s.length <= MAX_TOOL_CHARS
-    ? s
-    : `${s.slice(0, MAX_TOOL_CHARS)}\n… [${s.length - MAX_TOOL_CHARS} characters truncated; ask for a narrower inspect]`;
+
+/**
+ * A tool reply can be enormous. Two shapes need different treatment:
+ *
+ *   - image bytes (a preview comes back as base64) are useless to a text
+ *     model and must never be sliced: half a PNG is noise, and it fills the
+ *     window on its own;
+ *   - structured text is clipped, but into a *valid* object — a sliced JSON
+ *     document is invalid JSON, and a model that receives one keeps retrying
+ *     the same call until the turn budget is gone.
+ */
+const IMAGE_BYTES = /iVBORw0KGgo|data:image\/[a-z]+;base64,|"(png|jpeg|webp)Base64"\s*:/i;
+
+function clip(s: string): string {
+  if (IMAGE_BYTES.test(s)) {
+    return JSON.stringify({
+      image: 'omitted',
+      characters: s.length,
+      hint: 'the render is on disk; inspect the document instead of re-reading the bytes',
+    });
+  }
+  if (s.length <= MAX_TOOL_CHARS) return s;
+  return JSON.stringify({
+    truncated: true,
+    characters: s.length,
+    head: s.slice(0, MAX_TOOL_CHARS),
+    hint: 'reply was too large; inspect a narrower part of the document',
+  });
+}
 /**
  * The endpoint is configuration, not code: any OpenAI-compatible server —
  * DeepSeek, OpenRouter, vLLM, a gateway — speaks this same API. The model id

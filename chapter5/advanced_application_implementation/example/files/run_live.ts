@@ -14,12 +14,15 @@ import { runBrief } from './src/agent-loop.js';
 const brief =
   'Design a 1200x600 launch banner with the headline Q3 LAUNCH and save it as brief.png.';
 
-const attempt = () => runBrief('tenant-live', brief, ['photocraft'], false);
+// The second attempt is deliberately smaller: if the model spent the first
+// budget exploring, repeating the same brief spends a second one the same way.
+const minimal =
+  'Create a 1200x600 document and save it as brief.png. Nothing else.';
 
-let outcome = await attempt();
+let outcome = await runBrief('tenant-live', brief, ['photocraft'], false);
 if (outcome.outputs.length === 0) {
-  console.error('the model finished without saving a document; retrying once');
-  outcome = await attempt();
+  console.error('the model finished without saving a document; retrying with a minimal brief');
+  outcome = await runBrief('tenant-live', minimal, ['photocraft'], false);
 }
 
 console.log(JSON.stringify(outcome, null, 2));
