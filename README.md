@@ -222,7 +222,7 @@ about the network, it is about the model.
 | --- | --- | --- |
 | `./run_offline.sh` | 154 harnesses against the real engines, with a scripted model | the engine binaries |
 | `./run_live.sh` | the nine entry points that call a real model | `OPENAI_COMPATIBLE_*` |
-| `./run_everything.sh` | offline, then live; skips the live half when no key is set | both |
+| `./run_everything.sh` | offline, then live; starts the pgvector container chapter 9 needs, and names anything it still cannot run | both |
 | `make check` | types, the shared tree, the master server | `npm ci` |
 
 ### The deterministic suite
