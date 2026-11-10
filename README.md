@@ -381,6 +381,7 @@ a guessed name.
 | `tools/craft-cli/SHA256SUMS` | the checksums the install verifies |
 | `tools/link_node_modules.mjs` | point the projects at the root `node_modules` |
 | `tools/typecheck_all.mjs` | type-check every project |
+| `tools/make_live_fixtures.sh` | generate the three frames chapter 9's live stage needs, and seed them |
 | `tools/README.md` | the toolchain in one page, including the four call dialects |
 
 Everything above ships in the repository except the two things it installs:

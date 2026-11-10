@@ -19,6 +19,7 @@ rights, and it all runs natively on macOS.
 | `env.sh` | `source tools/env.sh` to put Node and the CLIs on `PATH` |
 | `link_node_modules.mjs` | points the chapter projects at the root `node_modules` |
 | `typecheck_all.mjs` | type-checks every chapter project |
+| `make_live_fixtures.sh` | three frames, a LightCraft library and the vectors chapter 9's live stage needs |
 
 The first three rows are produced by the installers and are listed here so you
 know what to expect after running them; they are not in the repository.
