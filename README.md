@@ -311,10 +311,22 @@ export OPENAI_COMPATIBLE_VISION_MODEL=deepseek/deepseek-v4.1-flash
 ```
 
 Add `EMBEDDING_API_KEY`, `EMBEDDING_BASE_URL` and `EMBEDDING_MODEL` if you want
-the embedding path. Chapter 9's culling agent also needs a Postgres with
-pgvector (`PG_DSN`) and the ids of the frames to cull (`SEED_PHOTO_IDS`), and
-chapter 9's library path comes from `LIGHTCRAFT_LIBRARY`. A stage that cannot
-run says so and is skipped instead of failing.
+the embedding path.
+
+Chapter 9's culling agent needs three things the repository does not ship: a
+Postgres with pgvector (`PG_DSN`), a LightCraft library (`LIGHTCRAFT_LIBRARY`)
+and the ids of the frames to cull (`SEED_PHOTO_IDS`). To run it against a
+fixture instead of your own photographs:
+
+```bash
+tools/make_live_fixtures.sh --write
+```
+
+That generates three frames, imports them, seeds the vectors and writes the
+three variables into the live.env file. The frames are a smoke fixture, not
+photography: the stage runs end to end, and its verdict on them means little.
+
+A stage that cannot run says so and is skipped instead of failing.
 
 The script reads, in order: your shell, `$ARTCRAFT_LIVE_ENV`
 (default `~/.config/artcraft/live.env`), and `tools/secrets.env`. Nothing in
