@@ -262,6 +262,26 @@ It generates three frames, imports them, seeds the vectors and appends
 `SEED_PHOTO_IDS`, `LIGHTCRAFT_LIBRARY` and `PG_DSN` to the environment file.
 The frames are a smoke fixture, not photography.
 
+**With Docker.** The container does not see your shell, so pass the environment
+in: `source ~/.config/artcraft/env.sh` on the host first, and `compose.yaml`
+forwards the variables.
+
+```bash
+source ~/.config/artcraft/env.sh
+docker compose run --rm artcraft ./run_live.sh
+```
+
+Two values mean something different inside the container. `PG_DSN` must reach the
+host, not the container's own loopback — use
+`postgres://postgres:artcraft@host.docker.internal:5432/postgres`.
+`LIGHTCRAFT_LIBRARY` must be a path inside the container, so mount the folder
+and point the variable at the mount:
+
+```bash
+docker compose run --rm -v "$HOME/artcraft-live-library:/library:ro" \
+  -e LIGHTCRAFT_LIBRARY=/library/wedding artcraft ./run_live.sh --only ch9-culling
+```
+
 A stage whose requirements are missing is skipped and named, not failed.
 `run_offline.sh` is unchanged by any of it.
 
