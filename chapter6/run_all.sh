@@ -4,6 +4,12 @@ set -e
 ROOT=$(cd "$(dirname "$0")" && pwd)
 export PATH="$ROOT/../tools/craft-cli/bin:$PATH"
 
+# The deterministic suite must not see a model. A key exported in the shell is
+# exactly what makes a harness that asserts the no-key path fail, so drop the
+# live environment here and let the engines be the only real thing.
+unset OPENAI_COMPATIBLE_API_KEY OPENAI_COMPATIBLE_BASE_URL OPENAI_COMPATIBLE_MODEL OPENAI_COMPATIBLE_VISION_MODEL
+unset EMBEDDING_API_KEY EMBEDDING_BASE_URL EMBEDDING_MODEL
+
 FAILED=0
 PY=$("$ROOT/../tools/pick_python.sh")
 : "${PY:?Python 3.10+ is required for exercise 3}"
