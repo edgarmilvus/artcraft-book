@@ -186,11 +186,21 @@ and the master server. It does not touch the engines, so it works on Linux too.
 
 ### Run in Docker
 
-Everything inside the image, no install on the host:
+Everything inside the image, no install on the host. The container's default
+command is `./run_offline.sh`, so this runs the deterministic suite:
 
 ```bash
 docker compose build
 docker compose run --rm artcraft
+```
+
+For the live paths, source the environment on the host and pass the script —
+`compose.yaml` forwards the variables:
+
+```bash
+source ~/.config/artcraft/env.sh
+docker compose run --rm artcraft ./run_live.sh
+docker compose run --rm artcraft ./run_everything.sh
 ```
 
 On Linux and on Windows with Docker Desktop that is the whole story. A container
