@@ -132,7 +132,7 @@ Nothing else is needed to run a harness: no API key, no database server. The
 harnesses never contact a model or a server, though the install steps above do
 download Node, the engine binaries and the Python packages.
 
-## Run
+## Run offline
 
 Three scripts, one vocabulary. `run_offline` never calls a model; it is not
 about the network, it is about the model.
@@ -143,8 +143,6 @@ about the network, it is about the model.
 | `./run_live.sh` | the nine entry points that call a real model | `OPENAI_COMPATIBLE_*` |
 | `./run_everything.sh` | offline, then live; starts the pgvector container chapter 9 needs, and names anything it still cannot run | both |
 | `make check` | types, the shared tree, the master server | `npm ci` |
-
-### The deterministic suite
 
 ```bash
 ./run_offline.sh
@@ -184,45 +182,10 @@ node tools/typecheck_all.mjs chapter20   # types only, no engines
 `make check` runs the last of those for every project, plus the shared-tree check
 and the master server. It does not touch the engines, so it works on Linux too.
 
-### Run in Docker
+## Run live
 
-Everything inside the image, no install on the host. The container's default
-command is `./run_offline.sh`, so this runs the deterministic suite:
-
-```bash
-docker compose build
-docker compose run --rm artcraft
-```
-
-For the live paths, source the environment on the host and pass the script —
-`compose.yaml` forwards the variables:
-
-```bash
-source ~/.config/artcraft/env.sh
-docker compose run --rm artcraft ./run_live.sh
-docker compose run --rm artcraft ./run_everything.sh
-```
-
-On Linux and on Windows with Docker Desktop that is the whole story. A container
-is slower than a native run, so a harness that waits on an engine can cross the
-60-second default:
-
-```bash
-docker compose run --rm -e MCP_TIMEOUT_MS=300000 artcraft
-```
-
-The sources are mounted into the container rather than copied, so edits are
-picked up without a rebuild and the artifacts land on your disk. One chapter:
-
-```bash
-docker compose run --rm artcraft ./chapter14/run_all.sh
-```
-
-## Run the live model paths
-
-`run_offline.sh` never calls a model: the LLM sits behind an interface and the
-harnesses inject a scripted one. The nine entry points that do call a model are
-collected behind `run_live.sh`, and they all read the same environment.
+`run_live.sh` is the other half: the nine entry points that call a real model,
+collected behind one script because they all read the same environment.
 
 Put it in one file and source it:
 
@@ -294,6 +257,40 @@ docker compose run --rm -v "$HOME/artcraft-live-library:/library:ro" \
 
 A stage whose requirements are missing is skipped and named, not failed.
 `run_offline.sh` is unchanged by any of it.
+
+## Run in Docker
+
+Everything inside the image, no install on the host. The container's default
+command is `./run_offline.sh`, so this runs the deterministic suite:
+
+```bash
+docker compose build
+docker compose run --rm artcraft
+```
+
+For the live paths, source the environment on the host and pass the script —
+`compose.yaml` forwards the variables:
+
+```bash
+source ~/.config/artcraft/env.sh
+docker compose run --rm artcraft ./run_live.sh
+docker compose run --rm artcraft ./run_everything.sh
+```
+
+On Linux and on Windows with Docker Desktop that is the whole story. A container
+is slower than a native run, so a harness that waits on an engine can cross the
+60-second default:
+
+```bash
+docker compose run --rm -e MCP_TIMEOUT_MS=300000 artcraft
+```
+
+The sources are mounted into the container rather than copied, so edits are
+picked up without a rebuild and the artifacts land on your disk. One chapter:
+
+```bash
+docker compose run --rm artcraft ./chapter14/run_all.sh
+```
 
 ## When something does not start
 
