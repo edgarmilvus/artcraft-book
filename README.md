@@ -328,6 +328,11 @@ photography: the stage runs end to end, and its verdict on them means little.
 
 A stage that cannot run says so and is skipped instead of failing.
 
+The key can stay in a file of its own instead of this environment: set
+`OPENAI_COMPATIBLE_API_KEY_FILE=/path/to/key` and the scripts read it when
+`OPENAI_COMPATIBLE_API_KEY` is unset. That keeps the secret in one place when
+you rotate it.
+
 The script reads, in order: your shell, `$ARTCRAFT_LIVE_ENV`
 (default `~/.config/artcraft/live.env`), and `tools/secrets.env`. Nothing in
 the code is tied to a provider — the example above points at a gateway, but

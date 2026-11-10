@@ -71,6 +71,20 @@ load_env() {
 load_env "${ARTCRAFT_LIVE_ENV:-$HOME/.config/artcraft/live.env}"
 load_env "$ROOT/tools/secrets.env"
 
+# A key can live in a file instead of this environment: point *_API_KEY_FILE at
+# it and the scripts read it, so the secret has one home. A file path wins only
+# when the key itself is unset.
+read_key_file() {
+  name=$1; file=$2
+  [ -n "$file" ] || return 0
+  eval "current=\${$name-}"
+  [ -n "$current" ] && return 0
+  [ -f "$file" ] || return 0
+  value=$(tr -d '\n' < "$file")
+  [ -n "$value" ] && export "$name=$value"
+}
+read_key_file OPENAI_COMPATIBLE_API_KEY "${OPENAI_COMPATIBLE_API_KEY_FILE:-}"
+
 # Prints the first missing variable, or nothing when the list is satisfied.
 missing() {
   for need in $1; do
