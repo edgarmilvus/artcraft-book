@@ -20,6 +20,19 @@ import { ClientPool } from './pool.js';
 import { Session, CraftApp } from './session.js';
 
 const MAX_TURNS = 24;
+
+/**
+ * A tool reply can be enormous: an inspect of a deep layer tree, a preview
+ * that comes back as base64. The context window is finite, and a loop that
+ * appends every byte verbatim reaches it on the wrong brief. Clip the reply,
+ * keep the head, and say how much was dropped — the model can ask for a
+ * narrower inspect instead of drowning in the whole document.
+ */
+const MAX_TOOL_CHARS = 16_000;
+const clip = (s: string): string =>
+  s.length <= MAX_TOOL_CHARS
+    ? s
+    : `${s.slice(0, MAX_TOOL_CHARS)}\n… [${s.length - MAX_TOOL_CHARS} characters truncated; ask for a narrower inspect]`;
 /**
  * The endpoint is configuration, not code: any OpenAI-compatible server —
  * DeepSeek, OpenRouter, vLLM, a gateway — speaks this same API. The model id
@@ -305,9 +318,9 @@ export async function runBrief(
         messages.push({
           role: 'tool',
           tool_call_id: call.id,
-          content: dispatched.ok
+          content: clip(dispatched.ok
             ? JSON.stringify(dispatched.result ?? null)
-            : `error: ${dispatched.error}`,
+            : `error: ${dispatched.error}`),
         });
 
         // Track written documents for the tenant's output listing. Only a
