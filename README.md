@@ -68,7 +68,28 @@ committed. [Install](#install) is the next section for a reason.
 ## Chapter index
 
 | # | Chapter | Code |
-|
+| --- | --- | --- |
+| 1 | The Death of Flat Generative Pixels | [chapter1](chapter1/README.md) |
+| 2 | Inside the ArtCraft Architecture | [chapter2](chapter2/README.md) |
+| 3 | Headless CLI Orchestration | [chapter3](chapter3/README.md) |
+| 4 | The Loopback Control Channel | [chapter4](chapter4/README.md) |
+| 5 | The Model Context Protocol Bridge | [chapter5](chapter5/README.md) |
+| 6 | Automated PSD Manipulation | [chapter6](chapter6/README.md) |
+| 7 | Multimodal Visual Feedback Loops | [chapter7](chapter7/README.md) |
+| 8 | Programmatic Vector Engineering | [chapter8](chapter8/README.md) |
+| 9 | High-Throughput RAW Development | [chapter9](chapter9/README.md) |
+| 10 | E-Commerce Graphics Factory | [chapter10](chapter10/README.md) |
+| 11 | Inside the Integer Timebase | [chapter11](chapter11/README.md) |
+| 12 | Autonomous Video Assembly | [chapter12](chapter12/README.md) |
+| 13 | Three-Way Colour Wheels and Loudness | [chapter13](chapter13/README.md) |
+| 14 | Programmatic Motion Graphics | [chapter14](chapter14/README.md) |
+| 15 | Cross-Platform Lottie and VP9 | [chapter15](chapter15/README.md) |
+| 16 | Automated Editorial Publishing | [chapter16](chapter16/README.md) |
+| 17 | Headless Office Pipelines | [chapter17](chapter17/README.md) |
+| 18 | Financial Engineering at Scale | [chapter18](chapter18/README.md) |
+| 19 | Full-Stack Studio Governance | [chapter19](chapter19/README.md) |
+| 20 | The Autonomous Creative Studio | [chapter20](chapter20/README.md) |
+
 
 ## Install
 
@@ -198,9 +219,9 @@ Put it in one file and source it:
 ```bash
 mkdir -p ~/.config/artcraft
 cat > ~/.config/artcraft/env.sh <<'EOF'
-export OPENAI_COMPATIBLE_BASE_URL="https://api.deepseek.com/v1"
-export OPENAI_COMPATIBLE_MODEL="deepseek-flash"
-export OPENAI_COMPATIBLE_VISION_MODEL="deepseek-flash"
+export OPENAI_COMPATIBLE_BASE_URL="https://openrouter.ai/api/v1"
+export OPENAI_COMPATIBLE_MODEL="deepseek/deepseek-v4.1-flash"
+export OPENAI_COMPATIBLE_VISION_MODEL="deepseek/deepseek-v4.1-flash"
 export OPENAI_COMPATIBLE_API_KEY="…"            # yours
 
 export EMBEDDING_BASE_URL="https://generativelanguage.googleapis.com/v1beta/openai/"
