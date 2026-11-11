@@ -17,6 +17,9 @@ export PATH="$ROOT/tools/craft-cli/bin:$ROOT/tools/node/bin:$PATH"
 # live environment here and let the engines be the only real thing.
 unset OPENAI_COMPATIBLE_API_KEY OPENAI_COMPATIBLE_BASE_URL OPENAI_COMPATIBLE_MODEL OPENAI_COMPATIBLE_VISION_MODEL
 unset EMBEDDING_API_KEY EMBEDDING_BASE_URL EMBEDDING_MODEL
+# SEED_PHOTO_IDS is the gate on chapter 9's live entry point: leave it in the
+# environment and the offline harness starts a session it cannot finish.
+unset SEED_PHOTO_IDS PG_DSN LIGHTCRAFT_LIBRARY
 
 failed=0
 for chapter in $(seq 1 20); do
