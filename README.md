@@ -32,7 +32,7 @@ take the agent from a flat generated image to a layered PhotoCraft document, a
 pathfinder boolean, a frame-accurate FilmCraft assembly, a governed PDF/DOCX
 pipeline and a capstone studio that runs end to end over MCP.
 
-[**Additional Information →**](https://leanpub.com/ArtCraftBook)
+[**Additional Information →**](https://tiny.cc/ArtCraftBook)
 
 ## Quickstart
 
