@@ -42,5 +42,8 @@
     "@types/react-dom": "latest",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "fast-uri": "^4.2.3"
   }
 }
