@@ -71,6 +71,11 @@ load_env() {
 load_env "${ARTCRAFT_LIVE_ENV:-$HOME/.config/artcraft/live.env}"
 load_env "$ROOT/tools/secrets.env"
 
+# The live configuration lives in one file outside the repository; read it here
+# so the script works whether or not the shell has been sourced.
+ENV_FILE="${ARTCRAFT_ENV_FILE:-$HOME/.config/artcraft/env.sh}"
+if [ -f "$ENV_FILE" ]; then . "$ENV_FILE"; fi
+
 
 # Prints the first missing variable, or nothing when the list is satisfied.
 missing() {

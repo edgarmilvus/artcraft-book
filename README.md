@@ -187,7 +187,7 @@ and the master server. It does not touch the engines, so it works on Linux too.
 `run_live.sh` is the other half: the nine entry points that call a real model,
 collected behind one script because they all read the same environment.
 
-Put it in one file and source it:
+Put it in one file. `run_live.sh` and `run_everything.sh` read it; source it too if you also run the entry points by hand:
 
 ```bash
 mkdir -p ~/.config/artcraft
