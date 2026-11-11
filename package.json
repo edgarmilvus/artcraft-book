@@ -17,7 +17,8 @@
   "dependencies": {
     "@ai-sdk/openai": "latest",
     "@ai-sdk/react": "latest",
-    "@langchain/langgraph": "^0.2.0",
+    "@langchain/core": "^1.3.4",
+    "@langchain/langgraph": "^1.7.3",
     "@modelcontextprotocol/sdk": "^1.32.0",
     "ai": "latest",
     "ajv": "^8.17.1",
