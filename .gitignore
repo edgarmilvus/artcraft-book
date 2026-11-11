@@ -97,3 +97,8 @@ venv/
 # --- chapter 3 scratch and build output -------------------------------------
 /chapter3/.tmp/
 /chapter3/advanced_application_implementation/example/files/dist/
+
+# --- per-project lockfiles ---------------------------------------------------
+# The repository has one lockfile at the root and symlinks every project's
+# node_modules to it; a chapter lockfile is a leftover that pins old versions.
+/chapter*/**/package-lock.json
